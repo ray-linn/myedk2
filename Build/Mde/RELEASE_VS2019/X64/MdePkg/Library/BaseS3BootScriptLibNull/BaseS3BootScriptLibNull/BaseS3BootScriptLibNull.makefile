@@ -1,1 +1,0 @@
-d:\edk2\edk2\Build\Mde\RELEASE_VS2019\X64\MdePkg\Library\BaseS3BootScriptLibNull\BaseS3BootScriptLibNull\Makefile

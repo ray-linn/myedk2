@@ -1,1 +1,0 @@
-  d:\edk2\edk2\MdePkg\Library\DxeIoLibCpuIo2\IoLib.c d:\edk2\edk2\MdePkg\Library\DxeIoLibCpuIo2\IoHighLevel.c d:\edk2\edk2\MdePkg\Library\DxeIoLibCpuIo2\IoLibMmioBuffer.c
