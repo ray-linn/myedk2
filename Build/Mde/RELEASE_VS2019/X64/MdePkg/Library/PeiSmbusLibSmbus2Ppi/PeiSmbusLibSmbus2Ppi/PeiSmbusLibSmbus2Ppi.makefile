@@ -1,0 +1,1 @@
+d:\edk2\edk2\Build\Mde\RELEASE_VS2019\X64\MdePkg\Library\PeiSmbusLibSmbus2Ppi\PeiSmbusLibSmbus2Ppi\Makefile

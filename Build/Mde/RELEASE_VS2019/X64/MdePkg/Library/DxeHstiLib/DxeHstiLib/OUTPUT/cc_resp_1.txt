@@ -1,0 +1,1 @@
+  d:\edk2\edk2\MdePkg\Library\DxeHstiLib\HstiAip.c d:\edk2\edk2\MdePkg\Library\DxeHstiLib\HstiDxe.c

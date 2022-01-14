@@ -1,0 +1,1 @@
+  d:\edk2\edk2\MdePkg\Test\UnitTest\Library\BaseLib\Base64UnitTest.c d:\edk2\edk2\Build\Mde\RELEASE_VS2019\X64\MdePkg\Test\UnitTest\Library\BaseLib\BaseLibUnitTestsUefi\DEBUG\AutoGen.c
