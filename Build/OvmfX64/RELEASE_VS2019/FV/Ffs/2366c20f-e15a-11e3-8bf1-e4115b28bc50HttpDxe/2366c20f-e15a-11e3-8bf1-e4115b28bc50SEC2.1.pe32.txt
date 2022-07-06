@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_PE32 -o d:\edk2\edk2\Build\OvmfX64\RELEASE_VS2019\FV\Ffs\2366c20f-e15a-11e3-8bf1-e4115b28bc50HttpDxe\2366c20f-e15a-11e3-8bf1-e4115b28bc50SEC2.1.pe32 d:\edk2\edk2\Build\OvmfX64\RELEASE_VS2019\X64\NetworkPkg\HttpDxe\HttpDxe\OUTPUT\HttpDxe.efi

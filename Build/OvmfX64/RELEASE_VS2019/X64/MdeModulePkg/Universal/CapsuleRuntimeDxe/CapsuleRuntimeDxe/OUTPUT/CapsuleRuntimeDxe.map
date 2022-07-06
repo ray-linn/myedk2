@@ -1,0 +1,84 @@
+ CapsuleRuntimeDxe
+
+ Timestamp is 61ee7014 (Mon Jan 24 17:23:32 2022)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 000000b4H .text                   CODE
+ 0001:000000b4 000002f0H .text$mn                CODE
+ 0002:00000000 00000030H .data                   DATA
+ 0002:00000030 00000020H .rdata                  DATA
+ 0002:00000050 00000050H .bss                    DATA
+ 0002:000000a0 00000020H .rdata$voltmd           DATA
+ 0002:000000c0 000000a8H .rdata$zzzdbg           DATA
+ 0003:00000000 00000024H .pdata                  DATA
+ 0004:00000000 00000028H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __hybrid_code_map_count    0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_count         0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_native_entrypoint 0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_table      0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_table      0000000000000000     <absolute>
+ 0000:00000000       __enclave_config           0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata_count 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map          0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table_size 0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points_count 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata 0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_table          0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table   0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_count          0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_table         0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_count      0000000000000000     <absolute>
+ 0000:00000000       __dynamic_value_reloc_table 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat     0000000000000000     <absolute>
+ 0000:00000000       __guard_check_icall_a64n_fptr 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat_copy 0000000000000000     <absolute>
+ 0000:00000000       __guard_flags              0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_count      0000000000000000     <absolute>
+ 0000:00000000       __AbsoluteZero             0000000000000000     <absolute>
+ 0001:00000000       InternalMemZeroMem         0000000000000260     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00000020       AsmCpuid                   0000000000000280     BaseLib:CpuId.obj
+ 0001:00000050       InternalMemCopyMem         00000000000002b0     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000090       AsmWbinvd                  00000000000002f0     BaseLib:Wbinvd.obj
+ 0001:000000a0       AsmFlushCacheLine          0000000000000300     BaseLib:FlushCacheLine.obj
+ 0001:000000b0       AsmInvd                    0000000000000310     BaseLib:Invd.obj
+ 0001:000000b4       _ModuleEntryPoint          0000000000000314 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:000001d4       UpdateCapsule              0000000000000434 f   CapsuleRuntimeDxe:CapsuleService.obj
+ 0001:000002ac       QueryCapsuleCapabilities   000000000000050c f   CapsuleRuntimeDxe:CapsuleService.obj
+ 0001:00000388       RuntimeLibExitBootServicesEvent 00000000000005e8 f   UefiRuntimeLib:RuntimeLib.obj
+ 0001:00000390       RuntimeLibVirtualNotifyEvent 00000000000005f0 f   UefiRuntimeLib:RuntimeLib.obj
+ 0002:00000000       gEfiCapsuleArchProtocolGuid 0000000000000620     CapsuleRuntimeDxe:AutoGen.obj
+ 0002:00000010       gEfiFmpCapsuleGuid         0000000000000630     CapsuleRuntimeDxe:AutoGen.obj
+ 0002:00000020       gEfiDevicePathUtilitiesProtocolGuid 0000000000000640     CapsuleRuntimeDxe:AutoGen.obj
+ 0002:00000050       mNewHandle                 0000000000000670     CapsuleRuntimeDxe:CapsuleService.obj
+ 0002:00000058       mMaxSizeNonPopulateCapsule 0000000000000678     CapsuleRuntimeDxe:CapsuleService.obj
+ 0002:0000005c       mMaxSizePopulateCapsule    000000000000067c     CapsuleRuntimeDxe:CapsuleService.obj
+ 0002:00000060       gST                        0000000000000680     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000068       gBS                        0000000000000688     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000070       gRT                        0000000000000690     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0002:00000078       mDevicePathLibDevicePathUtilities 0000000000000698     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:00000080       mEfiAtRuntime              00000000000006a0     UefiRuntimeLib:RuntimeLib.obj
+ 0002:00000088       mEfiVirtualNotifyEvent     00000000000006a8     <common>
+ 0002:00000090       mInternalRT                00000000000006b0     <common>
+ 0002:00000098       mEfiExitBootServicesEvent  00000000000006b8     <common>
+ 0002:000000a0       __volatile_metadata        00000000000006c0     <linker-defined>
+
+ entry point at        0001:000000b4
+
+ Static symbols
+
+ 0001:0000002f       AsmCpuid.0                 000000000000028f     BaseLib:CpuId.obj
+ 0001:00000034       AsmCpuid.1                 0000000000000294     BaseLib:CpuId.obj
+ 0001:0000003b       AsmCpuid.2                 000000000000029b     BaseLib:CpuId.obj
+ 0001:00000044       AsmCpuid.3                 00000000000002a4     BaseLib:CpuId.obj
+ 0001:0000006a       InternalMemCopyMem.0       00000000000002ca     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:0000007a       @CopyBackward              00000000000002da     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000083       @CopyBytes                 00000000000002e3     BaseMemoryLibRepStr:CopyMem.obj
+ 0004:00000000       $unwind$_ModuleEntryPoint  00000000000007e0     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0004:00000008       $unwind$UpdateCapsule      00000000000007e8     CapsuleRuntimeDxe:CapsuleService.obj
+ 0004:00000018       $unwind$QueryCapsuleCapabilities 00000000000007f8     CapsuleRuntimeDxe:CapsuleService.obj

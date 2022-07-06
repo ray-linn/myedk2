@@ -1,0 +1,98 @@
+ BootGraphicsResourceTableDxe
+
+ Timestamp is 61ee7045 (Mon Jan 24 17:24:21 2022)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000060H .text                   CODE
+ 0001:00000060 000007a2H .text$mn                CODE
+ 0002:00000000 000000a0H .data                   DATA
+ 0002:000000a0 00000060H .rdata                  DATA
+ 0002:00000100 00000078H .bss                    DATA
+ 0002:00000178 00000020H .rdata$voltmd           DATA
+ 0002:00000198 000000a8H .rdata$zzzdbg           DATA
+ 0003:00000000 00000060H .pdata                  DATA
+ 0004:00000000 00000060H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __hybrid_auxiliary_iat     0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map_count    0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_table      0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_native_entrypoint 0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_table      0000000000000000     <absolute>
+ 0000:00000000       __enclave_config           0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata_count 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata 0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_count         0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_table          0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table   0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_table         0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_count      0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_count          0000000000000000     <absolute>
+ 0000:00000000       __guard_flags              0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_count      0000000000000000     <absolute>
+ 0000:00000000       __guard_check_icall_a64n_fptr 0000000000000000     <absolute>
+ 0000:00000000       __dynamic_value_reloc_table 0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points_count 0000000000000000     <absolute>
+ 0000:00000000       __AbsoluteZero             0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table_size 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat_copy 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map          0000000000000000     <absolute>
+ 0001:00000000       InternalMemCopyMem         0000000000000280     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000040       InternalMemZeroMem         00000000000002c0     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00000060       _ModuleEntryPoint          00000000000002e0 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:00000098       ProcessModuleEntryPointList 0000000000000318 f   BootGraphicsResourceTableDxe:AutoGen.obj
+ 0001:00000174       SetBootLogo                00000000000003f4 f   BootGraphicsResourceTableDxe:BootGraphicsResourceTableDxe.obj
+ 0001:00000180       SetBootLogo2               0000000000000400 f   BootGraphicsResourceTableDxe:BootGraphicsResourceTableDxe.obj
+ 0001:000002c8       GetBootLogo2               0000000000000548 f   BootGraphicsResourceTableDxe:BootGraphicsResourceTableDxe.obj
+ 0001:00000340       BgrtReadyToBootEventNotify 00000000000005c0 f   BootGraphicsResourceTableDxe:BootGraphicsResourceTableDxe.obj
+ 0001:000004ac       InternalAllocatePool       000000000000072c f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:000004dc       InternalAllocateCopyPool   000000000000075c f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:0000051c       SafeUint32Mult             000000000000079c f   BaseSafeIntLib:SafeIntLib.obj
+ 0001:0000055c       SafeUint64Mult             00000000000007dc f   BaseSafeIntLib:SafeIntLib.obj
+ 0001:00000614       TranslateGopBltToBmp       0000000000000894 f   BaseBmpSupportLib:BmpSupportLib.obj
+ 0002:00000000       gEdkiiBootLogo2ProtocolGuid 0000000000000aa0     BootGraphicsResourceTableDxe:AutoGen.obj
+ 0002:00000010       gEfiEventReadyToBootGuid   0000000000000ab0     BootGraphicsResourceTableDxe:AutoGen.obj
+ 0002:00000020       gEfiDevicePathUtilitiesProtocolGuid 0000000000000ac0     BootGraphicsResourceTableDxe:AutoGen.obj
+ 0002:00000030       gEfiAcpiTableProtocolGuid  0000000000000ad0     BootGraphicsResourceTableDxe:AutoGen.obj
+ 0002:00000040       gEfiBootLogoProtocolGuid   0000000000000ae0     BootGraphicsResourceTableDxe:AutoGen.obj
+ 0002:00000050       mBootGraphicsResourceTableTemplate 0000000000000af0     BootGraphicsResourceTableDxe:BootGraphicsResourceTableDxe.obj
+ 0002:00000088       mBootLogo2ProtocolTemplate 0000000000000b28     BootGraphicsResourceTableDxe:BootGraphicsResourceTableDxe.obj
+ 0002:00000098       mBootLogoProtocolTemplate  0000000000000b38     BootGraphicsResourceTableDxe:BootGraphicsResourceTableDxe.obj
+ 0002:000000a0       _gPcd_FixedAtBuild_PcdAcpiDefaultOemId 0000000000000b40     BootGraphicsResourceTableDxe:AutoGen.obj
+ 0002:000000a8       mBmpImageHeaderTemplate    0000000000000b48     BaseBmpSupportLib:BmpSupportLib.obj
+ 0002:00000100       mLogoHeight                0000000000000ba0     BootGraphicsResourceTableDxe:BootGraphicsResourceTableDxe.obj
+ 0002:00000108       mLogoDestX                 0000000000000ba8     BootGraphicsResourceTableDxe:BootGraphicsResourceTableDxe.obj
+ 0002:00000110       mIsLogoValid               0000000000000bb0     BootGraphicsResourceTableDxe:BootGraphicsResourceTableDxe.obj
+ 0002:00000118       mBootGraphicsResourceTableKey 0000000000000bb8     BootGraphicsResourceTableDxe:BootGraphicsResourceTableDxe.obj
+ 0002:00000120       mLogoBltBuffer             0000000000000bc0     BootGraphicsResourceTableDxe:BootGraphicsResourceTableDxe.obj
+ 0002:00000128       mAcpiBgrtBufferChanged     0000000000000bc8     BootGraphicsResourceTableDxe:BootGraphicsResourceTableDxe.obj
+ 0002:00000130       mLogoDestY                 0000000000000bd0     BootGraphicsResourceTableDxe:BootGraphicsResourceTableDxe.obj
+ 0002:00000138       mAcpiBgrtStatusChanged     0000000000000bd8     BootGraphicsResourceTableDxe:BootGraphicsResourceTableDxe.obj
+ 0002:00000140       mBootLogoHandle            0000000000000be0     BootGraphicsResourceTableDxe:BootGraphicsResourceTableDxe.obj
+ 0002:00000148       mAcpiBgrtInstalled         0000000000000be8     BootGraphicsResourceTableDxe:BootGraphicsResourceTableDxe.obj
+ 0002:00000150       mLogoWidth                 0000000000000bf0     BootGraphicsResourceTableDxe:BootGraphicsResourceTableDxe.obj
+ 0002:00000158       gST                        0000000000000bf8     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000160       gBS                        0000000000000c00     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000168       mDevicePathLibDevicePathUtilities 0000000000000c08     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:00000170       mBootGraphicsReadyToBootEvent 0000000000000c10     <common>
+ 0002:00000178       __volatile_metadata        0000000000000c18     <linker-defined>
+
+ entry point at        0001:00000060
+
+ Static symbols
+
+ 0001:0000001a       InternalMemCopyMem.0       000000000000029a     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:0000002a       @CopyBackward              00000000000002aa     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000033       @CopyBytes                 00000000000002b3     BaseMemoryLibRepStr:CopyMem.obj
+ 0004:00000000       $unwind$_ModuleEntryPoint  0000000000000d40     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0004:00000000       $unwind$InternalAllocatePool 0000000000000d40     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0004:00000008       $unwind$ProcessModuleEntryPointList 0000000000000d48     BootGraphicsResourceTableDxe:AutoGen.obj
+ 0004:00000010       $unwind$SetBootLogo2       0000000000000d50     BootGraphicsResourceTableDxe:BootGraphicsResourceTableDxe.obj
+ 0004:00000024       $unwind$BgrtReadyToBootEventNotify 0000000000000d64     BootGraphicsResourceTableDxe:BootGraphicsResourceTableDxe.obj
+ 0004:0000002c       $unwind$InternalAllocateCopyPool 0000000000000d6c     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0004:00000038       $unwind$SafeUint64Mult     0000000000000d78     BaseSafeIntLib:SafeIntLib.obj
+ 0004:00000044       $unwind$TranslateGopBltToBmp 0000000000000d84     BaseBmpSupportLib:BmpSupportLib.obj

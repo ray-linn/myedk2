@@ -1,0 +1,155 @@
+ IncompatiblePciDeviceSupportDxe
+
+ Timestamp is 62b57333 (Fri Jun 24 16:17:55 2022)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 000000c4H .text                   CODE
+ 0001:000000c4 000016eeH .text$mn                CODE
+ 0002:00000000 00000c80H .rdata                  DATA
+ 0002:00000c80 00000020H .rdata$voltmd           DATA
+ 0002:00000ca0 00000170H .rdata$zzzdbg           DATA
+ 0003:00000000 00000030H .data                   DATA
+ 0003:00000030 00000032H .bss                    DATA
+ 0004:00000000 000000ccH .pdata                  DATA
+ 0005:00000000 000000a0H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __guard_longjmp_table      0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points_count 0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_count         0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table   0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map_count    0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata 0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_table          0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points 0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_count          0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map          0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_count      0000000000000000     <absolute>
+ 0000:00000000       __arm64x_native_entrypoint 0000000000000000     <absolute>
+ 0000:00000000       __dynamic_value_reloc_table 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat     0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_table      0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat_copy 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table_size 0000000000000000     <absolute>
+ 0000:00000000       __AbsoluteZero             0000000000000000     <absolute>
+ 0000:00000000       __enclave_config           0000000000000000     <absolute>
+ 0000:00000000       __guard_check_icall_a64n_fptr 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata_count 0000000000000000     <absolute>
+ 0000:00000000       __guard_flags              0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_count      0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_table         0000000000000000     <absolute>
+ 0001:00000000       InternalMemCopyMem         0000000000000280     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000040       InternalMemSetMem          00000000000002c0     BaseMemoryLibRepStr:SetMem.obj
+ 0001:00000060       InternalMemZeroMem         00000000000002e0     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00000080       InternalMemSetMem64        0000000000000300     BaseMemoryLibRepStr:SetMem64.obj
+ 0001:000000a0       InternalMemSetMem32        0000000000000320     BaseMemoryLibRepStr:SetMem32.obj
+ 0001:000000c0       CpuPause                   0000000000000340     BaseLib:CpuPause.obj
+ 0001:000000c4       _ModuleEntryPoint          0000000000000344 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:00000198       ProcessModuleEntryPointList 0000000000000418 f   IncompatiblePciDeviceSupportDxe:AutoGen.obj
+ 0001:0000041c       GetPcdProtocol             000000000000069c f   DxePcdLib:DxePcdLib.obj
+ 0001:000004a8       DebugPrint                 0000000000000728 f   BaseDebugLibSerialPort:DebugLib.obj
+ 0001:000004cc       DebugPrintMarker           000000000000074c f   BaseDebugLibSerialPort:DebugLib.obj
+ 0001:0000057c       DebugAssert                00000000000007fc f   BaseDebugLibSerialPort:DebugLib.obj
+ 0001:000005f4       InternalAllocatePool       0000000000000874 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:0000062c       InternalAllocateCopyPool   00000000000008ac f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00000670       CopyMem                    00000000000008f0 f   BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0001:000006f4       AsciiStrLen                0000000000000974 f   BaseLib:String.obj
+ 0001:00000760       StrnLenS                   00000000000009e0 f   BaseLib:SafeString.obj
+ 0001:000007b8       AsciiSPrint                0000000000000a38 f   BasePrintLib:PrintLib.obj
+ 0001:000007e4       BasePrintLibFillBuffer     0000000000000a64 f   BasePrintLib:PrintLibInternal.obj
+ 0001:00000818       BasePrintLibValueToString  0000000000000a98 f   BasePrintLib:PrintLibInternal.obj
+ 0001:00000884       BasePrintLibSPrintMarker   0000000000000b04 f   BasePrintLib:PrintLibInternal.obj
+ 0001:00001790       BasePrintLibSPrint         0000000000001a10 f   BasePrintLib:PrintLibInternal.obj
+ 0002:00000000       ??_C@_0CB@DMEJJJHA@?6ASSERT_EFI_ERROR?5?$CIStatus?5?$DN?5?$CFr?$CJ@ 0000000000001a40     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0002:00000028       ??_C@_0CH@BBNBJKHK@?$CB?$CI?$CI?$CIINTN?$CJ?$CIRETURN_STATUS?$CJ?$CIStatus@ 0000000000001a68     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0002:00000050       ??_C@_0CA@CNEIBCJ@IncompatiblePciDeviceSupportDxe@ 0000000000001a90     IncompatiblePciDeviceSupportDxe:AutoGen.obj
+ 0002:00000070       ??_C@_0BE@BKOHPJHE@?$CBmCheckDeviceCalled@ 0000000000001ab0     IncompatiblePciDeviceSupportDxe:IncompatiblePciDeviceSupport.obj
+ 0002:00000090       ??_C@_0FE@GNBLFIHC@d?3?2edk2?2edk2?2OvmfPkg?2Incompatib@ 0000000000001ad0     IncompatiblePciDeviceSupportDxe:IncompatiblePciDeviceSupport.obj
+ 0002:000000e8       ??_C@_0M@HMLLGNKL@CheckDevice@ 0000000000001b28     IncompatiblePciDeviceSupportDxe:IncompatiblePciDeviceSupport.obj
+ 0002:00000100       ??_C@_0EF@HJKNNJMD@?$CFa?3?564?9bit?5MMIO?5BARs?5may?5be?5deg@ 0000000000001b40     IncompatiblePciDeviceSupportDxe:IncompatiblePciDeviceSupport.obj
+ 0002:00000148       ??_C@_0CM@PICOGNFJ@?$CB?$CI?$CI?$CIINTN?$CJ?$CIRETURN_STATUS?$CJ?$CICloseS@ 0000000000001b88     IncompatiblePciDeviceSupportDxe:IncompatiblePciDeviceSupport.obj
+ 0002:000001a8       ??_C@_0DC@FABBJIGJ@d?3?2edk2?2edk2?2MdePkg?2Library?2Dxe@ 0000000000001be8     DxePcdLib:DxePcdLib.obj
+ 0002:000001e0       ??_C@_0BF@OOKDELHM@mPcd?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000001c20     DxePcdLib:DxePcdLib.obj
+ 0002:000001f8       ??_C@_0BH@IACGKAP@Buffer?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000001c38     DxePcdLib:DxePcdLib.obj
+ 0002:00000210       ??_C@_0BH@LKMBFCBF@Format?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000001c50     BaseDebugLibSerialPort:DebugLib.obj
+ 0002:00000228       ??_C@_0DO@CKBIDOOL@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 0000000000001c68     BaseDebugLibSerialPort:DebugLib.obj
+ 0002:00000268       ??_C@_0BI@NOCKJDBJ@ASSERT?5?$FL?$CFa?$FN?5?$CFa?$CI?$CFd?$CJ?3?5?$CFa?6@ 0000000000001ca8     BaseDebugLibSerialPort:DebugLib.obj
+ 0002:00000280       ??_C@_0BN@COECPDCC@gImageHandle?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000001cc0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000002a0       ??_C@_0FA@FOIHGFBE@d?3?2edk2?2edk2?2MdePkg?2Library?2Uef@ 0000000000001ce0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000002f0       ??_C@_0BE@DGNHAHIL@gST?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000001d30     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000308       ??_C@_0BE@BDFJLGLN@gBS?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000001d48     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000320       ??_C@_0EK@GCCICMAJ@d?3?2edk2?2edk2?2MdePkg?2Library?2Uef@ 0000000000001d60     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0002:00000370       ??_C@_0DO@GEEICOOO@AllocationSize?5?$DM?$DN?5?$CI0xFFFFFFFFFF@ 0000000000001db0     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0002:000003b0       ??_C@_0ED@MKGCMJG@?$CILength?5?9?51?$CJ?5?$DM?$DN?5?$CI0xFFFFFFFFFFFF@ 0000000000001df0     BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0002:00000400       ??_C@_0EB@LOHEEPCE@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 0000000000001e40     BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0002:00000448       ??_C@_0DO@MAOBOFEG@?$CILength?5?9?51?$CJ?5?$DM?$DN?5?$CI0xFFFFFFFFFFFF@ 0000000000001e88     BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0002:00000488       ??_C@_0BH@MAAHKCPC@String?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000001ec8     BaseLib:String.obj
+ 0002:000004a0       ??_C@_0CN@LHBFELAO@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 0000000000001ee0     BaseLib:String.obj
+ 0002:000004d0       ??_C@_0CC@GFNLNIOC@?$CI?$CIUINTN?$CJString?5?$CG?50x00000001?$CJ?5?$DN?$DN@ 0000000000001f10     BaseLib:String.obj
+ 0002:000004f8       ??_C@_0DI@MDIKFADO@Length?5?$DM?5_gPcd_FixedAtBuild_Pcd@ 0000000000001f38     BaseLib:String.obj
+ 0002:00000530       ??_C@_0DB@PKFMPMPC@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 0000000000001f70     BaseLib:SafeString.obj
+ 0002:00000568       ??_C@_0BJ@CNKJJNE@?$CIBuffer?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ@ 0000000000001fa8     BaseLib:SafeString.obj
+ 0002:00000588       ??_C@_0N@KGHEHMDL@Divisor?5?$CB?$DN?50@ 0000000000001fc8     BaseLib:DivU64x32.obj
+ 0002:00000598       ??_C@_0DM@OAJIKNNG@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 0000000000001fd8     BasePrintLib:PrintLibInternal.obj
+ 0002:000005e0       ??_C@_0EB@HDGIDCIO@?$CIBufferSize?5?$DM?$DN?5?$CI_gPcd_FixedAtBu@ 0000000000002020     BasePrintLib:PrintLibInternal.obj
+ 0002:00000628       ??_C@_0BJ@PPAKKDJG@?$CIFormat?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ@ 0000000000002068     BasePrintLib:PrintLibInternal.obj
+ 0002:00000650       ??_C@_0ED@LPDDCECB@?$CIBufferSize?5?$DM?$DN?5?$CI_gPcd_FixedAtBu@ 0000000000002090     BasePrintLib:PrintLibInternal.obj
+ 0002:000006a0       ??_C@_0IM@BFJJFLGB@?$CIStrnLenS?5?$CI?$CICHAR16?5?$CK?$CJFormat?0?5?$CI_@ 00000000000020e0     BasePrintLib:PrintLibInternal.obj
+ 0002:00000730       ??_C@_0ID@PLGJGION@?$CIAsciiStrnLenS?5?$CIFormat?0?5?$CI_gPcd_@ 0000000000002170     BasePrintLib:PrintLibInternal.obj
+ 0002:000007b8       ??_C@_0O@MLOLIMFM@?$DMnull?5string?$DO@ 00000000000021f8     BasePrintLib:PrintLibInternal.obj
+ 0002:000007c8       ??_C@_0M@BJJDNPHK@?$DMnull?5guid?$DO@ 0000000000002208     BasePrintLib:PrintLibInternal.obj
+ 0002:000007d8       ??_C@_0DB@PMLHLBMO@?$CF08x?9?$CF04x?9?$CF04x?9?$CF02x?$CF02x?9?$CF02x?$CF02@ 0000000000002218     BasePrintLib:PrintLibInternal.obj
+ 0002:00000810       ??_C@_0M@LHGBCIKM@?$DMnull?5time?$DO@ 0000000000002250     BasePrintLib:PrintLibInternal.obj
+ 0002:00000820       ??_C@_0BK@FCPKCIDD@?$CF02d?1?$CF02d?1?$CF04d?5?5?$CF02d?3?$CF02d@ 0000000000002260     BasePrintLib:PrintLibInternal.obj
+ 0002:0000083c       ??_C@_04JIMNDDED@?$CF08X@  000000000000227c     BasePrintLib:PrintLibInternal.obj
+ 0002:00000844       ??_C@_02PCIJFNDE@?$AN?6@   0000000000002284     BasePrintLib:PrintLibInternal.obj
+ 0002:00000848       ??_C@_01LIIJDEN@?$AN@      0000000000002288     BasePrintLib:PrintLibInternal.obj
+ 0002:00000850       mWarningString             0000000000002290     BasePrintLib:PrintLibInternal.obj
+ 0002:000008f0       mErrorString               0000000000002330     BasePrintLib:PrintLibInternal.obj
+ 0002:00000bb0       mHexStr                    00000000000025f0     BasePrintLib:PrintLibInternal.obj
+ 0002:00000bc0       ??_C@_0DA@BDDONMJM@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 0000000000002600     BaseLib:Unaligned.obj
+ 0002:00000bf0       ??_C@_0DJ@FHIMIJAH@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 0000000000002630     BaseLib:DivU64x32Remainder.obj
+ 0002:00000c80       __volatile_metadata        00000000000026c0     <linker-defined>
+ 0003:00000000       gEfiIncompatiblePciDeviceSupportProtocolGuid 0000000000002860     IncompatiblePciDeviceSupportDxe:AutoGen.obj
+ 0003:00000010       gPcdProtocolGuid           0000000000002870     IncompatiblePciDeviceSupportDxe:AutoGen.obj
+ 0003:00000020       gEfiLegacyBiosProtocolGuid 0000000000002880     IncompatiblePciDeviceSupportDxe:AutoGen.obj
+ 0003:00000030       mPcd                       0000000000002890     DxePcdLib:DxePcdLib.obj
+ 0003:00000038       gST                        0000000000002898     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0003:00000040       gBS                        00000000000028a0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0003:00000048       gImageHandle               00000000000028a8     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0003:00000050       gParity                    00000000000028b0     PcAtSerialPortLib:SerialPortLib.obj
+ 0003:00000051       gBreakSet                  00000000000028b1     PcAtSerialPortLib:SerialPortLib.obj
+
+ entry point at        0001:000000c4
+
+ Static symbols
+
+ 0001:0000001a       InternalMemCopyMem.0       000000000000029a     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:0000002a       @CopyBackward              00000000000002aa     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000033       @CopyBytes                 00000000000002b3     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:000002fc       LegacyBiosInstalled        000000000000057c f   IncompatiblePciDeviceSupportDxe:IncompatiblePciDeviceSupport.obj
+ 0001:00000394       CheckDevice                0000000000000614 f   IncompatiblePciDeviceSupportDxe:IncompatiblePciDeviceSupport.obj
+ 0002:00000178       mConfiguration             0000000000001bb8     IncompatiblePciDeviceSupportDxe:IncompatiblePciDeviceSupport.obj
+ 0003:00000058       mIncompatiblePciDeviceSupport 00000000000028b8     IncompatiblePciDeviceSupportDxe:IncompatiblePciDeviceSupport.obj
+ 0003:00000060       mLegacyBiosInstalled       00000000000028c0     IncompatiblePciDeviceSupportDxe:IncompatiblePciDeviceSupport.obj
+ 0003:00000061       mCheckDeviceCalled         00000000000028c1     IncompatiblePciDeviceSupportDxe:IncompatiblePciDeviceSupport.obj
+ 0005:00000000       $unwind$AsciiStrLen        00000000000029c0     BaseLib:String.obj
+ 0005:00000000       $unwind$CopyMem            00000000000029c0     BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0005:00000000       $unwind$_ModuleEntryPoint  00000000000029c0     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0005:0000000c       $unwind$ProcessModuleEntryPointList 00000000000029cc     IncompatiblePciDeviceSupportDxe:AutoGen.obj
+ 0005:00000018       $unwind$StrnLenS           00000000000029d8     BaseLib:SafeString.obj
+ 0005:00000018       $unwind$LegacyBiosInstalled 00000000000029d8     IncompatiblePciDeviceSupportDxe:IncompatiblePciDeviceSupport.obj
+ 0005:00000020       $unwind$CheckDevice        00000000000029e0     IncompatiblePciDeviceSupportDxe:IncompatiblePciDeviceSupport.obj
+ 0005:00000030       $unwind$GetPcdProtocol     00000000000029f0     DxePcdLib:DxePcdLib.obj
+ 0005:00000030       $unwind$InternalAllocateCopyPool 00000000000029f0     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0005:00000038       $unwind$DebugPrint         00000000000029f8     BaseDebugLibSerialPort:DebugLib.obj
+ 0005:00000040       $unwind$DebugPrintMarker   0000000000002a00     BaseDebugLibSerialPort:DebugLib.obj
+ 0005:00000054       $unwind$DebugAssert        0000000000002a14     BaseDebugLibSerialPort:DebugLib.obj
+ 0005:0000005c       $unwind$InternalAllocatePool 0000000000002a1c     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0005:00000064       $unwind$AsciiSPrint        0000000000002a24     BasePrintLib:PrintLib.obj
+ 0005:0000006c       $unwind$BasePrintLibValueToString 0000000000002a2c     BasePrintLib:PrintLibInternal.obj
+ 0005:0000007c       $unwind$BasePrintLibSPrintMarker 0000000000002a3c     BasePrintLib:PrintLibInternal.obj
+ 0005:00000098       $unwind$BasePrintLibSPrint 0000000000002a58     BasePrintLib:PrintLibInternal.obj

@@ -1,0 +1,4 @@
+gCommandLineDefines: {'ARCH': 'X64'}
+BuildOptionPcd: []
+Active Platform: d:\edk2\edk2\OvmfPkg\OvmfPkgX64.dsc
+Flash Image Definition: d:\edk2\edk2\OvmfPkg\OvmfPkgX64.fdf

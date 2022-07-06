@@ -1,0 +1,1 @@
+  d:\edk2\edk2\SecurityPkg\Tcg\Tcg2PlatformPei\Tcg2PlatformPei.c d:\edk2\edk2\Build\OvmfX64\DEBUG_VS2019\X64\SecurityPkg\Tcg\Tcg2PlatformPei\Tcg2PlatformPei\DEBUG\AutoGen.c

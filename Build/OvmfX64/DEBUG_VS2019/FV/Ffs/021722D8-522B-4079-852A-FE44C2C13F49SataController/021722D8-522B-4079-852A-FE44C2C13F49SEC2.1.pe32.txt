@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_PE32 -o d:\edk2\edk2\Build\OvmfX64\DEBUG_VS2019\FV\Ffs\021722D8-522B-4079-852A-FE44C2C13F49SataController\021722D8-522B-4079-852A-FE44C2C13F49SEC2.1.pe32 d:\edk2\edk2\Build\OvmfX64\DEBUG_VS2019\X64\OvmfPkg\SataControllerDxe\SataControllerDxe\OUTPUT\SataController.efi

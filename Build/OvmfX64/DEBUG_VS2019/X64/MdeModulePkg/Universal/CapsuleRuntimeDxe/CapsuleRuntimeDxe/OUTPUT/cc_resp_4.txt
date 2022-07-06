@@ -1,0 +1,1 @@
+  d:\edk2\edk2\MdeModulePkg\Universal\CapsuleRuntimeDxe\CapsuleService.c d:\edk2\edk2\MdeModulePkg\Universal\CapsuleRuntimeDxe\CapsuleReset.c d:\edk2\edk2\MdeModulePkg\Universal\CapsuleRuntimeDxe\CapsuleCache.c d:\edk2\edk2\Build\OvmfX64\DEBUG_VS2019\X64\MdeModulePkg\Universal\CapsuleRuntimeDxe\CapsuleRuntimeDxe\DEBUG\AutoGen.c

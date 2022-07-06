@@ -1,0 +1,512 @@
+ Tcg2Pei
+
+ Timestamp is 62b5736e (Fri Jun 24 16:18:54 2022)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000170H .text                   CODE
+ 0001:00000170 00009ef7H .text$mn                CODE
+ 0002:00000000 00002834H .rdata                  DATA
+ 0002:00002834 00000084H .rdata$voltmd           DATA
+ 0002:000028b8 00000134H .rdata$zzzdbg           DATA
+ 0003:00000000 00000348H .data                   DATA
+ 0003:00000348 00000050H .bss                    DATA
+ 0004:00000000 000004ecH .pdata                  DATA
+ 0005:00000000 000003bcH .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __x64_code_ranges_to_entry_points 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata 0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_table          0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_count          0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_table      0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_count      0000000000000000     <absolute>
+ 0000:00000000       __dynamic_value_reloc_table 0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points_count 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat     0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat_copy 0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_count         0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table   0000000000000000     <absolute>
+ 0000:00000000       __AbsoluteZero             0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map          0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table_size 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map_count    0000000000000000     <absolute>
+ 0000:00000000       __guard_check_icall_a64n_fptr 0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_table         0000000000000000     <absolute>
+ 0000:00000000       __guard_flags              0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_count      0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata_count 0000000000000000     <absolute>
+ 0000:00000000       __enclave_config           0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_table      0000000000000000     <absolute>
+ 0000:00000000       __arm64x_native_entrypoint 0000000000000000     <absolute>
+ 0000:00000000       __ImageBase                0000000000000000     <linker-defined>
+ 0001:00000000       InternalMemCopyMem         00000000000002c0     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000040       InternalMemZeroMem         0000000000000300     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00000060       CpuPause                   0000000000000320     BaseLib:CpuPause.obj
+ 0001:00000070       InternalMemSetMem          0000000000000330     BaseMemoryLibRepStr:SetMem.obj
+ 0001:00000090       InternalMemIsZeroBuffer    0000000000000350     BaseMemoryLibRepStr:IsZeroBuffer.obj
+ 0001:000000c0       InternalMemSetMem64        0000000000000380     BaseMemoryLibRepStr:SetMem64.obj
+ 0001:000000e0       InternalMemSetMem32        00000000000003a0     BaseMemoryLibRepStr:SetMem32.obj
+ 0001:00000100       InternalX86ReadIdtr        00000000000003c0     BaseLib:ReadIdtr.obj
+ 0001:00000110       InternalX86WriteIdtr       00000000000003d0     BaseLib:WriteIdtr.obj
+ 0001:00000120       EnableInterrupts           00000000000003e0     BaseLib:EnableInterrupts.obj
+ 0001:00000130       DisableInterrupts          00000000000003f0     BaseLib:DisableInterrupts.obj
+ 0001:00000140       AsmReadEflags              0000000000000400     BaseLib:ReadEflags.obj
+ 0001:00000150       InternalMemCompareMem      0000000000000410     BaseMemoryLibRepStr:CompareMem.obj
+ 0001:00000170       _ModuleEntryPoint          0000000000000430 f   PeimEntryPoint:PeimEntryPoint.obj
+ 0001:0000019c       ProcessLibraryConstructorList 000000000000045c f   Tcg2Pei:AutoGen.obj
+ 0001:00000600       EndofPeiSignalNotifyCallBack 00000000000008c0 f   Tcg2Pei:Tcg2Pei.obj
+ 0001:00000684       SyncPcrAllocationsAndPcrMask 0000000000000944 f   Tcg2Pei:Tcg2Pei.obj
+ 0001:0000093c       LogHashEvent               0000000000000bfc f   Tcg2Pei:Tcg2Pei.obj
+ 0001:00000b54       HashLogExtendEvent         0000000000000e14 f   Tcg2Pei:Tcg2Pei.obj
+ 0001:00000cb0       MeasureFvImage             0000000000000f70 f   Tcg2Pei:Tcg2Pei.obj
+ 0001:000010a8       FirmwareVolumeInfoPpiNotifyCallback 0000000000001368 f   Tcg2Pei:Tcg2Pei.obj
+ 0001:000011a0       PeimEntryMP                0000000000001460 f   Tcg2Pei:Tcg2Pei.obj
+ 0001:00001364       PeimEntryMA                0000000000001624 f   Tcg2Pei:Tcg2Pei.obj
+ 0001:0000173c       GetPcdPpiPointer           00000000000019fc f   PeiPcdLib:PeiPcdLib.obj
+ 0001:00001790       StrSize                    0000000000001a50 f   BaseLib:String.obj
+ 0001:00001818       AsciiStrLen                0000000000001ad8 f   BaseLib:String.obj
+ 0001:00001884       StrnLenS                   0000000000001b44 f   BaseLib:SafeString.obj
+ 0001:000018dc       InternalAllocatePages      0000000000001b9c f   PeiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:0000191c       AllocatePool               0000000000001bdc f   PeiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00001958       InternalAllocateZeroPool   0000000000001c18 f   PeiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00001998       InternalReallocatePool     0000000000001c58 f   PeiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:000019f8       CopyMem                    0000000000001cb8 f   BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0001:00001a94       ZeroMem                    0000000000001d54 f   BaseMemoryLibRepStr:ZeroMemWrapper.obj
+ 0001:00001b04       CopyGuid                   0000000000001dc4 f   BaseMemoryLibRepStr:MemLibGuid.obj
+ 0001:00001bb4       CompareGuid                0000000000001e74 f   BaseMemoryLibRepStr:MemLibGuid.obj
+ 0001:00001c78       PeiServicesLocatePpi       0000000000001f38 f   PeiServicesLib:PeiServicesLib.obj
+ 0001:00001cc0       GetHobList                 0000000000001f80 f   PeiHobLib:HobLib.obj
+ 0001:00001d34       GetNextGuidHob             0000000000001ff4 f   PeiHobLib:HobLib.obj
+ 0001:00001dc0       InternalPeiCreateHob       0000000000002080 f   PeiHobLib:HobLib.obj
+ 0001:00001e24       BuildGuidHob               00000000000020e4 f   PeiHobLib:HobLib.obj
+ 0001:00001ea0       AsciiSPrint                0000000000002160 f   BasePrintLib:PrintLib.obj
+ 0001:00001ecc       BasePrintLibFillBuffer     000000000000218c f   BasePrintLib:PrintLibInternal.obj
+ 0001:00001f00       BasePrintLibValueToString  00000000000021c0 f   BasePrintLib:PrintLibInternal.obj
+ 0001:00001f50       BasePrintLibSPrintMarker   0000000000002210 f   BasePrintLib:PrintLibInternal.obj
+ 0001:00002e5c       BasePrintLibSPrint         000000000000311c f   BasePrintLib:PrintLibInternal.obj
+ 0001:00002e80       DebugPrint                 0000000000003140 f   BaseDebugLibSerialPort:DebugLib.obj
+ 0001:00002ea4       DebugPrintMarker           0000000000003164 f   BaseDebugLibSerialPort:DebugLib.obj
+ 0001:00002f54       DebugAssert                0000000000003214 f   BaseDebugLibSerialPort:DebugLib.obj
+ 0001:00002fcc       Tpm2SubmitCommand          000000000000328c f   Tpm2DeviceLibDTpm:Tpm2DeviceLibDTpm.obj
+ 0001:00003058       PtpCrbWaitRegisterBits     0000000000003318 f   Tpm2DeviceLibDTpm:Tpm2Ptp.obj
+ 0001:000030d4       PtpCrbTpmCommand           0000000000003394 f   Tpm2DeviceLibDTpm:Tpm2Ptp.obj
+ 0001:00003494       TisPcWaitRegisterBits      0000000000003754 f   Tpm2DeviceLibDTpm:Tpm2Tis.obj
+ 0001:00003510       TisPcReadBurstCount        00000000000037d0 f   Tpm2DeviceLibDTpm:Tpm2Tis.obj
+ 0001:00003598       Tpm2TisTpmCommand          0000000000003858 f   Tpm2DeviceLibDTpm:Tpm2Tis.obj
+ 0001:00003978       Tpm2PcrExtend              0000000000003c38 f   Tpm2CommandLib:Tpm2Integrity.obj
+ 0001:00003c80       Tpm2PcrRead                0000000000003f40 f   Tpm2CommandLib:Tpm2Integrity.obj
+ 0001:00003f94       Tpm2PcrAllocate            0000000000004254 f   Tpm2CommandLib:Tpm2Integrity.obj
+ 0001:00004260       Tpm2PcrAllocateBanks       0000000000004520 f   Tpm2CommandLib:Tpm2Integrity.obj
+ 0001:00004574       Tpm2PcrReadForActiveBank   0000000000004834 f   Tpm2CommandLib:Tpm2Integrity.obj
+ 0001:00004888       CopyAuthSessionCommand     0000000000004b48 f   Tpm2CommandLib:Tpm2Help.obj
+ 0001:00004a28       CopyDigestListToBuffer     0000000000004ce8 f   Tpm2CommandLib:Tpm2Help.obj
+ 0001:00004b70       Tpm2Startup                0000000000004e30 f   Tpm2CommandLib:Tpm2Startup.obj
+ 0001:00004c24       Tpm2GetCapability          0000000000004ee4 f   Tpm2CommandLib:Tpm2Capability.obj
+ 0001:00004d18       Tpm2GetCapabilityPcrs      0000000000004fd8 f   Tpm2CommandLib:Tpm2Capability.obj
+ 0001:00004e20       Tpm2GetCapabilitySupportedAndActivePcrs 00000000000050e0 f   Tpm2CommandLib:Tpm2Capability.obj
+ 0001:00005060       InternalGetHashInterfaceHob 0000000000005320 f   HashLibBaseCryptoRouterPei:HashLibBaseCryptoRouterPei.obj
+ 0001:000050c0       InternalCreateHashInterfaceHob 0000000000005380 f   HashLibBaseCryptoRouterPei:HashLibBaseCryptoRouterPei.obj
+ 0001:00005124       CheckSupportedHashMaskMismatch 00000000000053e4 f   HashLibBaseCryptoRouterPei:HashLibBaseCryptoRouterPei.obj
+ 0001:000051a0       HashStart                  0000000000005460 f   HashLibBaseCryptoRouterPei:HashLibBaseCryptoRouterPei.obj
+ 0001:00005288       HashUpdate                 0000000000005548 f   HashLibBaseCryptoRouterPei:HashLibBaseCryptoRouterPei.obj
+ 0001:00005340       HashCompleteAndExtend      0000000000005600 f   HashLibBaseCryptoRouterPei:HashLibBaseCryptoRouterPei.obj
+ 0001:0000544c       RegisterHashInterfaceLib   000000000000570c f   HashLibBaseCryptoRouterPei:HashLibBaseCryptoRouterPei.obj
+ 0001:000055bc       Tpm2GetHashMaskFromAlgo    000000000000587c f   HashLibBaseCryptoRouterPei:HashLibBaseCryptoRouterCommon.obj
+ 0001:00005630       InternalReportStatusCode   00000000000058f0 f   PeiReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0001:00005680       ResetCold                  0000000000005940 f   BaseResetSystemLib:ResetSystemLib.obj
+ 0001:000056b8       Sha1HashInit               0000000000005978 f   HashInstanceLibSha1:HashInstanceLibSha1.obj
+ 0001:00005730       Sha1HashUpdate             00000000000059f0 f   HashInstanceLibSha1:HashInstanceLibSha1.obj
+ 0001:00005750       Sha1HashFinal              0000000000005a10 f   HashInstanceLibSha1:HashInstanceLibSha1.obj
+ 0001:00005794       Sha256HashInit             0000000000005a54 f   HashInstanceLibSha256:HashInstanceLibSha256.obj
+ 0001:000057e4       Sha256HashUpdate           0000000000005aa4 f   HashInstanceLibSha256:HashInstanceLibSha256.obj
+ 0001:00005804       Sha256HashFinal            0000000000005ac4 f   HashInstanceLibSha256:HashInstanceLibSha256.obj
+ 0001:00005848       Sha384HashInit             0000000000005b08 f   HashInstanceLibSha384:HashInstanceLibSha384.obj
+ 0001:00005898       Sha384HashUpdate           0000000000005b58 f   HashInstanceLibSha384:HashInstanceLibSha384.obj
+ 0001:00005898       Sha512HashUpdate           0000000000005b58 f   HashInstanceLibSha512:HashInstanceLibSha512.obj
+ 0001:000058b8       Sha384HashFinal            0000000000005b78 f   HashInstanceLibSha384:HashInstanceLibSha384.obj
+ 0001:000058fc       Sha512HashInit             0000000000005bbc f   HashInstanceLibSha512:HashInstanceLibSha512.obj
+ 0001:0000594c       Sha512HashFinal            0000000000005c0c f   HashInstanceLibSha512:HashInstanceLibSha512.obj
+ 0001:00005990       Sm3HashInit                0000000000005c50 f   HashInstanceLibSm3:HashInstanceLibSm3.obj
+ 0001:000059d4       Sm3HashUpdate              0000000000005c94 f   HashInstanceLibSm3:HashInstanceLibSm3.obj
+ 0001:000059f4       Sm3HashFinal               0000000000005cb4 f   HashInstanceLibSm3:HashInstanceLibSm3.obj
+ 0001:00005a38       DivU64x32Remainder         0000000000005cf8 f   BaseLib:DivU64x32Remainder.obj
+ 0001:00005a98       GetPeiServicesTablePointer 0000000000005d58 f   PeiServicesTablePointerLibIdt:PeiServicesTablePointer.obj
+ 0001:00005ad8       SetMem                     0000000000005d98 f   BaseMemoryLibRepStr:SetMemWrapper.obj
+ 0001:00005b30       IsZeroBuffer               0000000000005df0 f   BaseMemoryLibRepStr:IsZeroBufferWrapper.obj
+ 0001:00005b9c       IoRead32                   0000000000005e5c f   BaseIoLibIntrinsicSev:IoLibMsc.obj
+ 0001:00005bd0       IoWrite32                  0000000000005e90 f   BaseIoLibIntrinsicSev:IoLibMsc.obj
+ 0001:00005c10       MmioRead32                 0000000000005ed0 f   BaseIoLibIntrinsicSev:IoLib.obj
+ 0001:00005c40       MmioWrite32                0000000000005f00 f   BaseIoLibIntrinsicSev:IoLib.obj
+ 0001:00005c7c       PciOr8                     0000000000005f3c f   BasePciLibCf8:PciLib.obj
+ 0001:00005d4c       PciAndThenOr32             000000000000600c f   BasePciLibCf8:PciLib.obj
+ 0001:00005e18       InternalAcpiDelay          00000000000060d8 f   BaseAcpiTimerLib:AcpiTimerLib.obj
+ 0001:00005e7c       MicroSecondDelay           000000000000613c f   BaseAcpiTimerLib:AcpiTimerLib.obj
+ 0001:00005eb0       PciCf8Read8                0000000000006170 f   BasePciCf8Lib:PciCf8Lib.obj
+ 0001:00005f64       PciCf8Read16               0000000000006224 f   BasePciCf8Lib:PciCf8Lib.obj
+ 0001:00005fd8       PciCf8Read32               0000000000006298 f   BasePciCf8Lib:PciCf8Lib.obj
+ 0001:00006084       SHA1_Update                0000000000006344 f   OpensslLib:sha1dgst.obj
+ 0001:00006198       SHA1_Final                 0000000000006458 f   OpensslLib:sha1dgst.obj
+ 0001:000065b4       SHA256_Init                0000000000006874 f   OpensslLib:sha256.obj
+ 0001:00006610       SHA256_Update              00000000000068d0 f   OpensslLib:sha256.obj
+ 0001:00006724       SHA256_Final               00000000000069e4 f   OpensslLib:sha256.obj
+ 0001:00006bf8       SHA384_Init                0000000000006eb8 f   OpensslLib:sha512.obj
+ 0001:00006c88       SHA512_Init                0000000000006f48 f   OpensslLib:sha512.obj
+ 0001:00006d18       SHA512_Final               0000000000006fd8 f   OpensslLib:sha512.obj
+ 0001:00007050       SHA512_Update              0000000000007310 f   OpensslLib:sha512.obj
+ 0001:000075bc       sm3_update                 000000000000787c f   OpensslLib:sm3.obj
+ 0001:000076d0       sm3_final                  0000000000007990 f   OpensslLib:sm3.obj
+ 0001:000078fc       sm3_init                   0000000000007bbc f   OpensslLib:sm3.obj
+ 0001:00007954       sm3_block_data_order       0000000000007c14 f   OpensslLib:sm3.obj
+ 0001:0000a02c       SaveAndDisableInterrupts   000000000000a2ec f   BaseLib:Cpu.obj
+ 0001:0000a050       memset                     000000000000a310 f   BaseIntrinsicLib:MemoryIntrinsics.obj
+ 0002:00000000       ??_C@_07ONBIJFB@Tcg2Pei@   000000000000a340     Tcg2Pei:AutoGen.obj
+ 0002:00000008       ??_C@_0CE@IBFOBMLB@?6ASSERT_RETURN_ERROR?5?$CIStatus?5?$DN?5@ 000000000000a348     Tcg2Pei:AutoGen.obj
+ 0002:00000030       ??_C@_0CH@BBNBJKHK@?$CB?$CI?$CI?$CIINTN?$CJ?$CIRETURN_STATUS?$CJ?$CIStatus@ 000000000000a370     Tcg2Pei:AutoGen.obj
+ 0002:00000060       ??_C@_0FM@FLICGDMN@d?3?2edk2?2edk2?2Build?2OvmfX64?2DEBU@ 000000000000a3a0     Tcg2Pei:AutoGen.obj
+ 0002:000000c0       ??_C@_0CB@DMEJJJHA@?6ASSERT_EFI_ERROR?5?$CIStatus?5?$DN?5?$CFr?$CJ@ 000000000000a400     Tcg2Pei:AutoGen.obj
+ 0002:000000e4       _gPcd_FixedAtBuild_PcdFirmwareVersionString 000000000000a424     Tcg2Pei:AutoGen.obj
+ 0002:000000e8       ??_C@_0BP@OHGLGOKD@SyncPcrAllocationsAndPcrMask?$CB?6@ 000000000000a428     Tcg2Pei:Tcg2Pei.obj
+ 0002:00000108       ??_C@_0CP@CLBBJANJ@d?3?2edk2?2edk2?2SecurityPkg?2Tcg?2Tc@ 000000000000a448     Tcg2Pei:Tcg2Pei.obj
+ 0002:00000140       ??_C@_0EK@EECHCKLL@Tpm2GetCapabilitySupportedAndAc@ 000000000000a480     Tcg2Pei:Tcg2Pei.obj
+ 0002:00000190       ??_C@_0EE@BJJFLCMD@Tpm2GetCapabilitySupportedAndAc@ 000000000000a4d0     Tcg2Pei:Tcg2Pei.obj
+ 0002:000001d8       ??_C@_0BE@MGHKPBLJ@Tpm2PcrMask?50x?$CF08x?6@ 000000000000a518     Tcg2Pei:Tcg2Pei.obj
+ 0002:000001f0       ??_C@_0CB@FBIJGCGP@Tcg2HashAlgorithmBitmap?3?50x?$CF08x@ 000000000000a530     Tcg2Pei:Tcg2Pei.obj
+ 0002:00000218       ??_C@_0CK@FOFOONPJ@TpmActivePcrBanks?5?$CG?5Tpm2PcrMask@ 000000000000a558     Tcg2Pei:Tcg2Pei.obj
+ 0002:00000248       ??_C@_0DG@BNNEEKOE@TpmActivePcrBanks?5?$CG?5BiosHashAlg@ 000000000000a588     Tcg2Pei:Tcg2Pei.obj
+ 0002:00000280       ??_C@_0BN@PLAKJELI@NewTpmActivePcrBanks?50x?$CF08x?6@ 000000000000a5c0     Tcg2Pei:Tcg2Pei.obj
+ 0002:000002a0       ??_C@_0BN@NJDJOFDD@SyncPcrAllocationsAndPcrMask@ 000000000000a5e0     Tcg2Pei:Tcg2Pei.obj
+ 0002:000002c0       ??_C@_0DA@JMFJPMEK@?$CFa?5?9?5Reallocating?5PCR?5banks?5fro@ 000000000000a600     Tcg2Pei:Tcg2Pei.obj
+ 0002:000002f0       ??_C@_0FG@GILEFHHF@?$CFa?5?9?5No?5viable?5PCRs?5active?$CB?5Ple@ 000000000000a630     Tcg2Pei:Tcg2Pei.obj
+ 0002:00000348       ??_C@_0BC@FEDIJHFF@?$CI?$CIBOOLEAN?$CJ?$CI0?$DN?$DN1?$CJ?$CJ@ 000000000000a688     Tcg2Pei:Tcg2Pei.obj
+ 0002:00000360       ??_C@_0FF@LKKBEOBM@Tpm2PcrAllocateBanks?5?$CITpmHashAl@ 000000000000a6a0     Tcg2Pei:Tcg2Pei.obj
+ 0002:000003b8       ??_C@_0CB@GODNMEBD@?$CFa?5?9?5Failed?5to?5reallocate?5PCRs?$CB@ 000000000000a6f8     Tcg2Pei:Tcg2Pei.obj
+ 0002:000003e0       ??_C@_0DC@PEMADFAK@?$CFa?5?9?5Updating?5PcdTpm2HashMask?5f@ 000000000000a720     Tcg2Pei:Tcg2Pei.obj
+ 0002:00000420       ??_C@_0FJ@JFIANALG@?$CFa?5?9?5No?5viable?5PCRs?5supported?$CB?5@ 000000000000a760     Tcg2Pei:Tcg2Pei.obj
+ 0002:00000480       ??_C@_0CA@LCPFFOKA@Set?5PcdTpm2Hash?5Mask?5to?50x?$CF08x?6@ 000000000000a7c0     Tcg2Pei:Tcg2Pei.obj
+ 0002:000004a0       ??_C@_0BG@CLOCNKGL@?5?5LogFormat?5?9?50x?$CF08x?6@ 000000000000a7e0     Tcg2Pei:Tcg2Pei.obj
+ 0002:000004b8       ??_C@_0CH@OPMHCNCB@HashLogExtendEvent?5?9?5?$CFr?4?5Disabl@ 000000000000a7f8     Tcg2Pei:Tcg2Pei.obj
+ 0002:000004e0       ??_C@_0DF@KPKKGDEM@The?5FV?5which?5is?5excluded?5by?5Tcg@ 000000000000a820     Tcg2Pei:Tcg2Pei.obj
+ 0002:00000518       ??_C@_0DI@BJKLCMEH@The?5FV?5which?5is?5excluded?5by?5Tcg@ 000000000000a858     Tcg2Pei:Tcg2Pei.obj
+ 0002:00000550       ??_C@_0DN@JPFCPENC@The?5FV?5which?5is?5already?5measure@ 000000000000a890     Tcg2Pei:Tcg2Pei.obj
+ 0002:00000590       ??_C@_0EA@GDEANPHO@The?5FV?5which?5is?5already?5measure@ 000000000000a8d0     Tcg2Pei:Tcg2Pei.obj
+ 0002:000005d0       ??_C@_0CF@MLHNABBP@Hash?5Algo?5ID?5in?5PrehashedFvPpi?$DN@ 000000000000a910     Tcg2Pei:Tcg2Pei.obj
+ 0002:00000600       ??_C@_0EJ@IFFHKBI@The?5pre?9hashed?5FV?5which?5is?5exte@ 000000000000a940     Tcg2Pei:Tcg2Pei.obj
+ 0002:00000650       ??_C@_0EM@MEBMOMBJ@The?5pre?9hashed?5FV?5which?5is?5exte@ 000000000000a990     Tcg2Pei:Tcg2Pei.obj
+ 0002:000006a0       ??_C@_0DF@HKMMOAJF@The?5FV?5which?5is?5measured?5by?5Tcg@ 000000000000a9e0     Tcg2Pei:Tcg2Pei.obj
+ 0002:000006d8       ??_C@_0DI@CPIMCNMI@The?5FV?5which?5is?5measured?5by?5Tcg@ 000000000000aa18     Tcg2Pei:Tcg2Pei.obj
+ 0002:00000710       ??_C@_0DE@KOJAJGDO@The?5FV?5which?5failed?5to?5be?5measu@ 000000000000aa50     Tcg2Pei:Tcg2Pei.obj
+ 0002:00000748       ??_C@_0CE@JOKAIKFH@mMeasuredBaseFvInfo?5?$CB?$DN?5?$CI?$CIvoid?5?$CK@ 000000000000aa88     Tcg2Pei:Tcg2Pei.obj
+ 0002:00000770       ??_C@_0CF@CHOLMMLM@mMeasuredChildFvInfo?5?$CB?$DN?5?$CI?$CIvoid?5@ 000000000000aab0     Tcg2Pei:Tcg2Pei.obj
+ 0002:00000798       ??_C@_0BM@OPEDFPCD@No?5TPM2?5instance?5required?$CB?6@ 000000000000aad8     Tcg2Pei:Tcg2Pei.obj
+ 0002:000007b8       ??_C@_0N@EKMKLFBJ@TPM2?5error?$CB?6@ 000000000000aaf8     Tcg2Pei:Tcg2Pei.obj
+ 0002:000007c8       ??_C@_0BE@HPIAFEDM@TPM2?5not?5detected?$CB?6@ 000000000000ab08     Tcg2Pei:Tcg2Pei.obj
+ 0002:000007e0       ??_C@_0DB@OHCMHFPO@Separator?5Event?5with?5Error?5not?5@ 000000000000ab20     Tcg2Pei:Tcg2Pei.obj
+ 0002:00000818       ??_C@_0BH@LLMGPIB@TPM2?5error?$CB?5Build?5Hob?6@ 000000000000ab58     Tcg2Pei:Tcg2Pei.obj
+ 0002:00000830       ??_C@_0CI@NNGADICP@?$CB?$CI?$CI?$CIINTN?$CJ?$CIRETURN_STATUS?$CJ?$CIStatus@ 000000000000ab70     Tcg2Pei:Tcg2Pei.obj
+ 0002:00000858       ??_C@_0DC@OFAEFPLN@d?3?2edk2?2edk2?2MdePkg?2Library?2Pei@ 000000000000ab98     PeiPcdLib:PeiPcdLib.obj
+ 0002:00000890       ??_C@_0BF@PEDOPNMP@Guid?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000abd0     PeiPcdLib:PeiPcdLib.obj
+ 0002:000008a8       ??_C@_0BH@IACGKAP@Buffer?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000abe8     PeiPcdLib:PeiPcdLib.obj
+ 0002:000008c0       ??_C@_0BH@MAAHKCPC@String?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000ac00     BaseLib:String.obj
+ 0002:000008d8       ??_C@_0CN@LHBFELAO@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 000000000000ac18     BaseLib:String.obj
+ 0002:00000908       ??_C@_0CC@GFNLNIOC@?$CI?$CIUINTN?$CJString?5?$CG?50x00000001?$CJ?5?$DN?$DN@ 000000000000ac48     BaseLib:String.obj
+ 0002:00000930       ??_C@_0DK@EOJCOAME@Length?5?$DM?5_gPcd_FixedAtBuild_Pcd@ 000000000000ac70     BaseLib:String.obj
+ 0002:00000970       ??_C@_0DI@MDIKFADO@Length?5?$DM?5_gPcd_FixedAtBuild_Pcd@ 000000000000acb0     BaseLib:String.obj
+ 0002:000009a8       ??_C@_0DA@BDDONMJM@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 000000000000ace8     BaseLib:Unaligned.obj
+ 0002:000009d8       ??_C@_0DB@PKFMPMPC@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 000000000000ad18     BaseLib:SafeString.obj
+ 0002:00000a10       ??_C@_0BJ@CNKJJNE@?$CIBuffer?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ@ 000000000000ad50     BaseLib:SafeString.obj
+ 0002:00000a30       ??_C@_0N@KGHEHMDL@Divisor?5?$CB?$DN?50@ 000000000000ad70     BaseLib:DivU64x32.obj
+ 0002:00000a40       ??_C@_0ED@MKGCMJG@?$CILength?5?9?51?$CJ?5?$DM?$DN?5?$CI0xFFFFFFFFFFFF@ 000000000000ad80     BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0002:00000a90       ??_C@_0EB@LOHEEPCE@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 000000000000add0     BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0002:00000ad8       ??_C@_0DO@MAOBOFEG@?$CILength?5?9?51?$CJ?5?$DM?$DN?5?$CI0xFFFFFFFFFFFF@ 000000000000ae18     BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0002:00000b20       ??_C@_0EB@KNGCOOD@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 000000000000ae60     BaseMemoryLibRepStr:ZeroMemWrapper.obj
+ 0002:00000b68       ??_C@_0DG@EEENIGGL@Length?5?$DM?$DN?5?$CI0xFFFFFFFFFFFFFFFFUL@ 000000000000aea8     BaseMemoryLibRepStr:ZeroMemWrapper.obj
+ 0002:00000ba0       ??_C@_0CP@HHPAEFCF@d?3?2edk2?2edk2?2MdePkg?2Library?2Pei@ 000000000000aee0     PeiHobLib:HobLib.obj
+ 0002:00000bd0       ??_C@_0BI@NCGMODPG@HobList?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000af10     PeiHobLib:HobLib.obj
+ 0002:00000be8       ??_C@_0BJ@NOLLDKJB@HobStart?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000af28     PeiHobLib:HobLib.obj
+ 0002:00000c08       ??_C@_0BE@PICCCCHF@Hob?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000af48     PeiHobLib:HobLib.obj
+ 0002:00000c20       ??_C@_0DE@JLBHCAID@DataLength?5?$DM?$DN?5?$CI0xFFF8?5?9?5sizeof?5@ 000000000000af60     PeiHobLib:HobLib.obj
+ 0002:00000c58       ??_C@_0DM@OAJIKNNG@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 000000000000af98     BasePrintLib:PrintLibInternal.obj
+ 0002:00000ca0       ??_C@_0EB@HDGIDCIO@?$CIBufferSize?5?$DM?$DN?5?$CI_gPcd_FixedAtBu@ 000000000000afe0     BasePrintLib:PrintLibInternal.obj
+ 0002:00000ce8       ??_C@_0BJ@PPAKKDJG@?$CIFormat?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ@ 000000000000b028     BasePrintLib:PrintLibInternal.obj
+ 0002:00000d10       ??_C@_0ED@LPDDCECB@?$CIBufferSize?5?$DM?$DN?5?$CI_gPcd_FixedAtBu@ 000000000000b050     BasePrintLib:PrintLibInternal.obj
+ 0002:00000d60       ??_C@_0IM@BFJJFLGB@?$CIStrnLenS?5?$CI?$CICHAR16?5?$CK?$CJFormat?0?5?$CI_@ 000000000000b0a0     BasePrintLib:PrintLibInternal.obj
+ 0002:00000df0       ??_C@_0ID@PLGJGION@?$CIAsciiStrnLenS?5?$CIFormat?0?5?$CI_gPcd_@ 000000000000b130     BasePrintLib:PrintLibInternal.obj
+ 0002:00000e78       ??_C@_0O@MLOLIMFM@?$DMnull?5string?$DO@ 000000000000b1b8     BasePrintLib:PrintLibInternal.obj
+ 0002:00000e88       ??_C@_0M@BJJDNPHK@?$DMnull?5guid?$DO@ 000000000000b1c8     BasePrintLib:PrintLibInternal.obj
+ 0002:00000e98       ??_C@_0DB@PMLHLBMO@?$CF08x?9?$CF04x?9?$CF04x?9?$CF02x?$CF02x?9?$CF02x?$CF02@ 000000000000b1d8     BasePrintLib:PrintLibInternal.obj
+ 0002:00000ed0       ??_C@_0M@LHGBCIKM@?$DMnull?5time?$DO@ 000000000000b210     BasePrintLib:PrintLibInternal.obj
+ 0002:00000ee0       ??_C@_0BK@FCPKCIDD@?$CF02d?1?$CF02d?1?$CF04d?5?5?$CF02d?3?$CF02d@ 000000000000b220     BasePrintLib:PrintLibInternal.obj
+ 0002:00000efc       ??_C@_04JIMNDDED@?$CF08X@  000000000000b23c     BasePrintLib:PrintLibInternal.obj
+ 0002:00000f04       ??_C@_02PCIJFNDE@?$AN?6@   000000000000b244     BasePrintLib:PrintLibInternal.obj
+ 0002:00000f08       ??_C@_01LIIJDEN@?$AN@      000000000000b248     BasePrintLib:PrintLibInternal.obj
+ 0002:00000f10       mWarningString             000000000000b250     BasePrintLib:PrintLibInternal.obj
+ 0002:00000fb0       mErrorString               000000000000b2f0     BasePrintLib:PrintLibInternal.obj
+ 0002:00001270       mHexStr                    000000000000b5b0     BasePrintLib:PrintLibInternal.obj
+ 0002:00001280       ??_C@_0BH@LKMBFCBF@Format?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000b5c0     BaseDebugLibSerialPort:DebugLib.obj
+ 0002:00001298       ??_C@_0DO@CKBIDOOL@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 000000000000b5d8     BaseDebugLibSerialPort:DebugLib.obj
+ 0002:000012d8       ??_C@_0BI@NOCKJDBJ@ASSERT?5?$FL?$CFa?$FN?5?$CFa?$CI?$CFd?$CJ?3?5?$CFa?6@ 000000000000b618     BaseDebugLibSerialPort:DebugLib.obj
+ 0002:000012f0       ??_C@_0BI@HAGPDMHJ@AcpiTimerLibConstructor@ 000000000000b630     BaseAcpiTimerLib:BaseAcpiTimerLib.obj
+ 0002:00001308       ??_C@_0CL@DGCOIACG@?$CFa?3?5Unknown?5Host?5Bridge?5Device?5@ 000000000000b648     BaseAcpiTimerLib:BaseAcpiTimerLib.obj
+ 0002:00001338       ??_C@_0DN@JKEGCPAJ@d?3?2edk2?2edk2?2OvmfPkg?2Library?2Ac@ 000000000000b678     BaseAcpiTimerLib:BaseAcpiTimerLib.obj
+ 0002:00001378       ??_C@_0BJ@CJMMLOKP@PtpCrbTpmCommand?5Send?5?9?5@ 000000000000b6b8     Tpm2DeviceLibDTpm:Tpm2Ptp.obj
+ 0002:00001394       ??_C@_05CNDJFPDP@?$CF02x?5@ 000000000000b6d4     Tpm2DeviceLibDTpm:Tpm2Ptp.obj
+ 0002:000013a0       ??_C@_07ENEOHAFF@?4?4?4?4?4?4?5@ 000000000000b6e0     Tpm2DeviceLibDTpm:Tpm2Ptp.obj
+ 0002:000013a8       ??_C@_01EEMJAFIK@?6@       000000000000b6e8     Tpm2DeviceLibDTpm:Tpm2Ptp.obj
+ 0002:000013b0       ??_C@_0CC@MDBPJIHJ@PtpCrbTpmCommand?5ReceiveHeader?5@ 000000000000b6f0     Tpm2DeviceLibDTpm:Tpm2Ptp.obj
+ 0002:000013d8       ??_C@_0BN@ODJHGIAI@TPM2?3?5TPM_ST_RSP?5error?5?9?5?$CFx?6@ 000000000000b718     Tpm2DeviceLibDTpm:Tpm2Ptp.obj
+ 0002:000013f8       ??_C@_0BM@OEDBGOFI@PtpCrbTpmCommand?5Receive?5?9?5@ 000000000000b738     Tpm2DeviceLibDTpm:Tpm2Ptp.obj
+ 0002:00001418       ??_C@_0BK@DEFHLCN@Tpm2TisTpmCommand?5Send?5?9?5@ 000000000000b758     Tpm2DeviceLibDTpm:Tpm2Tis.obj
+ 0002:00001438       ??_C@_0CA@EFLHBKC@Tpm2?5is?5not?5ready?5for?5command?$CB?6@ 000000000000b778     Tpm2DeviceLibDTpm:Tpm2Tis.obj
+ 0002:00001458       ??_C@_0CB@IMPHHLJO@Tpm2?5The?5send?5buffer?5too?5small?$CB@ 000000000000b798     Tpm2DeviceLibDTpm:Tpm2Tis.obj
+ 0002:00001480       ??_C@_0EG@FDBJOBLO@Wait?5for?5Tpm2?5response?5data?5tim@ 000000000000b7c0     Tpm2DeviceLibDTpm:Tpm2Tis.obj
+ 0002:000014c8       ??_C@_0CD@CEDHAJC@Tpm2TisTpmCommand?5ReceiveHeader@ 000000000000b808     Tpm2DeviceLibDTpm:Tpm2Tis.obj
+ 0002:000014f0       ??_C@_0BN@CEGJLJBD@Tpm2TisTpmCommand?5Receive?5?9?5@ 000000000000b830     Tpm2DeviceLibDTpm:Tpm2Tis.obj
+ 0002:00001510       ??_C@_0BM@MHPCHHCG@Unknown?5hash?5algorithm?5?$CFd?$AN?6@ 000000000000b850     Tpm2CommandLib:Tpm2Integrity.obj
+ 0002:00001530       ??_C@_0DE@JIFMGPNA@Tpm2PcrExtend?5?9?5Hash?5?$DN?50x?$CF04x?0?5@ 000000000000b870     Tpm2CommandLib:Tpm2Integrity.obj
+ 0002:00001568       ??_C@_0DJ@LNLDEGHP@Tpm2PcrExtend?3?5Failed?5ExecuteCo@ 000000000000b8a8     Tpm2CommandLib:Tpm2Integrity.obj
+ 0002:000015a8       ??_C@_0CN@LMKGIIJM@Tpm2PcrExtend?3?5Response?5size?5to@ 000000000000b8e8     Tpm2CommandLib:Tpm2Integrity.obj
+ 0002:000015d8       ??_C@_0CN@NCCLKBKF@Tpm2PcrExtend?3?5Response?5Code?5er@ 000000000000b918     Tpm2CommandLib:Tpm2Integrity.obj
+ 0002:00001608       ??_C@_0CJ@ECHHHJDP@Tpm2PcrExtend?3?5PCR?5read?5after?5e@ 000000000000b948     Tpm2CommandLib:Tpm2Integrity.obj
+ 0002:00001638       ??_C@_0CJ@PGFBJEMK@Tpm2PcrRead?5?9?5RecvBufferSize?5Er@ 000000000000b978     Tpm2CommandLib:Tpm2Integrity.obj
+ 0002:00001668       ??_C@_0CB@DLCFHPBJ@Tpm2PcrRead?5?9?5responseCode?5?9?5?$CFx@ 000000000000b9a8     Tpm2CommandLib:Tpm2Integrity.obj
+ 0002:00001690       ??_C@_0CP@NBJFDMND@Tpm2PcrRead?5?9?5PcrSelectionOut?9?$DO@ 000000000000b9d0     Tpm2CommandLib:Tpm2Integrity.obj
+ 0002:000016c0       ??_C@_0CJ@KMDBDOAD@Tpm2PcrRead?5?9?5PcrValues?9?$DOcount?5@ 000000000000ba00     Tpm2CommandLib:Tpm2Integrity.obj
+ 0002:000016f0       ??_C@_0CE@BCEDLKCF@Tpm2PcrRead?5?9?5Digest?4size?5error@ 000000000000ba30     Tpm2CommandLib:Tpm2Integrity.obj
+ 0002:00001718       ??_C@_0DL@DBKBDPPL@Tpm2PcrAllocate?3?5Failed?5Execute@ 000000000000ba58     Tpm2CommandLib:Tpm2Integrity.obj
+ 0002:00001758       ??_C@_0CP@DCLJKMPG@Tpm2PcrAllocate?3?5Response?5size?5@ 000000000000ba98     Tpm2CommandLib:Tpm2Integrity.obj
+ 0002:00001788       ??_C@_0CP@FMDEIFMP@Tpm2PcrAllocate?3?5Response?5Code?5@ 000000000000bac8     Tpm2CommandLib:Tpm2Integrity.obj
+ 0002:000017b8       ??_C@_0DA@HGIPLNNI@Tpm2PcrAllocateBanks?5call?5Tpm2P@ 000000000000baf8     Tpm2CommandLib:Tpm2Integrity.obj
+ 0002:000017e8       ??_C@_0BK@FDFAHDJM@AllocationSuccess?5?9?5?$CF02x?6@ 000000000000bb28     Tpm2CommandLib:Tpm2Integrity.obj
+ 0002:00001808       ??_C@_0BK@EIKCBKJE@MaxPCR?5?5?5?5?5?5?5?5?5?5?5?5?9?5?$CF08x?6@ 000000000000bb48     Tpm2CommandLib:Tpm2Integrity.obj
+ 0002:00001828       ??_C@_0BK@GIKFINBJ@SizeNeeded?5?5?5?5?5?5?5?5?9?5?$CF08x?6@ 000000000000bb68     Tpm2CommandLib:Tpm2Integrity.obj
+ 0002:00001848       ??_C@_0BK@BCGEBCMN@SizeAvailable?5?5?5?5?5?9?5?$CF08x?6@ 000000000000bb88     Tpm2CommandLib:Tpm2Integrity.obj
+ 0002:00001868       ??_C@_0BA@MDABNICF@ReadPcr?5?9?5?$CF02d?6@ 000000000000bba8     Tpm2CommandLib:Tpm2Integrity.obj
+ 0002:00001878       ??_C@_0CK@DFOCBOIL@ReadPcr?3?5Unable?5to?5read?5TPM?5cap@ 000000000000bbb8     Tpm2CommandLib:Tpm2Integrity.obj
+ 0002:000018a8       ??_C@_0DK@BJOKDEJP@ReadPcr?3?5Unable?5to?5read?5TPM?5cap@ 000000000000bbe8     Tpm2CommandLib:Tpm2Integrity.obj
+ 0002:000018e8       ??_C@_0BH@OKAIJFLG@HASH_ALG_SHA1?5Present?6@ 000000000000bc28     Tpm2CommandLib:Tpm2Integrity.obj
+ 0002:00001900       ??_C@_0BJ@EJJMBKPH@HASH_ALG_SHA256?5Present?6@ 000000000000bc40     Tpm2CommandLib:Tpm2Integrity.obj
+ 0002:00001920       ??_C@_0BJ@FCMJHLFN@HASH_ALG_SHA384?5Present?6@ 000000000000bc60     Tpm2CommandLib:Tpm2Integrity.obj
+ 0002:00001940       ??_C@_0BJ@IHDAFEFC@HASH_ALG_SHA512?5Present?6@ 000000000000bc80     Tpm2CommandLib:Tpm2Integrity.obj
+ 0002:00001960       ??_C@_0BG@GPCMGCKL@HASH_ALG_SM3?5Present?6@ 000000000000bca0     Tpm2CommandLib:Tpm2Integrity.obj
+ 0002:00001978       ??_C@_0BL@MHPODEH@Unknown?5algorithm?5present?6@ 000000000000bcb8     Tpm2CommandLib:Tpm2Integrity.obj
+ 0002:00001998       ??_C@_0CP@EMMDNLEL@Skipping?5unsupported?5or?5inactiv@ 000000000000bcd8     Tpm2CommandLib:Tpm2Integrity.obj
+ 0002:000019c8       ??_C@_0CB@CAFLPCJO@Tpm2PcrRead?5failed?5Status?5?$DN?5?$CFr?5@ 000000000000bd08     Tpm2CommandLib:Tpm2Integrity.obj
+ 0002:000019f0       ??_C@_0DB@FNLPEDPC@ReadPcr?5?9?5HashAlg?5?$DN?50x?$CF04x?0?5Pcr@ 000000000000bd30     Tpm2CommandLib:Tpm2Integrity.obj
+ 0002:00001a30       ??_C@_0EE@DHPAEMCB@WARNING?3?5TPM2?5Event?5log?5has?5Has@ 000000000000bd70     Tpm2CommandLib:Tpm2Help.obj
+ 0002:00001a78       ??_C@_0BN@DIGDEODD@TPM2Startup?3?5TPM_RC_SUCCESS?6@ 000000000000bdb8     Tpm2CommandLib:Tpm2Startup.obj
+ 0002:00001a98       ??_C@_0CA@EKCELCOD@TPM2Startup?3?5TPM_RC_INITIALIZE?6@ 000000000000bdd8     Tpm2CommandLib:Tpm2Startup.obj
+ 0002:00001ab8       ??_C@_0CL@FCCCJJAF@Tpm2Startup?3?5Response?5Code?5erro@ 000000000000bdf8     Tpm2CommandLib:Tpm2Startup.obj
+ 0002:00001ae8       ??_C@_0DB@KOKONOLJ@Tpm2GetCapability?3?5Response?5Cod@ 000000000000be28     Tpm2CommandLib:Tpm2Capability.obj
+ 0002:00001b20       ??_C@_0CO@ILJMKKED@Tpm2GetCapabilityPcrs?5?9?5Pcrs?9?$DOc@ 000000000000be60     Tpm2CommandLib:Tpm2Capability.obj
+ 0002:00001b50       ??_C@_0CP@CPHIDBJG@Tpm2GetCapabilityPcrs?5?9?5sizeofS@ 000000000000be90     Tpm2CommandLib:Tpm2Capability.obj
+ 0002:00001b80       ??_C@_0BP@FKHNCPFE@Supported?5PCRs?5?9?5Count?5?$DN?5?$CF08x?6@ 000000000000bec0     Tpm2CommandLib:Tpm2Capability.obj
+ 0002:00001ba0       ??_C@_0DJ@KDPBCIB@GetSupportedAndActivePcrs?5?9?5Tpm@ 000000000000bee0     Tpm2CommandLib:Tpm2Capability.obj
+ 0002:00001be0       ??_C@_0DE@MHAKPNCH@GetSupportedAndActivePcrs?5?9?5HAS@ 000000000000bf20     Tpm2CommandLib:Tpm2Capability.obj
+ 0002:00001c18       ??_C@_0DD@DFEMILPG@GetSupportedAndActivePcrs?5?9?5HAS@ 000000000000bf58     Tpm2CommandLib:Tpm2Capability.obj
+ 0002:00001c50       ??_C@_0DG@DAFMMDHA@GetSupportedAndActivePcrs?5?9?5HAS@ 000000000000bf90     Tpm2CommandLib:Tpm2Capability.obj
+ 0002:00001c88       ??_C@_0DF@BCFIBGC@GetSupportedAndActivePcrs?5?9?5HAS@ 000000000000bfc8     Tpm2CommandLib:Tpm2Capability.obj
+ 0002:00001cc0       ??_C@_0DG@GEENMOH@GetSupportedAndActivePcrs?5?9?5HAS@ 000000000000c000     Tpm2CommandLib:Tpm2Capability.obj
+ 0002:00001cf8       ??_C@_0DF@BKHAOAMI@GetSupportedAndActivePcrs?5?9?5HAS@ 000000000000c038     Tpm2CommandLib:Tpm2Capability.obj
+ 0002:00001d30       ??_C@_0DG@JGCODIFJ@GetSupportedAndActivePcrs?5?9?5HAS@ 000000000000c070     Tpm2CommandLib:Tpm2Capability.obj
+ 0002:00001d68       ??_C@_0DF@MPIJMPMH@GetSupportedAndActivePcrs?5?9?5HAS@ 000000000000c0a8     Tpm2CommandLib:Tpm2Capability.obj
+ 0002:00001da0       ??_C@_0DH@FCPDMLJN@GetSupportedAndActivePcrs?5?9?5HAS@ 000000000000c0e0     Tpm2CommandLib:Tpm2Capability.obj
+ 0002:00001dd8       ??_C@_0DG@HDDALDDO@GetSupportedAndActivePcrs?5?9?5HAS@ 000000000000c118     Tpm2CommandLib:Tpm2Capability.obj
+ 0002:00001e10       ??_C@_0DG@EBLCFKNJ@GetSupportedAndActivePcrs?5?9?5Uns@ 000000000000c150     Tpm2CommandLib:Tpm2Capability.obj
+ 0002:00001e48       ??_C@_0CK@KNJMCFEO@GetSupportedAndActivePcrs?5?9?5Cou@ 000000000000c188     Tpm2CommandLib:Tpm2Capability.obj
+ 0002:00001e78       ??_C@_0CF@MAOMGMBD@HashInterfaceHobLast?5?$CB?$DN?5?$CI?$CIvoid?5@ 000000000000c1b8     HashLibBaseCryptoRouterPei:HashLibBaseCryptoRouterPei.obj
+ 0002:00001ea0       ??_C@_0FG@FDNBHOHE@d?3?2edk2?2edk2?2SecurityPkg?2Librar@ 000000000000c1e0     HashLibBaseCryptoRouterPei:HashLibBaseCryptoRouterPei.obj
+ 0002:00001f00       ??_C@_0FA@MGLDGNCK@WARNING?3?5There?5is?5mismatch?5of?5s@ 000000000000c240     HashLibBaseCryptoRouterPei:HashLibBaseCryptoRouterPei.obj
+ 0002:00001f50       ??_C@_0DH@FNLEDOGL@that?5are?5linking?5different?5Hash@ 000000000000c290     HashLibBaseCryptoRouterPei:HashLibBaseCryptoRouterPei.obj
+ 0002:00001f88       ??_C@_0BI@BPNPNPDM@HashCtx?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000c2c8     HashLibBaseCryptoRouterPei:HashLibBaseCryptoRouterPei.obj
+ 0002:00001fa0       ??_C@_0CJ@GBLBBLEC@Hash?5Interface?5?$CI?$CFg?$CJ?5has?5been?5re@ 000000000000c2e0     HashLibBaseCryptoRouterPei:HashLibBaseCryptoRouterPei.obj
+ 0002:00001fd0       ??_C@_0BI@PDOHMKFB@Sha1Ctx?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000c310     HashInstanceLibSha1:HashInstanceLibSha1.obj
+ 0002:00001ff0       ??_C@_0EL@PMGBCPLK@d?3?2edk2?2edk2?2SecurityPkg?2Librar@ 000000000000c330     HashInstanceLibSha1:HashInstanceLibSha1.obj
+ 0002:00002040       ??_C@_0BK@KDPDBHFH@Sha256Ctx?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000c380     HashInstanceLibSha256:HashInstanceLibSha256.obj
+ 0002:00002060       ??_C@_0EP@LOBDMFAB@d?3?2edk2?2edk2?2SecurityPkg?2Librar@ 000000000000c3a0     HashInstanceLibSha256:HashInstanceLibSha256.obj
+ 0002:000020b0       ??_C@_0BK@COIOCNDO@Sha384Ctx?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000c3f0     HashInstanceLibSha384:HashInstanceLibSha384.obj
+ 0002:000020d0       ??_C@_0EP@POGGAKGC@d?3?2edk2?2edk2?2SecurityPkg?2Librar@ 000000000000c410     HashInstanceLibSha384:HashInstanceLibSha384.obj
+ 0002:00002120       ??_C@_0BK@JLBCBIEC@Sha512Ctx?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000c460     HashInstanceLibSha512:HashInstanceLibSha512.obj
+ 0002:00002140       ??_C@_0EP@JGCIMKOG@d?3?2edk2?2edk2?2SecurityPkg?2Librar@ 000000000000c480     HashInstanceLibSha512:HashInstanceLibSha512.obj
+ 0002:00002190       ??_C@_0DJ@FHIMIJAH@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 000000000000c4d0     BaseLib:DivU64x32Remainder.obj
+ 0002:000021d0       ??_C@_0BM@DAJCEFAH@PeiServices?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000c510     PeiServicesTablePointerLibIdt:PeiServicesTablePointer.obj
+ 0002:000021f0       ??_C@_0FE@FIGBKNFO@d?3?2edk2?2edk2?2MdePkg?2Library?2Pei@ 000000000000c530     PeiServicesTablePointerLibIdt:PeiServicesTablePointer.obj
+ 0002:00002248       ??_C@_0DI@DAGDPLPG@?$CILength?5?9?51?$CJ?5?$DM?$DN?5?$CI0xFFFFFFFFFFFF@ 000000000000c588     BaseMemoryLibRepStr:SetMemWrapper.obj
+ 0002:00002280       ??_C@_0EA@JBMLOGBO@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 000000000000c5c0     BaseMemoryLibRepStr:SetMemWrapper.obj
+ 0002:000022c0       ??_C@_0CI@MNELLLEK@?$CB?$CIBuffer?5?$DN?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?5?$CG?$CG?5Len@ 000000000000c600     BaseMemoryLibRepStr:IsZeroBufferWrapper.obj
+ 0002:000022f0       ??_C@_0EG@GGMEPJMN@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 000000000000c630     BaseMemoryLibRepStr:IsZeroBufferWrapper.obj
+ 0002:00002338       ??_C@_0DK@HAPDFBOC@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 000000000000c678     BaseIoLibIntrinsicSev:IoLibMsc.obj
+ 0002:00002378       ??_C@_0BA@HCECIDGN@?$CIPort?5?$CG?53?$CJ?5?$DN?$DN?50@ 000000000000c6b8     BaseIoLibIntrinsicSev:IoLibMsc.obj
+ 0002:00002388       ??_C@_0DH@FEKOHHMP@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 000000000000c6c8     BaseIoLibIntrinsicSev:IoLib.obj
+ 0002:000023c0       ??_C@_0BD@OMMAJMCK@?$CIAddress?5?$CG?53?$CJ?5?$DN?$DN?50@ 000000000000c700     BaseIoLibIntrinsicSev:IoLib.obj
+ 0002:000023d8       ??_C@_0CG@KIJMJHBN@?$CI?$CIAddress?$CJ?5?$CG?5?$CI?$HO0xffff0ff?5?$HM?5?$CI0?$CJ?$CJ@ 000000000000c718     BasePciCf8Lib:PciCf8Lib.obj
+ 0002:00002400       ??_C@_0DG@KOAEBPEO@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 000000000000c740     BasePciCf8Lib:PciCf8Lib.obj
+ 0002:00002438       ??_C@_0CG@EDKLCMBO@?$CI?$CIAddress?$CJ?5?$CG?5?$CI?$HO0xffff0ff?5?$HM?5?$CI3?$CJ?$CJ@ 000000000000c778     BasePciCf8Lib:PciCf8Lib.obj
+ 0002:00002834       __volatile_metadata        000000000000cb74     <linker-defined>
+ 0003:00000000       _fltused                   000000000000cd40     BaseIntrinsicLib:MemoryIntrinsics.obj
+ 0003:00000008       gTpmErrorHobGuid           000000000000cd48     Tcg2Pei:AutoGen.obj
+ 0003:00000018       gEdkiiTcgPpiGuid           000000000000cd58     Tcg2Pei:AutoGen.obj
+ 0003:00000028       gTcgEventEntryHobGuid      000000000000cd68     Tcg2Pei:AutoGen.obj
+ 0003:00000038       gEfiPeiFirmwareVolumeInfo2PpiGuid 000000000000cd78     Tcg2Pei:AutoGen.obj
+ 0003:00000048       gPeiTpmInitializationDonePpiGuid 000000000000cd88     Tcg2Pei:AutoGen.obj
+ 0003:00000058       gEfiTpmDeviceInstanceTpm12Guid 000000000000cd98     Tcg2Pei:AutoGen.obj
+ 0003:00000068       gPeiTpmInitializedPpiGuid  000000000000cda8     Tcg2Pei:AutoGen.obj
+ 0003:00000078       gEdkiiMigratedFvInfoGuid   000000000000cdb8     Tcg2Pei:AutoGen.obj
+ 0003:00000088       gEfiEndOfPeiSignalPpiGuid  000000000000cdc8     Tcg2Pei:AutoGen.obj
+ 0003:00000098       gEdkiiPeiFirmwareVolumeInfoPrehashedFvPpiGuid 000000000000cdd8     Tcg2Pei:AutoGen.obj
+ 0003:000000a8       gEfiPeiFirmwareVolumeInfoPpiGuid 000000000000cde8     Tcg2Pei:AutoGen.obj
+ 0003:000000b8       gMeasuredFvHobGuid         000000000000cdf8     Tcg2Pei:AutoGen.obj
+ 0003:000000c8       gEfiCallerIdGuid           000000000000ce08     Tcg2Pei:AutoGen.obj
+ 0003:000000d8       gTcgEvent2EntryHobGuid     000000000000ce18     Tcg2Pei:AutoGen.obj
+ 0003:000000e8       gEfiPeiFirmwareVolumeInfoMeasurementExcludedPpiGuid 000000000000ce28     Tcg2Pei:AutoGen.obj
+ 0003:000000f8       gPcdPpiGuid                000000000000ce38     Tcg2Pei:AutoGen.obj
+ 0003:00000110       mNotifyList                000000000000ce50     Tcg2Pei:Tcg2Pei.obj
+ 0003:00000158       mTcgPpiList                000000000000ce98     Tcg2Pei:Tcg2Pei.obj
+ 0003:00000170       mEdkiiTcgPpi               000000000000ceb0     Tcg2Pei:Tcg2Pei.obj
+ 0003:00000178       mTpmInitializedPpiList     000000000000ceb8     Tcg2Pei:Tcg2Pei.obj
+ 0003:00000190       mTpmInitializationDonePpiList 000000000000ced0     Tcg2Pei:Tcg2Pei.obj
+ 0003:000001b0       mTcg2EventInfo             000000000000cef0     Tcg2Pei:Tcg2Pei.obj
+ 0003:000001f8       mHashLibPeiRouterGuid      000000000000cf38     HashLibBaseCryptoRouterPei:HashLibBaseCryptoRouterPei.obj
+ 0003:00000210       mTpm2HashMask              000000000000cf50     HashLibBaseCryptoRouterPei:HashLibBaseCryptoRouterCommon.obj
+ 0003:00000278       mSha1InternalHashInstance  000000000000cfb8     HashInstanceLibSha1:HashInstanceLibSha1.obj
+ 0003:000002a0       mSha256InternalHashInstance 000000000000cfe0     HashInstanceLibSha256:HashInstanceLibSha256.obj
+ 0003:000002c8       mSha384InternalHashInstance 000000000000d008     HashInstanceLibSha384:HashInstanceLibSha384.obj
+ 0003:000002f0       mSha512InternalHashInstance 000000000000d030     HashInstanceLibSha512:HashInstanceLibSha512.obj
+ 0003:00000318       mSm3InternalHashInstance   000000000000d058     HashInstanceLibSm3:HashInstanceLibSm3.obj
+ 0003:00000348       gEfiTpmDeviceInstanceNoneGuid 000000000000d088     Tcg2Pei:AutoGen.obj
+ 0003:00000358       gZeroGuid                  000000000000d098     Tcg2Pei:AutoGen.obj
+ 0003:00000368       mMeasuredChildFvIndex      000000000000d0a8     Tcg2Pei:Tcg2Pei.obj
+ 0003:0000036c       mMeasuredMaxBaseFvIndex    000000000000d0ac     Tcg2Pei:Tcg2Pei.obj
+ 0003:00000370       mMeasuredBaseFvIndex       000000000000d0b0     Tcg2Pei:Tcg2Pei.obj
+ 0003:00000374       mMeasuredMaxChildFvIndex   000000000000d0b4     Tcg2Pei:Tcg2Pei.obj
+ 0003:00000378       mImageInMemory             000000000000d0b8     Tcg2Pei:Tcg2Pei.obj
+ 0003:00000379       gParity                    000000000000d0b9     PcAtSerialPortLib:SerialPortLib.obj
+ 0003:0000037a       gBreakSet                  000000000000d0ba     PcAtSerialPortLib:SerialPortLib.obj
+ 0003:00000380       mMeasuredChildFvInfo       000000000000d0c0     <common>
+ 0003:00000388       mMeasuredBaseFvInfo        000000000000d0c8     <common>
+ 0003:00000390       mFileHandle                000000000000d0d0     <common>
+
+ entry point at        0001:00000170
+
+ Static symbols
+
+ 0001:0000001a       InternalMemCopyMem.0       00000000000002da     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:0000002a       @CopyBackward              00000000000002ea     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000033       @CopyBytes                 00000000000002f3     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:000000b5       @ReturnFalse               0000000000000375     BaseMemoryLibRepStr:IsZeroBuffer.obj
+ 0001:000062e0       sha1_block_data_order      00000000000065a0 f   OpensslLib:sha1dgst.obj
+ 0001:000068e0       sha256_block_data_order    0000000000006ba0 f   OpensslLib:sha256.obj
+ 0001:00007154       sha512_block_data_order    0000000000007414 f   OpensslLib:sha512.obj
+ 0002:00002460       K256                       000000000000c7a0     OpensslLib:sha256.obj
+ 0002:00002560       K512                       000000000000c8a0     OpensslLib:sha512.obj
+ 0003:000001d0       mHashInfo                  000000000000cf10     Tpm2CommandLib:Tpm2Help.obj
+ 0003:00000340       memset_func                000000000000d080     OpensslLib:mem_clr.obj
+ 0003:0000037c       mAcpiTimerIoAddr           000000000000d0bc     BaseAcpiTimerLib:BaseAcpiTimerLib.obj
+ 0005:00000000       $unwind$MmioWrite32        000000000000d5e0     BaseIoLibIntrinsicSev:IoLib.obj
+ 0005:00000000       $unwind$IoWrite32          000000000000d5e0     BaseIoLibIntrinsicSev:IoLibMsc.obj
+ 0005:00000000       $unwind$AsciiStrLen        000000000000d5e0     BaseLib:String.obj
+ 0005:00000000       $unwind$IsZeroBuffer       000000000000d5e0     BaseMemoryLibRepStr:IsZeroBufferWrapper.obj
+ 0005:00000000       $unwind$SetMem             000000000000d5e0     BaseMemoryLibRepStr:SetMemWrapper.obj
+ 0005:00000000       $unwind$ZeroMem            000000000000d5e0     BaseMemoryLibRepStr:ZeroMemWrapper.obj
+ 0005:00000000       $unwind$BuildGuidHob       000000000000d5e0     PeiHobLib:HobLib.obj
+ 0005:00000000       $unwind$_ModuleEntryPoint  000000000000d5e0     PeimEntryPoint:PeimEntryPoint.obj
+ 0005:00000000       $unwind$Sha1HashInit       000000000000d5e0     HashInstanceLibSha1:HashInstanceLibSha1.obj
+ 0005:00000000       $unwind$Sha256HashInit     000000000000d5e0     HashInstanceLibSha256:HashInstanceLibSha256.obj
+ 0005:00000000       $unwind$Sha384HashInit     000000000000d5e0     HashInstanceLibSha384:HashInstanceLibSha384.obj
+ 0005:00000000       $unwind$Sha512HashInit     000000000000d5e0     HashInstanceLibSha512:HashInstanceLibSha512.obj
+ 0005:00000000       $unwind$Sm3HashInit        000000000000d5e0     HashInstanceLibSm3:HashInstanceLibSm3.obj
+ 0005:00000000       $unwind$CheckSupportedHashMaskMismatch 000000000000d5e0     HashLibBaseCryptoRouterPei:HashLibBaseCryptoRouterPei.obj
+ 0005:00000000       $unwind$FirmwareVolumeInfoPpiNotifyCallback 000000000000d5e0     Tcg2Pei:Tcg2Pei.obj
+ 0005:0000000c       $unwind$ProcessLibraryConstructorList 000000000000d5ec     Tcg2Pei:AutoGen.obj
+ 0005:0000000c       $unwind$LogHashEvent       000000000000d5ec     Tcg2Pei:Tcg2Pei.obj
+ 0005:00000028       $unwind$SHA256_Init        000000000000d608     OpensslLib:sha256.obj
+ 0005:00000028       $unwind$sm3_init           000000000000d608     OpensslLib:sm3.obj
+ 0005:00000028       $unwind$MmioRead32         000000000000d608     BaseIoLibIntrinsicSev:IoLib.obj
+ 0005:00000028       $unwind$IoRead32           000000000000d608     BaseIoLibIntrinsicSev:IoLibMsc.obj
+ 0005:00000028       $unwind$SaveAndDisableInterrupts 000000000000d608     BaseLib:Cpu.obj
+ 0005:00000028       $unwind$StrnLenS           000000000000d608     BaseLib:SafeString.obj
+ 0005:00000028       $unwind$InternalPeiCreateHob 000000000000d608     PeiHobLib:HobLib.obj
+ 0005:00000028       $unwind$AllocatePool       000000000000d608     PeiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0005:00000028       $unwind$InternalAllocatePages 000000000000d608     PeiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0005:00000028       $unwind$InternalAllocateZeroPool 000000000000d608     PeiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0005:00000028       $unwind$MicroSecondDelay   000000000000d608     BaseAcpiTimerLib:AcpiTimerLib.obj
+ 0005:00000028       $unwind$EndofPeiSignalNotifyCallBack 000000000000d608     Tcg2Pei:Tcg2Pei.obj
+ 0005:00000030       $unwind$SyncPcrAllocationsAndPcrMask 000000000000d610     Tcg2Pei:Tcg2Pei.obj
+ 0005:00000048       $unwind$HashLogExtendEvent 000000000000d628     Tcg2Pei:Tcg2Pei.obj
+ 0005:00000060       $unwind$MeasureFvImage     000000000000d640     Tcg2Pei:Tcg2Pei.obj
+ 0005:0000007c       $unwind$PeimEntryMP        000000000000d65c     Tcg2Pei:Tcg2Pei.obj
+ 0005:00000090       $unwind$PeimEntryMA        000000000000d670     Tcg2Pei:Tcg2Pei.obj
+ 0005:000000a4       $unwind$GetHobList         000000000000d684     PeiHobLib:HobLib.obj
+ 0005:000000a4       $unwind$GetPcdPpiPointer   000000000000d684     PeiPcdLib:PeiPcdLib.obj
+ 0005:000000a4       $unwind$ResetCold          000000000000d684     BaseResetSystemLib:ResetSystemLib.obj
+ 0005:000000a4       $unwind$Sha1HashUpdate     000000000000d684     HashInstanceLibSha1:HashInstanceLibSha1.obj
+ 0005:000000a4       $unwind$Sha256HashUpdate   000000000000d684     HashInstanceLibSha256:HashInstanceLibSha256.obj
+ 0005:000000a4       $unwind$Sha384HashUpdate   000000000000d684     HashInstanceLibSha384:HashInstanceLibSha384.obj
+ 0005:000000a4       $unwind$Sha512HashUpdate   000000000000d684     HashInstanceLibSha512:HashInstanceLibSha512.obj
+ 0005:000000a4       $unwind$Sm3HashUpdate      000000000000d684     HashInstanceLibSm3:HashInstanceLibSm3.obj
+ 0005:000000ac       $unwind$DivU64x32Remainder 000000000000d68c     BaseLib:DivU64x32Remainder.obj
+ 0005:000000ac       $unwind$StrSize            000000000000d68c     BaseLib:String.obj
+ 0005:000000ac       $unwind$CopyGuid           000000000000d68c     BaseMemoryLibRepStr:MemLibGuid.obj
+ 0005:000000ac       $unwind$InternalAcpiDelay  000000000000d68c     BaseAcpiTimerLib:AcpiTimerLib.obj
+ 0005:000000ac       $unwind$InternalGetHashInterfaceHob 000000000000d68c     HashLibBaseCryptoRouterPei:HashLibBaseCryptoRouterPei.obj
+ 0005:000000bc       $unwind$CopyMem            000000000000d69c     BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0005:000000bc       $unwind$PciCf8Read16       000000000000d69c     BasePciCf8Lib:PciCf8Lib.obj
+ 0005:000000bc       $unwind$PciCf8Read32       000000000000d69c     BasePciCf8Lib:PciCf8Lib.obj
+ 0005:000000bc       $unwind$PciCf8Read8        000000000000d69c     BasePciCf8Lib:PciCf8Lib.obj
+ 0005:000000bc       $unwind$GetNextGuidHob     000000000000d69c     PeiHobLib:HobLib.obj
+ 0005:000000bc       $unwind$InternalReallocatePool 000000000000d69c     PeiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0005:000000d0       $unwind$CompareGuid        000000000000d6b0     BaseMemoryLibRepStr:MemLibGuid.obj
+ 0005:000000e8       $unwind$PeiServicesLocatePpi 000000000000d6c8     PeiServicesLib:PeiServicesLib.obj
+ 0005:000000f8       $unwind$AsciiSPrint        000000000000d6d8     BasePrintLib:PrintLib.obj
+ 0005:00000100       $unwind$BasePrintLibValueToString 000000000000d6e0     BasePrintLib:PrintLibInternal.obj
+ 0005:0000010c       $unwind$BasePrintLibSPrintMarker 000000000000d6ec     BasePrintLib:PrintLibInternal.obj
+ 0005:00000128       $unwind$BasePrintLibSPrint 000000000000d708     BasePrintLib:PrintLibInternal.obj
+ 0005:00000130       $unwind$DebugPrint         000000000000d710     BaseDebugLibSerialPort:DebugLib.obj
+ 0005:00000138       $unwind$DebugPrintMarker   000000000000d718     BaseDebugLibSerialPort:DebugLib.obj
+ 0005:0000014c       $unwind$DebugAssert        000000000000d72c     BaseDebugLibSerialPort:DebugLib.obj
+ 0005:00000154       $unwind$Tpm2SubmitCommand  000000000000d734     Tpm2DeviceLibDTpm:Tpm2DeviceLibDTpm.obj
+ 0005:00000168       $unwind$SHA1_Update        000000000000d748     OpensslLib:sha1dgst.obj
+ 0005:00000168       $unwind$SHA256_Update      000000000000d748     OpensslLib:sha256.obj
+ 0005:00000168       $unwind$SHA512_Update      000000000000d748     OpensslLib:sha512.obj
+ 0005:00000168       $unwind$sm3_final          000000000000d748     OpensslLib:sm3.obj
+ 0005:00000168       $unwind$sm3_update         000000000000d748     OpensslLib:sm3.obj
+ 0005:00000168       $unwind$Tpm2GetHashMaskFromAlgo 000000000000d748     HashLibBaseCryptoRouterPei:HashLibBaseCryptoRouterCommon.obj
+ 0005:00000168       $unwind$RegisterHashInterfaceLib 000000000000d748     HashLibBaseCryptoRouterPei:HashLibBaseCryptoRouterPei.obj
+ 0005:00000168       $unwind$PtpCrbWaitRegisterBits 000000000000d748     Tpm2DeviceLibDTpm:Tpm2Ptp.obj
+ 0005:00000168       $unwind$TisPcWaitRegisterBits 000000000000d748     Tpm2DeviceLibDTpm:Tpm2Tis.obj
+ 0005:00000180       $unwind$PtpCrbTpmCommand   000000000000d760     Tpm2DeviceLibDTpm:Tpm2Ptp.obj
+ 0005:0000019c       $unwind$TisPcReadBurstCount 000000000000d77c     Tpm2DeviceLibDTpm:Tpm2Tis.obj
+ 0005:000001b0       $unwind$Tpm2TisTpmCommand  000000000000d790     Tpm2DeviceLibDTpm:Tpm2Tis.obj
+ 0005:000001cc       $unwind$Tpm2PcrExtend      000000000000d7ac     Tpm2CommandLib:Tpm2Integrity.obj
+ 0005:000001ec       $unwind$Tpm2PcrRead        000000000000d7cc     Tpm2CommandLib:Tpm2Integrity.obj
+ 0005:00000204       $unwind$Tpm2PcrAllocate    000000000000d7e4     Tpm2CommandLib:Tpm2Integrity.obj
+ 0005:00000224       $unwind$Tpm2PcrAllocateBanks 000000000000d804     Tpm2CommandLib:Tpm2Integrity.obj
+ 0005:00000238       $unwind$Tpm2PcrReadForActiveBank 000000000000d818     Tpm2CommandLib:Tpm2Integrity.obj
+ 0005:00000254       $unwind$CopyAuthSessionCommand 000000000000d834     Tpm2CommandLib:Tpm2Help.obj
+ 0005:0000026c       $unwind$CopyDigestListToBuffer 000000000000d84c     Tpm2CommandLib:Tpm2Help.obj
+ 0005:00000284       $unwind$Tpm2Startup        000000000000d864     Tpm2CommandLib:Tpm2Startup.obj
+ 0005:0000028c       $unwind$Tpm2GetCapability  000000000000d86c     Tpm2CommandLib:Tpm2Capability.obj
+ 0005:0000029c       $unwind$Tpm2GetCapabilityPcrs 000000000000d87c     Tpm2CommandLib:Tpm2Capability.obj
+ 0005:000002b8       $unwind$Tpm2GetCapabilitySupportedAndActivePcrs 000000000000d898     Tpm2CommandLib:Tpm2Capability.obj
+ 0005:000002d4       $unwind$InternalCreateHashInterfaceHob 000000000000d8b4     HashLibBaseCryptoRouterPei:HashLibBaseCryptoRouterPei.obj
+ 0005:000002e4       $unwind$SHA512_Final       000000000000d8c4     OpensslLib:sha512.obj
+ 0005:000002e4       $unwind$HashStart          000000000000d8c4     HashLibBaseCryptoRouterPei:HashLibBaseCryptoRouterPei.obj
+ 0005:000002e4       $unwind$HashUpdate         000000000000d8c4     HashLibBaseCryptoRouterPei:HashLibBaseCryptoRouterPei.obj
+ 0005:00000300       $unwind$HashCompleteAndExtend 000000000000d8e0     HashLibBaseCryptoRouterPei:HashLibBaseCryptoRouterPei.obj
+ 0005:00000320       $unwind$InternalReportStatusCode 000000000000d900     PeiReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0005:00000320       $unwind$GetPeiServicesTablePointer 000000000000d900     PeiServicesTablePointerLibIdt:PeiServicesTablePointer.obj
+ 0005:00000328       $unwind$Sha1HashFinal      000000000000d908     HashInstanceLibSha1:HashInstanceLibSha1.obj
+ 0005:00000328       $unwind$Sha256HashFinal    000000000000d908     HashInstanceLibSha256:HashInstanceLibSha256.obj
+ 0005:00000328       $unwind$Sm3HashFinal       000000000000d908     HashInstanceLibSm3:HashInstanceLibSm3.obj
+ 0005:00000330       $unwind$Sha384HashFinal    000000000000d910     HashInstanceLibSha384:HashInstanceLibSha384.obj
+ 0005:00000338       $unwind$Sha512HashFinal    000000000000d918     HashInstanceLibSha512:HashInstanceLibSha512.obj
+ 0005:00000340       $unwind$SHA1_Final         000000000000d920     OpensslLib:sha1dgst.obj
+ 0005:00000340       $unwind$SHA256_Final       000000000000d920     OpensslLib:sha256.obj
+ 0005:00000340       $unwind$PciAndThenOr32     000000000000d920     BasePciLibCf8:PciLib.obj
+ 0005:00000340       $unwind$PciOr8             000000000000d920     BasePciLibCf8:PciLib.obj
+ 0005:00000358       $unwind$sha1_block_data_order 000000000000d938     OpensslLib:sha1dgst.obj
+ 0005:00000374       $unwind$sha256_block_data_order 000000000000d954     OpensslLib:sha256.obj
+ 0005:0000038c       $unwind$sha512_block_data_order 000000000000d96c     OpensslLib:sha512.obj
+ 0005:000003a4       $unwind$sm3_block_data_order 000000000000d984     OpensslLib:sm3.obj

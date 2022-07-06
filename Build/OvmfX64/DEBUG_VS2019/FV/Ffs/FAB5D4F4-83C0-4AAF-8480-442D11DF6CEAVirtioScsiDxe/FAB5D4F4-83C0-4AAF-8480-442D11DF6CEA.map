@@ -1,0 +1,207 @@
+ VirtioScsiDxe
+
+ Timestamp is 62b57316 (Fri Jun 24 16:17:26 2022)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 000000c4H .text                   CODE
+ 0001:000000c4 00002e26H .text$mn                CODE
+ 0002:00000000 00000eb0H .rdata                  DATA
+ 0002:00000eb0 000000a8H .rdata$voltmd           DATA
+ 0002:00000f58 0000013cH .rdata$zzzdbg           DATA
+ 0003:00000000 000000e0H .data                   DATA
+ 0003:000000e0 0000002aH .bss                    DATA
+ 0004:00000000 00000180H .pdata                  DATA
+ 0005:00000000 0000016cH .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __x64_code_ranges_to_entry_points_count 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata 0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points 0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_table          0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_count         0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map_count    0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table   0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_count          0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_count      0000000000000000     <absolute>
+ 0000:00000000       __dynamic_value_reloc_table 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat     0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat_copy 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_native_entrypoint 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map          0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table_size 0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_table      0000000000000000     <absolute>
+ 0000:00000000       __AbsoluteZero             0000000000000000     <absolute>
+ 0000:00000000       __guard_check_icall_a64n_fptr 0000000000000000     <absolute>
+ 0000:00000000       __guard_flags              0000000000000000     <absolute>
+ 0000:00000000       __enclave_config           0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_table         0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata_count 0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_count      0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_table      0000000000000000     <absolute>
+ 0001:00000000       InternalMemCopyMem         00000000000002c0     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000040       InternalMemZeroMem         0000000000000300     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00000060       InternalMemSetMem          0000000000000320     BaseMemoryLibRepStr:SetMem.obj
+ 0001:00000080       InternalMemSetMem64        0000000000000340     BaseMemoryLibRepStr:SetMem64.obj
+ 0001:000000a0       InternalMemSetMem32        0000000000000360     BaseMemoryLibRepStr:SetMem32.obj
+ 0001:000000c0       CpuPause                   0000000000000380     BaseLib:CpuPause.obj
+ 0001:000000c4       _ModuleEntryPoint          0000000000000384 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:00000170       ProcessLibraryConstructorList 0000000000000430 f   VirtioScsiDxe:AutoGen.obj
+ 0001:000003d8       VirtioScsiPassThru         0000000000000698 f   VirtioScsiDxe:VirtioScsi.obj
+ 0001:00000b28       VirtioScsiGetNextTargetLun 0000000000000de8 f   VirtioScsiDxe:VirtioScsi.obj
+ 0001:00000c2c       VirtioScsiBuildDevicePath  0000000000000eec f   VirtioScsiDxe:VirtioScsi.obj
+ 0001:00000d04       VirtioScsiGetTargetLun     0000000000000fc4 f   VirtioScsiDxe:VirtioScsi.obj
+ 0001:00000dfc       VirtioScsiResetChannel     00000000000010bc f   VirtioScsiDxe:VirtioScsi.obj
+ 0001:00000dfc       VirtioScsiGetDeviceName    00000000000010bc f   VirtioScsiDxe:VirtioScsi.obj
+ 0001:00000dfc       VirtioScsiResetTargetLun   00000000000010bc f   VirtioScsiDxe:VirtioScsi.obj
+ 0001:00000e08       VirtioScsiGetNextTarget    00000000000010c8 f   VirtioScsiDxe:VirtioScsi.obj
+ 0001:0000144c       VirtioScsiDriverBindingSupported 000000000000170c f   VirtioScsiDxe:VirtioScsi.obj
+ 0001:000014e0       VirtioScsiDriverBindingStart 00000000000017a0 f   VirtioScsiDxe:VirtioScsi.obj
+ 0001:00001638       VirtioScsiDriverBindingStop 00000000000018f8 f   VirtioScsiDxe:VirtioScsi.obj
+ 0001:00001724       VirtioScsiGetDriverName    00000000000019e4 f   VirtioScsiDxe:VirtioScsi.obj
+ 0001:00001824       CopyMem                    0000000000001ae4 f   BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0001:000018c0       ZeroMem                    0000000000001b80 f   BaseMemoryLibRepStr:ZeroMemWrapper.obj
+ 0001:00001930       SetMem                     0000000000001bf0 f   BaseMemoryLibRepStr:SetMemWrapper.obj
+ 0001:00001988       DebugPrint                 0000000000001c48 f   BaseDebugLibSerialPort:DebugLib.obj
+ 0001:000019ac       DebugPrintMarker           0000000000001c6c f   BaseDebugLibSerialPort:DebugLib.obj
+ 0001:00001a5c       DebugAssert                0000000000001d1c f   BaseDebugLibSerialPort:DebugLib.obj
+ 0001:00001ad4       InternalAllocatePool       0000000000001d94 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00001b04       FreePool                   0000000000001dc4 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00001b48       IsLanguageSupported        0000000000001e08 f   UefiLib:UefiLib.obj
+ 0001:00001bd0       VirtioRingInit             0000000000001e90 f   VirtioLib:VirtioLib.obj
+ 0001:00001ce0       VirtioMapAllBytesInSharedBuffer 0000000000001fa0 f   VirtioLib:VirtioLib.obj
+ 0001:00001d60       AsciiStrLen                0000000000002020 f   BaseLib:String.obj
+ 0001:00001dcc       AsciiStrnCmp               000000000000208c f   BaseLib:String.obj
+ 0001:00001e98       StrnLenS                   0000000000002158 f   BaseLib:SafeString.obj
+ 0001:00001ef0       AsciiSPrint                00000000000021b0 f   BasePrintLib:PrintLib.obj
+ 0001:00001f1c       BasePrintLibFillBuffer     00000000000021dc f   BasePrintLib:PrintLibInternal.obj
+ 0001:00001f50       BasePrintLibValueToString  0000000000002210 f   BasePrintLib:PrintLibInternal.obj
+ 0001:00001fbc       BasePrintLibSPrintMarker   000000000000227c f   BasePrintLib:PrintLibInternal.obj
+ 0001:00002ec8       BasePrintLibSPrint         0000000000003188 f   BasePrintLib:PrintLibInternal.obj
+ 0002:00000000       ??_C@_0CB@DMEJJJHA@?6ASSERT_EFI_ERROR?5?$CIStatus?5?$DN?5?$CFr?$CJ@ 00000000000031c0     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0002:00000028       ??_C@_0CH@BBNBJKHK@?$CB?$CI?$CI?$CIINTN?$CJ?$CIRETURN_STATUS?$CJ?$CIStatus@ 00000000000031e8     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0002:00000050       ??_C@_0O@HODECIBO@VirtioScsiDxe@ 0000000000003210     VirtioScsiDxe:AutoGen.obj
+ 0002:00000060       ??_C@_0FN@EHENLOKK@d?3?2edk2?2edk2?2Build?2OvmfX64?2DEBU@ 0000000000003220     VirtioScsiDxe:AutoGen.obj
+ 0002:000000c0       ??_C@_0BF@NDBIKIKC@CR?5has?5Bad?5Signature@ 0000000000003280     VirtioScsiDxe:VirtioScsi.obj
+ 0002:000000d8       ??_C@_0DA@KNLKFBGJ@d?3?2edk2?2edk2?2OvmfPkg?2VirtioScsi@ 0000000000003298     VirtioScsiDxe:VirtioScsi.obj
+ 0002:00000108       ??_C@_0BJ@MBMFHFPN@Dev?9?$DORing?4QueueSize?5?$DO?$DN?54@ 00000000000032c8     VirtioScsiDxe:VirtioScsi.obj
+ 0002:00000128       ??_C@_0BD@CBEOFKHF@VirtioScsiExitBoot@ 00000000000032e8     VirtioScsiDxe:VirtioScsi.obj
+ 0002:00000140       ??_C@_0BC@KKIHHBCL@?$CFa?3?5Context?$DN0x?$CFp?6@ 0000000000003300     VirtioScsiDxe:VirtioScsi.obj
+ 0002:00000154       ??_C@_06DALJLGPG@eng?$DLen@ 0000000000003314     VirtioScsiDxe:VirtioScsi.obj
+ 0002:00000160       ??_C@_1DA@KDNFBOHA@?$AAV?$AAi?$AAr?$AAt?$AAi?$AAo?$AA?5?$AAS?$AAC?$AAS?$AAI?$AA?5?$AAH?$AAo?$AAs@ 0000000000003320     VirtioScsiDxe:VirtioScsi.obj
+ 0002:00000190       ??_C@_03LKLGDMJI@eng@      0000000000003350     VirtioScsiDxe:VirtioScsi.obj
+ 0002:00000194       ??_C@_02LFNMGJAP@en@       0000000000003354     VirtioScsiDxe:VirtioScsi.obj
+ 0002:000001a0       ??_C@_0ED@MKGCMJG@?$CILength?5?9?51?$CJ?5?$DM?$DN?5?$CI0xFFFFFFFFFFFF@ 0000000000003360     BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0002:000001f0       ??_C@_0EB@LOHEEPCE@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 00000000000033b0     BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0002:00000238       ??_C@_0DO@MAOBOFEG@?$CILength?5?9?51?$CJ?5?$DM?$DN?5?$CI0xFFFFFFFFFFFF@ 00000000000033f8     BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0002:00000278       ??_C@_0BH@IACGKAP@Buffer?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000003438     BaseMemoryLibRepStr:ZeroMemWrapper.obj
+ 0002:00000290       ??_C@_0EB@KNGCOOD@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 0000000000003450     BaseMemoryLibRepStr:ZeroMemWrapper.obj
+ 0002:000002d8       ??_C@_0DG@EEENIGGL@Length?5?$DM?$DN?5?$CI0xFFFFFFFFFFFFFFFFUL@ 0000000000003498     BaseMemoryLibRepStr:ZeroMemWrapper.obj
+ 0002:00000310       ??_C@_0DI@DAGDPLPG@?$CILength?5?9?51?$CJ?5?$DM?$DN?5?$CI0xFFFFFFFFFFFF@ 00000000000034d0     BaseMemoryLibRepStr:SetMemWrapper.obj
+ 0002:00000350       ??_C@_0EA@JBMLOGBO@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 0000000000003510     BaseMemoryLibRepStr:SetMemWrapper.obj
+ 0002:00000390       ??_C@_0BH@LKMBFCBF@Format?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000003550     BaseDebugLibSerialPort:DebugLib.obj
+ 0002:000003a8       ??_C@_0DO@CKBIDOOL@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 0000000000003568     BaseDebugLibSerialPort:DebugLib.obj
+ 0002:000003e8       ??_C@_0BI@NOCKJDBJ@ASSERT?5?$FL?$CFa?$FN?5?$CFa?$CI?$CFd?$CJ?3?5?$CFa?6@ 00000000000035a8     BaseDebugLibSerialPort:DebugLib.obj
+ 0002:00000400       ??_C@_0BN@COECPDCC@gImageHandle?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000035c0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000420       ??_C@_0FA@FOIHGFBE@d?3?2edk2?2edk2?2MdePkg?2Library?2Uef@ 00000000000035e0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000470       ??_C@_0BE@DGNHAHIL@gST?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000003630     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000488       ??_C@_0BE@BDFJLGLN@gBS?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000003648     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000004a0       ??_C@_0EK@GCCICMAJ@d?3?2edk2?2edk2?2MdePkg?2Library?2Uef@ 0000000000003660     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0002:000004f0       ??_C@_0BE@OBDFIHND@gRT?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000036b0     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0002:00000510       ??_C@_0FG@JGJCMPKB@d?3?2edk2?2edk2?2MdePkg?2Library?2Uef@ 00000000000036d0     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0002:00000570       ??_C@_0FE@ELFDCAAP@d?3?2edk2?2edk2?2MdePkg?2Library?2Uef@ 0000000000003730     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:000005c8       ??_C@_0DC@CNNBPJA@mDevicePathLibDevicePathUtiliti@ 0000000000003788     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:00000600       ??_C@_0DG@PIJIOFBF@d?3?2edk2?2edk2?2MdePkg?2Library?2Uef@ 00000000000037c0     UefiLib:UefiDriverModel.obj
+ 0002:00000638       ??_C@_0BH@MAAHKCPC@String?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000037f8     BaseLib:String.obj
+ 0002:00000650       ??_C@_0CN@LHBFELAO@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 0000000000003810     BaseLib:String.obj
+ 0002:00000680       ??_C@_0CC@GFNLNIOC@?$CI?$CIUINTN?$CJString?5?$CG?50x00000001?$CJ?5?$DN?$DN@ 0000000000003840     BaseLib:String.obj
+ 0002:000006a8       ??_C@_0DI@MDIKFADO@Length?5?$DM?5_gPcd_FixedAtBuild_Pcd@ 0000000000003868     BaseLib:String.obj
+ 0002:000006e0       ??_C@_0BL@IKFBNFIL@AsciiStrSize?5?$CIFirstString?$CJ@ 00000000000038a0     BaseLib:String.obj
+ 0002:00000700       ??_C@_0BM@EDNOKLLE@AsciiStrSize?5?$CISecondString?$CJ@ 00000000000038c0     BaseLib:String.obj
+ 0002:00000720       ??_C@_0DJ@JJHGIFMP@Length?5?$DM?$DN?5_gPcd_FixedAtBuild_Pc@ 00000000000038e0     BaseLib:String.obj
+ 0002:00000760       ??_C@_0DA@BDDONMJM@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 0000000000003920     BaseLib:Unaligned.obj
+ 0002:00000790       ??_C@_0DB@PKFMPMPC@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 0000000000003950     BaseLib:SafeString.obj
+ 0002:000007c8       ??_C@_0BJ@CNKJJNE@?$CIBuffer?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ@ 0000000000003988     BaseLib:SafeString.obj
+ 0002:000007e8       ??_C@_0N@KGHEHMDL@Divisor?5?$CB?$DN?50@ 00000000000039a8     BaseLib:DivU64x32.obj
+ 0002:000007f8       ??_C@_0DM@OAJIKNNG@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 00000000000039b8     BasePrintLib:PrintLibInternal.obj
+ 0002:00000840       ??_C@_0EB@HDGIDCIO@?$CIBufferSize?5?$DM?$DN?5?$CI_gPcd_FixedAtBu@ 0000000000003a00     BasePrintLib:PrintLibInternal.obj
+ 0002:00000888       ??_C@_0BJ@PPAKKDJG@?$CIFormat?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ@ 0000000000003a48     BasePrintLib:PrintLibInternal.obj
+ 0002:000008b0       ??_C@_0ED@LPDDCECB@?$CIBufferSize?5?$DM?$DN?5?$CI_gPcd_FixedAtBu@ 0000000000003a70     BasePrintLib:PrintLibInternal.obj
+ 0002:00000900       ??_C@_0IM@BFJJFLGB@?$CIStrnLenS?5?$CI?$CICHAR16?5?$CK?$CJFormat?0?5?$CI_@ 0000000000003ac0     BasePrintLib:PrintLibInternal.obj
+ 0002:00000990       ??_C@_0ID@PLGJGION@?$CIAsciiStrnLenS?5?$CIFormat?0?5?$CI_gPcd_@ 0000000000003b50     BasePrintLib:PrintLibInternal.obj
+ 0002:00000a18       ??_C@_0O@MLOLIMFM@?$DMnull?5string?$DO@ 0000000000003bd8     BasePrintLib:PrintLibInternal.obj
+ 0002:00000a28       ??_C@_0M@BJJDNPHK@?$DMnull?5guid?$DO@ 0000000000003be8     BasePrintLib:PrintLibInternal.obj
+ 0002:00000a38       ??_C@_0DB@PMLHLBMO@?$CF08x?9?$CF04x?9?$CF04x?9?$CF02x?$CF02x?9?$CF02x?$CF02@ 0000000000003bf8     BasePrintLib:PrintLibInternal.obj
+ 0002:00000a70       ??_C@_0M@LHGBCIKM@?$DMnull?5time?$DO@ 0000000000003c30     BasePrintLib:PrintLibInternal.obj
+ 0002:00000a80       ??_C@_0BK@FCPKCIDD@?$CF02d?1?$CF02d?1?$CF04d?5?5?$CF02d?3?$CF02d@ 0000000000003c40     BasePrintLib:PrintLibInternal.obj
+ 0002:00000a9c       ??_C@_04JIMNDDED@?$CF08X@  0000000000003c5c     BasePrintLib:PrintLibInternal.obj
+ 0002:00000aa4       ??_C@_02PCIJFNDE@?$AN?6@   0000000000003c64     BasePrintLib:PrintLibInternal.obj
+ 0002:00000aa8       ??_C@_01LIIJDEN@?$AN@      0000000000003c68     BasePrintLib:PrintLibInternal.obj
+ 0002:00000ab0       mWarningString             0000000000003c70     BasePrintLib:PrintLibInternal.obj
+ 0002:00000b50       mErrorString               0000000000003d10     BasePrintLib:PrintLibInternal.obj
+ 0002:00000e10       mHexStr                    0000000000003fd0     BasePrintLib:PrintLibInternal.obj
+ 0002:00000e20       ??_C@_0DJ@FHIMIJAH@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 0000000000003fe0     BaseLib:DivU64x32Remainder.obj
+ 0002:00000eb0       __volatile_metadata        0000000000004070     <linker-defined>
+ 0003:00000000       gEfiExtScsiPassThruProtocolGuid 0000000000004260     VirtioScsiDxe:AutoGen.obj
+ 0003:00000010       gEfiComponentName2ProtocolGuid 0000000000004270     VirtioScsiDxe:AutoGen.obj
+ 0003:00000020       gEfiDevicePathUtilitiesProtocolGuid 0000000000004280     VirtioScsiDxe:AutoGen.obj
+ 0003:00000030       gEfiDriverBindingProtocolGuid 0000000000004290     VirtioScsiDxe:AutoGen.obj
+ 0003:00000040       gVirtioDeviceProtocolGuid  00000000000042a0     VirtioScsiDxe:AutoGen.obj
+ 0003:00000050       gEfiComponentNameProtocolGuid 00000000000042b0     VirtioScsiDxe:AutoGen.obj
+ 0003:000000e0       gST                        0000000000004340     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0003:000000e8       gBS                        0000000000004348     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0003:000000f0       gImageHandle               0000000000004350     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0003:000000f8       gRT                        0000000000004358     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0003:00000100       mDevicePathLibDevicePathUtilities 0000000000004360     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0003:00000108       gParity                    0000000000004368     PcAtSerialPortLib:SerialPortLib.obj
+ 0003:00000109       gBreakSet                  0000000000004369     PcAtSerialPortLib:SerialPortLib.obj
+
+ entry point at        0001:000000c4
+
+ Static symbols
+
+ 0001:0000001a       InternalMemCopyMem.0       00000000000002da     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:0000002a       @CopyBackward              00000000000002ea     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000033       @CopyBytes                 00000000000002f3     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000304       ParseResponse              00000000000005c4 f   VirtioScsiDxe:VirtioScsi.obj
+ 0001:00000ed0       VirtioScsiInit             0000000000001190 f   VirtioScsiDxe:VirtioScsi.obj
+ 0001:0000138c       VirtioScsiUninit           000000000000164c f   VirtioScsiDxe:VirtioScsi.obj
+ 0001:00001414       VirtioScsiExitBoot         00000000000016d4 f   VirtioScsiDxe:VirtioScsi.obj
+ 0003:00000060       mDriverNameTable           00000000000042c0     VirtioScsiDxe:VirtioScsi.obj
+ 0003:00000080       gDriverBinding             00000000000042e0     VirtioScsiDxe:VirtioScsi.obj
+ 0003:000000b0       gComponentName2            0000000000004310     VirtioScsiDxe:VirtioScsi.obj
+ 0003:000000c8       gComponentName             0000000000004328     VirtioScsiDxe:VirtioScsi.obj
+ 0005:00000000       $unwind$_ModuleEntryPoint  0000000000004500     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0005:00000008       $unwind$AsciiStrLen        0000000000004508     BaseLib:String.obj
+ 0005:00000008       $unwind$SetMem             0000000000004508     BaseMemoryLibRepStr:SetMemWrapper.obj
+ 0005:00000008       $unwind$ZeroMem            0000000000004508     BaseMemoryLibRepStr:ZeroMemWrapper.obj
+ 0005:00000008       $unwind$ProcessLibraryConstructorList 0000000000004508     VirtioScsiDxe:AutoGen.obj
+ 0005:00000008       $unwind$VirtioScsiUninit   0000000000004508     VirtioScsiDxe:VirtioScsi.obj
+ 0005:00000014       $unwind$VirtioScsiPassThru 0000000000004514     VirtioScsiDxe:VirtioScsi.obj
+ 0005:00000034       $unwind$VirtioScsiGetNextTargetLun 0000000000004534     VirtioScsiDxe:VirtioScsi.obj
+ 0005:00000048       $unwind$AsciiStrnCmp       0000000000004548     BaseLib:String.obj
+ 0005:00000048       $unwind$BasePrintLibValueToString 0000000000004548     BasePrintLib:PrintLibInternal.obj
+ 0005:00000048       $unwind$IsLanguageSupported 0000000000004548     UefiLib:UefiLib.obj
+ 0005:00000048       $unwind$VirtioScsiBuildDevicePath 0000000000004548     VirtioScsiDxe:VirtioScsi.obj
+ 0005:00000058       $unwind$VirtioScsiGetTargetLun 0000000000004558     VirtioScsiDxe:VirtioScsi.obj
+ 0005:0000006c       $unwind$VirtioScsiGetNextTarget 000000000000456c     VirtioScsiDxe:VirtioScsi.obj
+ 0005:0000007c       $unwind$VirtioScsiInit     000000000000457c     VirtioScsiDxe:VirtioScsi.obj
+ 0005:00000094       $unwind$StrnLenS           0000000000004594     BaseLib:SafeString.obj
+ 0005:00000094       $unwind$VirtioScsiExitBoot 0000000000004594     VirtioScsiDxe:VirtioScsi.obj
+ 0005:0000009c       $unwind$VirtioScsiDriverBindingStop 000000000000459c     VirtioScsiDxe:VirtioScsi.obj
+ 0005:0000009c       $unwind$VirtioScsiDriverBindingSupported 000000000000459c     VirtioScsiDxe:VirtioScsi.obj
+ 0005:000000ac       $unwind$VirtioScsiDriverBindingStart 00000000000045ac     VirtioScsiDxe:VirtioScsi.obj
+ 0005:000000c0       $unwind$VirtioScsiGetDriverName 00000000000045c0     VirtioScsiDxe:VirtioScsi.obj
+ 0005:000000d8       $unwind$CopyMem            00000000000045d8     BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0005:000000ec       $unwind$DebugPrint         00000000000045ec     BaseDebugLibSerialPort:DebugLib.obj
+ 0005:000000f4       $unwind$DebugPrintMarker   00000000000045f4     BaseDebugLibSerialPort:DebugLib.obj
+ 0005:00000108       $unwind$DebugAssert        0000000000004608     BaseDebugLibSerialPort:DebugLib.obj
+ 0005:00000110       $unwind$FreePool           0000000000004610     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0005:00000110       $unwind$InternalAllocatePool 0000000000004610     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0005:00000118       $unwind$VirtioRingInit     0000000000004618     VirtioLib:VirtioLib.obj
+ 0005:00000134       $unwind$VirtioMapAllBytesInSharedBuffer 0000000000004634     VirtioLib:VirtioLib.obj
+ 0005:00000140       $unwind$AsciiSPrint        0000000000004640     BasePrintLib:PrintLib.obj
+ 0005:00000148       $unwind$BasePrintLibSPrintMarker 0000000000004648     BasePrintLib:PrintLibInternal.obj
+ 0005:00000164       $unwind$BasePrintLibSPrint 0000000000004664     BasePrintLib:PrintLibInternal.obj

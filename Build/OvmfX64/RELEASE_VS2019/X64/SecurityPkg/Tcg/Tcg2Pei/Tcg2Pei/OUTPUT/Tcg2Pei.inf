@@ -1,0 +1,204 @@
+## @file
+#  Initializes TPM 2.0 device and measure FVs in PEI phase
+#
+#  Spec Compliance Info:
+#    "TCG PC Client Platform Firmware Profile Specification for TPM Family 2.0 Level 00 Revision 1.03 v51"
+#      along with
+#    "Errata for PC Client Specific Platform Firmware Profile Specification Version 1.0 Revision 1.03"
+#
+#  This module will initialize TPM device, measure reported FVs and BIOS version.
+#
+# Copyright (c) 2015 - 2020, Intel Corporation. All rights reserved.<BR>
+# Copyright (c) 2017, Microsoft Corporation.  All rights reserved. <BR>
+# SPDX-License-Identifier: BSD-2-Clause-Patent
+#
+##
+
+# DO NOT EDIT
+# FILE auto-generated
+
+[Defines]
+  INF_VERSION                = 0x00010017
+  BASE_NAME                  = Tcg2Pei
+  FILE_GUID                  = A0C98B77-CBA5-4BB8-993B-4AF6CE33ECE4
+  MODULE_TYPE                = PEIM
+  VERSION_STRING             = 1.0
+  ENTRY_POINT                = PeimEntryMA
+  MODULE_UNI_FILE            = Tcg2Pei.uni
+
+[Packages.X64]
+  MdePkg/MdePkg.dec
+  MdeModulePkg/MdeModulePkg.dec
+  SecurityPkg/SecurityPkg.dec
+
+[Binaries.X64]
+  PE32|Tcg2Pei.efi
+  PEI_DEPEX|Tcg2Pei.depex
+
+[PatchPcd.X64]
+
+[Protocols.X64]
+
+[Ppis.X64]
+  ## SOMETIMES_PRODUCES
+  ## SOMETIMES_CONSUMES     ## NOTIFY
+  gEfiPeiFirmwareVolumeInfoPpiGuid
+
+  ## SOMETIMES_PRODUCES
+  ## SOMETIMES_CONSUMES     ## NOTIFY
+  gEfiPeiFirmwareVolumeInfo2PpiGuid
+
+  ## SOMETIMES_CONSUMES
+  gEfiPeiFirmwareVolumeInfoMeasurementExcludedPpiGuid
+
+  ## SOMETIMES_PRODUCES
+  gPeiTpmInitializedPpiGuid
+
+  ## PRODUCES
+  gPeiTpmInitializationDonePpiGuid
+
+  ## SOMETIMES_CONSUMES     ## NOTIFY
+  gEfiEndOfPeiSignalPpiGuid
+
+  ## SOMETIMES_CONSUMES
+  gEdkiiPeiFirmwareVolumeInfoPrehashedFvPpiGuid
+
+  ## PRODUCES
+  gEdkiiTcgPpiGuid
+
+  ## SOMETIMES_CONSUMES
+  gPcdPpiGuid
+
+  ## CONSUMES
+  gEfiPeiPcdPpiGuid
+
+  ## SOMETIMES_CONSUMES
+  gGetPcdInfoPpiGuid
+
+  ## SOMETIMES_CONSUMES
+  gEfiGetPcdInfoPpiGuid
+
+
+[Guids.X64]
+  ## PRODUCES               ## HOB
+  gTcgEventEntryHobGuid
+
+  ## SOMETIMES_PRODUCES     ## HOB
+  gTpmErrorHobGuid
+
+  ## PRODUCES               ## HOB
+  gMeasuredFvHobGuid
+
+  ## PRODUCES               ## HOB
+  gTcgEvent2EntryHobGuid
+
+  ## SOMETIMES_PRODUCES     ## GUID       # TPM device identifier
+  gEfiTpmDeviceInstanceNoneGuid
+
+  ## SOMETIMES_PRODUCES     ## GUID       # TPM device identifier
+  gEfiTpmDeviceInstanceTpm12Guid
+
+  ## SOMETIMES_CONSUMES     ## HOB
+  gEdkiiMigratedFvInfoGuid
+
+  ## SOMETIMES_PRODUCES ## GUID # FV File System Guid.
+  gEfiFirmwareFileSystem2Guid
+
+  ## SOMETIMES_PRODUCES ## HOB # MemoryAllocation StackHob
+  gEfiHobMemoryAllocStackGuid
+
+  ## SOMETIMES_PRODUCES ## HOB # MemoryAllocation BspStoreHob
+  gEfiHobMemoryAllocBspStoreGuid
+
+  ## SOMETIMES_PRODUCES ## HOB # MemoryAllocation ModuleHob
+  gEfiHobMemoryAllocModuleGuid
+
+  ## SOMETIMES_CONSUMES   ## GUID
+  gZeroGuid
+
+  ## SOMETIMES_CONSUMES   ## UNDEFINED
+  gEfiStatusCodeSpecificDataGuid
+
+  ## SOMETIMES_CONSUMES   ## UNDEFINED
+  gEfiStatusCodeDataTypeDebugGuid
+
+
+[PcdEx.X64]
+
+[LibraryClasses.X64]
+## @LIB_INSTANCES
+#  MdePkg/Library/PeiPcdLib/PeiPcdLib.inf
+#  MdePkg/Library/RegisterFilterLibNull/RegisterFilterLibNull.inf
+#  MdePkg/Library/BaseLib/BaseLib.inf
+#  MdePkg/Library/PeiMemoryAllocationLib/PeiMemoryAllocationLib.inf
+#  MdePkg/Library/PeiServicesTablePointerLibIdt/PeiServicesTablePointerLibIdt.inf
+#  MdePkg/Library/BaseMemoryLibRepStr/BaseMemoryLibRepStr.inf
+#  MdePkg/Library/PeiServicesLib/PeiServicesLib.inf
+#  MdePkg/Library/PeiHobLib/PeiHobLib.inf
+#  MdePkg/Library/BaseDebugPrintErrorLevelLib/BaseDebugPrintErrorLevelLib.inf
+#  MdePkg/Library/BaseIoLibIntrinsic/BaseIoLibIntrinsicSev.inf
+#  MdePkg/Library/BasePrintLib/BasePrintLib.inf
+#  OvmfPkg/Library/PlatformDebugLibIoPort/PlatformDebugLibIoPort.inf
+#  MdePkg/Library/BasePciCf8Lib/BasePciCf8Lib.inf
+#  MdePkg/Library/BasePciLibCf8/BasePciLibCf8.inf
+#  OvmfPkg/Library/AcpiTimerLib/BaseAcpiTimerLib.inf
+#  MdePkg/Library/BaseRngLibTimerLib/BaseRngLibTimerLib.inf
+#  SecurityPkg/Library/Tpm2DeviceLibDTpm/Tpm2DeviceLibDTpm.inf
+#  CryptoPkg/Library/IntrinsicLib/IntrinsicLib.inf
+#  CryptoPkg/Library/OpensslLib/OpensslLib.inf
+#  SecurityPkg/Library/Tpm2CommandLib/Tpm2CommandLib.inf
+#  MdeModulePkg/Library/OemHookStatusCodeLibNull/OemHookStatusCodeLibNull.inf
+#  CryptoPkg/Library/BaseCryptLib/PeiCryptLib.inf
+#  MdePkg/Library/PeimEntryPoint/PeimEntryPoint.inf
+#  SecurityPkg/Library/HashLibBaseCryptoRouter/HashLibBaseCryptoRouterPei.inf
+#  MdePkg/Library/BasePerformanceLibNull/BasePerformanceLibNull.inf
+#  MdeModulePkg/Library/PeiReportStatusCodeLib/PeiReportStatusCodeLib.inf
+#  OvmfPkg/Library/ResetSystemLib/BaseResetSystemLib.inf
+#  SecurityPkg/Library/HashInstanceLibSha1/HashInstanceLibSha1.inf
+#  SecurityPkg/Library/HashInstanceLibSha256/HashInstanceLibSha256.inf
+#  SecurityPkg/Library/HashInstanceLibSha384/HashInstanceLibSha384.inf
+#  SecurityPkg/Library/HashInstanceLibSha512/HashInstanceLibSha512.inf
+#  SecurityPkg/Library/HashInstanceLibSm3/HashInstanceLibSm3.inf
+
+[Depex.X64]
+#  (gEfiPeiMasterBootModePpiGuid AND gEfiTpmDeviceSelectedGuid) AND (gEfiPeiPcdPpiGuid)
+
+[UserExtensions.TianoCore."ExtraFiles"]
+Tcg2PeiExtra.uni
+
+
+
+#
+# The following information is for reference only and not required by the build tools.
+#
+#  VALID_ARCHITECTURES           = IA32 X64 EBC
+#
+# [BootMode]
+#   S3_RESUME                 ## SOMETIMES_CONSUMES
+#
+
+[BuildOptions.X64]
+## @AsBuilt
+##   MSFT:RELEASE_VS2019_X64_ASLPP_FLAGS = /nologo /E /C /FIAutoGen.h
+##   MSFT:RELEASE_VS2019_X64_ASLDLINK_FLAGS = /NODEFAULTLIB /ENTRY:ReferenceAcpiTable /SUBSYSTEM:CONSOLE
+##   MSFT:RELEASE_VS2019_X64_GENFW_FLAGS = --zero --keepexceptiontable
+##   MSFT:RELEASE_VS2019_X64_SLINK_FLAGS = /NOLOGO /LTCG
+##   MSFT:RELEASE_VS2019_X64_OBJCOPY_FLAGS = objcopy not needed for
+##   MSFT:RELEASE_VS2019_X64_DEPS_FLAGS = /showIncludes
+##   MSFT:RELEASE_VS2019_X64_ASM_FLAGS = /nologo /c /WX /W3 /Cx /Zd
+##   MSFT:RELEASE_VS2019_X64_CC_FLAGS = /nologo /c /WX /GS- /W4 /Gs32768 /D UNICODE /O1b2s /GL /Gy /FIAutoGen.h /EHs-c- /GR- /GF /Gw /D MDEPKG_NDEBUG /D DISABLE_NEW_DEPRECATED_INTERFACES /D ENABLE_MD5_DEPRECATED_INTERFACES
+##   MSFT:RELEASE_VS2019_X64_ASMLINK_FLAGS = /nologo /tiny
+##   MSFT:RELEASE_VS2019_X64_VFR_FLAGS = -l -n
+##   MSFT:RELEASE_VS2019_X64_ASLCC_FLAGS = /nologo /c /FIAutoGen.h /TC /Dmain=ReferenceAcpiTable
+##   MSFT:RELEASE_VS2019_X64_APP_FLAGS = /nologo /E /TC
+##   MSFT:RELEASE_VS2019_X64_NASM_FLAGS = -Ox -f win64
+##   MSFT:RELEASE_VS2019_X64_OPTROM_FLAGS = -e
+##   MSFT:RELEASE_VS2019_X64_DTC_FLAGS = -H epapr
+##   MSFT:RELEASE_VS2019_X64_MAKE_FLAGS = /nologo
+##   MSFT:RELEASE_VS2019_X64_SYMRENAME_FLAGS = Symbol renaming not needed for
+##   MSFT:RELEASE_VS2019_X64_PP_FLAGS = /nologo /E /TC /FIAutoGen.h
+##   MSFT:RELEASE_VS2019_X64_VFRPP_FLAGS = /nologo /E /TC /DVFRCOMPILE /FI$(MODULE_NAME)StrDefs.h
+##   MSFT:RELEASE_VS2019_X64_DLINK_FLAGS = /NOLOGO /NODEFAULTLIB /IGNORE:4001 /IGNORE:4281 /IGNORE:4254 /OPT:REF /OPT:ICF=10 /MAP /ALIGN:32 /SECTION:.xdata,D /SECTION:.pdata,D /Machine:X64 /LTCG /DLL /ENTRY:$(IMAGE_ENTRY_POINT) /SUBSYSTEM:EFI_BOOT_SERVICE_DRIVER /SAFESEH:NO /BASE:0 /DRIVER /MERGE:.rdata=.data
+##   MSFT:RELEASE_VS2019_X64_ASL_FLAGS = 
+##   MSFT:RELEASE_VS2019_X64_NASMB_FLAGS = -f bin
+##   MSFT:RELEASE_VS2019_X64_DLINK2_FLAGS = /WHOLEARCHIVE

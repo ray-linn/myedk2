@@ -1,0 +1,1 @@
+  d:\edk2\edk2\Build\OvmfX64\RELEASE_VS2019\X64\OvmfPkg\QemuVideoDxe\QemuVideoDxe\DEBUG\AutoGen.c d:\edk2\edk2\OvmfPkg\QemuVideoDxe\Initialize.c d:\edk2\edk2\OvmfPkg\QemuVideoDxe\Driver.c d:\edk2\edk2\OvmfPkg\QemuVideoDxe\ComponentName.c d:\edk2\edk2\OvmfPkg\QemuVideoDxe\Gop.c d:\edk2\edk2\OvmfPkg\QemuVideoDxe\VbeShim.c

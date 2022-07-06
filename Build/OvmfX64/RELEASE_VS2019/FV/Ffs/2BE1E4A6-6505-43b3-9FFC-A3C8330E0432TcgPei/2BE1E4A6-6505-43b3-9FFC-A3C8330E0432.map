@@ -1,0 +1,195 @@
+ TcgPei
+
+ Timestamp is 61ee7042 (Mon Jan 24 17:24:18 2022)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000260H .text                   CODE
+ 0001:00000260 00001b53H .text$mn                CODE
+ 0002:00000000 000001c0H .data                   DATA
+ 0002:000001c0 00000020H .rdata                  DATA
+ 0002:000001e0 00000030H .bss                    DATA
+ 0002:00000210 00000068H .rdata$voltmd           DATA
+ 0002:00000278 000000a8H .rdata$zzzdbg           DATA
+ 0003:00000000 000001a4H .pdata                  DATA
+ 0004:00000000 00000170H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __x64_code_ranges_to_entry_points_count 0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata 0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_count         0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map_count    0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_table          0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table   0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_count          0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map          0000000000000000     <absolute>
+ 0000:00000000       __arm64x_native_entrypoint 0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_count      0000000000000000     <absolute>
+ 0000:00000000       __dynamic_value_reloc_table 0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_table      0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_table      0000000000000000     <absolute>
+ 0000:00000000       __enclave_config           0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat     0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table_size 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat_copy 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata_count 0000000000000000     <absolute>
+ 0000:00000000       __AbsoluteZero             0000000000000000     <absolute>
+ 0000:00000000       __guard_check_icall_a64n_fptr 0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_table         0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_count      0000000000000000     <absolute>
+ 0000:00000000       __guard_flags              0000000000000000     <absolute>
+ 0001:00000000       InternalMemCopyMem         00000000000002a0     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000040       InternalMemZeroMem         00000000000002e0     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00000060       CpuPause                   0000000000000300     BaseLib:CpuPause.obj
+ 0001:00000070       InternalX86ReadIdtr        0000000000000310     BaseLib:ReadIdtr.obj
+ 0001:00000080       InternalX86WriteIdtr       0000000000000320     BaseLib:WriteIdtr.obj
+ 0001:00000090       InternalMemSetMem          0000000000000330     BaseMemoryLibRepStr:SetMem.obj
+ 0001:000000b0       InternalMemSetMem64        0000000000000350     BaseMemoryLibRepStr:SetMem64.obj
+ 0001:000000d0       InternalMemSetMem32        0000000000000370     BaseMemoryLibRepStr:SetMem32.obj
+ 0001:000000f0       SevNoRepIo                 0000000000000390     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000130       IoReadFifo8                00000000000003d0     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000152       IoReadFifo16               00000000000003f2     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000178       IoReadFifo32               0000000000000418     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:0000019b       IoWriteFifo8               000000000000043b     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001bd       IoWriteFifo16              000000000000045d     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001e3       IoWriteFifo32              0000000000000483     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000210       EnableInterrupts           00000000000004b0     BaseLib:EnableInterrupts.obj
+ 0001:00000220       DisableInterrupts          00000000000004c0     BaseLib:DisableInterrupts.obj
+ 0001:00000230       AsmReadEflags              00000000000004d0     BaseLib:ReadEflags.obj
+ 0001:00000240       InternalMemCompareMem      00000000000004e0     BaseMemoryLibRepStr:CompareMem.obj
+ 0001:00000260       _ModuleEntryPoint          0000000000000500 f   PeimEntryPoint:PeimEntryPoint.obj
+ 0001:000003dc       EndofPeiSignalNotifyCallBack 000000000000067c f   TcgPei:TcgPei.obj
+ 0001:00000480       HashLogExtendEvent         0000000000000720 f   TcgPei:TcgPei.obj
+ 0001:000005f4       MeasureFvImage             0000000000000894 f   TcgPei:TcgPei.obj
+ 0001:000007a0       MeasureMainBios            0000000000000a40 f   TcgPei:TcgPei.obj
+ 0001:00000848       FirmwareVolumeInfoPpiNotifyCallback 0000000000000ae8 f   TcgPei:TcgPei.obj
+ 0001:00000918       PhysicalPresencePpiNotifyCallback 0000000000000bb8 f   TcgPei:TcgPei.obj
+ 0001:00000984       PeimEntryMP                0000000000000c24 f   TcgPei:TcgPei.obj
+ 0001:00000a68       PeimEntryMA                0000000000000d08 f   TcgPei:TcgPei.obj
+ 0001:00000c58       InternalAllocatePool       0000000000000ef8 f   PeiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00000ca0       AllocatePool               0000000000000f40 f   PeiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00000ce4       InternalReallocatePool     0000000000000f84 f   PeiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00000d68       PeiServicesLocatePpi       0000000000001008 f   PeiServicesLib:PeiServicesLib.obj
+ 0001:00000dac       PeiServicesAllocatePages   000000000000104c f   PeiServicesLib:PeiServicesLib.obj
+ 0001:00000dec       GetFirstGuidHob            000000000000108c f   PeiHobLib:HobLib.obj
+ 0001:00000e60       InternalPeiCreateHob       0000000000001100 f   PeiHobLib:HobLib.obj
+ 0001:00000ea8       BuildGuidHob               0000000000001148 f   PeiHobLib:HobLib.obj
+ 0001:00000edc       Tpm12GetPtpInterface       000000000000117c f   Tpm12DeviceLibDTpm:Tpm12Tis.obj
+ 0001:00000f44       Tpm12TisPcWaitRegisterBits 00000000000011e4 f   Tpm12DeviceLibDTpm:Tpm12Tis.obj
+ 0001:00000fc0       Tpm12TisPcReadBurstCount   0000000000001260 f   Tpm12DeviceLibDTpm:Tpm12Tis.obj
+ 0001:00001048       Tpm12TisTpmCommand         00000000000012e8 f   Tpm12DeviceLibDTpm:Tpm12Tis.obj
+ 0001:0000128c       Tpm12SubmitCommand         000000000000152c f   Tpm12DeviceLibDTpm:Tpm12Tis.obj
+ 0001:000012d4       Tpm12RequestUseTpm         0000000000001574 f   Tpm12DeviceLibDTpm:Tpm12Tis.obj
+ 0001:00001374       InternalReportStatusCode   0000000000001614 f   PeiReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0001:000013d0       Tpm12PhysicalPresence      0000000000001670 f   Tpm12CommandLib:Tpm12PhysicalPresence.obj
+ 0001:00001450       Tpm12GetCapabilityFlagPermanent 00000000000016f0 f   Tpm12CommandLib:Tpm12GetCapability.obj
+ 0001:00001554       Tpm12Startup               00000000000017f4 f   Tpm12CommandLib:Tpm12Startup.obj
+ 0001:000015d8       Tpm12Extend                0000000000001878 f   Tpm12CommandLib:Tpm12Pcr.obj
+ 0001:00001690       InternalAcpiDelay          0000000000001930 f   BaseAcpiTimerLib:AcpiTimerLib.obj
+ 0001:000016f0       SHA1_Update                0000000000001990 f   OpensslLib:sha1dgst.obj
+ 0001:0000181c       SHA1_Final                 0000000000001abc f   OpensslLib:sha1dgst.obj
+ 0001:00001c50       PciCf8Read8                0000000000001ef0 f   BasePciCf8Lib:PciCf8Lib.obj
+ 0001:00001cc0       PciCf8Read16               0000000000001f60 f   BasePciCf8Lib:PciCf8Lib.obj
+ 0001:00001d14       PciCf8Read32               0000000000001fb4 f   BasePciCf8Lib:PciCf8Lib.obj
+ 0001:00001d78       SaveAndDisableInterrupts   0000000000002018 f   BaseLib:Cpu.obj
+ 0001:00001d9c       memset                     000000000000203c f   BaseIntrinsicLib:MemoryIntrinsics.obj
+ 0002:00000000       _fltused                   0000000000002060     BaseIntrinsicLib:MemoryIntrinsics.obj
+ 0002:00000008       gTpmErrorHobGuid           0000000000002068     TcgPei:AutoGen.obj
+ 0002:00000018       gEdkiiTcgPpiGuid           0000000000002078     TcgPei:AutoGen.obj
+ 0002:00000028       gTcgEventEntryHobGuid      0000000000002088     TcgPei:AutoGen.obj
+ 0002:00000038       gEfiPeiFirmwareVolumeInfo2PpiGuid 0000000000002098     TcgPei:AutoGen.obj
+ 0002:00000048       gPeiTpmInitializationDonePpiGuid 00000000000020a8     TcgPei:AutoGen.obj
+ 0002:00000058       gEfiTpmDeviceInstanceTpm12Guid 00000000000020b8     TcgPei:AutoGen.obj
+ 0002:00000068       gPeiTpmInitializedPpiGuid  00000000000020c8     TcgPei:AutoGen.obj
+ 0002:00000078       gEdkiiMigratedFvInfoGuid   00000000000020d8     TcgPei:AutoGen.obj
+ 0002:00000088       gEfiEndOfPeiSignalPpiGuid  00000000000020e8     TcgPei:AutoGen.obj
+ 0002:00000098       gPeiLockPhysicalPresencePpiGuid 00000000000020f8     TcgPei:AutoGen.obj
+ 0002:000000a8       gEfiPeiFirmwareVolumeInfoPpiGuid 0000000000002108     TcgPei:AutoGen.obj
+ 0002:000000b8       gMeasuredFvHobGuid         0000000000002118     TcgPei:AutoGen.obj
+ 0002:000000c8       gEfiCallerIdGuid           0000000000002128     TcgPei:AutoGen.obj
+ 0002:000000d8       gEfiPeiFirmwareVolumeInfoMeasurementExcludedPpiGuid 0000000000002138     TcgPei:AutoGen.obj
+ 0002:000000e8       gPcdPpiGuid                0000000000002148     TcgPei:AutoGen.obj
+ 0002:00000100       mNotifyList                0000000000002160     TcgPei:TcgPei.obj
+ 0002:00000160       mTcgPpiList                00000000000021c0     TcgPei:TcgPei.obj
+ 0002:00000178       mEdkiiTcgPpi               00000000000021d8     TcgPei:TcgPei.obj
+ 0002:00000180       mTpmInitializedPpiList     00000000000021e0     TcgPei:TcgPei.obj
+ 0002:00000198       mTpmInitializationDonePpiList 00000000000021f8     TcgPei:TcgPei.obj
+ 0002:000001c0       _gPcd_FixedAtBuild_PcdFirmwareVersionString 0000000000002220     TcgPei:AutoGen.obj
+ 0002:000001e0       mMeasuredChildFvIndex      0000000000002240     TcgPei:TcgPei.obj
+ 0002:000001e4       mMeasuredMaxBaseFvIndex    0000000000002244     TcgPei:TcgPei.obj
+ 0002:000001e8       mMeasuredBaseFvIndex       0000000000002248     TcgPei:TcgPei.obj
+ 0002:000001ec       mMeasuredMaxChildFvIndex   000000000000224c     TcgPei:TcgPei.obj
+ 0002:000001f0       mImageInMemory             0000000000002250     TcgPei:TcgPei.obj
+ 0002:000001f8       mMeasurementExcludedFvPpi  0000000000002258     <common>
+ 0002:00000200       mMeasuredChildFvInfo       0000000000002260     <common>
+ 0002:00000208       mMeasuredBaseFvInfo        0000000000002268     <common>
+ 0002:00000210       __volatile_metadata        0000000000002270     <linker-defined>
+
+ entry point at        0001:00000260
+
+ Static symbols
+
+ 0001:0000001a       InternalMemCopyMem.0       00000000000002ba     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:0000002a       @CopyBackward              00000000000002ca     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000033       @CopyBytes                 00000000000002d3     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:0000012a       @UseRepIo                  00000000000003ca     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:0000012c       @SevNoRepIo_Done           00000000000003cc     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000144       @IoReadFifo8_NoRep         00000000000003e4     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000146       @IoReadFifo8_Loop          00000000000003e6     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:0000014e       @IoReadFifo8_Done          00000000000003ee     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000167       @IoReadFifo16_NoRep        0000000000000407     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000169       @IoReadFifo16_Loop         0000000000000409     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000174       @IoReadFifo16_Done         0000000000000414     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:0000018c       @IoReadFifo32_NoRep        000000000000042c     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:0000018e       @IoReadFifo32_Loop         000000000000042e     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000197       @IoReadFifo32_Done         0000000000000437     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001af       @IoWriteFifo8_NoRep        000000000000044f     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001b1       @IoWriteFifo8_Loop         0000000000000451     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001b9       @IoWriteFifo8_Done         0000000000000459     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001d2       @IoWriteFifo16_NoRep       0000000000000472     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001d4       @IoWriteFifo16_Loop        0000000000000474     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001df       @IoWriteFifo16_Done        000000000000047f     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001f7       @IoWriteFifo32_NoRep       0000000000000497     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001f9       @IoWriteFifo32_Loop        0000000000000499     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000202       @IoWriteFifo32_Done        00000000000004a2     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:0000197c       sha1_block_data_order      0000000000001c1c f   OpensslLib:sha1dgst.obj
+ 0002:000001b0       memset_func                0000000000002210     OpensslLib:mem_clr.obj
+ 0002:000001f4       mAcpiTimerIoAddr           0000000000002254     BaseAcpiTimerLib:BaseAcpiTimerLib.obj
+ 0004:00000000       $unwind$_ModuleEntryPoint  0000000000002540     PeimEntryPoint:PeimEntryPoint.obj
+ 0004:0000001c       $unwind$SaveAndDisableInterrupts 000000000000255c     BaseLib:Cpu.obj
+ 0004:0000001c       $unwind$PciCf8Read16       000000000000255c     BasePciCf8Lib:PciCf8Lib.obj
+ 0004:0000001c       $unwind$PciCf8Read32       000000000000255c     BasePciCf8Lib:PciCf8Lib.obj
+ 0004:0000001c       $unwind$PciCf8Read8        000000000000255c     BasePciCf8Lib:PciCf8Lib.obj
+ 0004:0000001c       $unwind$BuildGuidHob       000000000000255c     PeiHobLib:HobLib.obj
+ 0004:0000001c       $unwind$InternalAllocatePool 000000000000255c     PeiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0004:0000001c       $unwind$EndofPeiSignalNotifyCallBack 000000000000255c     TcgPei:TcgPei.obj
+ 0004:00000024       $unwind$HashLogExtendEvent 0000000000002564     TcgPei:TcgPei.obj
+ 0004:0000003c       $unwind$MeasureFvImage     000000000000257c     TcgPei:TcgPei.obj
+ 0004:00000054       $unwind$MeasureMainBios    0000000000002594     TcgPei:TcgPei.obj
+ 0004:00000064       $unwind$FirmwareVolumeInfoPpiNotifyCallback 00000000000025a4     TcgPei:TcgPei.obj
+ 0004:00000070       $unwind$PeiServicesLocatePpi 00000000000025b0     PeiServicesLib:PeiServicesLib.obj
+ 0004:00000070       $unwind$PhysicalPresencePpiNotifyCallback 00000000000025b0     TcgPei:TcgPei.obj
+ 0004:0000007c       $unwind$PeimEntryMP        00000000000025bc     TcgPei:TcgPei.obj
+ 0004:00000084       $unwind$PeimEntryMA        00000000000025c4     TcgPei:TcgPei.obj
+ 0004:00000094       $unwind$GetFirstGuidHob    00000000000025d4     PeiHobLib:HobLib.obj
+ 0004:00000094       $unwind$InternalPeiCreateHob 00000000000025d4     PeiHobLib:HobLib.obj
+ 0004:00000094       $unwind$AllocatePool       00000000000025d4     PeiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0004:0000009c       $unwind$InternalReallocatePool 00000000000025dc     PeiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0004:000000b0       $unwind$PeiServicesAllocatePages 00000000000025f0     PeiServicesLib:PeiServicesLib.obj
+ 0004:000000b0       $unwind$Tpm12SubmitCommand 00000000000025f0     Tpm12DeviceLibDTpm:Tpm12Tis.obj
+ 0004:000000bc       $unwind$Tpm12TisPcWaitRegisterBits 00000000000025fc     Tpm12DeviceLibDTpm:Tpm12Tis.obj
+ 0004:000000d4       $unwind$Tpm12TisPcReadBurstCount 0000000000002614     Tpm12DeviceLibDTpm:Tpm12Tis.obj
+ 0004:000000e8       $unwind$Tpm12TisTpmCommand 0000000000002628     Tpm12DeviceLibDTpm:Tpm12Tis.obj
+ 0004:00000100       $unwind$InternalAcpiDelay  0000000000002640     BaseAcpiTimerLib:AcpiTimerLib.obj
+ 0004:00000100       $unwind$Tpm12RequestUseTpm 0000000000002640     Tpm12DeviceLibDTpm:Tpm12Tis.obj
+ 0004:00000110       $unwind$InternalReportStatusCode 0000000000002650     PeiReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0004:00000118       $unwind$Tpm12PhysicalPresence 0000000000002658     Tpm12CommandLib:Tpm12PhysicalPresence.obj
+ 0004:00000118       $unwind$Tpm12Startup       0000000000002658     Tpm12CommandLib:Tpm12Startup.obj
+ 0004:00000120       $unwind$Tpm12GetCapabilityFlagPermanent 0000000000002660     Tpm12CommandLib:Tpm12GetCapability.obj
+ 0004:00000134       $unwind$Tpm12Extend        0000000000002674     Tpm12CommandLib:Tpm12Pcr.obj
+ 0004:0000013c       $unwind$SHA1_Final         000000000000267c     OpensslLib:sha1dgst.obj
+ 0004:0000013c       $unwind$SHA1_Update        000000000000267c     OpensslLib:sha1dgst.obj
+ 0004:00000154       $unwind$sha1_block_data_order 0000000000002694     OpensslLib:sha1dgst.obj

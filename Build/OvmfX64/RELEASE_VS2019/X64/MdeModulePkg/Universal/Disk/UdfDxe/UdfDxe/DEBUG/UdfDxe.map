@@ -1,0 +1,160 @@
+ UdfDxe
+
+ Timestamp is 61ee7012 (Mon Jan 24 17:23:30 2022)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000080H .text                   CODE
+ 0001:00000080 00003272H .text$mn                CODE
+ 0002:00000000 000001c8H .data                   DATA
+ 0002:000001c8 00000070H .rdata                  DATA
+ 0002:00000238 00000018H .bss                    DATA
+ 0002:00000250 00000020H .rdata$voltmd           DATA
+ 0002:00000270 000000a8H .rdata$zzzdbg           DATA
+ 0003:00000000 0000018cH .pdata                  DATA
+ 0004:00000000 00000228H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __x64_code_ranges_to_entry_points_count 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata 0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_table          0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map_count    0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points 0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_count          0000000000000000     <absolute>
+ 0000:00000000       __arm64x_native_entrypoint 0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_count      0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_table      0000000000000000     <absolute>
+ 0000:00000000       __enclave_config           0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_count         0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata_count 0000000000000000     <absolute>
+ 0000:00000000       __dynamic_value_reloc_table 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table   0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat     0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_count      0000000000000000     <absolute>
+ 0000:00000000       __guard_flags              0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_table      0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_table         0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat_copy 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map          0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table_size 0000000000000000     <absolute>
+ 0000:00000000       __AbsoluteZero             0000000000000000     <absolute>
+ 0000:00000000       __guard_check_icall_a64n_fptr 0000000000000000     <absolute>
+ 0001:00000000       InternalMemCopyMem         0000000000000280     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000040       InternalMemZeroMem         00000000000002c0     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00000060       InternalMemCompareMem      00000000000002e0     BaseMemoryLibRepStr:CompareMem.obj
+ 0001:00000080       _ModuleEntryPoint          0000000000000300 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:00000118       UdfDriverBindingSupported  0000000000000398 f   UdfDxe:Udf.obj
+ 0001:000001b0       UdfDriverBindingStart      0000000000000430 f   UdfDxe:Udf.obj
+ 0001:000003dc       UdfDriverBindingStop       000000000000065c f   UdfDxe:Udf.obj
+ 0001:000004b8       UdfComponentNameGetDriverName 0000000000000738 f   UdfDxe:ComponentName.obj
+ 0001:000005e4       UdfComponentNameGetControllerName 0000000000000864 f   UdfDxe:ComponentName.obj
+ 0001:000005e4       UdfWrite                   0000000000000864 f   UdfDxe:File.obj
+ 0001:000005f0       UdfOpenVolume              0000000000000870 f   UdfDxe:File.obj
+ 0001:000007b8       UdfOpen                    0000000000000a38 f   UdfDxe:File.obj
+ 0001:00000ad0       UdfRead                    0000000000000d50 f   UdfDxe:File.obj
+ 0001:00000ef0       UdfClose                   0000000000001170 f   UdfDxe:File.obj
+ 0001:00000f78       UdfDelete                  00000000000011f8 f   UdfDxe:File.obj
+ 0001:00000f9c       UdfGetPosition             000000000000121c f   UdfDxe:File.obj
+ 0001:00000fd4       UdfSetPosition             0000000000001254 f   UdfDxe:File.obj
+ 0001:00001040       UdfGetInfo                 00000000000012c0 f   UdfDxe:File.obj
+ 0001:00001258       UdfSetInfo                 00000000000014d8 f   UdfDxe:File.obj
+ 0001:00001258       UdfFlush                   00000000000014d8 f   UdfDxe:File.obj
+ 0001:00001264       StartMainVolumeDescriptorSequence 00000000000014e4 f   UdfDxe:FileSystemOperations.obj
+ 0001:0000137c       GetPdFromLongAd            00000000000015fc f   UdfDxe:FileSystemOperations.obj
+ 0001:000013d0       GetAllocationDescriptorLsn 0000000000001650 f   UdfDxe:FileSystemOperations.obj
+ 0001:00001458       GetAedAdsData              00000000000016d8 f   UdfDxe:FileSystemOperations.obj
+ 0001:00001594       ReadFile                   0000000000001814 f   UdfDxe:FileSystemOperations.obj
+ 0001:00001a8c       InternalFindFile           0000000000001d0c f   UdfDxe:FileSystemOperations.obj
+ 0001:00001d5c       ReadUdfVolumeInformation   0000000000001fdc f   UdfDxe:FileSystemOperations.obj
+ 0001:00001eac       FindFileEntry              000000000000212c f   UdfDxe:FileSystemOperations.obj
+ 0001:00001fa0       FindFile                   0000000000002220 f   UdfDxe:FileSystemOperations.obj
+ 0001:00002228       ReadDirectoryEntry         00000000000024a8 f   UdfDxe:FileSystemOperations.obj
+ 0001:00002304       GetFileNameFromFid         0000000000002584 f   UdfDxe:FileSystemOperations.obj
+ 0001:000023c8       ResolveSymlink             0000000000002648 f   UdfDxe:FileSystemOperations.obj
+ 0001:00002780       CleanupFileInformation     0000000000002a00 f   UdfDxe:FileSystemOperations.obj
+ 0001:000027c0       SetFileInfo                0000000000002a40 f   UdfDxe:FileSystemOperations.obj
+ 0001:000029ec       GetVolumeLabel             0000000000002c6c f   UdfDxe:FileSystemOperations.obj
+ 0001:00002ac4       GetVolumeSize              0000000000002d44 f   UdfDxe:FileSystemOperations.obj
+ 0001:00002c2c       ExcludeTrailingBackslashes 0000000000002eac f   UdfDxe:FileName.obj
+ 0001:00002ca4       MangleFileName             0000000000002f24 f   UdfDxe:FileName.obj
+ 0001:00002f5c       StrnLenS                   00000000000031dc f   BaseLib:SafeString.obj
+ 0001:00002f90       StrCpyS                    0000000000003210 f   BaseLib:SafeString.obj
+ 0001:00003030       StrCatS                    00000000000032b0 f   BaseLib:SafeString.obj
+ 0001:000030ec       StrCmp                     000000000000336c f   BaseLib:String.obj
+ 0001:00003124       InternalAllocatePool       00000000000033a4 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00003154       AllocateZeroPool           00000000000033d4 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00003180       InternalAllocateCopyPool   0000000000003400 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:000031c0       InternalReallocatePool     0000000000003440 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00003250       IsLanguageSupported        00000000000034d0 f   UefiLib:UefiLib.obj
+ 0002:00000000       gEfiComponentName2ProtocolGuid 0000000000003580     UdfDxe:AutoGen.obj
+ 0002:00000010       gEfiFileSystemInfoGuid     0000000000003590     UdfDxe:AutoGen.obj
+ 0002:00000020       gEfiDiskIoProtocolGuid     00000000000035a0     UdfDxe:AutoGen.obj
+ 0002:00000030       gEfiFileInfoGuid           00000000000035b0     UdfDxe:AutoGen.obj
+ 0002:00000040       gEfiDevicePathProtocolGuid 00000000000035c0     UdfDxe:AutoGen.obj
+ 0002:00000050       gEfiDevicePathUtilitiesProtocolGuid 00000000000035d0     UdfDxe:AutoGen.obj
+ 0002:00000060       gEfiSimpleFileSystemProtocolGuid 00000000000035e0     UdfDxe:AutoGen.obj
+ 0002:00000070       gEfiFileSystemVolumeLabelInfoIdGuid 00000000000035f0     UdfDxe:AutoGen.obj
+ 0002:00000080       gEfiDriverBindingProtocolGuid 0000000000003600     UdfDxe:AutoGen.obj
+ 0002:00000090       gEfiComponentNameProtocolGuid 0000000000003610     UdfDxe:AutoGen.obj
+ 0002:000000a0       gEfiBlockIoProtocolGuid    0000000000003620     UdfDxe:AutoGen.obj
+ 0002:000000b0       gUdfSimpleFsTemplate       0000000000003630     UdfDxe:Udf.obj
+ 0002:000000c0       gUdfDriverBinding          0000000000003640     UdfDxe:Udf.obj
+ 0002:000000f0       gUdfComponentName          0000000000003670     UdfDxe:ComponentName.obj
+ 0002:00000108       gUdfComponentName2         0000000000003688     UdfDxe:ComponentName.obj
+ 0002:00000120       mUdfDriverNameTable        00000000000036a0     UdfDxe:ComponentName.obj
+ 0002:00000140       gUdfFileIoOps              00000000000036c0     UdfDxe:File.obj
+ 0002:000001b8       gUdfDevPathGuid            0000000000003738     UdfDxe:FileSystemOperations.obj
+ 0002:000001c8       ??_C@_03LKLGDMJI@eng@      0000000000003748     UdfDxe:ComponentName.obj
+ 0002:000001cc       ??_C@_02LFNMGJAP@en@       000000000000374c     UdfDxe:ComponentName.obj
+ 0002:000001d0       ??_C@_06DALJLGPG@eng?$DLen@ 0000000000003750     UdfDxe:ComponentName.obj
+ 0002:000001d8       ??_C@_1CO@GFGCGOCP@?$AAU?$AAD?$AAF?$AA?5?$AAF?$AAi?$AAl?$AAe?$AA?5?$AAS?$AAy?$AAs?$AAt?$AAe?$AAm@ 0000000000003758     UdfDxe:ComponentName.obj
+ 0002:00000208       ??_C@_13FPGAJAPJ@?$AA?2@   0000000000003788     UdfDxe:File.obj
+ 0002:0000020c       ??_C@_13JOFGPIOO@?$AA?4@   000000000000378c     UdfDxe:FileSystemOperations.obj
+ 0002:00000210       ??_C@_15DDHGOCBH@?$AA?4?$AA?4@ 0000000000003790     UdfDxe:FileSystemOperations.obj
+ 0002:00000238       gST                        00000000000037b8     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000240       gBS                        00000000000037c0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000248       mDevicePathLibDevicePathUtilities 00000000000037c8     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:00000250       __volatile_metadata        00000000000037d0     <linker-defined>
+
+ entry point at        0001:00000080
+
+ Static symbols
+
+ 0001:0000001a       InternalMemCopyMem.0       000000000000029a     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:0000002a       @CopyBackward              00000000000002aa     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000033       @CopyBytes                 00000000000002b3     BaseMemoryLibRepStr:CopyMem.obj
+ 0004:00000000       $unwind$_ModuleEntryPoint  0000000000003a40     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0004:00000008       $unwind$UdfDriverBindingSupported 0000000000003a48     UdfDxe:Udf.obj
+ 0004:00000014       $unwind$UdfDriverBindingStart 0000000000003a54     UdfDxe:Udf.obj
+ 0004:00000028       $unwind$UdfDriverBindingStop 0000000000003a68     UdfDxe:Udf.obj
+ 0004:0000003c       $unwind$UdfComponentNameGetDriverName 0000000000003a7c     UdfDxe:ComponentName.obj
+ 0004:00000050       $unwind$UdfOpenVolume      0000000000003a90     UdfDxe:File.obj
+ 0004:0000006c       $unwind$UdfOpen            0000000000003aac     UdfDxe:File.obj
+ 0004:0000008c       $unwind$UdfRead            0000000000003acc     UdfDxe:File.obj
+ 0004:000000a8       $unwind$UdfClose           0000000000003ae8     UdfDxe:File.obj
+ 0004:000000b8       $unwind$UdfDelete          0000000000003af8     UdfDxe:File.obj
+ 0004:000000b8       $unwind$GetAllocationDescriptorLsn 0000000000003af8     UdfDxe:FileSystemOperations.obj
+ 0004:000000b8       $unwind$InternalAllocatePool 0000000000003af8     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0004:000000c0       $unwind$UdfGetInfo         0000000000003b00     UdfDxe:File.obj
+ 0004:000000dc       $unwind$StartMainVolumeDescriptorSequence 0000000000003b1c     UdfDxe:FileSystemOperations.obj
+ 0004:000000f8       $unwind$GetAedAdsData      0000000000003b38     UdfDxe:FileSystemOperations.obj
+ 0004:00000110       $unwind$ReadFile           0000000000003b50     UdfDxe:FileSystemOperations.obj
+ 0004:00000128       $unwind$InternalFindFile   0000000000003b68     UdfDxe:FileSystemOperations.obj
+ 0004:00000144       $unwind$ReadUdfVolumeInformation 0000000000003b84     UdfDxe:FileSystemOperations.obj
+ 0004:00000164       $unwind$FindFileEntry      0000000000003ba4     UdfDxe:FileSystemOperations.obj
+ 0004:00000164       $unwind$GetVolumeSize      0000000000003ba4     UdfDxe:FileSystemOperations.obj
+ 0004:0000017c       $unwind$FindFile           0000000000003bbc     UdfDxe:FileSystemOperations.obj
+ 0004:00000198       $unwind$ReadDirectoryEntry 0000000000003bd8     UdfDxe:FileSystemOperations.obj
+ 0004:000001a0       $unwind$GetFileNameFromFid 0000000000003be0     UdfDxe:FileSystemOperations.obj
+ 0004:000001ac       $unwind$ResolveSymlink     0000000000003bec     UdfDxe:FileSystemOperations.obj
+ 0004:000001c4       $unwind$CleanupFileInformation 0000000000003c04     UdfDxe:FileSystemOperations.obj
+ 0004:000001c4       $unwind$StrCpyS            0000000000003c04     BaseLib:SafeString.obj
+ 0004:000001c4       $unwind$AllocateZeroPool   0000000000003c04     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0004:000001cc       $unwind$SetFileInfo        0000000000003c0c     UdfDxe:FileSystemOperations.obj
+ 0004:000001e4       $unwind$GetVolumeLabel     0000000000003c24     UdfDxe:FileSystemOperations.obj
+ 0004:000001f4       $unwind$MangleFileName     0000000000003c34     UdfDxe:FileName.obj
+ 0004:00000208       $unwind$StrCatS            0000000000003c48     BaseLib:SafeString.obj
+ 0004:00000208       $unwind$InternalAllocateCopyPool 0000000000003c48     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0004:00000214       $unwind$InternalReallocatePool 0000000000003c54     UefiMemoryAllocationLib:MemoryAllocationLib.obj

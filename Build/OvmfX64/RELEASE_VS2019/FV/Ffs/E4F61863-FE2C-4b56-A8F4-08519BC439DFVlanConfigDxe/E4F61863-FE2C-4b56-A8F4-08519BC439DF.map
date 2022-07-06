@@ -1,0 +1,246 @@
+ VlanConfigDxe
+
+ Timestamp is 61ee703f (Mon Jan 24 17:24:15 2022)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000228H .text                   CODE
+ 0001:00000228 00003a3dH .text$mn                CODE
+ 0002:00000000 00000830H .data                   DATA
+ 0002:00000830 000005f0H .rdata                  DATA
+ 0002:00000e20 00000050H .bss                    DATA
+ 0002:00000e70 00000020H .rdata$voltmd           DATA
+ 0002:00000e90 000000a8H .rdata$zzzdbg           DATA
+ 0003:00000000 000001f8H .pdata                  DATA
+ 0004:00000000 00000248H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __guard_longjmp_table      0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points 0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_table          0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_count         0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map_count    0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table   0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map          0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table_size 0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_count          0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_count      0000000000000000     <absolute>
+ 0000:00000000       __arm64x_native_entrypoint 0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_table      0000000000000000     <absolute>
+ 0000:00000000       __dynamic_value_reloc_table 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat     0000000000000000     <absolute>
+ 0000:00000000       __enclave_config           0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat_copy 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata_count 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata 0000000000000000     <absolute>
+ 0000:00000000       __AbsoluteZero             0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points_count 0000000000000000     <absolute>
+ 0000:00000000       __guard_check_icall_a64n_fptr 0000000000000000     <absolute>
+ 0000:00000000       __guard_flags              0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_count      0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_table         0000000000000000     <absolute>
+ 0000:00000000       __ImageBase                0000000000000000     <linker-defined>
+ 0001:00000000       InternalMemZeroMem         0000000000000280     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00000020       InternalMemSetMem16        00000000000002a0     BaseMemoryLibRepStr:SetMem16.obj
+ 0001:00000040       InternalMemCopyMem         00000000000002c0     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000080       InternalMemCompareMem      0000000000000300     BaseMemoryLibRepStr:CompareMem.obj
+ 0001:000000a0       InternalMemSetMem          0000000000000320     BaseMemoryLibRepStr:SetMem.obj
+ 0001:000000c0       InternalMemSetMem64        0000000000000340     BaseMemoryLibRepStr:SetMem64.obj
+ 0001:000000e0       InternalMemSetMem32        0000000000000360     BaseMemoryLibRepStr:SetMem32.obj
+ 0001:00000100       CpuPause                   0000000000000380     BaseLib:CpuPause.obj
+ 0001:00000110       SevNoRepIo                 0000000000000390     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000150       IoReadFifo8                00000000000003d0     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000172       IoReadFifo16               00000000000003f2     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000198       IoReadFifo32               0000000000000418     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001bb       IoWriteFifo8               000000000000043b     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001dd       IoWriteFifo16              000000000000045d     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000203       IoWriteFifo32              0000000000000483     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000228       _DriverUnloadHandler       00000000000004a8 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:000003ac       _ModuleEntryPoint          000000000000062c f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:00000450       ProcessLibraryConstructorList 00000000000006d0 f   VlanConfigDxe:AutoGen.obj
+ 0001:00000514       VlanConfigDriverBindingSupported 0000000000000794 f   VlanConfigDxe:VlanConfigDriver.obj
+ 0001:00000590       VlanConfigDriverBindingStart 0000000000000810 f   VlanConfigDxe:VlanConfigDriver.obj
+ 0001:0000075c       VlanConfigDriverBindingStop 00000000000009dc f   VlanConfigDxe:VlanConfigDriver.obj
+ 0001:00000830       VlanConfigComponentNameGetDriverName 0000000000000ab0 f   VlanConfigDxe:ComponentName.obj
+ 0001:0000092c       VlanConfigComponentNameGetControllerName 0000000000000bac f   VlanConfigDxe:ComponentName.obj
+ 0001:00000938       VlanExtractConfig          0000000000000bb8 f   VlanConfigDxe:VlanConfigImpl.obj
+ 0001:00000b00       VlanRouteConfig            0000000000000d80 f   VlanConfigDxe:VlanConfigImpl.obj
+ 0001:00000b78       VlanCallback               0000000000000df8 f   VlanConfigDxe:VlanConfigImpl.obj
+ 0001:00000d14       VlanUpdateForm             0000000000000f94 f   VlanConfigDxe:VlanConfigImpl.obj
+ 0001:00000fb8       InstallVlanConfigForm      0000000000001238 f   VlanConfigDxe:VlanConfigImpl.obj
+ 0001:000011e0       UninstallVlanConfigForm    0000000000001460 f   VlanConfigDxe:VlanConfigImpl.obj
+ 0001:000012f0       StrnLenS                   0000000000001570 f   BaseLib:SafeString.obj
+ 0001:00001324       StrCpyS                    00000000000015a4 f   BaseLib:SafeString.obj
+ 0001:000013c4       StrCatS                    0000000000001644 f   BaseLib:SafeString.obj
+ 0001:00001498       StrnCmp                    0000000000001718 f   BaseLib:String.obj
+ 0001:000014d4       StrStr                     0000000000001754 f   BaseLib:String.obj
+ 0001:00001524       AsciiStrnCmp               00000000000017a4 f   BaseLib:String.obj
+ 0001:00001558       UnicodeSPrint              00000000000017d8 f   BasePrintLib:PrintLib.obj
+ 0001:0000158c       BasePrintLibFillBuffer     000000000000180c f   BasePrintLib:PrintLibInternal.obj
+ 0001:000015c0       BasePrintLibConvertValueToStringS 0000000000001840 f   BasePrintLib:PrintLibInternal.obj
+ 0001:00001884       BasePrintLibSPrintMarker   0000000000001b04 f   BasePrintLib:PrintLibInternal.obj
+ 0001:00002668       BasePrintLibSPrint         00000000000028e8 f   BasePrintLib:PrintLibInternal.obj
+ 0001:0000268c       InternalAllocatePool       000000000000290c f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:000026bc       AllocateZeroPool           000000000000293c f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:000026e8       InternalReallocatePool     0000000000002968 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00002778       DevicePathFromHandle       00000000000029f8 f   UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0001:000027ac       IsLanguageSupported        0000000000002a2c f   UefiLib:UefiLib.obj
+ 0001:00002824       NetLibGetSnpHandle         0000000000002aa4 f   DxeNetLib:DxeNetLib.obj
+ 0001:000028ec       NetLibGetVlanHandle        0000000000002b6c f   DxeNetLib:DxeNetLib.obj
+ 0001:000029a4       NetLibGetMacString         0000000000002c24 f   DxeNetLib:DxeNetLib.obj
+ 0001:00002c50       HiiSetString               0000000000002ed0 f   UefiHiiLib:HiiString.obj
+ 0001:00002d88       HiiAddPackages             0000000000003008 f   UefiHiiLib:HiiLib.obj
+ 0001:00002ea4       InternalHiiBrowserCallback 0000000000003124 f   UefiHiiLib:HiiLib.obj
+ 0001:00002fd4       HiiConstructConfigHdr      0000000000003254 f   UefiHiiLib:HiiLib.obj
+ 0001:00003258       InternalHiiCompareSubString 00000000000034d8 f   UefiHiiLib:HiiLib.obj
+ 0001:000032f0       HiiIsConfigHdrMatch        0000000000003570 f   UefiHiiLib:HiiLib.obj
+ 0001:00003370       HiiGetBrowserData          00000000000035f0 f   UefiHiiLib:HiiLib.obj
+ 0001:0000346c       HiiSetBrowserData          00000000000036ec f   UefiHiiLib:HiiLib.obj
+ 0001:00003574       HiiAllocateOpCodeHandle    00000000000037f4 f   UefiHiiLib:HiiLib.obj
+ 0001:000035c8       InternalHiiGrowOpCodeHandle 0000000000003848 f   UefiHiiLib:HiiLib.obj
+ 0001:00003628       InternalHiiCreateOpCodeExtended 00000000000038a8 f   UefiHiiLib:HiiLib.obj
+ 0001:00003684       HiiCreateGuidOpCode        0000000000003904 f   UefiHiiLib:HiiLib.obj
+ 0001:000036e0       InternalHiiUpdateFormPackageData 0000000000003960 f   UefiHiiLib:HiiLib.obj
+ 0001:00003984       HiiUpdateForm              0000000000003c04 f   UefiHiiLib:HiiLib.obj
+ 0001:00003bb8       HiiGetSupportedLanguages   0000000000003e38 f   UefiHiiLib:HiiLanguage.obj
+ 0002:00000000       gEfiLoadedImageProtocolGuid 0000000000003f00     VlanConfigDxe:AutoGen.obj
+ 0002:00000010       gEfiIfrTianoGuid           0000000000003f10     VlanConfigDxe:AutoGen.obj
+ 0002:00000020       gEfiComponentName2ProtocolGuid 0000000000003f20     VlanConfigDxe:AutoGen.obj
+ 0002:00000030       gEfiVlanConfigProtocolGuid 0000000000003f30     VlanConfigDxe:AutoGen.obj
+ 0002:00000040       gEfiDevicePathProtocolGuid 0000000000003f40     VlanConfigDxe:AutoGen.obj
+ 0002:00000050       VlanConfigDxeStrings       0000000000003f50     VlanConfigDxe:AutoGen.obj
+ 0002:00000438       gEfiSimpleNetworkProtocolGuid 0000000000004338     VlanConfigDxe:AutoGen.obj
+ 0002:00000448       gEfiHiiConfigRoutingProtocolGuid 0000000000004348     VlanConfigDxe:AutoGen.obj
+ 0002:00000458       gEfiHiiImageProtocolGuid   0000000000004358     VlanConfigDxe:AutoGen.obj
+ 0002:00000468       gEfiDevicePathUtilitiesProtocolGuid 0000000000004368     VlanConfigDxe:AutoGen.obj
+ 0002:00000478       gEfiHiiDatabaseProtocolGuid 0000000000004378     VlanConfigDxe:AutoGen.obj
+ 0002:00000488       gEfiHiiStringProtocolGuid  0000000000004388     VlanConfigDxe:AutoGen.obj
+ 0002:00000498       gEfiHiiConfigAccessProtocolGuid 0000000000004398     VlanConfigDxe:AutoGen.obj
+ 0002:000004a8       gEfiManagedNetworkServiceBindingProtocolGuid 00000000000043a8     VlanConfigDxe:AutoGen.obj
+ 0002:000004b8       gEfiFormBrowser2ProtocolGuid 00000000000043b8     VlanConfigDxe:AutoGen.obj
+ 0002:000004c8       gEfiDriverBindingProtocolGuid 00000000000043c8     VlanConfigDxe:AutoGen.obj
+ 0002:000004d8       gEfiComponentNameProtocolGuid 00000000000043d8     VlanConfigDxe:AutoGen.obj
+ 0002:000004e8       gEfiCallerIdGuid           00000000000043e8     VlanConfigDxe:AutoGen.obj
+ 0002:000004f8       gEfiManagedNetworkProtocolGuid 00000000000043f8     VlanConfigDxe:AutoGen.obj
+ 0002:00000510       gVlanConfigFormSetGuid     0000000000004410     VlanConfigDxe:AutoGen.obj
+ 0002:00000520       gEfiHiiFontProtocolGuid    0000000000004420     VlanConfigDxe:AutoGen.obj
+ 0002:00000530       gVlanConfigDriverBinding   0000000000004430     VlanConfigDxe:VlanConfigDriver.obj
+ 0002:00000560       gVlanConfigComponentName2  0000000000004460     VlanConfigDxe:ComponentName.obj
+ 0002:00000578       gVlanConfigComponentName   0000000000004478     VlanConfigDxe:ComponentName.obj
+ 0002:00000590       mVlanConfigDriverNameTable 0000000000004490     VlanConfigDxe:ComponentName.obj
+ 0002:000005b0       mVlanConfigPrivateDateTemplate 00000000000044b0     VlanConfigDxe:VlanConfigImpl.obj
+ 0002:000006e0       mVlanStorageName           00000000000045e0     VlanConfigDxe:VlanConfigImpl.obj
+ 0002:000006f8       mHiiVendorDevicePathNode   00000000000045f8     VlanConfigDxe:VlanConfigImpl.obj
+ 0002:00000710       VlanConfigBin              0000000000004610     VlanConfigDxe:VlanConfig.obj
+ 0002:00000820       mNetVlanDevicePathTemplate 0000000000004720     DxeNetLib:DxeNetLib.obj
+ 0002:00000830       ??_C@_03LKLGDMJI@eng@      0000000000004730     VlanConfigDxe:ComponentName.obj
+ 0002:00000834       ??_C@_02LFNMGJAP@en@       0000000000004734     VlanConfigDxe:ComponentName.obj
+ 0002:00000838       ??_C@_06DALJLGPG@eng?$DLen@ 0000000000004738     VlanConfigDxe:ComponentName.obj
+ 0002:00000840       ??_C@_1DE@GEKDGKOO@?$AAV?$AAL?$AAA?$AAN?$AA?5?$AAC?$AAo?$AAn?$AAf?$AAi?$AAg?$AAu?$AAr?$AAa?$AAt@ 0000000000004740     VlanConfigDxe:ComponentName.obj
+ 0002:00000878       ??_C@_1O@LFMAFHMH@?$AAO?$AAF?$AAF?$AAS?$AAE?$AAT@ 0000000000004778     VlanConfigDxe:VlanConfigImpl.obj
+ 0002:00000888       ??_C@_1DC@EPJEBJEB@?$AA?$CF?$AAs?$AA?$CG?$AAO?$AAF?$AAF?$AAS?$AAE?$AAT?$AA?$DN?$AA0?$AA?$CG?$AAW?$AAI?$AAD@ 0000000000004788     VlanConfigDxe:VlanConfigImpl.obj
+ 0002:000008c0       ??_C@_1BG@KBIPMBNI@?$AA?5?$AA?5?$AAV?$AAL?$AAA?$AAN?$AA?5?$AAI?$AAD?$AA?3@ 00000000000047c0     VlanConfigDxe:VlanConfigImpl.obj
+ 0002:000008e0       ??_C@_1BI@MIKPFMIO@?$AA?0?$AA?5?$AAP?$AAr?$AAi?$AAo?$AAr?$AAi?$AAt?$AAy?$AA?3@ 00000000000047e0     VlanConfigDxe:VlanConfigImpl.obj
+ 0002:00000900       ??_C@_1DC@FBJMIKHD@?$AAV?$AAL?$AAA?$AAN?$AA?5?$AAC?$AAo?$AAn?$AAf?$AAi?$AAg?$AAu?$AAr?$AAa?$AAt@ 0000000000004800     VlanConfigDxe:VlanConfigImpl.obj
+ 0002:00000934       ??_C@_13DIBMAFH@?$AA?$CJ@  0000000000004834     VlanConfigDxe:VlanConfigImpl.obj
+ 0002:00000938       ??_C@_0O@MLOLIMFM@?$DMnull?5string?$DO@ 0000000000004838     BasePrintLib:PrintLibInternal.obj
+ 0002:00000948       ??_C@_0M@BJJDNPHK@?$DMnull?5guid?$DO@ 0000000000004848     BasePrintLib:PrintLibInternal.obj
+ 0002:00000958       ??_C@_0DB@PMLHLBMO@?$CF08x?9?$CF04x?9?$CF04x?9?$CF02x?$CF02x?9?$CF02x?$CF02@ 0000000000004858     BasePrintLib:PrintLibInternal.obj
+ 0002:00000990       ??_C@_0M@LHGBCIKM@?$DMnull?5time?$DO@ 0000000000004890     BasePrintLib:PrintLibInternal.obj
+ 0002:000009a0       ??_C@_0BK@FCPKCIDD@?$CF02d?1?$CF02d?1?$CF04d?5?5?$CF02d?3?$CF02d@ 00000000000048a0     BasePrintLib:PrintLibInternal.obj
+ 0002:000009bc       ??_C@_04JIMNDDED@?$CF08X@  00000000000048bc     BasePrintLib:PrintLibInternal.obj
+ 0002:000009c4       ??_C@_02PCIJFNDE@?$AN?6@   00000000000048c4     BasePrintLib:PrintLibInternal.obj
+ 0002:000009c8       ??_C@_01LIIJDEN@?$AN@      00000000000048c8     BasePrintLib:PrintLibInternal.obj
+ 0002:000009d0       mWarningString             00000000000048d0     BasePrintLib:PrintLibInternal.obj
+ 0002:00000a70       mErrorString               0000000000004970     BasePrintLib:PrintLibInternal.obj
+ 0002:00000d30       mHexStr                    0000000000004c30     BasePrintLib:PrintLibInternal.obj
+ 0002:00000d40       ??_C@_06PLDEFKP@x?9UEFI@   0000000000004c40     UefiHiiLib:HiiString.obj
+ 0002:00000d48       ??_C@_1M@DPLGJLCD@?$AAG?$AAU?$AAI?$AAD?$AA?$DN@ 0000000000004c48     UefiHiiLib:HiiLib.obj
+ 0002:00000d58       ??_C@_1O@FMIENBLJ@?$AA?$CG?$AAN?$AAA?$AAM?$AAE?$AA?$DN@ 0000000000004c58     UefiHiiLib:HiiLib.obj
+ 0002:00000d68       ??_C@_1O@GGMHNGIF@?$AA?$CG?$AAP?$AAA?$AAT?$AAH?$AA?$DN@ 0000000000004c68     UefiHiiLib:HiiLib.obj
+ 0002:00000d78       ??_C@_1M@IDEFLMF@?$AA?$CF?$AAs?$AA?$CG?$AA?$CF?$AAs@ 0000000000004c78     UefiHiiLib:HiiLib.obj
+ 0002:00000d90       mConfigHdrTemplate         0000000000004c90     UefiHiiLib:HiiLib.obj
+ 0002:00000e00       mEndOfPakageList           0000000000004d00     UefiHiiLib:HiiLib.obj
+ 0002:00000e20       mHiiConfigRouting          0000000000004d20     VlanConfigDxe:VlanConfigImpl.obj
+ 0002:00000e28       gST                        0000000000004d28     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000e30       gBS                        0000000000004d30     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000e38       mDevicePathLibDevicePathUtilities 0000000000004d38     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:00000e40       gHiiString                 0000000000004d40     UefiHiiServicesLib:UefiHiiServicesLib.obj
+ 0002:00000e48       gHiiFont                   0000000000004d48     UefiHiiServicesLib:UefiHiiServicesLib.obj
+ 0002:00000e50       gHiiConfigRouting          0000000000004d50     UefiHiiServicesLib:UefiHiiServicesLib.obj
+ 0002:00000e58       gHiiImage                  0000000000004d58     UefiHiiServicesLib:UefiHiiServicesLib.obj
+ 0002:00000e60       gHiiDatabase               0000000000004d60     UefiHiiServicesLib:UefiHiiServicesLib.obj
+ 0002:00000e68       mUefiFormBrowser2          0000000000004d68     UefiHiiLib:HiiLib.obj
+ 0002:00000e70       __volatile_metadata        0000000000004d70     <linker-defined>
+
+ entry point at        0001:000003ac
+
+ Static symbols
+
+ 0001:0000005a       InternalMemCopyMem.0       00000000000002da     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:0000006a       @CopyBackward              00000000000002ea     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000073       @CopyBytes                 00000000000002f3     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:0000014a       @UseRepIo                  00000000000003ca     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:0000014c       @SevNoRepIo_Done           00000000000003cc     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000164       @IoReadFifo8_NoRep         00000000000003e4     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000166       @IoReadFifo8_Loop          00000000000003e6     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:0000016e       @IoReadFifo8_Done          00000000000003ee     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000187       @IoReadFifo16_NoRep        0000000000000407     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000189       @IoReadFifo16_Loop         0000000000000409     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000194       @IoReadFifo16_Done         0000000000000414     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001ac       @IoReadFifo32_NoRep        000000000000042c     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001ae       @IoReadFifo32_Loop         000000000000042e     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001b7       @IoReadFifo32_Done         0000000000000437     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001cf       @IoWriteFifo8_NoRep        000000000000044f     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001d1       @IoWriteFifo8_Loop         0000000000000451     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001d9       @IoWriteFifo8_Done         0000000000000459     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001f2       @IoWriteFifo16_NoRep       0000000000000472     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001f4       @IoWriteFifo16_Loop        0000000000000474     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001ff       @IoWriteFifo16_Done        000000000000047f     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000217       @IoWriteFifo32_NoRep       0000000000000497     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000219       @IoWriteFifo32_Loop        0000000000000499     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000222       @IoWriteFifo32_Done        00000000000004a2     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0004:00000000       $unwind$_DriverUnloadHandler 0000000000005040     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0004:00000010       $unwind$_ModuleEntryPoint  0000000000005050     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0004:00000018       $unwind$DevicePathFromHandle 0000000000005058     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0004:00000018       $unwind$IsLanguageSupported 0000000000005058     UefiLib:UefiLib.obj
+ 0004:00000018       $unwind$InternalAllocatePool 0000000000005058     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0004:00000018       $unwind$ProcessLibraryConstructorList 0000000000005058     VlanConfigDxe:AutoGen.obj
+ 0004:00000020       $unwind$VlanConfigDriverBindingSupported 0000000000005060     VlanConfigDxe:VlanConfigDriver.obj
+ 0004:00000030       $unwind$VlanConfigDriverBindingStart 0000000000005070     VlanConfigDxe:VlanConfigDriver.obj
+ 0004:0000003c       $unwind$VlanConfigDriverBindingStop 000000000000507c     VlanConfigDxe:VlanConfigDriver.obj
+ 0004:00000050       $unwind$VlanConfigComponentNameGetDriverName 0000000000005090     VlanConfigDxe:ComponentName.obj
+ 0004:00000064       $unwind$VlanExtractConfig  00000000000050a4     VlanConfigDxe:VlanConfigImpl.obj
+ 0004:00000084       $unwind$HiiIsConfigHdrMatch 00000000000050c4     UefiHiiLib:HiiLib.obj
+ 0004:00000084       $unwind$InternalHiiCompareSubString 00000000000050c4     UefiHiiLib:HiiLib.obj
+ 0004:00000084       $unwind$StrCatS            00000000000050c4     BaseLib:SafeString.obj
+ 0004:00000084       $unwind$VlanRouteConfig    00000000000050c4     VlanConfigDxe:VlanConfigImpl.obj
+ 0004:00000094       $unwind$VlanCallback       00000000000050d4     VlanConfigDxe:VlanConfigImpl.obj
+ 0004:000000ac       $unwind$VlanUpdateForm     00000000000050ec     VlanConfigDxe:VlanConfigImpl.obj
+ 0004:000000c8       $unwind$InstallVlanConfigForm 0000000000005108     VlanConfigDxe:VlanConfigImpl.obj
+ 0004:000000dc       $unwind$UninstallVlanConfigForm 000000000000511c     VlanConfigDxe:VlanConfigImpl.obj
+ 0004:000000e8       $unwind$HiiAllocateOpCodeHandle 0000000000005128     UefiHiiLib:HiiLib.obj
+ 0004:000000e8       $unwind$StrCpyS            0000000000005128     BaseLib:SafeString.obj
+ 0004:000000e8       $unwind$AllocateZeroPool   0000000000005128     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0004:000000f0       $unwind$UnicodeSPrint      0000000000005130     BasePrintLib:PrintLib.obj
+ 0004:000000f8       $unwind$BasePrintLibConvertValueToStringS 0000000000005138     BasePrintLib:PrintLibInternal.obj
+ 0004:00000110       $unwind$BasePrintLibSPrintMarker 0000000000005150     BasePrintLib:PrintLibInternal.obj
+ 0004:0000012c       $unwind$BasePrintLibSPrint 000000000000516c     BasePrintLib:PrintLibInternal.obj
+ 0004:00000134       $unwind$InternalReallocatePool 0000000000005174     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0004:00000148       $unwind$NetLibGetSnpHandle 0000000000005188     DxeNetLib:DxeNetLib.obj
+ 0004:00000148       $unwind$NetLibGetVlanHandle 0000000000005188     DxeNetLib:DxeNetLib.obj
+ 0004:00000154       $unwind$NetLibGetMacString 0000000000005194     DxeNetLib:DxeNetLib.obj
+ 0004:00000170       $unwind$HiiSetString       00000000000051b0     UefiHiiLib:HiiString.obj
+ 0004:00000188       $unwind$HiiAddPackages     00000000000051c8     UefiHiiLib:HiiLib.obj
+ 0004:0000019c       $unwind$InternalHiiBrowserCallback 00000000000051dc     UefiHiiLib:HiiLib.obj
+ 0004:000001b0       $unwind$HiiConstructConfigHdr 00000000000051f0     UefiHiiLib:HiiLib.obj
+ 0004:000001cc       $unwind$HiiGetBrowserData  000000000000520c     UefiHiiLib:HiiLib.obj
+ 0004:000001e0       $unwind$HiiSetBrowserData  0000000000005220     UefiHiiLib:HiiLib.obj
+ 0004:000001f4       $unwind$InternalHiiCreateOpCodeExtended 0000000000005234     UefiHiiLib:HiiLib.obj
+ 0004:000001f4       $unwind$InternalHiiGrowOpCodeHandle 0000000000005234     UefiHiiLib:HiiLib.obj
+ 0004:00000200       $unwind$HiiCreateGuidOpCode 0000000000005240     UefiHiiLib:HiiLib.obj
+ 0004:00000208       $unwind$InternalHiiUpdateFormPackageData 0000000000005248     UefiHiiLib:HiiLib.obj
+ 0004:00000220       $unwind$HiiUpdateForm      0000000000005260     UefiHiiLib:HiiLib.obj
+ 0004:00000238       $unwind$HiiGetSupportedLanguages 0000000000005278     UefiHiiLib:HiiLanguage.obj

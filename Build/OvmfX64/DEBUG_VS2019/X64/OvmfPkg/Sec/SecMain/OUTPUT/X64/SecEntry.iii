@@ -1,0 +1,69 @@
+;------------------------------------------------------------------------------
+;*
+;*   Copyright (c) 2006 - 2013, Intel Corporation. All rights reserved.<BR>
+;*   SPDX-License-Identifier: BSD-2-Clause-Patent
+;*
+;*    CpuAsm.asm
+;*
+;*   Abstract:
+;*
+;------------------------------------------------------------------------------
+
+
+
+DEFAULT REL
+SECTION .text
+
+extern SecCoreStartupWithStack
+
+;
+; SecCore Entry Point
+;
+; Processor is in flat protected mode
+;
+; @param[in]  RAX   Initial value of the EAX register (BIST: Built-in Self Test)
+; @param[in]  DI    'BP': boot-strap processor, or 'AP': application processor
+; @param[in]  RBP   Pointer to the start of the Boot Firmware Volume
+; @param[in]  DS    Selector allowing flat access to all addresses
+; @param[in]  ES    Selector allowing flat access to all addresses
+; @param[in]  FS    Selector allowing flat access to all addresses
+; @param[in]  GS    Selector allowing flat access to all addresses
+; @param[in]  SS    Selector allowing flat access to all addresses
+;
+; @return     None  This routine does not return
+;
+global _ModuleEntryPoint
+_ModuleEntryPoint:
+
+    ;
+    ; Fill the temporary RAM with the initial stack value.
+    ; The loop below will seed the heap as well, but that's harmless.
+    ;
+    mov     rax, (0x5AA55AA5 << 32) | 0x5AA55AA5
+                                                              ; qword to store
+    mov     rdi, 0x00810000     ; base address,
+                                                              ;   relative to
+                                                              ;   ES
+    mov     rcx, 0x00010000 / 8 ; qword count
+    cld                                                       ; store from base
+                                                              ;   up
+    rep stosq
+
+    ;
+    ; Load temporary RAM stack based on PCDs
+    ;
+    %define SEC_TOP_OF_STACK (0x00810000 + \
+                          0x00010000)
+    mov     rsp, SEC_TOP_OF_STACK
+    nop
+
+    ;
+    ; Setup parameters and call SecCoreStartupWithStack
+    ;   rcx: BootFirmwareVolumePtr
+    ;   rdx: TopOfCurrentStack
+    ;
+    mov     rcx, rbp
+    mov     rdx, rsp
+    sub     rsp, 0x20
+    call    SecCoreStartupWithStack
+

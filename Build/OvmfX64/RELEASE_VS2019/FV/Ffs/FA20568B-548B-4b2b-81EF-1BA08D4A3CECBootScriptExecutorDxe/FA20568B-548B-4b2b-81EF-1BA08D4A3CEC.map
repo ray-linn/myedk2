@@ -1,0 +1,659 @@
+ BootScriptExecutorDxe
+
+ Timestamp is 61ee7033 (Mon Jan 24 17:24:03 2022)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00001068H .text                   CODE
+ 0001:00001068 0000ab06H .text$mn                CODE
+ 0002:00000000 000005c0H .data                   DATA
+ 0002:000005c0 00001120H .rdata                  DATA
+ 0002:000016e0 00001238H .bss                    DATA
+ 0002:00002918 0000043cH .rdata$voltmd           DATA
+ 0002:00002d54 000000a8H .rdata$zzzdbg           DATA
+ 0003:00000000 00000630H .pdata                  DATA
+ 0004:00000000 000004f0H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __x64_code_ranges_to_entry_points_count 0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_table          0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_count          0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_count      0000000000000000     <absolute>
+ 0000:00000000       __dynamic_value_reloc_table 0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_table      0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat     0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat_copy 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata 0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_count         0000000000000000     <absolute>
+ 0000:00000000       __AbsoluteZero             0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table   0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map          0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table_size 0000000000000000     <absolute>
+ 0000:00000000       __guard_check_icall_a64n_fptr 0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_table         0000000000000000     <absolute>
+ 0000:00000000       __guard_flags              0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_count      0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata_count 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map_count    0000000000000000     <absolute>
+ 0000:00000000       __enclave_config           0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_table      0000000000000000     <absolute>
+ 0000:00000000       __arm64x_native_entrypoint 0000000000000000     <absolute>
+ 0000:00000000       __ImageBase                0000000000000000     <linker-defined>
+ 0001:00000000       AsmTransferControl         0000000000000280     BootScriptExecutorDxe:S3Asm.obj
+ 0001:00000059       AsmTransferControl32       00000000000002d9     BootScriptExecutorDxe:S3Asm.obj
+ 0001:0000005e       AsmFixAddress16            00000000000002de     BootScriptExecutorDxe:S3Asm.obj
+ 0001:00000066       AsmTransferControl16       00000000000002e6     BootScriptExecutorDxe:S3Asm.obj
+ 0001:00000083       AsmJmpAddr32               0000000000000303     BootScriptExecutorDxe:S3Asm.obj
+ 0001:00000087       PageFaultHandlerHook       0000000000000307     BootScriptExecutorDxe:S3Asm.obj
+ 0001:00000120       AsmWbinvd                  00000000000003a0     BaseLib:Wbinvd.obj
+ 0001:00000130       AsmCpuid                   00000000000003b0     BaseLib:CpuId.obj
+ 0001:00000160       AsmReadCr3                 00000000000003e0     BaseLib:ReadCr3.obj
+ 0001:00000170       AsmReadCr2                 00000000000003f0     BaseLib:ReadCr2.obj
+ 0001:00000180       AsmReadCs                  0000000000000400     BaseLib:ReadCs.obj
+ 0001:00000190       AsmFlushCacheLine          0000000000000410     BaseLib:FlushCacheLine.obj
+ 0001:000001a0       AsmInvd                    0000000000000420     BaseLib:Invd.obj
+ 0001:000001b0       InternalX86DisablePaging64 0000000000000430     BaseLib:DisablePaging64.obj
+ 0001:00000220       InternalX86ReadIdtr        00000000000004a0     BaseLib:ReadIdtr.obj
+ 0001:00000230       InternalSwitchStack        00000000000004b0     BaseLib:SwitchStack.obj
+ 0001:00000240       CpuPause                   00000000000004c0     BaseLib:CpuPause.obj
+ 0001:00000250       InternalX86WriteIdtr       00000000000004d0     BaseLib:WriteIdtr.obj
+ 0001:00000260       InternalMemZeroMem         00000000000004e0     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00000284       Exception0Handle           0000000000000504     DxeDebugAgentLib:AsmFuncs.obj
+ 0001:00000400       TimerInterruptHandle       0000000000000680     DxeDebugAgentLib:AsmFuncs.obj
+ 0001:000007c1       CommonInterruptEntry       0000000000000a41     DxeCpuExceptionHandlerLib:Xcode5ExceptionHandlerAsm.obj
+ 0001:000009f7       AsmGetTemplateAddressMap   0000000000000c77     DxeCpuExceptionHandlerLib:Xcode5ExceptionHandlerAsm.obj
+ 0001:00000b35       AsmVectorNumFixup          0000000000000db5     DxeCpuExceptionHandlerLib:Xcode5ExceptionHandlerAsm.obj
+ 0001:00000b40       SevNoRepIo                 0000000000000dc0     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000b80       IoReadFifo8                0000000000000e00     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000ba2       IoReadFifo16               0000000000000e22     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000bc8       IoReadFifo32               0000000000000e48     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000beb       IoWriteFifo8               0000000000000e6b     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000c0d       IoWriteFifo16              0000000000000e8d     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000c33       IoWriteFifo32              0000000000000eb3     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000c60       EnableInterrupts           0000000000000ee0     BaseLib:EnableInterrupts.obj
+ 0001:00000c70       DisableInterrupts          0000000000000ef0     BaseLib:DisableInterrupts.obj
+ 0001:00000c80       AsmWriteCr4                0000000000000f00     BaseLib:WriteCr4.obj
+ 0001:00000c90       AsmReadCr4                 0000000000000f10     BaseLib:ReadCr4.obj
+ 0001:00000ca0       AsmCpuidEx                 0000000000000f20     BaseLib:CpuIdEx.obj
+ 0001:00000cd0       SetJump                    0000000000000f50     BaseLib:SetJump.obj
+ 0001:00000da0       AsmWriteDr1                0000000000001020     BaseLib:WriteDr1.obj
+ 0001:00000db0       AsmReadDr0                 0000000000001030     BaseLib:ReadDr0.obj
+ 0001:00000dc0       AsmWriteDr0                0000000000001040     BaseLib:WriteDr0.obj
+ 0001:00000dd0       AsmReadDr1                 0000000000001050     BaseLib:ReadDr1.obj
+ 0001:00000de0       AsmWriteTr                 0000000000001060     BaseLib:WriteTr.obj
+ 0001:00000df0       AsmXGetBv                  0000000000001070     BaseLib:XGetBv.obj
+ 0001:00000e00       AsmVmgExit                 0000000000001080     BaseLib:VmgExit.obj
+ 0001:00000e10       InternalLongJump           0000000000001090     BaseLib:LongJump.obj
+ 0001:00000ec0       InternalX86ReadGdtr        0000000000001140     BaseLib:ReadGdtr.obj
+ 0001:00000ed0       InternalX86WriteGdtr       0000000000001150     BaseLib:WriteGdtr.obj
+ 0001:00000ee0       AsmReadEflags              0000000000001160     BaseLib:ReadEflags.obj
+ 0001:00000ef0       InternalMemCopyMem         0000000000001170     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000f30       InternalMemSetMem          00000000000011b0     BaseMemoryLibRepStr:SetMem.obj
+ 0001:00000f50       InternalMemCompareMem      00000000000011d0     BaseMemoryLibRepStr:CompareMem.obj
+ 0001:00000f70       InternalMemSetMem64        00000000000011f0     BaseMemoryLibRepStr:SetMem64.obj
+ 0001:00000f90       InternalMemSetMem32        0000000000001210     BaseMemoryLibRepStr:SetMem32.obj
+ 0001:00000fb0       AsmInterruptHandle         0000000000001230     PeCoffExtraActionLib:IntHandler.obj
+ 0001:00000fc0       AsmWriteDr2                0000000000001240     BaseLib:WriteDr2.obj
+ 0001:00000fd0       AsmWriteDr3                0000000000001250     BaseLib:WriteDr3.obj
+ 0001:00000fe0       AsmReadDr2                 0000000000001260     BaseLib:ReadDr2.obj
+ 0001:00000ff0       AsmWriteDr7                0000000000001270     BaseLib:WriteDr7.obj
+ 0001:00001000       AsmReadDr7                 0000000000001280     BaseLib:ReadDr7.obj
+ 0001:00001010       AsmReadDr3                 0000000000001290     BaseLib:ReadDr3.obj
+ 0001:00001020       AsmReadCr0                 00000000000012a0     BaseLib:ReadCr0.obj
+ 0001:00001030       AsmWriteCr0                00000000000012b0     BaseLib:WriteCr0.obj
+ 0001:00001040       AsmPvalidate               00000000000012c0     BaseLib:Pvalidate.obj
+ 0001:00001060       CpuFlushTlb                00000000000012e0     BaseCpuLib:CpuFlushTlb.obj
+ 0001:00001068       _ModuleEntryPoint          00000000000012e8 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:00001090       ProcessLibraryConstructorList 0000000000001310 f   BootScriptExecutorDxe:AutoGen.obj
+ 0001:00001248       ProcessLibraryDestructorList 00000000000014c8 f   BootScriptExecutorDxe:AutoGen.obj
+ 0001:00001354       ProcessModuleEntryPointList 00000000000015d4 f   BootScriptExecutorDxe:AutoGen.obj
+ 0001:00001460       S3BootScriptExecutorEntryFunction 00000000000016e0 f   BootScriptExecutorDxe:ScriptExecute.obj
+ 0001:00001634       ReadyToLockEventNotify     00000000000018b4 f   BootScriptExecutorDxe:ScriptExecute.obj
+ 0001:000017f4       HookPageFaultHandler       0000000000001a74 f   BootScriptExecutorDxe:SetIdtEntry.obj
+ 0001:00001904       AcquirePage                0000000000001b84 f   BootScriptExecutorDxe:SetIdtEntry.obj
+ 0001:00001990       PageFaultHandler           0000000000001c10 f   BootScriptExecutorDxe:SetIdtEntry.obj
+ 0001:00001a9c       SwitchStack                0000000000001d1c f   BaseLib:SwitchStack.obj
+ 0001:00001abc       GetPcdProtocol             0000000000001d3c f   DxePcdLib:DxePcdLib.obj
+ 0001:00001af8       EfiGetSystemConfigurationTable 0000000000001d78 f   UefiLib:UefiLib.obj
+ 0001:00001b58       EfiCreateProtocolNotifyEvent 0000000000001dd8 f   UefiLib:UefiLib.obj
+ 0001:00001bb4       AllocateAcpiNvsPool        0000000000001e34 f   LockBoxDxeLib:LockBoxDxe.obj
+ 0001:00001cc4       SaveLockBox                0000000000001f44 f   LockBoxDxeLib:LockBoxLib.obj
+ 0001:00001d8c       SetLockBoxAttributes       000000000000200c f   LockBoxDxeLib:LockBoxLib.obj
+ 0001:00001dcc       RestoreLockBox             000000000000204c f   LockBoxDxeLib:LockBoxLib.obj
+ 0001:00001e24       GetHobList                 00000000000020a4 f   DxeHobLib:HobLib.obj
+ 0001:00001e54       S3BootScriptInternalCloseTable 00000000000020d4 f   DxeS3BootScriptLib:BootScriptSave.obj
+ 0001:00001ebc       S3BootScriptEventCallBack  000000000000213c f   DxeS3BootScriptLib:BootScriptSave.obj
+ 0001:00001f4c       S3BootScriptSmmEventCallBack 00000000000021cc f   DxeS3BootScriptLib:BootScriptSave.obj
+ 0001:00001fac       S3BootScriptSmmAtRuntimeCallBack 000000000000222c f   DxeS3BootScriptLib:BootScriptSave.obj
+ 0001:00002024       S3BootScriptLibInitialize  00000000000022a4 f   DxeS3BootScriptLib:BootScriptSave.obj
+ 0001:00002210       BuildLoopData              0000000000002490 f   DxeS3BootScriptLib:BootScriptExecute.obj
+ 0001:00002264       ScriptIoRead               00000000000024e4 f   DxeS3BootScriptLib:BootScriptExecute.obj
+ 0001:00002340       ScriptIoWrite              00000000000025c0 f   DxeS3BootScriptLib:BootScriptExecute.obj
+ 0001:0000245c       ScriptMemoryRead           00000000000026dc f   DxeS3BootScriptLib:BootScriptExecute.obj
+ 0001:00002514       ScriptMemoryWrite          0000000000002794 f   DxeS3BootScriptLib:BootScriptExecute.obj
+ 0001:00002618       ScriptPciCfg2Read          0000000000002898 f   DxeS3BootScriptLib:BootScriptExecute.obj
+ 0001:0000273c       ScriptPciCfg2Write         00000000000029bc f   DxeS3BootScriptLib:BootScriptExecute.obj
+ 0001:000028a0       BootScriptExecuteMemPoll   0000000000002b20 f   DxeS3BootScriptLib:BootScriptExecute.obj
+ 0001:00002964       CheckAndOrMask             0000000000002be4 f   DxeS3BootScriptLib:BootScriptExecute.obj
+ 0001:00002a14       BootScriptExecuteIoPoll    0000000000002c94 f   DxeS3BootScriptLib:BootScriptExecute.obj
+ 0001:00002ad4       BootScriptPciCfgPoll       0000000000002d54 f   DxeS3BootScriptLib:BootScriptExecute.obj
+ 0001:00002ba4       BootScriptPciCfg2Poll      0000000000002e24 f   DxeS3BootScriptLib:BootScriptExecute.obj
+ 0001:00002c78       S3BootScriptExecute        0000000000002ef8 f   DxeS3BootScriptLib:BootScriptExecute.obj
+ 0001:00003260       PeCoffLoaderGetPeHeader    00000000000034e0 f   BasePeCoffLib:BasePeCoff.obj
+ 0001:0000375c       PeCoffLoaderGetImageInfo   00000000000039dc f   BasePeCoffLib:BasePeCoff.obj
+ 0001:00003acc       PeCoffLoaderRelocateImage  0000000000003d4c f   BasePeCoffLib:BasePeCoff.obj
+ 0001:00003d74       PeCoffLoaderLoadImage      0000000000003ff4 f   BasePeCoffLib:BasePeCoff.obj
+ 0001:0000433c       PeCoffLoaderImageReadFromMemory 00000000000045bc f   BasePeCoffLib:BasePeCoff.obj
+ 0001:00004360       InternalImageHandleToFvHandle 00000000000045e0 f   DxeServicesLib:DxeServicesLib.obj
+ 0001:00004398       InternalGetSectionFromFv   0000000000004618 f   DxeServicesLib:DxeServicesLib.obj
+ 0001:00004418       GetSectionFromAnyFv        0000000000004698 f   DxeServicesLib:DxeServicesLib.obj
+ 0001:00004514       InternalConstructorWorker  0000000000004794 f   DxeDebugAgentLib:DxeDebugAgentLib.obj
+ 0001:000046bc       GetMailboxPointer          000000000000493c f   DxeDebugAgentLib:DxeDebugAgentLib.obj
+ 0001:00004708       SetupDebugAgentEnvironment 0000000000004988 f   DxeDebugAgentLib:DxeDebugAgentLib.obj
+ 0001:0000497c       InitializeDebugTimer       0000000000004bfc f   DxeDebugAgentLib:DebugTimer.obj
+ 0001:00004ad0       SaveAndSetDebugTimerInterrupt 0000000000004d50 f   DxeDebugAgentLib:DebugTimer.obj
+ 0001:00004b4c       IsDebugTimerTimeout        0000000000004dcc f   DxeDebugAgentLib:DebugTimer.obj
+ 0001:00004ba0       CalculateCrc16             0000000000004e20 f   DxeDebugAgentLib:DebugAgent.obj
+ 0001:00004c04       TriggerSoftInterrupt       0000000000004e84 f   DxeDebugAgentLib:DebugAgent.obj
+ 0001:00004c58       VerifyMailboxChecksum      0000000000004ed8 f   DxeDebugAgentLib:DebugAgent.obj
+ 0001:00004c94       UpdateMailboxContent       0000000000004f14 f   DxeDebugAgentLib:DebugAgent.obj
+ 0001:00004e10       DebugAgentReadBuffer       0000000000005090 f   DxeDebugAgentLib:DebugAgent.obj
+ 0001:00004f24       SetDebugFlag               00000000000051a4 f   DxeDebugAgentLib:DebugAgent.obj
+ 0001:00004f80       GetDebugFlag               0000000000005200 f   DxeDebugAgentLib:DebugAgent.obj
+ 0001:00004fc0       SendDebugMsgPacket         0000000000005240 f   DxeDebugAgentLib:DebugAgent.obj
+ 0001:00005038       DebugAgentMsgPrint         00000000000052b8 f   DxeDebugAgentLib:DebugAgent.obj
+ 0001:000050b8       DebugAgentDataMsgPrint     0000000000005338 f   DxeDebugAgentLib:DebugAgent.obj
+ 0001:000051b0       ReadRemainingBreakPacket   0000000000005430 f   DxeDebugAgentLib:DebugAgent.obj
+ 0001:00005300       ArchReadFxStatOffset       0000000000005580 f   DxeDebugAgentLib:DebugAgent.obj
+ 0001:000053f8       SendPacketWithoutData      0000000000005678 f   DxeDebugAgentLib:DebugAgent.obj
+ 0001:00005468       SendAckPacket              00000000000056e8 f   DxeDebugAgentLib:DebugAgent.obj
+ 0001:00005524       DecompressDataInPlace      00000000000057a4 f   DxeDebugAgentLib:DebugAgent.obj
+ 0001:000055e4       ReceivePacket              0000000000005864 f   DxeDebugAgentLib:DebugAgent.obj
+ 0001:00005764       SendCommandAndWaitForAckOK 00000000000059e4 f   DxeDebugAgentLib:DebugAgent.obj
+ 0001:000058b4       GetBreakCause              0000000000005b34 f   DxeDebugAgentLib:DebugAgent.obj
+ 0001:00005988       CopyMemByWidth             0000000000005c08 f   DxeDebugAgentLib:DebugAgent.obj
+ 0001:00005a10       CompressData               0000000000005c90 f   DxeDebugAgentLib:DebugAgent.obj
+ 0001:00005b40       ReadMemoryAndSendResponsePacket 0000000000005dc0 f   DxeDebugAgentLib:DebugAgent.obj
+ 0001:00005df0       AttachHost                 0000000000006070 f   DxeDebugAgentLib:DebugAgent.obj
+ 0001:00005f00       SendBreakPacketToHost      0000000000006180 f   DxeDebugAgentLib:DebugAgent.obj
+ 0001:00005f94       CommandCommunication       0000000000006214 f   DxeDebugAgentLib:DebugAgent.obj
+ 0001:00006d60       InterruptProcess           0000000000006fe0 f   DxeDebugAgentLib:DebugAgent.obj
+ 0001:0000733c       AcquireMpSpinLock          00000000000075bc f   DxeDebugAgentLib:DebugMp.obj
+ 0001:00007374       HaltOtherProcessors        00000000000075f4 f   DxeDebugAgentLib:DebugMp.obj
+ 0001:000073e8       GetProcessorIndex          0000000000007668 f   DxeDebugAgentLib:DebugMp.obj
+ 0001:00007474       DebugAgentIsBsp            00000000000076f4 f   DxeDebugAgentLib:DebugMp.obj
+ 0001:000074e8       SetCpuStopFlagByIndex      0000000000007768 f   DxeDebugAgentLib:DebugMp.obj
+ 0001:00007584       SetCpuBreakFlagByIndex     0000000000007804 f   DxeDebugAgentLib:DebugMp.obj
+ 0001:00007620       SetDebugViewPoint          00000000000078a0 f   DxeDebugAgentLib:DebugMp.obj
+ 0001:00007664       FindNextPendingBreakCpu    00000000000078e4 f   DxeDebugAgentLib:DebugMp.obj
+ 0001:000076ac       SerialReset                000000000000792c f   DxeDebugAgentLib:SerialIo.obj
+ 0001:000076c0       SerialSetAttributes        0000000000007940 f   DxeDebugAgentLib:SerialIo.obj
+ 0001:000076e0       SerialSetControl           0000000000007960 f   DxeDebugAgentLib:SerialIo.obj
+ 0001:000076fc       SerialGetControl           000000000000797c f   DxeDebugAgentLib:SerialIo.obj
+ 0001:0000777c       SerialWrite                00000000000079fc f   DxeDebugAgentLib:SerialIo.obj
+ 0001:00007834       SerialRead                 0000000000007ab4 f   DxeDebugAgentLib:SerialIo.obj
+ 0001:00007a10       DebugReadBreakFromDebugPort 0000000000007c90 f   DxeDebugAgentLib:SerialIo.obj
+ 0001:00007b00       CommonExceptionHandler     0000000000007d80 f   DxeCpuExceptionHandlerLib:DxeException.obj
+ 0001:00007b08       InitializeCpuExceptionHandlers 0000000000007d88 f   DxeCpuExceptionHandlerLib:DxeException.obj
+ 0001:00007ba8       CommonExceptionHandlerWorker 0000000000007e28 f   DxeCpuExceptionHandlerLib:PeiDxeSmmCpuException.obj
+ 0001:00007e78       UpdateIdtTable             00000000000080f8 f   DxeCpuExceptionHandlerLib:PeiDxeSmmCpuException.obj
+ 0001:00007f7c       DumpCpuContext             00000000000081fc f   DxeCpuExceptionHandlerLib:ArchExceptionHandler.obj
+ 0001:00008260       InternalPrintMessage       00000000000084e0 f   DxeCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0001:000082e4       DumpModuleImageInfo        0000000000008564 f   DxeCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0001:000083c8       VmgExitHandleVc            0000000000008648 f   VmgExitLib:PeiDxeVmgExitVcHandler.obj
+ 0001:00009d34       InternalVmgExitHandleVc    0000000000009fb4 f   VmgExitLib:VmgExitVcHandler.obj
+ 0001:00009fe4       VmgExit                    000000000000a264 f   VmgExitLib:VmgExitLib.obj
+ 0001:0000a084       LocalApicBaseAddressMsrSupported 000000000000a304 f   BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0001:0000a0c0       GetLocalApicBaseAddress    000000000000a340 f   BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0001:0000a100       ReadLocalApicReg           000000000000a380 f   BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0001:0000a138       WriteLocalApicReg          000000000000a3b8 f   BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0001:0000a180       SendIpi                    000000000000a400 f   BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0001:0000a208       GetApicMode                000000000000a488 f   BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0001:0000a238       GetApicId                  000000000000a4b8 f   BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0001:0000a2f4       SaveAndDisableInterrupts   000000000000a574 f   BaseLib:Cpu.obj
+ 0001:0000a318       StrnLenS                   000000000000a598 f   BaseLib:SafeString.obj
+ 0001:0000a344       InternalAssertJumpBuffer   000000000000a5c4 f   BaseLib:SetJump.obj
+ 0001:0000a348       AsciiSPrint                000000000000a5c8 f   BasePrintLib:PrintLib.obj
+ 0001:0000a374       BasePrintLibFillBuffer     000000000000a5f4 f   BasePrintLib:PrintLibInternal.obj
+ 0001:0000a3a8       BasePrintLibSPrintMarker   000000000000a628 f   BasePrintLib:PrintLibInternal.obj
+ 0001:0000b144       BasePrintLibSPrint         000000000000b3c4 f   BasePrintLib:PrintLibInternal.obj
+ 0001:0000b168       PciCf8Read8                000000000000b3e8 f   BasePciCf8Lib:PciCf8Lib.obj
+ 0001:0000b1d8       PciCf8Write8               000000000000b458 f   BasePciCf8Lib:PciCf8Lib.obj
+ 0001:0000b258       PciCf8Read16               000000000000b4d8 f   BasePciCf8Lib:PciCf8Lib.obj
+ 0001:0000b2cc       PciCf8Write16              000000000000b54c f   BasePciCf8Lib:PciCf8Lib.obj
+ 0001:0000b34c       PciCf8Read32               000000000000b5cc f   BasePciCf8Lib:PciCf8Lib.obj
+ 0001:0000b3b0       PciCf8Write32              000000000000b630 f   BasePciCf8Lib:PciCf8Lib.obj
+ 0001:0000b420       InternalAcpiDelay          000000000000b6a0 f   DxeAcpiTimerLib:AcpiTimerLib.obj
+ 0001:0000b480       MicroSecondDelay           000000000000b700 f   DxeAcpiTimerLib:AcpiTimerLib.obj
+ 0001:0000b4b4       PciSegmentRead8            000000000000b734 f   BasePciSegmentLibPci:PciSegmentLib.obj
+ 0001:0000b4dc       PciSegmentWrite8           000000000000b75c f   BasePciSegmentLibPci:PciSegmentLib.obj
+ 0001:0000b520       PciSegmentRead16           000000000000b7a0 f   BasePciSegmentLibPci:PciSegmentLib.obj
+ 0001:0000b54c       PciSegmentWrite16          000000000000b7cc f   BasePciSegmentLibPci:PciSegmentLib.obj
+ 0001:0000b57c       PciSegmentRead32           000000000000b7fc f   BasePciSegmentLibPci:PciSegmentLib.obj
+ 0001:0000b5a4       PciSegmentWrite32          000000000000b824 f   BasePciSegmentLibPci:PciSegmentLib.obj
+ 0001:0000b5d4       PeCoffLoaderExtraActionCommon 000000000000b854 f   PeCoffExtraActionLib:PeCoffExtraActionLib.obj
+ 0001:0000b770       DebugPortWriteBuffer       000000000000b9f0 f   DebugCommunicationLibSerialPort:DebugCommunicationLibSerialPort.obj
+ 0001:0000b7ac       ResetCold                  000000000000ba2c f   DxeResetSystemLib:ResetSystemLib.obj
+ 0001:0000b7e4       PeCoffLoaderGetPdbPointer  000000000000ba64 f   BasePeCoffGetEntryPointLib:PeCoffGetEntryPoint.obj
+ 0001:0000b908       PeCoffSearchImageBase      000000000000bb88 f   BasePeCoffGetEntryPointLib:PeCoffGetEntryPoint.obj
+ 0001:0000b994       InternalMemEncryptSevGetAddressRangeState 000000000000bc14 f   DxeMemEncryptSevLib:VirtualMemory.obj
+ 0002:00000000       ExceptionStubHeaderSize    000000000000be00     DxeDebugAgentLib:AsmFuncs.obj
+ 0002:00000010       gEfiLoadedImageProtocolGuid 000000000000be10     BootScriptExecutorDxe:AutoGen.obj
+ 0002:00000020       gEfiBootScriptExecutorVariableGuid 000000000000be20     BootScriptExecutorDxe:AutoGen.obj
+ 0002:00000030       gEdkiiSmmLegacyBootProtocolGuid 000000000000be30     BootScriptExecutorDxe:AutoGen.obj
+ 0002:00000040       gEfiLockBoxProtocolGuid    000000000000be40     BootScriptExecutorDxe:AutoGen.obj
+ 0002:00000050       gPcdProtocolGuid           000000000000be50     BootScriptExecutorDxe:AutoGen.obj
+ 0002:00000060       gEfiDxeSmmReadyToLockProtocolGuid 000000000000be60     BootScriptExecutorDxe:AutoGen.obj
+ 0002:00000070       gEdkiiSmmExitBootServicesProtocolGuid 000000000000be70     BootScriptExecutorDxe:AutoGen.obj
+ 0002:00000080       gEfiSerialIoProtocolGuid   000000000000be80     BootScriptExecutorDxe:AutoGen.obj
+ 0002:00000090       gEfiDevicePathProtocolGuid 000000000000be90     BootScriptExecutorDxe:AutoGen.obj
+ 0002:000000a0       gEfiFirmwareVolume2ProtocolGuid 000000000000bea0     BootScriptExecutorDxe:AutoGen.obj
+ 0002:000000b0       gEfiVectorHandoffInfoPpiGuid 000000000000beb0     BootScriptExecutorDxe:AutoGen.obj
+ 0002:000000c0       gEfiDevicePathUtilitiesProtocolGuid 000000000000bec0     BootScriptExecutorDxe:AutoGen.obj
+ 0002:000000d0       gEfiBootScriptExecutorContextGuid 000000000000bed0     BootScriptExecutorDxe:AutoGen.obj
+ 0002:000000e0       gEfiSmmReadyToLockProtocolGuid 000000000000bee0     BootScriptExecutorDxe:AutoGen.obj
+ 0002:000000f0       gEfiVectorHandoffTableGuid 000000000000bef0     BootScriptExecutorDxe:AutoGen.obj
+ 0002:00000100       gEfiHobListGuid            000000000000bf00     BootScriptExecutorDxe:AutoGen.obj
+ 0002:00000110       gEfiSmmBase2ProtocolGuid   000000000000bf10     BootScriptExecutorDxe:AutoGen.obj
+ 0002:00000120       gEfiDxeServicesTableGuid   000000000000bf20     BootScriptExecutorDxe:AutoGen.obj
+ 0002:00000130       gEfiCallerIdGuid           000000000000bf30     BootScriptExecutorDxe:AutoGen.obj
+ 0002:00000140       gEfiDebugAgentGuid         000000000000bf40     BootScriptExecutorDxe:AutoGen.obj
+ 0002:00000150       mBootScriptExecutorImageGuid 000000000000bf50     BootScriptExecutorDxe:ScriptExecute.obj
+ 0002:00000160       mBootScriptSmmPrivateDataGuid 000000000000bf60     DxeS3BootScriptLib:BootScriptSave.obj
+ 0002:00000170       mBootScriptDataBootTimeGuid 000000000000bf70     DxeS3BootScriptLib:BootScriptSave.obj
+ 0002:00000180       mS3BootScriptAcpiS3Enable  000000000000bf80     DxeS3BootScriptLib:BootScriptSave.obj
+ 0002:00000188       mBootScriptTableBaseGuid   000000000000bf88     DxeS3BootScriptLib:BootScriptSave.obj
+ 0002:00000198       mBootScriptDataGuid        000000000000bf98     DxeS3BootScriptLib:BootScriptSave.obj
+ 0002:000001b0       mVectorHandoffInfoDebugAgent 000000000000bfb0     DxeDebugAgentLib:DebugAgent.obj
+ 0002:00000390       mErrorMsgVersionAlert      000000000000c190     DxeDebugAgentLib:DebugAgent.obj
+ 0002:00000400       mErrorMsgSendInitPacket    000000000000c200     DxeDebugAgentLib:DebugAgent.obj
+ 0002:00000460       mErrorMsgConnectOK         000000000000c260     DxeDebugAgentLib:DebugAgent.obj
+ 0002:00000490       mWarningMsgIngoreBreakpoint 000000000000c290     DxeDebugAgentLib:DebugAgent.obj
+ 0002:000004d8       mErrorMsgConnectFail       000000000000c2d8     DxeDebugAgentLib:DebugAgent.obj
+ 0002:00000500       mSerialIo                  000000000000c300     DxeDebugAgentLib:SerialIo.obj
+ 0002:00000548       mSerialFifoForDebug        000000000000c348     DxeDebugAgentLib:SerialIo.obj
+ 0002:00000558       mSerialFifoForTerminal     000000000000c358     DxeDebugAgentLib:SerialIo.obj
+ 0002:00000568       mSerialIoMode              000000000000c368     DxeDebugAgentLib:SerialIo.obj
+ 0002:00000588       mSerialIoDevicePath        000000000000c388     DxeDebugAgentLib:SerialIo.obj
+ 0002:000005c0       _gPcd_FixedAtBuild_PcdControlFlowEnforcementPropertyMask 000000000000c3c0     BootScriptExecutorDxe:AutoGen.obj
+ 0002:000005c8       ??_C@_0N@JDBFFBFC@Sent?5data?5?$FL?5@ 000000000000c3c8     DxeDebugAgentLib:DebugAgent.obj
+ 0002:000005d8       ??_C@_0BB@JBKPKGMF@Received?5data?5?$FL?5@ 000000000000c3d8     DxeDebugAgentLib:DebugAgent.obj
+ 0002:000005ec       ??_C@_05CNDJFPDP@?$CF02x?5@ 000000000000c3ec     DxeDebugAgentLib:DebugAgent.obj
+ 0002:000005f4       ??_C@_02JODFHDIE@?$FN?6@   000000000000c3f4     DxeDebugAgentLib:DebugAgent.obj
+ 0002:000005f8       ??_C@_0CC@BPBDKJLH@Timeout?5in?5Debug?5Timer?5interrup@ 000000000000c3f8     DxeDebugAgentLib:DebugAgent.obj
+ 0002:00000620       ??_C@_0CD@MJPNODCO@Debug?5Timer?5CRC?5?$CI?$CFx?$CJ?5against?5?$CI?$CF@ 000000000000c420     DxeDebugAgentLib:DebugAgent.obj
+ 0002:00000648       ??_C@_0BF@GOMLGJOE@Attach?5status?5is?5?$CFd?6@ 000000000000c448     DxeDebugAgentLib:DebugAgent.obj
+ 0002:00000660       ??_C@_0O@LLNPHJBI@Send?5ACK?$CI?$CFd?$CJ?6@ 000000000000c460     DxeDebugAgentLib:DebugAgent.obj
+ 0002:00000670       ??_C@_0CA@KCJDKBGI@SendAckPacket?3?5SequenceNo?5?$DN?5?$CFx?6@ 000000000000c470     DxeDebugAgentLib:DebugAgent.obj
+ 0002:00000690       ??_C@_0CL@GDHMDIAD@DebugAgentReadBuffer?$CIStartSymbo@ 000000000000c490     DxeDebugAgentLib:DebugAgent.obj
+ 0002:000006c0       ??_C@_0CG@POHMMICE@Invalid?5start?5symbol?5received?5?$FL@ 000000000000c4c0     DxeDebugAgentLib:DebugAgent.obj
+ 0002:000006e8       ??_C@_0CH@JDGCKKDH@DebugAgentReadBuffer?$CICommand?$CJ?5t@ 000000000000c4e8     DxeDebugAgentLib:DebugAgent.obj
+ 0002:00000710       ??_C@_0CK@PCGFFEGH@DebugAgentReadBuffer?$CISequenceNo@ 000000000000c510     DxeDebugAgentLib:DebugAgent.obj
+ 0002:00000740       ??_C@_0CA@KOMNEPHF@CRC?5Error?5?$CIreceived?5CRC?5is?5?$CFx?$CJ?6@ 000000000000c540     DxeDebugAgentLib:DebugAgent.obj
+ 0002:00000760       ??_C@_0CO@FBJALMLE@TARGET?3?5Timeout?5when?5waiting?5fo@ 000000000000c560     DxeDebugAgentLib:DebugAgent.obj
+ 0002:00000790       ??_C@_0CD@OLECMCCF@TARGET?3?5Receive?5GO?$CI?$CJ?5in?5last?5bo@ 000000000000c590     DxeDebugAgentLib:DebugAgent.obj
+ 0002:000007b8       ??_C@_0CN@MDIHKJOJ@TARGET?3?5Timeout?5in?5SendDataResp@ 000000000000c5b8     DxeDebugAgentLib:DebugAgent.obj
+ 0002:000007f0       ??_C@_0FC@JIHDFAPN@TARGET?3?5Received?5one?5old?5or?5new@ 000000000000c5f0     DxeDebugAgentLib:DebugAgent.obj
+ 0002:00000848       ??_C@_0CK@KLMONJKF@processor?$FL?$CFx?$FN?3Send?5Break?5Packet@ 000000000000c648     DxeDebugAgentLib:DebugAgent.obj
+ 0002:00000878       ??_C@_0CD@JPIHDIMB@processor?$FL?$CFx?$FN?3Try?5to?5attach?5HOS@ 000000000000c678     DxeDebugAgentLib:DebugAgent.obj
+ 0002:000008a0       ??_C@_0CJ@HCAPKGNH@TARGET?3?5Try?5to?5get?5command?5from@ 000000000000c6a0     DxeDebugAgentLib:DebugAgent.obj
+ 0002:000008d0       ??_C@_0EB@MMMHKPFC@TARGET?3?5Get?5command?$FL?$CFx?$FN?5sequenc@ 000000000000c6d0     DxeDebugAgentLib:DebugAgent.obj
+ 0002:00000920       ??_C@_0ED@GONDGPBK@TARGET?3?5Get?5command?5failed?5or?5i@ 000000000000c720     DxeDebugAgentLib:DebugAgent.obj
+ 0002:00000968       ??_C@_0DJ@LENMLHNM@TARGET?3?5Receive?5one?5old?5command@ 000000000000c768     DxeDebugAgentLib:DebugAgent.obj
+ 0002:000009a8       ??_C@_0DF@DCECPJEB@Receive?5one?5invalid?5command?$FL?$CFx?$FN@ 000000000000c7a8     DxeDebugAgentLib:DebugAgent.obj
+ 0002:000009e0       ??_C@_0CI@DIMDIDBK@Processor?$FL?$CFx?$FN?3Received?5one?5comm@ 000000000000c7e0     DxeDebugAgentLib:DebugAgent.obj
+ 0002:00000a10       ??_C@_0EB@MOLLNJNN@Debug?5agent?5meet?5one?5Exception?0@ 000000000000c810     DxeDebugAgentLib:DebugAgent.obj
+ 0002:00000a58       ??_C@_0BG@EOCIJOIC@Received?5data?5?$FL?$CF02x?$FN?6@ 000000000000c858     DxeDebugAgentLib:DebugAgent.obj
+ 0002:00000a70       ??_C@_0DF@DJLBEBCI@Exception?5happened?0?5ExceptionNu@ 000000000000c870     DxeDebugAgentLib:DebugAgent.obj
+ 0002:00000aa8       ??_C@_0CN@BHKMFMGJ@processor?$FL?$CFx?$FN?3Try?5to?5halt?5other@ 000000000000c8a8     DxeDebugAgentLib:DebugMp.obj
+ 0002:00000ad8       ??_C@_0CJ@JMHOCNPK@Terminal?5Timer?5attach?5symbol?5re@ 000000000000c8d8     DxeDebugAgentLib:SerialIo.obj
+ 0002:00000b08       ??_C@_0CI@FDLNPNOL@Terminal?5Timer?5break?5symbol?5rec@ 000000000000c908     DxeDebugAgentLib:SerialIo.obj
+ 0002:00000b30       ??_C@_0CG@JMJILBGG@Debug?5Timer?5attach?5symbol?5recei@ 000000000000c930     DxeDebugAgentLib:SerialIo.obj
+ 0002:00000b58       ??_C@_0CF@LFCBGBOL@Debug?5Timer?5break?5symbol?5receiv@ 000000000000c958     DxeDebugAgentLib:SerialIo.obj
+ 0002:00000b80       mDoFarReturnFlag           000000000000c980     DxeCpuExceptionHandlerLib:DxeException.obj
+ 0002:00000b88       ??_C@_0DN@OILJOCCP@?$CB?$CB?$CB?$CB?5X64?5Exception?5Type?5?9?5?$CF02x?$CI@ 000000000000c988     DxeCpuExceptionHandlerLib:ArchExceptionHandler.obj
+ 0002:00000bc8       ??_C@_0BH@GDPLHCJG@ExceptionData?5?9?5?$CF016lx@ 000000000000c9c8     DxeCpuExceptionHandlerLib:ArchExceptionHandler.obj
+ 0002:00000be0       ??_C@_0CO@BBEHDOI@?5?5I?3?$CFx?5R?3?$CFx?5U?3?$CFx?5W?3?$CFx?5P?3?$CFx?5PK?3?$CF@ 000000000000c9e0     DxeCpuExceptionHandlerLib:ArchExceptionHandler.obj
+ 0002:00000c10       ??_C@_01EEMJAFIK@?6@       000000000000ca10     DxeCpuExceptionHandlerLib:ArchExceptionHandler.obj
+ 0002:00000c18       ??_C@_0CO@OABPHBNC@RIP?5?5?9?5?$CF016lx?0?5CS?5?5?9?5?$CF016lx?0?5RF@ 000000000000ca18     DxeCpuExceptionHandlerLib:ArchExceptionHandler.obj
+ 0002:00000c48       ??_C@_0CL@EBCIBAPN@RAX?5?5?9?5?$CF016lx?0?5RCX?5?9?5?$CF016lx?0?5RD@ 000000000000ca48     DxeCpuExceptionHandlerLib:ArchExceptionHandler.obj
+ 0002:00000c78       ??_C@_0CL@NEKHLEEE@RBX?5?5?9?5?$CF016lx?0?5RSP?5?9?5?$CF016lx?0?5RB@ 000000000000ca78     DxeCpuExceptionHandlerLib:ArchExceptionHandler.obj
+ 0002:00000ca8       ??_C@_0BN@KJEBEAEC@RSI?5?5?9?5?$CF016lx?0?5RDI?5?9?5?$CF016lx?6@ 000000000000caa8     DxeCpuExceptionHandlerLib:ArchExceptionHandler.obj
+ 0002:00000cc8       ??_C@_0CL@IAICEOHO@R8?5?5?5?9?5?$CF016lx?0?5R9?5?5?9?5?$CF016lx?0?5R1@ 000000000000cac8     DxeCpuExceptionHandlerLib:ArchExceptionHandler.obj
+ 0002:00000cf8       ??_C@_0CL@JAMCECPD@R11?5?5?9?5?$CF016lx?0?5R12?5?9?5?$CF016lx?0?5R1@ 000000000000caf8     DxeCpuExceptionHandlerLib:ArchExceptionHandler.obj
+ 0002:00000d28       ??_C@_0BN@PKAAKNBO@R14?5?5?9?5?$CF016lx?0?5R15?5?9?5?$CF016lx?6@ 000000000000cb28     DxeCpuExceptionHandlerLib:ArchExceptionHandler.obj
+ 0002:00000d48       ??_C@_0CL@DLLIMCBJ@DS?5?5?5?9?5?$CF016lx?0?5ES?5?5?9?5?$CF016lx?0?5FS@ 000000000000cb48     DxeCpuExceptionHandlerLib:ArchExceptionHandler.obj
+ 0002:00000d78       ??_C@_0BN@EICEFBKL@GS?5?5?5?9?5?$CF016lx?0?5SS?5?5?9?5?$CF016lx?6@ 000000000000cb78     DxeCpuExceptionHandlerLib:ArchExceptionHandler.obj
+ 0002:00000d98       ??_C@_0CL@DIOBDFLD@CR0?5?5?9?5?$CF016lx?0?5CR2?5?9?5?$CF016lx?0?5CR@ 000000000000cb98     DxeCpuExceptionHandlerLib:ArchExceptionHandler.obj
+ 0002:00000dc8       ??_C@_0BN@JAPKHAJM@CR4?5?5?9?5?$CF016lx?0?5CR8?5?9?5?$CF016lx?6@ 000000000000cbc8     DxeCpuExceptionHandlerLib:ArchExceptionHandler.obj
+ 0002:00000de8       ??_C@_0CL@DONNALBH@DR0?5?5?9?5?$CF016lx?0?5DR1?5?9?5?$CF016lx?0?5DR@ 000000000000cbe8     DxeCpuExceptionHandlerLib:ArchExceptionHandler.obj
+ 0002:00000e18       ??_C@_0CL@JNPELAID@DR3?5?5?9?5?$CF016lx?0?5DR6?5?9?5?$CF016lx?0?5DR@ 000000000000cc18     DxeCpuExceptionHandlerLib:ArchExceptionHandler.obj
+ 0002:00000e48       ??_C@_0CF@MGIBIPBB@GDTR?5?9?5?$CF016lx?5?$CF016lx?0?5LDTR?5?9?5?$CF0@ 000000000000cc48     DxeCpuExceptionHandlerLib:ArchExceptionHandler.obj
+ 0002:00000e70       ??_C@_0CF@DMFPLAJK@IDTR?5?9?5?$CF016lx?5?$CF016lx?0?5?5?5TR?5?9?5?$CF0@ 000000000000cc70     DxeCpuExceptionHandlerLib:ArchExceptionHandler.obj
+ 0002:00000e98       ??_C@_0BH@PFOFIBPH@FXSAVE_STATE?5?9?5?$CF016lx?6@ 000000000000cc98     DxeCpuExceptionHandlerLib:ArchExceptionHandler.obj
+ 0002:00000eb0       mErrorCodeFlag             000000000000ccb0     DxeCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0002:00000eb8       ??_C@_0BD@PANICNEP@?$CDDE?5?9?5Divide?5Error@ 000000000000ccb8     DxeCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0002:00000ed0       ??_C@_0M@BENGJJME@?$CDDB?5?9?5Debug@ 000000000000ccd0     DxeCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0002:00000ee0       ??_C@_0O@PELAMGDH@NMI?5Interrupt@ 000000000000cce0     DxeCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0002:00000ef0       ??_C@_0BB@ONIBFOGK@?$CDBP?5?9?5Breakpoint@ 000000000000ccf0     DxeCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0002:00000f08       ??_C@_0P@BBLCINEF@?$CDOF?5?9?5Overflow@ 000000000000cd08     DxeCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0002:00000f18       ??_C@_0BL@FGFNPPKN@?$CDBR?5?9?5BOUND?5Range?5Exceeded@ 000000000000cd18     DxeCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0002:00000f38       ??_C@_0BF@PAJDEHLF@?$CDUD?5?9?5Invalid?5Opcode@ 000000000000cd38     DxeCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0002:00000f50       ??_C@_0BL@HAMCGOMD@?$CDNM?5?9?5Device?5Not?5Available@ 000000000000cd50     DxeCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0002:00000f70       ??_C@_0BD@POLKFCFP@?$CDDF?5?9?5Double?5Fault@ 000000000000cd70     DxeCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0002:00000f88       ??_C@_0BM@LFJODCLN@Coprocessor?5Segment?5Overrun@ 000000000000cd88     DxeCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0002:00000fa8       ??_C@_0BC@NJGFAHLO@?$CDTS?5?9?5Invalid?5TSS@ 000000000000cda8     DxeCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0002:00000fc0       ??_C@_0BK@CJDBEANG@?$CDNP?5?9?5Segment?5Not?5Present@ 000000000000cdc0     DxeCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0002:00000fe0       ??_C@_0BI@DKNGHJJN@?$CDSS?5?9?5Stack?5Fault?5Fault@ 000000000000cde0     DxeCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0002:00000ff8       ??_C@_0BJ@OPPOMNHK@?$CDGP?5?9?5General?5Protection@ 000000000000cdf8     DxeCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0002:00001018       ??_C@_0BB@CJKCEJGM@?$CDPF?5?9?5Page?9Fault@ 000000000000ce18     DxeCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0002:00001030       ??_C@_08NKCLJDKG@Reserved@ 000000000000ce30     DxeCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0002:00001040       ??_C@_0CD@DAPDALEP@?$CDMF?5?9?5x87?5FPU?5Floating?9Point?5Er@ 000000000000ce40     DxeCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0002:00001068       ??_C@_0BG@JJECJFKO@?$CDAC?5?9?5Alignment?5Check@ 000000000000ce68     DxeCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0002:00001080       ??_C@_0BE@CIGFNHHH@?$CDMC?5?9?5Machine?9Check@ 000000000000ce80     DxeCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0002:00001098       ??_C@_0BK@IKBNPED@?$CDXM?5?9?5SIMD?5floating?9point@ 000000000000ce98     DxeCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0002:000010b8       ??_C@_0BF@MIEADEIE@?$CDVE?5?9?5Virtualization@ 000000000000ceb8     DxeCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0002:000010d0       ??_C@_0BJ@POMBGBMH@?$CDCP?5?9?5Control?5Protection@ 000000000000ced0     DxeCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0002:000010f0       ??_C@_0BI@HOPEKCJH@?$CDVC?5?9?5VMM?5Communication@ 000000000000cef0     DxeCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0002:00001108       ??_C@_0CJ@NIJFIMND@?$CB?$CB?$CB?$CB?5Can?8t?5find?5image?5informati@ 000000000000cf08     DxeCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0002:00001138       ??_C@_0CD@FDHAHDMO@?$CB?$CB?$CB?$CB?5Find?5image?5based?5on?5IP?$CI0x?$CF@ 000000000000cf38     DxeCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0002:0000115c       ??_C@_02ECNOPIAA@?$CFa@    000000000000cf5c     DxeCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0002:00001160       ??_C@_09KCCBLILG@?$CINo?5PDB?$CJ?5@ 000000000000cf60     DxeCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0002:00001170       ??_C@_0CM@GKFIOCPE@?5?$CIImageBase?$DN?$CF016lp?0?5EntryPoint?$DN@ 000000000000cf70     DxeCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0002:000011a0       mExceptionNameStr          000000000000cfa0     DxeCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0002:00001290       mExceptionReservedStr      000000000000d090     DxeCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0002:000012a0       ??_C@_0O@MLOLIMFM@?$DMnull?5string?$DO@ 000000000000d0a0     BasePrintLib:PrintLibInternal.obj
+ 0002:000012b0       ??_C@_0M@BJJDNPHK@?$DMnull?5guid?$DO@ 000000000000d0b0     BasePrintLib:PrintLibInternal.obj
+ 0002:000012c0       ??_C@_0DB@PMLHLBMO@?$CF08x?9?$CF04x?9?$CF04x?9?$CF02x?$CF02x?9?$CF02x?$CF02@ 000000000000d0c0     BasePrintLib:PrintLibInternal.obj
+ 0002:000012f8       ??_C@_0M@LHGBCIKM@?$DMnull?5time?$DO@ 000000000000d0f8     BasePrintLib:PrintLibInternal.obj
+ 0002:00001308       ??_C@_0BK@FCPKCIDD@?$CF02d?1?$CF02d?1?$CF04d?5?5?$CF02d?3?$CF02d@ 000000000000d108     BasePrintLib:PrintLibInternal.obj
+ 0002:00001324       ??_C@_04JIMNDDED@?$CF08X@  000000000000d124     BasePrintLib:PrintLibInternal.obj
+ 0002:0000132c       ??_C@_02PCIJFNDE@?$AN?6@   000000000000d12c     BasePrintLib:PrintLibInternal.obj
+ 0002:00001330       ??_C@_01LIIJDEN@?$AN@      000000000000d130     BasePrintLib:PrintLibInternal.obj
+ 0002:00001340       mWarningString             000000000000d140     BasePrintLib:PrintLibInternal.obj
+ 0002:000013e0       mErrorString               000000000000d1e0     BasePrintLib:PrintLibInternal.obj
+ 0002:000016a0       mHexStr                    000000000000d4a0     BasePrintLib:PrintLibInternal.obj
+ 0002:000016e0       mAddressEncMask            000000000000d4e0     BootScriptExecutorDxe:ScriptExecute.obj
+ 0002:000016e8       mPage1GSupport             000000000000d4e8     BootScriptExecutorDxe:ScriptExecute.obj
+ 0002:000016f0       mPageFaultIndex            000000000000d4f0     BootScriptExecutorDxe:SetIdtEntry.obj
+ 0002:000016f8       mPcd                       000000000000d4f8     DxePcdLib:DxePcdLib.obj
+ 0002:00001700       gST                        000000000000d500     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00001708       gBS                        000000000000d508     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00001710       gImageHandle               000000000000d510     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00001718       mDevicePathLibDevicePathUtilities 000000000000d518     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:00001720       mLockBoxGlobal             000000000000d520     LockBoxDxeLib:LockBoxLib.obj
+ 0002:00001738       mHobList                   000000000000d538     DxeHobLib:HobLib.obj
+ 0002:00001740       mRegistrationSmmLegacyBoot 000000000000d540     DxeS3BootScriptLib:BootScriptSave.obj
+ 0002:00001748       mS3BootScriptTableAllocated 000000000000d548     DxeS3BootScriptLib:BootScriptSave.obj
+ 0002:00001750       mEventDxeSmmReadyToLock    000000000000d550     DxeS3BootScriptLib:BootScriptSave.obj
+ 0002:00001758       mBootScriptSmst            000000000000d558     DxeS3BootScriptLib:BootScriptSave.obj
+ 0002:00001760       mRegistrationSmmExitBootServices 000000000000d560     DxeS3BootScriptLib:BootScriptSave.obj
+ 0002:00001768       mRegistrationSmmReadyToLock 000000000000d568     DxeS3BootScriptLib:BootScriptSave.obj
+ 0002:00001770       mS3BootScriptTableSmmAllocated 000000000000d570     DxeS3BootScriptLib:BootScriptSave.obj
+ 0002:00001771       mSkipBreakpoint            000000000000d571     DxeDebugAgentLib:DxeDebugAgentLib.obj
+ 0002:00001772       mMultiProcessorDebugSupport 000000000000d572     DxeDebugAgentLib:DxeDebugAgentLib.obj
+ 0002:00001778       mMailboxPointer            000000000000d578     DxeDebugAgentLib:DxeDebugAgentLib.obj
+ 0002:00001780       mDxeCoreFlag               000000000000d580     DxeDebugAgentLib:DxeDebugAgentLib.obj
+ 0002:00001790       mDebugMpContext            000000000000d590     DxeDebugAgentLib:DebugMp.obj
+ 0002:00001800       mDebugCpuData              000000000000d600     DxeDebugAgentLib:DebugMp.obj
+ 0002:00001a08       mSerialIoHandle            000000000000d808     DxeDebugAgentLib:SerialIo.obj
+ 0002:00001a10       mLoopbackBuffer            000000000000d810     DxeDebugAgentLib:SerialIo.obj
+ 0002:00001a18       gDS                        000000000000d818     DxeServicesTableLib:DxeServicesTableLib.obj
+ 0002:00001a20       gParity                    000000000000d820     PcAtSerialPortLib:SerialPortLib.obj
+ 0002:00001a21       gBreakSet                  000000000000d821     PcAtSerialPortLib:SerialPortLib.obj
+ 0002:00001a40       mExceptionHandlerData      000000000000d840     <common>
+ 0002:00001a60       mReservedVectorsData       000000000000d860     <common>
+ 0002:00002560       mExternalInterruptHandlerTable 000000000000e360     <common>
+ 0002:00002660       mIdtEntryTable             000000000000e460     <common>
+ 0002:00002880       mMailbox                   000000000000e680     <common>
+ 0002:000028a8       mS3BootScriptTablePtr      000000000000e6a8     <common>
+ 0002:000028b0       mS3BootScriptTableSmmPtr   000000000000e6b0     <common>
+ 0002:000028c0       mPageFaultUplink           000000000000e6c0     <common>
+ 0002:00002900       mPhyMask                   000000000000e700     <common>
+ 0002:00002908       mOriginalHandler           000000000000e708     <common>
+ 0002:00002910       mPageFaultBuffer           000000000000e710     <common>
+ 0002:00002918       __volatile_metadata        000000000000e718     <linker-defined>
+
+ entry point at        0001:00001068
+
+ Static symbols
+
+ 0001:00000025       AsmTransferControl.0       00000000000002a5     BootScriptExecutorDxe:S3Asm.obj
+ 0001:00000054       @jmp_addr                  00000000000002d4     BootScriptExecutorDxe:S3Asm.obj
+ 0001:0000010c       PageFaultHandlerHook.1     000000000000038c     BootScriptExecutorDxe:S3Asm.obj
+ 0001:0000013f       AsmCpuid.0                 00000000000003bf     BaseLib:CpuId.obj
+ 0001:00000144       AsmCpuid.1                 00000000000003c4     BaseLib:CpuId.obj
+ 0001:0000014b       AsmCpuid.2                 00000000000003cb     BaseLib:CpuId.obj
+ 0001:00000154       AsmCpuid.3                 00000000000003d4     BaseLib:CpuId.obj
+ 0001:000001ea       InternalX86DisablePaging64.0 000000000000046a     BaseLib:DisablePaging64.obj
+ 0001:00000211       mTransitionEnd             0000000000000491     BaseLib:DisablePaging64.obj
+ 0001:00000297       Exception1Handle           0000000000000517     DxeDebugAgentLib:AsmFuncs.obj
+ 0001:000002aa       Exception2Handle           000000000000052a     DxeDebugAgentLib:AsmFuncs.obj
+ 0001:000002bd       Exception3Handle           000000000000053d     DxeDebugAgentLib:AsmFuncs.obj
+ 0001:000002d0       Exception4Handle           0000000000000550     DxeDebugAgentLib:AsmFuncs.obj
+ 0001:000002e3       Exception5Handle           0000000000000563     DxeDebugAgentLib:AsmFuncs.obj
+ 0001:000002f6       Exception6Handle           0000000000000576     DxeDebugAgentLib:AsmFuncs.obj
+ 0001:00000309       Exception7Handle           0000000000000589     DxeDebugAgentLib:AsmFuncs.obj
+ 0001:0000031c       Exception8Handle           000000000000059c     DxeDebugAgentLib:AsmFuncs.obj
+ 0001:0000032f       Exception9Handle           00000000000005af     DxeDebugAgentLib:AsmFuncs.obj
+ 0001:00000342       Exception10Handle          00000000000005c2     DxeDebugAgentLib:AsmFuncs.obj
+ 0001:00000355       Exception11Handle          00000000000005d5     DxeDebugAgentLib:AsmFuncs.obj
+ 0001:00000368       Exception12Handle          00000000000005e8     DxeDebugAgentLib:AsmFuncs.obj
+ 0001:0000037b       Exception13Handle          00000000000005fb     DxeDebugAgentLib:AsmFuncs.obj
+ 0001:0000038e       Exception14Handle          000000000000060e     DxeDebugAgentLib:AsmFuncs.obj
+ 0001:000003a1       Exception15Handle          0000000000000621     DxeDebugAgentLib:AsmFuncs.obj
+ 0001:000003b4       Exception16Handle          0000000000000634     DxeDebugAgentLib:AsmFuncs.obj
+ 0001:000003c7       Exception17Handle          0000000000000647     DxeDebugAgentLib:AsmFuncs.obj
+ 0001:000003da       Exception18Handle          000000000000065a     DxeDebugAgentLib:AsmFuncs.obj
+ 0001:000003ed       Exception19Handle          000000000000066d     DxeDebugAgentLib:AsmFuncs.obj
+ 0001:0000040f       CommonEntry                000000000000068f     DxeDebugAgentLib:AsmFuncs.obj
+ 0001:00000445       NoExtrPush                 00000000000006c5     DxeDebugAgentLib:AsmFuncs.obj
+ 0001:000005b0       AsmIdtVectorBegin          0000000000000830     DxeCpuExceptionHandlerLib:Xcode5ExceptionHandlerAsm.obj
+ 0001:00000790       AsmIdtVectorEnd            0000000000000a10     DxeCpuExceptionHandlerLib:Xcode5ExceptionHandlerAsm.obj
+ 0001:00000790       HookAfterStubHeaderBegin   0000000000000a10     DxeCpuExceptionHandlerLib:Xcode5ExceptionHandlerAsm.obj
+ 0001:00000791       @VectorNum                 0000000000000a11     DxeCpuExceptionHandlerLib:Xcode5ExceptionHandlerAsm.obj
+ 0001:0000079d       JmpAbsoluteAddress         0000000000000a1d     DxeCpuExceptionHandlerLib:Xcode5ExceptionHandlerAsm.obj
+ 0001:0000079f       HookAfterStubHeaderEnd     0000000000000a1f     DxeCpuExceptionHandlerLib:Xcode5ExceptionHandlerAsm.obj
+ 0001:000007bb       HookAfterStubHeaderEnd.0   0000000000000a3b     DxeCpuExceptionHandlerLib:Xcode5ExceptionHandlerAsm.obj
+ 0001:000007dc       NoErrorCode                0000000000000a5c     DxeCpuExceptionHandlerLib:Xcode5ExceptionHandlerAsm.obj
+ 0001:000007e8       HasErrorCode               0000000000000a68     DxeCpuExceptionHandlerLib:Xcode5ExceptionHandlerAsm.obj
+ 0001:000008b6       VcDebugRegs                0000000000000b36     DxeCpuExceptionHandlerLib:Xcode5ExceptionHandlerAsm.obj
+ 0001:000008bf       DrFinish                   0000000000000b3f     DxeCpuExceptionHandlerLib:Xcode5ExceptionHandlerAsm.obj
+ 0001:0000094b       CetDone                    0000000000000bcb     DxeCpuExceptionHandlerLib:Xcode5ExceptionHandlerAsm.obj
+ 0001:000009cb       ErrorCode                  0000000000000c4b     DxeCpuExceptionHandlerLib:Xcode5ExceptionHandlerAsm.obj
+ 0001:000009d3       DoReturn                   0000000000000c53     DxeCpuExceptionHandlerLib:Xcode5ExceptionHandlerAsm.obj
+ 0001:000009f5       DoIret                     0000000000000c75     DxeCpuExceptionHandlerLib:Xcode5ExceptionHandlerAsm.obj
+ 0001:00000b7a       @UseRepIo                  0000000000000dfa     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000b7c       @SevNoRepIo_Done           0000000000000dfc     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000b94       @IoReadFifo8_NoRep         0000000000000e14     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000b96       @IoReadFifo8_Loop          0000000000000e16     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000b9e       @IoReadFifo8_Done          0000000000000e1e     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000bb7       @IoReadFifo16_NoRep        0000000000000e37     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000bb9       @IoReadFifo16_Loop         0000000000000e39     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000bc4       @IoReadFifo16_Done         0000000000000e44     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000bdc       @IoReadFifo32_NoRep        0000000000000e5c     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000bde       @IoReadFifo32_Loop         0000000000000e5e     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000be7       @IoReadFifo32_Done         0000000000000e67     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000bff       @IoWriteFifo8_NoRep        0000000000000e7f     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000c01       @IoWriteFifo8_Loop         0000000000000e81     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000c09       @IoWriteFifo8_Done         0000000000000e89     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000c22       @IoWriteFifo16_NoRep       0000000000000ea2     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000c24       @IoWriteFifo16_Loop        0000000000000ea4     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000c2f       @IoWriteFifo16_Done        0000000000000eaf     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000c47       @IoWriteFifo32_NoRep       0000000000000ec7     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000c49       @IoWriteFifo32_Loop        0000000000000ec9     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000c52       @IoWriteFifo32_Done        0000000000000ed2     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000cb5       AsmCpuidEx.0               0000000000000f35     BaseLib:CpuIdEx.obj
+ 0001:00000cbc       AsmCpuidEx.1               0000000000000f3c     BaseLib:CpuIdEx.obj
+ 0001:00000cc3       AsmCpuidEx.2               0000000000000f43     BaseLib:CpuIdEx.obj
+ 0001:00000ccc       AsmCpuidEx.3               0000000000000f4c     BaseLib:CpuIdEx.obj
+ 0001:00000d13       CetDone                    0000000000000f93     BaseLib:SetJump.obj
+ 0001:00000e40       CetDone                    00000000000010c0     BaseLib:LongJump.obj
+ 0001:00000f0a       InternalMemCopyMem.0       000000000000118a     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000f1a       @CopyBackward              000000000000119a     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000f23       @CopyBytes                 00000000000011a3     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:0000105a       PvalidateExit              00000000000012da     BaseLib:Pvalidate.obj
+ 0001:00001c8c       FindHeaderByGuid           0000000000001f0c f   LockBoxDxeLib:LockBoxLib.obj
+ 0001:000084e0       GetRegisterPointer         0000000000008760 f   VmgExitLib:VmgExitVcHandler.obj
+ 0001:000085f8       GetEffectiveMemoryAddress  0000000000008878 f   VmgExitLib:VmgExitVcHandler.obj
+ 0001:00008770       DecodeModRm                00000000000089f0 f   VmgExitLib:VmgExitVcHandler.obj
+ 0001:000088a4       UnsupportedExit            0000000000008b24 f   VmgExitLib:VmgExitVcHandler.obj
+ 0001:000088d4       ValidateMmioMemory         0000000000008b54 f   VmgExitLib:VmgExitVcHandler.obj
+ 0001:00008930       MmioExit                   0000000000008bb0 f   VmgExitLib:VmgExitVcHandler.obj
+ 0001:00008f60       MwaitExit                  00000000000091e0 f   VmgExitLib:VmgExitVcHandler.obj
+ 0001:00008fd8       MonitorExit                0000000000009258 f   VmgExitLib:VmgExitVcHandler.obj
+ 0001:0000906c       WbinvdExit                 00000000000092ec f   VmgExitLib:VmgExitVcHandler.obj
+ 0001:0000907c       RdtscpExit                 00000000000092fc f   VmgExitLib:VmgExitVcHandler.obj
+ 0001:00009118       VmmCallExit                0000000000009398 f   VmgExitLib:VmgExitVcHandler.obj
+ 0001:000091cc       MsrExit                    000000000000944c f   VmgExitLib:VmgExitVcHandler.obj
+ 0001:000092d4       IoioExit                   0000000000009554 f   VmgExitLib:VmgExitVcHandler.obj
+ 0001:0000960c       InvdExit                   000000000000988c f   VmgExitLib:VmgExitVcHandler.obj
+ 0001:0000961c       GetCpuidHyp                000000000000989c f   VmgExitLib:VmgExitVcHandler.obj
+ 0001:00009710       GetCpuidFw                 0000000000009990 f   VmgExitLib:VmgExitVcHandler.obj
+ 0001:000099f8       CpuidExit                  0000000000009c78 f   VmgExitLib:VmgExitVcHandler.obj
+ 0001:00009b34       RdpmcExit                  0000000000009db4 f   VmgExitLib:VmgExitVcHandler.obj
+ 0001:00009bd0       RdtscExit                  0000000000009e50 f   VmgExitLib:VmgExitVcHandler.obj
+ 0001:00009c4c       Dr7WriteExit               0000000000009ecc f   VmgExitLib:VmgExitVcHandler.obj
+ 0001:00009cd8       Dr7ReadExit                0000000000009f58 f   VmgExitLib:VmgExitVcHandler.obj
+ 0002:00000004       CommonEntryAddr            000000000000be04     DxeDebugAgentLib:AsmFuncs.obj
+ 0002:00001728       StartOfEntries             000000000000d528     LockBoxDxeLib:LockBoxLib.obj
+ 0002:00001730       EndOfEntries               000000000000d530     LockBoxDxeLib:LockBoxLib.obj
+ 0002:00001a22       mSevEncryptionMaskSaved    000000000000d822     DxeMemEncryptSevLib:DxeMemEncryptSevLibInternal.obj
+ 0002:00001a28       mSevEncryptionMask         000000000000d828     DxeMemEncryptSevLib:DxeMemEncryptSevLibInternal.obj
+ 0002:00001a30       mRunningOnQ35              000000000000d830     DxePciLibI440FxQ35:PciLib.obj
+ 0002:00001a34       mAcpiTimerIoAddr           000000000000d834     DxeAcpiTimerLib:DxeAcpiTimerLib.obj
+ 0004:00000000       $unwind$S3BootScriptInternalCloseTable 000000000000f240     DxeS3BootScriptLib:BootScriptSave.obj
+ 0004:00000000       $unwind$SaveAndDisableInterrupts 000000000000f240     BaseLib:Cpu.obj
+ 0004:00000000       $unwind$PciCf8Read16       000000000000f240     BasePciCf8Lib:PciCf8Lib.obj
+ 0004:00000000       $unwind$PciCf8Read32       000000000000f240     BasePciCf8Lib:PciCf8Lib.obj
+ 0004:00000000       $unwind$PciCf8Read8        000000000000f240     BasePciCf8Lib:PciCf8Lib.obj
+ 0004:00000000       $unwind$_ModuleEntryPoint  000000000000f240     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0004:00000000       $unwind$MicroSecondDelay   000000000000f240     DxeAcpiTimerLib:AcpiTimerLib.obj
+ 0004:00000000       $unwind$VmgExit            000000000000f240     VmgExitLib:VmgExitLib.obj
+ 0004:00000000       $unwind$GetDebugFlag       000000000000f240     DxeDebugAgentLib:DebugAgent.obj
+ 0004:00000000       $unwind$AcquireMpSpinLock  000000000000f240     DxeDebugAgentLib:DebugMp.obj
+ 0004:00000000       $unwind$DebugAgentIsBsp    000000000000f240     DxeDebugAgentLib:DebugMp.obj
+ 0004:00000000       $unwind$GetProcessorIndex  000000000000f240     DxeDebugAgentLib:DebugMp.obj
+ 0004:00000000       $unwind$HaltOtherProcessors 000000000000f240     DxeDebugAgentLib:DebugMp.obj
+ 0004:00000000       $unwind$SetDebugViewPoint  000000000000f240     DxeDebugAgentLib:DebugMp.obj
+ 0004:00000000       $unwind$ReadLocalApicReg   000000000000f240     BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0004:00000000       $unwind$SendIpi            000000000000f240     BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0004:00000008       $unwind$ProcessLibraryConstructorList 000000000000f248     BootScriptExecutorDxe:AutoGen.obj
+ 0004:00000018       $unwind$S3BootScriptEventCallBack 000000000000f258     DxeS3BootScriptLib:BootScriptSave.obj
+ 0004:00000018       $unwind$S3BootScriptSmmAtRuntimeCallBack 000000000000f258     DxeS3BootScriptLib:BootScriptSave.obj
+ 0004:00000018       $unwind$S3BootScriptSmmEventCallBack 000000000000f258     DxeS3BootScriptLib:BootScriptSave.obj
+ 0004:00000018       $unwind$ProcessLibraryDestructorList 000000000000f258     BootScriptExecutorDxe:AutoGen.obj
+ 0004:00000018       $unwind$PciSegmentWrite8   000000000000f258     BasePciSegmentLibPci:PciSegmentLib.obj
+ 0004:00000018       $unwind$PeCoffLoaderImageReadFromMemory 000000000000f258     BasePeCoffLib:BasePeCoff.obj
+ 0004:00000018       $unwind$GetHobList         000000000000f258     DxeHobLib:HobLib.obj
+ 0004:00000018       $unwind$GetPcdProtocol     000000000000f258     DxePcdLib:DxePcdLib.obj
+ 0004:00000018       $unwind$RestoreLockBox     000000000000f258     LockBoxDxeLib:LockBoxLib.obj
+ 0004:00000018       $unwind$SetLockBoxAttributes 000000000000f258     LockBoxDxeLib:LockBoxLib.obj
+ 0004:00000018       $unwind$ResetCold          000000000000f258     DxeResetSystemLib:ResetSystemLib.obj
+ 0004:00000018       $unwind$UnsupportedExit    000000000000f258     VmgExitLib:VmgExitVcHandler.obj
+ 0004:00000018       $unwind$VerifyMailboxChecksum 000000000000f258     DxeDebugAgentLib:DebugAgent.obj
+ 0004:00000018       $unwind$GetMailboxPointer  000000000000f258     DxeDebugAgentLib:DxeDebugAgentLib.obj
+ 0004:00000018       $unwind$GetApicMode        000000000000f258     BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0004:00000018       $unwind$GetLocalApicBaseAddress 000000000000f258     BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0004:00000020       $unwind$ProcessModuleEntryPointList 000000000000f260     BootScriptExecutorDxe:AutoGen.obj
+ 0004:0000002c       $unwind$S3BootScriptExecutorEntryFunction 000000000000f26c     BootScriptExecutorDxe:ScriptExecute.obj
+ 0004:00000044       $unwind$ReadyToLockEventNotify 000000000000f284     BootScriptExecutorDxe:ScriptExecute.obj
+ 0004:00000058       $unwind$HookPageFaultHandler 000000000000f298     BootScriptExecutorDxe:SetIdtEntry.obj
+ 0004:00000064       $unwind$AcquirePage        000000000000f2a4     BootScriptExecutorDxe:SetIdtEntry.obj
+ 0004:00000064       $unwind$PciCf8Write16      000000000000f2a4     BasePciCf8Lib:PciCf8Lib.obj
+ 0004:00000064       $unwind$PciCf8Write32      000000000000f2a4     BasePciCf8Lib:PciCf8Lib.obj
+ 0004:00000064       $unwind$PciCf8Write8       000000000000f2a4     BasePciCf8Lib:PciCf8Lib.obj
+ 0004:00000064       $unwind$GetCpuidHyp        000000000000f2a4     VmgExitLib:VmgExitVcHandler.obj
+ 0004:00000064       $unwind$MonitorExit        000000000000f2a4     VmgExitLib:VmgExitVcHandler.obj
+ 0004:00000064       $unwind$MwaitExit          000000000000f2a4     VmgExitLib:VmgExitVcHandler.obj
+ 0004:00000064       $unwind$GetBreakCause      000000000000f2a4     DxeDebugAgentLib:DebugAgent.obj
+ 0004:00000064       $unwind$SendDebugMsgPacket 000000000000f2a4     DxeDebugAgentLib:DebugAgent.obj
+ 0004:00000064       $unwind$SendPacketWithoutData 000000000000f2a4     DxeDebugAgentLib:DebugAgent.obj
+ 0004:00000064       $unwind$SetDebugFlag       000000000000f2a4     DxeDebugAgentLib:DebugAgent.obj
+ 0004:00000064       $unwind$WriteLocalApicReg  000000000000f2a4     BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0004:00000064       $unwind$DumpModuleImageInfo 000000000000f2a4     DxeCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0004:00000070       $unwind$PageFaultHandler   000000000000f2b0     BootScriptExecutorDxe:SetIdtEntry.obj
+ 0004:00000070       $unwind$InternalAcpiDelay  000000000000f2b0     DxeAcpiTimerLib:AcpiTimerLib.obj
+ 0004:00000070       $unwind$Dr7ReadExit        000000000000f2b0     VmgExitLib:VmgExitVcHandler.obj
+ 0004:00000070       $unwind$Dr7WriteExit       000000000000f2b0     VmgExitLib:VmgExitVcHandler.obj
+ 0004:00000070       $unwind$RdpmcExit          000000000000f2b0     VmgExitLib:VmgExitVcHandler.obj
+ 0004:00000070       $unwind$RdtscExit          000000000000f2b0     VmgExitLib:VmgExitVcHandler.obj
+ 0004:00000070       $unwind$RdtscpExit         000000000000f2b0     VmgExitLib:VmgExitVcHandler.obj
+ 0004:00000070       $unwind$VmmCallExit        000000000000f2b0     VmgExitLib:VmgExitVcHandler.obj
+ 0004:00000070       $unwind$TriggerSoftInterrupt 000000000000f2b0     DxeDebugAgentLib:DebugAgent.obj
+ 0004:00000070       $unwind$SetCpuBreakFlagByIndex 000000000000f2b0     DxeDebugAgentLib:DebugMp.obj
+ 0004:00000070       $unwind$SetCpuStopFlagByIndex 000000000000f2b0     DxeDebugAgentLib:DebugMp.obj
+ 0004:00000070       $unwind$IsDebugTimerTimeout 000000000000f2b0     DxeDebugAgentLib:DebugTimer.obj
+ 0004:00000070       $unwind$SaveAndSetDebugTimerInterrupt 000000000000f2b0     DxeDebugAgentLib:DebugTimer.obj
+ 0004:00000070       $unwind$SerialGetControl   000000000000f2b0     DxeDebugAgentLib:SerialIo.obj
+ 0004:00000080       $unwind$SwitchStack        000000000000f2c0     BaseLib:SwitchStack.obj
+ 0004:00000080       $unwind$EfiCreateProtocolNotifyEvent 000000000000f2c0     UefiLib:UefiLib.obj
+ 0004:00000088       $unwind$EfiGetSystemConfigurationTable 000000000000f2c8     UefiLib:UefiLib.obj
+ 0004:00000090       $unwind$AllocateAcpiNvsPool 000000000000f2d0     LockBoxDxeLib:LockBoxDxe.obj
+ 0004:000000a4       $unwind$SaveLockBox        000000000000f2e4     LockBoxDxeLib:LockBoxLib.obj
+ 0004:000000b8       $unwind$S3BootScriptLibInitialize 000000000000f2f8     DxeS3BootScriptLib:BootScriptSave.obj
+ 0004:000000c8       $unwind$ScriptIoRead       000000000000f308     DxeS3BootScriptLib:BootScriptExecute.obj
+ 0004:000000c8       $unwind$ScriptMemoryRead   000000000000f308     DxeS3BootScriptLib:BootScriptExecute.obj
+ 0004:000000d8       $unwind$ScriptIoWrite      000000000000f318     DxeS3BootScriptLib:BootScriptExecute.obj
+ 0004:000000ec       $unwind$ScriptMemoryWrite  000000000000f32c     DxeS3BootScriptLib:BootScriptExecute.obj
+ 0004:00000100       $unwind$ScriptPciCfg2Read  000000000000f340     DxeS3BootScriptLib:BootScriptExecute.obj
+ 0004:00000118       $unwind$ScriptPciCfg2Write 000000000000f358     DxeS3BootScriptLib:BootScriptExecute.obj
+ 0004:00000134       $unwind$BootScriptExecuteIoPoll 000000000000f374     DxeS3BootScriptLib:BootScriptExecute.obj
+ 0004:00000134       $unwind$BootScriptExecuteMemPoll 000000000000f374     DxeS3BootScriptLib:BootScriptExecute.obj
+ 0004:00000148       $unwind$BootScriptPciCfg2Poll 000000000000f388     DxeS3BootScriptLib:BootScriptExecute.obj
+ 0004:00000148       $unwind$BootScriptPciCfgPoll 000000000000f388     DxeS3BootScriptLib:BootScriptExecute.obj
+ 0004:0000015c       $unwind$S3BootScriptExecute 000000000000f39c     DxeS3BootScriptLib:BootScriptExecute.obj
+ 0004:00000174       $unwind$PeCoffLoaderGetPeHeader 000000000000f3b4     BasePeCoffLib:BasePeCoff.obj
+ 0004:00000190       $unwind$PeCoffLoaderGetImageInfo 000000000000f3d0     BasePeCoffLib:BasePeCoff.obj
+ 0004:000001b0       $unwind$PeCoffLoaderRelocateImage 000000000000f3f0     BasePeCoffLib:BasePeCoff.obj
+ 0004:000001cc       $unwind$PeCoffLoaderLoadImage 000000000000f40c     BasePeCoffLib:BasePeCoff.obj
+ 0004:000001e4       $unwind$InternalImageHandleToFvHandle 000000000000f424     DxeServicesLib:DxeServicesLib.obj
+ 0004:000001ec       $unwind$InternalGetSectionFromFv 000000000000f42c     DxeServicesLib:DxeServicesLib.obj
+ 0004:000001f4       $unwind$GetSectionFromAnyFv 000000000000f434     DxeServicesLib:DxeServicesLib.obj
+ 0004:00000208       $unwind$InternalConstructorWorker 000000000000f448     DxeDebugAgentLib:DxeDebugAgentLib.obj
+ 0004:00000214       $unwind$SetupDebugAgentEnvironment 000000000000f454     DxeDebugAgentLib:DxeDebugAgentLib.obj
+ 0004:00000228       $unwind$InitializeDebugTimer 000000000000f468     DxeDebugAgentLib:DebugTimer.obj
+ 0004:00000244       $unwind$CalculateCrc16     000000000000f484     DxeDebugAgentLib:DebugAgent.obj
+ 0004:00000250       $unwind$UpdateMailboxContent 000000000000f490     DxeDebugAgentLib:DebugAgent.obj
+ 0004:00000260       $unwind$DebugAgentReadBuffer 000000000000f4a0     DxeDebugAgentLib:DebugAgent.obj
+ 0004:00000260       $unwind$DecompressDataInPlace 000000000000f4a0     DxeDebugAgentLib:DebugAgent.obj
+ 0004:0000027c       $unwind$DebugAgentMsgPrint 000000000000f4bc     DxeDebugAgentLib:DebugAgent.obj
+ 0004:00000288       $unwind$DebugAgentDataMsgPrint 000000000000f4c8     DxeDebugAgentLib:DebugAgent.obj
+ 0004:000002a0       $unwind$ReadRemainingBreakPacket 000000000000f4e0     DxeDebugAgentLib:DebugAgent.obj
+ 0004:000002b4       $unwind$SendAckPacket      000000000000f4f4     DxeDebugAgentLib:DebugAgent.obj
+ 0004:000002c4       $unwind$DecodeModRm        000000000000f504     VmgExitLib:VmgExitVcHandler.obj
+ 0004:000002c4       $unwind$ReceivePacket      000000000000f504     DxeDebugAgentLib:DebugAgent.obj
+ 0004:000002e0       $unwind$SendCommandAndWaitForAckOK 000000000000f520     DxeDebugAgentLib:DebugAgent.obj
+ 0004:000002fc       $unwind$IoioExit           000000000000f53c     VmgExitLib:VmgExitVcHandler.obj
+ 0004:000002fc       $unwind$CompressData       000000000000f53c     DxeDebugAgentLib:DebugAgent.obj
+ 0004:00000314       $unwind$ReadMemoryAndSendResponsePacket 000000000000f554     DxeDebugAgentLib:DebugAgent.obj
+ 0004:0000032c       $unwind$ValidateMmioMemory 000000000000f56c     VmgExitLib:VmgExitVcHandler.obj
+ 0004:0000032c       $unwind$AttachHost         000000000000f56c     DxeDebugAgentLib:DebugAgent.obj
+ 0004:00000338       $unwind$SendBreakPacketToHost 000000000000f578     DxeDebugAgentLib:DebugAgent.obj
+ 0004:00000344       $unwind$CommandCommunication 000000000000f584     DxeDebugAgentLib:DebugAgent.obj
+ 0004:00000364       $unwind$InterruptProcess   000000000000f5a4     DxeDebugAgentLib:DebugAgent.obj
+ 0004:00000364       $unwind$SerialRead         000000000000f5a4     DxeDebugAgentLib:SerialIo.obj
+ 0004:0000037c       $unwind$MsrExit            000000000000f5bc     VmgExitLib:VmgExitVcHandler.obj
+ 0004:0000037c       $unwind$SerialWrite        000000000000f5bc     DxeDebugAgentLib:SerialIo.obj
+ 0004:00000390       $unwind$DebugReadBreakFromDebugPort 000000000000f5d0     DxeDebugAgentLib:SerialIo.obj
+ 0004:00000398       $unwind$InitializeCpuExceptionHandlers 000000000000f5d8     DxeCpuExceptionHandlerLib:DxeException.obj
+ 0004:000003a4       $unwind$CommonExceptionHandlerWorker 000000000000f5e4     DxeCpuExceptionHandlerLib:PeiDxeSmmCpuException.obj
+ 0004:000003b8       $unwind$UpdateIdtTable     000000000000f5f8     DxeCpuExceptionHandlerLib:PeiDxeSmmCpuException.obj
+ 0004:000003d0       $unwind$DumpCpuContext     000000000000f610     DxeCpuExceptionHandlerLib:ArchExceptionHandler.obj
+ 0004:000003e0       $unwind$InternalPrintMessage 000000000000f620     DxeCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0004:000003e8       $unwind$VmgExitHandleVc    000000000000f628     VmgExitLib:PeiDxeVmgExitVcHandler.obj
+ 0004:000003fc       $unwind$GetEffectiveMemoryAddress 000000000000f63c     VmgExitLib:VmgExitVcHandler.obj
+ 0004:00000410       $unwind$MmioExit           000000000000f650     VmgExitLib:VmgExitVcHandler.obj
+ 0004:0000042c       $unwind$GetCpuidFw         000000000000f66c     VmgExitLib:VmgExitVcHandler.obj
+ 0004:00000448       $unwind$CpuidExit          000000000000f688     VmgExitLib:VmgExitVcHandler.obj
+ 0004:00000460       $unwind$InternalVmgExitHandleVc 000000000000f6a0     VmgExitLib:VmgExitVcHandler.obj
+ 0004:00000480       $unwind$LocalApicBaseAddressMsrSupported 000000000000f6c0     BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0004:00000488       $unwind$GetApicId          000000000000f6c8     BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0004:00000490       $unwind$AsciiSPrint        000000000000f6d0     BasePrintLib:PrintLib.obj
+ 0004:00000498       $unwind$BasePrintLibSPrintMarker 000000000000f6d8     BasePrintLib:PrintLibInternal.obj
+ 0004:000004b4       $unwind$BasePrintLibSPrint 000000000000f6f4     BasePrintLib:PrintLibInternal.obj
+ 0004:000004bc       $unwind$PeCoffLoaderExtraActionCommon 000000000000f6fc     PeCoffExtraActionLib:PeCoffExtraActionLib.obj
+ 0004:000004d8       $unwind$InternalMemEncryptSevGetAddressRangeState 000000000000f718     DxeMemEncryptSevLib:VirtualMemory.obj

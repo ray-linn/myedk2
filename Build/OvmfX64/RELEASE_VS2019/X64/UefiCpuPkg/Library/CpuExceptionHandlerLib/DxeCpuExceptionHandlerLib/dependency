@@ -1,0 +1,7 @@
+
+
+!IF EXIST(d:\edk2\edk2\Build\OvmfX64\RELEASE_VS2019\X64\UefiCpuPkg\Library\CpuExceptionHandlerLib\DxeCpuExceptionHandlerLib\OUTPUT\X64\Xcode5ExceptionHandlerAsm.nasm.trim.deps)
+!INCLUDE d:\edk2\edk2\Build\OvmfX64\RELEASE_VS2019\X64\UefiCpuPkg\Library\CpuExceptionHandlerLib\DxeCpuExceptionHandlerLib\OUTPUT\X64\Xcode5ExceptionHandlerAsm.nasm.trim.deps
+!ENDIF
+
+               

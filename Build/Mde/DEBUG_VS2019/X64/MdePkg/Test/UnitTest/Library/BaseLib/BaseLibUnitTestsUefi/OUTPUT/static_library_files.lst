@@ -1,0 +1,16 @@
+d:/edk2/edk2/Build/Mde/DEBUG_VS2019/X64/MdePkg/Test/UnitTest/Library/BaseLib/BaseLibUnitTestsUefi/OUTPUT/BaseLibUnitTestsUefi.lib
+d:/edk2/edk2/Build/Mde/DEBUG_VS2019/X64/MdePkg/Library/RegisterFilterLibNull/RegisterFilterLibNull/OUTPUT/FilterLibNull.lib
+d:/edk2/edk2/Build/Mde/DEBUG_VS2019/X64/MdePkg/Library/BaseDebugPrintErrorLevelLib/BaseDebugPrintErrorLevelLib/OUTPUT/BaseDebugPrintErrorLevelLib.lib
+d:/edk2/edk2/Build/Mde/DEBUG_VS2019/X64/MdePkg/Library/BaseReportStatusCodeLibNull/BaseReportStatusCodeLibNull/OUTPUT/BaseReportStatusCodeLibNull.lib
+d:/edk2/edk2/Build/Mde/DEBUG_VS2019/X64/MdePkg/Library/BasePrintLib/BasePrintLib/OUTPUT/BasePrintLib.lib
+d:/edk2/edk2/Build/Mde/DEBUG_VS2019/X64/UnitTestFrameworkPkg/Library/UnitTestResultReportLib/UnitTestResultReportLibConOut/OUTPUT/UnitTestResultReportLibConOut.lib
+d:/edk2/edk2/Build/Mde/DEBUG_VS2019/X64/UnitTestFrameworkPkg/Library/UnitTestPersistenceLibNull/UnitTestPersistenceLibNull/OUTPUT/UnitTestPersistenceLibNull.lib
+d:/edk2/edk2/Build/Mde/DEBUG_VS2019/X64/MdePkg/Library/UefiMemoryAllocationLib/UefiMemoryAllocationLib/OUTPUT/UefiMemoryAllocationLib.lib
+d:/edk2/edk2/Build/Mde/DEBUG_VS2019/X64/MdePkg/Library/BasePcdLibNull/BasePcdLibNull/OUTPUT/BasePcdLibNull.lib
+d:/edk2/edk2/Build/Mde/DEBUG_VS2019/X64/UnitTestFrameworkPkg/Library/UnitTestDebugAssertLib/UnitTestDebugAssertLib/OUTPUT/UnitTestDebugAssertLib.lib
+d:/edk2/edk2/Build/Mde/DEBUG_VS2019/X64/UnitTestFrameworkPkg/Library/UnitTestLib/UnitTestLib/OUTPUT/UnitTestLib.lib
+d:/edk2/edk2/Build/Mde/DEBUG_VS2019/X64/MdeModulePkg/Library/PeiDxeDebugLibReportStatusCode/PeiDxeDebugLibReportStatusCode/OUTPUT/PeiDxeDebugLibReportStatusCode.lib
+d:/edk2/edk2/Build/Mde/DEBUG_VS2019/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib
+d:/edk2/edk2/Build/Mde/DEBUG_VS2019/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib
+d:/edk2/edk2/Build/Mde/DEBUG_VS2019/X64/MdePkg/Library/UefiBootServicesTableLib/UefiBootServicesTableLib/OUTPUT/UefiBootServicesTableLib.lib
+d:/edk2/edk2/Build/Mde/DEBUG_VS2019/X64/MdePkg/Library/UefiApplicationEntryPoint/UefiApplicationEntryPoint/OUTPUT/UefiApplicationEntryPoint.lib

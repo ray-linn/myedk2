@@ -1,0 +1,771 @@
+ TestBaseSafeIntLibDxe
+
+ Timestamp is 62034633 (Wed Feb  9 12:42:27 2022)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000184H .text                   CODE
+ 0001:00000184 0000beedH .text$mn                CODE
+ 0002:00000000 00003b28H .rdata                  DATA
+ 0002:00003b28 00000054H .rdata$voltmd           DATA
+ 0002:00003b7c 00000160H .rdata$zzzdbg           DATA
+ 0003:00000000 00000160H .data                   DATA
+ 0003:00000160 00000140H .bss                    DATA
+ 0004:00000000 000006b4H .pdata                  DATA
+ 0005:00000000 00000238H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __guard_iat_table          0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_table      0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points 0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_count      0000000000000000     <absolute>
+ 0000:00000000       __dynamic_value_reloc_table 0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_count         0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat     0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat_copy 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table   0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata 0000000000000000     <absolute>
+ 0000:00000000       __AbsoluteZero             0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map          0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points_count 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table_size 0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_count          0000000000000000     <absolute>
+ 0000:00000000       __guard_check_icall_a64n_fptr 0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_table         0000000000000000     <absolute>
+ 0000:00000000       __guard_flags              0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata_count 0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_count      0000000000000000     <absolute>
+ 0000:00000000       __enclave_config           0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_table      0000000000000000     <absolute>
+ 0000:00000000       __arm64x_native_entrypoint 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map_count    0000000000000000     <absolute>
+ 0001:00000000       SetJump                    00000000000002c0     BaseLib:SetJump.obj
+ 0001:000000d0       InternalLongJump           0000000000000390     BaseLib:LongJump.obj
+ 0001:00000180       CpuPause                   0000000000000440     BaseLib:CpuPause.obj
+ 0001:00000184       _ModuleEntryPoint          0000000000000444 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:00000204       TestSafeInt8ToUint8        00000000000004c4 f   TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0001:0000029c       TestSafeInt8ToUint16       000000000000055c f   TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0001:00000334       TestSafeInt8ToUint32       00000000000005f4 f   TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0001:000003cc       TestSafeInt8ToUintn        000000000000068c f   TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0001:00000464       TestSafeInt8ToUint64       0000000000000724 f   TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0001:00000500       TestSafeUint8ToInt8        00000000000007c0 f   TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0001:0000059c       TestSafeUint8ToChar8       000000000000085c f   TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0001:00000638       TestSafeInt16ToInt8        00000000000008f8 f   TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0001:00000768       TestSafeInt16ToChar8       0000000000000a28 f   TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0001:000008d4       TestSafeInt16ToUint8       0000000000000b94 f   TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0001:000009b8       TestSafeInt16ToUint16      0000000000000c78 f   TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0001:00000a54       TestSafeInt16ToUint32      0000000000000d14 f   TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0001:00000af0       TestSafeInt16ToUintn       0000000000000db0 f   TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0001:00000b8c       TestSafeInt16ToUint64      0000000000000e4c f   TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0001:00000c28       TestSafeUint16ToInt8       0000000000000ee8 f   TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0001:00000cc4       TestSafeUint16ToChar8      0000000000000f84 f   TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0001:00000d60       TestSafeUint16ToUint8      0000000000001020 f   TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0001:00000dfc       TestSafeUint16ToInt16      00000000000010bc f   TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0001:00000e98       TestSafeInt32ToInt8        0000000000001158 f   TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0001:00000fc8       TestSafeInt32ToChar8       0000000000001288 f   TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0001:00001134       TestSafeInt32ToUint8       00000000000013f4 f   TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0001:00001240       TestSafeInt32ToInt16       0000000000001500 f   TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0001:00001370       TestSafeInt32ToUint16      0000000000001630 f   TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0001:0000147c       TestSafeInt32ToUint32      000000000000173c f   TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0001:00001518       TestSafeInt32ToUint64      00000000000017d8 f   TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0001:000015b4       TestSafeUint32ToInt8       0000000000001874 f   TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0001:00001650       TestSafeUint32ToChar8      0000000000001910 f   TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0001:000016ec       TestSafeUint32ToUint8      00000000000019ac f   TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0001:00001788       TestSafeUint32ToInt16      0000000000001a48 f   TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0001:00001824       TestSafeUint32ToUint16     0000000000001ae4 f   TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0001:000018c0       TestSafeUint32ToInt32      0000000000001b80 f   TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0001:0000195c       TestSafeIntnToInt8         0000000000001c1c f   TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0001:00001a8c       TestSafeIntnToChar8        0000000000001d4c f   TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0001:00001bf8       TestSafeIntnToUint8        0000000000001eb8 f   TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0001:00001cdc       TestSafeIntnToInt16        0000000000001f9c f   TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0001:00001e0c       TestSafeIntnToUint16       00000000000020cc f   TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0001:00001ef0       TestSafeIntnToUintn        00000000000021b0 f   TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0001:00001f8c       TestSafeIntnToUint64       000000000000224c f   TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0001:00002028       TestSafeUintnToInt8        00000000000022e8 f   TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0001:000020c4       TestSafeUintnToChar8       0000000000002384 f   TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0001:00002160       TestSafeUintnToUint8       0000000000002420 f   TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0001:000021fc       TestSafeUintnToInt16       00000000000024bc f   TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0001:00002298       TestSafeUintnToUint16      0000000000002558 f   TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0001:00002334       TestSafeUintnToInt32       00000000000025f4 f   TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0001:000023d0       TestSafeInt64ToInt8        0000000000002690 f   TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0001:00002500       TestSafeInt64ToChar8       00000000000027c0 f   TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0001:0000266c       TestSafeInt64ToUint8       000000000000292c f   TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0001:00002750       TestSafeInt64ToInt16       0000000000002a10 f   TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0001:00002880       TestSafeInt64ToUint16      0000000000002b40 f   TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0001:00002964       TestSafeInt64ToInt32       0000000000002c24 f   TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0001:00002a94       TestSafeInt64ToUint32      0000000000002d54 f   TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0001:00002b78       TestSafeInt64ToUint64      0000000000002e38 f   TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0001:00002c1c       TestSafeUint64ToInt8       0000000000002edc f   TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0001:00002cb8       TestSafeUint64ToChar8      0000000000002f78 f   TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0001:00002d54       TestSafeUint64ToUint8      0000000000003014 f   TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0001:00002df0       TestSafeUint64ToInt16      00000000000030b0 f   TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0001:00002e8c       TestSafeUint64ToUint16     000000000000314c f   TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0001:00002f28       TestSafeUint64ToInt32      00000000000031e8 f   TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0001:00002fc4       TestSafeUint64ToUint32     0000000000003284 f   TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0001:00003060       TestSafeUint64ToInt64      0000000000003320 f   TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0001:00003104       TestSafeUint8Add           00000000000033c4 f   TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0001:000031a0       TestSafeUint16Add          0000000000003460 f   TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0001:0000323c       TestSafeUint32Add          00000000000034fc f   TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0001:000032d8       TestSafeUint64Add          0000000000003598 f   TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0001:0000337c       TestSafeInt8Add            000000000000363c f   TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0001:000034ac       TestSafeInt16Add           000000000000376c f   TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0001:000035dc       TestSafeInt32Add           000000000000389c f   TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0001:00003760       TestSafeInt64Add           0000000000003a20 f   TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0001:00003904       TestSafeUint8Sub           0000000000003bc4 f   TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0001:000039a0       TestSafeUint16Sub          0000000000003c60 f   TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0001:00003a3c       TestSafeUint32Sub          0000000000003cfc f   TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0001:00003ad8       TestSafeUint64Sub          0000000000003d98 f   TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0001:00003b7c       TestSafeInt8Sub            0000000000003e3c f   TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0001:00003cac       TestSafeInt16Sub           0000000000003f6c f   TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0001:00003ddc       TestSafeInt32Sub           000000000000409c f   TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0001:00003f68       TestSafeInt64Sub           0000000000004228 f   TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0001:00004120       TestSafeUint8Mult          00000000000043e0 f   TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0001:000041bc       TestSafeUint16Mult         000000000000447c f   TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0001:00004258       TestSafeUint32Mult         0000000000004518 f   TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0001:000042f4       TestSafeUint64Mult         00000000000045b4 f   TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0001:000043dc       TestSafeInt8Mult           000000000000469c f   TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0001:00004478       TestSafeInt16Mult          0000000000004738 f   TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0001:00004514       TestSafeInt32Mult          00000000000047d4 f   TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0001:000045b0       TestSafeInt64Mult          0000000000004870 f   TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0001:00004680       UefiTestMain               0000000000004940 f   TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0001:00007e48       TestSafeInt32ToUintn       0000000000008108 f   TestBaseSafeIntLibDxe:SafeIntLibUintnIntnUnitTests64.obj
+ 0001:00007ee4       TestSafeUint32ToIntn       00000000000081a4 f   TestBaseSafeIntLibDxe:SafeIntLibUintnIntnUnitTests64.obj
+ 0001:00007f08       TestSafeIntnToInt32        00000000000081c8 f   TestBaseSafeIntLibDxe:SafeIntLibUintnIntnUnitTests64.obj
+ 0001:00008034       TestSafeIntnToUint32       00000000000082f4 f   TestBaseSafeIntLibDxe:SafeIntLibUintnIntnUnitTests64.obj
+ 0001:00008118       TestSafeUintnToUint32      00000000000083d8 f   TestBaseSafeIntLibDxe:SafeIntLibUintnIntnUnitTests64.obj
+ 0001:000081b4       TestSafeUintnToIntn        0000000000008474 f   TestBaseSafeIntLibDxe:SafeIntLibUintnIntnUnitTests64.obj
+ 0001:00008258       TestSafeUintnToInt64       0000000000008518 f   TestBaseSafeIntLibDxe:SafeIntLibUintnIntnUnitTests64.obj
+ 0001:000082fc       TestSafeInt64ToIntn        00000000000085bc f   TestBaseSafeIntLibDxe:SafeIntLibUintnIntnUnitTests64.obj
+ 0001:00008324       TestSafeInt64ToUintn       00000000000085e4 f   TestBaseSafeIntLibDxe:SafeIntLibUintnIntnUnitTests64.obj
+ 0001:000083c8       TestSafeUint64ToIntn       0000000000008688 f   TestBaseSafeIntLibDxe:SafeIntLibUintnIntnUnitTests64.obj
+ 0001:0000846c       TestSafeUint64ToUintn      000000000000872c f   TestBaseSafeIntLibDxe:SafeIntLibUintnIntnUnitTests64.obj
+ 0001:00008494       TestSafeUintnAdd           0000000000008754 f   TestBaseSafeIntLibDxe:SafeIntLibUintnIntnUnitTests64.obj
+ 0001:00008538       TestSafeIntnAdd            00000000000087f8 f   TestBaseSafeIntLibDxe:SafeIntLibUintnIntnUnitTests64.obj
+ 0001:000086dc       TestSafeUintnSub           000000000000899c f   TestBaseSafeIntLibDxe:SafeIntLibUintnIntnUnitTests64.obj
+ 0001:00008780       TestSafeIntnSub            0000000000008a40 f   TestBaseSafeIntLibDxe:SafeIntLibUintnIntnUnitTests64.obj
+ 0001:00008938       TestSafeUintnMult          0000000000008bf8 f   TestBaseSafeIntLibDxe:SafeIntLibUintnIntnUnitTests64.obj
+ 0001:00008a20       TestSafeIntnMult           0000000000008ce0 f   TestBaseSafeIntLibDxe:SafeIntLibUintnIntnUnitTests64.obj
+ 0001:00008af0       UnitTestDebugAssert        0000000000008db0 f   UnitTestDebugAssertLib:UnitTestDebugAssertLib.obj
+ 0001:00008c90       CreateUnitTestSuite        0000000000008f50 f   UnitTestLib:UnitTestLib.obj
+ 0001:00008e00       AddTestCase                00000000000090c0 f   UnitTestLib:UnitTestLib.obj
+ 0001:00009368       UnitTestAssertNotEfiError  0000000000009628 f   UnitTestLib:Assert.obj
+ 0001:000093f0       UnitTestAssertEqual        00000000000096b0 f   UnitTestLib:Assert.obj
+ 0001:00009680       RunAllTestSuites           0000000000009940 f   UnitTestLib:RunTests.obj
+ 0001:000098c4       UnitTestLogInit            0000000000009b84 f   UnitTestLib:Log.obj
+ 0001:0000995c       UnitTestLog                0000000000009c1c f   UnitTestLib:Log.obj
+ 0001:00009a54       DebugPrint                 0000000000009d14 f   PeiDxeDebugLibReportStatusCode:DebugLib.obj
+ 0001:00009a78       DebugPrintMarker           0000000000009d38 f   PeiDxeDebugLibReportStatusCode:DebugLib.obj
+ 0001:00009c70       StrnLenS                   0000000000009f30 f   BaseLib:SafeString.obj
+ 0001:00009cc8       AsciiStrCpyS               0000000000009f88 f   BaseLib:SafeString.obj
+ 0001:00009e10       AsciiStrnCpyS              000000000000a0d0 f   BaseLib:SafeString.obj
+ 0001:00009f88       AsciiStrCatS               000000000000a248 f   BaseLib:SafeString.obj
+ 0001:0000a0fc       AsciiStrnCatS              000000000000a3bc f   BaseLib:SafeString.obj
+ 0001:0000a29c       InternalBaseLibIsListValid 000000000000a55c f   BaseLib:LinkedList.obj
+ 0001:0000a32c       InsertTailList             000000000000a5ec f   BaseLib:LinkedList.obj
+ 0001:0000a380       GetFirstNode               000000000000a640 f   BaseLib:LinkedList.obj
+ 0001:0000a3b4       GetNextNode                000000000000a674 f   BaseLib:LinkedList.obj
+ 0001:0000a3e8       AsciiStrLen                000000000000a6a8 f   BaseLib:String.obj
+ 0001:0000a454       CalculateCrc32             000000000000a714 f   BaseLib:CheckSum.obj
+ 0001:0000a4e8       InternalAssertJumpBuffer   000000000000a7a8 f   BaseLib:SetJump.obj
+ 0001:0000a520       SafeUint64Mult             000000000000a7e0 f   BaseSafeIntLib:SafeIntLib.obj
+ 0001:0000a5d8       SafeInt32Add               000000000000a898 f   BaseSafeIntLib:SafeIntLib.obj
+ 0001:0000a61c       SafeInt64Add               000000000000a8dc f   BaseSafeIntLib:SafeIntLib.obj
+ 0001:0000a678       SafeInt32Sub               000000000000a938 f   BaseSafeIntLib:SafeIntLib.obj
+ 0001:0000a6bc       SafeInt64Sub               000000000000a97c f   BaseSafeIntLib:SafeIntLib.obj
+ 0001:0000a718       SafeInt64Mult              000000000000a9d8 f   BaseSafeIntLib:SafeIntLib.obj
+ 0001:0000a7bc       AsciiSPrint                000000000000aa7c f   BasePrintLib:PrintLib.obj
+ 0001:0000a7e8       BasePrintLibFillBuffer     000000000000aaa8 f   BasePrintLib:PrintLibInternal.obj
+ 0001:0000a81c       BasePrintLibValueToString  000000000000aadc f   BasePrintLib:PrintLibInternal.obj
+ 0001:0000a888       BasePrintLibSPrintMarker   000000000000ab48 f   BasePrintLib:PrintLibInternal.obj
+ 0001:0000b794       BasePrintLibSPrint         000000000000ba54 f   BasePrintLib:PrintLibInternal.obj
+ 0001:0000b7b8       OutputUnitTestFrameworkReport 000000000000ba78 f   UnitTestResultReportLibDebugLib:UnitTestResultReportLib.obj
+ 0001:0000bbb4       ReportPrint                000000000000be74 f   UnitTestResultReportLibDebugLib:UnitTestResultReportLibDebugLib.obj
+ 0001:0000bc28       InternalAllocateZeroPool   000000000000bee8 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:0000bc74       CopyMem                    000000000000bf34 f   BaseMemoryLib:CopyMemWrapper.obj
+ 0001:0000bd10       CompareMem                 000000000000bfd0 f   BaseMemoryLib:CompareMemWrapper.obj
+ 0001:0000bddc       ZeroMem                    000000000000c09c f   BaseMemoryLib:ZeroMemWrapper.obj
+ 0001:0000be4c       InternalMemCopyMem         000000000000c10c f   BaseMemoryLib:CopyMem.obj
+ 0001:0000c000       InternalMemSetMem          000000000000c2c0 f   BaseMemoryLib:SetMem.obj
+ 0002:00000000       ??_C@_0CB@DMEJJJHA@?6ASSERT_EFI_ERROR?5?$CIStatus?5?$DN?5?$CFr?$CJ@ 000000000000c340     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0002:00000030       ??_C@_0CH@BBNBJKHK@?$CB?$CI?$CI?$CIINTN?$CJ?$CIRETURN_STATUS?$CJ?$CIStatus@ 000000000000c370     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0002:00000060       ??_C@_0BG@BCEPGBHF@TestBaseSafeIntLibDxe@ 000000000000c3a0     TestBaseSafeIntLibDxe:AutoGen.obj
+ 0002:00000078       _gPcd_FixedAtBuild_PcdControlFlowEnforcementPropertyMask 000000000000c3b8     TestBaseSafeIntLibDxe:AutoGen.obj
+ 0002:0000007c       ??_C@_06PGDKHFME@Status@   000000000000c3bc     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000090       ??_C@_0EO@FGKPKBNI@d?3?2edk2?2edk2?2MdePkg?2Test?2UnitTe@ 000000000000c3d0     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:000000e0       ??_C@_0BE@EJHELKDP@TestSafeInt8ToUint8@ 000000000000c420     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:000000f4       ??_C@_06GGONACPB@Result@   000000000000c434     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:000000fc       ??_C@_04EDBMBGEJ@0x5b@     000000000000c43c     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000108       ??_C@_0BI@KCHADBGP@RETURN_BUFFER_TOO_SMALL@ 000000000000c448     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000120       ??_C@_0BF@DAOCPDHN@TestSafeInt8ToUint16@ 000000000000c460     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000140       ??_C@_0BF@FHAKOCBH@TestSafeInt8ToUint32@ 000000000000c480     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000160       ??_C@_0BE@KFJFEAON@TestSafeInt8ToUintn@ 000000000000c4a0     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000180       ??_C@_0BF@HJLIHHK@TestSafeInt8ToUint64@ 000000000000c4c0     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:000001a0       ??_C@_0BE@CIHHKBGA@TestSafeUint8ToInt8@ 000000000000c4e0     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:000001c0       ??_C@_0BF@GOBENDHP@TestSafeUint8ToChar8@ 000000000000c500     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:000001e0       ??_C@_0BE@LJFNFBMF@TestSafeInt16ToInt8@ 000000000000c520     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:000001f4       ??_C@_05BIOLNNGN@?$CI?935?$CJ@ 000000000000c534     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000200       ??_C@_0BF@MIDJKOOI@TestSafeInt16ToChar8@ 000000000000c540     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000218       ??_C@_01GBGANLPD@0@        000000000000c558     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000220       ??_C@_0BF@HMDIAKDK@TestSafeInt16ToUint8@ 000000000000c560     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000240       ??_C@_0BG@EALNELEC@TestSafeInt16ToUint16@ 000000000000c580     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000258       ??_C@_06KAAECMFP@0x5b5b@   000000000000c598     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000260       ??_C@_0BG@CHFFFKCI@TestSafeInt16ToUint32@ 000000000000c5a0     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000280       ??_C@_0BF@JANJPAOI@TestSafeInt16ToUintn@ 000000000000c5c0     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:000002a0       ??_C@_0BG@HHMEDPEF@TestSafeInt16ToUint64@ 000000000000c5e0     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:000002c0       ??_C@_0BF@CKDMJMFH@TestSafeUint16ToInt8@ 000000000000c600     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:000002e0       ??_C@_0BG@NGKLDNEN@TestSafeUint16ToChar8@ 000000000000c620     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000300       ??_C@_0BG@GCKKJJJP@TestSafeUint16ToUint8@ 000000000000c640     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000318       ??_C@_04CIKJJACF@0xab@     000000000000c658     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000320       ??_C@_0BG@HDOIFCDB@TestSafeUint16ToInt16@ 000000000000c660     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000340       ??_C@_0BE@BDOBHHLJ@TestSafeInt32ToInt8@ 000000000000c680     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000354       ??_C@_05DOAEFGNP@?$CI?957?$CJ@ 000000000000c694     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000360       ??_C@_0BF@JBCACPNJ@TestSafeInt32ToChar8@ 000000000000c6a0     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000380       ??_C@_0BF@CFCBILAL@TestSafeInt32ToUint8@ 000000000000c6c0     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:000003a0       ??_C@_0BF@DEGDEAKF@TestSafeInt32ToInt16@ 000000000000c6e0     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:000003b8       ??_C@_08GGABLCLE@?$CI?917857?$CJ@ 000000000000c6f8     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:000003d0       ??_C@_0BG@BBDKFCPJ@TestSafeInt32ToUint16@ 000000000000c710     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:000003e8       ??_C@_06GCCMDDI@0xabab@    000000000000c728     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:000003f0       ??_C@_0BG@HGNCEDJD@TestSafeInt32ToUint32@ 000000000000c730     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000408       ??_C@_0L@OMLKMCHP@0x5bababab@ 000000000000c748     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000420       ??_C@_0BG@CGEDCGPO@TestSafeInt32ToUint64@ 000000000000c760     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000440       ??_C@_0BF@IAIALKCL@TestSafeUint32ToInt8@ 000000000000c780     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000460       ??_C@_0BG@IPLCLMHM@TestSafeUint32ToChar8@ 000000000000c7a0     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000480       ??_C@_0BG@DLLDBIKO@TestSafeUint32ToUint8@ 000000000000c7c0     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:000004a0       ??_C@_0BG@CKPBNDAA@TestSafeUint32ToInt16@ 000000000000c7e0     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:000004b8       ??_C@_06MLLBKKDD@0x5bab@   000000000000c7f8     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:000004c0       ??_C@_0BH@LHJIJHAN@TestSafeUint32ToUint16@ 000000000000c800     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:000004e0       ??_C@_0BG@ENBJMCGK@TestSafeUint32ToInt32@ 000000000000c820     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000500       ??_C@_0BD@NDAMFEKM@TestSafeIntnToInt8@ 000000000000c840     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000514       ??_C@_05DJANPOAD@?$CI?953?$CJ@ 000000000000c854     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000520       ??_C@_0BE@PMDNCGBB@TestSafeIntnToChar8@ 000000000000c860     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000540       ??_C@_0BE@EIDMICMD@TestSafeIntnToUint8@ 000000000000c880     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000560       ??_C@_0BE@FJHOEJGN@TestSafeIntnToInt16@ 000000000000c8a0     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000578       ??_C@_08BLDNKINA@?$CI?923467?$CJ@ 000000000000c8b8     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000590       ??_C@_0BF@IEOIAFHC@TestSafeIntnToUint16@ 000000000000c8d0     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:000005b0       ??_C@_0BE@KENNHIBB@TestSafeIntnToUintn@ 000000000000c8f0     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:000005d0       ??_C@_0BF@LDJBHBHF@TestSafeIntnToUint64@ 000000000000c910     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:000005f0       ??_C@_0BE@LLDOFLCB@TestSafeUintnToInt8@ 000000000000c930     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000610       ??_C@_0BF@GPFMOLID@TestSafeUintnToChar8@ 000000000000c950     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000630       ??_C@_0BF@NLFNEPFB@TestSafeUintnToUint8@ 000000000000c970     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000650       ??_C@_0BF@MKBPIEPP@TestSafeUintnToInt16@ 000000000000c990     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000670       ??_C@_0BG@JKHKJGNH@TestSafeUintnToUint16@ 000000000000c9b0     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000690       ??_C@_0BF@KNPHJFJF@TestSafeUintnToInt32@ 000000000000c9d0     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:000006b0       ??_C@_0BE@JPBJDLHB@TestSafeInt64ToInt8@ 000000000000c9f0     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:000006c4       ??_C@_05BLGPAJAD@?$CI?937?$CJ@ 000000000000ca04     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:000006d0       ??_C@_0BF@EBDJNBH@TestSafeInt64ToChar8@ 000000000000ca10     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:000006f0       ??_C@_0BF@LABCDJMF@TestSafeInt64ToUint8@ 000000000000ca30     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000710       ??_C@_0BF@KBFAPCGL@TestSafeInt64ToInt16@ 000000000000ca50     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000730       ??_C@_0BG@GNHDIOPM@TestSafeInt64ToUint16@ 000000000000ca70     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000750       ??_C@_0BF@MGLIODAB@TestSafeInt64ToInt32@ 000000000000ca90     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000768       ??_C@_0O@KGNPIEFG@?$CI?91537977259?$CJ@ 000000000000caa8     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000780       ??_C@_0BG@KJLJPJG@TestSafeInt64ToUint32@ 000000000000cac0     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000798       ??_C@_0L@MDAENCAF@0xabababab@ 000000000000cad8     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:000007b0       ??_C@_0BG@FKAKPKPL@TestSafeInt64ToUint64@ 000000000000caf0     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:000007c8       ??_C@_0BD@ENPAGAIJ@0x5babababefefefef@ 000000000000cb08     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:000007e0       ??_C@_0BF@MHIPGOD@TestSafeUint64ToInt8@ 000000000000cb20     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000800       ??_C@_0BG@BKIBAOLC@TestSafeUint64ToChar8@ 000000000000cb40     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000820       ??_C@_0BG@KOIAKKGA@TestSafeUint64ToUint8@ 000000000000cb60     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000840       ??_C@_0BG@LPMCGBMO@TestSafeUint64ToInt16@ 000000000000cb80     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000860       ??_C@_0BH@MLNBELAI@TestSafeUint64ToUint16@ 000000000000cba0     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000880       ??_C@_0BG@NICKHAKE@TestSafeUint64ToInt32@ 000000000000cbc0     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:000008a0       ??_C@_0BH@KMDJFKGC@TestSafeUint64ToUint32@ 000000000000cbe0     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:000008c0       ??_C@_0BG@IILLBFMJ@TestSafeUint64ToInt64@ 000000000000cc00     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:000008e0       ??_C@_0BB@GAAACHAP@TestSafeUint8Add@ 000000000000cc20     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:000008f4       ??_C@_04KMHJDIPF@0x74@     000000000000cc34     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000900       ??_C@_0BC@GKFPIBAO@TestSafeUint16Add@ 000000000000cc40     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000914       ??_C@_06NLMHABPN@0x7474@   000000000000cc54     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000920       ??_C@_0BC@NCBHIGMF@TestSafeUint32Add@ 000000000000cc60     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000938       ??_C@_0L@BGDCOFBK@0x74747474@ 000000000000cc78     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000950       ??_C@_0BC@NJKOCNG@TestSafeUint64Add@ 000000000000cc90     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000968       ??_C@_0BD@IDMLGCNN@0x7474747424242424@ 000000000000cca8     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000980       ??_C@_0BA@DDKJKJM@TestSafeInt8Add@ 000000000000ccc0     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000990       ??_C@_06JFIFEJKJ@?$CI?9116?$CJ@ 000000000000ccd0     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:000009a0       ??_C@_0BB@DDKHJEN@TestSafeInt16Add@ 000000000000cce0     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:000009b8       ??_C@_08OEEKJMOF@?$CI?929812?$CJ@ 000000000000ccf8     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:000009d0       ??_C@_0BB@LLHCHOIG@TestSafeInt32Add@ 000000000000cd10     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:000009e8       ??_C@_0O@OPFLJDCH@?$CI?91953789044?$CJ@ 000000000000cd28     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000a00       ??_C@_0BB@GEPPBKJF@TestSafeInt64Add@ 000000000000cd40     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000a18       ??_C@_0BD@FFEPEFKO@0x7474747474747474@ 000000000000cd58     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000a30       ??_C@_0BH@KLBAGIOF@?$CI?98391460049216894068?$CJ@ 000000000000cd70     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000a50       ??_C@_0BB@NBKONGNK@TestSafeUint8Sub@ 000000000000cd90     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000a64       ??_C@_04CAHJHLJB@0x1f@     000000000000cda4     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000a70       ??_C@_0BC@NLPBHANL@TestSafeUint16Sub@ 000000000000cdb0     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000a84       ??_C@_06LJIDHABA@0x1f1f@   000000000000cdc4     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000a90       ??_C@_0BC@GDLJHHBA@TestSafeUint32Sub@ 000000000000cdd0     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000aa8       ??_C@_0L@DCPJIFAA@0x1f1f1f1f@ 000000000000cde8     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000ac0       ??_C@_0BC@LMDEBDAD@TestSafeUint64Sub@ 000000000000ce00     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000ad8       ??_C@_0BD@FICHCDAB@0x1f1f1f1f1f1f1f1f@ 000000000000ce18     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000af0       ??_C@_0BA@LCJEGLEJ@TestSafeInt8Sub@ 000000000000ce30     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000b00       ??_C@_04MONODPBK@0x20@     000000000000ce40     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000b08       ??_C@_05KGJMHIOD@?$CI?920?$CJ@ 000000000000ce48     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000b10       ??_C@_0BB@LCJEIIJI@TestSafeInt16Sub@ 000000000000ce50     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000b24       ??_C@_06POOCBODF@0x2020@   000000000000ce64     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000b30       ??_C@_07BAOKINIC@?$CI?98224?$CJ@ 000000000000ce70     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000b40       ??_C@_0BB@KNMIPFD@TestSafeInt32Sub@ 000000000000ce80     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000b58       ??_C@_0L@DEGDNMNG@0x20202020@ 000000000000ce98     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000b68       ??_C@_0N@HFFNGAAN@?$CI?9538976288?$CJ@ 000000000000cea8     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000b80       ??_C@_0BB@NFFBOLEA@TestSafeInt64Sub@ 000000000000cec0     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000b98       ??_C@_0BD@BLDPGJKN@0x2020202020202020@ 000000000000ced8     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000bb0       ??_C@_0BH@DHNOPAIE@?$CI?92314885530818453536?$CJ@ 000000000000cef0     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000bd0       ??_C@_0BC@PIMKCNAH@TestSafeUint8Mult@ 000000000000cf10     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000be4       ??_C@_04MGAONEKO@0xb4@     000000000000cf24     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000bf0       ??_C@_0BD@IPMHECDH@TestSafeUint16Mult@ 000000000000cf30     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000c04       ??_C@_06ICPAPNJH@0xfc94@   000000000000cf44     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000c10       ??_C@_0BD@IDMJBBAI@TestSafeUint32Mult@ 000000000000cf50     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000c28       ??_C@_0L@FEACDJJE@0x844c9dbe@ 000000000000cf68     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000c40       ??_C@_0BD@HKINNLC@TestSafeUint64Mult@ 000000000000cf80     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000c58       ??_C@_0BD@IHPAMIHL@0x14b66db9745a07f6@ 000000000000cf98     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000c70       ??_C@_0BB@JBKPNFEE@TestSafeInt8Mult@ 000000000000cfb0     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000c84       ??_C@_04PNJFEOA@0x7e@      000000000000cfc4     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000c90       ??_C@_0BC@GAHLDHOF@TestSafeInt16Mult@ 000000000000cfd0     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000ca4       ??_C@_06HOONCLGL@0x7515@   000000000000cfe4     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000cb0       ??_C@_0BC@GMHFGENK@TestSafeInt32Mult@ 000000000000cff0     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000cc8       ??_C@_0L@GIDJHKJN@0x75c28c50@ 000000000000d008     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000ce0       ??_C@_0BC@OIBEKIGA@TestSafeInt64Mult@ 000000000000d020     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000cf8       ??_C@_0BD@LCLCHKGG@0x75cd9045220d6bb5@ 000000000000d038     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000d0c       ??_C@_03NKBOLEBK@0?41@     000000000000d04c     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000d10       ??_C@_0CD@EAEMCJPJ@Int?5Safe?5Lib?5Unit?5Test?5Applicat@ 000000000000d050     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000d38       ??_C@_07FDKCANDN@?$CFa?5v?$CFa?6@ 000000000000d078     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000d40       ??_C@_0CO@DGOGDECM@Failed?5in?5InitUnitTestFramework@ 000000000000d080     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000d70       ??_C@_0BH@GCNENIAG@Common?4SafeInt?4Convert@ 000000000000d0b0     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000d90       ??_C@_0CA@NIFPBGOP@Int?5Safe?5Conversions?5Test?5Suite@ 000000000000d0d0     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000db0       ??_C@_0DK@KAMENKJC@Failed?5in?5CreateUnitTestSuite?5f@ 000000000000d0f0     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000df0       ??_C@_0BF@GDKLJOMM@Test?5SafeInt8ToUint8@ 000000000000d130     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000e10       ??_C@_0BG@BEHMIPPP@Test?5SafeInt8ToUint16@ 000000000000d150     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000e30       ??_C@_0BG@HDJEJOJF@Test?5SafeInt8ToUint32@ 000000000000d170     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000e50       ??_C@_0BF@IPEKGEBO@Test?5SafeInt8ToUintn@ 000000000000d190     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000e70       ??_C@_0BG@CDAFPLPI@Test?5SafeInt8ToUint64@ 000000000000d1b0     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000e90       ??_C@_0BF@CKIIFJD@Test?5SafeUint8ToInt8@ 000000000000d1d0     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000eb0       ??_C@_0BG@EKIKKPPN@Test?5SafeUint8ToChar8@ 000000000000d1f0     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000ed0       ??_C@_0BF@JDICHFDG@Test?5SafeInt16ToInt8@ 000000000000d210     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000ef0       ??_C@_0BG@OMKHNCGK@Test?5SafeInt16ToChar8@ 000000000000d230     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000f10       ??_C@_0BG@FIKGHGLI@Test?5SafeInt16ToUint8@ 000000000000d250     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000f30       ??_C@_0BH@EDCPDHDC@Test?5SafeInt16ToUint16@ 000000000000d270     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000f50       ??_C@_0BH@CEMHCGFI@Test?5SafeInt16ToUint32@ 000000000000d290     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000f70       ??_C@_0BG@LEEHIMGK@Test?5SafeInt16ToUintn@ 000000000000d2b0     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000f90       ??_C@_0BH@HEFGEDDF@Test?5SafeInt16ToUint64@ 000000000000d2d0     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000fb0       ??_C@_0BG@OKCOANF@Test?5SafeUint16ToInt8@ 000000000000d2f0     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000fd0       ??_C@_0BH@NFDJEBDN@Test?5SafeUint16ToChar8@ 000000000000d310     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00000ff0       ??_C@_0BH@GBDIOFOP@Test?5SafeUint16ToUint8@ 000000000000d330     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00001010       ??_C@_0BH@HAHKCOEB@Test?5SafeUint16ToInt16@ 000000000000d350     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00001030       ??_C@_0BF@DJDOFDEK@Test?5SafeInt32ToInt8@ 000000000000d370     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00001050       ??_C@_0BG@LFLOFDFL@Test?5SafeInt32ToChar8@ 000000000000d390     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00001070       ??_C@_0BG@BLPPHIJ@Test?5SafeInt32ToUint8@ 000000000000d3b0     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00001090       ??_C@_0BG@BAPNDMCH@Test?5SafeInt32ToInt16@ 000000000000d3d0     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:000010b0       ??_C@_0BH@BCKICOIJ@Test?5SafeInt32ToUint16@ 000000000000d3f0     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:000010d0       ??_C@_0BH@HFEADPOD@Test?5SafeInt32ToUint32@ 000000000000d410     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:000010f0       ??_C@_0BF@MJMAHBNJ@TestSafeInt32ToUintn@ 000000000000d430     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00001110       ??_C@_0BG@ONFOANFL@Test?5SafeInt32ToUintn@ 000000000000d450     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00001130       ??_C@_0BH@CFNBFKIO@Test?5SafeInt32ToUint64@ 000000000000d470     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00001150       ??_C@_0BG@KEBOMGKJ@Test?5SafeUint32ToInt8@ 000000000000d490     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00001170       ??_C@_0BH@IMCAMAAM@Test?5SafeUint32ToChar8@ 000000000000d4b0     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00001190       ??_C@_0BH@DICBGENO@Test?5SafeUint32ToUint8@ 000000000000d4d0     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:000011b0       ??_C@_0BH@CJGDKPHA@Test?5SafeUint32ToInt16@ 000000000000d4f0     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:000011d0       ??_C@_0BI@OHJOHEEN@Test?5SafeUint32ToUint16@ 000000000000d510     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:000011f0       ??_C@_0BH@EOILLOBK@Test?5SafeUint32ToInt32@ 000000000000d530     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00001210       ??_C@_0BF@GMGBEAPJ@TestSafeUint32ToIntn@ 000000000000d550     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00001230       ??_C@_0BG@EIPPDMHL@Test?5SafeUint32ToIntn@ 000000000000d570     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00001250       ??_C@_0BE@GDADDDFH@Test?5SafeIntnToInt8@ 000000000000d590     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00001270       ??_C@_0BF@NGOCACOC@Test?5SafeIntnToChar8@ 000000000000d5b0     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00001290       ??_C@_0BF@GCODKGDA@Test?5SafeIntnToUint8@ 000000000000d5d0     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:000012b0       ??_C@_0BF@HDKBGNJO@Test?5SafeIntnToInt16@ 000000000000d5f0     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:000012d0       ??_C@_0BG@KAHGHJPA@Test?5SafeIntnToUint16@ 000000000000d610     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:000012f0       ??_C@_0BE@DOJGFIAH@TestSafeIntnToInt32@ 000000000000d630     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00001310       ??_C@_0BF@BEEJHMPE@Test?5SafeIntnToInt32@ 000000000000d650     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00001330       ??_C@_0BF@ODAABEBI@TestSafeIntnToUint32@ 000000000000d670     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00001350       ??_C@_0BG@MHJOGIJK@Test?5SafeIntnToUint32@ 000000000000d690     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00001370       ??_C@_0BF@IOACFMOC@Test?5SafeIntnToUintn@ 000000000000d6b0     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00001390       ??_C@_0BG@JHAPANPH@Test?5SafeIntnToUint64@ 000000000000d6d0     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:000013b0       ??_C@_0BF@JBOBHPNC@Test?5SafeUintnToInt8@ 000000000000d6f0     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:000013d0       ??_C@_0BG@ELMCJHAB@Test?5SafeUintnToChar8@ 000000000000d710     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:000013f0       ??_C@_0BG@PPMDDDND@Test?5SafeUintnToUint8@ 000000000000d730     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00001410       ??_C@_0BG@OOIBPIHN@Test?5SafeUintnToInt16@ 000000000000d750     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00001430       ??_C@_0BH@JJOIOKKH@Test?5SafeUintnToUint16@ 000000000000d770     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00001450       ??_C@_0BG@IJGJOJBH@Test?5SafeUintnToInt32@ 000000000000d790     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00001470       ??_C@_0BG@PNJCIHLN@TestSafeUintnToUint32@ 000000000000d7b0     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00001490       ??_C@_0BH@POAAPLMN@Test?5SafeUintnToUint32@ 000000000000d7d0     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:000014b0       ??_C@_0BE@FHNPKBPD@TestSafeUintnToIntn@ 000000000000d7f0     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:000014d0       ??_C@_0BF@HNAAIFAA@Test?5SafeUintnToIntn@ 000000000000d810     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:000014f0       ??_C@_0BF@PNGGPAPI@TestSafeUintnToInt64@ 000000000000d830     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00001510       ??_C@_0BG@NJPIIMHK@Test?5SafeUintnToInt64@ 000000000000d850     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00001530       ??_C@_0BF@LFMGBPIC@Test?5SafeInt64ToInt8@ 000000000000d870     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00001550       ??_C@_0BG@CAINOBJF@Test?5SafeInt64ToChar8@ 000000000000d890     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00001570       ??_C@_0BG@JEIMEFEH@Test?5SafeInt64ToUint8@ 000000000000d8b0     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00001590       ??_C@_0BG@IFMOIOOJ@Test?5SafeInt64ToInt16@ 000000000000d8d0     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:000015b0       ??_C@_0BH@GOOBPCIM@Test?5SafeInt64ToUint16@ 000000000000d8f0     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:000015d0       ??_C@_0BG@OCCGJPID@Test?5SafeInt64ToInt32@ 000000000000d910     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:000015f0       ??_C@_0BH@JAJODOG@Test?5SafeInt64ToUint32@ 000000000000d930     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00001610       ??_C@_0BE@HDPIMBKD@TestSafeInt64ToIntn@ 000000000000d950     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00001630       ??_C@_0BF@FJCHOFFA@Test?5SafeInt64ToIntn@ 000000000000d970     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00001650       ??_C@_0BF@FMPDMDBH@TestSafeInt64ToUintn@ 000000000000d990     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00001670       ??_C@_0BG@HIGNLPJF@Test?5SafeInt64ToUintn@ 000000000000d9b0     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00001690       ??_C@_0BH@FJJIIGIL@Test?5SafeInt64ToUint64@ 000000000000d9d0     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:000016b0       ??_C@_0BG@CIOGIKGB@Test?5SafeUint64ToInt8@ 000000000000d9f0     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:000016d0       ??_C@_0BH@BJBDHCMC@Test?5SafeUint64ToChar8@ 000000000000da10     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:000016f0       ??_C@_0BH@KNBCNGBA@Test?5SafeUint64ToUint8@ 000000000000da30     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00001710       ??_C@_0BH@LMFABNLO@Test?5SafeUint64ToInt16@ 000000000000da50     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00001730       ??_C@_0BI@JLNHKIEI@Test?5SafeUint64ToUint16@ 000000000000da70     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00001750       ??_C@_0BH@NLLIAMNE@Test?5SafeUint64ToInt32@ 000000000000da90     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00001770       ??_C@_0BI@PMDPLJCC@Test?5SafeUint64ToUint32@ 000000000000dab0     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00001790       ??_C@_0BF@OAJJAMDB@TestSafeUint64ToIntn@ 000000000000dad0     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:000017b0       ??_C@_0BG@MEAHHALD@Test?5SafeUint64ToIntn@ 000000000000daf0     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:000017d0       ??_C@_0BG@ECGBFALC@TestSafeUint64ToUintn@ 000000000000db10     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:000017f0       ??_C@_0BH@EBPDCMMC@Test?5SafeUint64ToUintn@ 000000000000db30     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00001810       ??_C@_0BH@ILCJGJLJ@Test?5SafeUint64ToInt64@ 000000000000db50     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00001830       ??_C@_0BL@OKGIDCGC@Common?4SafeInt?4AddSubtract@ 000000000000db70     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00001850       ??_C@_0CB@LGAEAPJN@Int?5Safe?5Add?1Subtract?5Test?5Suit@ 000000000000db90     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00001880       ??_C@_0EE@BAKKFIEB@Failed?5in?5CreateUnitTestSuite?5f@ 000000000000dbc0     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:000018d0       ??_C@_0BC@PPDGJOKD@Test?5SafeUint8Add@ 000000000000dc10     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:000018f0       ??_C@_0BD@LFKAFIHE@Test?5SafeUint16Add@ 000000000000dc30     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00001910       ??_C@_0BD@NOIFPLP@Test?5SafeUint32Add@ 000000000000dc50     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00001930       ??_C@_0BB@NHFDBNGE@TestSafeUintnAdd@ 000000000000dc70     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00001950       ??_C@_0BC@EIGFKEMI@Test?5SafeUintnAdd@ 000000000000dc90     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00001970       ??_C@_0BD@NCGFDLKM@Test?5SafeUint64Add@ 000000000000dcb0     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00001990       ??_C@_0BB@IKGHJDNK@Test?5SafeInt8Add@ 000000000000dcd0     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:000019b0       ??_C@_0BC@JMAMMAOB@Test?5SafeInt16Add@ 000000000000dcf0     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:000019d0       ??_C@_0BC@CEEEMHCK@Test?5SafeInt32Add@ 000000000000dd10     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:000019f0       ??_C@_0BA@LEGJKAPH@TestSafeIntnAdd@ 000000000000dd30     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00001a00       ??_C@_0BB@DNDEKJLB@Test?5SafeIntnAdd@ 000000000000dd40     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00001a20       ??_C@_0BC@PLMJKDDJ@Test?5SafeInt64Add@ 000000000000dd60     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00001a40       ??_C@_0BC@EOJIGPHG@Test?5SafeUint8Sub@ 000000000000dd80     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00001a60       ??_C@_0BD@EAOKJKB@Test?5SafeUint16Sub@ 000000000000dda0     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00001a80       ??_C@_0BD@LMEGKOGK@Test?5SafeUint32Sub@ 000000000000ddc0     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00001aa0       ??_C@_0BB@GGPNOMLB@TestSafeUintnSub@ 000000000000dde0     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00001ac0       ??_C@_0BC@PJMLFFBN@Test?5SafeUintnSub@ 000000000000de00     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00001ae0       ??_C@_0BD@GDMLMKHJ@Test?5SafeUint64Sub@ 000000000000de20     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00001b00       ??_C@_0BB@DLMJGCAP@Test?5SafeInt8Sub@ 000000000000de40     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00001b20       ??_C@_0BC@CNKCDBDE@Test?5SafeInt16Sub@ 000000000000de60     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00001b40       ??_C@_0BC@JFOKDGPP@Test?5SafeInt32Sub@ 000000000000de80     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00001b60       ??_C@_0BA@FMHFBCC@TestSafeIntnSub@ 000000000000dea0     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00001b70       ??_C@_0BB@IMJKFIGE@Test?5SafeIntnSub@ 000000000000deb0     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00001b90       ??_C@_0BC@EKGHFCOM@Test?5SafeInt64Sub@ 000000000000ded0     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00001bb0       ??_C@_0BI@JFNOCCED@Common?4SafeInt?4Multiply@ 000000000000def0     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00001bd0       ??_C@_0BN@GGBMAKPD@Int?5Safe?5Multiply?5Test?5Suite@ 000000000000df10     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00001bf0       ??_C@_0EA@CHOINOAF@Failed?5in?5CreateUnitTestSuite?5f@ 000000000000df30     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00001c30       ??_C@_0BD@CHDFPEHN@Test?5SafeUint8Mult@ 000000000000df70     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00001c50       ??_C@_0BE@DPMICFMM@Test?5SafeUint16Mult@ 000000000000df90     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00001c70       ??_C@_0BE@DDMGHGPD@Test?5SafeUint32Mult@ 000000000000dfb0     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00001c90       ??_C@_0BC@CCBNMGON@TestSafeUintnMult@ 000000000000dfd0     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00001cb0       ??_C@_0BD@PNOCBPJH@Test?5SafeUintnMult@ 000000000000dff0     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00001cd0       ??_C@_0BE@LHKHLKEJ@Test?5SafeUint64Mult@ 000000000000e010     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00001cf0       ??_C@_0BC@OJJGMOI@Test?5SafeInt8Mult@ 000000000000e030     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00001d10       ??_C@_0BD@LPIEOOJP@Test?5SafeInt16Mult@ 000000000000e050     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00001d30       ??_C@_0BD@LDIKLNKA@Test?5SafeInt32Mult@ 000000000000e070     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00001d50       ??_C@_0BB@ELHIDOKO@TestSafeIntnMult@ 000000000000e090     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00001d70       ??_C@_0BC@NEEOIHAC@Test?5SafeIntnMult@ 000000000000e0b0     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00001d90       ??_C@_0BD@DHOLHBBK@Test?5SafeInt64Mult@ 000000000000e0d0     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0002:00001db0       ??_C@_0FK@NIPIJMFP@d?3?2edk2?2edk2?2MdePkg?2Test?2UnitTe@ 000000000000e0f0     TestBaseSafeIntLibDxe:SafeIntLibUintnIntnUnitTests64.obj
+ 0002:00001e10       ??_C@_0CG@ONMBJIAP@Detected?5expected?5ASSERT?3?5?$CFa?$CI?$CFd@ 000000000000e150     UnitTestDebugAssertLib:UnitTestDebugAssertLib.obj
+ 0002:00001e38       ??_C@_0BM@LHGHHPMH@Detected?5unexpected?5ASSERT?$CI@ 000000000000e178     UnitTestDebugAssertLib:UnitTestDebugAssertLib.obj
+ 0002:00001e54       ??_C@_01PKGAHCOL@?$CJ@     000000000000e194     UnitTestDebugAssertLib:UnitTestDebugAssertLib.obj
+ 0002:00001e60       ??_C@_0BP@CGDPHJNI@LogSize?5?$DM?5?$CI?$CIUINT32?$CJ0xFFFFFFFF?$CJ@ 000000000000e1a0     UnitTestLib:UnitTestLib.obj
+ 0002:00001e80       ??_C@_0EE@NNLIJJOB@d?3?2edk2?2edk2?2UnitTestFrameworkP@ 000000000000e1c0     UnitTestLib:UnitTestLib.obj
+ 0002:00001ec8       ??_C@_0BD@EJNKBBFI@SaveFrameworkState@ 000000000000e208     UnitTestLib:UnitTestLib.obj
+ 0002:00001ee0       ??_C@_0BP@NKOLLOPO@?$CFa?5?9?5Could?5not?5save?5state?$CB?5?$CFr?6@ 000000000000e220     UnitTestLib:UnitTestLib.obj
+ 0002:00001f00       ??_C@_0DD@CGICDLGI@?$FLASSERT?5FAIL?$FN?5?$CFa?3?$CFd?3?5Expression@ 000000000000e240     UnitTestLib:Assert.obj
+ 0002:00001f38       ??_C@_0CF@CBGCCNEB@?$CFa?3?$CFd?3?5Expression?5?$CI?$CFa?$CJ?5is?5not?5T@ 000000000000e278     UnitTestLib:Assert.obj
+ 0002:00001f60       ??_C@_0DF@EPLKACGO@?$FLASSERT?5FAIL?$FN?5?$CFa?3?$CFd?3?5Status?5?8?$CFa@ 000000000000e2a0     UnitTestLib:Assert.obj
+ 0002:00001f98       ??_C@_0CH@PPCICPDE@?$CFa?3?$CFd?3?5Status?5?8?$CFa?8?5is?5EFI_ERROR@ 000000000000e2d8     UnitTestLib:Assert.obj
+ 0002:00001fc0       ??_C@_0DB@LNMABEIO@?$FLASSERT?5FAIL?$FN?5?$CFa?3?$CFd?3?5Value?5?$CFa?5?$CB@ 000000000000e300     UnitTestLib:Assert.obj
+ 0002:00001ff8       ??_C@_0CD@GHPNOFJB@?$CFa?3?$CFd?3?5Value?5?$CFa?5?$CB?$DN?5?$CFa?5?$CI?$CFd?5?$CB?$DN?5?$CFd@ 000000000000e338     UnitTestLib:Assert.obj
+ 0002:00002020       ??_C@_0CB@HPPEAEDM@mFrameworkHandle?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50@ 000000000000e360     UnitTestLib:RunTests.obj
+ 0002:00002050       ??_C@_0EB@NPPIBIHM@d?3?2edk2?2edk2?2UnitTestFrameworkP@ 000000000000e390     UnitTestLib:RunTests.obj
+ 0002:00002098       ??_C@_0DL@PHAADJIH@?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9@ 000000000000e3d8     UnitTestLib:RunTests.obj
+ 0002:000020d8       ??_C@_0BI@CAIDJJEC@RUNNING?5TEST?5SUITE?3?5?$CFa?6@ 000000000000e418     UnitTestLib:RunTests.obj
+ 0002:000020f0       ??_C@_0DL@PCIPDFBB@?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK@ 000000000000e430     UnitTestLib:RunTests.obj
+ 0002:00002130       ??_C@_0BE@DEFGBCFH@?5RUNNING?5TEST?3?5?$CFa?3?6@ 000000000000e470     UnitTestLib:RunTests.obj
+ 0002:00002148       ??_C@_0DM@KIOAABKN@?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK@ 000000000000e488     UnitTestLib:RunTests.obj
+ 0002:00002188       ??_C@_0CM@NFFAGLOP@Test?5was?5run?5on?5a?5previous?5pass@ 000000000000e4c8     UnitTestLib:RunTests.obj
+ 0002:000021b8       ??_C@_07FNKMCILI@PREREQ?6@ 000000000000e4f8     UnitTestLib:RunTests.obj
+ 0002:000021c0       ??_C@_0BG@NCKEKGKK@Prerequisite?5Not?5Met?6@ 000000000000e500     UnitTestLib:RunTests.obj
+ 0002:000021d8       ??_C@_08NPKPFPKE@CLEANUP?6@ 000000000000e518     UnitTestLib:RunTests.obj
+ 0002:000021e8       ??_C@_0DL@PJHJDDEE@?9?9?9?9?9?9?9?9?9?9?9?9?5?5?5?5?5RUNNING?5ALL?5TE@ 000000000000e528     UnitTestLib:RunTests.obj
+ 0002:00002228       ??_C@_0CD@GEAHJGED@Test?5Suite?5Failed?5with?5Error?4?5?5@ 000000000000e568     UnitTestLib:RunTests.obj
+ 0002:00002250       ??_C@_0P@ICNMMABI@?$FLERROR?$FN?5?5?5?5?5?5?5@ 000000000000e590     UnitTestLib:Log.obj
+ 0002:00002260       ??_C@_0P@NANBDBOP@?$FLWARNING?$FN?5?5?5?5?5@ 000000000000e5a0     UnitTestLib:Log.obj
+ 0002:00002270       ??_C@_0P@HJGNOHJI@?$FLINFO?$FN?5?5?5?5?5?5?5?5@ 000000000000e5b0     UnitTestLib:Log.obj
+ 0002:00002280       ??_C@_0P@JFMJPKNE@?$FLVERBOSE?$FN?5?5?5?5?5@ 000000000000e5c0     UnitTestLib:Log.obj
+ 0002:00002290       ??_C@_0CM@GGLMMGBE@Failed?5to?5allocate?5space?5for?5un@ 000000000000e5d0     UnitTestLib:Log.obj
+ 0002:000022c0       ??_C@_0BO@IMICGOPC@UnitTest?9?$DOLog?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000e600     UnitTestLib:Log.obj
+ 0002:000022e0       ??_C@_0DM@GNGKLJEF@d?3?2edk2?2edk2?2UnitTestFrameworkP@ 000000000000e620     UnitTestLib:Log.obj
+ 0002:00002320       ??_C@_0DC@INKDBFCC@Failed?5to?5add?5unit?5test?5log?5str@ 000000000000e660     UnitTestLib:Log.obj
+ 0002:00002358       ??_C@_0BA@GMHCEPGH@UnitTestLogInit@ 000000000000e698     UnitTestLib:Log.obj
+ 0002:00002368       ??_C@_0CH@KLGHIGPE@?$CFa?5called?5with?5invalid?5Test?5par@ 000000000000e6a8     UnitTestLib:Log.obj
+ 0002:00002390       ??_C@_0CH@BGLGPLNK@Failed?5to?5allocate?5memory?5for?5t@ 000000000000e6d0     UnitTestLib:Log.obj
+ 0002:000023b8       ??_C@_04PBAGOGBN@?$CFa?$CFa@ 000000000000e6f8     UnitTestLib:Log.obj
+ 0002:000023c0       ??_C@_0BH@LKMBFCBF@Format?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000e700     PeiDxeDebugLibReportStatusCode:DebugLib.obj
+ 0002:000023e0       ??_C@_0EM@PKNBNIMI@d?3?2edk2?2edk2?2MdeModulePkg?2Libra@ 000000000000e720     PeiDxeDebugLibReportStatusCode:DebugLib.obj
+ 0002:00002430       ??_C@_0CP@EFCGCEBK@?$CICHAR8?5?$CK?$CJBaseListMarkerPointer?5@ 000000000000e770     PeiDxeDebugLibReportStatusCode:DebugLib.obj
+ 0002:00002460       ??_C@_0BH@IACGKAP@Buffer?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000e7a0     PeiDxeDebugLibReportStatusCode:DebugLib.obj
+ 0002:00002480       ??_C@_0CC@GFNLNIOC@?$CI?$CIUINTN?$CJString?5?$CG?50x00000001?$CJ?5?$DN?$DN@ 000000000000e7c0     BaseLib:SafeString.obj
+ 0002:000024a8       ??_C@_0DB@PKFMPMPC@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 000000000000e7e8     BaseLib:SafeString.obj
+ 0002:000024e0       ??_C@_0BO@ECNIOIHG@?$CIDestination?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ@ 000000000000e820     BaseLib:SafeString.obj
+ 0002:00002500       ??_C@_0EA@PDPDJJNN@?$CFa?$CI?$CFd?$CJ?5?$CFa?3?5SAFE_STRING_CONSTRAI@ 000000000000e840     BaseLib:SafeString.obj
+ 0002:00002540       ??_C@_0BJ@EAEEJIP@?$CISource?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ@ 000000000000e880     BaseLib:SafeString.obj
+ 0002:00002560       ??_C@_0P@PMIMLIHM@?$CIDestMax?5?$CB?$DN?50?$CJ@ 000000000000e8a0     BaseLib:SafeString.obj
+ 0002:00002570       ??_C@_0BG@EEGIIOKH@?$CIDestMax?5?$DO?5SourceLen?$CJ@ 000000000000e8b0     BaseLib:SafeString.obj
+ 0002:00002588       ??_C@_0P@BHOOOJPD@?$CICopyLen?5?$CB?$DN?50?$CJ@ 000000000000e8c8     BaseLib:SafeString.obj
+ 0002:00002598       ??_C@_0BG@BPGICNPK@?$CICopyLen?5?$DO?5SourceLen?$CJ@ 000000000000e8d8     BaseLib:SafeString.obj
+ 0002:000025b0       ??_C@_0BJ@CNKJJNE@?$CIBuffer?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ@ 000000000000e8f0     BaseLib:SafeString.obj
+ 0002:000025d0       ??_C@_0N@OMPODJLB@AsciiStrCpyS@ 000000000000e910     BaseLib:SafeString.obj
+ 0002:000025e0       ??_C@_0DO@LJFOOPII@?$CIDestMax?5?$DM?$DN?5?$CI_gPcd_FixedAtBuild@ 000000000000e920     BaseLib:SafeString.obj
+ 0002:00002620       ??_C@_0FL@CDANCHFO@InternalSafeStringNoAsciiStrOve@ 000000000000e960     BaseLib:SafeString.obj
+ 0002:00002680       ??_C@_0O@DIHNCLLG@AsciiStrnCpyS@ 000000000000e9c0     BaseLib:SafeString.obj
+ 0002:00002690       ??_C@_0DN@DLAADCJE@?$CILength?5?$DM?$DN?5?$CI_gPcd_FixedAtBuild_@ 000000000000e9d0     BaseLib:SafeString.obj
+ 0002:000026d0       ??_C@_0N@MIDJKBI@AsciiStrCatS@ 000000000000ea10     BaseLib:SafeString.obj
+ 0002:000026e0       ??_C@_0O@NIAAIIBP@AsciiStrnCatS@ 000000000000ea20     BaseLib:SafeString.obj
+ 0002:000026f0       ??_C@_0BF@NJNGJMPC@List?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000ea30     BaseLib:LinkedList.obj
+ 0002:00002708       ??_C@_0DB@MIDNNFCL@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 000000000000ea48     BaseLib:LinkedList.obj
+ 0002:00002740       ??_C@_0CC@KDLPLAED@List?9?$DOForwardLink?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?5@ 000000000000ea80     BaseLib:LinkedList.obj
+ 0002:00002770       ??_C@_0BP@IJJCCMAK@List?9?$DOBackLink?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000eab0     BaseLib:LinkedList.obj
+ 0002:00002790       ??_C@_0BJ@NJABNCDK@ListHead?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000ead0     BaseLib:LinkedList.obj
+ 0002:000027b0       ??_C@_0CG@LGIALJFK@InternalBaseLibIsListValid?5?$CILis@ 000000000000eaf0     BaseLib:LinkedList.obj
+ 0002:000027e0       ??_C@_0CC@JLDICICM@InternalBaseLibIsListValid?5?$CILis@ 000000000000eb20     BaseLib:LinkedList.obj
+ 0002:00002810       ??_C@_0BH@MAAHKCPC@String?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000eb50     BaseLib:String.obj
+ 0002:00002828       ??_C@_0CN@LHBFELAO@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 000000000000eb68     BaseLib:String.obj
+ 0002:00002860       ??_C@_0DI@MDIKFADO@Length?5?$DM?5_gPcd_FixedAtBuild_Pcd@ 000000000000eba0     BaseLib:String.obj
+ 0002:00002898       ??_C@_0CP@KLEECECF@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 000000000000ebd8     BaseLib:CheckSum.obj
+ 0002:000028d0       ??_C@_0DI@FAOGOFLE@Length?5?$DM?$DN?5?$CI0xFFFFFFFFFFFFFFFFUL@ 000000000000ec10     BaseLib:CheckSum.obj
+ 0002:00002910       mCrcTable                  000000000000ec50     BaseLib:CheckSum.obj
+ 0002:00002d10       ??_C@_0N@KGHEHMDL@Divisor?5?$CB?$DN?50@ 000000000000f050     BaseLib:DivU64x32.obj
+ 0002:00002d20       ??_C@_0BL@CPGKAMND@JumpBuffer?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000f060     BaseLib:SetJump.obj
+ 0002:00002d40       ??_C@_0CO@FKGPPAGH@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 000000000000f080     BaseLib:SetJump.obj
+ 0002:00002d70       ??_C@_0CD@OEHNCIHG@?$CI?$CIUINTN?$CJJumpBuffer?5?$CG?5?$CI8?5?9?51?$CJ?$CJ?5?$DN@ 000000000000f0b0     BaseLib:SetJump.obj
+ 0002:00002da0       ??_C@_0BN@COECPDCC@gImageHandle?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000f0e0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00002dc0       ??_C@_0FA@FOIHGFBE@d?3?2edk2?2edk2?2MdePkg?2Library?2Uef@ 000000000000f100     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00002e10       ??_C@_0BE@DGNHAHIL@gST?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000f150     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00002e30       ??_C@_0BE@BDFJLGLN@gBS?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000f170     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00002e48       ??_C@_0DM@OAJIKNNG@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 000000000000f188     BasePrintLib:PrintLibInternal.obj
+ 0002:00002e90       ??_C@_0EB@HDGIDCIO@?$CIBufferSize?5?$DM?$DN?5?$CI_gPcd_FixedAtBu@ 000000000000f1d0     BasePrintLib:PrintLibInternal.obj
+ 0002:00002ee0       ??_C@_0BJ@PPAKKDJG@?$CIFormat?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ@ 000000000000f220     BasePrintLib:PrintLibInternal.obj
+ 0002:00002f00       ??_C@_0ED@LPDDCECB@?$CIBufferSize?5?$DM?$DN?5?$CI_gPcd_FixedAtBu@ 000000000000f240     BasePrintLib:PrintLibInternal.obj
+ 0002:00002f50       ??_C@_0IM@BFJJFLGB@?$CIStrnLenS?5?$CI?$CICHAR16?5?$CK?$CJFormat?0?5?$CI_@ 000000000000f290     BasePrintLib:PrintLibInternal.obj
+ 0002:00002fe0       ??_C@_0ID@PLGJGION@?$CIAsciiStrnLenS?5?$CIFormat?0?5?$CI_gPcd_@ 000000000000f320     BasePrintLib:PrintLibInternal.obj
+ 0002:00003068       ??_C@_0O@MLOLIMFM@?$DMnull?5string?$DO@ 000000000000f3a8     BasePrintLib:PrintLibInternal.obj
+ 0002:00003078       ??_C@_0M@BJJDNPHK@?$DMnull?5guid?$DO@ 000000000000f3b8     BasePrintLib:PrintLibInternal.obj
+ 0002:00003088       ??_C@_0DB@PMLHLBMO@?$CF08x?9?$CF04x?9?$CF04x?9?$CF02x?$CF02x?9?$CF02x?$CF02@ 000000000000f3c8     BasePrintLib:PrintLibInternal.obj
+ 0002:000030c0       ??_C@_0M@LHGBCIKM@?$DMnull?5time?$DO@ 000000000000f400     BasePrintLib:PrintLibInternal.obj
+ 0002:000030d0       ??_C@_0BK@FCPKCIDD@?$CF02d?1?$CF02d?1?$CF04d?5?5?$CF02d?3?$CF02d@ 000000000000f410     BasePrintLib:PrintLibInternal.obj
+ 0002:000030ec       ??_C@_04JIMNDDED@?$CF08X@  000000000000f42c     BasePrintLib:PrintLibInternal.obj
+ 0002:000030f4       ??_C@_02PCIJFNDE@?$AN?6@   000000000000f434     BasePrintLib:PrintLibInternal.obj
+ 0002:000030f8       ??_C@_01LIIJDEN@?$AN@      000000000000f438     BasePrintLib:PrintLibInternal.obj
+ 0002:00003100       mWarningString             000000000000f440     BasePrintLib:PrintLibInternal.obj
+ 0002:000031a0       mErrorString               000000000000f4e0     BasePrintLib:PrintLibInternal.obj
+ 0002:00003460       mHexStr                    000000000000f7a0     BasePrintLib:PrintLibInternal.obj
+ 0002:00003470       ??_C@_06MBANMAIC@PASSED@   000000000000f7b0     UnitTestResultReportLibDebugLib:UnitTestResultReportLib.obj
+ 0002:00003478       ??_C@_0BO@KGPOOLPB@NOT?5RUN?5?9?5PREREQUISITE?5FAILED@ 000000000000f7b8     UnitTestResultReportLibDebugLib:UnitTestResultReportLib.obj
+ 0002:00003498       ??_C@_06OHCJKBJM@FAILED@   000000000000f7d8     UnitTestResultReportLibDebugLib:UnitTestResultReportLib.obj
+ 0002:000034a0       ??_C@_07NICPBLG@RUNNING@   000000000000f7e0     UnitTestResultReportLibDebugLib:UnitTestResultReportLib.obj
+ 0002:000034a8       ??_C@_07GCMJHCKE@PENDING@  000000000000f7e8     UnitTestResultReportLibDebugLib:UnitTestResultReportLib.obj
+ 0002:000034b0       ??_C@_0M@GOPGBDCO@?$CK?$CKUNKNOWN?$CK?$CK@ 000000000000f7f0     UnitTestResultReportLibDebugLib:UnitTestResultReportLib.obj
+ 0002:000034c0       ??_C@_0L@FLDJEHDB@NO?5FAILURE@ 000000000000f800     UnitTestResultReportLibDebugLib:UnitTestResultReportLib.obj
+ 0002:000034d0       ??_C@_0O@PIAFNNOI@OTHER?5FAILURE@ 000000000000f810     UnitTestResultReportLibDebugLib:UnitTestResultReportLib.obj
+ 0002:000034e0       ??_C@_0BE@PMKNIGOG@ASSERT_TRUE?5FAILURE@ 000000000000f820     UnitTestResultReportLibDebugLib:UnitTestResultReportLib.obj
+ 0002:000034f8       ??_C@_0BF@FGGCDND@ASSERT_FALSE?5FAILURE@ 000000000000f838     UnitTestResultReportLibDebugLib:UnitTestResultReportLib.obj
+ 0002:00003510       ??_C@_0BF@FGDOCBHP@ASSERT_EQUAL?5FAILURE@ 000000000000f850     UnitTestResultReportLibDebugLib:UnitTestResultReportLib.obj
+ 0002:00003528       ??_C@_0BI@NKFJLMBB@ASSERT_NOTEQUAL?5FAILURE@ 000000000000f868     UnitTestResultReportLibDebugLib:UnitTestResultReportLib.obj
+ 0002:00003540       ??_C@_0BL@PNPHLCIA@ASSERT_NOTEFIERROR?5FAILURE@ 000000000000f880     UnitTestResultReportLibDebugLib:UnitTestResultReportLib.obj
+ 0002:00003560       ??_C@_0BL@GLKKHMG@ASSERT_STATUSEQUAL?5FAILURE@ 000000000000f8a0     UnitTestResultReportLibDebugLib:UnitTestResultReportLib.obj
+ 0002:00003580       ??_C@_0BH@JLCCODEP@ASSERT_NOTNULL?5FAILURE@ 000000000000f8c0     UnitTestResultReportLibDebugLib:UnitTestResultReportLib.obj
+ 0002:00003598       ??_C@_0BG@EFPEIPHF@EXPECT_ASSERT?5FAILURE@ 000000000000f8d8     UnitTestResultReportLibDebugLib:UnitTestResultReportLib.obj
+ 0002:000035b0       ??_C@_0BC@NHPFMNHC@?$CKUNKNOWN?$CK?5Failure@ 000000000000f8f0     UnitTestResultReportLibDebugLib:UnitTestResultReportLib.obj
+ 0002:000035c8       ??_C@_0BI@KBGCOEPF@GetStringForFailureType@ 000000000000f908     UnitTestResultReportLibDebugLib:UnitTestResultReportLib.obj
+ 0002:000035e0       ??_C@_0DD@IGOMFEHA@?$CFa?5Failure?5Type?5does?5not?5have?5s@ 000000000000f920     UnitTestResultReportLibDebugLib:UnitTestResultReportLib.obj
+ 0002:00003618       ??_C@_0DL@LNAONCCE@?9?9?9?9?9?9?9?9?9?9?9?9?9?5UNIT?5TEST?5FRAMEWO@ 000000000000f958     UnitTestResultReportLibDebugLib:UnitTestResultReportLib.obj
+ 0002:00003658       ??_C@_0DL@LBMPOGEI@?1?1?1?1?1?1?1?1?1?1?1?1?1?1?1?1?1?1?1?1?1?1?1?1?1?1?1?1?1?1?1@ 000000000000f998     UnitTestResultReportLibDebugLib:UnitTestResultReportLib.obj
+ 0002:00003698       ??_C@_0N@BAPNNALJ@?5?5SUITE?3?5?$CFa?6@ 000000000000f9d8     UnitTestResultReportLibDebugLib:UnitTestResultReportLib.obj
+ 0002:000036a8       ??_C@_0BA@HGNCFNPG@?5?5?5PACKAGE?3?5?$CFa?6@ 000000000000f9e8     UnitTestResultReportLibDebugLib:UnitTestResultReportLib.obj
+ 0002:000036b8       ??_C@_0BC@GLDBNABB@?5?5CLASS?5NAME?3?5?$CFa?6@ 000000000000f9f8     UnitTestResultReportLibDebugLib:UnitTestResultReportLib.obj
+ 0002:000036d0       ??_C@_0P@DCHCJHGL@?5?5TEST?3?5?5?5?5?$CFa?6@ 000000000000fa10     UnitTestResultReportLibDebugLib:UnitTestResultReportLib.obj
+ 0002:000036e0       ??_C@_0P@EMINFGCM@?5?5STATUS?3?5?5?$CFa?6@ 000000000000fa20     UnitTestResultReportLibDebugLib:UnitTestResultReportLib.obj
+ 0002:000036f0       ??_C@_0P@ILGDHIPB@?5?5FAILURE?3?5?$CFa?6@ 000000000000fa30     UnitTestResultReportLibDebugLib:UnitTestResultReportLib.obj
+ 0002:00003700       ??_C@_0BH@HDNKLFPK@?5?5FAILURE?5MESSAGE?3?6?$CFa?6@ 000000000000fa40     UnitTestResultReportLibDebugLib:UnitTestResultReportLib.obj
+ 0002:00003718       ??_C@_07NLPPJGJL@?5?5LOG?3?6@ 000000000000fa58     UnitTestResultReportLibDebugLib:UnitTestResultReportLib.obj
+ 0002:00003720       ??_C@_0DL@DMFAFJNG@?$CL?$CL?$CL?$CL?$CL?$CL?$CL?$CL?$CL?$CL?$CL?$CL?$CL?$CL?$CL?$CL?$CL?$CL?$CL?$CL?$CL?$CL?$CL?$CL?$CL?$CL?$CL?$CL?$CL?$CL?$CL@ 000000000000fa60     UnitTestResultReportLibDebugLib:UnitTestResultReportLib.obj
+ 0002:00003760       ??_C@_0N@KNECNEIM@Suite?5Stats?6@ 000000000000faa0     UnitTestResultReportLibDebugLib:UnitTestResultReportLib.obj
+ 0002:00003770       ??_C@_0BG@LHCODDGP@?5Passed?3?5?5?$CFd?5?5?$CI?$CFd?$CF?$CF?$CJ?6@ 000000000000fab0     UnitTestResultReportLibDebugLib:UnitTestResultReportLib.obj
+ 0002:00003788       ??_C@_0BG@LMHMPMEL@?5Failed?3?5?5?$CFd?5?5?$CI?$CFd?$CF?$CF?$CJ?6@ 000000000000fac8     UnitTestResultReportLibDebugLib:UnitTestResultReportLib.obj
+ 0002:000037a0       ??_C@_0BG@ODCEADGA@?5Not?5Run?3?5?$CFd?5?5?$CI?$CFd?$CF?$CF?$CJ?6@ 000000000000fae0     UnitTestResultReportLibDebugLib:UnitTestResultReportLib.obj
+ 0002:000037b8       ??_C@_0DL@KMONMNDM@?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN@ 000000000000faf8     UnitTestResultReportLibDebugLib:UnitTestResultReportLib.obj
+ 0002:000037f8       ??_C@_0N@DOFIKCHC@Total?5Stats?6@ 000000000000fb38     UnitTestResultReportLibDebugLib:UnitTestResultReportLib.obj
+ 0002:00003808       ??_C@_0M@DGIADHEI@ReportPrint@ 000000000000fb48     UnitTestResultReportLibDebugLib:UnitTestResultReportLibDebugLib.obj
+ 0002:00003818       ??_C@_0CB@LGLIAKND@?$CFa?5formatted?5string?5is?5too?5long@ 000000000000fb58     UnitTestResultReportLibDebugLib:UnitTestResultReportLibDebugLib.obj
+ 0002:00003840       ??_C@_0EK@GCCICMAJ@d?3?2edk2?2edk2?2MdePkg?2Library?2Uef@ 000000000000fb80     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0002:00003890       ??_C@_0ED@MKGCMJG@?$CILength?5?9?51?$CJ?5?$DM?$DN?5?$CI0xFFFFFFFFFFFF@ 000000000000fbd0     BaseMemoryLib:CopyMemWrapper.obj
+ 0002:000038d8       ??_C@_0DL@JECEKOJI@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 000000000000fc18     BaseMemoryLib:CopyMemWrapper.obj
+ 0002:00003920       ??_C@_0DO@MAOBOFEG@?$CILength?5?9?51?$CJ?5?$DM?$DN?5?$CI0xFFFFFFFFFFFF@ 000000000000fc60     BaseMemoryLib:CopyMemWrapper.obj
+ 0002:00003960       ??_C@_0CC@JOEHDGKB@DestinationBuffer?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?5@ 000000000000fca0     BaseMemoryLib:CompareMemWrapper.obj
+ 0002:00003988       ??_C@_0DO@HHIPHDJI@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 000000000000fcc8     BaseMemoryLib:CompareMemWrapper.obj
+ 0002:000039d0       ??_C@_0BN@MDMCNBCC@SourceBuffer?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000fd10     BaseMemoryLib:CompareMemWrapper.obj
+ 0002:000039f0       ??_C@_0DG@EEENIGGL@Length?5?$DM?$DN?5?$CI0xFFFFFFFFFFFFFFFFUL@ 000000000000fd30     BaseMemoryLib:MemLibGuid.obj
+ 0002:00003a28       ??_C@_0DL@CAIGMPFP@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 000000000000fd68     BaseMemoryLib:ZeroMemWrapper.obj
+ 0002:00003a68       ??_C@_0DA@BDDONMJM@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 000000000000fda8     BaseLib:Unaligned.obj
+ 0002:00003a98       ??_C@_0DJ@FHIMIJAH@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 000000000000fdd8     BaseLib:DivU64x32Remainder.obj
+ 0002:00003b28       __volatile_metadata        000000000000fe68     <linker-defined>
+ 0003:00000000       mLogPrefixStrings          0000000000010020     UnitTestLib:Log.obj
+ 0003:00000040       mFailureTypeStrings        0000000000010060     UnitTestResultReportLibDebugLib:UnitTestResultReportLib.obj
+ 0003:000000f0       mStatusStrings             0000000000010110     UnitTestResultReportLibDebugLib:UnitTestResultReportLib.obj
+ 0003:00000160       gUnitTestExpectAssertFailureJumpBuffer 0000000000010180     UnitTestDebugAssertLib:UnitTestDebugAssertLib.obj
+ 0003:00000170       gST                        0000000000010190     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0003:00000178       gBS                        0000000000010198     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0003:00000180       gImageHandle               00000000000101a0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0003:000001a0       gUnitTestJumpBuffer        00000000000101c0     <common>
+
+ entry point at        0001:00000184
+
+ Static symbols
+
+ 0001:00000043       CetDone                    0000000000000303     BaseLib:SetJump.obj
+ 0001:00000100       CetDone                    00000000000003c0     BaseLib:LongJump.obj
+ 0001:00008c00       AllocateAndCopyString      0000000000008ec0 f   UnitTestLib:UnitTestLib.obj
+ 0001:00008f94       UpdateTestFromSave         0000000000009254 f   UnitTestLib:UnitTestLib.obj
+ 0001:000090a0       SerializeState             0000000000009360 f   UnitTestLib:UnitTestLib.obj
+ 0001:0000929c       UnitTestLogFailure         000000000000955c f   UnitTestLib:Assert.obj
+ 0001:00009498       RunTestSuite               0000000000009758 f   UnitTestLib:RunTests.obj
+ 0001:000097e8       AddStringToUnitTestLog     0000000000009aa8 f   UnitTestLib:Log.obj
+ 0003:00000168       mFrameworkHandle           0000000000010188     UnitTestLib:RunTests.obj
+ 0005:00000000       $unwind$GetFirstNode       0000000000010980     BaseLib:LinkedList.obj
+ 0005:00000000       $unwind$GetNextNode        0000000000010980     BaseLib:LinkedList.obj
+ 0005:00000000       $unwind$StrnLenS           0000000000010980     BaseLib:SafeString.obj
+ 0005:00000000       $unwind$_ModuleEntryPoint  0000000000010980     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0005:00000000       $unwind$InternalAllocateZeroPool 0000000000010980     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0005:00000008       $unwind$AsciiStrCatS       0000000000010988     BaseLib:SafeString.obj
+ 0005:00000008       $unwind$AsciiStrCpyS       0000000000010988     BaseLib:SafeString.obj
+ 0005:00000008       $unwind$AsciiStrnCpyS      0000000000010988     BaseLib:SafeString.obj
+ 0005:00000008       $unwind$TestSafeInt32ToUintn 0000000000010988     TestBaseSafeIntLibDxe:SafeIntLibUintnIntnUnitTests64.obj
+ 0005:00000008       $unwind$TestSafeInt64ToUintn 0000000000010988     TestBaseSafeIntLibDxe:SafeIntLibUintnIntnUnitTests64.obj
+ 0005:00000008       $unwind$TestSafeIntnMult   0000000000010988     TestBaseSafeIntLibDxe:SafeIntLibUintnIntnUnitTests64.obj
+ 0005:00000008       $unwind$TestSafeUint64ToIntn 0000000000010988     TestBaseSafeIntLibDxe:SafeIntLibUintnIntnUnitTests64.obj
+ 0005:00000008       $unwind$TestSafeUintnAdd   0000000000010988     TestBaseSafeIntLibDxe:SafeIntLibUintnIntnUnitTests64.obj
+ 0005:00000008       $unwind$TestSafeUintnSub   0000000000010988     TestBaseSafeIntLibDxe:SafeIntLibUintnIntnUnitTests64.obj
+ 0005:00000008       $unwind$TestSafeUintnToInt64 0000000000010988     TestBaseSafeIntLibDxe:SafeIntLibUintnIntnUnitTests64.obj
+ 0005:00000008       $unwind$TestSafeUintnToIntn 0000000000010988     TestBaseSafeIntLibDxe:SafeIntLibUintnIntnUnitTests64.obj
+ 0005:00000008       $unwind$TestSafeUintnToUint32 0000000000010988     TestBaseSafeIntLibDxe:SafeIntLibUintnIntnUnitTests64.obj
+ 0005:00000008       $unwind$TestSafeInt16Mult  0000000000010988     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0005:00000008       $unwind$TestSafeInt16ToUint16 0000000000010988     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0005:00000008       $unwind$TestSafeInt16ToUint32 0000000000010988     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0005:00000008       $unwind$TestSafeInt16ToUint64 0000000000010988     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0005:00000008       $unwind$TestSafeInt16ToUintn 0000000000010988     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0005:00000008       $unwind$TestSafeInt32Mult  0000000000010988     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0005:00000008       $unwind$TestSafeInt32ToUint32 0000000000010988     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0005:00000008       $unwind$TestSafeInt32ToUint64 0000000000010988     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0005:00000008       $unwind$TestSafeInt64Mult  0000000000010988     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0005:00000008       $unwind$TestSafeInt64ToUint64 0000000000010988     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0005:00000008       $unwind$TestSafeInt8Mult   0000000000010988     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0005:00000008       $unwind$TestSafeInt8ToUint16 0000000000010988     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0005:00000008       $unwind$TestSafeInt8ToUint32 0000000000010988     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0005:00000008       $unwind$TestSafeInt8ToUint64 0000000000010988     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0005:00000008       $unwind$TestSafeInt8ToUint8 0000000000010988     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0005:00000008       $unwind$TestSafeInt8ToUintn 0000000000010988     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0005:00000008       $unwind$TestSafeIntnToUint64 0000000000010988     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0005:00000008       $unwind$TestSafeIntnToUintn 0000000000010988     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0005:00000008       $unwind$TestSafeUint16Add  0000000000010988     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0005:00000008       $unwind$TestSafeUint16Mult 0000000000010988     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0005:00000008       $unwind$TestSafeUint16Sub  0000000000010988     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0005:00000008       $unwind$TestSafeUint16ToChar8 0000000000010988     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0005:00000008       $unwind$TestSafeUint16ToInt16 0000000000010988     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0005:00000008       $unwind$TestSafeUint16ToInt8 0000000000010988     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0005:00000008       $unwind$TestSafeUint16ToUint8 0000000000010988     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0005:00000008       $unwind$TestSafeUint32Add  0000000000010988     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0005:00000008       $unwind$TestSafeUint32Mult 0000000000010988     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0005:00000008       $unwind$TestSafeUint32Sub  0000000000010988     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0005:00000008       $unwind$TestSafeUint32ToChar8 0000000000010988     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0005:00000008       $unwind$TestSafeUint32ToInt16 0000000000010988     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0005:00000008       $unwind$TestSafeUint32ToInt32 0000000000010988     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0005:00000008       $unwind$TestSafeUint32ToInt8 0000000000010988     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0005:00000008       $unwind$TestSafeUint32ToUint16 0000000000010988     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0005:00000008       $unwind$TestSafeUint32ToUint8 0000000000010988     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0005:00000008       $unwind$TestSafeUint64Add  0000000000010988     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0005:00000008       $unwind$TestSafeUint64Sub  0000000000010988     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0005:00000008       $unwind$TestSafeUint64ToChar8 0000000000010988     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0005:00000008       $unwind$TestSafeUint64ToInt16 0000000000010988     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0005:00000008       $unwind$TestSafeUint64ToInt32 0000000000010988     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0005:00000008       $unwind$TestSafeUint64ToInt64 0000000000010988     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0005:00000008       $unwind$TestSafeUint64ToInt8 0000000000010988     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0005:00000008       $unwind$TestSafeUint64ToUint16 0000000000010988     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0005:00000008       $unwind$TestSafeUint64ToUint32 0000000000010988     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0005:00000008       $unwind$TestSafeUint64ToUint8 0000000000010988     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0005:00000008       $unwind$TestSafeUint8Add   0000000000010988     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0005:00000008       $unwind$TestSafeUint8Mult  0000000000010988     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0005:00000008       $unwind$TestSafeUint8Sub   0000000000010988     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0005:00000008       $unwind$TestSafeUint8ToChar8 0000000000010988     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0005:00000008       $unwind$TestSafeUint8ToInt8 0000000000010988     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0005:00000008       $unwind$TestSafeUintnToChar8 0000000000010988     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0005:00000008       $unwind$TestSafeUintnToInt16 0000000000010988     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0005:00000008       $unwind$TestSafeUintnToInt32 0000000000010988     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0005:00000008       $unwind$TestSafeUintnToInt8 0000000000010988     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0005:00000008       $unwind$TestSafeUintnToUint16 0000000000010988     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0005:00000008       $unwind$TestSafeUintnToUint8 0000000000010988     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0005:00000010       $unwind$TestSafeIntnToInt32 0000000000010990     TestBaseSafeIntLibDxe:SafeIntLibUintnIntnUnitTests64.obj
+ 0005:00000010       $unwind$TestSafeIntnToUint32 0000000000010990     TestBaseSafeIntLibDxe:SafeIntLibUintnIntnUnitTests64.obj
+ 0005:00000010       $unwind$TestSafeInt16Add   0000000000010990     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0005:00000010       $unwind$TestSafeInt16Sub   0000000000010990     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0005:00000010       $unwind$TestSafeInt16ToChar8 0000000000010990     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0005:00000010       $unwind$TestSafeInt16ToInt8 0000000000010990     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0005:00000010       $unwind$TestSafeInt16ToUint8 0000000000010990     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0005:00000010       $unwind$TestSafeInt32ToChar8 0000000000010990     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0005:00000010       $unwind$TestSafeInt32ToInt16 0000000000010990     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0005:00000010       $unwind$TestSafeInt32ToInt8 0000000000010990     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0005:00000010       $unwind$TestSafeInt32ToUint16 0000000000010990     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0005:00000010       $unwind$TestSafeInt32ToUint8 0000000000010990     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0005:00000010       $unwind$TestSafeInt64ToChar8 0000000000010990     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0005:00000010       $unwind$TestSafeInt64ToInt16 0000000000010990     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0005:00000010       $unwind$TestSafeInt64ToInt32 0000000000010990     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0005:00000010       $unwind$TestSafeInt64ToInt8 0000000000010990     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0005:00000010       $unwind$TestSafeInt64ToUint16 0000000000010990     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0005:00000010       $unwind$TestSafeInt64ToUint32 0000000000010990     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0005:00000010       $unwind$TestSafeInt64ToUint8 0000000000010990     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0005:00000010       $unwind$TestSafeInt8Add    0000000000010990     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0005:00000010       $unwind$TestSafeInt8Sub    0000000000010990     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0005:00000010       $unwind$TestSafeIntnToChar8 0000000000010990     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0005:00000010       $unwind$TestSafeIntnToInt16 0000000000010990     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0005:00000010       $unwind$TestSafeIntnToInt8 0000000000010990     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0005:00000010       $unwind$TestSafeIntnToUint16 0000000000010990     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0005:00000010       $unwind$TestSafeIntnToUint8 0000000000010990     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0005:00000024       $unwind$TestSafeIntnAdd    00000000000109a4     TestBaseSafeIntLibDxe:SafeIntLibUintnIntnUnitTests64.obj
+ 0005:00000024       $unwind$TestSafeInt32Add   00000000000109a4     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0005:00000024       $unwind$TestSafeInt64Add   00000000000109a4     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0005:00000038       $unwind$TestSafeInt32Sub   00000000000109b8     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0005:0000004c       $unwind$TestSafeIntnSub    00000000000109cc     TestBaseSafeIntLibDxe:SafeIntLibUintnIntnUnitTests64.obj
+ 0005:0000004c       $unwind$TestSafeInt64Sub   00000000000109cc     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0005:00000064       $unwind$AsciiStrnCatS      00000000000109e4     BaseLib:SafeString.obj
+ 0005:00000064       $unwind$TestSafeUintnMult  00000000000109e4     TestBaseSafeIntLibDxe:SafeIntLibUintnIntnUnitTests64.obj
+ 0005:00000064       $unwind$TestSafeUint64Mult 00000000000109e4     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0005:00000070       $unwind$UefiTestMain       00000000000109f0     TestBaseSafeIntLibDxe:TestBaseSafeIntLib.obj
+ 0005:00000088       $unwind$TestSafeInt64ToIntn 0000000000010a08     TestBaseSafeIntLibDxe:SafeIntLibUintnIntnUnitTests64.obj
+ 0005:00000088       $unwind$TestSafeUint32ToIntn 0000000000010a08     TestBaseSafeIntLibDxe:SafeIntLibUintnIntnUnitTests64.obj
+ 0005:00000088       $unwind$TestSafeUint64ToUintn 0000000000010a08     TestBaseSafeIntLibDxe:SafeIntLibUintnIntnUnitTests64.obj
+ 0005:00000090       $unwind$UnitTestDebugAssert 0000000000010a10     UnitTestDebugAssertLib:UnitTestDebugAssertLib.obj
+ 0005:000000a4       $unwind$AllocateAndCopyString 0000000000010a24     UnitTestLib:UnitTestLib.obj
+ 0005:000000b8       $unwind$CreateUnitTestSuite 0000000000010a38     UnitTestLib:UnitTestLib.obj
+ 0005:000000d0       $unwind$AddTestCase        0000000000010a50     UnitTestLib:UnitTestLib.obj
+ 0005:000000ec       $unwind$UpdateTestFromSave 0000000000010a6c     UnitTestLib:UnitTestLib.obj
+ 0005:00000104       $unwind$SerializeState     0000000000010a84     UnitTestLib:UnitTestLib.obj
+ 0005:00000120       $unwind$UnitTestLogFailure 0000000000010aa0     UnitTestLib:Assert.obj
+ 0005:0000012c       $unwind$UnitTestAssertNotEfiError 0000000000010aac     UnitTestLib:Assert.obj
+ 0005:00000140       $unwind$UnitTestAssertEqual 0000000000010ac0     UnitTestLib:Assert.obj
+ 0005:00000158       $unwind$RunTestSuite       0000000000010ad8     UnitTestLib:RunTests.obj
+ 0005:00000170       $unwind$CopyMem            0000000000010af0     BaseMemoryLib:CopyMemWrapper.obj
+ 0005:00000170       $unwind$RunAllTestSuites   0000000000010af0     UnitTestLib:RunTests.obj
+ 0005:00000184       $unwind$CalculateCrc32     0000000000010b04     BaseLib:CheckSum.obj
+ 0005:00000184       $unwind$CompareMem         0000000000010b04     BaseMemoryLib:CompareMemWrapper.obj
+ 0005:00000184       $unwind$BasePrintLibValueToString 0000000000010b04     BasePrintLib:PrintLibInternal.obj
+ 0005:00000184       $unwind$AddStringToUnitTestLog 0000000000010b04     UnitTestLib:Log.obj
+ 0005:00000184       $unwind$UnitTestLogInit    0000000000010b04     UnitTestLib:Log.obj
+ 0005:00000194       $unwind$UnitTestLog        0000000000010b14     UnitTestLib:Log.obj
+ 0005:000001a0       $unwind$DebugPrint         0000000000010b20     PeiDxeDebugLibReportStatusCode:DebugLib.obj
+ 0005:000001a8       $unwind$DebugPrintMarker   0000000000010b28     PeiDxeDebugLibReportStatusCode:DebugLib.obj
+ 0005:000001c0       $unwind$InsertTailList     0000000000010b40     BaseLib:LinkedList.obj
+ 0005:000001c0       $unwind$InternalBaseLibIsListValid 0000000000010b40     BaseLib:LinkedList.obj
+ 0005:000001c0       $unwind$AsciiStrLen        0000000000010b40     BaseLib:String.obj
+ 0005:000001c0       $unwind$ZeroMem            0000000000010b40     BaseMemoryLib:ZeroMemWrapper.obj
+ 0005:000001cc       $unwind$InternalAssertJumpBuffer 0000000000010b4c     BaseLib:SetJump.obj
+ 0005:000001d4       $unwind$SafeUint64Mult     0000000000010b54     BaseSafeIntLib:SafeIntLib.obj
+ 0005:000001e0       $unwind$SafeInt64Mult      0000000000010b60     BaseSafeIntLib:SafeIntLib.obj
+ 0005:000001ec       $unwind$AsciiSPrint        0000000000010b6c     BasePrintLib:PrintLib.obj
+ 0005:000001f4       $unwind$BasePrintLibSPrintMarker 0000000000010b74     BasePrintLib:PrintLibInternal.obj
+ 0005:00000210       $unwind$BasePrintLibSPrint 0000000000010b90     BasePrintLib:PrintLibInternal.obj
+ 0005:00000218       $unwind$OutputUnitTestFrameworkReport 0000000000010b98     UnitTestResultReportLibDebugLib:UnitTestResultReportLib.obj
+ 0005:00000230       $unwind$ReportPrint        0000000000010bb0     UnitTestResultReportLibDebugLib:UnitTestResultReportLibDebugLib.obj

@@ -1,0 +1,77 @@
+ WatchdogTimer
+
+ Timestamp is 61ee7010 (Mon Jan 24 17:23:28 2022)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000060H .text                   CODE
+ 0001:00000060 000001deH .text$mn                CODE
+ 0002:00000000 00000058H .data                   DATA
+ 0002:00000058 00000020H .rdata                  DATA
+ 0002:00000078 00000048H .bss                    DATA
+ 0002:000000c0 00000020H .rdata$voltmd           DATA
+ 0002:000000e0 000000a8H .rdata$zzzdbg           DATA
+ 0003:00000000 00000024H .pdata                  DATA
+ 0004:00000000 00000010H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __guard_longjmp_table      0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map_count    0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_count         0000000000000000     <absolute>
+ 0000:00000000       __arm64x_native_entrypoint 0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_table      0000000000000000     <absolute>
+ 0000:00000000       __enclave_config           0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata_count 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table   0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points_count 0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_table         0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_count      0000000000000000     <absolute>
+ 0000:00000000       __guard_check_icall_a64n_fptr 0000000000000000     <absolute>
+ 0000:00000000       __guard_flags              0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata 0000000000000000     <absolute>
+ 0000:00000000       __AbsoluteZero             0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_table          0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table_size 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map          0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat_copy 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat     0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_count          0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_count      0000000000000000     <absolute>
+ 0000:00000000       __dynamic_value_reloc_table 0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points 0000000000000000     <absolute>
+ 0001:00000000       InternalMemCopyMem         0000000000000280     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000040       InternalMemZeroMem         00000000000002c0     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00000060       _ModuleEntryPoint          00000000000002e0 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:000000f4       WatchdogTimerDriverExpires 0000000000000374 f   WatchdogTimer:WatchdogTimer.obj
+ 0001:00000134       WatchdogTimerDriverRegisterHandler 00000000000003b4 f   WatchdogTimer:WatchdogTimer.obj
+ 0001:0000016c       WatchdogTimerDriverSetTimerPeriod 00000000000003ec f   WatchdogTimer:WatchdogTimer.obj
+ 0001:00000194       WatchdogTimerDriverGetTimerPeriod 0000000000000414 f   WatchdogTimer:WatchdogTimer.obj
+ 0001:000001b4       InternalReportStatusCode   0000000000000434 f   DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0002:00000000       gEfiStatusCodeRuntimeProtocolGuid 00000000000004c0     WatchdogTimer:AutoGen.obj
+ 0002:00000010       gEfiWatchdogTimerArchProtocolGuid 00000000000004d0     WatchdogTimer:AutoGen.obj
+ 0002:00000020       gEfiDevicePathUtilitiesProtocolGuid 00000000000004e0     WatchdogTimer:AutoGen.obj
+ 0002:00000030       gEfiCallerIdGuid           00000000000004f0     WatchdogTimer:AutoGen.obj
+ 0002:00000040       mWatchdogTimer             0000000000000500     WatchdogTimer:WatchdogTimer.obj
+ 0002:00000078       mWatchdogTimerPeriod       0000000000000538     WatchdogTimer:WatchdogTimer.obj
+ 0002:00000080       mWatchdogTimerHandle       0000000000000540     WatchdogTimer:WatchdogTimer.obj
+ 0002:00000088       mWatchdogTimerNotifyFunction 0000000000000548     WatchdogTimer:WatchdogTimer.obj
+ 0002:00000090       gST                        0000000000000550     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000098       gBS                        0000000000000558     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000000a0       mDevicePathLibDevicePathUtilities 0000000000000560     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:000000a8       gRT                        0000000000000568     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0002:000000b0       mReportStatusCodeLibStatusCodeProtocol 0000000000000570     DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0002:000000b8       mWatchdogTimerEvent        0000000000000578     <common>
+ 0002:000000c0       __volatile_metadata        0000000000000580     <linker-defined>
+
+ entry point at        0001:00000060
+
+ Static symbols
+
+ 0001:0000001a       InternalMemCopyMem.0       000000000000029a     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:0000002a       @CopyBackward              00000000000002aa     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000033       @CopyBytes                 00000000000002b3     BaseMemoryLibRepStr:CopyMem.obj
+ 0004:00000000       $unwind$InternalReportStatusCode 00000000000006a0     DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0004:00000000       $unwind$_ModuleEntryPoint  00000000000006a0     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0004:00000008       $unwind$WatchdogTimerDriverExpires 00000000000006a8     WatchdogTimer:WatchdogTimer.obj

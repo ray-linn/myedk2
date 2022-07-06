@@ -1,0 +1,141 @@
+ Tcg2PlatformPei
+
+ Timestamp is 61ee703b (Mon Jan 24 17:24:11 2022)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000264H .text                   CODE
+ 0001:00000264 00001205H .text$mn                CODE
+ 0002:00000000 00000060H .data                   DATA
+ 0002:00000060 0000001cH .rdata                  DATA
+ 0002:0000007c 00000008H .bss                    DATA
+ 0002:00000084 00000094H .rdata$voltmd           DATA
+ 0002:00000118 000000a8H .rdata$zzzdbg           DATA
+ 0003:00000000 000000fcH .pdata                  DATA
+ 0004:00000000 00000124H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __arm64x_redirection_metadata 0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points 0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_table      0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map_count    0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_count         0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points_count 0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_table          0000000000000000     <absolute>
+ 0000:00000000       __arm64x_native_entrypoint 0000000000000000     <absolute>
+ 0000:00000000       __guard_flags              0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table_size 0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_table      0000000000000000     <absolute>
+ 0000:00000000       __enclave_config           0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata_count 0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_count      0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_count          0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_count      0000000000000000     <absolute>
+ 0000:00000000       __dynamic_value_reloc_table 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat     0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat_copy 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table   0000000000000000     <absolute>
+ 0000:00000000       __AbsoluteZero             0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map          0000000000000000     <absolute>
+ 0000:00000000       __guard_check_icall_a64n_fptr 0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_table         0000000000000000     <absolute>
+ 0001:00000000       InternalMemCopyMem         0000000000000280     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000040       InternalMemZeroMem         00000000000002c0     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00000060       InternalX86ReadIdtr        00000000000002e0     BaseLib:ReadIdtr.obj
+ 0001:00000070       InternalX86WriteIdtr       00000000000002f0     BaseLib:WriteIdtr.obj
+ 0001:00000080       CpuPause                   0000000000000300     BaseLib:CpuPause.obj
+ 0001:00000090       InternalMemSetMem          0000000000000310     BaseMemoryLibRepStr:SetMem.obj
+ 0001:000000b0       InternalMemIsZeroBuffer    0000000000000330     BaseMemoryLibRepStr:IsZeroBuffer.obj
+ 0001:000000e0       InternalMemSetMem64        0000000000000360     BaseMemoryLibRepStr:SetMem64.obj
+ 0001:00000100       InternalMemSetMem32        0000000000000380     BaseMemoryLibRepStr:SetMem32.obj
+ 0001:00000120       SevNoRepIo                 00000000000003a0     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000160       IoReadFifo8                00000000000003e0     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000182       IoReadFifo16               0000000000000402     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001a8       IoReadFifo32               0000000000000428     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001cb       IoWriteFifo8               000000000000044b     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001ed       IoWriteFifo16              000000000000046d     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000213       IoWriteFifo32              0000000000000493     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000240       EnableInterrupts           00000000000004c0     BaseLib:EnableInterrupts.obj
+ 0001:00000250       DisableInterrupts          00000000000004d0     BaseLib:DisableInterrupts.obj
+ 0001:00000260       AsmReadEflags              00000000000004e0     BaseLib:ReadEflags.obj
+ 0001:00000264       _ModuleEntryPoint          00000000000004e4 f   PeimEntryPoint:PeimEntryPoint.obj
+ 0001:000002bc       ProcessLibraryConstructorList 000000000000053c f   Tcg2PlatformPei:AutoGen.obj
+ 0001:00000524       PlatformInitEndOfPei       00000000000007a4 f   Tcg2PlatformPei:Tcg2PlatformPei.obj
+ 0001:00000558       GetFirstGuidHob            00000000000007d8 f   PeiHobLib:HobLib.obj
+ 0001:000005cc       PeiServicesLocatePpi       000000000000084c f   PeiServicesLib:PeiServicesLib.obj
+ 0001:00000608       Tpm2SubmitCommand          0000000000000888 f   Tpm2DeviceLibDTpm:Tpm2DeviceLibDTpm.obj
+ 0001:0000069c       PtpCrbWaitRegisterBits     000000000000091c f   Tpm2DeviceLibDTpm:Tpm2Ptp.obj
+ 0001:00000714       PtpCrbTpmCommand           0000000000000994 f   Tpm2DeviceLibDTpm:Tpm2Ptp.obj
+ 0001:000009a8       TisPcWaitRegisterBits      0000000000000c28 f   Tpm2DeviceLibDTpm:Tpm2Tis.obj
+ 0001:00000a24       TisPcReadBurstCount        0000000000000ca4 f   Tpm2DeviceLibDTpm:Tpm2Tis.obj
+ 0001:00000aac       Tpm2TisTpmCommand          0000000000000d2c f   Tpm2DeviceLibDTpm:Tpm2Tis.obj
+ 0001:00000d10       RandomizePlatformAuth      0000000000000f90 f   PeiDxeTpmPlatformHierarchyLib:PeiDxeTpmPlatformHierarchyLib.obj
+ 0001:00000f08       InternalAcpiDelay          0000000000001188 f   BaseAcpiTimerLib:AcpiTimerLib.obj
+ 0001:00000f68       MicroSecondDelay           00000000000011e8 f   BaseAcpiTimerLib:AcpiTimerLib.obj
+ 0001:00000f9c       Tpm2HierarchyChangeAuth    000000000000121c f   Tpm2CommandLib:Tpm2Hierarchy.obj
+ 0001:00001148       Tpm2GetCapability          00000000000013c8 f   Tpm2CommandLib:Tpm2Capability.obj
+ 0001:00001234       Tpm2GetCapabilityPcrs      00000000000014b4 f   Tpm2CommandLib:Tpm2Capability.obj
+ 0001:00001320       PciCf8Read8                00000000000015a0 f   BasePciCf8Lib:PciCf8Lib.obj
+ 0001:00001390       PciCf8Read16               0000000000001610 f   BasePciCf8Lib:PciCf8Lib.obj
+ 0001:000013e4       PciCf8Read32               0000000000001664 f   BasePciCf8Lib:PciCf8Lib.obj
+ 0001:00001448       SaveAndDisableInterrupts   00000000000016c8 f   BaseLib:Cpu.obj
+ 0002:00000000       gTcgEventEntryHobGuid      0000000000001700     Tcg2PlatformPei:AutoGen.obj
+ 0002:00000010       gEfiEndOfPeiSignalPpiGuid  0000000000001710     Tcg2PlatformPei:AutoGen.obj
+ 0002:00000020       gTcgEvent2EntryHobGuid     0000000000001720     Tcg2PlatformPei:AutoGen.obj
+ 0002:00000030       gPcdPpiGuid                0000000000001730     Tcg2PlatformPei:AutoGen.obj
+ 0002:00000080       mAuthSize                  0000000000001780     <common>
+ 0002:00000084       __volatile_metadata        0000000000001784     <linker-defined>
+
+ entry point at        0001:00000264
+
+ Static symbols
+
+ 0001:0000001a       InternalMemCopyMem.0       000000000000029a     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:0000002a       @CopyBackward              00000000000002aa     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000033       @CopyBytes                 00000000000002b3     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:000000d5       @ReturnFalse               0000000000000355     BaseMemoryLibRepStr:IsZeroBuffer.obj
+ 0001:0000015a       @UseRepIo                  00000000000003da     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:0000015c       @SevNoRepIo_Done           00000000000003dc     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000174       @IoReadFifo8_NoRep         00000000000003f4     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000176       @IoReadFifo8_Loop          00000000000003f6     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:0000017e       @IoReadFifo8_Done          00000000000003fe     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000197       @IoReadFifo16_NoRep        0000000000000417     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000199       @IoReadFifo16_Loop         0000000000000419     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001a4       @IoReadFifo16_Done         0000000000000424     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001bc       @IoReadFifo32_NoRep        000000000000043c     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001be       @IoReadFifo32_Loop         000000000000043e     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001c7       @IoReadFifo32_Done         0000000000000447     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001df       @IoWriteFifo8_NoRep        000000000000045f     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001e1       @IoWriteFifo8_Loop         0000000000000461     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001e9       @IoWriteFifo8_Done         0000000000000469     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000202       @IoWriteFifo16_NoRep       0000000000000482     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000204       @IoWriteFifo16_Loop        0000000000000484     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:0000020f       @IoWriteFifo16_Done        000000000000048f     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000227       @IoWriteFifo32_NoRep       00000000000004a7     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000229       @IoWriteFifo32_Loop        00000000000004a9     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000232       @IoWriteFifo32_Done        00000000000004b2     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0002:00000040       mEndOfPeiNotifyList        0000000000001740     Tcg2PlatformPei:Tcg2PlatformPei.obj
+ 0002:0000007c       mAcpiTimerIoAddr           000000000000177c     BaseAcpiTimerLib:BaseAcpiTimerLib.obj
+ 0004:00000000       $unwind$_ModuleEntryPoint  00000000000019c0     PeimEntryPoint:PeimEntryPoint.obj
+ 0004:00000008       $unwind$ProcessLibraryConstructorList 00000000000019c8     Tcg2PlatformPei:AutoGen.obj
+ 0004:00000020       $unwind$PlatformInitEndOfPei 00000000000019e0     Tcg2PlatformPei:Tcg2PlatformPei.obj
+ 0004:00000028       $unwind$GetFirstGuidHob    00000000000019e8     PeiHobLib:HobLib.obj
+ 0004:00000030       $unwind$PeiServicesLocatePpi 00000000000019f0     PeiServicesLib:PeiServicesLib.obj
+ 0004:00000038       $unwind$Tpm2SubmitCommand  00000000000019f8     Tpm2DeviceLibDTpm:Tpm2DeviceLibDTpm.obj
+ 0004:0000004c       $unwind$PtpCrbWaitRegisterBits 0000000000001a0c     Tpm2DeviceLibDTpm:Tpm2Ptp.obj
+ 0004:0000004c       $unwind$TisPcWaitRegisterBits 0000000000001a0c     Tpm2DeviceLibDTpm:Tpm2Tis.obj
+ 0004:00000064       $unwind$PtpCrbTpmCommand   0000000000001a24     Tpm2DeviceLibDTpm:Tpm2Ptp.obj
+ 0004:0000007c       $unwind$TisPcReadBurstCount 0000000000001a3c     Tpm2DeviceLibDTpm:Tpm2Tis.obj
+ 0004:00000090       $unwind$Tpm2TisTpmCommand  0000000000001a50     Tpm2DeviceLibDTpm:Tpm2Tis.obj
+ 0004:000000a8       $unwind$RandomizePlatformAuth 0000000000001a68     PeiDxeTpmPlatformHierarchyLib:PeiDxeTpmPlatformHierarchyLib.obj
+ 0004:000000c8       $unwind$InternalAcpiDelay  0000000000001a88     BaseAcpiTimerLib:AcpiTimerLib.obj
+ 0004:000000d8       $unwind$SaveAndDisableInterrupts 0000000000001a98     BaseLib:Cpu.obj
+ 0004:000000d8       $unwind$PciCf8Read16       0000000000001a98     BasePciCf8Lib:PciCf8Lib.obj
+ 0004:000000d8       $unwind$PciCf8Read32       0000000000001a98     BasePciCf8Lib:PciCf8Lib.obj
+ 0004:000000d8       $unwind$PciCf8Read8        0000000000001a98     BasePciCf8Lib:PciCf8Lib.obj
+ 0004:000000d8       $unwind$MicroSecondDelay   0000000000001a98     BaseAcpiTimerLib:AcpiTimerLib.obj
+ 0004:000000e0       $unwind$Tpm2HierarchyChangeAuth 0000000000001aa0     Tpm2CommandLib:Tpm2Hierarchy.obj
+ 0004:000000f8       $unwind$Tpm2GetCapability  0000000000001ab8     Tpm2CommandLib:Tpm2Capability.obj
+ 0004:00000108       $unwind$Tpm2GetCapabilityPcrs 0000000000001ac8     Tpm2CommandLib:Tpm2Capability.obj

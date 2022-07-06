@@ -1,0 +1,259 @@
+ ResetSystemRuntimeDxe
+
+ Timestamp is 62b5734a (Fri Jun 24 16:18:18 2022)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 000000f4H .text                   CODE
+ 0001:000000f4 000024fdH .text$mn                CODE
+ 0002:00000000 00001200H .rdata                  DATA
+ 0002:00001200 00000044H .rdata$voltmd           DATA
+ 0002:00001244 00000164H .rdata$zzzdbg           DATA
+ 0003:00000000 00000118H .data                   DATA
+ 0003:00000118 00000088H .bss                    DATA
+ 0004:00000000 000001e0H .pdata                  DATA
+ 0005:00000000 000000e8H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __guard_longjmp_table      0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points 0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_count         0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata 0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_table          0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table   0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map_count    0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_count          0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map          0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_count      0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points_count 0000000000000000     <absolute>
+ 0000:00000000       __dynamic_value_reloc_table 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table_size 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat     0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat_copy 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_native_entrypoint 0000000000000000     <absolute>
+ 0000:00000000       __AbsoluteZero             0000000000000000     <absolute>
+ 0000:00000000       __guard_flags              0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_count      0000000000000000     <absolute>
+ 0000:00000000       __guard_check_icall_a64n_fptr 0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_table         0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_table      0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata_count 0000000000000000     <absolute>
+ 0000:00000000       __enclave_config           0000000000000000     <absolute>
+ 0001:00000000       InternalMemSetMem          00000000000002c0     BaseMemoryLibRepStr:SetMem.obj
+ 0001:00000020       InternalMemCopyMem         00000000000002e0     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000060       InternalMemZeroMem         0000000000000320     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00000080       InternalMemSetMem64        0000000000000340     BaseMemoryLibRepStr:SetMem64.obj
+ 0001:000000a0       InternalMemSetMem32        0000000000000360     BaseMemoryLibRepStr:SetMem32.obj
+ 0001:000000c0       CpuPause                   0000000000000380     BaseLib:CpuPause.obj
+ 0001:000000d0       EnableInterrupts           0000000000000390     BaseLib:EnableInterrupts.obj
+ 0001:000000e0       DisableInterrupts          00000000000003a0     BaseLib:DisableInterrupts.obj
+ 0001:000000f0       AsmReadEflags              00000000000003b0     BaseLib:ReadEflags.obj
+ 0001:000000f4       _ModuleEntryPoint          00000000000003b4 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:0000011c       ProcessLibraryConstructorList 00000000000003dc f   ResetSystemRuntimeDxe:AutoGen.obj
+ 0001:000005fc       ProcessLibraryDestructorList 00000000000008bc f   ResetSystemRuntimeDxe:AutoGen.obj
+ 0001:00000780       ProcessModuleEntryPointList 0000000000000a40 f   ResetSystemRuntimeDxe:AutoGen.obj
+ 0001:00000884       RegisterResetNotify        0000000000000b44 f   ResetSystemRuntimeDxe:ResetSystem.obj
+ 0001:000009a0       UnregisterResetNotify      0000000000000c60 f   ResetSystemRuntimeDxe:ResetSystem.obj
+ 0001:00000a74       RuntimeServiceResetSystem  0000000000000d34 f   ResetSystemRuntimeDxe:ResetSystem.obj
+ 0001:00000cc4       InternalBaseLibIsListValid 0000000000000f84 f   BaseLib:LinkedList.obj
+ 0001:00000d30       InsertTailList             0000000000000ff0 f   BaseLib:LinkedList.obj
+ 0001:00000d84       GetFirstNode               0000000000001044 f   BaseLib:LinkedList.obj
+ 0001:00000db8       GetNextNode                0000000000001078 f   BaseLib:LinkedList.obj
+ 0001:00000dec       IsNull                     00000000000010ac f   BaseLib:LinkedList.obj
+ 0001:00000e30       RemoveEntryList            00000000000010f0 f   BaseLib:LinkedList.obj
+ 0001:00000e98       DebugPrint                 0000000000001158 f   BaseDebugLibSerialPort:DebugLib.obj
+ 0001:00000ebc       DebugPrintMarker           000000000000117c f   BaseDebugLibSerialPort:DebugLib.obj
+ 0001:00000f6c       DebugAssert                000000000000122c f   BaseDebugLibSerialPort:DebugLib.obj
+ 0001:00000fe4       InternalAllocatePool       00000000000012a4 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:0000101c       FreePool                   00000000000012dc f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00001060       RuntimeLibExitBootServicesEvent 0000000000001320 f   UefiRuntimeLib:RuntimeLib.obj
+ 0001:00001068       RuntimeLibVirtualNotifyEvent 0000000000001328 f   UefiRuntimeLib:RuntimeLib.obj
+ 0001:0000107c       ResetShutdown              000000000000133c f   DxeResetSystemLib:DxeResetShutdown.obj
+ 0001:000010f4       ResetCold                  00000000000013b4 f   DxeResetSystemLib:ResetSystemLib.obj
+ 0001:0000112c       InternalGetReportStatusCode 00000000000013ec f   RuntimeDxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0001:0000118c       ReportStatusCodeLibVirtualAddressChange 000000000000144c f   RuntimeDxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0001:000011b4       ReportStatusCodeLibExitBootServices 0000000000001474 f   RuntimeDxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0001:000011cc       ReportStatusCode           000000000000148c f   RuntimeDxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0001:00001210       GetPcdProtocol             00000000000014d0 f   DxePcdLib:DxePcdLib.obj
+ 0001:0000129c       AsciiStrLen                000000000000155c f   BaseLib:String.obj
+ 0001:00001308       StrnLenS                   00000000000015c8 f   BaseLib:SafeString.obj
+ 0001:00001360       IoRead16                   0000000000001620 f   BaseIoLibIntrinsicSev:IoLibMsc.obj
+ 0001:00001394       IoWrite16                  0000000000001654 f   BaseIoLibIntrinsicSev:IoLibMsc.obj
+ 0001:000013d8       IoRead32                   0000000000001698 f   BaseIoLibIntrinsicSev:IoLibMsc.obj
+ 0001:0000140c       MmioRead32                 00000000000016cc f   BaseIoLibIntrinsicSev:IoLib.obj
+ 0001:0000143c       AsciiSPrint                00000000000016fc f   BasePrintLib:PrintLib.obj
+ 0001:00001468       BasePrintLibFillBuffer     0000000000001728 f   BasePrintLib:PrintLibInternal.obj
+ 0001:0000149c       BasePrintLibValueToString  000000000000175c f   BasePrintLib:PrintLibInternal.obj
+ 0001:000014ec       BasePrintLibSPrintMarker   00000000000017ac f   BasePrintLib:PrintLibInternal.obj
+ 0001:000023f8       BasePrintLibSPrint         00000000000026b8 f   BasePrintLib:PrintLibInternal.obj
+ 0001:0000241c       PciExpressRead32           00000000000026dc f   BasePciExpressLib:PciExpressLib.obj
+ 0001:0000246c       PciCf8Read32               000000000000272c f   BasePciCf8Lib:PciCf8Lib.obj
+ 0001:0000250c       InternalAcpiDelay          00000000000027cc f   DxeAcpiTimerLib:AcpiTimerLib.obj
+ 0001:00002570       DivU64x32Remainder         0000000000002830 f   BaseLib:DivU64x32Remainder.obj
+ 0001:000025d0       SaveAndDisableInterrupts   0000000000002890 f   BaseLib:Cpu.obj
+ 0002:00000000       ??_C@_0CB@DMEJJJHA@?6ASSERT_EFI_ERROR?5?$CIStatus?5?$DN?5?$CFr?$CJ@ 00000000000028c0     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0002:00000028       ??_C@_0CH@BBNBJKHK@?$CB?$CI?$CI?$CIINTN?$CJ?$CIRETURN_STATUS?$CJ?$CIStatus@ 00000000000028e8     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0002:00000050       ??_C@_0BG@HIEKLKEP@ResetSystemRuntimeDxe@ 0000000000002910     ResetSystemRuntimeDxe:AutoGen.obj
+ 0002:00000068       ??_C@_0CE@IBFOBMLB@?6ASSERT_RETURN_ERROR?5?$CIStatus?5?$DN?5@ 0000000000002928     ResetSystemRuntimeDxe:AutoGen.obj
+ 0002:00000090       ??_C@_0HP@DLDMOIFF@d?3?2edk2?2edk2?2Build?2OvmfX64?2DEBU@ 0000000000002950     ResetSystemRuntimeDxe:AutoGen.obj
+ 0002:00000110       ??_C@_19KLEBDGEI@?$AAC?$AAo?$AAl?$AAd@ 00000000000029d0     ResetSystemRuntimeDxe:ResetSystem.obj
+ 0002:00000120       ??_C@_19NEFKCJIJ@?$AAW?$AAa?$AAr?$AAm@ 00000000000029e0     ResetSystemRuntimeDxe:ResetSystem.obj
+ 0002:00000130       ??_C@_1BC@PJIHBPJH@?$AAS?$AAh?$AAu?$AAt?$AAd?$AAo?$AAw?$AAn@ 00000000000029f0     ResetSystemRuntimeDxe:ResetSystem.obj
+ 0002:00000148       ??_C@_1CC@ILBHFEOF@?$AAP?$AAl?$AAa?$AAt?$AAf?$AAo?$AAr?$AAm?$AAS?$AAp?$AAe?$AAc?$AAi?$AAf?$AAi@ 0000000000002a08     ResetSystemRuntimeDxe:ResetSystem.obj
+ 0002:00000170       ??_C@_0BF@NDBIKIKC@CR?5has?5Bad?5Signature@ 0000000000002a30     ResetSystemRuntimeDxe:ResetSystem.obj
+ 0002:00000190       ??_C@_0EI@MKCDCFDN@d?3?2edk2?2edk2?2MdeModulePkg?2Unive@ 0000000000002a50     ResetSystemRuntimeDxe:ResetSystem.obj
+ 0002:000001d8       ??_C@_0CI@GFKMOIKI@IsNull?5?$CI?$CGInstance?9?$DOResetNotifie@ 0000000000002a98     ResetSystemRuntimeDxe:ResetSystem.obj
+ 0002:00000200       ??_C@_0DJ@CCAELAAB@?$CGgEfiResetArchProtocolGuid?5alre@ 0000000000002ac0     ResetSystemRuntimeDxe:ResetSystem.obj
+ 0002:00000240       ??_C@_0DC@CPDEEBO@DXE?5ResetSystem2?3?5ResetType?5?$CFs?0@ 0000000000002b00     ResetSystemRuntimeDxe:ResetSystem.obj
+ 0002:00000280       ??_C@_0ED@NIHMCMIK@ResetType?5?$DM?5?$CIsizeof?5?$CImResetType@ 0000000000002b40     ResetSystemRuntimeDxe:ResetSystem.obj
+ 0002:000002d0       ??_C@_0FE@HJAKCOHP@DXE?5ResetSystem2?3?5Maximum?5reset@ 0000000000002b90     ResetSystemRuntimeDxe:ResetSystem.obj
+ 0002:00000328       ??_C@_0BC@FEDIJHFF@?$CI?$CIBOOLEAN?$CJ?$CI0?$DN?$DN1?$CJ?$CJ@ 0000000000002be8     ResetSystemRuntimeDxe:ResetSystem.obj
+ 0002:00000340       mResetTypeStr              0000000000002c00     ResetSystemRuntimeDxe:ResetSystem.obj
+ 0002:00000360       ??_C@_0BF@NJNGJMPC@List?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000002c20     BaseLib:LinkedList.obj
+ 0002:00000378       ??_C@_0DB@MIDNNFCL@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 0000000000002c38     BaseLib:LinkedList.obj
+ 0002:000003b0       ??_C@_0CC@KDLPLAED@List?9?$DOForwardLink?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?5@ 0000000000002c70     BaseLib:LinkedList.obj
+ 0002:000003d8       ??_C@_0BP@IJJCCMAK@List?9?$DOBackLink?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000002c98     BaseLib:LinkedList.obj
+ 0002:000003f8       ??_C@_0CG@LGIALJFK@InternalBaseLibIsListValid?5?$CILis@ 0000000000002cb8     BaseLib:LinkedList.obj
+ 0002:00000420       ??_C@_0CC@JLDICICM@InternalBaseLibIsListValid?5?$CILis@ 0000000000002ce0     BaseLib:LinkedList.obj
+ 0002:00000448       ??_C@_0BF@NMBJJECB@?$CBIsListEmpty?5?$CIEntry?$CJ@ 0000000000002d08     BaseLib:LinkedList.obj
+ 0002:00000460       ??_C@_0BH@LKMBFCBF@Format?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000002d20     BaseDebugLibSerialPort:DebugLib.obj
+ 0002:00000478       ??_C@_0DO@CKBIDOOL@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 0000000000002d38     BaseDebugLibSerialPort:DebugLib.obj
+ 0002:000004b8       ??_C@_0BI@NOCKJDBJ@ASSERT?5?$FL?$CFa?$FN?5?$CFa?$CI?$CFd?$CJ?3?5?$CFa?6@ 0000000000002d78     BaseDebugLibSerialPort:DebugLib.obj
+ 0002:000004d0       ??_C@_0BH@IACGKAP@Buffer?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000002d90     BaseDebugLibSerialPort:DebugLib.obj
+ 0002:000004e8       ??_C@_0BN@COECPDCC@gImageHandle?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000002da8     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000510       ??_C@_0FA@FOIHGFBE@d?3?2edk2?2edk2?2MdePkg?2Library?2Uef@ 0000000000002dd0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000560       ??_C@_0BE@DGNHAHIL@gST?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000002e20     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000578       ??_C@_0BE@BDFJLGLN@gBS?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000002e38     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000590       ??_C@_0EK@GCCICMAJ@d?3?2edk2?2edk2?2MdePkg?2Library?2Uef@ 0000000000002e50     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0002:000005e0       ??_C@_0BE@OBDFIHND@gRT?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000002ea0     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0002:00000600       ??_C@_0FG@JGJCMPKB@d?3?2edk2?2edk2?2MdePkg?2Library?2Uef@ 0000000000002ec0     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0002:00000658       ??_C@_0BI@HAGPDMHJ@AcpiTimerLibConstructor@ 0000000000002f18     DxeAcpiTimerLib:DxeAcpiTimerLib.obj
+ 0002:00000670       ??_C@_0CL@DGCOIACG@?$CFa?3?5Unknown?5Host?5Bridge?5Device?5@ 0000000000002f30     DxeAcpiTimerLib:DxeAcpiTimerLib.obj
+ 0002:000006a0       ??_C@_0DM@NIEBGAOD@d?3?2edk2?2edk2?2OvmfPkg?2Library?2Ac@ 0000000000002f60     DxeAcpiTimerLib:DxeAcpiTimerLib.obj
+ 0002:000006e0       ??_C@_0FE@ELFDCAAP@d?3?2edk2?2edk2?2MdePkg?2Library?2Uef@ 0000000000002fa0     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:00000738       ??_C@_0DC@CNNBPJA@mDevicePathLibDevicePathUtiliti@ 0000000000002ff8     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:00000770       ??_C@_0DI@MDMFFEFN@d?3?2edk2?2edk2?2MdePkg?2Library?2Uef@ 0000000000003030     UefiRuntimeLib:RuntimeLib.obj
+ 0002:000007a8       ??_C@_0DP@OGAMOBAA@d?3?2edk2?2edk2?2OvmfPkg?2Library?2Re@ 0000000000003068     DxeResetSystemLib:DxeResetShutdown.obj
+ 0002:000007f0       ??_C@_0FG@GBJJGGJF@d?3?2edk2?2edk2?2MdeModulePkg?2Libra@ 00000000000030b0     RuntimeDxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0002:00000848       ??_C@_0DC@FABBJIGJ@d?3?2edk2?2edk2?2MdePkg?2Library?2Dxe@ 0000000000003108     DxePcdLib:DxePcdLib.obj
+ 0002:00000880       ??_C@_0BF@OOKDELHM@mPcd?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000003140     DxePcdLib:DxePcdLib.obj
+ 0002:00000898       ??_C@_0BH@MAAHKCPC@String?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000003158     BaseLib:String.obj
+ 0002:000008b0       ??_C@_0CN@LHBFELAO@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 0000000000003170     BaseLib:String.obj
+ 0002:000008e0       ??_C@_0CC@GFNLNIOC@?$CI?$CIUINTN?$CJString?5?$CG?50x00000001?$CJ?5?$DN?$DN@ 00000000000031a0     BaseLib:String.obj
+ 0002:00000908       ??_C@_0DI@MDIKFADO@Length?5?$DM?5_gPcd_FixedAtBuild_Pcd@ 00000000000031c8     BaseLib:String.obj
+ 0002:00000940       ??_C@_0DA@BDDONMJM@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 0000000000003200     BaseLib:Unaligned.obj
+ 0002:00000970       ??_C@_0DB@PKFMPMPC@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 0000000000003230     BaseLib:SafeString.obj
+ 0002:000009a8       ??_C@_0BJ@CNKJJNE@?$CIBuffer?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ@ 0000000000003268     BaseLib:SafeString.obj
+ 0002:000009c8       ??_C@_0N@KGHEHMDL@Divisor?5?$CB?$DN?50@ 0000000000003288     BaseLib:DivU64x32.obj
+ 0002:000009d8       ??_C@_0BA@DAGHIEBA@?$CIPort?5?$CG?51?$CJ?5?$DN?$DN?50@ 0000000000003298     BaseIoLibIntrinsicSev:IoLibMsc.obj
+ 0002:000009e8       ??_C@_0DK@HAPDFBOC@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 00000000000032a8     BaseIoLibIntrinsicSev:IoLibMsc.obj
+ 0002:00000a28       ??_C@_0BA@HCECIDGN@?$CIPort?5?$CG?53?$CJ?5?$DN?$DN?50@ 00000000000032e8     BaseIoLibIntrinsicSev:IoLibMsc.obj
+ 0002:00000a38       ??_C@_0DH@FEKOHHMP@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 00000000000032f8     BaseIoLibIntrinsicSev:IoLib.obj
+ 0002:00000a70       ??_C@_0BD@OMMAJMCK@?$CIAddress?5?$CG?53?$CJ?5?$DN?$DN?50@ 0000000000003330     BaseIoLibIntrinsicSev:IoLib.obj
+ 0002:00000a88       ??_C@_0DM@OAJIKNNG@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 0000000000003348     BasePrintLib:PrintLibInternal.obj
+ 0002:00000ad0       ??_C@_0EB@HDGIDCIO@?$CIBufferSize?5?$DM?$DN?5?$CI_gPcd_FixedAtBu@ 0000000000003390     BasePrintLib:PrintLibInternal.obj
+ 0002:00000b18       ??_C@_0BJ@PPAKKDJG@?$CIFormat?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ@ 00000000000033d8     BasePrintLib:PrintLibInternal.obj
+ 0002:00000b40       ??_C@_0ED@LPDDCECB@?$CIBufferSize?5?$DM?$DN?5?$CI_gPcd_FixedAtBu@ 0000000000003400     BasePrintLib:PrintLibInternal.obj
+ 0002:00000b90       ??_C@_0IM@BFJJFLGB@?$CIStrnLenS?5?$CI?$CICHAR16?5?$CK?$CJFormat?0?5?$CI_@ 0000000000003450     BasePrintLib:PrintLibInternal.obj
+ 0002:00000c20       ??_C@_0ID@PLGJGION@?$CIAsciiStrnLenS?5?$CIFormat?0?5?$CI_gPcd_@ 00000000000034e0     BasePrintLib:PrintLibInternal.obj
+ 0002:00000ca8       ??_C@_0O@MLOLIMFM@?$DMnull?5string?$DO@ 0000000000003568     BasePrintLib:PrintLibInternal.obj
+ 0002:00000cb8       ??_C@_0M@BJJDNPHK@?$DMnull?5guid?$DO@ 0000000000003578     BasePrintLib:PrintLibInternal.obj
+ 0002:00000cc8       ??_C@_0DB@PMLHLBMO@?$CF08x?9?$CF04x?9?$CF04x?9?$CF02x?$CF02x?9?$CF02x?$CF02@ 0000000000003588     BasePrintLib:PrintLibInternal.obj
+ 0002:00000d00       ??_C@_0M@LHGBCIKM@?$DMnull?5time?$DO@ 00000000000035c0     BasePrintLib:PrintLibInternal.obj
+ 0002:00000d10       ??_C@_0BK@FCPKCIDD@?$CF02d?1?$CF02d?1?$CF04d?5?5?$CF02d?3?$CF02d@ 00000000000035d0     BasePrintLib:PrintLibInternal.obj
+ 0002:00000d2c       ??_C@_04JIMNDDED@?$CF08X@  00000000000035ec     BasePrintLib:PrintLibInternal.obj
+ 0002:00000d34       ??_C@_02PCIJFNDE@?$AN?6@   00000000000035f4     BasePrintLib:PrintLibInternal.obj
+ 0002:00000d38       ??_C@_01LIIJDEN@?$AN@      00000000000035f8     BasePrintLib:PrintLibInternal.obj
+ 0002:00000d40       mWarningString             0000000000003600     BasePrintLib:PrintLibInternal.obj
+ 0002:00000de0       mErrorString               00000000000036a0     BasePrintLib:PrintLibInternal.obj
+ 0002:000010a0       mHexStr                    0000000000003960     BasePrintLib:PrintLibInternal.obj
+ 0002:000010b0       ??_C@_0BO@BAKALPJK@?$CI?$CIAddress?$CJ?5?$CG?5?$HO0xfffffff?$CJ?5?$DN?$DN?50@ 0000000000003970     BasePciExpressLib:PciExpressLib.obj
+ 0002:000010d0       ??_C@_0DO@IIAFMEOI@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 0000000000003990     BasePciExpressLib:PciExpressLib.obj
+ 0002:00001110       ??_C@_0DG@KOAEBPEO@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 00000000000039d0     BasePciCf8Lib:PciCf8Lib.obj
+ 0002:00001148       ??_C@_0CG@EDKLCMBO@?$CI?$CIAddress?$CJ?5?$CG?5?$CI?$HO0xffff0ff?5?$HM?5?$CI3?$CJ?$CJ@ 0000000000003a08     BasePciCf8Lib:PciCf8Lib.obj
+ 0002:00001170       ??_C@_0DJ@FHIMIJAH@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 0000000000003a30     BaseLib:DivU64x32Remainder.obj
+ 0002:00001200       __volatile_metadata        0000000000003ac0     <linker-defined>
+ 0003:00000000       gEfiResetArchProtocolGuid  0000000000003c80     ResetSystemRuntimeDxe:AutoGen.obj
+ 0003:00000010       gEfiStatusCodeRuntimeProtocolGuid 0000000000003c90     ResetSystemRuntimeDxe:AutoGen.obj
+ 0003:00000020       gEdkiiPlatformSpecificResetFilterProtocolGuid 0000000000003ca0     ResetSystemRuntimeDxe:AutoGen.obj
+ 0003:00000030       gPcdProtocolGuid           0000000000003cb0     ResetSystemRuntimeDxe:AutoGen.obj
+ 0003:00000040       gEfiResetNotificationProtocolGuid 0000000000003cc0     ResetSystemRuntimeDxe:AutoGen.obj
+ 0003:00000050       gEfiDevicePathUtilitiesProtocolGuid 0000000000003cd0     ResetSystemRuntimeDxe:AutoGen.obj
+ 0003:00000060       gEfiEventExitBootServicesGuid 0000000000003ce0     ResetSystemRuntimeDxe:AutoGen.obj
+ 0003:00000070       gEfiEventVirtualAddressChangeGuid 0000000000003cf0     ResetSystemRuntimeDxe:AutoGen.obj
+ 0003:00000080       gEdkiiPlatformSpecificResetHandlerProtocolGuid 0000000000003d00     ResetSystemRuntimeDxe:AutoGen.obj
+ 0003:00000090       gEfiCallerIdGuid           0000000000003d10     ResetSystemRuntimeDxe:AutoGen.obj
+ 0003:000000a0       mPlatformSpecificResetHandler 0000000000003d20     ResetSystemRuntimeDxe:ResetSystem.obj
+ 0003:000000c8       mPlatformSpecificResetFilter 0000000000003d48     ResetSystemRuntimeDxe:ResetSystem.obj
+ 0003:000000f0       mResetNotification         0000000000003d70     ResetSystemRuntimeDxe:ResetSystem.obj
+ 0003:00000118       mResetNotifyDepth          0000000000003d98     ResetSystemRuntimeDxe:ResetSystem.obj
+ 0003:00000120       gST                        0000000000003da0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0003:00000128       gBS                        0000000000003da8     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0003:00000130       gImageHandle               0000000000003db0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0003:00000138       gRT                        0000000000003db8     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0003:00000140       mDevicePathLibDevicePathUtilities 0000000000003dc0     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0003:00000148       mEfiAtRuntime              0000000000003dc8     UefiRuntimeLib:RuntimeLib.obj
+ 0003:00000149       mHaveExitedBootServices    0000000000003dc9     RuntimeDxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0003:00000150       mReportStatusCodeLibStatusCodeProtocol 0000000000003dd0     RuntimeDxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0003:00000158       mPcd                       0000000000003dd8     DxePcdLib:DxePcdLib.obj
+ 0003:00000160       gParity                    0000000000003de0     PcAtSerialPortLib:SerialPortLib.obj
+ 0003:00000161       gBreakSet                  0000000000003de1     PcAtSerialPortLib:SerialPortLib.obj
+ 0003:00000178       mReportStatusCodeLibVirtualAddressChangeEvent 0000000000003df8     <common>
+ 0003:00000180       mReportStatusCodeLibExitBootServicesEvent 0000000000003e00     <common>
+ 0003:00000188       mEfiVirtualNotifyEvent     0000000000003e08     <common>
+ 0003:00000190       mInternalRT                0000000000003e10     <common>
+ 0003:00000198       mEfiExitBootServicesEvent  0000000000003e18     <common>
+
+ entry point at        0001:000000f4
+
+ Static symbols
+
+ 0001:0000003a       InternalMemCopyMem.0       00000000000002fa     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:0000004a       @CopyBackward              000000000000030a     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000053       @CopyBytes                 0000000000000313     BaseMemoryLibRepStr:CopyMem.obj
+ 0003:00000164       mRunningOnQ35              0000000000003de4     DxePciLibI440FxQ35:PciLib.obj
+ 0003:00000168       mAcpiTimerIoAddr           0000000000003de8     DxeAcpiTimerLib:DxeAcpiTimerLib.obj
+ 0003:0000016c       mAcpiHwReducedSleepCtl     0000000000003dec     DxeResetSystemLib:DxeResetShutdown.obj
+ 0003:00000170       mAcpiPmBaseAddress         0000000000003df0     DxeResetSystemLib:DxeResetShutdown.obj
+ 0005:00000000       $unwind$InternalGetReportStatusCode 0000000000004000     RuntimeDxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0005:00000000       $unwind$MmioRead32         0000000000004000     BaseIoLibIntrinsicSev:IoLib.obj
+ 0005:00000000       $unwind$IoRead16           0000000000004000     BaseIoLibIntrinsicSev:IoLibMsc.obj
+ 0005:00000000       $unwind$IoRead32           0000000000004000     BaseIoLibIntrinsicSev:IoLibMsc.obj
+ 0005:00000000       $unwind$SaveAndDisableInterrupts 0000000000004000     BaseLib:Cpu.obj
+ 0005:00000000       $unwind$GetFirstNode       0000000000004000     BaseLib:LinkedList.obj
+ 0005:00000000       $unwind$GetNextNode        0000000000004000     BaseLib:LinkedList.obj
+ 0005:00000000       $unwind$InternalBaseLibIsListValid 0000000000004000     BaseLib:LinkedList.obj
+ 0005:00000000       $unwind$RemoveEntryList    0000000000004000     BaseLib:LinkedList.obj
+ 0005:00000000       $unwind$StrnLenS           0000000000004000     BaseLib:SafeString.obj
+ 0005:00000000       $unwind$PciExpressRead32   0000000000004000     BasePciExpressLib:PciExpressLib.obj
+ 0005:00000000       $unwind$_ModuleEntryPoint  0000000000004000     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0005:00000008       $unwind$ProcessLibraryConstructorList 0000000000004008     ResetSystemRuntimeDxe:AutoGen.obj
+ 0005:00000020       $unwind$ProcessLibraryDestructorList 0000000000004020     ResetSystemRuntimeDxe:AutoGen.obj
+ 0005:00000020       $unwind$UnregisterResetNotify 0000000000004020     ResetSystemRuntimeDxe:ResetSystem.obj
+ 0005:00000034       $unwind$ProcessModuleEntryPointList 0000000000004034     ResetSystemRuntimeDxe:AutoGen.obj
+ 0005:0000003c       $unwind$RegisterResetNotify 000000000000403c     ResetSystemRuntimeDxe:ResetSystem.obj
+ 0005:0000003c       $unwind$DivU64x32Remainder 000000000000403c     BaseLib:DivU64x32Remainder.obj
+ 0005:0000003c       $unwind$PciCf8Read32       000000000000403c     BasePciCf8Lib:PciCf8Lib.obj
+ 0005:0000003c       $unwind$InternalAcpiDelay  000000000000403c     DxeAcpiTimerLib:AcpiTimerLib.obj
+ 0005:0000004c       $unwind$RuntimeServiceResetSystem 000000000000404c     ResetSystemRuntimeDxe:ResetSystem.obj
+ 0005:00000068       $unwind$IoWrite16          0000000000004068     BaseIoLibIntrinsicSev:IoLibMsc.obj
+ 0005:00000068       $unwind$InsertTailList     0000000000004068     BaseLib:LinkedList.obj
+ 0005:00000068       $unwind$IsNull             0000000000004068     BaseLib:LinkedList.obj
+ 0005:00000068       $unwind$AsciiStrLen        0000000000004068     BaseLib:String.obj
+ 0005:00000074       $unwind$DebugPrint         0000000000004074     BaseDebugLibSerialPort:DebugLib.obj
+ 0005:0000007c       $unwind$DebugPrintMarker   000000000000407c     BaseDebugLibSerialPort:DebugLib.obj
+ 0005:00000090       $unwind$DebugAssert        0000000000004090     BaseDebugLibSerialPort:DebugLib.obj
+ 0005:00000098       $unwind$InternalAllocatePool 0000000000004098     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0005:000000a0       $unwind$ReportStatusCodeLibExitBootServices 00000000000040a0     RuntimeDxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0005:000000a0       $unwind$ReportStatusCodeLibVirtualAddressChange 00000000000040a0     RuntimeDxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0005:000000a0       $unwind$GetPcdProtocol     00000000000040a0     DxePcdLib:DxePcdLib.obj
+ 0005:000000a0       $unwind$FreePool           00000000000040a0     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0005:000000a0       $unwind$ResetCold          00000000000040a0     DxeResetSystemLib:ResetSystemLib.obj
+ 0005:000000a8       $unwind$BasePrintLibValueToString 00000000000040a8     BasePrintLib:PrintLibInternal.obj
+ 0005:000000a8       $unwind$ResetShutdown      00000000000040a8     DxeResetSystemLib:DxeResetShutdown.obj
+ 0005:000000b4       $unwind$ReportStatusCode   00000000000040b4     RuntimeDxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0005:000000bc       $unwind$AsciiSPrint        00000000000040bc     BasePrintLib:PrintLib.obj
+ 0005:000000c4       $unwind$BasePrintLibSPrintMarker 00000000000040c4     BasePrintLib:PrintLibInternal.obj
+ 0005:000000e0       $unwind$BasePrintLibSPrint 00000000000040e0     BasePrintLib:PrintLibInternal.obj

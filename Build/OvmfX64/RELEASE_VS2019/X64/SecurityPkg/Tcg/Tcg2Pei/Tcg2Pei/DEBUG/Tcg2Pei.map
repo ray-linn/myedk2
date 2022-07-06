@@ -1,0 +1,301 @@
+ Tcg2Pei
+
+ Timestamp is 61ee7010 (Mon Jan 24 17:23:28 2022)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000290H .text                   CODE
+ 0001:00000290 000075cbH .text$mn                CODE
+ 0002:00000000 00000350H .data                   DATA
+ 0002:00000350 000003b0H .rdata                  DATA
+ 0002:00000700 00000050H .bss                    DATA
+ 0002:00000750 000000bcH .rdata$voltmd           DATA
+ 0002:0000080c 000000a8H .rdata$zzzdbg           DATA
+ 0003:00000000 0000039cH .pdata                  DATA
+ 0004:00000000 00000318H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __guard_iat_count          0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_table      0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata 0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_count         0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_table          0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map_count    0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table   0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_count      0000000000000000     <absolute>
+ 0000:00000000       __dynamic_value_reloc_table 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map          0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points_count 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_native_entrypoint 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table_size 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat     0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat_copy 0000000000000000     <absolute>
+ 0000:00000000       __AbsoluteZero             0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_table      0000000000000000     <absolute>
+ 0000:00000000       __guard_check_icall_a64n_fptr 0000000000000000     <absolute>
+ 0000:00000000       __guard_flags              0000000000000000     <absolute>
+ 0000:00000000       __enclave_config           0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_count      0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_table         0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata_count 0000000000000000     <absolute>
+ 0000:00000000       __ImageBase                0000000000000000     <linker-defined>
+ 0001:00000000       InternalMemCopyMem         00000000000002a0     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000040       InternalMemZeroMem         00000000000002e0     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00000060       CpuPause                   0000000000000300     BaseLib:CpuPause.obj
+ 0001:00000070       InternalMemSetMem          0000000000000310     BaseMemoryLibRepStr:SetMem.obj
+ 0001:00000090       InternalMemIsZeroBuffer    0000000000000330     BaseMemoryLibRepStr:IsZeroBuffer.obj
+ 0001:000000c0       InternalMemSetMem64        0000000000000360     BaseMemoryLibRepStr:SetMem64.obj
+ 0001:000000e0       InternalMemSetMem32        0000000000000380     BaseMemoryLibRepStr:SetMem32.obj
+ 0001:00000100       SevNoRepIo                 00000000000003a0     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000140       IoReadFifo8                00000000000003e0     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000162       IoReadFifo16               0000000000000402     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000188       IoReadFifo32               0000000000000428     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001ab       IoWriteFifo8               000000000000044b     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001cd       IoWriteFifo16              000000000000046d     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001f3       IoWriteFifo32              0000000000000493     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000220       InternalX86ReadIdtr        00000000000004c0     BaseLib:ReadIdtr.obj
+ 0001:00000230       InternalX86WriteIdtr       00000000000004d0     BaseLib:WriteIdtr.obj
+ 0001:00000240       EnableInterrupts           00000000000004e0     BaseLib:EnableInterrupts.obj
+ 0001:00000250       DisableInterrupts          00000000000004f0     BaseLib:DisableInterrupts.obj
+ 0001:00000260       AsmReadEflags              0000000000000500     BaseLib:ReadEflags.obj
+ 0001:00000270       InternalMemCompareMem      0000000000000510     BaseMemoryLibRepStr:CompareMem.obj
+ 0001:00000290       _ModuleEntryPoint          0000000000000530 f   PeimEntryPoint:PeimEntryPoint.obj
+ 0001:000002bc       ProcessLibraryConstructorList 000000000000055c f   Tcg2Pei:AutoGen.obj
+ 0001:000005a0       EndofPeiSignalNotifyCallBack 0000000000000840 f   Tcg2Pei:Tcg2Pei.obj
+ 0001:00000644       LogHashEvent               00000000000008e4 f   Tcg2Pei:Tcg2Pei.obj
+ 0001:00000880       HashLogExtendEvent         0000000000000b20 f   Tcg2Pei:Tcg2Pei.obj
+ 0001:000009d0       MeasureFvImage             0000000000000c70 f   Tcg2Pei:Tcg2Pei.obj
+ 0001:00000c90       FirmwareVolumeInfoPpiNotifyCallback 0000000000000f30 f   Tcg2Pei:Tcg2Pei.obj
+ 0001:00000d64       PeimEntryMP                0000000000001004 f   Tcg2Pei:Tcg2Pei.obj
+ 0001:00000e8c       PeimEntryMA                000000000000112c f   Tcg2Pei:Tcg2Pei.obj
+ 0001:000011f4       GetPcdPpiPointer           0000000000001494 f   PeiPcdLib:PeiPcdLib.obj
+ 0001:00001218       InternalAllocatePool       00000000000014b8 f   PeiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00001260       AllocatePool               0000000000001500 f   PeiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:000012a4       InternalReallocatePool     0000000000001544 f   PeiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00001328       PeiServicesLocatePpi       00000000000015c8 f   PeiServicesLib:PeiServicesLib.obj
+ 0001:00001378       PeiServicesAllocatePages   0000000000001618 f   PeiServicesLib:PeiServicesLib.obj
+ 0001:000013b8       GetNextGuidHob             0000000000001658 f   PeiHobLib:HobLib.obj
+ 0001:00001400       GetFirstGuidHob            00000000000016a0 f   PeiHobLib:HobLib.obj
+ 0001:0000143c       InternalPeiCreateHob       00000000000016dc f   PeiHobLib:HobLib.obj
+ 0001:00001484       BuildGuidHob               0000000000001724 f   PeiHobLib:HobLib.obj
+ 0001:000014b8       Tpm2SubmitCommand          0000000000001758 f   Tpm2DeviceLibDTpm:Tpm2DeviceLibDTpm.obj
+ 0001:00001544       PtpCrbWaitRegisterBits     00000000000017e4 f   Tpm2DeviceLibDTpm:Tpm2Ptp.obj
+ 0001:000015bc       PtpCrbTpmCommand           000000000000185c f   Tpm2DeviceLibDTpm:Tpm2Ptp.obj
+ 0001:0000183c       TisPcWaitRegisterBits      0000000000001adc f   Tpm2DeviceLibDTpm:Tpm2Tis.obj
+ 0001:000018b8       TisPcReadBurstCount        0000000000001b58 f   Tpm2DeviceLibDTpm:Tpm2Tis.obj
+ 0001:00001940       Tpm2TisTpmCommand          0000000000001be0 f   Tpm2DeviceLibDTpm:Tpm2Tis.obj
+ 0001:00001ba4       Tpm2PcrExtend              0000000000001e44 f   Tpm2CommandLib:Tpm2Integrity.obj
+ 0001:00001dd4       Tpm2PcrRead                0000000000002074 f   Tpm2CommandLib:Tpm2Integrity.obj
+ 0001:000020bc       Tpm2PcrAllocate            000000000000235c f   Tpm2CommandLib:Tpm2Integrity.obj
+ 0001:00002314       Tpm2PcrAllocateBanks       00000000000025b4 f   Tpm2CommandLib:Tpm2Integrity.obj
+ 0001:000025ac       Tpm2PcrReadForActiveBank   000000000000284c f   Tpm2CommandLib:Tpm2Integrity.obj
+ 0001:000027a8       CopyAuthSessionCommand     0000000000002a48 f   Tpm2CommandLib:Tpm2Help.obj
+ 0001:0000289c       CopyDigestListToBuffer     0000000000002b3c f   Tpm2CommandLib:Tpm2Help.obj
+ 0001:000029dc       Tpm2Startup                0000000000002c7c f   Tpm2CommandLib:Tpm2Startup.obj
+ 0001:00002a60       Tpm2GetCapability          0000000000002d00 f   Tpm2CommandLib:Tpm2Capability.obj
+ 0001:00002b4c       Tpm2GetCapabilityPcrs      0000000000002dec f   Tpm2CommandLib:Tpm2Capability.obj
+ 0001:00002c38       Tpm2GetCapabilitySupportedAndActivePcrs 0000000000002ed8 f   Tpm2CommandLib:Tpm2Capability.obj
+ 0001:00002d58       InternalGetHashInterfaceHob 0000000000002ff8 f   HashLibBaseCryptoRouterPei:HashLibBaseCryptoRouterPei.obj
+ 0001:00002dac       InternalCreateHashInterfaceHob 000000000000304c f   HashLibBaseCryptoRouterPei:HashLibBaseCryptoRouterPei.obj
+ 0001:00002e24       HashStart                  00000000000030c4 f   HashLibBaseCryptoRouterPei:HashLibBaseCryptoRouterPei.obj
+ 0001:00002ef0       HashUpdate                 0000000000003190 f   HashLibBaseCryptoRouterPei:HashLibBaseCryptoRouterPei.obj
+ 0001:00002fac       HashCompleteAndExtend      000000000000324c f   HashLibBaseCryptoRouterPei:HashLibBaseCryptoRouterPei.obj
+ 0001:000030cc       RegisterHashInterfaceLib   000000000000336c f   HashLibBaseCryptoRouterPei:HashLibBaseCryptoRouterPei.obj
+ 0001:000031f8       Tpm2GetHashMaskFromAlgo    0000000000003498 f   HashLibBaseCryptoRouterPei:HashLibBaseCryptoRouterCommon.obj
+ 0001:00003234       InternalReportStatusCode   00000000000034d4 f   PeiReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0001:00003290       ResetCold                  0000000000003530 f   BaseResetSystemLib:ResetSystemLib.obj
+ 0001:000032c8       Sha1HashInit               0000000000003568 f   HashInstanceLibSha1:HashInstanceLibSha1.obj
+ 0001:00003328       Sha1HashUpdate             00000000000035c8 f   HashInstanceLibSha1:HashInstanceLibSha1.obj
+ 0001:00003348       Sha1HashFinal              00000000000035e8 f   HashInstanceLibSha1:HashInstanceLibSha1.obj
+ 0001:00003398       Sha256HashInit             0000000000003638 f   HashInstanceLibSha256:HashInstanceLibSha256.obj
+ 0001:000033d0       Sha256HashUpdate           0000000000003670 f   HashInstanceLibSha256:HashInstanceLibSha256.obj
+ 0001:000033f0       Sha256HashFinal            0000000000003690 f   HashInstanceLibSha256:HashInstanceLibSha256.obj
+ 0001:00003440       Sha384HashInit             00000000000036e0 f   HashInstanceLibSha384:HashInstanceLibSha384.obj
+ 0001:0000346c       Sha384HashUpdate           000000000000370c f   HashInstanceLibSha384:HashInstanceLibSha384.obj
+ 0001:0000346c       Sha512HashUpdate           000000000000370c f   HashInstanceLibSha512:HashInstanceLibSha512.obj
+ 0001:0000348c       Sha384HashFinal            000000000000372c f   HashInstanceLibSha384:HashInstanceLibSha384.obj
+ 0001:000034dc       Sha512HashInit             000000000000377c f   HashInstanceLibSha512:HashInstanceLibSha512.obj
+ 0001:00003508       Sha512HashFinal            00000000000037a8 f   HashInstanceLibSha512:HashInstanceLibSha512.obj
+ 0001:00003558       Sm3HashInit                00000000000037f8 f   HashInstanceLibSm3:HashInstanceLibSm3.obj
+ 0001:0000359c       Sm3HashUpdate              000000000000383c f   HashInstanceLibSm3:HashInstanceLibSm3.obj
+ 0001:000035bc       Sm3HashFinal               000000000000385c f   HashInstanceLibSm3:HashInstanceLibSm3.obj
+ 0001:0000360c       InternalAcpiDelay          00000000000038ac f   BaseAcpiTimerLib:AcpiTimerLib.obj
+ 0001:0000366c       MicroSecondDelay           000000000000390c f   BaseAcpiTimerLib:AcpiTimerLib.obj
+ 0001:000036a0       PciCf8Read8                0000000000003940 f   BasePciCf8Lib:PciCf8Lib.obj
+ 0001:00003710       PciCf8Read16               00000000000039b0 f   BasePciCf8Lib:PciCf8Lib.obj
+ 0001:00003764       PciCf8Read32               0000000000003a04 f   BasePciCf8Lib:PciCf8Lib.obj
+ 0001:000037c8       SHA1_Update                0000000000003a68 f   OpensslLib:sha1dgst.obj
+ 0001:000038f4       SHA1_Final                 0000000000003b94 f   OpensslLib:sha1dgst.obj
+ 0001:00003d28       SHA256_Init                0000000000003fc8 f   OpensslLib:sha256.obj
+ 0001:00003d88       SHA256_Update              0000000000004028 f   OpensslLib:sha256.obj
+ 0001:00003eb4       SHA256_Final               0000000000004154 f   OpensslLib:sha256.obj
+ 0001:00004398       SHA384_Init                0000000000004638 f   OpensslLib:sha512.obj
+ 0001:00004428       SHA512_Init                00000000000046c8 f   OpensslLib:sha512.obj
+ 0001:000044b8       SHA512_Final               0000000000004758 f   OpensslLib:sha512.obj
+ 0001:000047fc       SHA512_Update              0000000000004a9c f   OpensslLib:sha512.obj
+ 0001:00004d88       sm3_update                 0000000000005028 f   OpensslLib:sm3.obj
+ 0001:00004eb4       sm3_final                  0000000000005154 f   OpensslLib:sm3.obj
+ 0001:000050f0       sm3_init                   0000000000005390 f   OpensslLib:sm3.obj
+ 0001:00005148       sm3_block_data_order       00000000000053e8 f   OpensslLib:sm3.obj
+ 0001:00007820       SaveAndDisableInterrupts   0000000000007ac0 f   BaseLib:Cpu.obj
+ 0001:00007844       memset                     0000000000007ae4 f   BaseIntrinsicLib:MemoryIntrinsics.obj
+ 0002:00000000       _fltused                   0000000000007b00     BaseIntrinsicLib:MemoryIntrinsics.obj
+ 0002:00000008       gTpmErrorHobGuid           0000000000007b08     Tcg2Pei:AutoGen.obj
+ 0002:00000018       gEdkiiTcgPpiGuid           0000000000007b18     Tcg2Pei:AutoGen.obj
+ 0002:00000028       gTcgEventEntryHobGuid      0000000000007b28     Tcg2Pei:AutoGen.obj
+ 0002:00000038       gEfiPeiFirmwareVolumeInfo2PpiGuid 0000000000007b38     Tcg2Pei:AutoGen.obj
+ 0002:00000048       gPeiTpmInitializationDonePpiGuid 0000000000007b48     Tcg2Pei:AutoGen.obj
+ 0002:00000058       gEfiTpmDeviceInstanceTpm12Guid 0000000000007b58     Tcg2Pei:AutoGen.obj
+ 0002:00000068       gPeiTpmInitializedPpiGuid  0000000000007b68     Tcg2Pei:AutoGen.obj
+ 0002:00000078       gEdkiiMigratedFvInfoGuid   0000000000007b78     Tcg2Pei:AutoGen.obj
+ 0002:00000088       gEfiEndOfPeiSignalPpiGuid  0000000000007b88     Tcg2Pei:AutoGen.obj
+ 0002:00000098       gEdkiiPeiFirmwareVolumeInfoPrehashedFvPpiGuid 0000000000007b98     Tcg2Pei:AutoGen.obj
+ 0002:000000a8       gEfiPeiFirmwareVolumeInfoPpiGuid 0000000000007ba8     Tcg2Pei:AutoGen.obj
+ 0002:000000b8       gMeasuredFvHobGuid         0000000000007bb8     Tcg2Pei:AutoGen.obj
+ 0002:000000c8       gEfiCallerIdGuid           0000000000007bc8     Tcg2Pei:AutoGen.obj
+ 0002:000000d8       gTcgEvent2EntryHobGuid     0000000000007bd8     Tcg2Pei:AutoGen.obj
+ 0002:000000e8       gEfiPeiFirmwareVolumeInfoMeasurementExcludedPpiGuid 0000000000007be8     Tcg2Pei:AutoGen.obj
+ 0002:000000f8       gPcdPpiGuid                0000000000007bf8     Tcg2Pei:AutoGen.obj
+ 0002:00000110       mNotifyList                0000000000007c10     Tcg2Pei:Tcg2Pei.obj
+ 0002:00000158       mTcgPpiList                0000000000007c58     Tcg2Pei:Tcg2Pei.obj
+ 0002:00000170       mEdkiiTcgPpi               0000000000007c70     Tcg2Pei:Tcg2Pei.obj
+ 0002:00000178       mTpmInitializedPpiList     0000000000007c78     Tcg2Pei:Tcg2Pei.obj
+ 0002:00000190       mTpmInitializationDonePpiList 0000000000007c90     Tcg2Pei:Tcg2Pei.obj
+ 0002:000001b0       mTcg2EventInfo             0000000000007cb0     Tcg2Pei:Tcg2Pei.obj
+ 0002:000001f8       mHashLibPeiRouterGuid      0000000000007cf8     HashLibBaseCryptoRouterPei:HashLibBaseCryptoRouterPei.obj
+ 0002:00000210       mTpm2HashMask              0000000000007d10     HashLibBaseCryptoRouterPei:HashLibBaseCryptoRouterCommon.obj
+ 0002:00000278       mSha1InternalHashInstance  0000000000007d78     HashInstanceLibSha1:HashInstanceLibSha1.obj
+ 0002:000002a0       mSha256InternalHashInstance 0000000000007da0     HashInstanceLibSha256:HashInstanceLibSha256.obj
+ 0002:000002c8       mSha384InternalHashInstance 0000000000007dc8     HashInstanceLibSha384:HashInstanceLibSha384.obj
+ 0002:000002f0       mSha512InternalHashInstance 0000000000007df0     HashInstanceLibSha512:HashInstanceLibSha512.obj
+ 0002:00000318       mSm3InternalHashInstance   0000000000007e18     HashInstanceLibSm3:HashInstanceLibSm3.obj
+ 0002:00000350       _gPcd_FixedAtBuild_PcdFirmwareVersionString 0000000000007e50     Tcg2Pei:AutoGen.obj
+ 0002:00000700       gEfiTpmDeviceInstanceNoneGuid 0000000000008200     Tcg2Pei:AutoGen.obj
+ 0002:00000710       gZeroGuid                  0000000000008210     Tcg2Pei:AutoGen.obj
+ 0002:00000720       mMeasuredChildFvIndex      0000000000008220     Tcg2Pei:Tcg2Pei.obj
+ 0002:00000724       mMeasuredMaxBaseFvIndex    0000000000008224     Tcg2Pei:Tcg2Pei.obj
+ 0002:00000728       mMeasuredBaseFvIndex       0000000000008228     Tcg2Pei:Tcg2Pei.obj
+ 0002:0000072c       mMeasuredMaxChildFvIndex   000000000000822c     Tcg2Pei:Tcg2Pei.obj
+ 0002:00000730       mImageInMemory             0000000000008230     Tcg2Pei:Tcg2Pei.obj
+ 0002:00000738       mMeasuredChildFvInfo       0000000000008238     <common>
+ 0002:00000740       mMeasuredBaseFvInfo        0000000000008240     <common>
+ 0002:00000748       mFileHandle                0000000000008248     <common>
+ 0002:00000750       __volatile_metadata        0000000000008250     <linker-defined>
+
+ entry point at        0001:00000290
+
+ Static symbols
+
+ 0001:0000001a       InternalMemCopyMem.0       00000000000002ba     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:0000002a       @CopyBackward              00000000000002ca     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000033       @CopyBytes                 00000000000002d3     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:000000b5       @ReturnFalse               0000000000000355     BaseMemoryLibRepStr:IsZeroBuffer.obj
+ 0001:0000013a       @UseRepIo                  00000000000003da     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:0000013c       @SevNoRepIo_Done           00000000000003dc     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000154       @IoReadFifo8_NoRep         00000000000003f4     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000156       @IoReadFifo8_Loop          00000000000003f6     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:0000015e       @IoReadFifo8_Done          00000000000003fe     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000177       @IoReadFifo16_NoRep        0000000000000417     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000179       @IoReadFifo16_Loop         0000000000000419     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000184       @IoReadFifo16_Done         0000000000000424     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:0000019c       @IoReadFifo32_NoRep        000000000000043c     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:0000019e       @IoReadFifo32_Loop         000000000000043e     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001a7       @IoReadFifo32_Done         0000000000000447     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001bf       @IoWriteFifo8_NoRep        000000000000045f     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001c1       @IoWriteFifo8_Loop         0000000000000461     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001c9       @IoWriteFifo8_Done         0000000000000469     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001e2       @IoWriteFifo16_NoRep       0000000000000482     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001e4       @IoWriteFifo16_Loop        0000000000000484     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001ef       @IoWriteFifo16_Done        000000000000048f     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000207       @IoWriteFifo32_NoRep       00000000000004a7     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000209       @IoWriteFifo32_Loop        00000000000004a9     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000212       @IoWriteFifo32_Done        00000000000004b2     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00003a54       sha1_block_data_order      0000000000003cf4 f   OpensslLib:sha1dgst.obj
+ 0001:00004080       sha256_block_data_order    0000000000004320 f   OpensslLib:sha256.obj
+ 0001:00004920       sha512_block_data_order    0000000000004bc0 f   OpensslLib:sha512.obj
+ 0002:000001d0       mHashInfo                  0000000000007cd0     Tpm2CommandLib:Tpm2Help.obj
+ 0002:00000340       memset_func                0000000000007e40     OpensslLib:mem_clr.obj
+ 0002:00000360       K256                       0000000000007e60     OpensslLib:sha256.obj
+ 0002:00000460       K512                       0000000000007f60     OpensslLib:sha512.obj
+ 0002:00000734       mAcpiTimerIoAddr           0000000000008234     BaseAcpiTimerLib:BaseAcpiTimerLib.obj
+ 0004:00000000       $unwind$_ModuleEntryPoint  0000000000008760     PeimEntryPoint:PeimEntryPoint.obj
+ 0004:00000000       $unwind$Sha1HashInit       0000000000008760     HashInstanceLibSha1:HashInstanceLibSha1.obj
+ 0004:00000000       $unwind$Sha256HashInit     0000000000008760     HashInstanceLibSha256:HashInstanceLibSha256.obj
+ 0004:00000000       $unwind$Sm3HashInit        0000000000008760     HashInstanceLibSm3:HashInstanceLibSm3.obj
+ 0004:00000000       $unwind$FirmwareVolumeInfoPpiNotifyCallback 0000000000008760     Tcg2Pei:Tcg2Pei.obj
+ 0004:0000000c       $unwind$SHA512_Final       000000000000876c     OpensslLib:sha512.obj
+ 0004:0000000c       $unwind$HashStart          000000000000876c     HashLibBaseCryptoRouterPei:HashLibBaseCryptoRouterPei.obj
+ 0004:0000000c       $unwind$HashUpdate         000000000000876c     HashLibBaseCryptoRouterPei:HashLibBaseCryptoRouterPei.obj
+ 0004:0000000c       $unwind$ProcessLibraryConstructorList 000000000000876c     Tcg2Pei:AutoGen.obj
+ 0004:00000028       $unwind$SHA256_Init        0000000000008788     OpensslLib:sha256.obj
+ 0004:00000028       $unwind$sm3_init           0000000000008788     OpensslLib:sm3.obj
+ 0004:00000028       $unwind$SaveAndDisableInterrupts 0000000000008788     BaseLib:Cpu.obj
+ 0004:00000028       $unwind$PciCf8Read16       0000000000008788     BasePciCf8Lib:PciCf8Lib.obj
+ 0004:00000028       $unwind$PciCf8Read32       0000000000008788     BasePciCf8Lib:PciCf8Lib.obj
+ 0004:00000028       $unwind$PciCf8Read8        0000000000008788     BasePciCf8Lib:PciCf8Lib.obj
+ 0004:00000028       $unwind$BuildGuidHob       0000000000008788     PeiHobLib:HobLib.obj
+ 0004:00000028       $unwind$InternalAllocatePool 0000000000008788     PeiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0004:00000028       $unwind$MicroSecondDelay   0000000000008788     BaseAcpiTimerLib:AcpiTimerLib.obj
+ 0004:00000028       $unwind$Sha384HashInit     0000000000008788     HashInstanceLibSha384:HashInstanceLibSha384.obj
+ 0004:00000028       $unwind$Sha512HashInit     0000000000008788     HashInstanceLibSha512:HashInstanceLibSha512.obj
+ 0004:00000028       $unwind$InternalGetHashInterfaceHob 0000000000008788     HashLibBaseCryptoRouterPei:HashLibBaseCryptoRouterPei.obj
+ 0004:00000028       $unwind$EndofPeiSignalNotifyCallBack 0000000000008788     Tcg2Pei:Tcg2Pei.obj
+ 0004:00000030       $unwind$LogHashEvent       0000000000008790     Tcg2Pei:Tcg2Pei.obj
+ 0004:0000004c       $unwind$HashLogExtendEvent 00000000000087ac     Tcg2Pei:Tcg2Pei.obj
+ 0004:00000064       $unwind$MeasureFvImage     00000000000087c4     Tcg2Pei:Tcg2Pei.obj
+ 0004:00000080       $unwind$PeimEntryMP        00000000000087e0     Tcg2Pei:Tcg2Pei.obj
+ 0004:00000094       $unwind$PeimEntryMA        00000000000087f4     Tcg2Pei:Tcg2Pei.obj
+ 0004:000000ac       $unwind$GetPcdPpiPointer   000000000000880c     PeiPcdLib:PeiPcdLib.obj
+ 0004:000000ac       $unwind$ResetCold          000000000000880c     BaseResetSystemLib:ResetSystemLib.obj
+ 0004:000000ac       $unwind$Sha1HashUpdate     000000000000880c     HashInstanceLibSha1:HashInstanceLibSha1.obj
+ 0004:000000ac       $unwind$Sha256HashUpdate   000000000000880c     HashInstanceLibSha256:HashInstanceLibSha256.obj
+ 0004:000000ac       $unwind$Sha384HashUpdate   000000000000880c     HashInstanceLibSha384:HashInstanceLibSha384.obj
+ 0004:000000ac       $unwind$Sha512HashUpdate   000000000000880c     HashInstanceLibSha512:HashInstanceLibSha512.obj
+ 0004:000000ac       $unwind$Sm3HashUpdate      000000000000880c     HashInstanceLibSm3:HashInstanceLibSm3.obj
+ 0004:000000b4       $unwind$GetFirstGuidHob    0000000000008814     PeiHobLib:HobLib.obj
+ 0004:000000b4       $unwind$InternalPeiCreateHob 0000000000008814     PeiHobLib:HobLib.obj
+ 0004:000000b4       $unwind$AllocatePool       0000000000008814     PeiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0004:000000bc       $unwind$InternalReallocatePool 000000000000881c     PeiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0004:000000bc       $unwind$RegisterHashInterfaceLib 000000000000881c     HashLibBaseCryptoRouterPei:HashLibBaseCryptoRouterPei.obj
+ 0004:000000bc       $unwind$CopyAuthSessionCommand 000000000000881c     Tpm2CommandLib:Tpm2Help.obj
+ 0004:000000d0       $unwind$PeiServicesLocatePpi 0000000000008830     PeiServicesLib:PeiServicesLib.obj
+ 0004:000000e0       $unwind$PeiServicesAllocatePages 0000000000008840     PeiServicesLib:PeiServicesLib.obj
+ 0004:000000ec       $unwind$Tpm2SubmitCommand  000000000000884c     Tpm2DeviceLibDTpm:Tpm2DeviceLibDTpm.obj
+ 0004:00000100       $unwind$SHA512_Update      0000000000008860     OpensslLib:sha512.obj
+ 0004:00000100       $unwind$sm3_final          0000000000008860     OpensslLib:sm3.obj
+ 0004:00000100       $unwind$PtpCrbWaitRegisterBits 0000000000008860     Tpm2DeviceLibDTpm:Tpm2Ptp.obj
+ 0004:00000100       $unwind$TisPcWaitRegisterBits 0000000000008860     Tpm2DeviceLibDTpm:Tpm2Tis.obj
+ 0004:00000118       $unwind$PtpCrbTpmCommand   0000000000008878     Tpm2DeviceLibDTpm:Tpm2Ptp.obj
+ 0004:00000130       $unwind$TisPcReadBurstCount 0000000000008890     Tpm2DeviceLibDTpm:Tpm2Tis.obj
+ 0004:00000144       $unwind$Tpm2TisTpmCommand  00000000000088a4     Tpm2DeviceLibDTpm:Tpm2Tis.obj
+ 0004:0000015c       $unwind$Tpm2PcrExtend      00000000000088bc     Tpm2CommandLib:Tpm2Integrity.obj
+ 0004:0000017c       $unwind$Tpm2PcrRead        00000000000088dc     Tpm2CommandLib:Tpm2Integrity.obj
+ 0004:00000198       $unwind$Tpm2PcrAllocate    00000000000088f8     Tpm2CommandLib:Tpm2Integrity.obj
+ 0004:000001b4       $unwind$Tpm2PcrAllocateBanks 0000000000008914     Tpm2CommandLib:Tpm2Integrity.obj
+ 0004:000001c4       $unwind$Tpm2PcrReadForActiveBank 0000000000008924     Tpm2CommandLib:Tpm2Integrity.obj
+ 0004:000001dc       $unwind$CopyDigestListToBuffer 000000000000893c     Tpm2CommandLib:Tpm2Help.obj
+ 0004:000001f8       $unwind$Tpm2Startup        0000000000008958     Tpm2CommandLib:Tpm2Startup.obj
+ 0004:00000200       $unwind$Tpm2GetCapability  0000000000008960     Tpm2CommandLib:Tpm2Capability.obj
+ 0004:00000210       $unwind$Tpm2GetCapabilityPcrs 0000000000008970     Tpm2CommandLib:Tpm2Capability.obj
+ 0004:0000022c       $unwind$Tpm2GetCapabilitySupportedAndActivePcrs 000000000000898c     Tpm2CommandLib:Tpm2Capability.obj
+ 0004:00000244       $unwind$InternalCreateHashInterfaceHob 00000000000089a4     HashLibBaseCryptoRouterPei:HashLibBaseCryptoRouterPei.obj
+ 0004:00000254       $unwind$HashCompleteAndExtend 00000000000089b4     HashLibBaseCryptoRouterPei:HashLibBaseCryptoRouterPei.obj
+ 0004:00000274       $unwind$InternalReportStatusCode 00000000000089d4     PeiReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0004:00000274       $unwind$Sha1HashFinal      00000000000089d4     HashInstanceLibSha1:HashInstanceLibSha1.obj
+ 0004:00000274       $unwind$Sha256HashFinal    00000000000089d4     HashInstanceLibSha256:HashInstanceLibSha256.obj
+ 0004:00000274       $unwind$Sm3HashFinal       00000000000089d4     HashInstanceLibSm3:HashInstanceLibSm3.obj
+ 0004:0000027c       $unwind$Sha384HashFinal    00000000000089dc     HashInstanceLibSha384:HashInstanceLibSha384.obj
+ 0004:00000284       $unwind$Sha512HashFinal    00000000000089e4     HashInstanceLibSha512:HashInstanceLibSha512.obj
+ 0004:0000028c       $unwind$InternalAcpiDelay  00000000000089ec     BaseAcpiTimerLib:AcpiTimerLib.obj
+ 0004:0000029c       $unwind$SHA1_Final         00000000000089fc     OpensslLib:sha1dgst.obj
+ 0004:0000029c       $unwind$SHA1_Update        00000000000089fc     OpensslLib:sha1dgst.obj
+ 0004:0000029c       $unwind$SHA256_Final       00000000000089fc     OpensslLib:sha256.obj
+ 0004:0000029c       $unwind$SHA256_Update      00000000000089fc     OpensslLib:sha256.obj
+ 0004:0000029c       $unwind$sm3_update         00000000000089fc     OpensslLib:sm3.obj
+ 0004:000002b4       $unwind$sha1_block_data_order 0000000000008a14     OpensslLib:sha1dgst.obj
+ 0004:000002d0       $unwind$sha256_block_data_order 0000000000008a30     OpensslLib:sha256.obj
+ 0004:000002e8       $unwind$sha512_block_data_order 0000000000008a48     OpensslLib:sha512.obj
+ 0004:00000300       $unwind$sm3_block_data_order 0000000000008a60     OpensslLib:sm3.obj

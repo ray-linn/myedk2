@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_DXE_DEPEX -o d:\edk2\edk2\Build\OvmfX64\RELEASE_VS2019\FV\Ffs\8657015b-ea43-440d-949a-af3be365c0fcIoMmuDxe\8657015b-ea43-440d-949a-af3be365c0fcSEC1.1.dpx d:\edk2\edk2\Build\OvmfX64\RELEASE_VS2019\X64\OvmfPkg\IoMmuDxe\IoMmuDxe\OUTPUT\IoMmuDxe.depex

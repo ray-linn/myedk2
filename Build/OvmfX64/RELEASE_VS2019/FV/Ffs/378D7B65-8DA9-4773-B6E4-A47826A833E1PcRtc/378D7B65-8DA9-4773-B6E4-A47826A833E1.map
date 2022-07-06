@@ -1,0 +1,144 @@
+ PcRtc
+
+ Timestamp is 61ee703f (Mon Jan 24 17:24:15 2022)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000094H .text                   CODE
+ 0001:00000094 00001ab9H .text$mn                CODE
+ 0002:00000000 000000b0H .data                   DATA
+ 0002:000000b0 000000b0H .rdata                  DATA
+ 0002:00000160 000000a0H .bss                    DATA
+ 0002:00000200 00000024H .rdata$voltmd           DATA
+ 0002:00000224 000000a8H .rdata$zzzdbg           DATA
+ 0003:00000000 00000120H .pdata                  DATA
+ 0004:00000000 000000e0H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __guard_longjmp_table      0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points_count 0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_count         0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map_count    0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_table          0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table   0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_count          0000000000000000     <absolute>
+ 0000:00000000       __arm64x_native_entrypoint 0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_count      0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_table      0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map          0000000000000000     <absolute>
+ 0000:00000000       __enclave_config           0000000000000000     <absolute>
+ 0000:00000000       __dynamic_value_reloc_table 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata_count 0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table_size 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat     0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat_copy 0000000000000000     <absolute>
+ 0000:00000000       __AbsoluteZero             0000000000000000     <absolute>
+ 0000:00000000       __guard_flags              0000000000000000     <absolute>
+ 0000:00000000       __guard_check_icall_a64n_fptr 0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_table         0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_count      0000000000000000     <absolute>
+ 0001:00000000       InternalMemCopyMem         0000000000000260     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000040       InternalMemZeroMem         00000000000002a0     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00000060       CpuPause                   00000000000002c0     BaseLib:CpuPause.obj
+ 0001:00000070       EnableInterrupts           00000000000002d0     BaseLib:EnableInterrupts.obj
+ 0001:00000080       DisableInterrupts          00000000000002e0     BaseLib:DisableInterrupts.obj
+ 0001:00000090       AsmReadEflags              00000000000002f0     BaseLib:ReadEflags.obj
+ 0001:00000094       _ModuleEntryPoint          00000000000002f4 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:000000bc       ProcessLibraryConstructorList 000000000000031c f   PcRtc:AutoGen.obj
+ 0001:00000258       ProcessLibraryDestructorList 00000000000004b8 f   PcRtc:AutoGen.obj
+ 0001:000002a8       ProcessModuleEntryPointList 0000000000000508 f   PcRtc:AutoGen.obj
+ 0001:000003e4       PcRtcEfiGetTime            0000000000000644 f   PcRtc:PcRtcEntry.obj
+ 0001:000003f0       PcRtcEfiSetTime            0000000000000650 f   PcRtc:PcRtcEntry.obj
+ 0001:000003fc       PcRtcEfiGetWakeupTime      000000000000065c f   PcRtc:PcRtcEntry.obj
+ 0001:00000408       PcRtcEfiSetWakeupTime      0000000000000668 f   PcRtc:PcRtcEntry.obj
+ 0001:00000410       PcRtcInit                  0000000000000670 f   PcRtc:PcRtc.obj
+ 0001:000007b8       PcRtcGetTime               0000000000000a18 f   PcRtc:PcRtc.obj
+ 0001:0000095c       PcRtcSetTime               0000000000000bbc f   PcRtc:PcRtc.obj
+ 0001:00000c44       PcRtcGetWakeupTime         0000000000000ea4 f   PcRtc:PcRtc.obj
+ 0001:00000e60       PcRtcSetWakeupTime         00000000000010c0 f   PcRtc:PcRtc.obj
+ 0001:00001150       ConvertRtcTimeToEfiTime    00000000000013b0 f   PcRtc:PcRtc.obj
+ 0001:00001314       RtcWaitToUpdate            0000000000001574 f   PcRtc:PcRtc.obj
+ 0001:000013a8       RtcTimeFieldsValid         0000000000001608 f   PcRtc:PcRtc.obj
+ 0001:00001490       ConvertEfiTimeToRtcTime    00000000000016f0 f   PcRtc:PcRtc.obj
+ 0001:000015b0       CompareHMS                 0000000000001810 f   PcRtc:PcRtc.obj
+ 0001:000015e8       IsWithinOneDay             0000000000001848 f   PcRtc:PcRtc.obj
+ 0001:0000172c       PcRtcAcpiTableChangeCallback 000000000000198c f   PcRtc:PcRtc.obj
+ 0001:000017e8       RuntimeLibExitBootServicesEvent 0000000000001a48 f   UefiRuntimeLib:RuntimeLib.obj
+ 0001:000017f0       RuntimeLibVirtualNotifyEvent 0000000000001a50 f   UefiRuntimeLib:RuntimeLib.obj
+ 0001:00001804       InternalAcpiDelay          0000000000001a64 f   DxeAcpiTimerLib:AcpiTimerLib.obj
+ 0001:00001864       ScanTableInSDT             0000000000001ac4 f   UefiLib:Acpi.obj
+ 0001:00001900       LocateAcpiTableInAcpiConfigurationTable 0000000000001b60 f   UefiLib:Acpi.obj
+ 0001:000019a8       InternalGetReportStatusCode 0000000000001c08 f   RuntimeDxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0001:00001a08       ReportStatusCodeLibVirtualAddressChange 0000000000001c68 f   RuntimeDxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0001:00001a30       ReportStatusCodeLibExitBootServices 0000000000001c90 f   RuntimeDxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0001:00001a48       ReportStatusCode           0000000000001ca8 f   RuntimeDxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0001:00001a8c       GetPcdProtocol             0000000000001cec f   DxePcdLib:DxePcdLib.obj
+ 0001:00001ac8       PciCf8Read32               0000000000001d28 f   BasePciCf8Lib:PciCf8Lib.obj
+ 0001:00001b2c       SaveAndDisableInterrupts   0000000000001d8c f   BaseLib:Cpu.obj
+ 0002:00000000       gEfiStatusCodeRuntimeProtocolGuid 0000000000001dc0     PcRtc:AutoGen.obj
+ 0002:00000010       gPcdProtocolGuid           0000000000001dd0     PcRtc:AutoGen.obj
+ 0002:00000020       gEfiAcpi10TableGuid        0000000000001de0     PcRtc:AutoGen.obj
+ 0002:00000030       gEfiAcpiTableGuid          0000000000001df0     PcRtc:AutoGen.obj
+ 0002:00000040       gEfiDevicePathUtilitiesProtocolGuid 0000000000001e00     PcRtc:AutoGen.obj
+ 0002:00000050       gEfiRealTimeClockArchProtocolGuid 0000000000001e10     PcRtc:AutoGen.obj
+ 0002:00000060       gEfiEventExitBootServicesGuid 0000000000001e20     PcRtc:AutoGen.obj
+ 0002:00000070       gEfiAcpi20TableGuid        0000000000001e30     PcRtc:AutoGen.obj
+ 0002:00000080       gEfiEventVirtualAddressChangeGuid 0000000000001e40     PcRtc:AutoGen.obj
+ 0002:00000090       gEfiCallerIdGuid           0000000000001e50     PcRtc:AutoGen.obj
+ 0002:000000a0       mTimeZoneVariableName      0000000000001e60     PcRtc:PcRtc.obj
+ 0002:000000b0       ??_C@_1BC@MKOBNGFO@?$AAR?$AAT?$AAC?$AAA?$AAL?$AAA?$AAR?$AAM@ 0000000000001e70     PcRtc:PcRtc.obj
+ 0002:000000d0       mDayOfMonth                0000000000001e90     PcRtc:PcRtc.obj
+ 0002:00000160       mHandle                    0000000000001f20     PcRtc:PcRtcEntry.obj
+ 0002:00000168       gST                        0000000000001f28     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000170       gBS                        0000000000001f30     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000178       gRT                        0000000000001f38     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0002:00000180       mDevicePathLibDevicePathUtilities 0000000000001f40     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:00000188       mEfiAtRuntime              0000000000001f48     UefiRuntimeLib:RuntimeLib.obj
+ 0002:00000189       mHaveExitedBootServices    0000000000001f49     RuntimeDxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0002:00000190       mReportStatusCodeLibStatusCodeProtocol 0000000000001f50     RuntimeDxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0002:00000198       mPcd                       0000000000001f58     DxePcdLib:DxePcdLib.obj
+ 0002:000001a8       mReportStatusCodeLibVirtualAddressChangeEvent 0000000000001f68     <common>
+ 0002:000001b0       mReportStatusCodeLibExitBootServicesEvent 0000000000001f70     <common>
+ 0002:000001b8       mEfiVirtualNotifyEvent     0000000000001f78     <common>
+ 0002:000001c0       mInternalRT                0000000000001f80     <common>
+ 0002:000001c8       mEfiExitBootServicesEvent  0000000000001f88     <common>
+ 0002:000001e0       mModuleGlobal              0000000000001fa0     <common>
+ 0002:00000200       __volatile_metadata        0000000000001fc0     <linker-defined>
+
+ entry point at        0001:00000094
+
+ Static symbols
+
+ 0001:0000001a       InternalMemCopyMem.0       000000000000027a     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:0000002a       @CopyBackward              000000000000028a     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000033       @CopyBytes                 0000000000000293     BaseMemoryLibRepStr:CopyMem.obj
+ 0002:000001a0       mRunningOnQ35              0000000000001f60     DxePciLibI440FxQ35:PciLib.obj
+ 0002:000001a4       mAcpiTimerIoAddr           0000000000001f64     DxeAcpiTimerLib:DxeAcpiTimerLib.obj
+ 0004:00000000       $unwind$InternalGetReportStatusCode 00000000000021c0     RuntimeDxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0004:00000000       $unwind$SaveAndDisableInterrupts 00000000000021c0     BaseLib:Cpu.obj
+ 0004:00000000       $unwind$PciCf8Read32       00000000000021c0     BasePciCf8Lib:PciCf8Lib.obj
+ 0004:00000000       $unwind$_ModuleEntryPoint  00000000000021c0     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0004:00000008       $unwind$ProcessLibraryConstructorList 00000000000021c8     PcRtc:AutoGen.obj
+ 0004:00000014       $unwind$ReportStatusCodeLibExitBootServices 00000000000021d4     RuntimeDxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0004:00000014       $unwind$ReportStatusCodeLibVirtualAddressChange 00000000000021d4     RuntimeDxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0004:00000014       $unwind$GetPcdProtocol     00000000000021d4     DxePcdLib:DxePcdLib.obj
+ 0004:00000014       $unwind$ProcessLibraryDestructorList 00000000000021d4     PcRtc:AutoGen.obj
+ 0004:0000001c       $unwind$ProcessModuleEntryPointList 00000000000021dc     PcRtc:AutoGen.obj
+ 0004:00000028       $unwind$PcRtcInit          00000000000021e8     PcRtc:PcRtc.obj
+ 0004:0000003c       $unwind$PcRtcGetTime       00000000000021fc     PcRtc:PcRtc.obj
+ 0004:00000050       $unwind$PcRtcSetTime       0000000000002210     PcRtc:PcRtc.obj
+ 0004:00000068       $unwind$PcRtcGetWakeupTime 0000000000002228     PcRtc:PcRtc.obj
+ 0004:0000007c       $unwind$PcRtcSetWakeupTime 000000000000223c     PcRtc:PcRtc.obj
+ 0004:00000094       $unwind$ConvertEfiTimeToRtcTime 0000000000002254     PcRtc:PcRtc.obj
+ 0004:00000094       $unwind$ConvertRtcTimeToEfiTime 0000000000002254     PcRtc:PcRtc.obj
+ 0004:0000009c       $unwind$IsWithinOneDay     000000000000225c     PcRtc:PcRtc.obj
+ 0004:0000009c       $unwind$RtcWaitToUpdate    000000000000225c     PcRtc:PcRtc.obj
+ 0004:000000a8       $unwind$ReportStatusCode   0000000000002268     RuntimeDxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0004:000000a8       $unwind$PcRtcAcpiTableChangeCallback 0000000000002268     PcRtc:PcRtc.obj
+ 0004:000000b0       $unwind$InternalAcpiDelay  0000000000002270     DxeAcpiTimerLib:AcpiTimerLib.obj
+ 0004:000000c0       $unwind$ScanTableInSDT     0000000000002280     UefiLib:Acpi.obj
+ 0004:000000d4       $unwind$LocateAcpiTableInAcpiConfigurationTable 0000000000002294     UefiLib:Acpi.obj

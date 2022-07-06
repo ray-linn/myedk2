@@ -1,0 +1,523 @@
+ SecMain
+
+ Timestamp is 61ee7025 (Mon Jan 24 17:23:49 2022)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000d68H .text                   CODE
+ 0001:00000d68 00009090H .text$mn                CODE
+ 0002:00000000 00000006H .rodata                 CODE
+ 0003:00000000 00000420H .data                   DATA
+ 0003:00000420 00001090H .rdata                  DATA
+ 0003:000014b0 00001090H .bss                    DATA
+ 0003:00002540 000000e4H .rdata$voltmd           DATA
+ 0003:00002624 000000b8H .rdata$zzzdbg           DATA
+ 0004:00000000 000004f8H .pdata                  DATA
+ 0005:00000000 000003e0H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __arm64x_redirection_metadata 0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points_count 0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_count          0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_count      0000000000000000     <absolute>
+ 0000:00000000       __dynamic_value_reloc_table 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat     0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_table      0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat_copy 0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_count         0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_table          0000000000000000     <absolute>
+ 0000:00000000       __AbsoluteZero             0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table   0000000000000000     <absolute>
+ 0000:00000000       __guard_check_icall_a64n_fptr 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map          0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map_count    0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table_size 0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_table         0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata_count 0000000000000000     <absolute>
+ 0000:00000000       __enclave_config           0000000000000000     <absolute>
+ 0000:00000000       __guard_flags              0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_count      0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_table      0000000000000000     <absolute>
+ 0000:00000000       __arm64x_native_entrypoint 0000000000000000     <absolute>
+ 0000:00000000       __ImageBase                0000000000000000     <linker-defined>
+ 0001:00000000       _ModuleEntryPoint          00000000000002c0     SecMain:SecEntry.obj
+ 0001:00000030       InitializeFloatingPointUnits 00000000000002f0     BaseUefiCpuLib:InitializeFpu.obj
+ 0001:00000050       InternalMemCopyMem         0000000000000310     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000090       InternalMemZeroMem         0000000000000350     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:000000b0       InternalMemSetMem          0000000000000370     BaseMemoryLibRepStr:SetMem.obj
+ 0001:000000d0       InternalMemSetMem64        0000000000000390     BaseMemoryLibRepStr:SetMem64.obj
+ 0001:000000f0       InternalMemSetMem32        00000000000003b0     BaseMemoryLibRepStr:SetMem32.obj
+ 0001:00000110       AsmEnableCache             00000000000003d0     BaseLib:EnableCache.obj
+ 0001:00000130       SetJump                    00000000000003f0     BaseLib:SetJump.obj
+ 0001:00000200       AsmVmgExit                 00000000000004c0     BaseLib:VmgExit.obj
+ 0001:00000210       AsmRmpAdjust               00000000000004d0     BaseLib:RmpAdjust.obj
+ 0001:00000220       AsmPvalidate               00000000000004e0     BaseLib:Pvalidate.obj
+ 0001:00000240       AsmCpuid                   0000000000000500     BaseLib:CpuId.obj
+ 0001:00000270       AsmCpuidEx                 0000000000000530     BaseLib:CpuIdEx.obj
+ 0001:000002a0       InternalX86ReadIdtr        0000000000000560     BaseLib:ReadIdtr.obj
+ 0001:000002b0       InternalX86WriteIdtr       0000000000000570     BaseLib:WriteIdtr.obj
+ 0001:000002c0       InternalLongJump           0000000000000580     BaseLib:LongJump.obj
+ 0001:00000370       CpuPause                   0000000000000630     BaseLib:CpuPause.obj
+ 0001:00000380       EnableInterrupts           0000000000000640     BaseLib:EnableInterrupts.obj
+ 0001:00000390       DisableInterrupts          0000000000000650     BaseLib:DisableInterrupts.obj
+ 0001:000003a0       AsmReadEflags              0000000000000660     BaseLib:ReadEflags.obj
+ 0001:000003b0       AsmInterruptHandle         0000000000000670     PeCoffExtraActionLib:IntHandler.obj
+ 0001:000003c4       Exception0Handle           0000000000000684     SecPeiDebugAgentLib:AsmFuncs.obj
+ 0001:00000540       TimerInterruptHandle       0000000000000800     SecPeiDebugAgentLib:AsmFuncs.obj
+ 0001:00000901       CommonInterruptEntry       0000000000000bc1     SecPeiCpuExceptionHandlerLib:ExceptionHandlerAsm.obj
+ 0001:00000ad7       AsmGetTemplateAddressMap   0000000000000d97     SecPeiCpuExceptionHandlerLib:ExceptionHandlerAsm.obj
+ 0001:00000afb       AsmVectorNumFixup          0000000000000dbb     SecPeiCpuExceptionHandlerLib:ExceptionHandlerAsm.obj
+ 0001:00000b10       InternalMemCompareMem      0000000000000dd0     BaseMemoryLibRepStr:CompareMem.obj
+ 0001:00000b30       AsmWriteDr2                0000000000000df0     BaseLib:WriteDr2.obj
+ 0001:00000b40       AsmWriteDr3                0000000000000e00     BaseLib:WriteDr3.obj
+ 0001:00000b50       AsmWriteCr4                0000000000000e10     BaseLib:WriteCr4.obj
+ 0001:00000b60       AsmWriteDr1                0000000000000e20     BaseLib:WriteDr1.obj
+ 0001:00000b70       AsmReadDr2                 0000000000000e30     BaseLib:ReadDr2.obj
+ 0001:00000b80       AsmWriteDr7                0000000000000e40     BaseLib:WriteDr7.obj
+ 0001:00000b90       AsmReadDr0                 0000000000000e50     BaseLib:ReadDr0.obj
+ 0001:00000ba0       AsmWriteDr0                0000000000000e60     BaseLib:WriteDr0.obj
+ 0001:00000bb0       AsmReadDr7                 0000000000000e70     BaseLib:ReadDr7.obj
+ 0001:00000bc0       AsmReadDr1                 0000000000000e80     BaseLib:ReadDr1.obj
+ 0001:00000bd0       AsmReadDr3                 0000000000000e90     BaseLib:ReadDr3.obj
+ 0001:00000be0       AsmReadCr4                 0000000000000ea0     BaseLib:ReadCr4.obj
+ 0001:00000bf0       AsmReadCs                  0000000000000eb0     BaseLib:ReadCs.obj
+ 0001:00000c00       AsmWriteTr                 0000000000000ec0     BaseLib:WriteTr.obj
+ 0001:00000c10       AsmXGetBv                  0000000000000ed0     BaseLib:XGetBv.obj
+ 0001:00000c20       AsmReadCr3                 0000000000000ee0     BaseLib:ReadCr3.obj
+ 0001:00000c30       InternalX86WriteGdtr       0000000000000ef0     BaseLib:WriteGdtr.obj
+ 0001:00000c40       InternalX86ReadGdtr        0000000000000f00     BaseLib:ReadGdtr.obj
+ 0001:00000c50       SevNoRepIo                 0000000000000f10     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000c90       IoReadFifo8                0000000000000f50     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000cb2       IoReadFifo16               0000000000000f72     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000cd8       IoReadFifo32               0000000000000f98     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000cfb       IoWriteFifo8               0000000000000fbb     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000d1d       IoWriteFifo16              0000000000000fdd     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000d43       IoWriteFifo32              0000000000001003     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000d68       FindFfsSectionInstance     0000000000001028 f   SecMain:SecMain.obj
+ 0001:00000ddc       FindFfsFileAndSection      000000000000109c f   SecMain:SecMain.obj
+ 0001:00000e8c       DecompressMemFvs           000000000000114c f   SecMain:SecMain.obj
+ 0001:00001024       FindAndReportEntryPoints   00000000000012e4 f   SecMain:SecMain.obj
+ 0001:00001208       SecCoreStartupWithStack    00000000000014c8 f   SecMain:SecMain.obj
+ 0001:0000151c       SecStartupPhase2           00000000000017dc f   SecMain:SecMain.obj
+ 0001:00001574       TemporaryRamMigration      0000000000001834 f   SecMain:SecMain.obj
+ 0001:00001684       ProcessLibraryConstructorList 0000000000001944 f   SecMain:AutoGen.obj
+ 0001:0000185c       SevEsProtocolFailure       0000000000001b1c f   SecMain:AmdSev.obj
+ 0001:000018a4       SnpPageStateFailureTerminate 0000000000001b64 f   SecMemEncryptSevLib:SnpPageStateChangeInternal.obj
+ 0001:000019a8       InternalSetPageState       0000000000001c68 f   SecMemEncryptSevLib:SnpPageStateChangeInternal.obj
+ 0001:00001be4       LocalApicBaseAddressMsrSupported 0000000000001ea4 f   BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0001:00001c20       GetLocalApicBaseAddress    0000000000001ee0 f   BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0001:00001c60       ReadLocalApicReg           0000000000001f20 f   BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0001:00001c98       WriteLocalApicReg          0000000000001f58 f   BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0001:00001ce0       GetApicMode                0000000000001fa0 f   BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0001:00001d10       GetApicId                  0000000000001fd0 f   BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0001:00001dcc       InitializeApicTimer        000000000000208c f   BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0001:00001e88       SaveAndDisableInterrupts   0000000000002148 f   BaseLib:Cpu.obj
+ 0001:00001eac       InternalAssertJumpBuffer   000000000000216c f   BaseLib:SetJump.obj
+ 0001:00001eac       SzFree                     000000000000216c f   LzmaDecompressLib:LzmaDecompress.obj
+ 0001:00001eb0       InternalAcpiGetTimerTick   0000000000002170 f   BaseRomAcpiTimerLib:BaseRomAcpiTimerLib.obj
+ 0001:00001f04       InternalAcpiDelay          00000000000021c4 f   BaseRomAcpiTimerLib:AcpiTimerLib.obj
+ 0001:00001f5c       MicroSecondDelay           000000000000221c f   BaseRomAcpiTimerLib:AcpiTimerLib.obj
+ 0001:00001f90       PeCoffLoaderExtraActionCommon 0000000000002250 f   PeCoffExtraActionLib:PeCoffExtraActionLib.obj
+ 0001:0000212c       PeCoffLoaderGetEntryPoint  00000000000023ec f   BasePeCoffGetEntryPointLib:PeCoffGetEntryPoint.obj
+ 0001:00002190       PeCoffLoaderGetPdbPointer  0000000000002450 f   BasePeCoffGetEntryPointLib:PeCoffGetEntryPoint.obj
+ 0001:000022b4       PeCoffSearchImageBase      0000000000002574 f   BasePeCoffGetEntryPointLib:PeCoffGetEntryPoint.obj
+ 0001:00002340       GetExtractGuidedSectionHandlerInfo 0000000000002600 f   BaseExtractGuidedSectionLib:BaseExtractGuidedSectionLib.obj
+ 0001:00002384       ExtractGuidedSectionGetInfo 0000000000002644 f   BaseExtractGuidedSectionLib:BaseExtractGuidedSectionLib.obj
+ 0001:00002448       ExtractGuidedSectionDecode 0000000000002708 f   BaseExtractGuidedSectionLib:BaseExtractGuidedSectionLib.obj
+ 0001:0000250c       DebugReadBreakSymbol       00000000000027cc f   SecPeiDebugAgentLib:SecPeiDebugAgentLib.obj
+ 0001:0000267c       GetLocationSavedMailboxPointerInIdtEntry 000000000000293c f   SecPeiDebugAgentLib:SecPeiDebugAgentLib.obj
+ 0001:000026f0       SetLocationSavedMailboxPointerInIdtEntry 00000000000029b0 f   SecPeiDebugAgentLib:SecPeiDebugAgentLib.obj
+ 0001:00002730       GetMailboxLocationFromHob  00000000000029f0 f   SecPeiDebugAgentLib:SecPeiDebugAgentLib.obj
+ 0001:000027ac       GetMailboxPointer          0000000000002a6c f   SecPeiDebugAgentLib:SecPeiDebugAgentLib.obj
+ 0001:00002840       DebugAgentCallbackMemoryDiscoveredPpi 0000000000002b00 f   SecPeiDebugAgentLib:SecPeiDebugAgentLib.obj
+ 0001:000028e8       InitializeDebugAgent       0000000000002ba8 f   SecPeiDebugAgentLib:SecPeiDebugAgentLib.obj
+ 0001:00002da4       InitializeDebugAgentPhase2 0000000000003064 f   SecPeiDebugAgentLib:SecPeiDebugAgentLib.obj
+ 0001:00002e28       InitializeDebugTimer       00000000000030e8 f   SecPeiDebugAgentLib:DebugTimer.obj
+ 0001:00002ee8       SaveAndSetDebugTimerInterrupt 00000000000031a8 f   SecPeiDebugAgentLib:DebugTimer.obj
+ 0001:00002f64       IsDebugTimerTimeout        0000000000003224 f   SecPeiDebugAgentLib:DebugTimer.obj
+ 0001:00002fb8       InitializeDebugIdt         0000000000003278 f   SecPeiDebugAgentLib:ArchDebugSupport.obj
+ 0001:00003090       CalculateCrc16             0000000000003350 f   SecPeiDebugAgentLib:DebugAgent.obj
+ 0001:000030f4       TriggerSoftInterrupt       00000000000033b4 f   SecPeiDebugAgentLib:DebugAgent.obj
+ 0001:00003148       UpdateMailboxContent       0000000000003408 f   SecPeiDebugAgentLib:DebugAgent.obj
+ 0001:00003298       DebugAgentReadBuffer       0000000000003558 f   SecPeiDebugAgentLib:DebugAgent.obj
+ 0001:000033ac       SetDebugFlag               000000000000366c f   SecPeiDebugAgentLib:DebugAgent.obj
+ 0001:00003408       GetDebugFlag               00000000000036c8 f   SecPeiDebugAgentLib:DebugAgent.obj
+ 0001:00003448       SendDebugMsgPacket         0000000000003708 f   SecPeiDebugAgentLib:DebugAgent.obj
+ 0001:000034c0       DebugAgentMsgPrint         0000000000003780 f   SecPeiDebugAgentLib:DebugAgent.obj
+ 0001:00003540       DebugAgentDataMsgPrint     0000000000003800 f   SecPeiDebugAgentLib:DebugAgent.obj
+ 0001:00003638       ArchReadFxStatOffset       00000000000038f8 f   SecPeiDebugAgentLib:DebugAgent.obj
+ 0001:00003730       SendPacketWithoutData      00000000000039f0 f   SecPeiDebugAgentLib:DebugAgent.obj
+ 0001:000037a0       SendAckPacket              0000000000003a60 f   SecPeiDebugAgentLib:DebugAgent.obj
+ 0001:0000382c       DecompressDataInPlace      0000000000003aec f   SecPeiDebugAgentLib:DebugAgent.obj
+ 0001:000038ec       ReceivePacket              0000000000003bac f   SecPeiDebugAgentLib:DebugAgent.obj
+ 0001:00003a6c       SendCommandAndWaitForAckOK 0000000000003d2c f   SecPeiDebugAgentLib:DebugAgent.obj
+ 0001:00003b98       GetBreakCause              0000000000003e58 f   SecPeiDebugAgentLib:DebugAgent.obj
+ 0001:00003c6c       CopyMemByWidth             0000000000003f2c f   SecPeiDebugAgentLib:DebugAgent.obj
+ 0001:00003cf4       CompressData               0000000000003fb4 f   SecPeiDebugAgentLib:DebugAgent.obj
+ 0001:00003e24       ReadMemoryAndSendResponsePacket 00000000000040e4 f   SecPeiDebugAgentLib:DebugAgent.obj
+ 0001:0000404c       AttachHost                 000000000000430c f   SecPeiDebugAgentLib:DebugAgent.obj
+ 0001:0000415c       SendBreakPacketToHost      000000000000441c f   SecPeiDebugAgentLib:DebugAgent.obj
+ 0001:000041f0       CommandCommunication       00000000000044b0 f   SecPeiDebugAgentLib:DebugAgent.obj
+ 0001:00004c78       InterruptProcess           0000000000004f38 f   SecPeiDebugAgentLib:DebugAgent.obj
+ 0001:00004f80       CommonExceptionHandler     0000000000005240 f   SecPeiCpuExceptionHandlerLib:SecPeiCpuException.obj
+ 0001:00005048       InitializeCpuExceptionHandlers 0000000000005308 f   SecPeiCpuExceptionHandlerLib:SecPeiCpuException.obj
+ 0001:000050dc       DumpCpuContext             000000000000539c f   SecPeiCpuExceptionHandlerLib:ArchExceptionHandler.obj
+ 0001:000053c0       InternalPrintMessage       0000000000005680 f   SecPeiCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0001:00005444       DumpModuleImageInfo        0000000000005704 f   SecPeiCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0001:000054e8       LzmaGuidedSectionGetInfo   00000000000057a8 f   LzmaDecompressLib:GuidedSectionExtraction.obj
+ 0001:000055e4       LzmaGuidedSectionExtraction 00000000000058a4 f   LzmaDecompressLib:GuidedSectionExtraction.obj
+ 0001:000056b0       SzAlloc                    0000000000005970 f   LzmaDecompressLib:LzmaDecompress.obj
+ 0001:000056d0       LzmaUefiDecompress         0000000000005990 f   LzmaDecompressLib:LzmaDecompress.obj
+ 0001:00006a70       LzmaDec_DecodeToDic        0000000000006d30 f   LzmaDecompressLib:LzmaDec.obj
+ 0001:00006d50       LzmaProps_Decode           0000000000007010 f   LzmaDecompressLib:LzmaDec.obj
+ 0001:00006e48       AllocatePool               0000000000007108 f   PeiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00006e8c       InternalPeiCreateHob       000000000000714c f   PeiHobLib:HobLib.obj
+ 0001:00006ed0       BuildGuidDataHob           0000000000007190 f   PeiHobLib:HobLib.obj
+ 0001:00006f24       VmgExit                    00000000000071e4 f   SecVmgExitLib:VmgExitLib.obj
+ 0001:00006fc4       VmgExitHandleVc            0000000000007284 f   SecVmgExitLib:SecVmgExitVcHandler.obj
+ 0001:00008908       InternalVmgExitHandleVc    0000000000008bc8 f   SecVmgExitLib:VmgExitVcHandler.obj
+ 0001:00008bb8       InternalMemEncryptSevGetAddressRangeState 0000000000008e78 f   SecMemEncryptSevLib:VirtualMemory.obj
+ 0001:00008d6c       PeiServicesAllocatePages   000000000000902c f   PeiServicesLib:PeiServicesLib.obj
+ 0001:00008dac       StrnLenS                   000000000000906c f   BaseLib:SafeString.obj
+ 0001:00008dd8       AsciiSPrint                0000000000009098 f   BasePrintLib:PrintLib.obj
+ 0001:00008e04       BasePrintLibFillBuffer     00000000000090c4 f   BasePrintLib:PrintLibInternal.obj
+ 0001:00008e38       BasePrintLibSPrintMarker   00000000000090f8 f   BasePrintLib:PrintLibInternal.obj
+ 0001:00009bd4       BasePrintLibSPrint         0000000000009e94 f   BasePrintLib:PrintLibInternal.obj
+ 0001:00009bf8       DebugPortInitialize        0000000000009eb8 f   DebugCommunicationLibSerialPort:DebugCommunicationLibSerialPort.obj
+ 0001:00009c5c       DebugPortWriteBuffer       0000000000009f1c f   DebugCommunicationLibSerialPort:DebugCommunicationLibSerialPort.obj
+ 0001:00009c98       ResetCold                  0000000000009f58 f   BaseResetSystemLib:ResetSystemLib.obj
+ 0001:00009cd0       PciCf8Read8                0000000000009f90 f   BasePciCf8Lib:PciCf8Lib.obj
+ 0001:00009d40       PciCf8Read16               000000000000a000 f   BasePciCf8Lib:PciCf8Lib.obj
+ 0001:00009d94       PciCf8Read32               000000000000a054 f   BasePciCf8Lib:PciCf8Lib.obj
+ 0003:00000000       ExceptionStubHeaderSize    000000000000a0e0     SecPeiDebugAgentLib:AsmFuncs.obj
+ 0003:00000010       mPrivateDispatchTable      000000000000a0f0     SecMain:SecMain.obj
+ 0003:00000030       mIdtEntryTemplate          000000000000a110     SecMain:SecMain.obj
+ 0003:00000040       mTemporaryRamSupportPpi    000000000000a120     SecMain:SecMain.obj
+ 0003:00000048       gEfiTemporaryRamSupportPpiGuid 000000000000a128     SecMain:AutoGen.obj
+ 0003:00000058       gEfiVectorHandoffInfoPpiGuid 000000000000a138     SecMain:AutoGen.obj
+ 0003:00000068       gLzmaCustomDecompressGuid  000000000000a148     SecMain:AutoGen.obj
+ 0003:00000078       gEfiPeiMemoryDiscoveredPpiGuid 000000000000a158     SecMain:AutoGen.obj
+ 0003:00000088       gEfiDebugAgentGuid         000000000000a168     SecMain:AutoGen.obj
+ 0003:00000098       mVectorHandoffInfoPpi      000000000000a178     SecPeiDebugAgentLib:SecPeiDebugAgentLib.obj
+ 0003:000000a0       mDebugAgentMemoryDiscoveredNotifyList 000000000000a180     SecPeiDebugAgentLib:SecPeiDebugAgentLib.obj
+ 0003:000000b8       mVectorHandoffInfoPpiList  000000000000a198     SecPeiDebugAgentLib:SecPeiDebugAgentLib.obj
+ 0003:000000d0       mVectorHandoffInfoDebugAgent 000000000000a1b0     SecPeiDebugAgentLib:DebugAgent.obj
+ 0003:000002b0       mErrorMsgVersionAlert      000000000000a390     SecPeiDebugAgentLib:DebugAgent.obj
+ 0003:00000320       mErrorMsgSendInitPacket    000000000000a400     SecPeiDebugAgentLib:DebugAgent.obj
+ 0003:00000380       mErrorMsgConnectOK         000000000000a460     SecPeiDebugAgentLib:DebugAgent.obj
+ 0003:000003b0       mWarningMsgIngoreBreakpoint 000000000000a490     SecPeiDebugAgentLib:DebugAgent.obj
+ 0003:000003f8       mErrorMsgConnectFail       000000000000a4d8     SecPeiDebugAgentLib:DebugAgent.obj
+ 0003:00000420       _gPcd_FixedAtBuild_PcdControlFlowEnforcementPropertyMask 000000000000a500     SecMain:AutoGen.obj
+ 0003:00000428       ??_C@_0CG@JMJILBGG@Debug?5Timer?5attach?5symbol?5recei@ 000000000000a508     SecPeiDebugAgentLib:SecPeiDebugAgentLib.obj
+ 0003:00000450       ??_C@_0CF@LFCBGBOL@Debug?5Timer?5break?5symbol?5receiv@ 000000000000a530     SecPeiDebugAgentLib:SecPeiDebugAgentLib.obj
+ 0003:00000478       ??_C@_0N@JDBFFBFC@Sent?5data?5?$FL?5@ 000000000000a558     SecPeiDebugAgentLib:DebugAgent.obj
+ 0003:00000488       ??_C@_0BB@JBKPKGMF@Received?5data?5?$FL?5@ 000000000000a568     SecPeiDebugAgentLib:DebugAgent.obj
+ 0003:0000049c       ??_C@_05CNDJFPDP@?$CF02x?5@ 000000000000a57c     SecPeiDebugAgentLib:DebugAgent.obj
+ 0003:000004a4       ??_C@_02JODFHDIE@?$FN?6@   000000000000a584     SecPeiDebugAgentLib:DebugAgent.obj
+ 0003:000004a8       ??_C@_0CC@BPBDKJLH@Timeout?5in?5Debug?5Timer?5interrup@ 000000000000a588     SecPeiDebugAgentLib:DebugAgent.obj
+ 0003:000004d0       ??_C@_0CD@MJPNODCO@Debug?5Timer?5CRC?5?$CI?$CFx?$CJ?5against?5?$CI?$CF@ 000000000000a5b0     SecPeiDebugAgentLib:DebugAgent.obj
+ 0003:000004f8       ??_C@_0BF@GOMLGJOE@Attach?5status?5is?5?$CFd?6@ 000000000000a5d8     SecPeiDebugAgentLib:DebugAgent.obj
+ 0003:00000510       ??_C@_0O@LLNPHJBI@Send?5ACK?$CI?$CFd?$CJ?6@ 000000000000a5f0     SecPeiDebugAgentLib:DebugAgent.obj
+ 0003:00000520       ??_C@_0CA@KCJDKBGI@SendAckPacket?3?5SequenceNo?5?$DN?5?$CFx?6@ 000000000000a600     SecPeiDebugAgentLib:DebugAgent.obj
+ 0003:00000540       ??_C@_0CL@GDHMDIAD@DebugAgentReadBuffer?$CIStartSymbo@ 000000000000a620     SecPeiDebugAgentLib:DebugAgent.obj
+ 0003:00000570       ??_C@_0CG@POHMMICE@Invalid?5start?5symbol?5received?5?$FL@ 000000000000a650     SecPeiDebugAgentLib:DebugAgent.obj
+ 0003:00000598       ??_C@_0CH@JDGCKKDH@DebugAgentReadBuffer?$CICommand?$CJ?5t@ 000000000000a678     SecPeiDebugAgentLib:DebugAgent.obj
+ 0003:000005c0       ??_C@_0CK@PCGFFEGH@DebugAgentReadBuffer?$CISequenceNo@ 000000000000a6a0     SecPeiDebugAgentLib:DebugAgent.obj
+ 0003:000005f0       ??_C@_0CA@KOMNEPHF@CRC?5Error?5?$CIreceived?5CRC?5is?5?$CFx?$CJ?6@ 000000000000a6d0     SecPeiDebugAgentLib:DebugAgent.obj
+ 0003:00000610       ??_C@_0CO@FBJALMLE@TARGET?3?5Timeout?5when?5waiting?5fo@ 000000000000a6f0     SecPeiDebugAgentLib:DebugAgent.obj
+ 0003:00000640       ??_C@_0CD@OLECMCCF@TARGET?3?5Receive?5GO?$CI?$CJ?5in?5last?5bo@ 000000000000a720     SecPeiDebugAgentLib:DebugAgent.obj
+ 0003:00000668       ??_C@_0CN@MDIHKJOJ@TARGET?3?5Timeout?5in?5SendDataResp@ 000000000000a748     SecPeiDebugAgentLib:DebugAgent.obj
+ 0003:000006a0       ??_C@_0FC@JIHDFAPN@TARGET?3?5Received?5one?5old?5or?5new@ 000000000000a780     SecPeiDebugAgentLib:DebugAgent.obj
+ 0003:000006f8       ??_C@_0CK@KLMONJKF@processor?$FL?$CFx?$FN?3Send?5Break?5Packet@ 000000000000a7d8     SecPeiDebugAgentLib:DebugAgent.obj
+ 0003:00000728       ??_C@_0CD@JPIHDIMB@processor?$FL?$CFx?$FN?3Try?5to?5attach?5HOS@ 000000000000a808     SecPeiDebugAgentLib:DebugAgent.obj
+ 0003:00000750       ??_C@_0CJ@HCAPKGNH@TARGET?3?5Try?5to?5get?5command?5from@ 000000000000a830     SecPeiDebugAgentLib:DebugAgent.obj
+ 0003:00000780       ??_C@_0EB@MMMHKPFC@TARGET?3?5Get?5command?$FL?$CFx?$FN?5sequenc@ 000000000000a860     SecPeiDebugAgentLib:DebugAgent.obj
+ 0003:000007d0       ??_C@_0ED@GONDGPBK@TARGET?3?5Get?5command?5failed?5or?5i@ 000000000000a8b0     SecPeiDebugAgentLib:DebugAgent.obj
+ 0003:00000818       ??_C@_0DJ@LENMLHNM@TARGET?3?5Receive?5one?5old?5command@ 000000000000a8f8     SecPeiDebugAgentLib:DebugAgent.obj
+ 0003:00000858       ??_C@_0DF@DCECPJEB@Receive?5one?5invalid?5command?$FL?$CFx?$FN@ 000000000000a938     SecPeiDebugAgentLib:DebugAgent.obj
+ 0003:00000890       ??_C@_0CI@DIMDIDBK@Processor?$FL?$CFx?$FN?3Received?5one?5comm@ 000000000000a970     SecPeiDebugAgentLib:DebugAgent.obj
+ 0003:000008c0       ??_C@_0EB@MOLLNJNN@Debug?5agent?5meet?5one?5Exception?0@ 000000000000a9a0     SecPeiDebugAgentLib:DebugAgent.obj
+ 0003:00000908       ??_C@_0BG@EOCIJOIC@Received?5data?5?$FL?$CF02x?$FN?6@ 000000000000a9e8     SecPeiDebugAgentLib:DebugAgent.obj
+ 0003:00000920       ??_C@_0DF@DJLBEBCI@Exception?5happened?0?5ExceptionNu@ 000000000000aa00     SecPeiDebugAgentLib:DebugAgent.obj
+ 0003:00000958       mDoFarReturnFlag           000000000000aa38     SecPeiCpuExceptionHandlerLib:SecPeiCpuException.obj
+ 0003:00000960       ??_C@_0DN@OILJOCCP@?$CB?$CB?$CB?$CB?5X64?5Exception?5Type?5?9?5?$CF02x?$CI@ 000000000000aa40     SecPeiCpuExceptionHandlerLib:ArchExceptionHandler.obj
+ 0003:000009a0       ??_C@_0BH@GDPLHCJG@ExceptionData?5?9?5?$CF016lx@ 000000000000aa80     SecPeiCpuExceptionHandlerLib:ArchExceptionHandler.obj
+ 0003:000009b8       ??_C@_0CO@BBEHDOI@?5?5I?3?$CFx?5R?3?$CFx?5U?3?$CFx?5W?3?$CFx?5P?3?$CFx?5PK?3?$CF@ 000000000000aa98     SecPeiCpuExceptionHandlerLib:ArchExceptionHandler.obj
+ 0003:000009e8       ??_C@_01EEMJAFIK@?6@       000000000000aac8     SecPeiCpuExceptionHandlerLib:ArchExceptionHandler.obj
+ 0003:000009f0       ??_C@_0CO@OABPHBNC@RIP?5?5?9?5?$CF016lx?0?5CS?5?5?9?5?$CF016lx?0?5RF@ 000000000000aad0     SecPeiCpuExceptionHandlerLib:ArchExceptionHandler.obj
+ 0003:00000a20       ??_C@_0CL@EBCIBAPN@RAX?5?5?9?5?$CF016lx?0?5RCX?5?9?5?$CF016lx?0?5RD@ 000000000000ab00     SecPeiCpuExceptionHandlerLib:ArchExceptionHandler.obj
+ 0003:00000a50       ??_C@_0CL@NEKHLEEE@RBX?5?5?9?5?$CF016lx?0?5RSP?5?9?5?$CF016lx?0?5RB@ 000000000000ab30     SecPeiCpuExceptionHandlerLib:ArchExceptionHandler.obj
+ 0003:00000a80       ??_C@_0BN@KJEBEAEC@RSI?5?5?9?5?$CF016lx?0?5RDI?5?9?5?$CF016lx?6@ 000000000000ab60     SecPeiCpuExceptionHandlerLib:ArchExceptionHandler.obj
+ 0003:00000aa0       ??_C@_0CL@IAICEOHO@R8?5?5?5?9?5?$CF016lx?0?5R9?5?5?9?5?$CF016lx?0?5R1@ 000000000000ab80     SecPeiCpuExceptionHandlerLib:ArchExceptionHandler.obj
+ 0003:00000ad0       ??_C@_0CL@JAMCECPD@R11?5?5?9?5?$CF016lx?0?5R12?5?9?5?$CF016lx?0?5R1@ 000000000000abb0     SecPeiCpuExceptionHandlerLib:ArchExceptionHandler.obj
+ 0003:00000b00       ??_C@_0BN@PKAAKNBO@R14?5?5?9?5?$CF016lx?0?5R15?5?9?5?$CF016lx?6@ 000000000000abe0     SecPeiCpuExceptionHandlerLib:ArchExceptionHandler.obj
+ 0003:00000b20       ??_C@_0CL@DLLIMCBJ@DS?5?5?5?9?5?$CF016lx?0?5ES?5?5?9?5?$CF016lx?0?5FS@ 000000000000ac00     SecPeiCpuExceptionHandlerLib:ArchExceptionHandler.obj
+ 0003:00000b50       ??_C@_0BN@EICEFBKL@GS?5?5?5?9?5?$CF016lx?0?5SS?5?5?9?5?$CF016lx?6@ 000000000000ac30     SecPeiCpuExceptionHandlerLib:ArchExceptionHandler.obj
+ 0003:00000b70       ??_C@_0CL@DIOBDFLD@CR0?5?5?9?5?$CF016lx?0?5CR2?5?9?5?$CF016lx?0?5CR@ 000000000000ac50     SecPeiCpuExceptionHandlerLib:ArchExceptionHandler.obj
+ 0003:00000ba0       ??_C@_0BN@JAPKHAJM@CR4?5?5?9?5?$CF016lx?0?5CR8?5?9?5?$CF016lx?6@ 000000000000ac80     SecPeiCpuExceptionHandlerLib:ArchExceptionHandler.obj
+ 0003:00000bc0       ??_C@_0CL@DONNALBH@DR0?5?5?9?5?$CF016lx?0?5DR1?5?9?5?$CF016lx?0?5DR@ 000000000000aca0     SecPeiCpuExceptionHandlerLib:ArchExceptionHandler.obj
+ 0003:00000bf0       ??_C@_0CL@JNPELAID@DR3?5?5?9?5?$CF016lx?0?5DR6?5?9?5?$CF016lx?0?5DR@ 000000000000acd0     SecPeiCpuExceptionHandlerLib:ArchExceptionHandler.obj
+ 0003:00000c20       ??_C@_0CF@MGIBIPBB@GDTR?5?9?5?$CF016lx?5?$CF016lx?0?5LDTR?5?9?5?$CF0@ 000000000000ad00     SecPeiCpuExceptionHandlerLib:ArchExceptionHandler.obj
+ 0003:00000c48       ??_C@_0CF@DMFPLAJK@IDTR?5?9?5?$CF016lx?5?$CF016lx?0?5?5?5TR?5?9?5?$CF0@ 000000000000ad28     SecPeiCpuExceptionHandlerLib:ArchExceptionHandler.obj
+ 0003:00000c70       ??_C@_0BH@PFOFIBPH@FXSAVE_STATE?5?9?5?$CF016lx?6@ 000000000000ad50     SecPeiCpuExceptionHandlerLib:ArchExceptionHandler.obj
+ 0003:00000c88       mErrorCodeFlag             000000000000ad68     SecPeiCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0003:00000c90       ??_C@_0BD@PANICNEP@?$CDDE?5?9?5Divide?5Error@ 000000000000ad70     SecPeiCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0003:00000ca8       ??_C@_0M@BENGJJME@?$CDDB?5?9?5Debug@ 000000000000ad88     SecPeiCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0003:00000cb8       ??_C@_0O@PELAMGDH@NMI?5Interrupt@ 000000000000ad98     SecPeiCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0003:00000cc8       ??_C@_0BB@ONIBFOGK@?$CDBP?5?9?5Breakpoint@ 000000000000ada8     SecPeiCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0003:00000ce0       ??_C@_0P@BBLCINEF@?$CDOF?5?9?5Overflow@ 000000000000adc0     SecPeiCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0003:00000cf0       ??_C@_0BL@FGFNPPKN@?$CDBR?5?9?5BOUND?5Range?5Exceeded@ 000000000000add0     SecPeiCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0003:00000d10       ??_C@_0BF@PAJDEHLF@?$CDUD?5?9?5Invalid?5Opcode@ 000000000000adf0     SecPeiCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0003:00000d28       ??_C@_0BL@HAMCGOMD@?$CDNM?5?9?5Device?5Not?5Available@ 000000000000ae08     SecPeiCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0003:00000d48       ??_C@_0BD@POLKFCFP@?$CDDF?5?9?5Double?5Fault@ 000000000000ae28     SecPeiCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0003:00000d60       ??_C@_0BM@LFJODCLN@Coprocessor?5Segment?5Overrun@ 000000000000ae40     SecPeiCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0003:00000d80       ??_C@_0BC@NJGFAHLO@?$CDTS?5?9?5Invalid?5TSS@ 000000000000ae60     SecPeiCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0003:00000d98       ??_C@_0BK@CJDBEANG@?$CDNP?5?9?5Segment?5Not?5Present@ 000000000000ae78     SecPeiCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0003:00000db8       ??_C@_0BI@DKNGHJJN@?$CDSS?5?9?5Stack?5Fault?5Fault@ 000000000000ae98     SecPeiCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0003:00000dd0       ??_C@_0BJ@OPPOMNHK@?$CDGP?5?9?5General?5Protection@ 000000000000aeb0     SecPeiCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0003:00000df0       ??_C@_0BB@CJKCEJGM@?$CDPF?5?9?5Page?9Fault@ 000000000000aed0     SecPeiCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0003:00000e08       ??_C@_08NKCLJDKG@Reserved@ 000000000000aee8     SecPeiCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0003:00000e18       ??_C@_0CD@DAPDALEP@?$CDMF?5?9?5x87?5FPU?5Floating?9Point?5Er@ 000000000000aef8     SecPeiCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0003:00000e40       ??_C@_0BG@JJECJFKO@?$CDAC?5?9?5Alignment?5Check@ 000000000000af20     SecPeiCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0003:00000e58       ??_C@_0BE@CIGFNHHH@?$CDMC?5?9?5Machine?9Check@ 000000000000af38     SecPeiCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0003:00000e70       ??_C@_0BK@IKBNPED@?$CDXM?5?9?5SIMD?5floating?9point@ 000000000000af50     SecPeiCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0003:00000e90       ??_C@_0BF@MIEADEIE@?$CDVE?5?9?5Virtualization@ 000000000000af70     SecPeiCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0003:00000ea8       ??_C@_0BJ@POMBGBMH@?$CDCP?5?9?5Control?5Protection@ 000000000000af88     SecPeiCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0003:00000ec8       ??_C@_0BI@HOPEKCJH@?$CDVC?5?9?5VMM?5Communication@ 000000000000afa8     SecPeiCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0003:00000ee0       ??_C@_0CJ@NIJFIMND@?$CB?$CB?$CB?$CB?5Can?8t?5find?5image?5informati@ 000000000000afc0     SecPeiCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0003:00000f10       ??_C@_0CD@FDHAHDMO@?$CB?$CB?$CB?$CB?5Find?5image?5based?5on?5IP?$CI0x?$CF@ 000000000000aff0     SecPeiCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0003:00000f34       ??_C@_02ECNOPIAA@?$CFa@    000000000000b014     SecPeiCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0003:00000f38       ??_C@_09KCCBLILG@?$CINo?5PDB?$CJ?5@ 000000000000b018     SecPeiCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0003:00000f48       ??_C@_0CM@GKFIOCPE@?5?$CIImageBase?$DN?$CF016lp?0?5EntryPoint?$DN@ 000000000000b028     SecPeiCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0003:00000f80       mExceptionNameStr          000000000000b060     SecPeiCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0003:00001070       mExceptionReservedStr      000000000000b150     SecPeiCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0003:00001080       ??_C@_0O@MLOLIMFM@?$DMnull?5string?$DO@ 000000000000b160     BasePrintLib:PrintLibInternal.obj
+ 0003:00001090       ??_C@_0M@BJJDNPHK@?$DMnull?5guid?$DO@ 000000000000b170     BasePrintLib:PrintLibInternal.obj
+ 0003:000010a0       ??_C@_0DB@PMLHLBMO@?$CF08x?9?$CF04x?9?$CF04x?9?$CF02x?$CF02x?9?$CF02x?$CF02@ 000000000000b180     BasePrintLib:PrintLibInternal.obj
+ 0003:000010d8       ??_C@_0M@LHGBCIKM@?$DMnull?5time?$DO@ 000000000000b1b8     BasePrintLib:PrintLibInternal.obj
+ 0003:000010e8       ??_C@_0BK@FCPKCIDD@?$CF02d?1?$CF02d?1?$CF04d?5?5?$CF02d?3?$CF02d@ 000000000000b1c8     BasePrintLib:PrintLibInternal.obj
+ 0003:00001104       ??_C@_04JIMNDDED@?$CF08X@  000000000000b1e4     BasePrintLib:PrintLibInternal.obj
+ 0003:0000110c       ??_C@_02PCIJFNDE@?$AN?6@   000000000000b1ec     BasePrintLib:PrintLibInternal.obj
+ 0003:00001110       ??_C@_01LIIJDEN@?$AN@      000000000000b1f0     BasePrintLib:PrintLibInternal.obj
+ 0003:00001120       mWarningString             000000000000b200     BasePrintLib:PrintLibInternal.obj
+ 0003:000011c0       mErrorString               000000000000b2a0     BasePrintLib:PrintLibInternal.obj
+ 0003:00001480       mHexStr                    000000000000b560     BasePrintLib:PrintLibInternal.obj
+ 0003:000014b0       mSkipBreakpoint            000000000000b590     SecPeiDebugAgentLib:SecPeiDebugAgentLib.obj
+ 0003:000014c0       mDebugMpContext            000000000000b5a0     SecPeiDebugAgentLib:DebugMp.obj
+ 0003:00001530       gParity                    000000000000b610     PcAtSerialPortLib:SerialPortLib.obj
+ 0003:00001531       gBreakSet                  000000000000b611     PcAtSerialPortLib:SerialPortLib.obj
+ 0003:00002540       __volatile_metadata        000000000000c620     <linker-defined>
+
+ entry point at        0001:00000000
+
+ Static symbols
+
+ 0001:0000006a       InternalMemCopyMem.0       000000000000032a     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:0000007a       @CopyBackward              000000000000033a     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000083       @CopyBytes                 0000000000000343     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000173       CetDone                    0000000000000433     BaseLib:SetJump.obj
+ 0001:0000023a       PvalidateExit              00000000000004fa     BaseLib:Pvalidate.obj
+ 0001:0000024f       AsmCpuid.0                 000000000000050f     BaseLib:CpuId.obj
+ 0001:00000254       AsmCpuid.1                 0000000000000514     BaseLib:CpuId.obj
+ 0001:0000025b       AsmCpuid.2                 000000000000051b     BaseLib:CpuId.obj
+ 0001:00000264       AsmCpuid.3                 0000000000000524     BaseLib:CpuId.obj
+ 0001:00000285       AsmCpuidEx.0               0000000000000545     BaseLib:CpuIdEx.obj
+ 0001:0000028c       AsmCpuidEx.1               000000000000054c     BaseLib:CpuIdEx.obj
+ 0001:00000293       AsmCpuidEx.2               0000000000000553     BaseLib:CpuIdEx.obj
+ 0001:0000029c       AsmCpuidEx.3               000000000000055c     BaseLib:CpuIdEx.obj
+ 0001:000002f0       CetDone                    00000000000005b0     BaseLib:LongJump.obj
+ 0001:000003d7       Exception1Handle           0000000000000697     SecPeiDebugAgentLib:AsmFuncs.obj
+ 0001:000003ea       Exception2Handle           00000000000006aa     SecPeiDebugAgentLib:AsmFuncs.obj
+ 0001:000003fd       Exception3Handle           00000000000006bd     SecPeiDebugAgentLib:AsmFuncs.obj
+ 0001:00000410       Exception4Handle           00000000000006d0     SecPeiDebugAgentLib:AsmFuncs.obj
+ 0001:00000423       Exception5Handle           00000000000006e3     SecPeiDebugAgentLib:AsmFuncs.obj
+ 0001:00000436       Exception6Handle           00000000000006f6     SecPeiDebugAgentLib:AsmFuncs.obj
+ 0001:00000449       Exception7Handle           0000000000000709     SecPeiDebugAgentLib:AsmFuncs.obj
+ 0001:0000045c       Exception8Handle           000000000000071c     SecPeiDebugAgentLib:AsmFuncs.obj
+ 0001:0000046f       Exception9Handle           000000000000072f     SecPeiDebugAgentLib:AsmFuncs.obj
+ 0001:00000482       Exception10Handle          0000000000000742     SecPeiDebugAgentLib:AsmFuncs.obj
+ 0001:00000495       Exception11Handle          0000000000000755     SecPeiDebugAgentLib:AsmFuncs.obj
+ 0001:000004a8       Exception12Handle          0000000000000768     SecPeiDebugAgentLib:AsmFuncs.obj
+ 0001:000004bb       Exception13Handle          000000000000077b     SecPeiDebugAgentLib:AsmFuncs.obj
+ 0001:000004ce       Exception14Handle          000000000000078e     SecPeiDebugAgentLib:AsmFuncs.obj
+ 0001:000004e1       Exception15Handle          00000000000007a1     SecPeiDebugAgentLib:AsmFuncs.obj
+ 0001:000004f4       Exception16Handle          00000000000007b4     SecPeiDebugAgentLib:AsmFuncs.obj
+ 0001:00000507       Exception17Handle          00000000000007c7     SecPeiDebugAgentLib:AsmFuncs.obj
+ 0001:0000051a       Exception18Handle          00000000000007da     SecPeiDebugAgentLib:AsmFuncs.obj
+ 0001:0000052d       Exception19Handle          00000000000007ed     SecPeiDebugAgentLib:AsmFuncs.obj
+ 0001:0000054f       CommonEntry                000000000000080f     SecPeiDebugAgentLib:AsmFuncs.obj
+ 0001:00000585       NoExtrPush                 0000000000000845     SecPeiDebugAgentLib:AsmFuncs.obj
+ 0001:000006f0       AsmIdtVectorBegin          00000000000009b0     SecPeiCpuExceptionHandlerLib:ExceptionHandlerAsm.obj
+ 0001:000008d0       AsmIdtVectorEnd            0000000000000b90     SecPeiCpuExceptionHandlerLib:ExceptionHandlerAsm.obj
+ 0001:000008d0       HookAfterStubHeaderBegin   0000000000000b90     SecPeiCpuExceptionHandlerLib:ExceptionHandlerAsm.obj
+ 0001:000008d1       @VectorNum                 0000000000000b91     SecPeiCpuExceptionHandlerLib:ExceptionHandlerAsm.obj
+ 0001:000008df       HookAfterStubHeaderEnd     0000000000000b9f     SecPeiCpuExceptionHandlerLib:ExceptionHandlerAsm.obj
+ 0001:000008fb       HookAfterStubHeaderEnd.0   0000000000000bbb     SecPeiCpuExceptionHandlerLib:ExceptionHandlerAsm.obj
+ 0001:0000091c       NoErrorCode                0000000000000bdc     SecPeiCpuExceptionHandlerLib:ExceptionHandlerAsm.obj
+ 0001:00000928       HasErrorCode               0000000000000be8     SecPeiCpuExceptionHandlerLib:ExceptionHandlerAsm.obj
+ 0001:000009f6       VcDebugRegs                0000000000000cb6     SecPeiCpuExceptionHandlerLib:ExceptionHandlerAsm.obj
+ 0001:000009ff       DrFinish                   0000000000000cbf     SecPeiCpuExceptionHandlerLib:ExceptionHandlerAsm.obj
+ 0001:00000aab       ErrorCode                  0000000000000d6b     SecPeiCpuExceptionHandlerLib:ExceptionHandlerAsm.obj
+ 0001:00000ab3       DoReturn                   0000000000000d73     SecPeiCpuExceptionHandlerLib:ExceptionHandlerAsm.obj
+ 0001:00000ad5       DoIret                     0000000000000d95     SecPeiCpuExceptionHandlerLib:ExceptionHandlerAsm.obj
+ 0001:00000c8a       @UseRepIo                  0000000000000f4a     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000c8c       @SevNoRepIo_Done           0000000000000f4c     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000ca4       @IoReadFifo8_NoRep         0000000000000f64     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000ca6       @IoReadFifo8_Loop          0000000000000f66     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000cae       @IoReadFifo8_Done          0000000000000f6e     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000cc7       @IoReadFifo16_NoRep        0000000000000f87     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000cc9       @IoReadFifo16_Loop         0000000000000f89     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000cd4       @IoReadFifo16_Done         0000000000000f94     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000cec       @IoReadFifo32_NoRep        0000000000000fac     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000cee       @IoReadFifo32_Loop         0000000000000fae     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000cf7       @IoReadFifo32_Done         0000000000000fb7     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000d0f       @IoWriteFifo8_NoRep        0000000000000fcf     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000d11       @IoWriteFifo8_Loop         0000000000000fd1     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000d19       @IoWriteFifo8_Done         0000000000000fd9     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000d32       @IoWriteFifo16_NoRep       0000000000000ff2     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000d34       @IoWriteFifo16_Loop        0000000000000ff4     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000d3f       @IoWriteFifo16_Done        0000000000000fff     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000d57       @IoWriteFifo32_NoRep       0000000000001017     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000d59       @IoWriteFifo32_Loop        0000000000001019     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000d62       @IoWriteFifo32_Done        0000000000001022     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000018e4       PvalidateRange             0000000000001ba4 f   SecMemEncryptSevLib:SnpPageStateChangeInternal.obj
+ 0001:00001b78       InternalMemEncryptSevStatus 0000000000001e38 f   SecMemEncryptSevLib:SecMemEncryptSevLibInternal.obj
+ 0001:00005808       LzmaDec_DecodeReal_3       0000000000005ac8 f   LzmaDecompressLib:LzmaDec.obj
+ 0001:00006354       LzmaDec_WriteRem           0000000000006614 f   LzmaDecompressLib:LzmaDec.obj
+ 0001:000063dc       LzmaDec_DecodeReal2        000000000000669c f   LzmaDecompressLib:LzmaDec.obj
+ 0001:00006480       LzmaDec_TryDummy           0000000000006740 f   LzmaDecompressLib:LzmaDec.obj
+ 0001:00006dc8       LzmaDec_AllocateProbs2     0000000000007088 f   LzmaDecompressLib:LzmaDec.obj
+ 0001:000070b4       GetRegisterPointer         0000000000007374 f   SecVmgExitLib:VmgExitVcHandler.obj
+ 0001:000071cc       GetEffectiveMemoryAddress  000000000000748c f   SecVmgExitLib:VmgExitVcHandler.obj
+ 0001:00007344       DecodeModRm                0000000000007604 f   SecVmgExitLib:VmgExitVcHandler.obj
+ 0001:00007478       UnsupportedExit            0000000000007738 f   SecVmgExitLib:VmgExitVcHandler.obj
+ 0001:000074a8       ValidateMmioMemory         0000000000007768 f   SecVmgExitLib:VmgExitVcHandler.obj
+ 0001:00007504       MmioExit                   00000000000077c4 f   SecVmgExitLib:VmgExitVcHandler.obj
+ 0001:00007b34       MwaitExit                  0000000000007df4 f   SecVmgExitLib:VmgExitVcHandler.obj
+ 0001:00007bac       MonitorExit                0000000000007e6c f   SecVmgExitLib:VmgExitVcHandler.obj
+ 0001:00007c40       WbinvdExit                 0000000000007f00 f   SecVmgExitLib:VmgExitVcHandler.obj
+ 0001:00007c50       RdtscpExit                 0000000000007f10 f   SecVmgExitLib:VmgExitVcHandler.obj
+ 0001:00007cec       VmmCallExit                0000000000007fac f   SecVmgExitLib:VmgExitVcHandler.obj
+ 0001:00007da0       MsrExit                    0000000000008060 f   SecVmgExitLib:VmgExitVcHandler.obj
+ 0001:00007ea8       IoioExit                   0000000000008168 f   SecVmgExitLib:VmgExitVcHandler.obj
+ 0001:000081e0       InvdExit                   00000000000084a0 f   SecVmgExitLib:VmgExitVcHandler.obj
+ 0001:000081f0       GetCpuidHyp                00000000000084b0 f   SecVmgExitLib:VmgExitVcHandler.obj
+ 0001:000082e4       GetCpuidFw                 00000000000085a4 f   SecVmgExitLib:VmgExitVcHandler.obj
+ 0001:000085cc       CpuidExit                  000000000000888c f   SecVmgExitLib:VmgExitVcHandler.obj
+ 0001:00008708       RdpmcExit                  00000000000089c8 f   SecVmgExitLib:VmgExitVcHandler.obj
+ 0001:000087a4       RdtscExit                  0000000000008a64 f   SecVmgExitLib:VmgExitVcHandler.obj
+ 0001:00008820       Dr7WriteExit               0000000000008ae0 f   SecVmgExitLib:VmgExitVcHandler.obj
+ 0001:000088ac       Dr7ReadExit                0000000000008b6c f   SecVmgExitLib:VmgExitVcHandler.obj
+ 0002:00000000       mFpuControlWord            000000000000a0c0     BaseUefiCpuLib:InitializeFpu.obj
+ 0002:00000002       mMmxControlWord            000000000000a0c2     BaseUefiCpuLib:InitializeFpu.obj
+ 0003:00000004       CommonEntryAddr            000000000000a0e4     SecPeiDebugAgentLib:AsmFuncs.obj
+ 0003:00001540       gVmpl0Data                 000000000000b620     SecMemEncryptSevLib:SecSnpSystemRamValidate.obj
+ 0005:00000000       $unwind$ExtractGuidedSectionDecode 000000000000ccc0     BaseExtractGuidedSectionLib:BaseExtractGuidedSectionLib.obj
+ 0005:00000000       $unwind$ExtractGuidedSectionGetInfo 000000000000ccc0     BaseExtractGuidedSectionLib:BaseExtractGuidedSectionLib.obj
+ 0005:00000000       $unwind$FindFfsFileAndSection 000000000000ccc0     SecMain:SecMain.obj
+ 0005:00000014       $unwind$DecompressMemFvs   000000000000ccd4     SecMain:SecMain.obj
+ 0005:00000024       $unwind$FindAndReportEntryPoints 000000000000cce4     SecMain:SecMain.obj
+ 0005:0000003c       $unwind$SecCoreStartupWithStack 000000000000ccfc     SecMain:SecMain.obj
+ 0005:0000005c       $unwind$SaveAndDisableInterrupts 000000000000cd1c     BaseLib:Cpu.obj
+ 0005:0000005c       $unwind$PciCf8Read16       000000000000cd1c     BasePciCf8Lib:PciCf8Lib.obj
+ 0005:0000005c       $unwind$PciCf8Read32       000000000000cd1c     BasePciCf8Lib:PciCf8Lib.obj
+ 0005:0000005c       $unwind$PciCf8Read8        000000000000cd1c     BasePciCf8Lib:PciCf8Lib.obj
+ 0005:0000005c       $unwind$BuildGuidDataHob   000000000000cd1c     PeiHobLib:HobLib.obj
+ 0005:0000005c       $unwind$MicroSecondDelay   000000000000cd1c     BaseRomAcpiTimerLib:AcpiTimerLib.obj
+ 0005:0000005c       $unwind$VmgExit            000000000000cd1c     SecVmgExitLib:VmgExitLib.obj
+ 0005:0000005c       $unwind$SecStartupPhase2   000000000000cd1c     SecMain:SecMain.obj
+ 0005:0000005c       $unwind$GetDebugFlag       000000000000cd1c     SecPeiDebugAgentLib:DebugAgent.obj
+ 0005:0000005c       $unwind$ReadLocalApicReg   000000000000cd1c     BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0005:00000064       $unwind$TemporaryRamMigration 000000000000cd24     SecMain:SecMain.obj
+ 0005:00000084       $unwind$ProcessLibraryConstructorList 000000000000cd44     SecMain:AutoGen.obj
+ 0005:0000009c       $unwind$InternalAcpiGetTimerTick 000000000000cd5c     BaseRomAcpiTimerLib:BaseRomAcpiTimerLib.obj
+ 0005:0000009c       $unwind$SnpPageStateFailureTerminate 000000000000cd5c     SecMemEncryptSevLib:SnpPageStateChangeInternal.obj
+ 0005:0000009c       $unwind$ResetCold          000000000000cd5c     BaseResetSystemLib:ResetSystemLib.obj
+ 0005:0000009c       $unwind$UnsupportedExit    000000000000cd5c     SecVmgExitLib:VmgExitVcHandler.obj
+ 0005:0000009c       $unwind$SevEsProtocolFailure 000000000000cd5c     SecMain:AmdSev.obj
+ 0005:0000009c       $unwind$DebugPortInitialize 000000000000cd5c     DebugCommunicationLibSerialPort:DebugCommunicationLibSerialPort.obj
+ 0005:0000009c       $unwind$GetApicMode        000000000000cd5c     BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0005:0000009c       $unwind$GetLocalApicBaseAddress 000000000000cd5c     BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0005:000000a4       $unwind$PvalidateRange     000000000000cd64     SecMemEncryptSevLib:SnpPageStateChangeInternal.obj
+ 0005:000000bc       $unwind$InternalSetPageState 000000000000cd7c     SecMemEncryptSevLib:SnpPageStateChangeInternal.obj
+ 0005:000000d8       $unwind$AllocatePool       000000000000cd98     PeiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0005:000000d8       $unwind$InternalMemEncryptSevStatus 000000000000cd98     SecMemEncryptSevLib:SecMemEncryptSevLibInternal.obj
+ 0005:000000d8       $unwind$GetLocationSavedMailboxPointerInIdtEntry 000000000000cd98     SecPeiDebugAgentLib:SecPeiDebugAgentLib.obj
+ 0005:000000d8       $unwind$SetLocationSavedMailboxPointerInIdtEntry 000000000000cd98     SecPeiDebugAgentLib:SecPeiDebugAgentLib.obj
+ 0005:000000d8       $unwind$GetApicId          000000000000cd98     BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0005:000000e0       $unwind$InternalPeiCreateHob 000000000000cda0     PeiHobLib:HobLib.obj
+ 0005:000000e0       $unwind$GetMailboxLocationFromHob 000000000000cda0     SecPeiDebugAgentLib:SecPeiDebugAgentLib.obj
+ 0005:000000e0       $unwind$LocalApicBaseAddressMsrSupported 000000000000cda0     BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0005:000000e8       $unwind$LzmaGuidedSectionExtraction 000000000000cda8     LzmaDecompressLib:GuidedSectionExtraction.obj
+ 0005:000000e8       $unwind$GetCpuidHyp        000000000000cda8     SecVmgExitLib:VmgExitVcHandler.obj
+ 0005:000000e8       $unwind$MonitorExit        000000000000cda8     SecVmgExitLib:VmgExitVcHandler.obj
+ 0005:000000e8       $unwind$MwaitExit          000000000000cda8     SecVmgExitLib:VmgExitVcHandler.obj
+ 0005:000000e8       $unwind$GetBreakCause      000000000000cda8     SecPeiDebugAgentLib:DebugAgent.obj
+ 0005:000000e8       $unwind$SendDebugMsgPacket 000000000000cda8     SecPeiDebugAgentLib:DebugAgent.obj
+ 0005:000000e8       $unwind$SendPacketWithoutData 000000000000cda8     SecPeiDebugAgentLib:DebugAgent.obj
+ 0005:000000e8       $unwind$SetDebugFlag       000000000000cda8     SecPeiDebugAgentLib:DebugAgent.obj
+ 0005:000000e8       $unwind$DebugAgentCallbackMemoryDiscoveredPpi 000000000000cda8     SecPeiDebugAgentLib:SecPeiDebugAgentLib.obj
+ 0005:000000e8       $unwind$InitializeDebugAgentPhase2 000000000000cda8     SecPeiDebugAgentLib:SecPeiDebugAgentLib.obj
+ 0005:000000e8       $unwind$WriteLocalApicReg  000000000000cda8     BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0005:000000f4       $unwind$LzmaDec_AllocateProbs2 000000000000cdb4     LzmaDecompressLib:LzmaDec.obj
+ 0005:000000f4       $unwind$LzmaDec_DecodeReal2 000000000000cdb4     LzmaDecompressLib:LzmaDec.obj
+ 0005:000000f4       $unwind$InternalAcpiDelay  000000000000cdb4     BaseRomAcpiTimerLib:AcpiTimerLib.obj
+ 0005:000000f4       $unwind$Dr7ReadExit        000000000000cdb4     SecVmgExitLib:VmgExitVcHandler.obj
+ 0005:000000f4       $unwind$Dr7WriteExit       000000000000cdb4     SecVmgExitLib:VmgExitVcHandler.obj
+ 0005:000000f4       $unwind$RdpmcExit          000000000000cdb4     SecVmgExitLib:VmgExitVcHandler.obj
+ 0005:000000f4       $unwind$RdtscExit          000000000000cdb4     SecVmgExitLib:VmgExitVcHandler.obj
+ 0005:000000f4       $unwind$RdtscpExit         000000000000cdb4     SecVmgExitLib:VmgExitVcHandler.obj
+ 0005:000000f4       $unwind$VmmCallExit        000000000000cdb4     SecVmgExitLib:VmgExitVcHandler.obj
+ 0005:000000f4       $unwind$SendAckPacket      000000000000cdb4     SecPeiDebugAgentLib:DebugAgent.obj
+ 0005:000000f4       $unwind$TriggerSoftInterrupt 000000000000cdb4     SecPeiDebugAgentLib:DebugAgent.obj
+ 0005:000000f4       $unwind$InitializeDebugTimer 000000000000cdb4     SecPeiDebugAgentLib:DebugTimer.obj
+ 0005:000000f4       $unwind$IsDebugTimerTimeout 000000000000cdb4     SecPeiDebugAgentLib:DebugTimer.obj
+ 0005:000000f4       $unwind$SaveAndSetDebugTimerInterrupt 000000000000cdb4     SecPeiDebugAgentLib:DebugTimer.obj
+ 0005:000000f4       $unwind$GetMailboxPointer  000000000000cdb4     SecPeiDebugAgentLib:SecPeiDebugAgentLib.obj
+ 0005:000000f4       $unwind$InitializeApicTimer 000000000000cdb4     BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0005:00000104       $unwind$ReadMemoryAndSendResponsePacket 000000000000cdc4     SecPeiDebugAgentLib:DebugAgent.obj
+ 0005:00000104       $unwind$PeCoffLoaderExtraActionCommon 000000000000cdc4     PeCoffExtraActionLib:PeCoffExtraActionLib.obj
+ 0005:00000120       $unwind$DebugReadBreakSymbol 000000000000cde0     SecPeiDebugAgentLib:SecPeiDebugAgentLib.obj
+ 0005:00000130       $unwind$InitializeDebugAgent 000000000000cdf0     SecPeiDebugAgentLib:SecPeiDebugAgentLib.obj
+ 0005:00000148       $unwind$InitializeDebugIdt 000000000000ce08     SecPeiDebugAgentLib:ArchDebugSupport.obj
+ 0005:00000150       $unwind$LzmaDec_WriteRem   000000000000ce10     LzmaDecompressLib:LzmaDec.obj
+ 0005:00000150       $unwind$CalculateCrc16     000000000000ce10     SecPeiDebugAgentLib:DebugAgent.obj
+ 0005:0000015c       $unwind$DebugAgentReadBuffer 000000000000ce1c     SecPeiDebugAgentLib:DebugAgent.obj
+ 0005:0000015c       $unwind$DecompressDataInPlace 000000000000ce1c     SecPeiDebugAgentLib:DebugAgent.obj
+ 0005:00000178       $unwind$DebugAgentMsgPrint 000000000000ce38     SecPeiDebugAgentLib:DebugAgent.obj
+ 0005:00000184       $unwind$DebugAgentDataMsgPrint 000000000000ce44     SecPeiDebugAgentLib:DebugAgent.obj
+ 0005:0000019c       $unwind$DecodeModRm        000000000000ce5c     SecVmgExitLib:VmgExitVcHandler.obj
+ 0005:0000019c       $unwind$ReceivePacket      000000000000ce5c     SecPeiDebugAgentLib:DebugAgent.obj
+ 0005:000001b8       $unwind$SendCommandAndWaitForAckOK 000000000000ce78     SecPeiDebugAgentLib:DebugAgent.obj
+ 0005:000001d8       $unwind$IoioExit           000000000000ce98     SecVmgExitLib:VmgExitVcHandler.obj
+ 0005:000001d8       $unwind$CompressData       000000000000ce98     SecPeiDebugAgentLib:DebugAgent.obj
+ 0005:000001f0       $unwind$ValidateMmioMemory 000000000000ceb0     SecVmgExitLib:VmgExitVcHandler.obj
+ 0005:000001f0       $unwind$AttachHost         000000000000ceb0     SecPeiDebugAgentLib:DebugAgent.obj
+ 0005:000001f0       $unwind$CommonExceptionHandler 000000000000ceb0     SecPeiCpuExceptionHandlerLib:SecPeiCpuException.obj
+ 0005:000001fc       $unwind$SendBreakPacketToHost 000000000000cebc     SecPeiDebugAgentLib:DebugAgent.obj
+ 0005:00000208       $unwind$CommandCommunication 000000000000cec8     SecPeiDebugAgentLib:DebugAgent.obj
+ 0005:00000228       $unwind$InterruptProcess   000000000000cee8     SecPeiDebugAgentLib:DebugAgent.obj
+ 0005:00000240       $unwind$InitializeCpuExceptionHandlers 000000000000cf00     SecPeiCpuExceptionHandlerLib:SecPeiCpuException.obj
+ 0005:0000024c       $unwind$DumpCpuContext     000000000000cf0c     SecPeiCpuExceptionHandlerLib:ArchExceptionHandler.obj
+ 0005:0000025c       $unwind$InternalPrintMessage 000000000000cf1c     SecPeiCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0005:00000264       $unwind$DumpModuleImageInfo 000000000000cf24     SecPeiCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0005:00000274       $unwind$LzmaGuidedSectionGetInfo 000000000000cf34     LzmaDecompressLib:GuidedSectionExtraction.obj
+ 0005:0000027c       $unwind$LzmaUefiDecompress 000000000000cf3c     LzmaDecompressLib:LzmaDecompress.obj
+ 0005:00000294       $unwind$LzmaDec_DecodeReal_3 000000000000cf54     LzmaDecompressLib:LzmaDec.obj
+ 0005:000002ac       $unwind$LzmaDec_TryDummy   000000000000cf6c     LzmaDecompressLib:LzmaDec.obj
+ 0005:000002c8       $unwind$LzmaDec_DecodeToDic 000000000000cf88     LzmaDecompressLib:LzmaDec.obj
+ 0005:000002e4       $unwind$VmgExitHandleVc    000000000000cfa4     SecVmgExitLib:SecVmgExitVcHandler.obj
+ 0005:000002f8       $unwind$GetEffectiveMemoryAddress 000000000000cfb8     SecVmgExitLib:VmgExitVcHandler.obj
+ 0005:0000030c       $unwind$MmioExit           000000000000cfcc     SecVmgExitLib:VmgExitVcHandler.obj
+ 0005:00000328       $unwind$MsrExit            000000000000cfe8     SecVmgExitLib:VmgExitVcHandler.obj
+ 0005:0000033c       $unwind$GetCpuidFw         000000000000cffc     SecVmgExitLib:VmgExitVcHandler.obj
+ 0005:00000358       $unwind$CpuidExit          000000000000d018     SecVmgExitLib:VmgExitVcHandler.obj
+ 0005:00000370       $unwind$InternalVmgExitHandleVc 000000000000d030     SecVmgExitLib:VmgExitVcHandler.obj
+ 0005:00000390       $unwind$InternalMemEncryptSevGetAddressRangeState 000000000000d050     SecMemEncryptSevLib:VirtualMemory.obj
+ 0005:000003a8       $unwind$PeiServicesAllocatePages 000000000000d068     PeiServicesLib:PeiServicesLib.obj
+ 0005:000003b4       $unwind$AsciiSPrint        000000000000d074     BasePrintLib:PrintLib.obj
+ 0005:000003bc       $unwind$BasePrintLibSPrintMarker 000000000000d07c     BasePrintLib:PrintLibInternal.obj
+ 0005:000003d8       $unwind$BasePrintLibSPrint 000000000000d098     BasePrintLib:PrintLibInternal.obj

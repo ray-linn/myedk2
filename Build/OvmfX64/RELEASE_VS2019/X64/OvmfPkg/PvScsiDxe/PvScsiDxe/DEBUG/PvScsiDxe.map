@@ -1,0 +1,120 @@
+ PvScsiDxe
+
+ Timestamp is 61ee701a (Mon Jan 24 17:23:38 2022)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000060H .text                   CODE
+ 0001:00000060 0000118eH .text$mn                CODE
+ 0002:00000000 000000e0H .data                   DATA
+ 0002:000000e0 00000058H .rdata                  DATA
+ 0002:00000138 00000018H .bss                    DATA
+ 0002:00000150 00000020H .rdata$voltmd           DATA
+ 0002:00000170 000000a8H .rdata$zzzdbg           DATA
+ 0003:00000000 00000108H .pdata                  DATA
+ 0004:00000000 00000118H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __guard_fids_count         0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map_count    0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_table      0000000000000000     <absolute>
+ 0000:00000000       __arm64x_native_entrypoint 0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_table      0000000000000000     <absolute>
+ 0000:00000000       __enclave_config           0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata_count 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table   0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points_count 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map          0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata 0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_table         0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table_size 0000000000000000     <absolute>
+ 0000:00000000       __guard_check_icall_a64n_fptr 0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_table          0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points 0000000000000000     <absolute>
+ 0000:00000000       __AbsoluteZero             0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_count          0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_count      0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_count      0000000000000000     <absolute>
+ 0000:00000000       __guard_flags              0000000000000000     <absolute>
+ 0000:00000000       __dynamic_value_reloc_table 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat     0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat_copy 0000000000000000     <absolute>
+ 0001:00000000       InternalMemCopyMem         0000000000000280     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000040       InternalMemZeroMem         00000000000002c0     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00000060       _ModuleEntryPoint          00000000000002e0 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:0000111c       InternalAllocatePool       000000000000139c f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:0000114c       IsLanguageSupported        00000000000013cc f   UefiLib:UefiLib.obj
+ 0002:00000000       gEfiExtScsiPassThruProtocolGuid 0000000000001480     PvScsiDxe:AutoGen.obj
+ 0002:00000010       gEfiComponentName2ProtocolGuid 0000000000001490     PvScsiDxe:AutoGen.obj
+ 0002:00000020       gEfiPciIoProtocolGuid      00000000000014a0     PvScsiDxe:AutoGen.obj
+ 0002:00000030       gEfiDevicePathUtilitiesProtocolGuid 00000000000014b0     PvScsiDxe:AutoGen.obj
+ 0002:00000040       gEfiDriverBindingProtocolGuid 00000000000014c0     PvScsiDxe:AutoGen.obj
+ 0002:00000050       gEfiComponentNameProtocolGuid 00000000000014d0     PvScsiDxe:AutoGen.obj
+ 0002:000000e0       ??_C@_06DALJLGPG@eng?$DLen@ 0000000000001560     PvScsiDxe:PvScsi.obj
+ 0002:000000e8       ??_C@_1CG@EDIMBFGB@?$AAP?$AAV?$AAS?$AAC?$AAS?$AAI?$AA?5?$AAH?$AAo?$AAs?$AAt?$AA?5?$AAD?$AAr?$AAi@ 0000000000001568     PvScsiDxe:PvScsi.obj
+ 0002:00000110       ??_C@_03LKLGDMJI@eng@      0000000000001590     PvScsiDxe:PvScsi.obj
+ 0002:00000114       ??_C@_02LFNMGJAP@en@       0000000000001594     PvScsiDxe:PvScsi.obj
+ 0002:00000138       gST                        00000000000015b8     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000140       gBS                        00000000000015c0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000148       mDevicePathLibDevicePathUtilities 00000000000015c8     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:00000150       __volatile_metadata        00000000000015d0     <linker-defined>
+
+ entry point at        0001:00000060
+
+ Static symbols
+
+ 0001:0000001a       InternalMemCopyMem.0       000000000000029a     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:0000002a       @CopyBackward              00000000000002aa     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000033       @CopyBytes                 00000000000002b3     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:000000f8       PvScsiWriteCmdDesc         0000000000000378 f   PvScsiDxe:PvScsi.obj
+ 0001:00000178       PvScsiResetAdapter         00000000000003f8 f   PvScsiDxe:PvScsi.obj
+ 0001:000001bc       PvScsiWaitForRequestCompletion 000000000000043c f   PvScsiDxe:PvScsi.obj
+ 0001:00000260       PopulateRequest            00000000000004e0 f   PvScsiDxe:PvScsi.obj
+ 0001:00000420       HandleResponse             00000000000006a0 f   PvScsiDxe:PvScsi.obj
+ 0001:00000554       PvScsiPassThru             00000000000007d4 f   PvScsiDxe:PvScsi.obj
+ 0001:00000664       PvScsiGetNextTargetLun     00000000000008e4 f   PvScsiDxe:PvScsi.obj
+ 0001:000006e4       PvScsiBuildDevicePath      0000000000000964 f   PvScsiDxe:PvScsi.obj
+ 0001:00000768       PvScsiGetTargetLun         00000000000009e8 f   PvScsiDxe:PvScsi.obj
+ 0001:000007fc       PvScsiGetDeviceName        0000000000000a7c f   PvScsiDxe:PvScsi.obj
+ 0001:000007fc       PvScsiResetChannel         0000000000000a7c f   PvScsiDxe:PvScsi.obj
+ 0001:000007fc       PvScsiResetTargetLun       0000000000000a7c f   PvScsiDxe:PvScsi.obj
+ 0001:00000808       PvScsiGetNextTarget        0000000000000a88 f   PvScsiDxe:PvScsi.obj
+ 0001:00000860       PvScsiAllocateSharedPages  0000000000000ae0 f   PvScsiDxe:PvScsi.obj
+ 0001:00000930       PvScsiFreeSharedPages      0000000000000bb0 f   PvScsiDxe:PvScsi.obj
+ 0001:00000978       PvScsiInitRings            0000000000000bf8 f   PvScsiDxe:PvScsi.obj
+ 0001:00000a60       PvScsiFreeRings            0000000000000ce0 f   PvScsiDxe:PvScsi.obj
+ 0001:00000ab0       PvScsiInit                 0000000000000d30 f   PvScsiDxe:PvScsi.obj
+ 0001:00000cb8       PvScsiUninit               0000000000000f38 f   PvScsiDxe:PvScsi.obj
+ 0001:00000d00       PvScsiExitBoot             0000000000000f80 f   PvScsiDxe:PvScsi.obj
+ 0001:00000d08       PvScsiDriverBindingSupported 0000000000000f88 f   PvScsiDxe:PvScsi.obj
+ 0001:00000dd0       PvScsiDriverBindingStart   0000000000001050 f   PvScsiDxe:PvScsi.obj
+ 0001:00000f2c       PvScsiDriverBindingStop    00000000000011ac f   PvScsiDxe:PvScsi.obj
+ 0001:00000ff0       PvScsiGetDriverName        0000000000001270 f   PvScsiDxe:PvScsi.obj
+ 0002:00000060       mDriverNameTable           00000000000014e0     PvScsiDxe:PvScsi.obj
+ 0002:00000080       mPvScsiDriverBinding       0000000000001500     PvScsiDxe:PvScsi.obj
+ 0002:000000b0       mComponentName             0000000000001530     PvScsiDxe:PvScsi.obj
+ 0002:000000c8       mComponentName2            0000000000001548     PvScsiDxe:PvScsi.obj
+ 0004:00000000       $unwind$_ModuleEntryPoint  00000000000017c0     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0004:00000008       $unwind$PvScsiWriteCmdDesc 00000000000017c8     PvScsiDxe:PvScsi.obj
+ 0004:00000018       $unwind$PvScsiResetAdapter 00000000000017d8     PvScsiDxe:PvScsi.obj
+ 0004:00000020       $unwind$PvScsiWaitForRequestCompletion 00000000000017e0     PvScsiDxe:PvScsi.obj
+ 0004:00000030       $unwind$PopulateRequest    00000000000017f0     PvScsiDxe:PvScsi.obj
+ 0004:00000048       $unwind$HandleResponse     0000000000001808     PvScsiDxe:PvScsi.obj
+ 0004:00000048       $unwind$PvScsiBuildDevicePath 0000000000001808     PvScsiDxe:PvScsi.obj
+ 0004:00000048       $unwind$PvScsiFreeSharedPages 0000000000001808     PvScsiDxe:PvScsi.obj
+ 0004:00000058       $unwind$PvScsiPassThru     0000000000001818     PvScsiDxe:PvScsi.obj
+ 0004:00000064       $unwind$PvScsiGetNextTargetLun 0000000000001824     PvScsiDxe:PvScsi.obj
+ 0004:00000064       $unwind$PvScsiUninit       0000000000001824     PvScsiDxe:PvScsi.obj
+ 0004:0000006c       $unwind$PvScsiFreeRings    000000000000182c     PvScsiDxe:PvScsi.obj
+ 0004:0000006c       $unwind$PvScsiGetTargetLun 000000000000182c     PvScsiDxe:PvScsi.obj
+ 0004:00000078       $unwind$InternalAllocatePool 0000000000001838     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0004:00000078       $unwind$PvScsiGetNextTarget 0000000000001838     PvScsiDxe:PvScsi.obj
+ 0004:00000080       $unwind$PvScsiAllocateSharedPages 0000000000001840     PvScsiDxe:PvScsi.obj
+ 0004:00000098       $unwind$PvScsiInitRings    0000000000001858     PvScsiDxe:PvScsi.obj
+ 0004:000000b4       $unwind$PvScsiInit         0000000000001874     PvScsiDxe:PvScsi.obj
+ 0004:000000d0       $unwind$PvScsiDriverBindingSupported 0000000000001890     PvScsiDxe:PvScsi.obj
+ 0004:000000e0       $unwind$PvScsiDriverBindingStart 00000000000018a0     PvScsiDxe:PvScsi.obj
+ 0004:000000f4       $unwind$PvScsiDriverBindingStop 00000000000018b4     PvScsiDxe:PvScsi.obj
+ 0004:00000104       $unwind$PvScsiGetDriverName 00000000000018c4     PvScsiDxe:PvScsi.obj

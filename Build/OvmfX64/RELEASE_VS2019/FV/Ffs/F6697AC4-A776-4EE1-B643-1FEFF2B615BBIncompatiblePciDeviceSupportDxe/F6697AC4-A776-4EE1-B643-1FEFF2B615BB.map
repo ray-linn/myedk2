@@ -1,0 +1,75 @@
+ IncompatiblePciDeviceSupportDxe
+
+ Timestamp is 61ee700f (Mon Jan 24 17:23:27 2022)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000060H .text                   CODE
+ 0001:00000060 00000232H .text$mn                CODE
+ 0002:00000000 00000030H .data                   DATA
+ 0002:00000030 00000050H .rdata                  DATA
+ 0002:00000080 00000024H .bss                    DATA
+ 0002:000000a4 00000020H .rdata$voltmd           DATA
+ 0002:000000c4 000000a8H .rdata$zzzdbg           DATA
+ 0003:00000000 00000048H .pdata                  DATA
+ 0004:00000000 00000020H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __hybrid_code_map_count    0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_native_entrypoint 0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_table      0000000000000000     <absolute>
+ 0000:00000000       __enclave_config           0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata_count 0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_table      0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table   0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_table         0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_count      0000000000000000     <absolute>
+ 0000:00000000       __guard_check_icall_a64n_fptr 0000000000000000     <absolute>
+ 0000:00000000       __guard_flags              0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table_size 0000000000000000     <absolute>
+ 0000:00000000       __AbsoluteZero             0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points_count 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map          0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat_copy 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat     0000000000000000     <absolute>
+ 0000:00000000       __dynamic_value_reloc_table 0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_count      0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_count          0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_table          0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_count         0000000000000000     <absolute>
+ 0001:00000000       InternalMemCopyMem         0000000000000260     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000040       InternalMemZeroMem         00000000000002a0     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00000060       _ModuleEntryPoint          00000000000002c0 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:00000080       ProcessModuleEntryPointList 00000000000002e0 f   IncompatiblePciDeviceSupportDxe:AutoGen.obj
+ 0001:00000220       GetPcdProtocol             0000000000000480 f   DxePcdLib:DxePcdLib.obj
+ 0001:0000025c       InternalAllocatePool       00000000000004bc f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0002:00000000       gEfiIncompatiblePciDeviceSupportProtocolGuid 0000000000000500     IncompatiblePciDeviceSupportDxe:AutoGen.obj
+ 0002:00000010       gPcdProtocolGuid           0000000000000510     IncompatiblePciDeviceSupportDxe:AutoGen.obj
+ 0002:00000020       gEfiLegacyBiosProtocolGuid 0000000000000520     IncompatiblePciDeviceSupportDxe:AutoGen.obj
+ 0002:00000080       mPcd                       0000000000000580     DxePcdLib:DxePcdLib.obj
+ 0002:00000088       gST                        0000000000000588     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000090       gBS                        0000000000000590     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000000a4       __volatile_metadata        00000000000005a4     <linker-defined>
+
+ entry point at        0001:00000060
+
+ Static symbols
+
+ 0001:0000001a       InternalMemCopyMem.0       000000000000027a     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:0000002a       @CopyBackward              000000000000028a     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000033       @CopyBytes                 0000000000000293     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000178       LegacyBiosInstalled        00000000000003d8 f   IncompatiblePciDeviceSupportDxe:IncompatiblePciDeviceSupport.obj
+ 0001:000001bc       CheckDevice                000000000000041c f   IncompatiblePciDeviceSupportDxe:IncompatiblePciDeviceSupport.obj
+ 0002:00000030       mConfiguration             0000000000000530     IncompatiblePciDeviceSupportDxe:IncompatiblePciDeviceSupport.obj
+ 0002:00000098       mIncompatiblePciDeviceSupport 0000000000000598     IncompatiblePciDeviceSupportDxe:IncompatiblePciDeviceSupport.obj
+ 0002:000000a0       mLegacyBiosInstalled       00000000000005a0     IncompatiblePciDeviceSupportDxe:IncompatiblePciDeviceSupport.obj
+ 0004:00000000       $unwind$GetPcdProtocol     00000000000006e0     DxePcdLib:DxePcdLib.obj
+ 0004:00000000       $unwind$_ModuleEntryPoint  00000000000006e0     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0004:00000000       $unwind$CheckDevice        00000000000006e0     IncompatiblePciDeviceSupportDxe:IncompatiblePciDeviceSupport.obj
+ 0004:00000008       $unwind$ProcessModuleEntryPointList 00000000000006e8     IncompatiblePciDeviceSupportDxe:AutoGen.obj
+ 0004:00000010       $unwind$LegacyBiosInstalled 00000000000006f0     IncompatiblePciDeviceSupportDxe:IncompatiblePciDeviceSupport.obj
+ 0004:00000018       $unwind$InternalAllocatePool 00000000000006f8     UefiMemoryAllocationLib:MemoryAllocationLib.obj

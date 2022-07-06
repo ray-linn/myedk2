@@ -1,0 +1,137 @@
+## @file
+# Set TPM device type - supports TPM 1.2 and 2.0
+#
+# In SecurityPkg, this module initializes the TPM device type based on a UEFI
+# variable and/or hardware detection. In OvmfPkg, the module only performs TPM
+# hardware detection.
+#
+# Copyright (c) 2015 - 2016, Intel Corporation. All rights reserved.<BR>
+# Copyright (C) 2018, Red Hat, Inc.
+#
+# SPDX-License-Identifier: BSD-2-Clause-Patent
+##
+
+# DO NOT EDIT
+# FILE auto-generated
+
+[Defines]
+  INF_VERSION                = 0x00010017
+  BASE_NAME                  = Tcg2ConfigPei
+  FILE_GUID                  = 8AD3148F-945F-46B4-8ACD-71469EA73945
+  MODULE_TYPE                = PEIM
+  VERSION_STRING             = 1.0
+  ENTRY_POINT                = Tcg2ConfigPeimEntryPoint
+
+[Packages.X64]
+  MdePkg/MdePkg.dec
+  SecurityPkg/SecurityPkg.dec
+
+[Binaries.X64]
+  PE32|Tcg2ConfigPei.efi
+  PEI_DEPEX|Tcg2ConfigPei.depex
+
+[PatchPcd.X64]
+
+[Protocols.X64]
+
+[Ppis.X64]
+  ## SOMETIMES_PRODUCES
+  gPeiTpmInitializationDonePpiGuid
+
+  ## SOMETIMES_CONSUMES
+  gPcdPpiGuid
+
+  ## CONSUMES
+  gEfiPeiPcdPpiGuid
+
+  ## SOMETIMES_CONSUMES
+  gGetPcdInfoPpiGuid
+
+  ## SOMETIMES_CONSUMES
+  gEfiGetPcdInfoPpiGuid
+
+  ## SOMETIMES_PRODUCES
+  gEfiPeiFirmwareVolumeInfoPpiGuid
+
+  ## SOMETIMES_PRODUCES
+  gEfiPeiFirmwareVolumeInfo2PpiGuid
+
+
+[Guids.X64]
+  ## PRODUCES ## GUID # Used as a PPI GUID
+  gEfiTpmDeviceSelectedGuid
+
+  ## SOMETIMES_CONSUMES
+  gEfiTpmDeviceInstanceTpm20DtpmGuid
+
+  ## SOMETIMES_CONSUMES
+  gEfiTpmDeviceInstanceTpm12Guid
+
+  ## SOMETIMES_PRODUCES ## HOB # MemoryAllocation StackHob
+  gEfiHobMemoryAllocStackGuid
+
+  ## SOMETIMES_PRODUCES ## HOB # MemoryAllocation BspStoreHob
+  gEfiHobMemoryAllocBspStoreGuid
+
+  ## SOMETIMES_PRODUCES ## HOB # MemoryAllocation ModuleHob
+  gEfiHobMemoryAllocModuleGuid
+
+  ## SOMETIMES_PRODUCES ## GUID # FV File System Guid.
+  gEfiFirmwareFileSystem2Guid
+
+
+[PcdEx.X64]
+
+[LibraryClasses.X64]
+## @LIB_INSTANCES
+#  MdePkg/Library/PeiHobLib/PeiHobLib.inf
+#  MdePkg/Library/PeiMemoryAllocationLib/PeiMemoryAllocationLib.inf
+#  MdePkg/Library/PeiServicesTablePointerLibIdt/PeiServicesTablePointerLibIdt.inf
+#  MdePkg/Library/PeiPcdLib/PeiPcdLib.inf
+#  MdePkg/Library/RegisterFilterLibNull/RegisterFilterLibNull.inf
+#  MdePkg/Library/BaseMemoryLibRepStr/BaseMemoryLibRepStr.inf
+#  MdePkg/Library/BaseLib/BaseLib.inf
+#  MdePkg/Library/PeiServicesLib/PeiServicesLib.inf
+#  MdePkg/Library/BaseDebugPrintErrorLevelLib/BaseDebugPrintErrorLevelLib.inf
+#  MdePkg/Library/BasePrintLib/BasePrintLib.inf
+#  MdePkg/Library/BaseIoLibIntrinsic/BaseIoLibIntrinsicSev.inf
+#  OvmfPkg/Library/PlatformDebugLibIoPort/PlatformDebugLibIoPort.inf
+#  MdePkg/Library/BasePciCf8Lib/BasePciCf8Lib.inf
+#  MdePkg/Library/BasePciLibCf8/BasePciLibCf8.inf
+#  OvmfPkg/Library/AcpiTimerLib/BaseAcpiTimerLib.inf
+#  MdePkg/Library/PeimEntryPoint/PeimEntryPoint.inf
+#  SecurityPkg/Library/Tpm2DeviceLibDTpm/Tpm2DeviceLibDTpm.inf
+#  SecurityPkg/Library/Tpm12DeviceLibDTpm/Tpm12DeviceLibDTpm.inf
+
+[Depex.X64]
+#  (gOvmfTpmMmioAccessiblePpiGuid) AND (gEfiPeiPcdPpiGuid)
+
+
+
+
+
+[BuildOptions.X64]
+## @AsBuilt
+##   MSFT:RELEASE_VS2019_X64_ASLPP_FLAGS = /nologo /E /C /FIAutoGen.h
+##   MSFT:RELEASE_VS2019_X64_ASLDLINK_FLAGS = /NODEFAULTLIB /ENTRY:ReferenceAcpiTable /SUBSYSTEM:CONSOLE
+##   MSFT:RELEASE_VS2019_X64_GENFW_FLAGS = --zero --keepexceptiontable
+##   MSFT:RELEASE_VS2019_X64_SLINK_FLAGS = /NOLOGO /LTCG
+##   MSFT:RELEASE_VS2019_X64_OBJCOPY_FLAGS = objcopy not needed for
+##   MSFT:RELEASE_VS2019_X64_DEPS_FLAGS = /showIncludes
+##   MSFT:RELEASE_VS2019_X64_ASM_FLAGS = /nologo /c /WX /W3 /Cx /Zd
+##   MSFT:RELEASE_VS2019_X64_CC_FLAGS = /nologo /c /WX /GS- /W4 /Gs32768 /D UNICODE /O1b2s /GL /Gy /FIAutoGen.h /EHs-c- /GR- /GF /Gw /D MDEPKG_NDEBUG /D DISABLE_NEW_DEPRECATED_INTERFACES /D ENABLE_MD5_DEPRECATED_INTERFACES
+##   MSFT:RELEASE_VS2019_X64_ASMLINK_FLAGS = /nologo /tiny
+##   MSFT:RELEASE_VS2019_X64_VFR_FLAGS = -l -n
+##   MSFT:RELEASE_VS2019_X64_ASLCC_FLAGS = /nologo /c /FIAutoGen.h /TC /Dmain=ReferenceAcpiTable
+##   MSFT:RELEASE_VS2019_X64_APP_FLAGS = /nologo /E /TC
+##   MSFT:RELEASE_VS2019_X64_NASM_FLAGS = -Ox -f win64
+##   MSFT:RELEASE_VS2019_X64_OPTROM_FLAGS = -e
+##   MSFT:RELEASE_VS2019_X64_DTC_FLAGS = -H epapr
+##   MSFT:RELEASE_VS2019_X64_MAKE_FLAGS = /nologo
+##   MSFT:RELEASE_VS2019_X64_SYMRENAME_FLAGS = Symbol renaming not needed for
+##   MSFT:RELEASE_VS2019_X64_PP_FLAGS = /nologo /E /TC /FIAutoGen.h
+##   MSFT:RELEASE_VS2019_X64_VFRPP_FLAGS = /nologo /E /TC /DVFRCOMPILE /FI$(MODULE_NAME)StrDefs.h
+##   MSFT:RELEASE_VS2019_X64_DLINK_FLAGS = /NOLOGO /NODEFAULTLIB /IGNORE:4001 /IGNORE:4281 /IGNORE:4254 /OPT:REF /OPT:ICF=10 /MAP /ALIGN:32 /SECTION:.xdata,D /SECTION:.pdata,D /Machine:X64 /LTCG /DLL /ENTRY:$(IMAGE_ENTRY_POINT) /SUBSYSTEM:EFI_BOOT_SERVICE_DRIVER /SAFESEH:NO /BASE:0 /DRIVER /MERGE:.rdata=.data
+##   MSFT:RELEASE_VS2019_X64_ASL_FLAGS = 
+##   MSFT:RELEASE_VS2019_X64_NASMB_FLAGS = -f bin
+##   MSFT:RELEASE_VS2019_X64_DLINK2_FLAGS = /WHOLEARCHIVE

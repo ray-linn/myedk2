@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_PE32 -o d:\edk2\edk2\Build\OvmfX64\DEBUG_VS2019\FV\Ffs\dce1b094-7dc6-45d0-9fdd-d7fc3cc3e4efQemuRamfbDxe\dce1b094-7dc6-45d0-9fdd-d7fc3cc3e4efSEC2.1.pe32 d:\edk2\edk2\Build\OvmfX64\DEBUG_VS2019\X64\OvmfPkg\QemuRamfbDxe\QemuRamfbDxe\OUTPUT\QemuRamfbDxe.efi

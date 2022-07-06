@@ -1,0 +1,73 @@
+ Timer
+
+ Timestamp is 61ee704e (Mon Jan 24 17:24:30 2022)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000004H .text                   CODE
+ 0001:00000004 000002ccH .text$mn                CODE
+ 0002:00000000 00000050H .data                   DATA
+ 0002:00000050 00000020H .rdata                  DATA
+ 0002:00000070 00000038H .bss                    DATA
+ 0002:000000a8 00000034H .rdata$voltmd           DATA
+ 0002:000000dc 000000a8H .rdata$zzzdbg           DATA
+ 0003:00000000 0000003cH .pdata                  DATA
+ 0004:00000000 00000030H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __hybrid_code_map_count    0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_table      0000000000000000     <absolute>
+ 0000:00000000       __arm64x_native_entrypoint 0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_count         0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table   0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_table      0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_count      0000000000000000     <absolute>
+ 0000:00000000       __enclave_config           0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata_count 0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points_count 0000000000000000     <absolute>
+ 0000:00000000       __guard_flags              0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_table         0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata 0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_table          0000000000000000     <absolute>
+ 0000:00000000       __guard_check_icall_a64n_fptr 0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_count          0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table_size 0000000000000000     <absolute>
+ 0000:00000000       __AbsoluteZero             0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_count      0000000000000000     <absolute>
+ 0000:00000000       __dynamic_value_reloc_table 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map          0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat_copy 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat     0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points 0000000000000000     <absolute>
+ 0001:00000000       DisableInterrupts          0000000000000280     BaseLib:DisableInterrupts.obj
+ 0001:00000004       _ModuleEntryPoint          0000000000000284 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:00000024       ProcessModuleEntryPointList 00000000000002a4 f   Timer:AutoGen.obj
+ 0001:000000f8       TimerInterruptHandler      0000000000000378 f   Timer:Timer.obj
+ 0001:00000150       TimerDriverRegisterHandler 00000000000003d0 f   Timer:Timer.obj
+ 0001:00000188       TimerDriverSetTimerPeriod  0000000000000408 f   Timer:Timer.obj
+ 0001:0000023c       TimerDriverGetTimerPeriod  00000000000004bc f   Timer:Timer.obj
+ 0001:0000025c       TimerDriverGenerateSoftInterrupt 00000000000004dc f   Timer:Timer.obj
+ 0002:00000000       gEfiLegacy8259ProtocolGuid 0000000000000560     Timer:AutoGen.obj
+ 0002:00000010       gEfiCpuArchProtocolGuid    0000000000000570     Timer:AutoGen.obj
+ 0002:00000020       gEfiTimerArchProtocolGuid  0000000000000580     Timer:AutoGen.obj
+ 0002:00000030       mTimer                     0000000000000590     Timer:Timer.obj
+ 0002:00000070       mTimerHandle               00000000000005d0     Timer:Timer.obj
+ 0002:00000078       mTimerPeriod               00000000000005d8     Timer:Timer.obj
+ 0002:00000080       gST                        00000000000005e0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000088       gBS                        00000000000005e8     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000090       mTimerNotifyFunction       00000000000005f0     <common>
+ 0002:00000098       mLegacy8259                00000000000005f8     <common>
+ 0002:000000a0       mCpu                       0000000000000600     <common>
+ 0002:000000a8       __volatile_metadata        0000000000000608     <linker-defined>
+
+ entry point at        0001:00000004
+
+ Static symbols
+
+ 0004:00000000       $unwind$_ModuleEntryPoint  0000000000000740     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0004:00000008       $unwind$ProcessModuleEntryPointList 0000000000000748     Timer:AutoGen.obj
+ 0004:00000010       $unwind$TimerInterruptHandler 0000000000000750     Timer:Timer.obj
+ 0004:00000018       $unwind$TimerDriverSetTimerPeriod 0000000000000758     Timer:Timer.obj
+ 0004:00000028       $unwind$TimerDriverGenerateSoftInterrupt 0000000000000768     Timer:Timer.obj

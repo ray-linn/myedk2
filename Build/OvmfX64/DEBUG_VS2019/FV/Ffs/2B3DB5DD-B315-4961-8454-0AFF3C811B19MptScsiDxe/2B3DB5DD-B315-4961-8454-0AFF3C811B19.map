@@ -1,0 +1,215 @@
+ MptScsiDxe
+
+ Timestamp is 62b57332 (Fri Jun 24 16:17:54 2022)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 000000c4H .text                   CODE
+ 0001:000000c4 00002812H .text$mn                CODE
+ 0002:00000000 00000f30H .rdata                  DATA
+ 0002:00000f30 00000020H .rdata$voltmd           DATA
+ 0002:00000f50 00000134H .rdata$zzzdbg           DATA
+ 0003:00000000 000000e0H .data                   DATA
+ 0003:000000e0 0000002aH .bss                    DATA
+ 0004:00000000 00000198H .pdata                  DATA
+ 0005:00000000 00000150H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __x64_code_ranges_to_entry_points_count 0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata 0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_count         0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_table          0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map_count    0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table   0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_count          0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_count      0000000000000000     <absolute>
+ 0000:00000000       __dynamic_value_reloc_table 0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_table      0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat     0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat_copy 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_native_entrypoint 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map          0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table_size 0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_table      0000000000000000     <absolute>
+ 0000:00000000       __AbsoluteZero             0000000000000000     <absolute>
+ 0000:00000000       __guard_check_icall_a64n_fptr 0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_table         0000000000000000     <absolute>
+ 0000:00000000       __enclave_config           0000000000000000     <absolute>
+ 0000:00000000       __guard_flags              0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata_count 0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_count      0000000000000000     <absolute>
+ 0001:00000000       InternalMemCopyMem         00000000000002c0     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000040       InternalMemZeroMem         0000000000000300     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00000060       InternalMemSetMem          0000000000000320     BaseMemoryLibRepStr:SetMem.obj
+ 0001:00000080       InternalMemSetMem64        0000000000000340     BaseMemoryLibRepStr:SetMem64.obj
+ 0001:000000a0       InternalMemSetMem32        0000000000000360     BaseMemoryLibRepStr:SetMem32.obj
+ 0001:000000c0       CpuPause                   0000000000000380     BaseLib:CpuPause.obj
+ 0001:000000c4       _ModuleEntryPoint          0000000000000384 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:00000170       ProcessLibraryConstructorList 0000000000000430 f   MptScsiDxe:AutoGen.obj
+ 0001:00000da8       MptScsiGetDeviceName       0000000000001068 f   MptScsiDxe:MptScsi.obj
+ 0001:000012f8       MptScsiGetDriverName       00000000000015b8 f   MptScsiDxe:MptScsi.obj
+ 0001:000013f8       CopyMem                    00000000000016b8 f   BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0001:00001494       ZeroMem                    0000000000001754 f   BaseMemoryLibRepStr:ZeroMemWrapper.obj
+ 0001:00001504       DebugPrint                 00000000000017c4 f   BaseDebugLibSerialPort:DebugLib.obj
+ 0001:00001528       DebugPrintMarker           00000000000017e8 f   BaseDebugLibSerialPort:DebugLib.obj
+ 0001:000015d8       DebugAssert                0000000000001898 f   BaseDebugLibSerialPort:DebugLib.obj
+ 0001:00001650       InternalAllocatePool       0000000000001910 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00001680       FreePool                   0000000000001940 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:000016c4       IsLanguageSupported        0000000000001984 f   UefiLib:UefiLib.obj
+ 0001:0000174c       AsciiStrLen                0000000000001a0c f   BaseLib:String.obj
+ 0001:000017b8       AsciiStrnCmp               0000000000001a78 f   BaseLib:String.obj
+ 0001:00001884       StrnLenS                   0000000000001b44 f   BaseLib:SafeString.obj
+ 0001:000018dc       AsciiSPrint                0000000000001b9c f   BasePrintLib:PrintLib.obj
+ 0001:00001908       BasePrintLibFillBuffer     0000000000001bc8 f   BasePrintLib:PrintLibInternal.obj
+ 0001:0000193c       BasePrintLibValueToString  0000000000001bfc f   BasePrintLib:PrintLibInternal.obj
+ 0001:000019a8       BasePrintLibSPrintMarker   0000000000001c68 f   BasePrintLib:PrintLibInternal.obj
+ 0001:000028b4       BasePrintLibSPrint         0000000000002b74 f   BasePrintLib:PrintLibInternal.obj
+ 0002:00000000       ??_C@_0CB@DMEJJJHA@?6ASSERT_EFI_ERROR?5?$CIStatus?5?$DN?5?$CFr?$CJ@ 0000000000002ba0     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0002:00000028       ??_C@_0CH@BBNBJKHK@?$CB?$CI?$CI?$CIINTN?$CJ?$CIRETURN_STATUS?$CJ?$CIStatus@ 0000000000002bc8     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0002:00000050       ??_C@_0L@PMNPKMNE@MptScsiDxe@ 0000000000002bf0     MptScsiDxe:AutoGen.obj
+ 0002:00000060       ??_C@_0FK@LLMHOKOJ@d?3?2edk2?2edk2?2Build?2OvmfX64?2DEBU@ 0000000000002c00     MptScsiDxe:AutoGen.obj
+ 0002:000000c0       ??_C@_0BH@BBAGHKPF@ReportHostAdapterError@ 0000000000002c60     MptScsiDxe:MptScsi.obj
+ 0002:000000d8       ??_C@_0CB@MIILEENN@?$CFa?3?5fatal?5error?5in?5scsi?5request@ 0000000000002c78     MptScsiDxe:MptScsi.obj
+ 0002:00000100       ??_C@_0BD@NPHPJJNK@MptScsiHandleReply@ 0000000000002ca0     MptScsiDxe:MptScsi.obj
+ 0002:00000118       ??_C@_0BJ@LMGFNHML@?$CFa?3?5Full?5reply?5returned?6@ 0000000000002cb8     MptScsiDxe:MptScsi.obj
+ 0002:00000138       ??_C@_0DN@MECEMFGJ@Dev?9?$DODma?9?$DOIoReply?4Data?4SenseCou@ 0000000000002cd8     MptScsiDxe:MptScsi.obj
+ 0002:00000178       ??_C@_0CK@DFOHPEPI@d?3?2edk2?2edk2?2OvmfPkg?2MptScsiDxe@ 0000000000002d18     MptScsiDxe:MptScsi.obj
+ 0002:000001a8       ??_C@_0BL@KHDKLPPJ@?$CFa?3?5unexpected?5reply?5?$CI?$CFx?$CJ?6@ 0000000000002d48     MptScsiDxe:MptScsi.obj
+ 0002:000001c8       ??_C@_0BF@NDBIKIKC@CR?5has?5Bad?5Signature@ 0000000000002d68     MptScsiDxe:MptScsi.obj
+ 0002:000001e0       ??_C@_0BA@EMNCEOOL@MptScsiExitBoot@ 0000000000002d80     MptScsiDxe:MptScsi.obj
+ 0002:000001f0       ??_C@_0BC@KKIHHBCL@?$CFa?3?5Context?$DN0x?$CFp?6@ 0000000000002d90     MptScsiDxe:MptScsi.obj
+ 0002:00000208       ??_C@_0BH@ONDDKPHD@MptScsiControllerStart@ 0000000000002da8     MptScsiDxe:MptScsi.obj
+ 0002:00000220       ??_C@_0CL@FILJDCNK@?$CFa?3?5failed?5to?5enable?564?9bit?5DMA@ 0000000000002dc0     MptScsiDxe:MptScsi.obj
+ 0002:0000024c       ??_C@_06DALJLGPG@eng?$DLen@ 0000000000002dec     MptScsiDxe:MptScsi.obj
+ 0002:00000258       ??_C@_1DG@FOMGFGNG@?$AAL?$AAS?$AAI?$AA?5?$AAF?$AAu?$AAs?$AAi?$AAo?$AAn?$AA?5?$AAM?$AAP?$AAT?$AA?5@ 0000000000002df8     MptScsiDxe:MptScsi.obj
+ 0002:00000290       ??_C@_03LKLGDMJI@eng@      0000000000002e30     MptScsiDxe:MptScsi.obj
+ 0002:00000294       ??_C@_02LFNMGJAP@en@       0000000000002e34     MptScsiDxe:MptScsi.obj
+ 0002:000002a0       ??_C@_0ED@MKGCMJG@?$CILength?5?9?51?$CJ?5?$DM?$DN?5?$CI0xFFFFFFFFFFFF@ 0000000000002e40     BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0002:000002f0       ??_C@_0EB@LOHEEPCE@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 0000000000002e90     BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0002:00000338       ??_C@_0DO@MAOBOFEG@?$CILength?5?9?51?$CJ?5?$DM?$DN?5?$CI0xFFFFFFFFFFFF@ 0000000000002ed8     BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0002:00000378       ??_C@_0BH@IACGKAP@Buffer?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000002f18     BaseMemoryLibRepStr:ZeroMemWrapper.obj
+ 0002:00000390       ??_C@_0EB@KNGCOOD@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 0000000000002f30     BaseMemoryLibRepStr:ZeroMemWrapper.obj
+ 0002:000003d8       ??_C@_0DG@EEENIGGL@Length?5?$DM?$DN?5?$CI0xFFFFFFFFFFFFFFFFUL@ 0000000000002f78     BaseMemoryLibRepStr:ZeroMemWrapper.obj
+ 0002:00000410       ??_C@_0BH@LKMBFCBF@Format?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000002fb0     BaseDebugLibSerialPort:DebugLib.obj
+ 0002:00000428       ??_C@_0DO@CKBIDOOL@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 0000000000002fc8     BaseDebugLibSerialPort:DebugLib.obj
+ 0002:00000468       ??_C@_0BI@NOCKJDBJ@ASSERT?5?$FL?$CFa?$FN?5?$CFa?$CI?$CFd?$CJ?3?5?$CFa?6@ 0000000000003008     BaseDebugLibSerialPort:DebugLib.obj
+ 0002:00000480       ??_C@_0BN@COECPDCC@gImageHandle?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000003020     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000004a0       ??_C@_0FA@FOIHGFBE@d?3?2edk2?2edk2?2MdePkg?2Library?2Uef@ 0000000000003040     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000004f0       ??_C@_0BE@DGNHAHIL@gST?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000003090     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000508       ??_C@_0BE@BDFJLGLN@gBS?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000030a8     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000520       ??_C@_0EK@GCCICMAJ@d?3?2edk2?2edk2?2MdePkg?2Library?2Uef@ 00000000000030c0     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0002:00000570       ??_C@_0BE@OBDFIHND@gRT?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000003110     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0002:00000590       ??_C@_0FG@JGJCMPKB@d?3?2edk2?2edk2?2MdePkg?2Library?2Uef@ 0000000000003130     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0002:000005f0       ??_C@_0FE@ELFDCAAP@d?3?2edk2?2edk2?2MdePkg?2Library?2Uef@ 0000000000003190     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:00000648       ??_C@_0DC@CNNBPJA@mDevicePathLibDevicePathUtiliti@ 00000000000031e8     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:00000680       ??_C@_0DG@PIJIOFBF@d?3?2edk2?2edk2?2MdePkg?2Library?2Uef@ 0000000000003220     UefiLib:UefiDriverModel.obj
+ 0002:000006b8       ??_C@_0BH@MAAHKCPC@String?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000003258     BaseLib:String.obj
+ 0002:000006d0       ??_C@_0CN@LHBFELAO@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 0000000000003270     BaseLib:String.obj
+ 0002:00000700       ??_C@_0CC@GFNLNIOC@?$CI?$CIUINTN?$CJString?5?$CG?50x00000001?$CJ?5?$DN?$DN@ 00000000000032a0     BaseLib:String.obj
+ 0002:00000728       ??_C@_0DI@MDIKFADO@Length?5?$DM?5_gPcd_FixedAtBuild_Pcd@ 00000000000032c8     BaseLib:String.obj
+ 0002:00000760       ??_C@_0BL@IKFBNFIL@AsciiStrSize?5?$CIFirstString?$CJ@ 0000000000003300     BaseLib:String.obj
+ 0002:00000780       ??_C@_0BM@EDNOKLLE@AsciiStrSize?5?$CISecondString?$CJ@ 0000000000003320     BaseLib:String.obj
+ 0002:000007a0       ??_C@_0DJ@JJHGIFMP@Length?5?$DM?$DN?5_gPcd_FixedAtBuild_Pc@ 0000000000003340     BaseLib:String.obj
+ 0002:000007e0       ??_C@_0DA@BDDONMJM@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 0000000000003380     BaseLib:Unaligned.obj
+ 0002:00000810       ??_C@_0DB@PKFMPMPC@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 00000000000033b0     BaseLib:SafeString.obj
+ 0002:00000848       ??_C@_0BJ@CNKJJNE@?$CIBuffer?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ@ 00000000000033e8     BaseLib:SafeString.obj
+ 0002:00000868       ??_C@_0N@KGHEHMDL@Divisor?5?$CB?$DN?50@ 0000000000003408     BaseLib:DivU64x32.obj
+ 0002:00000878       ??_C@_0DM@OAJIKNNG@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 0000000000003418     BasePrintLib:PrintLibInternal.obj
+ 0002:000008c0       ??_C@_0EB@HDGIDCIO@?$CIBufferSize?5?$DM?$DN?5?$CI_gPcd_FixedAtBu@ 0000000000003460     BasePrintLib:PrintLibInternal.obj
+ 0002:00000908       ??_C@_0BJ@PPAKKDJG@?$CIFormat?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ@ 00000000000034a8     BasePrintLib:PrintLibInternal.obj
+ 0002:00000930       ??_C@_0ED@LPDDCECB@?$CIBufferSize?5?$DM?$DN?5?$CI_gPcd_FixedAtBu@ 00000000000034d0     BasePrintLib:PrintLibInternal.obj
+ 0002:00000980       ??_C@_0IM@BFJJFLGB@?$CIStrnLenS?5?$CI?$CICHAR16?5?$CK?$CJFormat?0?5?$CI_@ 0000000000003520     BasePrintLib:PrintLibInternal.obj
+ 0002:00000a10       ??_C@_0ID@PLGJGION@?$CIAsciiStrnLenS?5?$CIFormat?0?5?$CI_gPcd_@ 00000000000035b0     BasePrintLib:PrintLibInternal.obj
+ 0002:00000a98       ??_C@_0O@MLOLIMFM@?$DMnull?5string?$DO@ 0000000000003638     BasePrintLib:PrintLibInternal.obj
+ 0002:00000aa8       ??_C@_0M@BJJDNPHK@?$DMnull?5guid?$DO@ 0000000000003648     BasePrintLib:PrintLibInternal.obj
+ 0002:00000ab8       ??_C@_0DB@PMLHLBMO@?$CF08x?9?$CF04x?9?$CF04x?9?$CF02x?$CF02x?9?$CF02x?$CF02@ 0000000000003658     BasePrintLib:PrintLibInternal.obj
+ 0002:00000af0       ??_C@_0M@LHGBCIKM@?$DMnull?5time?$DO@ 0000000000003690     BasePrintLib:PrintLibInternal.obj
+ 0002:00000b00       ??_C@_0BK@FCPKCIDD@?$CF02d?1?$CF02d?1?$CF04d?5?5?$CF02d?3?$CF02d@ 00000000000036a0     BasePrintLib:PrintLibInternal.obj
+ 0002:00000b1c       ??_C@_04JIMNDDED@?$CF08X@  00000000000036bc     BasePrintLib:PrintLibInternal.obj
+ 0002:00000b24       ??_C@_02PCIJFNDE@?$AN?6@   00000000000036c4     BasePrintLib:PrintLibInternal.obj
+ 0002:00000b28       ??_C@_01LIIJDEN@?$AN@      00000000000036c8     BasePrintLib:PrintLibInternal.obj
+ 0002:00000b30       mWarningString             00000000000036d0     BasePrintLib:PrintLibInternal.obj
+ 0002:00000bd0       mErrorString               0000000000003770     BasePrintLib:PrintLibInternal.obj
+ 0002:00000e90       mHexStr                    0000000000003a30     BasePrintLib:PrintLibInternal.obj
+ 0002:00000ea0       ??_C@_0DJ@FHIMIJAH@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 0000000000003a40     BaseLib:DivU64x32Remainder.obj
+ 0002:00000f30       __volatile_metadata        0000000000003ad0     <linker-defined>
+ 0003:00000000       gEfiExtScsiPassThruProtocolGuid 0000000000003c40     MptScsiDxe:AutoGen.obj
+ 0003:00000010       gEfiComponentName2ProtocolGuid 0000000000003c50     MptScsiDxe:AutoGen.obj
+ 0003:00000020       gEfiPciIoProtocolGuid      0000000000003c60     MptScsiDxe:AutoGen.obj
+ 0003:00000030       gEfiDevicePathUtilitiesProtocolGuid 0000000000003c70     MptScsiDxe:AutoGen.obj
+ 0003:00000040       gEfiDriverBindingProtocolGuid 0000000000003c80     MptScsiDxe:AutoGen.obj
+ 0003:00000050       gEfiComponentNameProtocolGuid 0000000000003c90     MptScsiDxe:AutoGen.obj
+ 0003:000000e0       gST                        0000000000003d20     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0003:000000e8       gBS                        0000000000003d28     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0003:000000f0       gImageHandle               0000000000003d30     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0003:000000f8       gRT                        0000000000003d38     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0003:00000100       mDevicePathLibDevicePathUtilities 0000000000003d40     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0003:00000108       gParity                    0000000000003d48     PcAtSerialPortLib:SerialPortLib.obj
+ 0003:00000109       gBreakSet                  0000000000003d49     PcAtSerialPortLib:SerialPortLib.obj
+
+ entry point at        0001:000000c4
+
+ Static symbols
+
+ 0001:0000001a       InternalMemCopyMem.0       00000000000002da     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:0000002a       @CopyBackward              00000000000002ea     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000033       @CopyBytes                 00000000000002f3     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000304       Out32                      00000000000005c4 f   MptScsiDxe:MptScsi.obj
+ 0001:00000338       MptScsiReset               00000000000005f8 f   MptScsiDxe:MptScsi.obj
+ 0001:00000390       MptScsiInit                0000000000000650 f   MptScsiDxe:MptScsi.obj
+ 0001:000004c8       ReportHostAdapterError     0000000000000788 f   MptScsiDxe:MptScsi.obj
+ 0001:0000050c       MptScsiPopulateRequest     00000000000007cc f   MptScsiDxe:MptScsi.obj
+ 0001:00000744       MptScsiGetReply            0000000000000a04 f   MptScsiDxe:MptScsi.obj
+ 0001:0000081c       MptScsiHandleReply         0000000000000adc f   MptScsiDxe:MptScsi.obj
+ 0001:000009ec       MptScsiPassThru            0000000000000cac f   MptScsiDxe:MptScsi.obj
+ 0001:00000ad4       MptScsiGetNextTargetLun    0000000000000d94 f   MptScsiDxe:MptScsi.obj
+ 0001:00000b74       MptScsiGetNextTarget       0000000000000e34 f   MptScsiDxe:MptScsi.obj
+ 0001:00000bfc       MptScsiBuildDevicePath     0000000000000ebc f   MptScsiDxe:MptScsi.obj
+ 0001:00000cc4       MptScsiGetTargetLun        0000000000000f84 f   MptScsiDxe:MptScsi.obj
+ 0001:00000da8       MptScsiResetChannel        0000000000001068 f   MptScsiDxe:MptScsi.obj
+ 0001:00000da8       MptScsiResetTargetLun      0000000000001068 f   MptScsiDxe:MptScsi.obj
+ 0001:00000db4       MptScsiExitBoot            0000000000001074 f   MptScsiDxe:MptScsi.obj
+ 0001:00000de8       MptScsiControllerSupported 00000000000010a8 f   MptScsiDxe:MptScsi.obj
+ 0001:00000ec8       MptScsiControllerStart     0000000000001188 f   MptScsiDxe:MptScsi.obj
+ 0001:000011cc       MptScsiControllerStop      000000000000148c f   MptScsiDxe:MptScsi.obj
+ 0003:00000060       mDriverNameTable           0000000000003ca0     MptScsiDxe:MptScsi.obj
+ 0003:00000080       mComponentName             0000000000003cc0     MptScsiDxe:MptScsi.obj
+ 0003:00000098       mComponentName2            0000000000003cd8     MptScsiDxe:MptScsi.obj
+ 0003:000000b0       mMptScsiDriverBinding      0000000000003cf0     MptScsiDxe:MptScsi.obj
+ 0005:00000000       $unwind$_ModuleEntryPoint  0000000000003f00     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0005:00000008       $unwind$AsciiStrLen        0000000000003f08     BaseLib:String.obj
+ 0005:00000008       $unwind$ZeroMem            0000000000003f08     BaseMemoryLibRepStr:ZeroMemWrapper.obj
+ 0005:00000008       $unwind$ProcessLibraryConstructorList 0000000000003f08     MptScsiDxe:AutoGen.obj
+ 0005:00000008       $unwind$MptScsiGetNextTarget 0000000000003f08     MptScsiDxe:MptScsi.obj
+ 0005:00000008       $unwind$MptScsiReset       0000000000003f08     MptScsiDxe:MptScsi.obj
+ 0005:00000014       $unwind$BasePrintLibSPrint 0000000000003f14     BasePrintLib:PrintLibInternal.obj
+ 0005:00000014       $unwind$Out32              0000000000003f14     MptScsiDxe:MptScsi.obj
+ 0005:0000001c       $unwind$MptScsiInit        0000000000003f1c     MptScsiDxe:MptScsi.obj
+ 0005:00000030       $unwind$StrnLenS           0000000000003f30     BaseLib:SafeString.obj
+ 0005:00000030       $unwind$MptScsiExitBoot    0000000000003f30     MptScsiDxe:MptScsi.obj
+ 0005:00000030       $unwind$ReportHostAdapterError 0000000000003f30     MptScsiDxe:MptScsi.obj
+ 0005:00000038       $unwind$MptScsiGetTargetLun 0000000000003f38     MptScsiDxe:MptScsi.obj
+ 0005:00000038       $unwind$MptScsiPopulateRequest 0000000000003f38     MptScsiDxe:MptScsi.obj
+ 0005:00000050       $unwind$MptScsiGetReply    0000000000003f50     MptScsiDxe:MptScsi.obj
+ 0005:00000060       $unwind$MptScsiGetDriverName 0000000000003f60     MptScsiDxe:MptScsi.obj
+ 0005:00000060       $unwind$MptScsiHandleReply 0000000000003f60     MptScsiDxe:MptScsi.obj
+ 0005:00000078       $unwind$MptScsiPassThru    0000000000003f78     MptScsiDxe:MptScsi.obj
+ 0005:0000008c       $unwind$AsciiStrnCmp       0000000000003f8c     BaseLib:String.obj
+ 0005:0000008c       $unwind$BasePrintLibValueToString 0000000000003f8c     BasePrintLib:PrintLibInternal.obj
+ 0005:0000008c       $unwind$IsLanguageSupported 0000000000003f8c     UefiLib:UefiLib.obj
+ 0005:0000008c       $unwind$MptScsiGetNextTargetLun 0000000000003f8c     MptScsiDxe:MptScsi.obj
+ 0005:0000009c       $unwind$MptScsiBuildDevicePath 0000000000003f9c     MptScsiDxe:MptScsi.obj
+ 0005:000000b0       $unwind$MptScsiControllerSupported 0000000000003fb0     MptScsiDxe:MptScsi.obj
+ 0005:000000c0       $unwind$MptScsiControllerStart 0000000000003fc0     MptScsiDxe:MptScsi.obj
+ 0005:000000d8       $unwind$MptScsiControllerStop 0000000000003fd8     MptScsiDxe:MptScsi.obj
+ 0005:000000ec       $unwind$CopyMem            0000000000003fec     BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0005:00000100       $unwind$DebugPrint         0000000000004000     BaseDebugLibSerialPort:DebugLib.obj
+ 0005:00000108       $unwind$DebugPrintMarker   0000000000004008     BaseDebugLibSerialPort:DebugLib.obj
+ 0005:0000011c       $unwind$DebugAssert        000000000000401c     BaseDebugLibSerialPort:DebugLib.obj
+ 0005:00000124       $unwind$FreePool           0000000000004024     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0005:00000124       $unwind$InternalAllocatePool 0000000000004024     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0005:0000012c       $unwind$AsciiSPrint        000000000000402c     BasePrintLib:PrintLib.obj
+ 0005:00000134       $unwind$BasePrintLibSPrintMarker 0000000000004034     BasePrintLib:PrintLibInternal.obj

@@ -1,0 +1,219 @@
+ TcgDxe
+
+ Timestamp is 61ee702e (Mon Jan 24 17:23:58 2022)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000240H .text                   CODE
+ 0001:00000240 00002937H .text$mn                CODE
+ 0002:00000000 00000220H .data                   DATA
+ 0002:00000220 00000530H .rdata                  DATA
+ 0002:00000750 00000048H .bss                    DATA
+ 0002:00000798 0000006cH .rdata$voltmd           DATA
+ 0002:00000804 000000a8H .rdata$zzzdbg           DATA
+ 0003:00000000 000001bcH .pdata                  DATA
+ 0004:00000000 0000018cH .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __x64_code_ranges_to_entry_points_count 0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_count      0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata 0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_table          0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_count          0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map_count    0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_count      0000000000000000     <absolute>
+ 0000:00000000       __dynamic_value_reloc_table 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map          0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table_size 0000000000000000     <absolute>
+ 0000:00000000       __guard_flags              0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat     0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat_copy 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_native_entrypoint 0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_table      0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_table      0000000000000000     <absolute>
+ 0000:00000000       __enclave_config           0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata_count 0000000000000000     <absolute>
+ 0000:00000000       __AbsoluteZero             0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_count         0000000000000000     <absolute>
+ 0000:00000000       __guard_check_icall_a64n_fptr 0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_table         0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table   0000000000000000     <absolute>
+ 0000:00000000       __ImageBase                0000000000000000     <linker-defined>
+ 0001:00000000       InternalMemCopyMem         00000000000002a0     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000040       InternalMemSetMem          00000000000002e0     BaseMemoryLibRepStr:SetMem.obj
+ 0001:00000060       InternalMemSetMem64        0000000000000300     BaseMemoryLibRepStr:SetMem64.obj
+ 0001:00000080       InternalMemSetMem32        0000000000000320     BaseMemoryLibRepStr:SetMem32.obj
+ 0001:000000a0       InternalMemZeroMem         0000000000000340     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:000000c0       CpuPause                   0000000000000360     BaseLib:CpuPause.obj
+ 0001:000000d0       EnableInterrupts           0000000000000370     BaseLib:EnableInterrupts.obj
+ 0001:000000e0       DisableInterrupts          0000000000000380     BaseLib:DisableInterrupts.obj
+ 0001:000000f0       AsmReadEflags              0000000000000390     BaseLib:ReadEflags.obj
+ 0001:00000100       SevNoRepIo                 00000000000003a0     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000140       IoReadFifo8                00000000000003e0     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000162       IoReadFifo16               0000000000000402     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000188       IoReadFifo32               0000000000000428     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001ab       IoWriteFifo8               000000000000044b     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001cd       IoWriteFifo16              000000000000046d     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001f3       IoWriteFifo32              0000000000000493     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000220       InternalMemCompareMem      00000000000004c0     BaseMemoryLibRepStr:CompareMem.obj
+ 0001:00000240       _ModuleEntryPoint          00000000000004e0 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:0000025c       ProcessLibraryConstructorList 00000000000004fc f   TcgDxe:AutoGen.obj
+ 0001:0000032c       TcgDxeStatusCheck          00000000000005cc f   TcgDxe:TcgDxe.obj
+ 0001:00000384       TpmCommHashAll             0000000000000624 f   TcgDxe:TcgDxe.obj
+ 0001:00000430       TcgDxeHashAll              00000000000006d0 f   TcgDxe:TcgDxe.obj
+ 0001:00000504       TpmCommLogEvent            00000000000007a4 f   TcgDxe:TcgDxe.obj
+ 0001:00000580       TcgDxeLogEvent             0000000000000820 f   TcgDxe:TcgDxe.obj
+ 0001:000005e0       TcgDxePassThroughToTpm     0000000000000880 f   TcgDxe:TcgDxe.obj
+ 0001:0000062c       TcgDxeHashLogExtendEventI  00000000000008cc f   TcgDxe:TcgDxe.obj
+ 0001:000006f8       TcgDxeHashLogExtendEvent   0000000000000998 f   TcgDxe:TcgDxe.obj
+ 0001:00000780       SetupEventLog              0000000000000a20 f   TcgDxe:TcgDxe.obj
+ 0001:00000890       TcgMeasureAction           0000000000000b30 f   TcgDxe:TcgDxe.obj
+ 0001:000008dc       MeasureVariable            0000000000000b7c f   TcgDxe:TcgDxe.obj
+ 0001:000009f0       ReadAndMeasureBootVariable 0000000000000c90 f   TcgDxe:TcgDxe.obj
+ 0001:00000ac4       MeasureAllBootVariables    0000000000000d64 f   TcgDxe:TcgDxe.obj
+ 0001:00000b84       OnReadyToBoot              0000000000000e24 f   TcgDxe:TcgDxe.obj
+ 0001:00000c08       InstallAcpiTable           0000000000000ea8 f   TcgDxe:TcgDxe.obj
+ 0001:00000ccc       OnExitBootServices         0000000000000f6c f   TcgDxe:TcgDxe.obj
+ 0001:00000cec       OnExitBootServicesFailed   0000000000000f8c f   TcgDxe:TcgDxe.obj
+ 0001:00000cf8       GetTpmStatus               0000000000000f98 f   TcgDxe:TcgDxe.obj
+ 0001:00000de4       DriverEntry                0000000000001084 f   TcgDxe:TcgDxe.obj
+ 0001:00001058       GetPcdProtocol             00000000000012f8 f   DxePcdLib:DxePcdLib.obj
+ 0001:00001094       StrnLenS                   0000000000001334 f   BaseLib:SafeString.obj
+ 0001:000010c0       UnicodeSPrint              0000000000001360 f   BasePrintLib:PrintLib.obj
+ 0001:000010f4       BasePrintLibFillBuffer     0000000000001394 f   BasePrintLib:PrintLibInternal.obj
+ 0001:00001128       BasePrintLibSPrintMarker   00000000000013c8 f   BasePrintLib:PrintLibInternal.obj
+ 0001:00001ec4       BasePrintLibSPrint         0000000000002164 f   BasePrintLib:PrintLibInternal.obj
+ 0001:00001ee8       InternalAllocatePool       0000000000002188 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00001f18       EfiCreateEventReadyToBootEx 00000000000021b8 f   UefiLib:UefiNotTiano.obj
+ 0001:00001f70       Tpm12GetPtpInterface       0000000000002210 f   Tpm12DeviceLibDTpm:Tpm12Tis.obj
+ 0001:00001fd8       Tpm12TisPcWaitRegisterBits 0000000000002278 f   Tpm12DeviceLibDTpm:Tpm12Tis.obj
+ 0001:00002054       Tpm12TisPcReadBurstCount   00000000000022f4 f   Tpm12DeviceLibDTpm:Tpm12Tis.obj
+ 0001:000020dc       Tpm12TisTpmCommand         000000000000237c f   Tpm12DeviceLibDTpm:Tpm12Tis.obj
+ 0001:00002320       Tpm12SubmitCommand         00000000000025c0 f   Tpm12DeviceLibDTpm:Tpm12Tis.obj
+ 0001:00002368       GetHobList                 0000000000002608 f   DxeHobLib:HobLib.obj
+ 0001:000023d4       InternalReportStatusCode   0000000000002674 f   DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0001:00002460       Tpm12Extend                0000000000002700 f   Tpm12CommandLib:Tpm12Pcr.obj
+ 0001:00002518       PciCf8Read32               00000000000027b8 f   BasePciCf8Lib:PciCf8Lib.obj
+ 0001:0000257c       InternalAcpiDelay          000000000000281c f   DxeAcpiTimerLib:AcpiTimerLib.obj
+ 0001:000025dc       SHA1_Update                000000000000287c f   OpensslLib:sha1dgst.obj
+ 0001:00002708       SHA1_Final                 00000000000029a8 f   OpensslLib:sha1dgst.obj
+ 0001:00002b3c       SaveAndDisableInterrupts   0000000000002ddc f   BaseLib:Cpu.obj
+ 0001:00002b60       memset                     0000000000002e00 f   BaseIntrinsicLib:MemoryIntrinsics.obj
+ 0002:00000000       _fltused                   0000000000002e20     BaseIntrinsicLib:MemoryIntrinsics.obj
+ 0002:00000008       gEfiGlobalVariableGuid     0000000000002e28     TcgDxe:AutoGen.obj
+ 0002:00000018       gEfiStatusCodeRuntimeProtocolGuid 0000000000002e38     TcgDxe:AutoGen.obj
+ 0002:00000028       gTpmErrorHobGuid           0000000000002e48     TcgDxe:AutoGen.obj
+ 0002:00000038       gEventExitBootServicesFailedGuid 0000000000002e58     TcgDxe:AutoGen.obj
+ 0002:00000048       gEfiEventReadyToBootGuid   0000000000002e68     TcgDxe:AutoGen.obj
+ 0002:00000058       gTcgEventEntryHobGuid      0000000000002e78     TcgDxe:AutoGen.obj
+ 0002:00000068       gPcdProtocolGuid           0000000000002e88     TcgDxe:AutoGen.obj
+ 0002:00000078       gEfiTpmDeviceInstanceTpm12Guid 0000000000002e98     TcgDxe:AutoGen.obj
+ 0002:00000088       gEfiDevicePathUtilitiesProtocolGuid 0000000000002ea8     TcgDxe:AutoGen.obj
+ 0002:00000098       gEfiAcpiTableProtocolGuid  0000000000002eb8     TcgDxe:AutoGen.obj
+ 0002:000000a8       gEfiHobListGuid            0000000000002ec8     TcgDxe:AutoGen.obj
+ 0002:000000b8       gEfiTcgProtocolGuid        0000000000002ed8     TcgDxe:AutoGen.obj
+ 0002:000000c8       gEfiEventExitBootServicesGuid 0000000000002ee8     TcgDxe:AutoGen.obj
+ 0002:000000d8       gEfiCallerIdGuid           0000000000002ef8     TcgDxe:AutoGen.obj
+ 0002:000000f0       mBootVarName               0000000000002f10     TcgDxe:TcgDxe.obj
+ 0002:00000110       mTcgClientAcpiTemplate     0000000000002f30     TcgDxe:TcgDxe.obj
+ 0002:00000150       mTcgServerAcpiTemplate     0000000000002f70     TcgDxe:TcgDxe.obj
+ 0002:000001c0       mTcgDxeData                0000000000002fe0     TcgDxe:TcgDxe.obj
+ 0002:00000220       _gPcd_FixedAtBuild_PcdAcpiDefaultOemId 0000000000003040     TcgDxe:AutoGen.obj
+ 0002:00000228       ??_C@_1BC@HAMKBGJJ@?$AAB?$AAo?$AAo?$AAt?$AA?$CF?$AA0?$AA4?$AAx@ 0000000000003048     TcgDxe:TcgDxe.obj
+ 0002:00000240       ??_C@_0CJ@GCINOJAE@Calling?5EFI?5Application?5from?5Bo@ 0000000000003060     TcgDxe:TcgDxe.obj
+ 0002:00000270       ??_C@_0DA@JBCCHLLJ@Returning?5from?5EFI?5Application?5@ 0000000000003090     TcgDxe:TcgDxe.obj
+ 0002:000002a0       ??_C@_0BO@PJFLILCK@Exit?5Boot?5Services?5Invocation@ 00000000000030c0     TcgDxe:TcgDxe.obj
+ 0002:000002c0       ??_C@_0CJ@POFGDDBB@Exit?5Boot?5Services?5Returned?5wit@ 00000000000030e0     TcgDxe:TcgDxe.obj
+ 0002:000002f0       ??_C@_0CJ@DHBEIIEL@Exit?5Boot?5Services?5Returned?5wit@ 0000000000003110     TcgDxe:TcgDxe.obj
+ 0002:00000320       ??_C@_0O@MLOLIMFM@?$DMnull?5string?$DO@ 0000000000003140     BasePrintLib:PrintLibInternal.obj
+ 0002:00000330       ??_C@_0M@BJJDNPHK@?$DMnull?5guid?$DO@ 0000000000003150     BasePrintLib:PrintLibInternal.obj
+ 0002:00000340       ??_C@_0DB@PMLHLBMO@?$CF08x?9?$CF04x?9?$CF04x?9?$CF02x?$CF02x?9?$CF02x?$CF02@ 0000000000003160     BasePrintLib:PrintLibInternal.obj
+ 0002:00000378       ??_C@_0M@LHGBCIKM@?$DMnull?5time?$DO@ 0000000000003198     BasePrintLib:PrintLibInternal.obj
+ 0002:00000388       ??_C@_0BK@FCPKCIDD@?$CF02d?1?$CF02d?1?$CF04d?5?5?$CF02d?3?$CF02d@ 00000000000031a8     BasePrintLib:PrintLibInternal.obj
+ 0002:000003a4       ??_C@_04JIMNDDED@?$CF08X@  00000000000031c4     BasePrintLib:PrintLibInternal.obj
+ 0002:000003ac       ??_C@_02PCIJFNDE@?$AN?6@   00000000000031cc     BasePrintLib:PrintLibInternal.obj
+ 0002:000003b0       ??_C@_01LIIJDEN@?$AN@      00000000000031d0     BasePrintLib:PrintLibInternal.obj
+ 0002:000003c0       mWarningString             00000000000031e0     BasePrintLib:PrintLibInternal.obj
+ 0002:00000460       mErrorString               0000000000003280     BasePrintLib:PrintLibInternal.obj
+ 0002:00000720       mHexStr                    0000000000003540     BasePrintLib:PrintLibInternal.obj
+ 0002:00000750       mBootAttempts              0000000000003570     TcgDxe:TcgDxe.obj
+ 0002:00000758       mPcd                       0000000000003578     DxePcdLib:DxePcdLib.obj
+ 0002:00000760       gST                        0000000000003580     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000768       gBS                        0000000000003588     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000770       mDevicePathLibDevicePathUtilities 0000000000003590     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:00000778       gRT                        0000000000003598     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0002:00000780       mHobList                   00000000000035a0     DxeHobLib:HobLib.obj
+ 0002:00000788       mReportStatusCodeLibStatusCodeProtocol 00000000000035a8     DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0002:00000798       __volatile_metadata        00000000000035b8     <linker-defined>
+
+ entry point at        0001:00000240
+
+ Static symbols
+
+ 0001:0000001a       InternalMemCopyMem.0       00000000000002ba     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:0000002a       @CopyBackward              00000000000002ca     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000033       @CopyBytes                 00000000000002d3     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:0000013a       @UseRepIo                  00000000000003da     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:0000013c       @SevNoRepIo_Done           00000000000003dc     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000154       @IoReadFifo8_NoRep         00000000000003f4     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000156       @IoReadFifo8_Loop          00000000000003f6     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:0000015e       @IoReadFifo8_Done          00000000000003fe     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000177       @IoReadFifo16_NoRep        0000000000000417     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000179       @IoReadFifo16_Loop         0000000000000419     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000184       @IoReadFifo16_Done         0000000000000424     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:0000019c       @IoReadFifo32_NoRep        000000000000043c     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:0000019e       @IoReadFifo32_Loop         000000000000043e     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001a7       @IoReadFifo32_Done         0000000000000447     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001bf       @IoWriteFifo8_NoRep        000000000000045f     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001c1       @IoWriteFifo8_Loop         0000000000000461     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001c9       @IoWriteFifo8_Done         0000000000000469     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001e2       @IoWriteFifo16_NoRep       0000000000000482     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001e4       @IoWriteFifo16_Loop        0000000000000484     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001ef       @IoWriteFifo16_Done        000000000000048f     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000207       @IoWriteFifo32_NoRep       00000000000004a7     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000209       @IoWriteFifo32_Loop        00000000000004a9     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000212       @IoWriteFifo32_Done        00000000000004b2     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00002868       sha1_block_data_order      0000000000002b08 f   OpensslLib:sha1dgst.obj
+ 0002:00000218       memset_func                0000000000003038     OpensslLib:mem_clr.obj
+ 0002:00000790       mRunningOnQ35              00000000000035b0     DxePciLibI440FxQ35:PciLib.obj
+ 0002:00000794       mAcpiTimerIoAddr           00000000000035b4     DxeAcpiTimerLib:DxeAcpiTimerLib.obj
+ 0004:00000000       $unwind$SaveAndDisableInterrupts 00000000000038a0     BaseLib:Cpu.obj
+ 0004:00000000       $unwind$PciCf8Read32       00000000000038a0     BasePciCf8Lib:PciCf8Lib.obj
+ 0004:00000000       $unwind$_ModuleEntryPoint  00000000000038a0     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0004:00000008       $unwind$ProcessLibraryConstructorList 00000000000038a8     TcgDxe:AutoGen.obj
+ 0004:00000014       $unwind$TpmCommHashAll     00000000000038b4     TcgDxe:TcgDxe.obj
+ 0004:00000028       $unwind$Tpm12TisPcWaitRegisterBits 00000000000038c8     Tpm12DeviceLibDTpm:Tpm12Tis.obj
+ 0004:00000028       $unwind$TcgDxeHashAll      00000000000038c8     TcgDxe:TcgDxe.obj
+ 0004:00000040       $unwind$TpmCommLogEvent    00000000000038e0     TcgDxe:TcgDxe.obj
+ 0004:0000004c       $unwind$EfiCreateEventReadyToBootEx 00000000000038ec     UefiLib:UefiNotTiano.obj
+ 0004:0000004c       $unwind$TcgDxeLogEvent     00000000000038ec     TcgDxe:TcgDxe.obj
+ 0004:00000054       $unwind$TcgDxePassThroughToTpm 00000000000038f4     TcgDxe:TcgDxe.obj
+ 0004:0000005c       $unwind$ReadAndMeasureBootVariable 00000000000038fc     TcgDxe:TcgDxe.obj
+ 0004:0000005c       $unwind$TcgDxeHashLogExtendEventI 00000000000038fc     TcgDxe:TcgDxe.obj
+ 0004:0000006c       $unwind$Tpm12SubmitCommand 000000000000390c     Tpm12DeviceLibDTpm:Tpm12Tis.obj
+ 0004:0000006c       $unwind$TcgDxeHashLogExtendEvent 000000000000390c     TcgDxe:TcgDxe.obj
+ 0004:00000078       $unwind$SetupEventLog      0000000000003918     TcgDxe:TcgDxe.obj
+ 0004:00000088       $unwind$TcgMeasureAction   0000000000003928     TcgDxe:TcgDxe.obj
+ 0004:00000090       $unwind$MeasureVariable    0000000000003930     TcgDxe:TcgDxe.obj
+ 0004:000000a8       $unwind$MeasureAllBootVariables 0000000000003948     TcgDxe:TcgDxe.obj
+ 0004:000000b4       $unwind$OnReadyToBoot      0000000000003954     TcgDxe:TcgDxe.obj
+ 0004:000000bc       $unwind$InternalReportStatusCode 000000000000395c     DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0004:000000bc       $unwind$InstallAcpiTable   000000000000395c     TcgDxe:TcgDxe.obj
+ 0004:000000c4       $unwind$GetPcdProtocol     0000000000003964     DxePcdLib:DxePcdLib.obj
+ 0004:000000c4       $unwind$InternalAllocatePool 0000000000003964     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0004:000000c4       $unwind$OnExitBootServices 0000000000003964     TcgDxe:TcgDxe.obj
+ 0004:000000cc       $unwind$GetTpmStatus       000000000000396c     TcgDxe:TcgDxe.obj
+ 0004:000000dc       $unwind$DriverEntry        000000000000397c     TcgDxe:TcgDxe.obj
+ 0004:000000e8       $unwind$UnicodeSPrint      0000000000003988     BasePrintLib:PrintLib.obj
+ 0004:000000f0       $unwind$BasePrintLibSPrintMarker 0000000000003990     BasePrintLib:PrintLibInternal.obj
+ 0004:0000010c       $unwind$BasePrintLibSPrint 00000000000039ac     BasePrintLib:PrintLibInternal.obj
+ 0004:00000114       $unwind$Tpm12TisPcReadBurstCount 00000000000039b4     Tpm12DeviceLibDTpm:Tpm12Tis.obj
+ 0004:00000128       $unwind$Tpm12TisTpmCommand 00000000000039c8     Tpm12DeviceLibDTpm:Tpm12Tis.obj
+ 0004:00000140       $unwind$Tpm12Extend        00000000000039e0     Tpm12CommandLib:Tpm12Pcr.obj
+ 0004:00000148       $unwind$InternalAcpiDelay  00000000000039e8     DxeAcpiTimerLib:AcpiTimerLib.obj
+ 0004:00000158       $unwind$SHA1_Final         00000000000039f8     OpensslLib:sha1dgst.obj
+ 0004:00000158       $unwind$SHA1_Update        00000000000039f8     OpensslLib:sha1dgst.obj
+ 0004:00000170       $unwind$sha1_block_data_order 0000000000003a10     OpensslLib:sha1dgst.obj

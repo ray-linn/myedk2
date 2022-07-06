@@ -1,0 +1,167 @@
+ QemuRamfbDxe
+
+ Timestamp is 61ee702c (Mon Jan 24 17:23:56 2022)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000244H .text                   CODE
+ 0001:00000244 000018c1H .text$mn                CODE
+ 0002:00000000 00000120H .data                   DATA
+ 0002:00000120 00000050H .rdata                  DATA
+ 0002:00000170 00000068H .bss                    DATA
+ 0002:000001d8 0000007cH .rdata$voltmd           DATA
+ 0002:00000254 000000a8H .rdata$zzzdbg           DATA
+ 0003:00000000 00000114H .pdata                  DATA
+ 0004:00000000 0000010cH .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __guard_longjmp_table      0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map_count    0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_count         0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points_count 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_native_entrypoint 0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_table      0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_table          0000000000000000     <absolute>
+ 0000:00000000       __enclave_config           0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata_count 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table   0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_count          0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points 0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_count      0000000000000000     <absolute>
+ 0000:00000000       __dynamic_value_reloc_table 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat     0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat_copy 0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_count      0000000000000000     <absolute>
+ 0000:00000000       __guard_flags              0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_table         0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map          0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table_size 0000000000000000     <absolute>
+ 0000:00000000       __AbsoluteZero             0000000000000000     <absolute>
+ 0000:00000000       __guard_check_icall_a64n_fptr 0000000000000000     <absolute>
+ 0001:00000000       InternalMemZeroMem         0000000000000280     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00000020       InternalMemCopyMem         00000000000002a0     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000060       SevNoRepIo                 00000000000002e0     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000000a0       IoReadFifo8                0000000000000320     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000000c2       IoReadFifo16               0000000000000342     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000000e8       IoReadFifo32               0000000000000368     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:0000010b       IoWriteFifo8               000000000000038b     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:0000012d       IoWriteFifo16              00000000000003ad     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000153       IoWriteFifo32              00000000000003d3     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000180       InternalMemSetMem64        0000000000000400     BaseMemoryLibRepStr:SetMem64.obj
+ 0001:000001a0       InternalMemSetMem32        0000000000000420     BaseMemoryLibRepStr:SetMem32.obj
+ 0001:000001c0       InternalMemSetMem          0000000000000440     BaseMemoryLibRepStr:SetMem.obj
+ 0001:000001e0       AsmCpuid                   0000000000000460     BaseLib:CpuId.obj
+ 0001:00000210       CpuPause                   0000000000000490     BaseLib:CpuPause.obj
+ 0001:00000220       EnableInterrupts           00000000000004a0     BaseLib:EnableInterrupts.obj
+ 0001:00000230       DisableInterrupts          00000000000004b0     BaseLib:DisableInterrupts.obj
+ 0001:00000240       AsmReadEflags              00000000000004c0     BaseLib:ReadEflags.obj
+ 0001:00000244       _ModuleEntryPoint          00000000000004c4 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:00000258       ProcessLibraryConstructorList 00000000000004d8 f   QemuRamfbDxe:AutoGen.obj
+ 0001:000006bc       InitializeQemuRamfb        000000000000093c f   QemuRamfbDxe:QemuRamfb.obj
+ 0001:0000098c       InternalAllocatePool       0000000000000c0c f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:000009bc       InternalAllocateCopyPool   0000000000000c3c f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:000009f0       FrameBufferBltLibConfigurePixelFormat 0000000000000c70 f   FrameBufferBltLib:FrameBufferBltLib.obj
+ 0001:00000aa8       FrameBufferBltConfigure    0000000000000d28 f   FrameBufferBltLib:FrameBufferBltLib.obj
+ 0001:00000bf4       FrameBufferBltLibVideoFill 0000000000000e74 f   FrameBufferBltLib:FrameBufferBltLib.obj
+ 0001:00000ed0       FrameBufferBltLibVideoToBltBuffer 0000000000001150 f   FrameBufferBltLib:FrameBufferBltLib.obj
+ 0001:0000106c       FrameBufferBltLibBufferToVideo 00000000000012ec f   FrameBufferBltLib:FrameBufferBltLib.obj
+ 0001:00001210       FrameBufferBltLibVideoToVideo 0000000000001490 f   FrameBufferBltLib:FrameBufferBltLib.obj
+ 0001:00001318       FrameBufferBlt             0000000000001598 f   FrameBufferBltLib:FrameBufferBltLib.obj
+ 0001:000015a0       InternalQemuFwCfgDmaBytes  0000000000001820 f   QemuFwCfgDxeLib:QemuFwCfgDxe.obj
+ 0001:0000180c       QemuFwCfgReadBytes         0000000000001a8c f   QemuFwCfgDxeLib:QemuFwCfgLib.obj
+ 0001:0000186c       QemuFwCfgFindFile          0000000000001aec f   QemuFwCfgDxeLib:QemuFwCfgLib.obj
+ 0001:000019b8       GetPcdProtocol             0000000000001c38 f   DxePcdLib:DxePcdLib.obj
+ 0001:00001a80       PciCf8Read32               0000000000001d00 f   BasePciCf8Lib:PciCf8Lib.obj
+ 0001:00001ae4       SaveAndDisableInterrupts   0000000000001d64 f   BaseLib:Cpu.obj
+ 0002:00000000       gPcdProtocolGuid           0000000000001da0     QemuRamfbDxe:AutoGen.obj
+ 0002:00000010       gEfiDevicePathProtocolGuid 0000000000001db0     QemuRamfbDxe:AutoGen.obj
+ 0002:00000020       gEfiDevicePathUtilitiesProtocolGuid 0000000000001dc0     QemuRamfbDxe:AutoGen.obj
+ 0002:00000030       gEfiGraphicsOutputProtocolGuid 0000000000001dd0     QemuRamfbDxe:AutoGen.obj
+ 0002:00000040       gEdkiiIoMmuProtocolGuid    0000000000001de0     QemuRamfbDxe:AutoGen.obj
+ 0002:00000050       gQemuRamfbGuid             0000000000001df0     QemuRamfbDxe:AutoGen.obj
+ 0002:00000120       ??_C@_09NBAAEHBH@etc?1ramfb@ 0000000000001ec0     QemuRamfbDxe:QemuRamfb.obj
+ 0002:00000130       mBgrPixelMasks             0000000000001ed0     FrameBufferBltLib:FrameBufferBltLib.obj
+ 0002:00000140       mRgbPixelMasks             0000000000001ee0     FrameBufferBltLib:FrameBufferBltLib.obj
+ 0002:00000170       gST                        0000000000001f10     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000178       gBS                        0000000000001f18     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000180       gImageHandle               0000000000001f20     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000188       mDevicePathLibDevicePathUtilities 0000000000001f28     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:00000198       mPcd                       0000000000001f38     DxePcdLib:DxePcdLib.obj
+ 0002:000001d8       __volatile_metadata        0000000000001f78     <linker-defined>
+
+ entry point at        0001:00000244
+
+ Static symbols
+
+ 0001:0000003a       InternalMemCopyMem.0       00000000000002ba     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:0000004a       @CopyBackward              00000000000002ca     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000053       @CopyBytes                 00000000000002d3     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:0000009a       @UseRepIo                  000000000000031a     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:0000009c       @SevNoRepIo_Done           000000000000031c     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000000b4       @IoReadFifo8_NoRep         0000000000000334     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000000b6       @IoReadFifo8_Loop          0000000000000336     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000000be       @IoReadFifo8_Done          000000000000033e     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000000d7       @IoReadFifo16_NoRep        0000000000000357     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000000d9       @IoReadFifo16_Loop         0000000000000359     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000000e4       @IoReadFifo16_Done         0000000000000364     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000000fc       @IoReadFifo32_NoRep        000000000000037c     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000000fe       @IoReadFifo32_Loop         000000000000037e     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000107       @IoReadFifo32_Done         0000000000000387     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:0000011f       @IoWriteFifo8_NoRep        000000000000039f     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000121       @IoWriteFifo8_Loop         00000000000003a1     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000129       @IoWriteFifo8_Done         00000000000003a9     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000142       @IoWriteFifo16_NoRep       00000000000003c2     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000144       @IoWriteFifo16_Loop        00000000000003c4     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:0000014f       @IoWriteFifo16_Done        00000000000003cf     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000167       @IoWriteFifo32_NoRep       00000000000003e7     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000169       @IoWriteFifo32_Loop        00000000000003e9     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000172       @IoWriteFifo32_Done        00000000000003f2     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001ef       AsmCpuid.0                 000000000000046f     BaseLib:CpuId.obj
+ 0001:000001f4       AsmCpuid.1                 0000000000000474     BaseLib:CpuId.obj
+ 0001:000001fb       AsmCpuid.2                 000000000000047b     BaseLib:CpuId.obj
+ 0001:00000204       AsmCpuid.3                 0000000000000484     BaseLib:CpuId.obj
+ 0001:000003d8       QemuRamfbGraphicsOutputQueryMode 0000000000000658 f   QemuRamfbDxe:QemuRamfb.obj
+ 0001:00000444       QemuRamfbGraphicsOutputSetMode 00000000000006c4 f   QemuRamfbDxe:QemuRamfb.obj
+ 0001:00000660       QemuRamfbGraphicsOutputBlt 00000000000008e0 f   QemuRamfbDxe:QemuRamfb.obj
+ 0001:0000147c       AllocFwCfgDmaAccessBuffer  00000000000016fc f   QemuFwCfgDxeLib:QemuFwCfgDxe.obj
+ 0001:000019f4       InternalMemEncryptSevStatus 0000000000001c74 f   DxeMemEncryptSevLib:DxeMemEncryptSevLibInternal.obj
+ 0002:00000060       mQemuRamfbGraphicsOutput   0000000000001e00     QemuRamfbDxe:QemuRamfb.obj
+ 0002:00000080       mQemuRamfbModeInfo         0000000000001e20     QemuRamfbDxe:QemuRamfb.obj
+ 0002:000000f0       mQemuRamfbMode             0000000000001e90     QemuRamfbDxe:QemuRamfb.obj
+ 0002:00000190       mQemuFwCfgSupported        0000000000001f30     QemuFwCfgDxeLib:QemuFwCfgDxe.obj
+ 0002:000001a0       mSevStatus                 0000000000001f40     DxeMemEncryptSevLib:DxeMemEncryptSevLibInternal.obj
+ 0002:000001a1       mSevStatusChecked          0000000000001f41     DxeMemEncryptSevLib:DxeMemEncryptSevLibInternal.obj
+ 0002:000001a8       mQemuRamfbFrameBufferBltConfigure 0000000000001f48     QemuRamfbDxe:QemuRamfb.obj
+ 0002:000001b0       mRamfbFwCfgItem            0000000000001f50     QemuRamfbDxe:QemuRamfb.obj
+ 0002:000001b4       mRunningOnQ35              0000000000001f54     DxePciLibI440FxQ35:PciLib.obj
+ 0002:000001b5       mQemuFwCfgDmaSupported     0000000000001f55     QemuFwCfgDxeLib:QemuFwCfgDxe.obj
+ 0002:000001b8       mGopHandle                 0000000000001f58     QemuRamfbDxe:QemuRamfb.obj
+ 0002:000001c0       mQemuRamfbFrameBufferBltConfigureSize 0000000000001f60     QemuRamfbDxe:QemuRamfb.obj
+ 0002:000001c8       mRamfbHandle               0000000000001f68     QemuRamfbDxe:QemuRamfb.obj
+ 0002:000001d0       mIoMmuProtocol             0000000000001f70     QemuFwCfgDxeLib:QemuFwCfgDxe.obj
+ 0004:00000000       $unwind$GetPcdProtocol     00000000000021c0     DxePcdLib:DxePcdLib.obj
+ 0004:00000000       $unwind$_ModuleEntryPoint  00000000000021c0     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0004:00000000       $unwind$InternalAllocatePool 00000000000021c0     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0004:00000000       $unwind$QemuFwCfgReadBytes 00000000000021c0     QemuFwCfgDxeLib:QemuFwCfgLib.obj
+ 0004:00000008       $unwind$ProcessLibraryConstructorList 00000000000021c8     QemuRamfbDxe:AutoGen.obj
+ 0004:00000018       $unwind$QemuRamfbGraphicsOutputQueryMode 00000000000021d8     QemuRamfbDxe:QemuRamfb.obj
+ 0004:00000024       $unwind$QemuRamfbGraphicsOutputSetMode 00000000000021e4     QemuRamfbDxe:QemuRamfb.obj
+ 0004:00000030       $unwind$QemuRamfbGraphicsOutputBlt 00000000000021f0     QemuRamfbDxe:QemuRamfb.obj
+ 0004:00000038       $unwind$InitializeQemuRamfb 00000000000021f8     QemuRamfbDxe:QemuRamfb.obj
+ 0004:0000004c       $unwind$SaveAndDisableInterrupts 000000000000220c     BaseLib:Cpu.obj
+ 0004:0000004c       $unwind$PciCf8Read32       000000000000220c     BasePciCf8Lib:PciCf8Lib.obj
+ 0004:0000004c       $unwind$InternalAllocateCopyPool 000000000000220c     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0004:00000054       $unwind$FrameBufferBltLibConfigurePixelFormat 0000000000002214     FrameBufferBltLib:FrameBufferBltLib.obj
+ 0004:00000068       $unwind$FrameBufferBltConfigure 0000000000002228     FrameBufferBltLib:FrameBufferBltLib.obj
+ 0004:0000007c       $unwind$FrameBufferBltLibVideoFill 000000000000223c     FrameBufferBltLib:FrameBufferBltLib.obj
+ 0004:00000094       $unwind$FrameBufferBltLibBufferToVideo 0000000000002254     FrameBufferBltLib:FrameBufferBltLib.obj
+ 0004:00000094       $unwind$FrameBufferBltLibVideoToBltBuffer 0000000000002254     FrameBufferBltLib:FrameBufferBltLib.obj
+ 0004:000000ac       $unwind$FrameBufferBltLibVideoToVideo 000000000000226c     FrameBufferBltLib:FrameBufferBltLib.obj
+ 0004:000000c4       $unwind$FrameBufferBlt     0000000000002284     FrameBufferBltLib:FrameBufferBltLib.obj
+ 0004:000000cc       $unwind$AllocFwCfgDmaAccessBuffer 000000000000228c     QemuFwCfgDxeLib:QemuFwCfgDxe.obj
+ 0004:000000dc       $unwind$InternalQemuFwCfgDmaBytes 000000000000229c     QemuFwCfgDxeLib:QemuFwCfgDxe.obj
+ 0004:000000f4       $unwind$QemuFwCfgFindFile  00000000000022b4     QemuFwCfgDxeLib:QemuFwCfgLib.obj
+ 0004:00000104       $unwind$InternalMemEncryptSevStatus 00000000000022c4     DxeMemEncryptSevLib:DxeMemEncryptSevLibInternal.obj

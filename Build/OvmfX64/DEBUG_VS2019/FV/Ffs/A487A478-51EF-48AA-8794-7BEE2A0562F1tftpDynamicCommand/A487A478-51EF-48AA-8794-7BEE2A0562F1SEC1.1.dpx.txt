@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_DXE_DEPEX -o d:\edk2\edk2\Build\OvmfX64\DEBUG_VS2019\FV\Ffs\A487A478-51EF-48AA-8794-7BEE2A0562F1tftpDynamicCommand\A487A478-51EF-48AA-8794-7BEE2A0562F1SEC1.1.dpx d:\edk2\edk2\Build\OvmfX64\DEBUG_VS2019\X64\ShellPkg\DynamicCommand\TftpDynamicCommand\TftpDynamicCommand\OUTPUT\tftpDynamicCommand.depex

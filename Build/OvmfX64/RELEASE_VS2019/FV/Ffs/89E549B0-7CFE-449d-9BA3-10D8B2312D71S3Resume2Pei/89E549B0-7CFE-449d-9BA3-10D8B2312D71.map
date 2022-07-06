@@ -1,0 +1,144 @@
+ S3Resume2Pei
+
+ Timestamp is 61ee7058 (Mon Jan 24 17:24:40 2022)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000190H .text                   CODE
+ 0001:00000190 00000d6cH .text$mn                CODE
+ 0002:00000000 00000170H .data                   DATA
+ 0002:00000170 00000028H .rdata                  DATA
+ 0002:00000198 00000018H .bss                    DATA
+ 0002:000001b0 00000060H .rdata$voltmd           DATA
+ 0002:00000210 000000a8H .rdata$zzzdbg           DATA
+ 0003:00000000 00000108H .pdata                  DATA
+ 0004:00000000 000000a8H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __guard_longjmp_table      0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table_size 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table   0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points_count 0000000000000000     <absolute>
+ 0000:00000000       __guard_flags              0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map_count    0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata 0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_count      0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_table          0000000000000000     <absolute>
+ 0000:00000000       __arm64x_native_entrypoint 0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_count         0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_table      0000000000000000     <absolute>
+ 0000:00000000       __enclave_config           0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata_count 0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points 0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_count          0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_count      0000000000000000     <absolute>
+ 0000:00000000       __dynamic_value_reloc_table 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat     0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat_copy 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map          0000000000000000     <absolute>
+ 0000:00000000       __AbsoluteZero             0000000000000000     <absolute>
+ 0000:00000000       __guard_check_icall_a64n_fptr 0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_table         0000000000000000     <absolute>
+ 0001:00000000       AsmSetDataSelectors        0000000000000280     S3Resume2Pei:AsmFuncs.obj
+ 0001:00000010       InternalMemZeroMem         0000000000000290     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00000030       InternalMemCopyMem         00000000000002b0     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000070       AsmReadCr0                 00000000000002f0     BaseLib:ReadCr0.obj
+ 0001:00000080       AsmWriteCr0                0000000000000300     BaseLib:WriteCr0.obj
+ 0001:00000090       AsmCpuid                   0000000000000310     BaseLib:CpuId.obj
+ 0001:000000c0       AsmWriteCr3                0000000000000340     BaseLib:WriteCr3.obj
+ 0001:000000d0       AsmReadCs                  0000000000000350     BaseLib:ReadCs.obj
+ 0001:000000e0       InternalX86WriteGdtr       0000000000000360     BaseLib:WriteGdtr.obj
+ 0001:000000f0       InternalX86ReadIdtr        0000000000000370     BaseLib:ReadIdtr.obj
+ 0001:00000100       InternalX86WriteIdtr       0000000000000380     BaseLib:WriteIdtr.obj
+ 0001:00000110       EnableInterrupts           0000000000000390     BaseLib:EnableInterrupts.obj
+ 0001:00000120       DisableInterrupts          00000000000003a0     BaseLib:DisableInterrupts.obj
+ 0001:00000130       InternalSwitchStack        00000000000003b0     BaseLib:SwitchStack.obj
+ 0001:00000140       CpuPause                   00000000000003c0     BaseLib:CpuPause.obj
+ 0001:00000150       AsmReadEflags              00000000000003d0     BaseLib:ReadEflags.obj
+ 0001:00000160       AsmCpuidEx                 00000000000003e0     BaseLib:CpuIdEx.obj
+ 0001:00000190       _ModuleEntryPoint          0000000000000410 f   PeimEntryPoint:PeimEntryPoint.obj
+ 0001:00000328       SignalToSmmByCommunication 00000000000005a8 f   S3Resume2Pei:S3Resume.obj
+ 0001:0000037c       S3ResumeBootOs             00000000000005fc f   S3Resume2Pei:S3Resume.obj
+ 0001:000004ec       S3ResumeExecuteBootScript  000000000000076c f   S3Resume2Pei:S3Resume.obj
+ 0001:00000674       S3RestoreConfig2           00000000000008f4 f   S3Resume2Pei:S3Resume.obj
+ 0001:000008a4       AllocatePool               0000000000000b24 f   PeiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:000008ec       SaveAndDisableInterrupts   0000000000000b6c f   BaseLib:Cpu.obj
+ 0001:00000910       SwitchStack                0000000000000b90 f   BaseLib:SwitchStack.obj
+ 0001:00000930       PeiServicesLocatePpi       0000000000000bb0 f   PeiServicesLib:PeiServicesLib.obj
+ 0001:00000974       GetFirstGuidHob            0000000000000bf4 f   PeiHobLib:HobLib.obj
+ 0001:000009f0       LocalApicBaseAddressMsrSupported 0000000000000c70 f   BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0001:00000a2c       GetLocalApicBaseAddress    0000000000000cac f   BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0001:00000a6c       ReadLocalApicReg           0000000000000cec f   BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0001:00000aa4       WriteLocalApicReg          0000000000000d24 f   BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0001:00000adc       SendIpi                    0000000000000d5c f   BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0001:00000b7c       GetApicMode                0000000000000dfc f   BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0001:00000bac       GetApicId                  0000000000000e2c f   BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0001:00000c68       InternalReportStatusCode   0000000000000ee8 f   PeiReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0001:00000d28       RestoreLockBox             0000000000000fa8 f   LockBoxBaseLib:LockBoxLib.obj
+ 0001:00000dd4       PciCf8Read8                0000000000001054 f   BasePciCf8Lib:PciCf8Lib.obj
+ 0001:00000e44       PciCf8Read16               00000000000010c4 f   BasePciCf8Lib:PciCf8Lib.obj
+ 0001:00000e98       PciCf8Read32               0000000000001118 f   BasePciCf8Lib:PciCf8Lib.obj
+ 0002:00000000       gPeiSmmAccessPpiGuid       0000000000001180     S3Resume2Pei:AutoGen.obj
+ 0002:00000010       gEfiBootScriptExecutorVariableGuid 0000000000001190     S3Resume2Pei:AutoGen.obj
+ 0002:00000020       gEfiAcpiVariableGuid       00000000000011a0     S3Resume2Pei:AutoGen.obj
+ 0002:00000030       gPeiPostScriptTablePpiGuid 00000000000011b0     S3Resume2Pei:AutoGen.obj
+ 0002:00000040       gEfiPeiSmmCommunicationPpiGuid 00000000000011c0     S3Resume2Pei:AutoGen.obj
+ 0002:00000050       gEfiAcpiS3ContextGuid      00000000000011d0     S3Resume2Pei:AutoGen.obj
+ 0002:00000060       gEdkiiS3SmmInitDoneGuid    00000000000011e0     S3Resume2Pei:AutoGen.obj
+ 0002:00000070       gEfiBootScriptExecutorContextGuid 00000000000011f0     S3Resume2Pei:AutoGen.obj
+ 0002:00000080       gEfiEndOfPeiSignalPpiGuid  0000000000001200     S3Resume2Pei:AutoGen.obj
+ 0002:00000090       gEdkiiEndOfS3ResumeGuid    0000000000001210     S3Resume2Pei:AutoGen.obj
+ 0002:000000a0       gEfiPeiS3Resume2PpiGuid    0000000000001220     S3Resume2Pei:AutoGen.obj
+ 0002:000000b0       gEfiCallerIdGuid           0000000000001230     S3Resume2Pei:AutoGen.obj
+ 0002:000000c0       mS3ResumePpi               0000000000001240     S3Resume2Pei:S3Resume.obj
+ 0002:000000c8       mPpiListS3SmmInitDoneTable 0000000000001248     S3Resume2Pei:S3Resume.obj
+ 0002:000000e0       mPpiListEndOfPeiTable      0000000000001260     S3Resume2Pei:S3Resume.obj
+ 0002:000000f8       mPpiList                   0000000000001278     S3Resume2Pei:S3Resume.obj
+ 0002:00000110       mGdtEntries                0000000000001290     S3Resume2Pei:S3Resume.obj
+ 0002:00000158       mPpiListPostScriptTable    00000000000012d8     S3Resume2Pei:S3Resume.obj
+ 0002:00000170       mGdt                       00000000000012f0     S3Resume2Pei:S3Resume.obj
+ 0002:00000198       mLockBoxGlobal             0000000000001318     LockBoxBaseLib:LockBoxLib.obj
+ 0002:000001b0       __volatile_metadata        0000000000001330     <linker-defined>
+
+ entry point at        0001:00000190
+
+ Static symbols
+
+ 0001:0000004a       InternalMemCopyMem.0       00000000000002ca     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:0000005a       @CopyBackward              00000000000002da     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000063       @CopyBytes                 00000000000002e3     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:0000009f       AsmCpuid.0                 000000000000031f     BaseLib:CpuId.obj
+ 0001:000000a4       AsmCpuid.1                 0000000000000324     BaseLib:CpuId.obj
+ 0001:000000ab       AsmCpuid.2                 000000000000032b     BaseLib:CpuId.obj
+ 0001:000000b4       AsmCpuid.3                 0000000000000334     BaseLib:CpuId.obj
+ 0001:00000175       AsmCpuidEx.0               00000000000003f5     BaseLib:CpuIdEx.obj
+ 0001:0000017c       AsmCpuidEx.1               00000000000003fc     BaseLib:CpuIdEx.obj
+ 0001:00000183       AsmCpuidEx.2               0000000000000403     BaseLib:CpuIdEx.obj
+ 0001:0000018c       AsmCpuidEx.3               000000000000040c     BaseLib:CpuIdEx.obj
+ 0001:00000cf0       FindHeaderByGuid           0000000000000f70 f   LockBoxBaseLib:LockBoxLib.obj
+ 0002:000001a0       StartOfEntries             0000000000001320     LockBoxBaseLib:LockBoxLib.obj
+ 0002:000001a8       EndOfEntries               0000000000001328     LockBoxBaseLib:LockBoxLib.obj
+ 0004:00000000       $unwind$_ModuleEntryPoint  0000000000001560     PeimEntryPoint:PeimEntryPoint.obj
+ 0004:0000001c       $unwind$SignalToSmmByCommunication 000000000000157c     S3Resume2Pei:S3Resume.obj
+ 0004:00000024       $unwind$S3ResumeBootOs     0000000000001584     S3Resume2Pei:S3Resume.obj
+ 0004:00000034       $unwind$S3ResumeExecuteBootScript 0000000000001594     S3Resume2Pei:S3Resume.obj
+ 0004:00000044       $unwind$S3RestoreConfig2   00000000000015a4     S3Resume2Pei:S3Resume.obj
+ 0004:00000054       $unwind$SwitchStack        00000000000015b4     BaseLib:SwitchStack.obj
+ 0004:00000054       $unwind$GetFirstGuidHob    00000000000015b4     PeiHobLib:HobLib.obj
+ 0004:00000054       $unwind$AllocatePool       00000000000015b4     PeiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0004:0000005c       $unwind$SaveAndDisableInterrupts 00000000000015bc     BaseLib:Cpu.obj
+ 0004:0000005c       $unwind$PciCf8Read16       00000000000015bc     BasePciCf8Lib:PciCf8Lib.obj
+ 0004:0000005c       $unwind$PciCf8Read32       00000000000015bc     BasePciCf8Lib:PciCf8Lib.obj
+ 0004:0000005c       $unwind$PciCf8Read8        00000000000015bc     BasePciCf8Lib:PciCf8Lib.obj
+ 0004:0000005c       $unwind$ReadLocalApicReg   00000000000015bc     BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0004:0000005c       $unwind$WriteLocalApicReg  00000000000015bc     BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0004:00000064       $unwind$PeiServicesLocatePpi 00000000000015c4     PeiServicesLib:PeiServicesLib.obj
+ 0004:00000070       $unwind$LocalApicBaseAddressMsrSupported 00000000000015d0     BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0004:00000078       $unwind$RestoreLockBox     00000000000015d8     LockBoxBaseLib:LockBoxLib.obj
+ 0004:00000078       $unwind$GetApicMode        00000000000015d8     BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0004:00000078       $unwind$GetLocalApicBaseAddress 00000000000015d8     BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0004:00000080       $unwind$SendIpi            00000000000015e0     BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0004:00000090       $unwind$GetApicId          00000000000015f0     BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0004:00000098       $unwind$InternalReportStatusCode 00000000000015f8     PeiReportStatusCodeLib:ReportStatusCodeLib.obj

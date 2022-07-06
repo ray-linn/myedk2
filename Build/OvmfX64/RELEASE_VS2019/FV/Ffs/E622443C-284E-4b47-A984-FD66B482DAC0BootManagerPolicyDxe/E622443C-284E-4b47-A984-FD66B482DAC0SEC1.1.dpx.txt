@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_DXE_DEPEX -o d:\edk2\edk2\Build\OvmfX64\RELEASE_VS2019\FV\Ffs\E622443C-284E-4b47-A984-FD66B482DAC0BootManagerPolicyDxe\E622443C-284E-4b47-A984-FD66B482DAC0SEC1.1.dpx d:\edk2\edk2\Build\OvmfX64\RELEASE_VS2019\X64\MdeModulePkg\Universal\BootManagerPolicyDxe\BootManagerPolicyDxe\OUTPUT\BootManagerPolicyDxe.depex

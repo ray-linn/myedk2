@@ -1,0 +1,229 @@
+ SnpDxe
+
+ Timestamp is 61ee7055 (Mon Jan 24 17:24:37 2022)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000208H .text                   CODE
+ 0001:00000208 0000443dH .text$mn                CODE
+ 0002:00000000 00000120H .data                   DATA
+ 0002:00000120 000004a0H .rdata                  DATA
+ 0002:000005c0 00000020H .bss                    DATA
+ 0002:000005e0 00000020H .rdata$voltmd           DATA
+ 0002:00000600 000000a8H .rdata$zzzdbg           DATA
+ 0003:00000000 00000264H .pdata                  DATA
+ 0004:00000000 000001c4H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __arm64x_extra_rfe_table   0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_count         0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_table          0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map          0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map_count    0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table_size 0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_count          0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_count      0000000000000000     <absolute>
+ 0000:00000000       __dynamic_value_reloc_table 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat     0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat_copy 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_native_entrypoint 0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points_count 0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points 0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_table      0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_table      0000000000000000     <absolute>
+ 0000:00000000       __AbsoluteZero             0000000000000000     <absolute>
+ 0000:00000000       __enclave_config           0000000000000000     <absolute>
+ 0000:00000000       __guard_flags              0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata_count 0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_count      0000000000000000     <absolute>
+ 0000:00000000       __guard_check_icall_a64n_fptr 0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_table         0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata 0000000000000000     <absolute>
+ 0000:00000000       __ImageBase                0000000000000000     <linker-defined>
+ 0001:00000000       InternalMemZeroMem         0000000000000280     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00000020       InternalMemCopyMem         00000000000002a0     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000060       InternalMemSetMem          00000000000002e0     BaseMemoryLibRepStr:SetMem.obj
+ 0001:00000080       InternalMemCompareMem      0000000000000300     BaseMemoryLibRepStr:CompareMem.obj
+ 0001:000000a0       InternalMemSetMem64        0000000000000320     BaseMemoryLibRepStr:SetMem64.obj
+ 0001:000000c0       InternalMemSetMem32        0000000000000340     BaseMemoryLibRepStr:SetMem32.obj
+ 0001:000000e0       CpuPause                   0000000000000360     BaseLib:CpuPause.obj
+ 0001:000000f0       SevNoRepIo                 0000000000000370     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000130       IoReadFifo8                00000000000003b0     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000152       IoReadFifo16               00000000000003d2     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000178       IoReadFifo32               00000000000003f8     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:0000019b       IoWriteFifo8               000000000000041b     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001bd       IoWriteFifo16              000000000000043d     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001e3       IoWriteFifo32              0000000000000463     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000208       _DriverUnloadHandler       0000000000000488 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:0000038c       _ModuleEntryPoint          000000000000060c f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:00000450       SnpNotifyExitBootServices  00000000000006d0 f   SnpDxe:Snp.obj
+ 0001:00000470       IssueHwUndiCommand         00000000000006f0 f   SnpDxe:Snp.obj
+ 0001:00000488       SimpleNetworkDriverSupported 0000000000000708 f   SnpDxe:Snp.obj
+ 0001:00000584       SimpleNetworkDriverStart   0000000000000804 f   SnpDxe:Snp.obj
+ 0001:00000c88       SimpleNetworkDriverStop    0000000000000f08 f   SnpDxe:Snp.obj
+ 0001:00000db4       SimpleNetworkComponentNameGetDriverName 0000000000001034 f   SnpDxe:ComponentName.obj
+ 0001:00000de8       UpdateName                 0000000000001068 f   SnpDxe:ComponentName.obj
+ 0001:00000f44       SimpleNetworkComponentNameGetControllerName 00000000000011c4 f   SnpDxe:ComponentName.obj
+ 0001:00001058       PxeReceive                 00000000000012d8 f   SnpDxe:Receive.obj
+ 0001:000011c8       SnpUndi32Receive           0000000000001448 f   SnpDxe:Receive.obj
+ 0001:000012bc       SnpUndi32Reset             000000000000153c f   SnpDxe:Reset.obj
+ 0001:000013a4       PxeGetStnAddr              0000000000001624 f   SnpDxe:Station_address.obj
+ 0001:0000149c       PxeSetStnAddr              000000000000171c f   SnpDxe:Station_address.obj
+ 0001:00001598       SnpUndi32StationAddress    0000000000001818 f   SnpDxe:Station_address.obj
+ 0001:00001644       PxeStop                    00000000000018c4 f   SnpDxe:Stop.obj
+ 0001:000016c8       SnpUndi32Stop              0000000000001948 f   SnpDxe:Stop.obj
+ 0001:00001748       PxeIp2Mac                  00000000000019c8 f   SnpDxe:Mcast_ip_to_mac.obj
+ 0001:00001860       SnpUndi32McastIpToMac      0000000000001ae0 f   SnpDxe:Mcast_ip_to_mac.obj
+ 0001:0000191c       PxeGetStatus               0000000000001b9c f   SnpDxe:Get_status.obj
+ 0001:00001b4c       SnpUndi32GetStatus         0000000000001dcc f   SnpDxe:Get_status.obj
+ 0001:00001c50       SnpUndi32Statistics        0000000000001ed0 f   SnpDxe:Statistics.obj
+ 0001:00001e90       PxeShutdown                0000000000002110 f   SnpDxe:Shutdown.obj
+ 0001:00001f40       SnpUndi32Shutdown          00000000000021c0 f   SnpDxe:Shutdown.obj
+ 0001:00002024       PxeInit                    00000000000022a4 f   SnpDxe:Initialize.obj
+ 0001:00002198       SnpUndi32Initialize        0000000000002418 f   SnpDxe:Initialize.obj
+ 0001:0000232c       PxeNvDataRead              00000000000025ac f   SnpDxe:Nvdata.obj
+ 0001:0000240c       SnpUndi32NvData            000000000000268c f   SnpDxe:Nvdata.obj
+ 0001:0000252c       PxeStart                   00000000000027ac f   SnpDxe:Start.obj
+ 0001:00002624       SnpUndi32Start             00000000000028a4 f   SnpDxe:Start.obj
+ 0001:000026e0       PxeRecvFilterEnable        0000000000002960 f   SnpDxe:Receive_filters.obj
+ 0001:00002840       PxeRecvFilterDisable       0000000000002ac0 f   SnpDxe:Receive_filters.obj
+ 0001:00002934       PxeRecvFilterRead          0000000000002bb4 f   SnpDxe:Receive_filters.obj
+ 0001:00002ac8       SnpUndi32ReceiveFilters    0000000000002d48 f   SnpDxe:Receive_filters.obj
+ 0001:00002c24       PxeFillHeader              0000000000002ea4 f   SnpDxe:Transmit.obj
+ 0001:00002d74       PxeTransmit                0000000000002ff4 f   SnpDxe:Transmit.obj
+ 0001:00002e20       SnpUndi32Transmit          00000000000030a0 f   SnpDxe:Transmit.obj
+ 0001:00002f70       SnpWaitForPacketNotify     00000000000031f0 f   SnpDxe:WaitForPacket.obj
+ 0001:0000306c       SnpUndi32CallbackBlock     00000000000032ec f   SnpDxe:Callback.obj
+ 0001:000030ac       SnpUndi32CallbackDelay     000000000000332c f   SnpDxe:Callback.obj
+ 0001:000030cc       SnpUndi32CallbackMemio     000000000000334c f   SnpDxe:Callback.obj
+ 0001:000031d8       SnpUndi32CallbackMap       0000000000003458 f   SnpDxe:Callback.obj
+ 0001:000032a4       SnpUndi32CallbackUnmap     0000000000003524 f   SnpDxe:Callback.obj
+ 0001:00003320       SnpUndi32CallbackSync      00000000000035a0 f   SnpDxe:Callback.obj
+ 0001:0000336c       UnicodeSPrint              00000000000035ec f   BasePrintLib:PrintLib.obj
+ 0001:000033a0       BasePrintLibFillBuffer     0000000000003620 f   BasePrintLib:PrintLibInternal.obj
+ 0001:000033d4       BasePrintLibSPrintMarker   0000000000003654 f   BasePrintLib:PrintLibInternal.obj
+ 0001:00004170       BasePrintLibSPrint         00000000000043f0 f   BasePrintLib:PrintLibInternal.obj
+ 0001:00004194       InternalAllocatePool       0000000000004414 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:000041c4       InternalAllocateCopyPool   0000000000004444 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00004204       IsLanguageSupported        0000000000004484 f   UefiLib:UefiLib.obj
+ 0001:000042a8       LookupUnicodeString2       0000000000004528 f   UefiLib:UefiLib.obj
+ 0001:000043c0       AddUnicodeString2          0000000000004640 f   UefiLib:UefiLib.obj
+ 0001:0000461c       StrnLenS                   000000000000489c f   BaseLib:SafeString.obj
+ 0002:00000000       gEfiLoadedImageProtocolGuid 00000000000048e0     SnpDxe:AutoGen.obj
+ 0002:00000010       gEfiComponentName2ProtocolGuid 00000000000048f0     SnpDxe:AutoGen.obj
+ 0002:00000020       gEfiNetworkInterfaceIdentifierProtocolGuid_31 0000000000004900     SnpDxe:AutoGen.obj
+ 0002:00000030       gEfiDevicePathProtocolGuid 0000000000004910     SnpDxe:AutoGen.obj
+ 0002:00000040       gEfiPciIoProtocolGuid      0000000000004920     SnpDxe:AutoGen.obj
+ 0002:00000050       gEfiSimpleNetworkProtocolGuid 0000000000004930     SnpDxe:AutoGen.obj
+ 0002:00000060       gEfiDevicePathUtilitiesProtocolGuid 0000000000004940     SnpDxe:AutoGen.obj
+ 0002:00000070       gEfiDriverBindingProtocolGuid 0000000000004950     SnpDxe:AutoGen.obj
+ 0002:00000080       gEfiEventExitBootServicesGuid 0000000000004960     SnpDxe:AutoGen.obj
+ 0002:00000090       gEfiComponentNameProtocolGuid 0000000000004970     SnpDxe:AutoGen.obj
+ 0002:000000a0       gSimpleNetworkDriverBinding 0000000000004980     SnpDxe:Snp.obj
+ 0002:000000d0       gSimpleNetworkComponentName2 00000000000049b0     SnpDxe:ComponentName.obj
+ 0002:000000e8       gSimpleNetworkComponentName 00000000000049c8     SnpDxe:ComponentName.obj
+ 0002:00000100       mSimpleNetworkDriverNameTable 00000000000049e0     SnpDxe:ComponentName.obj
+ 0002:00000120       ??_C@_03LKLGDMJI@eng@      0000000000004a00     SnpDxe:ComponentName.obj
+ 0002:00000124       ??_C@_02LFNMGJAP@en@       0000000000004a04     SnpDxe:ComponentName.obj
+ 0002:00000128       ??_C@_06DALJLGPG@eng?$DLen@ 0000000000004a08     SnpDxe:ComponentName.obj
+ 0002:00000130       ??_C@_1DO@BIKFHFAA@?$AAS?$AAi?$AAm?$AAp?$AAl?$AAe?$AA?5?$AAN?$AAe?$AAt?$AAw?$AAo?$AAr?$AAk?$AA?5@ 0000000000004a10     SnpDxe:ComponentName.obj
+ 0002:00000170       ??_C@_1BE@DHODELAF@?$AAS?$AAN?$AAP?$AA?5?$AA?$CI?$AAM?$AAA?$AAC?$AA?$DN@ 0000000000004a50     SnpDxe:ComponentName.obj
+ 0002:00000188       ??_C@_1M@BJCGLODJ@?$AA?$CF?$AA0?$AA2?$AAX?$AA?9@ 0000000000004a68     SnpDxe:ComponentName.obj
+ 0002:00000194       ??_C@_13DIBMAFH@?$AA?$CJ@  0000000000004a74     SnpDxe:ComponentName.obj
+ 0002:00000198       ??_C@_0O@MLOLIMFM@?$DMnull?5string?$DO@ 0000000000004a78     BasePrintLib:PrintLibInternal.obj
+ 0002:000001a8       ??_C@_0M@BJJDNPHK@?$DMnull?5guid?$DO@ 0000000000004a88     BasePrintLib:PrintLibInternal.obj
+ 0002:000001b8       ??_C@_0DB@PMLHLBMO@?$CF08x?9?$CF04x?9?$CF04x?9?$CF02x?$CF02x?9?$CF02x?$CF02@ 0000000000004a98     BasePrintLib:PrintLibInternal.obj
+ 0002:000001f0       ??_C@_0M@LHGBCIKM@?$DMnull?5time?$DO@ 0000000000004ad0     BasePrintLib:PrintLibInternal.obj
+ 0002:00000200       ??_C@_0BK@FCPKCIDD@?$CF02d?1?$CF02d?1?$CF04d?5?5?$CF02d?3?$CF02d@ 0000000000004ae0     BasePrintLib:PrintLibInternal.obj
+ 0002:0000021c       ??_C@_04JIMNDDED@?$CF08X@  0000000000004afc     BasePrintLib:PrintLibInternal.obj
+ 0002:00000224       ??_C@_02PCIJFNDE@?$AN?6@   0000000000004b04     BasePrintLib:PrintLibInternal.obj
+ 0002:00000228       ??_C@_01LIIJDEN@?$AN@      0000000000004b08     BasePrintLib:PrintLibInternal.obj
+ 0002:00000230       mWarningString             0000000000004b10     BasePrintLib:PrintLibInternal.obj
+ 0002:000002d0       mErrorString               0000000000004bb0     BasePrintLib:PrintLibInternal.obj
+ 0002:00000590       mHexStr                    0000000000004e70     BasePrintLib:PrintLibInternal.obj
+ 0002:000005c0       gSimpleNetworkControllerNameTable 0000000000004ea0     SnpDxe:ComponentName.obj
+ 0002:000005c8       gST                        0000000000004ea8     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000005d0       gBS                        0000000000004eb0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000005d8       mDevicePathLibDevicePathUtilities 0000000000004eb8     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:000005e0       __volatile_metadata        0000000000004ec0     <linker-defined>
+
+ entry point at        0001:0000038c
+
+ Static symbols
+
+ 0001:0000003a       InternalMemCopyMem.0       00000000000002ba     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:0000004a       @CopyBackward              00000000000002ca     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000053       @CopyBytes                 00000000000002d3     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:0000012a       @UseRepIo                  00000000000003aa     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:0000012c       @SevNoRepIo_Done           00000000000003ac     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000144       @IoReadFifo8_NoRep         00000000000003c4     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000146       @IoReadFifo8_Loop          00000000000003c6     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:0000014e       @IoReadFifo8_Done          00000000000003ce     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000167       @IoReadFifo16_NoRep        00000000000003e7     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000169       @IoReadFifo16_Loop         00000000000003e9     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000174       @IoReadFifo16_Done         00000000000003f4     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:0000018c       @IoReadFifo32_NoRep        000000000000040c     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:0000018e       @IoReadFifo32_Loop         000000000000040e     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000197       @IoReadFifo32_Done         0000000000000417     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001af       @IoWriteFifo8_NoRep        000000000000042f     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001b1       @IoWriteFifo8_Loop         0000000000000431     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001b9       @IoWriteFifo8_Done         0000000000000439     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001d2       @IoWriteFifo16_NoRep       0000000000000452     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001d4       @IoWriteFifo16_Loop        0000000000000454     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001df       @IoWriteFifo16_Done        000000000000045f     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001f7       @IoWriteFifo32_NoRep       0000000000000477     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001f9       @IoWriteFifo32_Loop        0000000000000479     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000202       @IoWriteFifo32_Done        0000000000000482     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0004:00000000       $unwind$_DriverUnloadHandler 0000000000005220     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0004:00000010       $unwind$_ModuleEntryPoint  0000000000005230     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0004:00000018       $unwind$SnpUndi32CallbackBlock 0000000000005238     SnpDxe:Callback.obj
+ 0004:00000018       $unwind$PxeRecvFilterDisable 0000000000005238     SnpDxe:Receive_filters.obj
+ 0004:00000018       $unwind$SnpNotifyExitBootServices 0000000000005238     SnpDxe:Snp.obj
+ 0004:00000020       $unwind$SimpleNetworkDriverStop 0000000000005240     SnpDxe:Snp.obj
+ 0004:00000020       $unwind$SimpleNetworkDriverSupported 0000000000005240     SnpDxe:Snp.obj
+ 0004:00000030       $unwind$SimpleNetworkDriverStart 0000000000005250     SnpDxe:Snp.obj
+ 0004:00000048       $unwind$SnpUndi32CallbackMemio 0000000000005268     SnpDxe:Callback.obj
+ 0004:00000048       $unwind$SimpleNetworkComponentNameGetDriverName 0000000000005268     SnpDxe:ComponentName.obj
+ 0004:00000050       $unwind$UpdateName         0000000000005270     SnpDxe:ComponentName.obj
+ 0004:00000064       $unwind$SimpleNetworkComponentNameGetControllerName 0000000000005284     SnpDxe:ComponentName.obj
+ 0004:00000078       $unwind$PxeNvDataRead      0000000000005298     SnpDxe:Nvdata.obj
+ 0004:00000078       $unwind$PxeReceive         0000000000005298     SnpDxe:Receive.obj
+ 0004:00000078       $unwind$PxeFillHeader      0000000000005298     SnpDxe:Transmit.obj
+ 0004:00000090       $unwind$SnpUndi32Receive   00000000000052b0     SnpDxe:Receive.obj
+ 0004:00000090       $unwind$SnpUndi32Transmit  00000000000052b0     SnpDxe:Transmit.obj
+ 0004:000000a8       $unwind$LookupUnicodeString2 00000000000052c8     UefiLib:UefiLib.obj
+ 0004:000000a8       $unwind$SnpUndi32Reset     00000000000052c8     SnpDxe:Reset.obj
+ 0004:000000a8       $unwind$SnpUndi32Shutdown  00000000000052c8     SnpDxe:Shutdown.obj
+ 0004:000000a8       $unwind$PxeStart           00000000000052c8     SnpDxe:Start.obj
+ 0004:000000a8       $unwind$SnpUndi32Start     00000000000052c8     SnpDxe:Start.obj
+ 0004:000000a8       $unwind$PxeGetStnAddr      00000000000052c8     SnpDxe:Station_address.obj
+ 0004:000000b8       $unwind$AddUnicodeString2  00000000000052d8     UefiLib:UefiLib.obj
+ 0004:000000b8       $unwind$SnpUndi32McastIpToMac 00000000000052d8     SnpDxe:Mcast_ip_to_mac.obj
+ 0004:000000b8       $unwind$SnpUndi32NvData    00000000000052d8     SnpDxe:Nvdata.obj
+ 0004:000000b8       $unwind$SnpUndi32ReceiveFilters 00000000000052d8     SnpDxe:Receive_filters.obj
+ 0004:000000b8       $unwind$PxeSetStnAddr      00000000000052d8     SnpDxe:Station_address.obj
+ 0004:000000d0       $unwind$SnpUndi32CallbackUnmap 00000000000052f0     SnpDxe:Callback.obj
+ 0004:000000d0       $unwind$SnpUndi32GetStatus 00000000000052f0     SnpDxe:Get_status.obj
+ 0004:000000d0       $unwind$PxeRecvFilterEnable 00000000000052f0     SnpDxe:Receive_filters.obj
+ 0004:000000d0       $unwind$SnpUndi32StationAddress 00000000000052f0     SnpDxe:Station_address.obj
+ 0004:000000e4       $unwind$InternalAllocateCopyPool 0000000000005304     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0004:000000e4       $unwind$PxeShutdown        0000000000005304     SnpDxe:Shutdown.obj
+ 0004:000000e4       $unwind$PxeStop            0000000000005304     SnpDxe:Stop.obj
+ 0004:000000e4       $unwind$SnpUndi32Stop      0000000000005304     SnpDxe:Stop.obj
+ 0004:000000e4       $unwind$PxeTransmit        0000000000005304     SnpDxe:Transmit.obj
+ 0004:000000f0       $unwind$PxeIp2Mac          0000000000005310     SnpDxe:Mcast_ip_to_mac.obj
+ 0004:000000f0       $unwind$SnpUndi32Statistics 0000000000005310     SnpDxe:Statistics.obj
+ 0004:0000010c       $unwind$PxeGetStatus       000000000000532c     SnpDxe:Get_status.obj
+ 0004:00000128       $unwind$PxeInit            0000000000005348     SnpDxe:Initialize.obj
+ 0004:0000013c       $unwind$SnpUndi32Initialize 000000000000535c     SnpDxe:Initialize.obj
+ 0004:00000154       $unwind$PxeRecvFilterRead  0000000000005374     SnpDxe:Receive_filters.obj
+ 0004:00000164       $unwind$SnpWaitForPacketNotify 0000000000005384     SnpDxe:WaitForPacket.obj
+ 0004:00000180       $unwind$InternalAllocatePool 00000000000053a0     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0004:00000180       $unwind$SnpUndi32CallbackDelay 00000000000053a0     SnpDxe:Callback.obj
+ 0004:00000180       $unwind$SnpUndi32CallbackSync 00000000000053a0     SnpDxe:Callback.obj
+ 0004:00000188       $unwind$SnpUndi32CallbackMap 00000000000053a8     SnpDxe:Callback.obj
+ 0004:00000198       $unwind$UnicodeSPrint      00000000000053b8     BasePrintLib:PrintLib.obj
+ 0004:000001a0       $unwind$BasePrintLibSPrintMarker 00000000000053c0     BasePrintLib:PrintLibInternal.obj
+ 0004:000001bc       $unwind$BasePrintLibSPrint 00000000000053dc     BasePrintLib:PrintLibInternal.obj

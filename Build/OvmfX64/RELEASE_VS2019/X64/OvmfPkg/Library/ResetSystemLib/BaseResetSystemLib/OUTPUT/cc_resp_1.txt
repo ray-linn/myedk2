@@ -1,0 +1,1 @@
+  d:\edk2\edk2\OvmfPkg\Library\ResetSystemLib\BaseResetShutdown.c d:\edk2\edk2\OvmfPkg\Library\ResetSystemLib\ResetSystemLib.c

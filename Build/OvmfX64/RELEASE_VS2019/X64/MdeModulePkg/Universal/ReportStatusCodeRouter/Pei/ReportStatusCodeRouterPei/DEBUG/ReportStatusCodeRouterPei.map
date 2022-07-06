@@ -1,0 +1,75 @@
+ ReportStatusCodeRouterPei
+
+ Timestamp is 61ee7013 (Mon Jan 24 17:23:31 2022)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000080H .text                   CODE
+ 0001:00000080 00000399H .text$mn                CODE
+ 0002:00000000 00000078H .data                   DATA
+ 0002:00000078 0000001cH .rdata                  DATA
+ 0002:00000094 00000020H .rdata$voltmd           DATA
+ 0002:000000b4 00000098H .rdata$zzzdbg           DATA
+ 0003:00000000 00000048H .pdata                  DATA
+ 0004:00000000 00000048H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __arm64x_redirection_metadata 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map_count    0000000000000000     <absolute>
+ 0000:00000000       __arm64x_native_entrypoint 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map          0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_table      0000000000000000     <absolute>
+ 0000:00000000       __enclave_config           0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata_count 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table   0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_count         0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_table         0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points 0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_table      0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points_count 0000000000000000     <absolute>
+ 0000:00000000       __guard_check_icall_a64n_fptr 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table_size 0000000000000000     <absolute>
+ 0000:00000000       __AbsoluteZero             0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_table          0000000000000000     <absolute>
+ 0000:00000000       __guard_flags              0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat_copy 0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_count          0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat     0000000000000000     <absolute>
+ 0000:00000000       __dynamic_value_reloc_table 0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_count      0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_count      0000000000000000     <absolute>
+ 0001:00000000       InternalX86ReadIdtr        0000000000000280     BaseLib:ReadIdtr.obj
+ 0001:00000010       InternalX86WriteIdtr       0000000000000290     BaseLib:WriteIdtr.obj
+ 0001:00000020       InternalMemCopyMem         00000000000002a0     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000060       InternalMemZeroMem         00000000000002e0     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00000080       _ModuleEntryPoint          0000000000000300 f   PeimEntryPoint:PeimEntryPoint.obj
+ 0001:00000164       Register                   00000000000003e4 f   ReportStatusCodeRouterPei:ReportStatusCodeRouterPei.obj
+ 0001:00000244       Unregister                 00000000000004c4 f   ReportStatusCodeRouterPei:ReportStatusCodeRouterPei.obj
+ 0001:000002a8       ReportDispatcher           0000000000000528 f   ReportStatusCodeRouterPei:ReportStatusCodeRouterPei.obj
+ 0001:00000354       GetNextGuidHob             00000000000005d4 f   PeiHobLib:HobLib.obj
+ 0001:000003a0       GetFirstGuidHob            0000000000000620 f   PeiHobLib:HobLib.obj
+ 0001:000003d8       InternalPeiCreateHob       0000000000000658 f   PeiHobLib:HobLib.obj
+ 0002:00000000       gEfiPeiRscHandlerPpiGuid   00000000000006a0     ReportStatusCodeRouterPei:AutoGen.obj
+ 0002:00000010       gEfiPeiStatusCodePpiGuid   00000000000006b0     ReportStatusCodeRouterPei:AutoGen.obj
+ 0002:00000020       gStatusCodeCallbackGuid    00000000000006c0     ReportStatusCodeRouterPei:AutoGen.obj
+ 0002:00000030       mRscHandlerPpi             00000000000006d0     ReportStatusCodeRouterPei:ReportStatusCodeRouterPei.obj
+ 0002:00000040       mStatusCodePpi             00000000000006e0     ReportStatusCodeRouterPei:ReportStatusCodeRouterPei.obj
+ 0002:00000048       mRscHandlerPpiList         00000000000006e8     ReportStatusCodeRouterPei:ReportStatusCodeRouterPei.obj
+ 0002:00000060       mStatusCodePpiList         0000000000000700     ReportStatusCodeRouterPei:ReportStatusCodeRouterPei.obj
+ 0002:00000094       __volatile_metadata        0000000000000734     <linker-defined>
+
+ entry point at        0001:00000080
+
+ Static symbols
+
+ 0001:0000003a       InternalMemCopyMem.0       00000000000002ba     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:0000004a       @CopyBackward              00000000000002ca     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000053       @CopyBytes                 00000000000002d3     BaseMemoryLibRepStr:CopyMem.obj
+ 0004:00000000       $unwind$_ModuleEntryPoint  0000000000000860     PeimEntryPoint:PeimEntryPoint.obj
+ 0004:00000008       $unwind$Register           0000000000000868     ReportStatusCodeRouterPei:ReportStatusCodeRouterPei.obj
+ 0004:00000014       $unwind$Unregister         0000000000000874     ReportStatusCodeRouterPei:ReportStatusCodeRouterPei.obj
+ 0004:0000001c       $unwind$ReportDispatcher   000000000000087c     ReportStatusCodeRouterPei:ReportStatusCodeRouterPei.obj
+ 0004:00000038       $unwind$GetFirstGuidHob    0000000000000898     PeiHobLib:HobLib.obj
+ 0004:00000040       $unwind$InternalPeiCreateHob 00000000000008a0     PeiHobLib:HobLib.obj

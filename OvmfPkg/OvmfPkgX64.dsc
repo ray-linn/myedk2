@@ -32,7 +32,7 @@
   DEFINE SECURE_BOOT_ENABLE      = TRUE
   # SMM only support on Q35 chipset ,specified -M Q35 in command line
   DEFINE SMM_REQUIRE             = FALSE
-  DEFINE SOURCE_DEBUG_ENABLE     = FALSE
+  DEFINE SOURCE_DEBUG_ENABLE     = TRUE
 
 !include OvmfPkg/OvmfTpmDefines.dsc.inc
 
@@ -825,7 +825,7 @@
   MdeModulePkg/Universal/SetupBrowserDxe/SetupBrowserDxe.inf
   MdeModulePkg/Universal/DisplayEngineDxe/DisplayEngineDxe.inf
   MdeModulePkg/Universal/MemoryTest/NullMemoryTestDxe/NullMemoryTestDxe.inf
-
+  #CbmrPkg/Binaries/cbmr_driver.inf 
 !ifndef $(CSM_ENABLE)
   OvmfPkg/QemuVideoDxe/QemuVideoDxe.inf
 !endif
@@ -1005,4 +1005,5 @@
   #
   # TPM support
   #
+
 !include OvmfPkg/OvmfTpmComponentsDxe.dsc.inc

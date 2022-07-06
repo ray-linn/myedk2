@@ -1,0 +1,78 @@
+ Legacy8259
+
+ Timestamp is 61ee700a (Mon Jan 24 17:23:22 2022)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000550H .text$mn                CODE
+ 0002:00000000 00000080H .data                   DATA
+ 0002:00000080 00000020H .rdata                  DATA
+ 0002:000000a0 00000024H .bss                    DATA
+ 0002:000000c4 00000020H .rdata$voltmd           DATA
+ 0002:000000e4 00000098H .rdata$zzzdbg           DATA
+ 0003:00000000 0000003cH .pdata                  DATA
+ 0004:00000000 00000024H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __guard_iat_table          0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map_count    0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_count      0000000000000000     <absolute>
+ 0000:00000000       __arm64x_native_entrypoint 0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_table      0000000000000000     <absolute>
+ 0000:00000000       __enclave_config           0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata_count 0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points 0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points_count 0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_table         0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata 0000000000000000     <absolute>
+ 0000:00000000       __guard_check_icall_a64n_fptr 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table_size 0000000000000000     <absolute>
+ 0000:00000000       __AbsoluteZero             0000000000000000     <absolute>
+ 0000:00000000       __guard_flags              0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_count         0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table   0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map          0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_count          0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat_copy 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat     0000000000000000     <absolute>
+ 0000:00000000       __dynamic_value_reloc_table 0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_count      0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_table      0000000000000000     <absolute>
+ 0001:00000000       _ModuleEntryPoint          0000000000000280 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:00000020       ProcessModuleEntryPointList 00000000000002a0 f   Legacy8259:AutoGen.obj
+ 0001:000000d4       Interrupt8259ReadMask      0000000000000354 f   Legacy8259:8259.obj
+ 0001:0000012c       Interrupt8259SetVectorBase 00000000000003ac f   Legacy8259:8259.obj
+ 0001:00000200       Interrupt8259GetMask       0000000000000480 f   Legacy8259:8259.obj
+ 0001:00000248       Interrupt8259SetMask       00000000000004c8 f   Legacy8259:8259.obj
+ 0001:00000290       Interrupt8259SetMode       0000000000000510 f   Legacy8259:8259.obj
+ 0001:000003b0       Interrupt8259GetVector     0000000000000630 f   Legacy8259:8259.obj
+ 0001:000003dc       Interrupt8259EnableIrq     000000000000065c f   Legacy8259:8259.obj
+ 0001:00000454       Interrupt8259DisableIrq    00000000000006d4 f   Legacy8259:8259.obj
+ 0001:000004c0       Interrupt8259GetInterruptLine 0000000000000740 f   Legacy8259:8259.obj
+ 0001:00000524       Interrupt8259EndOfInterrupt 00000000000007a4 f   Legacy8259:8259.obj
+ 0002:00000000       gEfiLegacy8259ProtocolGuid 00000000000007e0     Legacy8259:AutoGen.obj
+ 0002:00000010       gEfiPciIoProtocolGuid      00000000000007f0     Legacy8259:AutoGen.obj
+ 0002:00000020       mProtectedModeMask         0000000000000800     Legacy8259:8259.obj
+ 0002:00000022       mMasterBase                0000000000000802     Legacy8259:8259.obj
+ 0002:00000030       mInterrupt8259             0000000000000810     Legacy8259:8259.obj
+ 0002:00000078       mMode                      0000000000000858     Legacy8259:8259.obj
+ 0002:0000007c       mSlaveBase                 000000000000085c     Legacy8259:8259.obj
+ 0002:000000a0       m8259Handle                0000000000000880     Legacy8259:8259.obj
+ 0002:000000a8       mProtectedModeEdgeLevel    0000000000000888     Legacy8259:8259.obj
+ 0002:000000b0       gST                        0000000000000890     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000000b8       gBS                        0000000000000898     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000000c0       mLegacyModeEdgeLevel       00000000000008a0     <common>
+ 0002:000000c2       mLegacyModeMask            00000000000008a2     <common>
+ 0002:000000c4       __volatile_metadata        00000000000008a4     <linker-defined>
+
+ entry point at        0001:00000000
+
+ Static symbols
+
+ 0004:00000000       $unwind$_ModuleEntryPoint  00000000000009a0     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0004:00000008       $unwind$Interrupt8259SetMode 00000000000009a8     Legacy8259:8259.obj
+ 0004:00000008       $unwind$ProcessModuleEntryPointList 00000000000009a8     Legacy8259:AutoGen.obj
+ 0004:00000010       $unwind$Interrupt8259SetVectorBase 00000000000009b0     Legacy8259:8259.obj
+ 0004:0000001c       $unwind$Interrupt8259GetInterruptLine 00000000000009bc     Legacy8259:8259.obj

@@ -1,0 +1,136 @@
+ Hash2DxeCrypto
+
+ Timestamp is 61ee703d (Mon Jan 24 17:24:13 2022)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000110H .text                   CODE
+ 0001:00000110 000018f7H .text$mn                CODE
+ 0002:00000000 00000150H .data                   DATA
+ 0002:00000150 000003a0H .rdata                  DATA
+ 0002:000004f0 00000024H .bss                    DATA
+ 0002:00000514 0000002cH .rdata$voltmd           DATA
+ 0002:00000540 000000a8H .rdata$zzzdbg           DATA
+ 0003:00000000 000000f0H .pdata                  DATA
+ 0004:00000000 000000e8H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __hybrid_code_map_count    0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points_count 0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_native_entrypoint 0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_table          0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_count         0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_table      0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_count          0000000000000000     <absolute>
+ 0000:00000000       __enclave_config           0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_count      0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata_count 0000000000000000     <absolute>
+ 0000:00000000       __dynamic_value_reloc_table 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table   0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat     0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_table      0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat_copy 0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_count      0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map          0000000000000000     <absolute>
+ 0000:00000000       __guard_flags              0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table_size 0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_table         0000000000000000     <absolute>
+ 0000:00000000       __AbsoluteZero             0000000000000000     <absolute>
+ 0000:00000000       __guard_check_icall_a64n_fptr 0000000000000000     <absolute>
+ 0001:00000000       InternalMemCopyMem         00000000000002a0     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000040       InternalMemZeroMem         00000000000002e0     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00000060       InternalMemSetMem          0000000000000300     BaseMemoryLibRepStr:SetMem.obj
+ 0001:00000080       InternalMemSetMem64        0000000000000320     BaseMemoryLibRepStr:SetMem64.obj
+ 0001:000000a0       InternalMemSetMem32        0000000000000340     BaseMemoryLibRepStr:SetMem32.obj
+ 0001:000000c0       EnableInterrupts           0000000000000360     BaseLib:EnableInterrupts.obj
+ 0001:000000d0       DisableInterrupts          0000000000000370     BaseLib:DisableInterrupts.obj
+ 0001:000000e0       AsmReadEflags              0000000000000380     BaseLib:ReadEflags.obj
+ 0001:000000f0       InternalMemCompareMem      0000000000000390     BaseMemoryLibRepStr:CompareMem.obj
+ 0001:00000110       _ModuleEntryPoint          00000000000003b0 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:000001b8       ProcessModuleEntryPointList 0000000000000458 f   Hash2DxeCrypto:AutoGen.obj
+ 0001:00000264       Hash2ServiceBindingCreateChild 0000000000000504 f   Hash2DxeCrypto:Driver.obj
+ 0001:00000388       Hash2ServiceBindingDestroyChild 0000000000000628 f   Hash2DxeCrypto:Driver.obj
+ 0001:00000488       GetHashInfo                0000000000000728 f   Hash2DxeCrypto:Hash2DxeCrypto.obj
+ 0001:000004cc       BaseCrypto2GetHashSize     000000000000076c f   Hash2DxeCrypto:Hash2DxeCrypto.obj
+ 0001:00000514       BaseCrypto2Hash            00000000000007b4 f   Hash2DxeCrypto:Hash2DxeCrypto.obj
+ 0001:0000064c       BaseCrypto2HashInit        00000000000008ec f   Hash2DxeCrypto:Hash2DxeCrypto.obj
+ 0001:00000708       BaseCrypto2HashUpdate      00000000000009a8 f   Hash2DxeCrypto:Hash2DxeCrypto.obj
+ 0001:00000760       BaseCrypto2HashFinal       0000000000000a00 f   Hash2DxeCrypto:Hash2DxeCrypto.obj
+ 0001:000007f4       InternalAllocatePool       0000000000000a94 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00000824       Sha384GetContextSize       0000000000000ac4 f   BaseCryptLib:CryptSha512.obj
+ 0001:00000824       Sha512GetContextSize       0000000000000ac4 f   BaseCryptLib:CryptSha512.obj
+ 0001:0000082c       Sha384Init                 0000000000000acc f   BaseCryptLib:CryptSha512.obj
+ 0001:0000083c       Sha384Update               0000000000000adc f   BaseCryptLib:CryptSha512.obj
+ 0001:0000083c       Sha512Update               0000000000000adc f   BaseCryptLib:CryptSha512.obj
+ 0001:00000854       Sha512Final                0000000000000af4 f   BaseCryptLib:CryptSha512.obj
+ 0001:00000854       Sha384Final                0000000000000af4 f   BaseCryptLib:CryptSha512.obj
+ 0001:00000870       Sha512Init                 0000000000000b10 f   BaseCryptLib:CryptSha512.obj
+ 0001:00000880       Sha256GetContextSize       0000000000000b20 f   BaseCryptLib:CryptSha256.obj
+ 0001:00000888       Sha256Init                 0000000000000b28 f   BaseCryptLib:CryptSha256.obj
+ 0001:00000898       Sha256Update               0000000000000b38 f   BaseCryptLib:CryptSha256.obj
+ 0001:000008b0       Sha256Final                0000000000000b50 f   BaseCryptLib:CryptSha256.obj
+ 0001:000008cc       GetPcdProtocol             0000000000000b6c f   DxePcdLib:DxePcdLib.obj
+ 0001:00000908       PciCf8Read32               0000000000000ba8 f   BasePciCf8Lib:PciCf8Lib.obj
+ 0001:0000096c       SHA384_Init                0000000000000c0c f   OpensslLib:sha512.obj
+ 0001:000009fc       SHA512_Init                0000000000000c9c f   OpensslLib:sha512.obj
+ 0001:00000a8c       SHA512_Final               0000000000000d2c f   OpensslLib:sha512.obj
+ 0001:00000dd0       SHA512_Update              0000000000001070 f   OpensslLib:sha512.obj
+ 0001:0000135c       SHA256_Init                00000000000015fc f   OpensslLib:sha256.obj
+ 0001:000013bc       SHA256_Update              000000000000165c f   OpensslLib:sha256.obj
+ 0001:000014e8       SHA256_Final               0000000000001788 f   OpensslLib:sha256.obj
+ 0001:000019cc       SaveAndDisableInterrupts   0000000000001c6c f   BaseLib:Cpu.obj
+ 0001:000019f0       memset                     0000000000001c90 f   BaseIntrinsicLib:MemoryIntrinsics.obj
+ 0002:00000000       _fltused                   0000000000001cc0     BaseIntrinsicLib:MemoryIntrinsics.obj
+ 0002:00000008       gEfiHashAlgorithmSha256Guid 0000000000001cc8     Hash2DxeCrypto:AutoGen.obj
+ 0002:00000018       gEfiHash2ServiceBindingProtocolGuid 0000000000001cd8     Hash2DxeCrypto:AutoGen.obj
+ 0002:00000028       gPcdProtocolGuid           0000000000001ce8     Hash2DxeCrypto:AutoGen.obj
+ 0002:00000038       gEfiDevicePathUtilitiesProtocolGuid 0000000000001cf8     Hash2DxeCrypto:AutoGen.obj
+ 0002:00000048       gEfiHashAlgorithmSha384Guid 0000000000001d08     Hash2DxeCrypto:AutoGen.obj
+ 0002:00000058       gEfiHash2ProtocolGuid      0000000000001d18     Hash2DxeCrypto:AutoGen.obj
+ 0002:00000068       gEfiHashAlgorithmSha512Guid 0000000000001d28     Hash2DxeCrypto:AutoGen.obj
+ 0002:00000078       mHash2ServiceBindingProtocol 0000000000001d38     Hash2DxeCrypto:Driver.obj
+ 0002:00000088       mHash2Protocol             0000000000001d48     Hash2DxeCrypto:Hash2DxeCrypto.obj
+ 0002:000000b0       mHashInfo                  0000000000001d70     Hash2DxeCrypto:Hash2DxeCrypto.obj
+ 0002:000004f0       gST                        00000000000021b0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000004f8       gBS                        00000000000021b8     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000500       mDevicePathLibDevicePathUtilities 00000000000021c0     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:00000508       mPcd                       00000000000021c8     DxePcdLib:DxePcdLib.obj
+ 0002:00000514       __volatile_metadata        00000000000021d4     <linker-defined>
+
+ entry point at        0001:00000110
+
+ Static symbols
+
+ 0001:0000001a       InternalMemCopyMem.0       00000000000002ba     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:0000002a       @CopyBackward              00000000000002ca     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000033       @CopyBytes                 00000000000002d3     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000ef4       sha512_block_data_order    0000000000001194 f   OpensslLib:sha512.obj
+ 0001:000016b4       sha256_block_data_order    0000000000001954 f   OpensslLib:sha256.obj
+ 0002:00000140       memset_func                0000000000001e00     OpensslLib:mem_clr.obj
+ 0002:00000150       K512                       0000000000001e10     OpensslLib:sha512.obj
+ 0002:000003d0       K256                       0000000000002090     OpensslLib:sha256.obj
+ 0002:00000510       mRunningOnQ35              00000000000021d0     DxePciLibI440FxQ35:PciLib.obj
+ 0004:00000000       $unwind$_ModuleEntryPoint  00000000000023c0     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0004:00000008       $unwind$ProcessModuleEntryPointList 00000000000023c8     Hash2DxeCrypto:AutoGen.obj
+ 0004:00000014       $unwind$Hash2ServiceBindingCreateChild 00000000000023d4     Hash2DxeCrypto:Driver.obj
+ 0004:00000028       $unwind$Hash2ServiceBindingDestroyChild 00000000000023e8     Hash2DxeCrypto:Driver.obj
+ 0004:00000034       $unwind$GetPcdProtocol     00000000000023f4     DxePcdLib:DxePcdLib.obj
+ 0004:00000034       $unwind$InternalAllocatePool 00000000000023f4     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0004:00000034       $unwind$BaseCrypto2GetHashSize 00000000000023f4     Hash2DxeCrypto:Hash2DxeCrypto.obj
+ 0004:0000003c       $unwind$BaseCrypto2Hash    00000000000023fc     Hash2DxeCrypto:Hash2DxeCrypto.obj
+ 0004:00000054       $unwind$BaseCrypto2HashFinal 0000000000002414     Hash2DxeCrypto:Hash2DxeCrypto.obj
+ 0004:00000054       $unwind$BaseCrypto2HashInit 0000000000002414     Hash2DxeCrypto:Hash2DxeCrypto.obj
+ 0004:00000064       $unwind$SHA256_Init        0000000000002424     OpensslLib:sha256.obj
+ 0004:00000064       $unwind$SaveAndDisableInterrupts 0000000000002424     BaseLib:Cpu.obj
+ 0004:00000064       $unwind$PciCf8Read32       0000000000002424     BasePciCf8Lib:PciCf8Lib.obj
+ 0004:00000064       $unwind$BaseCrypto2HashUpdate 0000000000002424     Hash2DxeCrypto:Hash2DxeCrypto.obj
+ 0004:0000006c       $unwind$SHA512_Final       000000000000242c     OpensslLib:sha512.obj
+ 0004:00000088       $unwind$SHA512_Update      0000000000002448     OpensslLib:sha512.obj
+ 0004:000000a0       $unwind$sha512_block_data_order 0000000000002460     OpensslLib:sha512.obj
+ 0004:000000b8       $unwind$SHA256_Final       0000000000002478     OpensslLib:sha256.obj
+ 0004:000000b8       $unwind$SHA256_Update      0000000000002478     OpensslLib:sha256.obj
+ 0004:000000d0       $unwind$sha256_block_data_order 0000000000002490     OpensslLib:sha256.obj

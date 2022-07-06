@@ -1,0 +1,335 @@
+ AcpiTableDxe
+
+ Timestamp is 62b57327 (Fri Jun 24 16:17:43 2022)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 000000e4H .text                   CODE
+ 0001:000000e4 00005276H .text$mn                CODE
+ 0002:00000000 00001650H .rdata                  DATA
+ 0002:00001650 00000024H .rdata$voltmd           DATA
+ 0002:00001674 00000150H .rdata$zzzdbg           DATA
+ 0003:00000000 000014f0H .data                   DATA
+ 0003:000014f0 00000048H .bss                    DATA
+ 0004:00000000 00000318H .pdata                  DATA
+ 0005:00000000 000002e8H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __x64_code_ranges_to_entry_points_count 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map          0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_count         0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_table          0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table_size 0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_count          0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_count      0000000000000000     <absolute>
+ 0000:00000000       __dynamic_value_reloc_table 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table   0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map_count    0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat     0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat_copy 0000000000000000     <absolute>
+ 0000:00000000       __guard_flags              0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_count      0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_table      0000000000000000     <absolute>
+ 0000:00000000       __AbsoluteZero             0000000000000000     <absolute>
+ 0000:00000000       __arm64x_native_entrypoint 0000000000000000     <absolute>
+ 0000:00000000       __guard_check_icall_a64n_fptr 0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_table         0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata_count 0000000000000000     <absolute>
+ 0000:00000000       __enclave_config           0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_table      0000000000000000     <absolute>
+ 0001:00000000       InternalMemCopyMem         00000000000002c0     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000040       InternalMemZeroMem         0000000000000300     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00000060       InternalMemSetMem          0000000000000320     BaseMemoryLibRepStr:SetMem.obj
+ 0001:00000080       InternalMemCompareMem      0000000000000340     BaseMemoryLibRepStr:CompareMem.obj
+ 0001:000000a0       InternalMemSetMem64        0000000000000360     BaseMemoryLibRepStr:SetMem64.obj
+ 0001:000000c0       InternalMemSetMem32        0000000000000380     BaseMemoryLibRepStr:SetMem32.obj
+ 0001:000000e0       CpuPause                   00000000000003a0     BaseLib:CpuPause.obj
+ 0001:000000e4       _ModuleEntryPoint          00000000000003a4 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:000000f8       ProcessLibraryConstructorList 00000000000003b8 f   AcpiTableDxe:AutoGen.obj
+ 0001:00000290       ProcessModuleEntryPointList 0000000000000550 f   AcpiTableDxe:AutoGen.obj
+ 0001:00000384       PublishTables              0000000000000644 f   AcpiTableDxe:AcpiTableProtocol.obj
+ 0001:00000444       InstallAcpiTable           0000000000000704 f   AcpiTableDxe:AcpiTableProtocol.obj
+ 0001:00000534       UninstallAcpiTable         00000000000007f4 f   AcpiTableDxe:AcpiTableProtocol.obj
+ 0001:000005b0       ReallocateAcpiTableBuffer  0000000000000870 f   AcpiTableDxe:AcpiTableProtocol.obj
+ 0001:000007a4       AddTableToList             0000000000000a64 f   AcpiTableDxe:AcpiTableProtocol.obj
+ 0001:00000f44       FindTableByHandle          0000000000001204 f   AcpiTableDxe:AcpiTableProtocol.obj
+ 0001:00000fe0       RemoveTableFromRsdt        00000000000012a0 f   AcpiTableDxe:AcpiTableProtocol.obj
+ 0001:00001190       DeleteTable                0000000000001450 f   AcpiTableDxe:AcpiTableProtocol.obj
+ 0001:000014e0       RemoveTableFromList        00000000000017a0 f   AcpiTableDxe:AcpiTableProtocol.obj
+ 0001:0000157c       ChecksumCommonTables       000000000000183c f   AcpiTableDxe:AcpiTableProtocol.obj
+ 0001:00001668       InstallAcpiTableFromHob    0000000000001928 f   AcpiTableDxe:AcpiTableProtocol.obj
+ 0001:00001980       AcpiTableAcpiTableConstructor 0000000000001c40 f   AcpiTableDxe:AcpiTableProtocol.obj
+ 0001:00001de4       FindTableByBuffer          00000000000020a4 f   AcpiTableDxe:AcpiSdt.obj
+ 0001:00001e60       SdtNotifyAcpiList          0000000000002120 f   AcpiTableDxe:AcpiSdt.obj
+ 0001:00001f24       SdtGetAcpiTable            00000000000021e4 f   AcpiTableDxe:AcpiSdt.obj
+ 0001:00001fbc       GetAcpiTable2              000000000000227c f   AcpiTableDxe:AcpiSdt.obj
+ 0001:00002064       RegisterNotify             0000000000002324 f   AcpiTableDxe:AcpiSdt.obj
+ 0001:0000216c       OpenSdt                    000000000000242c f   AcpiTableDxe:AcpiSdt.obj
+ 0001:00002228       SdtOpenEx                  00000000000024e8 f   AcpiTableDxe:AcpiSdt.obj
+ 0001:0000230c       Open                       00000000000025cc f   AcpiTableDxe:AcpiSdt.obj
+ 0001:00002360       Close                      0000000000002620 f   AcpiTableDxe:AcpiSdt.obj
+ 0001:000023d8       GetOption                  0000000000002698 f   AcpiTableDxe:AcpiSdt.obj
+ 0001:000024c4       SetOption                  0000000000002784 f   AcpiTableDxe:AcpiSdt.obj
+ 0001:000025a0       GetChild                   0000000000002860 f   AcpiTableDxe:AcpiSdt.obj
+ 0001:00002664       SdtFindPathFromRoot        0000000000002924 f   AcpiTableDxe:AcpiSdt.obj
+ 0001:00002748       FindPath                   0000000000002a08 f   AcpiTableDxe:AcpiSdt.obj
+ 0001:000028f0       AmlGetChildFromObjectBuffer 0000000000002bb0 f   AcpiTableDxe:AmlChild.obj
+ 0001:000029a4       AmlGetChildFromNonRoot     0000000000002c64 f   AcpiTableDxe:AmlChild.obj
+ 0001:00002ac8       AmlSearchByOpByte          0000000000002d88 f   AcpiTableDxe:Aml.obj
+ 0001:00002b10       AmlGetPkgLength            0000000000002dd0 f   AcpiTableDxe:Aml.obj
+ 0001:00002bb0       AmlGetNameStringSize       0000000000002e70 f   AcpiTableDxe:AmlString.obj
+ 0001:00002c80       AmlGetAslNameSegLength     0000000000002f40 f   AcpiTableDxe:AmlString.obj
+ 0001:00002cfc       AmlNameFromAslName         0000000000002fbc f   AcpiTableDxe:AmlString.obj
+ 0001:00002ed8       AmlPrintNameSeg            0000000000003198 f   AcpiTableDxe:AmlString.obj
+ 0001:00002f68       AmlParseOptionTerm         0000000000003228 f   AcpiTableDxe:AmlOption.obj
+ 0001:00003130       AmlParseOptionCommon       00000000000033f0 f   AcpiTableDxe:AmlOption.obj
+ 0001:00003310       AmlGetObjectName           00000000000035d0 f   AcpiTableDxe:AmlOption.obj
+ 0001:000033d8       AmlGetOffsetAfterLastOption 0000000000003698 f   AcpiTableDxe:AmlOption.obj
+ 0001:00003450       AmlCreateNode              0000000000003710 f   AcpiTableDxe:AmlNamespace.obj
+ 0001:00003528       AmlFindNodeInTheTree       00000000000037e8 f   AcpiTableDxe:AmlNamespace.obj
+ 0001:00003728       AmlInsertNodeToTree        00000000000039e8 f   AcpiTableDxe:AmlNamespace.obj
+ 0001:000037f8       AmlConstructNodeListForChild 0000000000003ab8 f   AcpiTableDxe:AmlNamespace.obj
+ 0001:0000390c       AmlConstructNodeList       0000000000003bcc f   AcpiTableDxe:AmlNamespace.obj
+ 0001:000039a4       AmlDestructNodeList        0000000000003c64 f   AcpiTableDxe:AmlNamespace.obj
+ 0001:00003a20       AmlDumpNodeInfo            0000000000003ce0 f   AcpiTableDxe:AmlNamespace.obj
+ 0001:00003ae8       AmlFindPath                0000000000003da8 f   AcpiTableDxe:AmlNamespace.obj
+ 0001:00003c28       InternalBaseLibIsListValid 0000000000003ee8 f   BaseLib:LinkedList.obj
+ 0001:00003c94       InsertTailList             0000000000003f54 f   BaseLib:LinkedList.obj
+ 0001:00003ce8       RemoveEntryList            0000000000003fa8 f   BaseLib:LinkedList.obj
+ 0001:00003d50       AsciiStrLen                0000000000004010 f   BaseLib:String.obj
+ 0001:00003dbc       StrnLenS                   000000000000407c f   BaseLib:SafeString.obj
+ 0001:00003e14       CopyMem                    00000000000040d4 f   BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0001:00003eb0       ZeroMem                    0000000000004170 f   BaseMemoryLibRepStr:ZeroMemWrapper.obj
+ 0001:00003f20       SetMem                     00000000000041e0 f   BaseMemoryLibRepStr:SetMemWrapper.obj
+ 0001:00003f84       CompareGuid                0000000000004244 f   BaseMemoryLibRepStr:MemLibGuid.obj
+ 0001:00004048       DebugPrint                 0000000000004308 f   BaseDebugLibSerialPort:DebugLib.obj
+ 0001:0000406c       DebugPrintMarker           000000000000432c f   BaseDebugLibSerialPort:DebugLib.obj
+ 0001:0000411c       DebugAssert                00000000000043dc f   BaseDebugLibSerialPort:DebugLib.obj
+ 0001:00004194       InternalAllocatePool       0000000000004454 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:000041c4       InternalAllocateCopyPool   0000000000004484 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:0000423c       FreePool                   00000000000044fc f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00004280       GetHobList                 0000000000004540 f   DxeHobLib:HobLib.obj
+ 0001:00004360       AsciiSPrint                0000000000004620 f   BasePrintLib:PrintLib.obj
+ 0001:0000438c       BasePrintLibFillBuffer     000000000000464c f   BasePrintLib:PrintLibInternal.obj
+ 0001:000043c0       BasePrintLibValueToString  0000000000004680 f   BasePrintLib:PrintLibInternal.obj
+ 0001:0000442c       BasePrintLibSPrintMarker   00000000000046ec f   BasePrintLib:PrintLibInternal.obj
+ 0001:00005338       BasePrintLibSPrint         00000000000055f8 f   BasePrintLib:PrintLibInternal.obj
+ 0002:00000000       ??_C@_0CB@DMEJJJHA@?6ASSERT_EFI_ERROR?5?$CIStatus?5?$DN?5?$CFr?$CJ@ 0000000000005620     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0002:00000028       ??_C@_0CH@BBNBJKHK@?$CB?$CI?$CI?$CIINTN?$CJ?$CIRETURN_STATUS?$CJ?$CIStatus@ 0000000000005648     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0002:00000050       ??_C@_0N@ELKAIBAN@AcpiTableDxe@ 0000000000005670     AcpiTableDxe:AutoGen.obj
+ 0002:00000060       ??_C@_0HC@OGPLDPJH@d?3?2edk2?2edk2?2Build?2OvmfX64?2DEBU@ 0000000000005680     AcpiTableDxe:AutoGen.obj
+ 0002:000000d4       _gPcd_FixedAtBuild_PcdAcpiDefaultOemId 00000000000056f4     AcpiTableDxe:AutoGen.obj
+ 0002:000000e0       ??_C@_0M@ONPMCDDK@PrivateData@ 0000000000005700     AcpiTableDxe:AcpiTable.obj
+ 0002:000000f0       ??_C@_0EC@PCHHDCKB@d?3?2edk2?2edk2?2MdeModulePkg?2Unive@ 0000000000005710     AcpiTableDxe:AcpiTable.obj
+ 0002:00000138       ??_C@_0BF@NDBIKIKC@CR?5has?5Bad?5Signature@ 0000000000005758     AcpiTableDxe:AcpiTableProtocol.obj
+ 0002:00000150       ??_C@_0EK@FHDPJFEA@d?3?2edk2?2edk2?2MdeModulePkg?2Unive@ 0000000000005770     AcpiTableDxe:AcpiTableProtocol.obj
+ 0002:000001a0       ??_C@_0BC@JFBGNDMP@AcpiTableInstance@ 00000000000057c0     AcpiTableDxe:AcpiTableProtocol.obj
+ 0002:000001b4       ??_C@_05LFBINIGO@Table@    00000000000057d4     AcpiTableDxe:AcpiTableProtocol.obj
+ 0002:000001bc       ??_C@_06BNNOMDLO@Handle@   00000000000057dc     AcpiTableDxe:AcpiTableProtocol.obj
+ 0002:000001c8       ??_C@_0BB@BPKDHOJD@CurrentTableList@ 00000000000057e8     AcpiTableDxe:AcpiTableProtocol.obj
+ 0002:000001e0       ??_C@_0BF@PMOCOGBH@NumberOfTableEntries@ 0000000000005800     AcpiTableDxe:AcpiTableProtocol.obj
+ 0002:000001f8       ??_C@_0N@PFCIEFHI@Rsdt?5?$HM?$HM?5Xsdt@ 0000000000005818     AcpiTableDxe:AcpiTableProtocol.obj
+ 0002:00000208       ??_C@_0BN@EFHCPDMA@Table?9?$DOTable?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000005828     AcpiTableDxe:AcpiTableProtocol.obj
+ 0002:00000228       ??_C@_0DJ@BDPHOLJJ@InstallAcpiTableFromHob?3?5Fail?5t@ 0000000000005848     AcpiTableDxe:AcpiTableProtocol.obj
+ 0002:00000268       ??_C@_0DG@PMHBGJDB@InstallAcpiTableFromHob?3?5Fail?5t@ 0000000000005888     AcpiTableDxe:AcpiTableProtocol.obj
+ 0002:000002a0       ??_C@_0DG@DDABCCOE@InstallAcpiTableFromHob?3?5Fail?5t@ 00000000000058c0     AcpiTableDxe:AcpiTableProtocol.obj
+ 0002:000002e0       ??_C@_0EA@LBMHFOFC@d?3?2edk2?2edk2?2MdeModulePkg?2Unive@ 0000000000005900     AcpiTableDxe:AcpiSdt.obj
+ 0002:00000320       ??_C@_0BG@JDKEGFNB@Table?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000005940     AcpiTableDxe:AcpiSdt.obj
+ 0002:00000338       ??_C@_0BI@NEHLCCEL@Version?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000005958     AcpiTableDxe:AcpiSdt.obj
+ 0002:00000350       ??_C@_0BJ@PNNIHEHC@TableKey?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000005970     AcpiTableDxe:AcpiSdt.obj
+ 0002:00000370       ??_C@_0CC@EFKJIDJL@CurrentNotifyList?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?5@ 0000000000005990     AcpiTableDxe:AcpiSdt.obj
+ 0002:00000398       ??_C@_0BK@KDNPGFB@AmlHandle?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000059b8     AcpiTableDxe:AcpiSdt.obj
+ 0002:000003b8       ??_C@_0BJ@NHCNNMEA@DataType?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000059d8     AcpiTableDxe:AcpiSdt.obj
+ 0002:000003d8       ??_C@_0BF@OBJIPFIC@Data?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000059f8     AcpiTableDxe:AcpiSdt.obj
+ 0002:000003f0       ??_C@_0BJ@CDBJOKEJ@DataSize?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000005a10     AcpiTableDxe:AcpiSdt.obj
+ 0002:00000410       ??_C@_0BH@OOIJJHNK@Handle?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000005a30     AcpiTableDxe:AcpiSdt.obj
+ 0002:00000428       ??_C@_0BN@OMGENOPL@DstAmlHandle?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000005a48     AcpiTableDxe:AcpiSdt.obj
+ 0002:00000448       ??_C@_0BF@POHKPDHK@AcpiSdt?3?5FindPath?5?9?5@ 0000000000005a68     AcpiTableDxe:AcpiSdt.obj
+ 0002:00000460       ??_C@_01EEMJAFIK@?6@       0000000000005a80     AcpiTableDxe:AcpiSdt.obj
+ 0002:00000468       ??_C@_0BC@FEDIJHFF@?$CI?$CIBOOLEAN?$CJ?$CI0?$DN?$DN1?$CJ?$CJ@ 0000000000005a88     AcpiTableDxe:Aml.obj
+ 0002:00000480       ??_C@_0DM@KMMJOCEL@d?3?2edk2?2edk2?2MdeModulePkg?2Unive@ 0000000000005aa0     AcpiTableDxe:Aml.obj
+ 0002:000004bc       ??_C@_01GBGANLPD@0@        0000000000005adc     AcpiTableDxe:Aml.obj
+ 0002:000004c0       mAmlTypeToAcpiType         0000000000005ae0     AcpiTableDxe:Aml.obj
+ 0002:000004e8       ??_C@_0BI@DODAHCMM@AmlPath?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000005b08     AcpiTableDxe:AmlString.obj
+ 0002:00000500       ??_C@_0EC@DDMCLNKA@d?3?2edk2?2edk2?2MdeModulePkg?2Unive@ 0000000000005b20     AcpiTableDxe:AmlString.obj
+ 0002:00000548       ??_C@_0CH@KLIPGGCC@?$CINameLength?5?$CB?$DN?50?$CJ?5?$CG?$CG?5?$CINameLengt@ 0000000000005b68     AcpiTableDxe:AmlString.obj
+ 0002:00000570       ??_C@_02HAOIJKIC@?$CFc@    0000000000005b90     AcpiTableDxe:AmlString.obj
+ 0002:00000574       ??_C@_01KICIPPFI@?2@       0000000000005b94     AcpiTableDxe:AmlString.obj
+ 0002:00000578       ??_C@_01JKBOJNNK@?$FO@     0000000000005b98     AcpiTableDxe:AmlString.obj
+ 0002:0000057c       ??_C@_01LFCBOECM@?4@       0000000000005b9c     AcpiTableDxe:AmlString.obj
+ 0002:00000580       ??_C@_0EC@NOMEFBDP@d?3?2edk2?2edk2?2MdeModulePkg?2Unive@ 0000000000005ba0     AcpiTableDxe:AmlOption.obj
+ 0002:000005d0       ??_C@_0EK@HFNLPLGC@?$CIIndex?5?$DM?$DN?5AmlByteEncoding?9?$DOMaxI@ 0000000000005bf0     AcpiTableDxe:AmlOption.obj
+ 0002:00000620       ??_C@_0CA@EJBGBBEC@Index?5?$DN?$DN?5?$CIAML_OP_PARSE_INDEX?$CJ?91@ 0000000000005c40     AcpiTableDxe:AmlOption.obj
+ 0002:00000640       ??_C@_0CM@FMGCMCKA@?$CIAmlByteEncoding?9?$DOAttribute?5?$CG?50@ 0000000000005c60     AcpiTableDxe:AmlOption.obj
+ 0002:00000670       ??_C@_0P@HCINJIFL@TermIndex?5?$CB?$DN?50@ 0000000000005c90     AcpiTableDxe:AmlOption.obj
+ 0002:00000680       ??_C@_0O@DGCOEPI@DataType?5?$DN?$DN?52@ 0000000000005ca0     AcpiTableDxe:AmlOption.obj
+ 0002:00000690       ??_C@_0BM@FKBGDKBN@AmlNodeList?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000005cb0     AcpiTableDxe:AmlNamespace.obj
+ 0002:000006b0       ??_C@_0EF@ELMMOJGM@d?3?2edk2?2edk2?2MdeModulePkg?2Unive@ 0000000000005cd0     AcpiTableDxe:AmlNamespace.obj
+ 0002:000006f8       ??_C@_0CG@LNAOKEON@AmlCurrentNodeList?5?$DN?$DN?5AmlRootNo@ 0000000000005d18     AcpiTableDxe:AmlNamespace.obj
+ 0002:00000720       ??_C@_0BM@HFDMGOKI@AML?3?5Override?5Happen?5?9?5?$CFa?$CB?6@ 0000000000005d40     AcpiTableDxe:AmlNamespace.obj
+ 0002:00000740       ??_C@_0BJ@NLBGEKGD@AML?3?5Existing?5Node?5?9?5?$CFx?6@ 0000000000005d60     AcpiTableDxe:AmlNamespace.obj
+ 0002:00000760       ??_C@_0BG@FFBGPPNA@AML?3?5New?5Buffer?5?9?5?$CFx?6@ 0000000000005d80     AcpiTableDxe:AmlNamespace.obj
+ 0002:00000778       ??_C@_04PFOHOKJK@?5?5?5?5@ 0000000000005d98     AcpiTableDxe:AmlNamespace.obj
+ 0002:00000780       ??_C@_0BF@PNMCIPD@AcpiSdt?3?5NameSpace?3?6@ 0000000000005da0     AcpiTableDxe:AmlNamespace.obj
+ 0002:00000798       ??_C@_0BI@NPKHGNAH@AcpiSdt?3?5Search?5from?3?5?2@ 0000000000005db8     AcpiTableDxe:AmlNamespace.obj
+ 0002:000007b0       ??_C@_0BF@NJNGJMPC@List?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000005dd0     BaseLib:LinkedList.obj
+ 0002:000007c8       ??_C@_0DB@MIDNNFCL@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 0000000000005de8     BaseLib:LinkedList.obj
+ 0002:00000800       ??_C@_0CC@KDLPLAED@List?9?$DOForwardLink?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?5@ 0000000000005e20     BaseLib:LinkedList.obj
+ 0002:00000828       ??_C@_0BP@IJJCCMAK@List?9?$DOBackLink?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000005e48     BaseLib:LinkedList.obj
+ 0002:00000848       ??_C@_0BJ@NJABNCDK@ListHead?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000005e68     BaseLib:LinkedList.obj
+ 0002:00000868       ??_C@_0CG@LGIALJFK@InternalBaseLibIsListValid?5?$CILis@ 0000000000005e88     BaseLib:LinkedList.obj
+ 0002:00000890       ??_C@_0BF@NMBJJECB@?$CBIsListEmpty?5?$CIEntry?$CJ@ 0000000000005eb0     BaseLib:LinkedList.obj
+ 0002:000008a8       ??_C@_0BH@MAAHKCPC@String?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000005ec8     BaseLib:String.obj
+ 0002:000008c0       ??_C@_0CN@LHBFELAO@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 0000000000005ee0     BaseLib:String.obj
+ 0002:000008f0       ??_C@_0CC@GFNLNIOC@?$CI?$CIUINTN?$CJString?5?$CG?50x00000001?$CJ?5?$DN?$DN@ 0000000000005f10     BaseLib:String.obj
+ 0002:00000918       ??_C@_0DI@MDIKFADO@Length?5?$DM?5_gPcd_FixedAtBuild_Pcd@ 0000000000005f38     BaseLib:String.obj
+ 0002:00000950       ??_C@_0DB@PKFMPMPC@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 0000000000005f70     BaseLib:SafeString.obj
+ 0002:00000988       ??_C@_0BJ@CNKJJNE@?$CIBuffer?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ@ 0000000000005fa8     BaseLib:SafeString.obj
+ 0002:000009a8       ??_C@_0N@KGHEHMDL@Divisor?5?$CB?$DN?50@ 0000000000005fc8     BaseLib:DivU64x32.obj
+ 0002:000009c0       ??_C@_0ED@MKGCMJG@?$CILength?5?9?51?$CJ?5?$DM?$DN?5?$CI0xFFFFFFFFFFFF@ 0000000000005fe0     BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0002:00000a10       ??_C@_0EB@LOHEEPCE@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 0000000000006030     BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0002:00000a58       ??_C@_0DO@MAOBOFEG@?$CILength?5?9?51?$CJ?5?$DM?$DN?5?$CI0xFFFFFFFFFFFF@ 0000000000006078     BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0002:00000a98       ??_C@_0BH@IACGKAP@Buffer?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000060b8     BaseMemoryLibRepStr:ZeroMemWrapper.obj
+ 0002:00000ab0       ??_C@_0EB@KNGCOOD@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 00000000000060d0     BaseMemoryLibRepStr:ZeroMemWrapper.obj
+ 0002:00000af8       ??_C@_0DG@EEENIGGL@Length?5?$DM?$DN?5?$CI0xFFFFFFFFFFFFFFFFUL@ 0000000000006118     BaseMemoryLibRepStr:ZeroMemWrapper.obj
+ 0002:00000b30       ??_C@_0DI@DAGDPLPG@?$CILength?5?9?51?$CJ?5?$DM?$DN?5?$CI0xFFFFFFFFFFFF@ 0000000000006150     BaseMemoryLibRepStr:SetMemWrapper.obj
+ 0002:00000b70       ??_C@_0EA@JBMLOGBO@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 0000000000006190     BaseMemoryLibRepStr:SetMemWrapper.obj
+ 0002:00000bb0       ??_C@_0CC@JOEHDGKB@DestinationBuffer?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?5@ 00000000000061d0     BaseMemoryLibRepStr:CompareMemWrapper.obj
+ 0002:00000be0       ??_C@_0EE@JHMFOHJP@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 0000000000006200     BaseMemoryLibRepStr:CompareMemWrapper.obj
+ 0002:00000c28       ??_C@_0BN@MDMCNBCC@SourceBuffer?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000006248     BaseMemoryLibRepStr:CompareMemWrapper.obj
+ 0002:00000c48       ??_C@_0BH@LKMBFCBF@Format?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000006268     BaseDebugLibSerialPort:DebugLib.obj
+ 0002:00000c60       ??_C@_0DO@CKBIDOOL@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 0000000000006280     BaseDebugLibSerialPort:DebugLib.obj
+ 0002:00000ca0       ??_C@_0BI@NOCKJDBJ@ASSERT?5?$FL?$CFa?$FN?5?$CFa?$CI?$CFd?$CJ?3?5?$CFa?6@ 00000000000062c0     BaseDebugLibSerialPort:DebugLib.obj
+ 0002:00000cb8       ??_C@_0BN@COECPDCC@gImageHandle?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000062d8     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000ce0       ??_C@_0FA@FOIHGFBE@d?3?2edk2?2edk2?2MdePkg?2Library?2Uef@ 0000000000006300     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000d30       ??_C@_0BE@DGNHAHIL@gST?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000006350     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000d48       ??_C@_0BE@BDFJLGLN@gBS?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000006368     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000d60       ??_C@_0EK@GCCICMAJ@d?3?2edk2?2edk2?2MdePkg?2Library?2Uef@ 0000000000006380     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0002:00000db0       ??_C@_0DO@GEEICOOO@AllocationSize?5?$DM?$DN?5?$CI0xFFFFFFFFFF@ 00000000000063d0     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0002:00000df0       ??_C@_0BE@OBDFIHND@gRT?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000006410     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0002:00000e10       ??_C@_0FG@JGJCMPKB@d?3?2edk2?2edk2?2MdePkg?2Library?2Uef@ 0000000000006430     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0002:00000e70       ??_C@_0FE@ELFDCAAP@d?3?2edk2?2edk2?2MdePkg?2Library?2Uef@ 0000000000006490     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:00000ec8       ??_C@_0DC@CNNBPJA@mDevicePathLibDevicePathUtiliti@ 00000000000064e8     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:00000f00       ??_C@_0CP@MFMKIIGP@d?3?2edk2?2edk2?2MdePkg?2Library?2Dxe@ 0000000000006520     DxeHobLib:HobLib.obj
+ 0002:00000f30       ??_C@_0BJ@OBFMLLDO@mHobList?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000006550     DxeHobLib:HobLib.obj
+ 0002:00000f50       ??_C@_0BJ@NOLLDKJB@HobStart?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000006570     DxeHobLib:HobLib.obj
+ 0002:00000f70       ??_C@_0DA@BDDONMJM@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 0000000000006590     BaseLib:Unaligned.obj
+ 0002:00000fa0       ??_C@_0DM@OAJIKNNG@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 00000000000065c0     BasePrintLib:PrintLibInternal.obj
+ 0002:00000fe0       ??_C@_0EB@HDGIDCIO@?$CIBufferSize?5?$DM?$DN?5?$CI_gPcd_FixedAtBu@ 0000000000006600     BasePrintLib:PrintLibInternal.obj
+ 0002:00001028       ??_C@_0BJ@PPAKKDJG@?$CIFormat?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ@ 0000000000006648     BasePrintLib:PrintLibInternal.obj
+ 0002:00001050       ??_C@_0ED@LPDDCECB@?$CIBufferSize?5?$DM?$DN?5?$CI_gPcd_FixedAtBu@ 0000000000006670     BasePrintLib:PrintLibInternal.obj
+ 0002:000010a0       ??_C@_0IM@BFJJFLGB@?$CIStrnLenS?5?$CI?$CICHAR16?5?$CK?$CJFormat?0?5?$CI_@ 00000000000066c0     BasePrintLib:PrintLibInternal.obj
+ 0002:00001130       ??_C@_0ID@PLGJGION@?$CIAsciiStrnLenS?5?$CIFormat?0?5?$CI_gPcd_@ 0000000000006750     BasePrintLib:PrintLibInternal.obj
+ 0002:000011b8       ??_C@_0O@MLOLIMFM@?$DMnull?5string?$DO@ 00000000000067d8     BasePrintLib:PrintLibInternal.obj
+ 0002:000011c8       ??_C@_0M@BJJDNPHK@?$DMnull?5guid?$DO@ 00000000000067e8     BasePrintLib:PrintLibInternal.obj
+ 0002:000011d8       ??_C@_0DB@PMLHLBMO@?$CF08x?9?$CF04x?9?$CF04x?9?$CF02x?$CF02x?9?$CF02x?$CF02@ 00000000000067f8     BasePrintLib:PrintLibInternal.obj
+ 0002:00001210       ??_C@_0M@LHGBCIKM@?$DMnull?5time?$DO@ 0000000000006830     BasePrintLib:PrintLibInternal.obj
+ 0002:00001220       ??_C@_0BK@FCPKCIDD@?$CF02d?1?$CF02d?1?$CF04d?5?5?$CF02d?3?$CF02d@ 0000000000006840     BasePrintLib:PrintLibInternal.obj
+ 0002:0000123c       ??_C@_04JIMNDDED@?$CF08X@  000000000000685c     BasePrintLib:PrintLibInternal.obj
+ 0002:00001244       ??_C@_02PCIJFNDE@?$AN?6@   0000000000006864     BasePrintLib:PrintLibInternal.obj
+ 0002:00001248       ??_C@_01LIIJDEN@?$AN@      0000000000006868     BasePrintLib:PrintLibInternal.obj
+ 0002:00001250       mWarningString             0000000000006870     BasePrintLib:PrintLibInternal.obj
+ 0002:000012f0       mErrorString               0000000000006910     BasePrintLib:PrintLibInternal.obj
+ 0002:000015b0       mHexStr                    0000000000006bd0     BasePrintLib:PrintLibInternal.obj
+ 0002:000015c0       ??_C@_0DJ@FHIMIJAH@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 0000000000006be0     BaseLib:DivU64x32Remainder.obj
+ 0002:00001650       __volatile_metadata        0000000000006c70     <linker-defined>
+ 0003:00000000       gEfiAcpi10TableGuid        0000000000006e00     AcpiTableDxe:AutoGen.obj
+ 0003:00000010       gEfiAcpiTableGuid          0000000000006e10     AcpiTableDxe:AutoGen.obj
+ 0003:00000020       gUniversalPayloadAcpiTableGuid 0000000000006e20     AcpiTableDxe:AutoGen.obj
+ 0003:00000030       gEfiDevicePathUtilitiesProtocolGuid 0000000000006e30     AcpiTableDxe:AutoGen.obj
+ 0003:00000040       gEfiAcpiTableProtocolGuid  0000000000006e40     AcpiTableDxe:AutoGen.obj
+ 0003:00000050       gEfiAcpiSdtProtocolGuid    0000000000006e50     AcpiTableDxe:AutoGen.obj
+ 0003:00000060       gEfiHobListGuid            0000000000006e60     AcpiTableDxe:AutoGen.obj
+ 0003:00000070       mEfiAcpiMaxNumTables       0000000000006e70     AcpiTableDxe:AcpiTableProtocol.obj
+ 0003:00000080       mAcpiSdtProtocolTemplate   0000000000006e80     AcpiTableDxe:AcpiSdt.obj
+ 0003:000000d0       mAmlByteEncoding           0000000000006ed0     AcpiTableDxe:Aml.obj
+ 0003:000014f0       mHandle                    00000000000082f0     AcpiTableDxe:AcpiTable.obj
+ 0003:000014f8       mPrivateData               00000000000082f8     AcpiTableDxe:AcpiTable.obj
+ 0003:00001500       gST                        0000000000008300     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0003:00001508       gBS                        0000000000008308     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0003:00001510       gImageHandle               0000000000008310     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0003:00001518       gRT                        0000000000008318     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0003:00001520       mDevicePathLibDevicePathUtilities 0000000000008320     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0003:00001528       mHobList                   0000000000008328     DxeHobLib:HobLib.obj
+ 0003:00001530       gParity                    0000000000008330     PcAtSerialPortLib:SerialPortLib.obj
+ 0003:00001531       gBreakSet                  0000000000008331     PcAtSerialPortLib:SerialPortLib.obj
+
+ entry point at        0001:000000e4
+
+ Static symbols
+
+ 0001:0000001a       InternalMemCopyMem.0       00000000000002da     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:0000002a       @CopyBackward              00000000000002ea     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000033       @CopyBytes                 00000000000002f3     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000768       FreeTableMemory            0000000000000a28 f   AcpiTableDxe:AcpiTableProtocol.obj
+ 0003:00001534       mAcpiTableAllocType        0000000000008334     AcpiTableDxe:AcpiTableProtocol.obj
+ 0005:00000000       $unwind$_ModuleEntryPoint  0000000000008660     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0005:00000000       $unwind$FreePool           0000000000008660     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0005:00000000       $unwind$InternalAllocatePool 0000000000008660     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0005:00000008       $unwind$Open               0000000000008668     AcpiTableDxe:AcpiSdt.obj
+ 0005:00000008       $unwind$UninstallAcpiTable 0000000000008668     AcpiTableDxe:AcpiTableProtocol.obj
+ 0005:00000008       $unwind$ProcessLibraryConstructorList 0000000000008668     AcpiTableDxe:AutoGen.obj
+ 0005:00000008       $unwind$InsertTailList     0000000000008668     BaseLib:LinkedList.obj
+ 0005:00000008       $unwind$AsciiStrLen        0000000000008668     BaseLib:String.obj
+ 0005:00000008       $unwind$ZeroMem            0000000000008668     BaseMemoryLibRepStr:ZeroMemWrapper.obj
+ 0005:00000008       $unwind$InternalAllocateCopyPool 0000000000008668     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0005:00000014       $unwind$ProcessModuleEntryPointList 0000000000008674     AcpiTableDxe:AutoGen.obj
+ 0005:0000001c       $unwind$FindTableByBuffer  000000000000867c     AcpiTableDxe:AcpiSdt.obj
+ 0005:0000001c       $unwind$SdtGetAcpiTable    000000000000867c     AcpiTableDxe:AcpiSdt.obj
+ 0005:0000001c       $unwind$PublishTables      000000000000867c     AcpiTableDxe:AcpiTableProtocol.obj
+ 0005:0000001c       $unwind$AmlGetPkgLength    000000000000867c     AcpiTableDxe:Aml.obj
+ 0005:0000001c       $unwind$SetMem             000000000000867c     BaseMemoryLibRepStr:SetMemWrapper.obj
+ 0005:0000001c       $unwind$BasePrintLibValueToString 000000000000867c     BasePrintLib:PrintLibInternal.obj
+ 0005:0000001c       $unwind$GetHobList         000000000000867c     DxeHobLib:HobLib.obj
+ 0005:0000002c       $unwind$GetAcpiTable2      000000000000868c     AcpiTableDxe:AcpiSdt.obj
+ 0005:0000002c       $unwind$InstallAcpiTable   000000000000868c     AcpiTableDxe:AcpiTableProtocol.obj
+ 0005:00000040       $unwind$ReallocateAcpiTableBuffer 00000000000086a0     AcpiTableDxe:AcpiTableProtocol.obj
+ 0005:00000054       $unwind$AddTableToList     00000000000086b4     AcpiTableDxe:AcpiTableProtocol.obj
+ 0005:0000006c       $unwind$FindTableByHandle  00000000000086cc     AcpiTableDxe:AcpiTableProtocol.obj
+ 0005:0000006c       $unwind$AmlCreateNode      00000000000086cc     AcpiTableDxe:AmlNamespace.obj
+ 0005:0000006c       $unwind$AmlDestructNodeList 00000000000086cc     AcpiTableDxe:AmlNamespace.obj
+ 0005:0000006c       $unwind$AmlInsertNodeToTree 00000000000086cc     AcpiTableDxe:AmlNamespace.obj
+ 0005:0000006c       $unwind$CopyMem            00000000000086cc     BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0005:00000080       $unwind$RemoveTableFromRsdt 00000000000086e0     AcpiTableDxe:AcpiTableProtocol.obj
+ 0005:00000098       $unwind$DeleteTable        00000000000086f8     AcpiTableDxe:AcpiTableProtocol.obj
+ 0005:00000098       $unwind$AmlDumpNodeInfo    00000000000086f8     AcpiTableDxe:AmlNamespace.obj
+ 0005:000000b0       $unwind$SdtNotifyAcpiList  0000000000008710     AcpiTableDxe:AcpiSdt.obj
+ 0005:000000b0       $unwind$RemoveTableFromList 0000000000008710     AcpiTableDxe:AcpiTableProtocol.obj
+ 0005:000000c4       $unwind$InstallAcpiTableFromHob 0000000000008724     AcpiTableDxe:AcpiTableProtocol.obj
+ 0005:000000dc       $unwind$AcpiTableAcpiTableConstructor 000000000000873c     AcpiTableDxe:AcpiTableProtocol.obj
+ 0005:000000f0       $unwind$RegisterNotify     0000000000008750     AcpiTableDxe:AcpiSdt.obj
+ 0005:00000108       $unwind$OpenSdt            0000000000008768     AcpiTableDxe:AcpiSdt.obj
+ 0005:00000118       $unwind$SdtOpenEx          0000000000008778     AcpiTableDxe:AcpiSdt.obj
+ 0005:00000118       $unwind$AmlParseOptionTerm 0000000000008778     AcpiTableDxe:AmlOption.obj
+ 0005:00000130       $unwind$Close              0000000000008790     AcpiTableDxe:AcpiSdt.obj
+ 0005:00000130       $unwind$InternalBaseLibIsListValid 0000000000008790     BaseLib:LinkedList.obj
+ 0005:00000130       $unwind$RemoveEntryList    0000000000008790     BaseLib:LinkedList.obj
+ 0005:00000130       $unwind$StrnLenS           0000000000008790     BaseLib:SafeString.obj
+ 0005:00000138       $unwind$GetOption          0000000000008798     AcpiTableDxe:AcpiSdt.obj
+ 0005:00000150       $unwind$SetOption          00000000000087b0     AcpiTableDxe:AcpiSdt.obj
+ 0005:00000164       $unwind$GetChild           00000000000087c4     AcpiTableDxe:AcpiSdt.obj
+ 0005:00000170       $unwind$SdtFindPathFromRoot 00000000000087d0     AcpiTableDxe:AcpiSdt.obj
+ 0005:00000180       $unwind$FindPath           00000000000087e0     AcpiTableDxe:AcpiSdt.obj
+ 0005:0000019c       $unwind$AmlGetChildFromObjectBuffer 00000000000087fc     AcpiTableDxe:AmlChild.obj
+ 0005:000001ac       $unwind$AmlGetChildFromNonRoot 000000000000880c     AcpiTableDxe:AmlChild.obj
+ 0005:000001c0       $unwind$AmlGetNameStringSize 0000000000008820     AcpiTableDxe:AmlString.obj
+ 0005:000001cc       $unwind$AmlNameFromAslName 000000000000882c     AcpiTableDxe:AmlString.obj
+ 0005:000001e8       $unwind$AmlPrintNameSeg    0000000000008848     AcpiTableDxe:AmlString.obj
+ 0005:000001f4       $unwind$AmlParseOptionCommon 0000000000008854     AcpiTableDxe:AmlOption.obj
+ 0005:00000210       $unwind$AmlGetObjectName   0000000000008870     AcpiTableDxe:AmlOption.obj
+ 0005:0000021c       $unwind$AmlGetOffsetAfterLastOption 000000000000887c     AcpiTableDxe:AmlOption.obj
+ 0005:00000224       $unwind$AmlFindNodeInTheTree 0000000000008884     AcpiTableDxe:AmlNamespace.obj
+ 0005:00000240       $unwind$AmlConstructNodeListForChild 00000000000088a0     AcpiTableDxe:AmlNamespace.obj
+ 0005:00000258       $unwind$AmlConstructNodeList 00000000000088b8     AcpiTableDxe:AmlNamespace.obj
+ 0005:00000268       $unwind$AmlFindPath        00000000000088c8     AcpiTableDxe:AmlNamespace.obj
+ 0005:00000280       $unwind$CompareGuid        00000000000088e0     BaseMemoryLibRepStr:MemLibGuid.obj
+ 0005:00000298       $unwind$DebugPrint         00000000000088f8     BaseDebugLibSerialPort:DebugLib.obj
+ 0005:000002a0       $unwind$DebugPrintMarker   0000000000008900     BaseDebugLibSerialPort:DebugLib.obj
+ 0005:000002b4       $unwind$DebugAssert        0000000000008914     BaseDebugLibSerialPort:DebugLib.obj
+ 0005:000002bc       $unwind$AsciiSPrint        000000000000891c     BasePrintLib:PrintLib.obj
+ 0005:000002c4       $unwind$BasePrintLibSPrintMarker 0000000000008924     BasePrintLib:PrintLibInternal.obj
+ 0005:000002e0       $unwind$BasePrintLibSPrint 0000000000008940     BasePrintLib:PrintLibInternal.obj

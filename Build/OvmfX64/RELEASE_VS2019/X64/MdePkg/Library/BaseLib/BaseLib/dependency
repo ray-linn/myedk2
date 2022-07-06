@@ -1,0 +1,19 @@
+
+
+!IF EXIST(d:\edk2\edk2\Build\OvmfX64\RELEASE_VS2019\X64\MdePkg\Library\BaseLib\BaseLib\OUTPUT\X64\LongJump.nasm.trim.deps)
+!INCLUDE d:\edk2\edk2\Build\OvmfX64\RELEASE_VS2019\X64\MdePkg\Library\BaseLib\BaseLib\OUTPUT\X64\LongJump.nasm.trim.deps
+!ENDIF
+
+!IF EXIST(d:\edk2\edk2\Build\OvmfX64\RELEASE_VS2019\X64\MdePkg\Library\BaseLib\BaseLib\OUTPUT\X64\Pvalidate.nasm.trim.deps)
+!INCLUDE d:\edk2\edk2\Build\OvmfX64\RELEASE_VS2019\X64\MdePkg\Library\BaseLib\BaseLib\OUTPUT\X64\Pvalidate.nasm.trim.deps
+!ENDIF
+
+!IF EXIST(d:\edk2\edk2\Build\OvmfX64\RELEASE_VS2019\X64\MdePkg\Library\BaseLib\BaseLib\OUTPUT\X64\RmpAdjust.nasm.trim.deps)
+!INCLUDE d:\edk2\edk2\Build\OvmfX64\RELEASE_VS2019\X64\MdePkg\Library\BaseLib\BaseLib\OUTPUT\X64\RmpAdjust.nasm.trim.deps
+!ENDIF
+
+!IF EXIST(d:\edk2\edk2\Build\OvmfX64\RELEASE_VS2019\X64\MdePkg\Library\BaseLib\BaseLib\OUTPUT\X64\SetJump.nasm.trim.deps)
+!INCLUDE d:\edk2\edk2\Build\OvmfX64\RELEASE_VS2019\X64\MdePkg\Library\BaseLib\BaseLib\OUTPUT\X64\SetJump.nasm.trim.deps
+!ENDIF
+
+               

@@ -1,0 +1,192 @@
+ VirtioFsDxe
+
+ Timestamp is 61ee7043 (Mon Jan 24 17:24:19 2022)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 000000d4H .text                   CODE
+ 0001:000000d4 00004d79H .text$mn                CODE
+ 0002:00000000 00000070H .data                   DATA
+ 0002:00000070 000000e0H .rdata                  DATA
+ 0002:00000150 00000058H .bss                    DATA
+ 0002:000001a8 0000004cH .rdata$voltmd           DATA
+ 0002:000001f4 000000a8H .rdata$zzzdbg           DATA
+ 0003:00000000 0000027cH .pdata                  DATA
+ 0004:00000000 000003c8H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __x64_code_ranges_to_entry_points_count 0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_count      0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_table          0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map_count    0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_table      0000000000000000     <absolute>
+ 0000:00000000       __arm64x_native_entrypoint 0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points 0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_table      0000000000000000     <absolute>
+ 0000:00000000       __enclave_config           0000000000000000     <absolute>
+ 0000:00000000       __guard_flags              0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_count          0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata_count 0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_count      0000000000000000     <absolute>
+ 0000:00000000       __dynamic_value_reloc_table 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat     0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat_copy 0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_count         0000000000000000     <absolute>
+ 0000:00000000       __AbsoluteZero             0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table   0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata 0000000000000000     <absolute>
+ 0000:00000000       __guard_check_icall_a64n_fptr 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map          0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_table         0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table_size 0000000000000000     <absolute>
+ 0000:00000000       __ImageBase                0000000000000000     <linker-defined>
+ 0001:00000000       InternalMemCopyMem         0000000000000260     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000040       InternalMemCompareMem      00000000000002a0     BaseMemoryLibRepStr:CompareMem.obj
+ 0001:00000060       InternalMemZeroMem         00000000000002c0     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00000080       InternalMemSetMem          00000000000002e0     BaseMemoryLibRepStr:SetMem.obj
+ 0001:000000a0       InternalMemSetMem64        0000000000000300     BaseMemoryLibRepStr:SetMem64.obj
+ 0001:000000c0       InternalMemSetMem32        0000000000000320     BaseMemoryLibRepStr:SetMem32.obj
+ 0001:000000d4       _ModuleEntryPoint          0000000000000334 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:000000f4       ProcessModuleEntryPointList 0000000000000354 f   VirtioFsDxe:AutoGen.obj
+ 0001:000001ac       VirtioFsBindingSupported   000000000000040c f   VirtioFsDxe:DriverBinding.obj
+ 0001:00000240       VirtioFsBindingStart       00000000000004a0 f   VirtioFsDxe:DriverBinding.obj
+ 0001:000003cc       VirtioFsBindingStop        000000000000062c f   VirtioFsDxe:DriverBinding.obj
+ 0001:000004ac       VirtioFsGetDriverName      000000000000070c f   VirtioFsDxe:DriverBinding.obj
+ 0001:000004f8       VirtioFsGetControllerName  0000000000000758 f   VirtioFsDxe:DriverBinding.obj
+ 0001:00000504       VirtioFsOpenVolume         0000000000000764 f   VirtioFsDxe:SimpleFsOpenVolume.obj
+ 0001:000006d8       VirtioFsInit               0000000000000938 f   VirtioFsDxe:Helpers.obj
+ 0001:000009dc       VirtioFsUninit             0000000000000c3c f   VirtioFsDxe:Helpers.obj
+ 0001:00000a38       VirtioFsExitBoot           0000000000000c98 f   VirtioFsDxe:Helpers.obj
+ 0001:00000a48       VirtioFsSgListsValidate    0000000000000ca8 f   VirtioFsDxe:Helpers.obj
+ 0001:00000b44       VirtioFsSgListsSubmit      0000000000000da4 f   VirtioFsDxe:Helpers.obj
+ 0001:00000eb0       VirtioFsFuseNewRequest     0000000000001110 f   VirtioFsDxe:Helpers.obj
+ 0001:00000f08       VirtioFsFuseCheckResponse  0000000000001168 f   VirtioFsDxe:Helpers.obj
+ 0001:00000fd8       VirtioFsErrnoToEfiStatus   0000000000001238 f   VirtioFsDxe:Helpers.obj
+ 0001:000011d0       VirtioFsAppendPath         0000000000001430 f   VirtioFsDxe:Helpers.obj
+ 0001:00001510       VirtioFsLookupMostSpecificParentDir 0000000000001770 f   VirtioFsDxe:Helpers.obj
+ 0001:00001684       VirtioFsGetBasename        00000000000018e4 f   VirtioFsDxe:Helpers.obj
+ 0001:000016f4       VirtioFsComposeRenameDestination 0000000000001954 f   VirtioFsDxe:Helpers.obj
+ 0001:000018d8       VirtioFsFuseAttrToEfiFileInfo 0000000000001b38 f   VirtioFsDxe:Helpers.obj
+ 0001:00001b9c       VirtioFsGetFuseTimeUpdates 0000000000001dfc f   VirtioFsDxe:Helpers.obj
+ 0001:00001df0       VirtioFsFuseInitSession    0000000000002050 f   VirtioFsDxe:FuseInit.obj
+ 0001:00001f68       VirtioFsSimpleFileWrite    00000000000021c8 f   VirtioFsDxe:SimpleFsWrite.obj
+ 0001:000021a8       VirtioFsSimpleFileGetPosition 0000000000002408 f   VirtioFsDxe:SimpleFsGetPosition.obj
+ 0001:0000270c       VirtioFsSimpleFileRead     000000000000296c f   VirtioFsDxe:SimpleFsRead.obj
+ 0001:00002724       VirtioFsSimpleFileFlush    0000000000002984 f   VirtioFsDxe:SimpleFsFlush.obj
+ 0001:00002790       VirtioFsFuseOpenDir        00000000000029f0 f   VirtioFsDxe:FuseOpenDir.obj
+ 0001:000028c4       VirtioFsSimpleFileDelete   0000000000002b24 f   VirtioFsDxe:SimpleFsDelete.obj
+ 0001:00002e18       VirtioFsSimpleFileSetInfo  0000000000003078 f   VirtioFsDxe:SimpleFsSetInfo.obj
+ 0001:00002fc8       VirtioFsSimpleFileSetPosition 0000000000003228 f   VirtioFsDxe:SimpleFsSetPosition.obj
+ 0001:0000350c       VirtioFsSimpleFileOpen     000000000000376c f   VirtioFsDxe:SimpleFsOpen.obj
+ 0001:000038c4       VirtioFsSimpleFileClose    0000000000003b24 f   VirtioFsDxe:SimpleFsClose.obj
+ 0001:00003bd4       VirtioFsSimpleFileGetInfo  0000000000003e34 f   VirtioFsDxe:SimpleFsGetInfo.obj
+ 0001:00003cac       VirtioFsFuseLookup         0000000000003f0c f   VirtioFsDxe:FuseLookup.obj
+ 0001:00003e28       VirtioFsFuseForget         0000000000004088 f   VirtioFsDxe:FuseForget.obj
+ 0001:00003ed0       VirtioFsFuseGetAttr        0000000000004130 f   VirtioFsDxe:FuseGetAttr.obj
+ 0001:00003ffc       VirtioFsFuseReadFileOrDir  000000000000425c f   VirtioFsDxe:FuseRead.obj
+ 0001:0000416c       VirtioFsFuseStatFs         00000000000043cc f   VirtioFsDxe:FuseStatFs.obj
+ 0001:00004264       VirtioFsFuseFlush          00000000000044c4 f   VirtioFsDxe:FuseFlush.obj
+ 0001:00004380       VirtioFsFuseFsyncFileOrDir 00000000000045e0 f   VirtioFsDxe:FuseFsync.obj
+ 0001:000044a8       VirtioFsFuseRemoveFileOrDir 0000000000004708 f   VirtioFsDxe:FuseUnlink.obj
+ 0001:000045c4       VirtioFsFuseReleaseFileOrDir 0000000000004824 f   VirtioFsDxe:FuseRelease.obj
+ 0001:000046f4       VirtioFsFuseRename         0000000000004954 f   VirtioFsDxe:FuseRename.obj
+ 0001:0000484c       VirtioFsFuseSetAttr        0000000000004aac f   VirtioFsDxe:FuseSetAttr.obj
+ 0001:00004a4c       VirtioFsFuseOpen           0000000000004cac f   VirtioFsDxe:FuseOpen.obj
+ 0001:00004b94       InternalAllocatePool       0000000000004df4 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00004bc4       InternalAllocateCopyPool   0000000000004e24 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00004c04       EfiGetEpochDays            0000000000004e64 f   TimeBaseLib:TimeBaseLib.obj
+ 0001:00004cbc       VirtioRingInit             0000000000004f1c f   VirtioLib:VirtioLib.obj
+ 0001:00004dd0       VirtioMapAllBytesInSharedBuffer 0000000000005030 f   VirtioLib:VirtioLib.obj
+ 0002:00000000       gEfiComponentName2ProtocolGuid 00000000000050c0     VirtioFsDxe:AutoGen.obj
+ 0002:00000010       gEfiFileSystemInfoGuid     00000000000050d0     VirtioFsDxe:AutoGen.obj
+ 0002:00000020       gEfiFileInfoGuid           00000000000050e0     VirtioFsDxe:AutoGen.obj
+ 0002:00000030       gEfiSimpleFileSystemProtocolGuid 00000000000050f0     VirtioFsDxe:AutoGen.obj
+ 0002:00000040       gEfiFileSystemVolumeLabelInfoIdGuid 0000000000005100     VirtioFsDxe:AutoGen.obj
+ 0002:00000050       gEfiDriverBindingProtocolGuid 0000000000005110     VirtioFsDxe:AutoGen.obj
+ 0002:00000060       gVirtioDeviceProtocolGuid  0000000000005120     VirtioFsDxe:AutoGen.obj
+ 0002:00000070       ??_C@_02LFNMGJAP@en@       0000000000005130     VirtioFsDxe:DriverBinding.obj
+ 0002:00000078       ??_C@_1DC@NDNNEJOO@?$AAV?$AAi?$AAr?$AAt?$AAi?$AAo?$AA?5?$AAF?$AAi?$AAl?$AAe?$AAs?$AAy?$AAs?$AAt@ 0000000000005138     VirtioFsDxe:DriverBinding.obj
+ 0002:000000ac       ??_C@_01KMDKNFGN@?1@       000000000000516c     VirtioFsDxe:SimpleFsOpenVolume.obj
+ 0002:000000c0       ??_C@_11LOCGONAA@@         0000000000005180     VirtioFsDxe:SimpleFsSetInfo.obj
+ 0002:00000150       gST                        0000000000005210     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000158       gBS                        0000000000005218     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000001a8       __volatile_metadata        0000000000005268     <linker-defined>
+
+ entry point at        0001:000000d4
+
+ Static symbols
+
+ 0001:0000001a       InternalMemCopyMem.0       000000000000027a     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:0000002a       @CopyBackward              000000000000028a     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000033       @CopyBytes                 0000000000000293     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:000010f0       $LN138                     0000000000001350     VirtioFsDxe:Helpers.obj
+ 0001:00001148       $LN137                     00000000000013a8     VirtioFsDxe:Helpers.obj
+ 0001:000021c8       RefillFileInfoCache        0000000000002428 f   VirtioFsDxe:SimpleFsRead.obj
+ 0001:00002534       ReadFileInfoCache          0000000000002794 f   VirtioFsDxe:SimpleFsRead.obj
+ 0001:000025f0       ReadRegularFile            0000000000002850 f   VirtioFsDxe:SimpleFsRead.obj
+ 0001:000029dc       Rename                     0000000000002c3c f   VirtioFsDxe:SimpleFsSetInfo.obj
+ 0001:00002c60       UpdateAttributes           0000000000002ec0 f   VirtioFsDxe:SimpleFsSetInfo.obj
+ 0001:00003070       OpenExistentFileOrDirectory 00000000000032d0 f   VirtioFsDxe:SimpleFsOpen.obj
+ 0001:0000318c       CreateDirectory            00000000000033ec f   VirtioFsDxe:SimpleFsOpen.obj
+ 0001:00003370       CreateRegularFile          00000000000035d0 f   VirtioFsDxe:SimpleFsOpen.obj
+ 0001:000039b8       GetFileInfo                0000000000003c18 f   VirtioFsDxe:SimpleFsGetInfo.obj
+ 0001:00003a8c       GetFileSystemInfo          0000000000003cec f   VirtioFsDxe:SimpleFsGetInfo.obj
+ 0002:000000b0       ?ZeroTime@?1??VirtioFsGetFuseTimeUpdates@@9@9 0000000000005170     VirtioFsDxe:Helpers.obj
+ 0002:000000d0       ?DayOfMonth@?1??IsDayValid@@9@9 0000000000005190     TimeBaseLib:TimeBaseLib.obj
+ 0002:00000160       mComponentName2            0000000000005220     VirtioFsDxe:DriverBinding.obj
+ 0002:00000178       mDriverBinding             0000000000005238     VirtioFsDxe:DriverBinding.obj
+ 0004:00000000       $unwind$_ModuleEntryPoint  00000000000055e0     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0004:00000000       $unwind$InternalAllocatePool 00000000000055e0     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0004:00000008       $unwind$ProcessModuleEntryPointList 00000000000055e8     VirtioFsDxe:AutoGen.obj
+ 0004:00000010       $unwind$VirtioFsBindingStop 00000000000055f0     VirtioFsDxe:DriverBinding.obj
+ 0004:00000010       $unwind$VirtioFsBindingSupported 00000000000055f0     VirtioFsDxe:DriverBinding.obj
+ 0004:00000020       $unwind$VirtioFsBindingStart 0000000000005600     VirtioFsDxe:DriverBinding.obj
+ 0004:00000034       $unwind$VirtioFsOpenVolume 0000000000005614     VirtioFsDxe:SimpleFsOpenVolume.obj
+ 0004:00000048       $unwind$VirtioFsInit       0000000000005628     VirtioFsDxe:Helpers.obj
+ 0004:00000060       $unwind$InternalAllocateCopyPool 0000000000005640     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0004:00000060       $unwind$VirtioFsUninit     0000000000005640     VirtioFsDxe:Helpers.obj
+ 0004:00000060       $unwind$VirtioFsSimpleFileClose 0000000000005640     VirtioFsDxe:SimpleFsClose.obj
+ 0004:00000060       $unwind$VirtioFsSimpleFileFlush 0000000000005640     VirtioFsDxe:SimpleFsFlush.obj
+ 0004:0000006c       $unwind$VirtioFsSgListsValidate 000000000000564c     VirtioFsDxe:Helpers.obj
+ 0004:0000007c       $unwind$VirtioFsSgListsSubmit 000000000000565c     VirtioFsDxe:Helpers.obj
+ 0004:00000094       $unwind$VirtioFsFuseCheckResponse 0000000000005674     VirtioFsDxe:Helpers.obj
+ 0004:00000094       $unwind$VirtioFsGetBasename 0000000000005674     VirtioFsDxe:Helpers.obj
+ 0004:0000009c       $unwind$VirtioFsAppendPath 000000000000567c     VirtioFsDxe:Helpers.obj
+ 0004:000000b8       $unwind$VirtioFsLookupMostSpecificParentDir 0000000000005698     VirtioFsDxe:Helpers.obj
+ 0004:000000d4       $unwind$VirtioFsComposeRenameDestination 00000000000056b4     VirtioFsDxe:Helpers.obj
+ 0004:000000f0       $unwind$VirtioFsFuseAttrToEfiFileInfo 00000000000056d0     VirtioFsDxe:Helpers.obj
+ 0004:00000108       $unwind$VirtioFsGetFuseTimeUpdates 00000000000056e8     VirtioFsDxe:Helpers.obj
+ 0004:00000120       $unwind$VirtioFsFuseInitSession 0000000000005700     VirtioFsDxe:FuseInit.obj
+ 0004:00000130       $unwind$VirtioFsSimpleFileWrite 0000000000005710     VirtioFsDxe:SimpleFsWrite.obj
+ 0004:0000014c       $unwind$RefillFileInfoCache 000000000000572c     VirtioFsDxe:SimpleFsRead.obj
+ 0004:00000164       $unwind$ReadFileInfoCache  0000000000005744     VirtioFsDxe:SimpleFsRead.obj
+ 0004:00000164       $unwind$VirtioFsSimpleFileSetInfo 0000000000005744     VirtioFsDxe:SimpleFsSetInfo.obj
+ 0004:00000174       $unwind$ReadRegularFile    0000000000005754     VirtioFsDxe:SimpleFsRead.obj
+ 0004:00000194       $unwind$VirtioFsFuseOpenDir 0000000000005774     VirtioFsDxe:FuseOpenDir.obj
+ 0004:000001ac       $unwind$VirtioFsSimpleFileDelete 000000000000578c     VirtioFsDxe:SimpleFsDelete.obj
+ 0004:000001bc       $unwind$Rename             000000000000579c     VirtioFsDxe:SimpleFsSetInfo.obj
+ 0004:000001d0       $unwind$UpdateAttributes   00000000000057b0     VirtioFsDxe:SimpleFsSetInfo.obj
+ 0004:000001e8       $unwind$VirtioFsSimpleFileSetPosition 00000000000057c8     VirtioFsDxe:SimpleFsSetPosition.obj
+ 0004:000001f0       $unwind$OpenExistentFileOrDirectory 00000000000057d0     VirtioFsDxe:SimpleFsOpen.obj
+ 0004:0000020c       $unwind$CreateDirectory    00000000000057ec     VirtioFsDxe:SimpleFsOpen.obj
+ 0004:00000228       $unwind$CreateRegularFile  0000000000005808     VirtioFsDxe:SimpleFsOpen.obj
+ 0004:00000240       $unwind$VirtioFsSimpleFileOpen 0000000000005820     VirtioFsDxe:SimpleFsOpen.obj
+ 0004:0000025c       $unwind$GetFileInfo        000000000000583c     VirtioFsDxe:SimpleFsGetInfo.obj
+ 0004:00000270       $unwind$GetFileSystemInfo  0000000000005850     VirtioFsDxe:SimpleFsGetInfo.obj
+ 0004:00000288       $unwind$VirtioFsSimpleFileGetInfo 0000000000005868     VirtioFsDxe:SimpleFsGetInfo.obj
+ 0004:00000290       $unwind$VirtioFsFuseLookup 0000000000005870     VirtioFsDxe:FuseLookup.obj
+ 0004:000002ac       $unwind$VirtioFsFuseForget 000000000000588c     VirtioFsDxe:FuseForget.obj
+ 0004:000002c0       $unwind$VirtioFsFuseGetAttr 00000000000058a0     VirtioFsDxe:FuseGetAttr.obj
+ 0004:000002d4       $unwind$VirtioFsFuseReadFileOrDir 00000000000058b4     VirtioFsDxe:FuseRead.obj
+ 0004:000002f0       $unwind$VirtioFsFuseStatFs 00000000000058d0     VirtioFsDxe:FuseStatFs.obj
+ 0004:00000304       $unwind$VirtioFsFuseFlush  00000000000058e4     VirtioFsDxe:FuseFlush.obj
+ 0004:0000031c       $unwind$VirtioFsFuseFsyncFileOrDir 00000000000058fc     VirtioFsDxe:FuseFsync.obj
+ 0004:0000031c       $unwind$VirtioFsFuseReleaseFileOrDir 00000000000058fc     VirtioFsDxe:FuseRelease.obj
+ 0004:00000338       $unwind$VirtioFsFuseRemoveFileOrDir 0000000000005918     VirtioFsDxe:FuseUnlink.obj
+ 0004:00000350       $unwind$VirtioFsFuseRename 0000000000005930     VirtioFsDxe:FuseRename.obj
+ 0004:00000368       $unwind$VirtioFsFuseSetAttr 0000000000005948     VirtioFsDxe:FuseSetAttr.obj
+ 0004:00000384       $unwind$VirtioFsFuseOpen   0000000000005964     VirtioFsDxe:FuseOpen.obj
+ 0004:000003a0       $unwind$VirtioRingInit     0000000000005980     VirtioLib:VirtioLib.obj
+ 0004:000003bc       $unwind$VirtioMapAllBytesInSharedBuffer 000000000000599c     VirtioLib:VirtioLib.obj

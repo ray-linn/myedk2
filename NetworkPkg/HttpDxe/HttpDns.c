@@ -105,21 +105,34 @@ HttpDns4 (
   // Configure DNS4 instance for the DNS server address and protocol.
   //
   ZeroMem (&Dns4CfgData, sizeof (Dns4CfgData));
+  //UINTN _ServerCount;
+  EFI_IPv4_ADDRESS         *  _ServerList;
+  EFI_IPv4_ADDRESS _Dns = {8,8,8,8}; // google dns
+  //_ServerCount = DnsServerListCount+1;
+  DnsServerListCount++;
+  _ServerList  = AllocatePool (DnsServerListCount * sizeof (EFI_IPv4_ADDRESS));
+  if (_ServerList == NULL) {
+    return EFI_OUT_OF_RESOURCES;
+  }
+  CopyMem (_ServerList, &_Dns, sizeof (EFI_IPv4_ADDRESS));//put Google DNS as 1st 
+  CopyMem (_ServerList+1,DnsServerList,DataSize);
   Dns4CfgData.DnsServerListCount = DnsServerListCount;
-  Dns4CfgData.DnsServerList      = DnsServerList;
+  Dns4CfgData.DnsServerList      = _ServerList;
+  DEBUG ((DEBUG_ERROR, "%d DNS Server Found.\n",DnsServerListCount));
+  //Dns4CfgData.DnsServerListCount = DnsServerListCount;
+  //Dns4CfgData.DnsServerList      = DnsServerList;
   Dns4CfgData.UseDefaultSetting  = HttpInstance->IPv4Node.UseDefaultAddress;
   if (!Dns4CfgData.UseDefaultSetting) {
     IP4_COPY_ADDRESS (&Dns4CfgData.StationIp, &HttpInstance->IPv4Node.LocalAddress);
     IP4_COPY_ADDRESS (&Dns4CfgData.SubnetMask, &HttpInstance->IPv4Node.LocalSubnet);
   }
-
-  Dns4CfgData.EnableDnsCache = TRUE;
   Dns4CfgData.Protocol       = EFI_IP_PROTO_UDP;
   Status                     = Dns4->Configure (
                                        Dns4,
                                        &Dns4CfgData
                                        );
   if (EFI_ERROR (Status)) {
+	DEBUG ((DEBUG_ERROR, "Configure Error.\n"));
     goto Exit;
   }
 
@@ -151,7 +164,6 @@ HttpDns4 (
   while (!IsDone) {
     Dns4->Poll (Dns4);
   }
-
   //
   // Name resolution is done, check result.
   //
@@ -207,7 +219,10 @@ Exit:
       Dns4Handle
       );
   }
-
+  DEBUG ((DEBUG_ERROR, "Clean Up\n."));
+  if (_ServerList != NULL) {
+    FreePool (_ServerList);
+  }
   if (DnsServerList != NULL) {
     FreePool (DnsServerList);
   }

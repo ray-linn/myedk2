@@ -1,0 +1,173 @@
+ SmbiosDxe
+
+ Timestamp is 61ee7049 (Mon Jan 24 17:24:25 2022)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000204H .text                   CODE
+ 0001:00000204 00001e89H .text$mn                CODE
+ 0002:00000000 000000f0H .data                   DATA
+ 0002:000000f0 00000090H .rdata                  DATA
+ 0002:00000180 000000f0H .bss                    DATA
+ 0002:00000270 0000007cH .rdata$voltmd           DATA
+ 0002:000002ec 000000a8H .rdata$zzzdbg           DATA
+ 0003:00000000 00000114H .pdata                  DATA
+ 0004:00000000 00000130H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __guard_longjmp_table      0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table_size 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map_count    0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points 0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points_count 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_native_entrypoint 0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_table          0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_table      0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_count         0000000000000000     <absolute>
+ 0000:00000000       __enclave_config           0000000000000000     <absolute>
+ 0000:00000000       __guard_flags              0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata_count 0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_count      0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map          0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_count          0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_count      0000000000000000     <absolute>
+ 0000:00000000       __dynamic_value_reloc_table 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table   0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat     0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat_copy 0000000000000000     <absolute>
+ 0000:00000000       __AbsoluteZero             0000000000000000     <absolute>
+ 0000:00000000       __guard_check_icall_a64n_fptr 0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_table         0000000000000000     <absolute>
+ 0001:00000000       InternalMemCopyMem         0000000000000280     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000040       InternalMemCompareMem      00000000000002c0     BaseMemoryLibRepStr:CompareMem.obj
+ 0001:00000060       InternalMemZeroMem         00000000000002e0     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00000080       SevNoRepIo                 0000000000000300     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000000c0       IoReadFifo8                0000000000000340     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000000e2       IoReadFifo16               0000000000000362     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000108       IoReadFifo32               0000000000000388     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:0000012b       IoWriteFifo8               00000000000003ab     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:0000014d       IoWriteFifo16              00000000000003cd     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000173       IoWriteFifo32              00000000000003f3     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001a0       AsmCpuid                   0000000000000420     BaseLib:CpuId.obj
+ 0001:000001d0       CpuPause                   0000000000000450     BaseLib:CpuPause.obj
+ 0001:000001e0       EnableInterrupts           0000000000000460     BaseLib:EnableInterrupts.obj
+ 0001:000001f0       DisableInterrupts          0000000000000470     BaseLib:DisableInterrupts.obj
+ 0001:00000200       AsmReadEflags              0000000000000480     BaseLib:ReadEflags.obj
+ 0001:00000204       _ModuleEntryPoint          0000000000000484 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:00000220       ProcessLibraryConstructorList 00000000000004a0 f   SmbiosDxe:AutoGen.obj
+ 0001:000004fc       GetSmbiosStructureSize     000000000000077c f   SmbiosDxe:SmbiosDxe.obj
+ 0001:000005a0       SmbiosAdd                  0000000000000820 f   SmbiosDxe:SmbiosDxe.obj
+ 0001:00000868       SmbiosUpdateString         0000000000000ae8 f   SmbiosDxe:SmbiosDxe.obj
+ 0001:00000cf0       SmbiosRemove               0000000000000f70 f   SmbiosDxe:SmbiosDxe.obj
+ 0001:00000e14       SmbiosGetNext              0000000000001094 f   SmbiosDxe:SmbiosDxe.obj
+ 0001:00000ec4       GetNextSmbiosRecord        0000000000001144 f   SmbiosDxe:SmbiosDxe.obj
+ 0001:00000f04       SmbiosCreateTable          0000000000001184 f   SmbiosDxe:SmbiosDxe.obj
+ 0001:00001260       SmbiosCreate64BitTable     00000000000014e0 f   SmbiosDxe:SmbiosDxe.obj
+ 0001:000014fc       SmbiosTableConstruction    000000000000177c f   SmbiosDxe:SmbiosDxe.obj
+ 0001:00001780       SmbiosDriverEntryPoint     0000000000001a00 f   SmbiosDxe:SmbiosDxe.obj
+ 0001:0000194c       GetPcdProtocol             0000000000001bcc f   DxePcdLib:DxePcdLib.obj
+ 0001:00001988       InternalAllocatePool       0000000000001c08 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:000019b8       EfiAcquireLockOrFail       0000000000001c38 f   UefiLib:UefiLib.obj
+ 0001:00001b18       InternalQemuFwCfgDmaBytes  0000000000001d98 f   QemuFwCfgDxeLib:QemuFwCfgDxe.obj
+ 0001:00001d58       QemuFwCfgReadBytes         0000000000001fd8 f   QemuFwCfgDxeLib:QemuFwCfgLib.obj
+ 0001:00001db0       QemuFwCfgFindFile          0000000000002030 f   QemuFwCfgDxeLib:QemuFwCfgLib.obj
+ 0001:00001f10       GetHobList                 0000000000002190 f   DxeHobLib:HobLib.obj
+ 0001:00002008       PciCf8Read32               0000000000002288 f   BasePciCf8Lib:PciCf8Lib.obj
+ 0001:0000206c       SaveAndDisableInterrupts   00000000000022ec f   BaseLib:Cpu.obj
+ 0002:00000000       gUniversalPayloadSmbios3TableGuid 0000000000002320     SmbiosDxe:AutoGen.obj
+ 0002:00000010       gPcdProtocolGuid           0000000000002330     SmbiosDxe:AutoGen.obj
+ 0002:00000020       gEfiSmbiosProtocolGuid     0000000000002340     SmbiosDxe:AutoGen.obj
+ 0002:00000030       gEfiDevicePathUtilitiesProtocolGuid 0000000000002350     SmbiosDxe:AutoGen.obj
+ 0002:00000040       gEfiSmbios3TableGuid       0000000000002360     SmbiosDxe:AutoGen.obj
+ 0002:00000050       gEfiSmbiosTableGuid        0000000000002370     SmbiosDxe:AutoGen.obj
+ 0002:00000060       gEfiHobListGuid            0000000000002380     SmbiosDxe:AutoGen.obj
+ 0002:00000070       gEdkiiIoMmuProtocolGuid    0000000000002390     SmbiosDxe:AutoGen.obj
+ 0002:00000080       gUniversalPayloadSmbiosTableGuid 00000000000023a0     SmbiosDxe:AutoGen.obj
+ 0002:00000090       Smbios30EntryPointStructureData 00000000000023b0     SmbiosDxe:SmbiosDxe.obj
+ 0002:000000b0       mIsSmbiosTableValid        00000000000023d0     SmbiosDxe:SmbiosDxe.obj
+ 0002:000000d0       EntryPointStructureData    00000000000023f0     SmbiosDxe:SmbiosDxe.obj
+ 0002:000000f0       ??_C@_04BPEHKPLM@_SM_@     0000000000002410     SmbiosDxe:SmbiosDxe.obj
+ 0002:000000f8       ??_C@_05DFIAGNMD@_DMI_@    0000000000002418     SmbiosDxe:SmbiosDxe.obj
+ 0002:00000100       ??_C@_05LOCGMLNH@_SM3_@    0000000000002420     SmbiosDxe:SmbiosDxe.obj
+ 0002:00000110       ??_C@_0BJ@CHHCKMFD@etc?1smbios?1smbios?9anchor@ 0000000000002430     DetectSmbiosVersionLib:DetectSmbiosVersionLib.obj
+ 0002:00000130       ??_C@_0BJ@EFEMKHJP@etc?1smbios?1smbios?9tables@ 0000000000002450     DetectSmbiosVersionLib:DetectSmbiosVersionLib.obj
+ 0002:00000180       Smbios30EntryPointStructure 00000000000024a0     SmbiosDxe:SmbiosDxe.obj
+ 0002:00000188       mPre64BitAllocatedPages    00000000000024a8     SmbiosDxe:SmbiosDxe.obj
+ 0002:00000190       EntryPointStructure        00000000000024b0     SmbiosDxe:SmbiosDxe.obj
+ 0002:00000198       mPreAllocatedPages         00000000000024b8     SmbiosDxe:SmbiosDxe.obj
+ 0002:000001a0       mPcd                       00000000000024c0     DxePcdLib:DxePcdLib.obj
+ 0002:000001a8       gST                        00000000000024c8     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000001b0       gBS                        00000000000024d0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000001b8       mDevicePathLibDevicePathUtilities 00000000000024d8     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:000001c8       mHobList                   00000000000024e8     DxeHobLib:HobLib.obj
+ 0002:00000200       mPrivateData               0000000000002520     <common>
+ 0002:00000270       __volatile_metadata        0000000000002590     <linker-defined>
+
+ entry point at        0001:00000204
+
+ Static symbols
+
+ 0001:0000001a       InternalMemCopyMem.0       000000000000029a     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:0000002a       @CopyBackward              00000000000002aa     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000033       @CopyBytes                 00000000000002b3     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:000000ba       @UseRepIo                  000000000000033a     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000000bc       @SevNoRepIo_Done           000000000000033c     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000000d4       @IoReadFifo8_NoRep         0000000000000354     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000000d6       @IoReadFifo8_Loop          0000000000000356     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000000de       @IoReadFifo8_Done          000000000000035e     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000000f7       @IoReadFifo16_NoRep        0000000000000377     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000000f9       @IoReadFifo16_Loop         0000000000000379     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000104       @IoReadFifo16_Done         0000000000000384     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:0000011c       @IoReadFifo32_NoRep        000000000000039c     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:0000011e       @IoReadFifo32_Loop         000000000000039e     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000127       @IoReadFifo32_Done         00000000000003a7     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:0000013f       @IoWriteFifo8_NoRep        00000000000003bf     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000141       @IoWriteFifo8_Loop         00000000000003c1     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000149       @IoWriteFifo8_Done         00000000000003c9     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000162       @IoWriteFifo16_NoRep       00000000000003e2     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000164       @IoWriteFifo16_Loop        00000000000003e4     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:0000016f       @IoWriteFifo16_Done        00000000000003ef     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000187       @IoWriteFifo32_NoRep       0000000000000407     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000189       @IoWriteFifo32_Loop        0000000000000409     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000192       @IoWriteFifo32_Done        0000000000000412     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001af       AsmCpuid.0                 000000000000042f     BaseLib:CpuId.obj
+ 0001:000001b4       AsmCpuid.1                 0000000000000434     BaseLib:CpuId.obj
+ 0001:000001bb       AsmCpuid.2                 000000000000043b     BaseLib:CpuId.obj
+ 0001:000001c4       AsmCpuid.3                 0000000000000444     BaseLib:CpuId.obj
+ 0001:00001564       IsValidSmbios20Table       00000000000017e4 f   SmbiosDxe:SmbiosDxe.obj
+ 0001:00001630       IsValidSmbios30Table       00000000000018b0 f   SmbiosDxe:SmbiosDxe.obj
+ 0001:000016b0       ParseAndAddExistingSmbiosTable 0000000000001930 f   SmbiosDxe:SmbiosDxe.obj
+ 0001:000019f4       AllocFwCfgDmaAccessBuffer  0000000000001c74 f   QemuFwCfgDxeLib:QemuFwCfgDxe.obj
+ 0001:00001f7c       InternalMemEncryptSevStatus 00000000000021fc f   DxeMemEncryptSevLib:DxeMemEncryptSevLibInternal.obj
+ 0002:000001c0       mQemuFwCfgSupported        00000000000024e0     QemuFwCfgDxeLib:QemuFwCfgDxe.obj
+ 0002:000001d0       mSevStatus                 00000000000024f0     DxeMemEncryptSevLib:DxeMemEncryptSevLibInternal.obj
+ 0002:000001d1       mSevStatusChecked          00000000000024f1     DxeMemEncryptSevLib:DxeMemEncryptSevLibInternal.obj
+ 0002:000001d8       mRunningOnQ35              00000000000024f8     DxePciLibI440FxQ35:PciLib.obj
+ 0002:000001d9       mQemuFwCfgDmaSupported     00000000000024f9     QemuFwCfgDxeLib:QemuFwCfgDxe.obj
+ 0002:000001e0       mIoMmuProtocol             0000000000002500     QemuFwCfgDxeLib:QemuFwCfgDxe.obj
+ 0004:00000000       $unwind$SmbiosTableConstruction 00000000000027e0     SmbiosDxe:SmbiosDxe.obj
+ 0004:00000000       $unwind$SaveAndDisableInterrupts 00000000000027e0     BaseLib:Cpu.obj
+ 0004:00000000       $unwind$PciCf8Read32       00000000000027e0     BasePciCf8Lib:PciCf8Lib.obj
+ 0004:00000000       $unwind$_ModuleEntryPoint  00000000000027e0     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0004:00000000       $unwind$EfiAcquireLockOrFail 00000000000027e0     UefiLib:UefiLib.obj
+ 0004:00000008       $unwind$ProcessLibraryConstructorList 00000000000027e8     SmbiosDxe:AutoGen.obj
+ 0004:00000018       $unwind$SmbiosAdd          00000000000027f8     SmbiosDxe:SmbiosDxe.obj
+ 0004:00000030       $unwind$SmbiosUpdateString 0000000000002810     SmbiosDxe:SmbiosDxe.obj
+ 0004:00000048       $unwind$SmbiosRemove       0000000000002828     SmbiosDxe:SmbiosDxe.obj
+ 0004:0000005c       $unwind$SmbiosGetNext      000000000000283c     SmbiosDxe:SmbiosDxe.obj
+ 0004:0000006c       $unwind$SmbiosCreateTable  000000000000284c     SmbiosDxe:SmbiosDxe.obj
+ 0004:00000084       $unwind$SmbiosCreate64BitTable 0000000000002864     SmbiosDxe:SmbiosDxe.obj
+ 0004:00000098       $unwind$IsValidSmbios20Table 0000000000002878     SmbiosDxe:SmbiosDxe.obj
+ 0004:000000ac       $unwind$IsValidSmbios30Table 000000000000288c     SmbiosDxe:SmbiosDxe.obj
+ 0004:000000bc       $unwind$ParseAndAddExistingSmbiosTable 000000000000289c     SmbiosDxe:SmbiosDxe.obj
+ 0004:000000cc       $unwind$SmbiosDriverEntryPoint 00000000000028ac     SmbiosDxe:SmbiosDxe.obj
+ 0004:000000e4       $unwind$GetPcdProtocol     00000000000028c4     DxePcdLib:DxePcdLib.obj
+ 0004:000000e4       $unwind$InternalAllocatePool 00000000000028c4     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0004:000000e4       $unwind$QemuFwCfgReadBytes 00000000000028c4     QemuFwCfgDxeLib:QemuFwCfgLib.obj
+ 0004:000000ec       $unwind$AllocFwCfgDmaAccessBuffer 00000000000028cc     QemuFwCfgDxeLib:QemuFwCfgDxe.obj
+ 0004:000000fc       $unwind$InternalQemuFwCfgDmaBytes 00000000000028dc     QemuFwCfgDxeLib:QemuFwCfgDxe.obj
+ 0004:00000110       $unwind$QemuFwCfgFindFile  00000000000028f0     QemuFwCfgDxeLib:QemuFwCfgLib.obj
+ 0004:00000128       $unwind$InternalMemEncryptSevStatus 0000000000002908     DxeMemEncryptSevLib:DxeMemEncryptSevLibInternal.obj

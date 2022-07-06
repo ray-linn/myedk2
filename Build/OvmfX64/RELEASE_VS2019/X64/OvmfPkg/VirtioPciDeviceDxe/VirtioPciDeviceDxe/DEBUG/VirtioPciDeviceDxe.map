@@ -1,0 +1,113 @@
+ VirtioPciDeviceDxe
+
+ Timestamp is 61ee7028 (Mon Jan 24 17:23:52 2022)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000060H .text                   CODE
+ 0001:00000060 000008faH .text$mn                CODE
+ 0002:00000000 00000170H .data                   DATA
+ 0002:00000170 00000050H .rdata                  DATA
+ 0002:000001c0 00000018H .bss                    DATA
+ 0002:000001d8 00000020H .rdata$voltmd           DATA
+ 0002:000001f8 000000a8H .rdata$zzzdbg           DATA
+ 0003:00000000 0000009cH .pdata                  DATA
+ 0004:00000000 00000084H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __dynamic_value_reloc_table 0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_table      0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map_count    0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_native_entrypoint 0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_table      0000000000000000     <absolute>
+ 0000:00000000       __enclave_config           0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata_count 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata 0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_count         0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_table          0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table   0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_count          0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_count      0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_table         0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_count      0000000000000000     <absolute>
+ 0000:00000000       __guard_check_icall_a64n_fptr 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map          0000000000000000     <absolute>
+ 0000:00000000       __guard_flags              0000000000000000     <absolute>
+ 0000:00000000       __AbsoluteZero             0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points_count 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat     0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table_size 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat_copy 0000000000000000     <absolute>
+ 0001:00000000       InternalMemCopyMem         0000000000000280     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000040       InternalMemZeroMem         00000000000002c0     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00000060       _ModuleEntryPoint          00000000000002e0 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:000000f8       VirtioPciIoRead            0000000000000378 f   VirtioPciDeviceDxe:VirtioPciDevice.obj
+ 0001:00000160       VirtioPciIoWrite           00000000000003e0 f   VirtioPciDeviceDxe:VirtioPciDevice.obj
+ 0001:00000530       VirtioPciGetDriverName     00000000000007b0 f   VirtioPciDeviceDxe:VirtioPciDevice.obj
+ 0001:0000065c       VirtioPciGetDeviceName     00000000000008dc f   VirtioPciDeviceDxe:VirtioPciDevice.obj
+ 0001:00000668       VirtioPciDeviceRead        00000000000008e8 f   VirtioPciDeviceDxe:VirtioPciFunctions.obj
+ 0001:0000067c       VirtioPciDeviceWrite       00000000000008fc f   VirtioPciDeviceDxe:VirtioPciFunctions.obj
+ 0001:00000694       VirtioPciGetDeviceFeatures 0000000000000914 f   VirtioPciDeviceDxe:VirtioPciFunctions.obj
+ 0001:000006dc       VirtioPciGetQueueSize      000000000000095c f   VirtioPciDeviceDxe:VirtioPciFunctions.obj
+ 0001:00000710       VirtioPciGetDeviceStatus   0000000000000990 f   VirtioPciDeviceDxe:VirtioPciFunctions.obj
+ 0001:00000744       VirtioPciSetGuestFeatures  00000000000009c4 f   VirtioPciDeviceDxe:VirtioPciFunctions.obj
+ 0001:00000770       VirtioPciSetQueueAddress   00000000000009f0 f   VirtioPciDeviceDxe:VirtioPciFunctions.obj
+ 0001:00000790       VirtioPciSetQueueSel       0000000000000a10 f   VirtioPciDeviceDxe:VirtioPciFunctions.obj
+ 0001:000007a8       VirtioPciSetQueueSize      0000000000000a28 f   VirtioPciDeviceDxe:VirtioPciFunctions.obj
+ 0001:000007a8       VirtioPciUnmapSharedBuffer 0000000000000a28 f   VirtioPciDeviceDxe:VirtioPciFunctions.obj
+ 0001:000007a8       VirtioPciSetQueueAlignment 0000000000000a28 f   VirtioPciDeviceDxe:VirtioPciFunctions.obj
+ 0001:000007ac       VirtioPciSetPageSize       0000000000000a2c f   VirtioPciDeviceDxe:VirtioPciFunctions.obj
+ 0001:000007c8       VirtioPciSetQueueNotify    0000000000000a48 f   VirtioPciDeviceDxe:VirtioPciFunctions.obj
+ 0001:000007e0       VirtioPciSetDeviceStatus   0000000000000a60 f   VirtioPciDeviceDxe:VirtioPciFunctions.obj
+ 0001:000007f8       VirtioPciAllocateSharedPages 0000000000000a78 f   VirtioPciDeviceDxe:VirtioPciFunctions.obj
+ 0001:00000824       VirtioPciFreeSharedPages   0000000000000aa4 f   VirtioPciDeviceDxe:VirtioPciFunctions.obj
+ 0001:00000834       VirtioPciMapSharedBuffer   0000000000000ab4 f   VirtioPciDeviceDxe:VirtioPciFunctions.obj
+ 0001:00000848       InternalAllocatePages      0000000000000ac8 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00000880       InternalAllocatePool       0000000000000b00 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:000008b8       IsLanguageSupported        0000000000000b38 f   UefiLib:UefiLib.obj
+ 0002:00000000       gEfiComponentName2ProtocolGuid 0000000000000be0     VirtioPciDeviceDxe:AutoGen.obj
+ 0002:00000010       gEfiPciIoProtocolGuid      0000000000000bf0     VirtioPciDeviceDxe:AutoGen.obj
+ 0002:00000020       gEfiDevicePathUtilitiesProtocolGuid 0000000000000c00     VirtioPciDeviceDxe:AutoGen.obj
+ 0002:00000030       gEfiDriverBindingProtocolGuid 0000000000000c10     VirtioPciDeviceDxe:AutoGen.obj
+ 0002:00000040       gVirtioDeviceProtocolGuid  0000000000000c20     VirtioPciDeviceDxe:AutoGen.obj
+ 0002:00000050       gEfiComponentNameProtocolGuid 0000000000000c30     VirtioPciDeviceDxe:AutoGen.obj
+ 0002:00000170       ??_C@_06DALJLGPG@eng?$DLen@ 0000000000000d50     VirtioPciDeviceDxe:VirtioPciDevice.obj
+ 0002:00000178       ??_C@_1CE@BHFBNCIP@?$AAV?$AAi?$AAr?$AAt?$AAi?$AAo?$AA?5?$AAP?$AAC?$AAI?$AA?5?$AAD?$AAr?$AAi?$AAv@ 0000000000000d58     VirtioPciDeviceDxe:VirtioPciDevice.obj
+ 0002:0000019c       ??_C@_03LKLGDMJI@eng@      0000000000000d7c     VirtioPciDeviceDxe:VirtioPciDevice.obj
+ 0002:000001a0       ??_C@_02LFNMGJAP@en@       0000000000000d80     VirtioPciDeviceDxe:VirtioPciDevice.obj
+ 0002:000001c0       gST                        0000000000000da0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000001c8       gBS                        0000000000000da8     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000001d0       mDevicePathLibDevicePathUtilities 0000000000000db0     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:000001d8       __volatile_metadata        0000000000000db8     <linker-defined>
+
+ entry point at        0001:00000060
+
+ Static symbols
+
+ 0001:0000001a       InternalMemCopyMem.0       000000000000029a     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:0000002a       @CopyBackward              00000000000002aa     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000033       @CopyBytes                 00000000000002b3     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:000001c8       VirtioPciDeviceBindingSupported 0000000000000448 f   VirtioPciDeviceDxe:VirtioPciDevice.obj
+ 0001:0000029c       VirtioPciDeviceBindingStart 000000000000051c f   VirtioPciDeviceDxe:VirtioPciDevice.obj
+ 0001:00000468       VirtioPciDeviceBindingStop 00000000000006e8 f   VirtioPciDeviceDxe:VirtioPciDevice.obj
+ 0002:00000060       mDriverNameTable           0000000000000c40     VirtioPciDeviceDxe:VirtioPciDevice.obj
+ 0002:00000080       mDeviceProtocolTemplate    0000000000000c60     VirtioPciDeviceDxe:VirtioPciDevice.obj
+ 0002:00000110       gDriverBinding             0000000000000cf0     VirtioPciDeviceDxe:VirtioPciDevice.obj
+ 0002:00000140       gComponentName2            0000000000000d20     VirtioPciDeviceDxe:VirtioPciDevice.obj
+ 0002:00000158       gComponentName             0000000000000d38     VirtioPciDeviceDxe:VirtioPciDevice.obj
+ 0004:00000000       $unwind$_ModuleEntryPoint  0000000000000f20     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0004:00000008       $unwind$VirtioPciIoRead    0000000000000f28     VirtioPciDeviceDxe:VirtioPciDevice.obj
+ 0004:00000008       $unwind$VirtioPciGetDeviceStatus 0000000000000f28     VirtioPciDeviceDxe:VirtioPciFunctions.obj
+ 0004:00000008       $unwind$VirtioPciGetQueueSize 0000000000000f28     VirtioPciDeviceDxe:VirtioPciFunctions.obj
+ 0004:00000010       $unwind$VirtioPciIoWrite   0000000000000f30     VirtioPciDeviceDxe:VirtioPciDevice.obj
+ 0004:00000018       $unwind$VirtioPciDeviceBindingSupported 0000000000000f38     VirtioPciDeviceDxe:VirtioPciDevice.obj
+ 0004:00000028       $unwind$VirtioPciDeviceBindingStart 0000000000000f48     VirtioPciDeviceDxe:VirtioPciDevice.obj
+ 0004:00000040       $unwind$VirtioPciDeviceBindingStop 0000000000000f60     VirtioPciDeviceDxe:VirtioPciDevice.obj
+ 0004:00000050       $unwind$VirtioPciGetDriverName 0000000000000f70     VirtioPciDeviceDxe:VirtioPciDevice.obj
+ 0004:00000064       $unwind$VirtioPciGetDeviceFeatures 0000000000000f84     VirtioPciDeviceDxe:VirtioPciFunctions.obj
+ 0004:0000006c       $unwind$VirtioPciAllocateSharedPages 0000000000000f8c     VirtioPciDeviceDxe:VirtioPciFunctions.obj
+ 0004:00000074       $unwind$InternalAllocatePages 0000000000000f94     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0004:0000007c       $unwind$InternalAllocatePool 0000000000000f9c     UefiMemoryAllocationLib:MemoryAllocationLib.obj

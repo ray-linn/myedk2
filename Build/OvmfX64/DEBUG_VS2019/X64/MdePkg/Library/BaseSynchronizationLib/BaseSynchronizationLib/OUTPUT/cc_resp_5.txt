@@ -1,0 +1,1 @@
+  d:\edk2\edk2\MdePkg\Library\BaseSynchronizationLib\InterlockedDecrementMsc.c d:\edk2\edk2\MdePkg\Library\BaseSynchronizationLib\SynchronizationMsc.c d:\edk2\edk2\MdePkg\Library\BaseSynchronizationLib\InterlockedIncrementMsc.c

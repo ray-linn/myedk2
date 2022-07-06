@@ -1,0 +1,140 @@
+ StatusCodeHandlerPei
+
+ Timestamp is 62b57337 (Fri Jun 24 16:17:59 2022)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 000000e4H .text                   CODE
+ 0001:000000e4 0000171bH .text$mn                CODE
+ 0002:00000000 00000adcH .rdata                  DATA
+ 0002:00000adc 00000020H .rdata$voltmd           DATA
+ 0002:00000afc 00000164H .rdata$zzzdbg           DATA
+ 0003:00000000 00000020H .data                   DATA
+ 0003:00000020 00000002H .bss                    DATA
+ 0004:00000000 000000c0H .pdata                  DATA
+ 0005:00000000 000000c8H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __x64_code_ranges_to_entry_points 0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_count         0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table   0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points_count 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map          0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map_count    0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table_size 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata 0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_table          0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_table      0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_count          0000000000000000     <absolute>
+ 0000:00000000       __arm64x_native_entrypoint 0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_count      0000000000000000     <absolute>
+ 0000:00000000       __dynamic_value_reloc_table 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat     0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat_copy 0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_table      0000000000000000     <absolute>
+ 0000:00000000       __guard_flags              0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_count      0000000000000000     <absolute>
+ 0000:00000000       __AbsoluteZero             0000000000000000     <absolute>
+ 0000:00000000       __guard_check_icall_a64n_fptr 0000000000000000     <absolute>
+ 0000:00000000       __enclave_config           0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_table         0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata_count 0000000000000000     <absolute>
+ 0001:00000000       CpuPause                   0000000000000280     BaseLib:CpuPause.obj
+ 0001:00000010       InternalX86ReadIdtr        0000000000000290     BaseLib:ReadIdtr.obj
+ 0001:00000020       InternalX86WriteIdtr       00000000000002a0     BaseLib:WriteIdtr.obj
+ 0001:00000030       InternalMemCopyMem         00000000000002b0     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000070       InternalMemZeroMem         00000000000002f0     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00000090       InternalMemSetMem          0000000000000310     BaseMemoryLibRepStr:SetMem.obj
+ 0001:000000b0       InternalMemSetMem64        0000000000000330     BaseMemoryLibRepStr:SetMem64.obj
+ 0001:000000d0       InternalMemSetMem32        0000000000000350     BaseMemoryLibRepStr:SetMem32.obj
+ 0001:000000e4       _ModuleEntryPoint          0000000000000364 f   PeimEntryPoint:PeimEntryPoint.obj
+ 0001:00000224       MemoryStatusCodeReportWorker 00000000000004a4 f   StatusCodeHandlerPei:MemoryStausCodeWorker.obj
+ 0001:00000320       CopyGuid                   00000000000005a0 f   BaseMemoryLibRepStr:MemLibGuid.obj
+ 0001:00000398       CompareGuid                0000000000000618 f   BaseMemoryLibRepStr:MemLibGuid.obj
+ 0001:0000045c       GetHobList                 00000000000006dc f   PeiHobLib:HobLib.obj
+ 0001:000004d0       InternalPeiCreateHob       0000000000000750 f   PeiHobLib:HobLib.obj
+ 0001:00000530       AsciiSPrint                00000000000007b0 f   BasePrintLib:PrintLib.obj
+ 0001:0000055c       BasePrintLibFillBuffer     00000000000007dc f   BasePrintLib:PrintLibInternal.obj
+ 0001:00000590       BasePrintLibValueToString  0000000000000810 f   BasePrintLib:PrintLibInternal.obj
+ 0001:000005fc       BasePrintLibSPrintMarker   000000000000087c f   BasePrintLib:PrintLibInternal.obj
+ 0001:0000158c       BasePrintLibSPrint         000000000000180c f   BasePrintLib:PrintLibInternal.obj
+ 0001:000015b0       DebugPrint                 0000000000001830 f   BaseDebugLibSerialPort:DebugLib.obj
+ 0001:000015d4       DebugPrintMarker           0000000000001854 f   BaseDebugLibSerialPort:DebugLib.obj
+ 0001:00001684       DebugAssert                0000000000001904 f   BaseDebugLibSerialPort:DebugLib.obj
+ 0001:000016fc       GetPeiServicesTablePointer 000000000000197c f   PeiServicesTablePointerLibIdt:PeiServicesTablePointer.obj
+ 0001:0000173c       StrnLenS                   00000000000019bc f   BaseLib:SafeString.obj
+ 0001:00001794       AsciiStrLen                0000000000001a14 f   BaseLib:String.obj
+ 0002:00000000       ??_C@_0BF@KIBMBEBN@StatusCodeHandlerPei@ 0000000000001a80     StatusCodeHandlerPei:AutoGen.obj
+ 0002:00000018       ??_C@_0CH@BBNBJKHK@?$CB?$CI?$CI?$CIINTN?$CJ?$CIRETURN_STATUS?$CJ?$CIStatus@ 0000000000001a98     StatusCodeHandlerPei:AutoGen.obj
+ 0002:00000040       ??_C@_0CB@DMEJJJHA@?6ASSERT_EFI_ERROR?5?$CIStatus?5?$DN?5?$CFr?$CJ@ 0000000000001ac0     StatusCodeHandlerPei:StatusCodeHandlerPei.obj
+ 0002:00000070       ??_C@_0FB@BEGJECFC@d?3?2edk2?2edk2?2MdeModulePkg?2Unive@ 0000000000001af0     StatusCodeHandlerPei:StatusCodeHandlerPei.obj
+ 0002:000000c8       ??_C@_0BN@OGPGCGMP@PacketHeader?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000001b48     StatusCodeHandlerPei:MemoryStausCodeWorker.obj
+ 0002:000000f0       ??_C@_0FC@HLEHDOKM@d?3?2edk2?2edk2?2MdeModulePkg?2Unive@ 0000000000001b70     StatusCodeHandlerPei:MemoryStausCodeWorker.obj
+ 0002:00000148       ??_C@_0BI@BALJAKGN@Hob?4Raw?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000001bc8     StatusCodeHandlerPei:MemoryStausCodeWorker.obj
+ 0002:00000160       ??_C@_0CP@HHPAEFCF@d?3?2edk2?2edk2?2MdePkg?2Library?2Pei@ 0000000000001be0     PeiHobLib:HobLib.obj
+ 0002:00000190       ??_C@_0BI@NCGMODPG@HobList?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000001c10     PeiHobLib:HobLib.obj
+ 0002:000001a8       ??_C@_0BJ@NOLLDKJB@HobStart?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000001c28     PeiHobLib:HobLib.obj
+ 0002:000001c8       ??_C@_0BE@PICCCCHF@Hob?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000001c48     PeiHobLib:HobLib.obj
+ 0002:000001e0       ??_C@_0BH@IACGKAP@Buffer?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000001c60     BasePrintLib:PrintLibInternal.obj
+ 0002:000001f8       ??_C@_0DM@OAJIKNNG@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 0000000000001c78     BasePrintLib:PrintLibInternal.obj
+ 0002:00000238       ??_C@_0BJ@CNKJJNE@?$CIBuffer?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ@ 0000000000001cb8     BasePrintLib:PrintLibInternal.obj
+ 0002:00000260       ??_C@_0EB@HDGIDCIO@?$CIBufferSize?5?$DM?$DN?5?$CI_gPcd_FixedAtBu@ 0000000000001ce0     BasePrintLib:PrintLibInternal.obj
+ 0002:000002a8       ??_C@_0BJ@PPAKKDJG@?$CIFormat?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ@ 0000000000001d28     BasePrintLib:PrintLibInternal.obj
+ 0002:000002d0       ??_C@_0ED@LPDDCECB@?$CIBufferSize?5?$DM?$DN?5?$CI_gPcd_FixedAtBu@ 0000000000001d50     BasePrintLib:PrintLibInternal.obj
+ 0002:00000320       ??_C@_0IM@BFJJFLGB@?$CIStrnLenS?5?$CI?$CICHAR16?5?$CK?$CJFormat?0?5?$CI_@ 0000000000001da0     BasePrintLib:PrintLibInternal.obj
+ 0002:000003b0       ??_C@_0ID@PLGJGION@?$CIAsciiStrnLenS?5?$CIFormat?0?5?$CI_gPcd_@ 0000000000001e30     BasePrintLib:PrintLibInternal.obj
+ 0002:00000438       ??_C@_0O@MLOLIMFM@?$DMnull?5string?$DO@ 0000000000001eb8     BasePrintLib:PrintLibInternal.obj
+ 0002:00000448       ??_C@_0M@BJJDNPHK@?$DMnull?5guid?$DO@ 0000000000001ec8     BasePrintLib:PrintLibInternal.obj
+ 0002:00000458       ??_C@_0DB@PMLHLBMO@?$CF08x?9?$CF04x?9?$CF04x?9?$CF02x?$CF02x?9?$CF02x?$CF02@ 0000000000001ed8     BasePrintLib:PrintLibInternal.obj
+ 0002:00000490       ??_C@_0M@LHGBCIKM@?$DMnull?5time?$DO@ 0000000000001f10     BasePrintLib:PrintLibInternal.obj
+ 0002:000004a0       ??_C@_0BK@FCPKCIDD@?$CF02d?1?$CF02d?1?$CF04d?5?5?$CF02d?3?$CF02d@ 0000000000001f20     BasePrintLib:PrintLibInternal.obj
+ 0002:000004bc       ??_C@_04JIMNDDED@?$CF08X@  0000000000001f3c     BasePrintLib:PrintLibInternal.obj
+ 0002:000004c4       ??_C@_02PCIJFNDE@?$AN?6@   0000000000001f44     BasePrintLib:PrintLibInternal.obj
+ 0002:000004c8       ??_C@_01LIIJDEN@?$AN@      0000000000001f48     BasePrintLib:PrintLibInternal.obj
+ 0002:000004d0       mWarningString             0000000000001f50     BasePrintLib:PrintLibInternal.obj
+ 0002:00000570       mErrorString               0000000000001ff0     BasePrintLib:PrintLibInternal.obj
+ 0002:00000830       mHexStr                    00000000000022b0     BasePrintLib:PrintLibInternal.obj
+ 0002:00000840       ??_C@_0BH@LKMBFCBF@Format?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000022c0     BaseDebugLibSerialPort:DebugLib.obj
+ 0002:00000858       ??_C@_0DO@CKBIDOOL@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 00000000000022d8     BaseDebugLibSerialPort:DebugLib.obj
+ 0002:00000898       ??_C@_0BI@NOCKJDBJ@ASSERT?5?$FL?$CFa?$FN?5?$CFa?$CI?$CFd?$CJ?3?5?$CFa?6@ 0000000000002318     BaseDebugLibSerialPort:DebugLib.obj
+ 0002:000008b0       ??_C@_0BM@DAJCEFAH@PeiServices?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000002330     PeiServicesTablePointerLibIdt:PeiServicesTablePointer.obj
+ 0002:000008d0       ??_C@_0FE@FIGBKNFO@d?3?2edk2?2edk2?2MdePkg?2Library?2Pei@ 0000000000002350     PeiServicesTablePointerLibIdt:PeiServicesTablePointer.obj
+ 0002:00000928       ??_C@_0DA@BDDONMJM@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 00000000000023a8     BaseLib:Unaligned.obj
+ 0002:00000958       ??_C@_0N@KGHEHMDL@Divisor?5?$CB?$DN?50@ 00000000000023d8     BaseLib:DivU64x32Remainder.obj
+ 0002:00000968       ??_C@_0DJ@FHIMIJAH@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 00000000000023e8     BaseLib:DivU64x32Remainder.obj
+ 0002:000009a8       ??_C@_0CC@GFNLNIOC@?$CI?$CIUINTN?$CJString?5?$CG?50x00000001?$CJ?5?$DN?$DN@ 0000000000002428     BaseLib:SafeString.obj
+ 0002:000009d0       ??_C@_0DB@PKFMPMPC@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 0000000000002450     BaseLib:SafeString.obj
+ 0002:00000a08       ??_C@_0BH@MAAHKCPC@String?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000002488     BaseLib:String.obj
+ 0002:00000a20       ??_C@_0CN@LHBFELAO@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 00000000000024a0     BaseLib:String.obj
+ 0002:00000a50       ??_C@_0DI@MDIKFADO@Length?5?$DM?5_gPcd_FixedAtBuild_Pcd@ 00000000000024d0     BaseLib:String.obj
+ 0002:00000adc       __volatile_metadata        000000000000255c     <linker-defined>
+ 0003:00000000       gEfiPeiRscHandlerPpiGuid   00000000000026e0     StatusCodeHandlerPei:AutoGen.obj
+ 0003:00000010       gMemoryStatusCodeRecordGuid 00000000000026f0     StatusCodeHandlerPei:AutoGen.obj
+ 0003:00000020       gParity                    0000000000002700     PcAtSerialPortLib:SerialPortLib.obj
+ 0003:00000021       gBreakSet                  0000000000002701     PcAtSerialPortLib:SerialPortLib.obj
+
+ entry point at        0001:000000e4
+
+ Static symbols
+
+ 0001:0000004a       InternalMemCopyMem.0       00000000000002ca     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:0000005a       @CopyBackward              00000000000002da     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000063       @CopyBytes                 00000000000002e3     BaseMemoryLibRepStr:CopyMem.obj
+ 0005:00000000       $unwind$_ModuleEntryPoint  00000000000027e0     PeimEntryPoint:PeimEntryPoint.obj
+ 0005:00000010       $unwind$MemoryStatusCodeReportWorker 00000000000027f0     StatusCodeHandlerPei:MemoryStausCodeWorker.obj
+ 0005:0000002c       $unwind$CopyGuid           000000000000280c     BaseMemoryLibRepStr:MemLibGuid.obj
+ 0005:0000002c       $unwind$BasePrintLibValueToString 000000000000280c     BasePrintLib:PrintLibInternal.obj
+ 0005:0000003c       $unwind$CompareGuid        000000000000281c     BaseMemoryLibRepStr:MemLibGuid.obj
+ 0005:00000054       $unwind$GetHobList         0000000000002834     PeiHobLib:HobLib.obj
+ 0005:00000054       $unwind$InternalPeiCreateHob 0000000000002834     PeiHobLib:HobLib.obj
+ 0005:0000005c       $unwind$AsciiSPrint        000000000000283c     BasePrintLib:PrintLib.obj
+ 0005:00000064       $unwind$BasePrintLibSPrintMarker 0000000000002844     BasePrintLib:PrintLibInternal.obj
+ 0005:00000080       $unwind$BasePrintLibSPrint 0000000000002860     BasePrintLib:PrintLibInternal.obj
+ 0005:00000088       $unwind$DebugPrint         0000000000002868     BaseDebugLibSerialPort:DebugLib.obj
+ 0005:00000090       $unwind$DebugPrintMarker   0000000000002870     BaseDebugLibSerialPort:DebugLib.obj
+ 0005:000000a4       $unwind$DebugAssert        0000000000002884     BaseDebugLibSerialPort:DebugLib.obj
+ 0005:000000ac       $unwind$GetPeiServicesTablePointer 000000000000288c     PeiServicesTablePointerLibIdt:PeiServicesTablePointer.obj
+ 0005:000000b4       $unwind$StrnLenS           0000000000002894     BaseLib:SafeString.obj
+ 0005:000000bc       $unwind$AsciiStrLen        000000000000289c     BaseLib:String.obj

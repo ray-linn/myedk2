@@ -1,0 +1,344 @@
+ HttpDxe
+
+ Timestamp is 61ee7031 (Mon Jan 24 17:24:01 2022)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000208H .text                   CODE
+ 0001:00000208 00008c22H .text$mn                CODE
+ 0002:00000000 00000280H .data                   DATA
+ 0002:00000280 00000130H .rdata                  DATA
+ 0002:000003b0 00000030H .bss                    DATA
+ 0002:000003e0 00000020H .rdata$voltmd           DATA
+ 0002:00000400 000000a8H .rdata$zzzdbg           DATA
+ 0003:00000000 00000438H .pdata                  DATA
+ 0004:00000000 00000390H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __hybrid_code_map          0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_table          0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_table      0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points 0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_count         0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_count          0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_count      0000000000000000     <absolute>
+ 0000:00000000       __dynamic_value_reloc_table 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map_count    0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat     0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table   0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat_copy 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table_size 0000000000000000     <absolute>
+ 0000:00000000       __AbsoluteZero             0000000000000000     <absolute>
+ 0000:00000000       __guard_check_icall_a64n_fptr 0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points_count 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_native_entrypoint 0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_table         0000000000000000     <absolute>
+ 0000:00000000       __guard_flags              0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_count      0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata_count 0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_table      0000000000000000     <absolute>
+ 0000:00000000       __enclave_config           0000000000000000     <absolute>
+ 0001:00000000       InternalMemCopyMem         0000000000000280     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000040       InternalMemZeroMem         00000000000002c0     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00000060       InternalMemCompareMem      00000000000002e0     BaseMemoryLibRepStr:CompareMem.obj
+ 0001:00000080       InternalMemSetMem          0000000000000300     BaseMemoryLibRepStr:SetMem.obj
+ 0001:000000a0       InternalMemSetMem64        0000000000000320     BaseMemoryLibRepStr:SetMem64.obj
+ 0001:000000c0       InternalMemSetMem32        0000000000000340     BaseMemoryLibRepStr:SetMem32.obj
+ 0001:000000e0       CpuPause                   0000000000000360     BaseLib:CpuPause.obj
+ 0001:000000f0       SevNoRepIo                 0000000000000370     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000130       IoReadFifo8                00000000000003b0     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000152       IoReadFifo16               00000000000003d2     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000178       IoReadFifo32               00000000000003f8     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:0000019b       IoWriteFifo8               000000000000041b     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001bd       IoWriteFifo16              000000000000043d     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001e3       IoWriteFifo32              0000000000000463     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000208       _DriverUnloadHandler       0000000000000488 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:0000038c       _ModuleEntryPoint          000000000000060c f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:0000042c       ProcessModuleEntryPointList 00000000000006ac f   HttpDxe:AutoGen.obj
+ 0001:00000550       HttpCleanService           00000000000007d0 f   HttpDxe:HttpDriver.obj
+ 0001:000005f4       HttpUtilitiesInstalledCallback 0000000000000874 f   HttpDxe:HttpDriver.obj
+ 0001:0000063c       HttpDestroyChildEntryInHandleBuffer 00000000000008bc f   HttpDxe:HttpDriver.obj
+ 0001:0000068c       HttpDxeStart               000000000000090c f   HttpDxe:HttpDriver.obj
+ 0001:00000868       HttpDxeStop                0000000000000ae8 f   HttpDxe:HttpDriver.obj
+ 0001:000009d8       HttpDxeIp4DriverBindingSupported 0000000000000c58 f   HttpDxe:HttpDriver.obj
+ 0001:00000a28       HttpDxeIp4DriverBindingStart 0000000000000ca8 f   HttpDxe:HttpDriver.obj
+ 0001:00000a30       HttpDxeIp4DriverBindingStop 0000000000000cb0 f   HttpDxe:HttpDriver.obj
+ 0001:00000a44       HttpDxeIp6DriverBindingSupported 0000000000000cc4 f   HttpDxe:HttpDriver.obj
+ 0001:00000a94       HttpDxeIp6DriverBindingStart 0000000000000d14 f   HttpDxe:HttpDriver.obj
+ 0001:00000a9c       HttpDxeIp6DriverBindingStop 0000000000000d1c f   HttpDxe:HttpDriver.obj
+ 0001:00000ab0       HttpServiceBindingCreateChild 0000000000000d30 f   HttpDxe:HttpDriver.obj
+ 0001:00000c20       HttpServiceBindingDestroyChild 0000000000000ea0 f   HttpDxe:HttpDriver.obj
+ 0001:00000d3c       HttpCommonNotify           0000000000000fbc f   HttpDxe:HttpProto.obj
+ 0001:00000d4c       HttpTcpTransmitNotifyDpc   0000000000000fcc f   HttpDxe:HttpProto.obj
+ 0001:00000e0c       HttpTcpTransmitNotify      000000000000108c f   HttpDxe:HttpProto.obj
+ 0001:00000e28       HttpTcpReceiveNotifyDpc    00000000000010a8 f   HttpDxe:HttpProto.obj
+ 0001:00001138       HttpTcpReceiveNotify       00000000000013b8 f   HttpDxe:HttpProto.obj
+ 0001:00001154       HttpCreateTcpConnCloseEvent 00000000000013d4 f   HttpDxe:HttpProto.obj
+ 0001:00001234       HttpCloseTcpConnCloseEvent 00000000000014b4 f   HttpDxe:HttpProto.obj
+ 0001:000012c8       HttpCreateTcpTxEvent       0000000000001548 f   HttpDxe:HttpProto.obj
+ 0001:0000137c       HttpCreateTcpRxEventForHeader 00000000000015fc f   HttpDxe:HttpProto.obj
+ 0001:00001440       HttpCreateTcpRxEvent       00000000000016c0 f   HttpDxe:HttpProto.obj
+ 0001:00001504       HttpInitProtocol           0000000000001784 f   HttpDxe:HttpProto.obj
+ 0001:00001814       HttpCleanProtocol          0000000000001a94 f   HttpDxe:HttpProto.obj
+ 0001:00001a44       HttpCreateConnection       0000000000001cc4 f   HttpDxe:HttpProto.obj
+ 0001:00001b30       HttpCloseConnection        0000000000001db0 f   HttpDxe:HttpProto.obj
+ 0001:00001be0       HttpConfigureTcp4          0000000000001e60 f   HttpDxe:HttpProto.obj
+ 0001:00001d24       HttpConfigureTcp6          0000000000001fa4 f   HttpDxe:HttpProto.obj
+ 0001:00001e44       HttpConnectTcp4            00000000000020c4 f   HttpDxe:HttpProto.obj
+ 0001:00001f74       HttpConnectTcp6            00000000000021f4 f   HttpDxe:HttpProto.obj
+ 0001:000020a4       HttpTransmitTcp            0000000000002324 f   HttpDxe:HttpProto.obj
+ 0001:0000236c       HttpTokenExist             00000000000025ec f   HttpDxe:HttpProto.obj
+ 0001:0000238c       HttpTcpNotReady            000000000000260c f   HttpDxe:HttpProto.obj
+ 0001:000023ac       HttpTcpTransmit            000000000000262c f   HttpDxe:HttpProto.obj
+ 0001:0000249c       HttpTcpReceive             000000000000271c f   HttpDxe:HttpProto.obj
+ 0001:000024a8       HttpTcpReceiveHeader       0000000000002728 f   HttpDxe:HttpProto.obj
+ 0001:000029bc       HttpTcpReceiveBody         0000000000002c3c f   HttpDxe:HttpProto.obj
+ 0001:00002a8c       HttpTcpTokenCleanup        0000000000002d0c f   HttpDxe:HttpProto.obj
+ 0001:00002b90       HttpNotify                 0000000000002e10 f   HttpDxe:HttpProto.obj
+ 0001:00002c44       HttpDxeComponentNameGetDriverName 0000000000002ec4 f   HttpDxe:ComponentName.obj
+ 0001:00002d70       HttpDxeComponentNameGetControllerName 0000000000002ff0 f   HttpDxe:ComponentName.obj
+ 0001:00002d7c       EfiHttpGetModeData         0000000000002ffc f   HttpDxe:HttpImpl.obj
+ 0001:00002e0c       EfiHttpConfigure           000000000000308c f   HttpDxe:HttpImpl.obj
+ 0001:00002efc       EfiHttpRequest             000000000000317c f   HttpDxe:HttpImpl.obj
+ 0001:00003b2c       HttpCancelTokens           0000000000003dac f   HttpDxe:HttpImpl.obj
+ 0001:00003bb0       HttpCancel                 0000000000003e30 f   HttpDxe:HttpImpl.obj
+ 0001:00003c74       EfiHttpCancel              0000000000003ef4 f   HttpDxe:HttpImpl.obj
+ 0001:00003ca0       HttpBodyParserCallback     0000000000003f20 f   HttpDxe:HttpImpl.obj
+ 0001:00003cd8       HttpResponseWorker         0000000000003f58 f   HttpDxe:HttpImpl.obj
+ 0001:00004d88       EfiHttpResponse            0000000000005008 f   HttpDxe:HttpImpl.obj
+ 0001:00004edc       EfiHttpPoll                000000000000515c f   HttpDxe:HttpImpl.obj
+ 0001:00004f50       FreeNbufList               00000000000051d0 f   HttpDxe:HttpsSupport.obj
+ 0001:00004f74       TlsCreateChild             00000000000051f4 f   HttpDxe:HttpsSupport.obj
+ 0001:00005058       TlsCreateTxRxEvent         00000000000052d8 f   HttpDxe:HttpsSupport.obj
+ 0001:00005278       TlsCloseTxRxEvent          00000000000054f8 f   HttpDxe:HttpsSupport.obj
+ 0001:0000530c       TlsConfigCertificate       000000000000558c f   HttpDxe:HttpsSupport.obj
+ 0001:00005518       TlsConfigCipherList        0000000000005798 f   HttpDxe:HttpsSupport.obj
+ 0001:00005600       TlsConfigureSession        0000000000005880 f   HttpDxe:HttpsSupport.obj
+ 0001:00005728       TlsCommonTransmit          00000000000059a8 f   HttpDxe:HttpsSupport.obj
+ 0001:0000586c       TlsCommonReceive           0000000000005aec f   HttpDxe:HttpsSupport.obj
+ 0001:00005ac0       TlsReceiveOnePdu           0000000000005d40 f   HttpDxe:HttpsSupport.obj
+ 0001:00005c50       TlsConnectSession          0000000000005ed0 f   HttpDxe:HttpsSupport.obj
+ 0001:0000604c       TlsCloseSession            00000000000062cc f   HttpDxe:HttpsSupport.obj
+ 0001:000061d4       TlsProcessMessage          0000000000006454 f   HttpDxe:HttpsSupport.obj
+ 0001:00006348       HttpsReceive               00000000000065c8 f   HttpDxe:HttpsSupport.obj
+ 0001:000067bc       HttpDns4                   0000000000006a3c f   HttpDxe:HttpDns.obj
+ 0001:00006b10       HttpDns6                   0000000000006d90 f   HttpDxe:HttpDns.obj
+ 0001:00006e24       InternalAsciiHexCharToUintn 00000000000070a4 f   BaseLib:String.obj
+ 0001:00006e58       AsciiStriCmp               00000000000070d8 f   BaseLib:String.obj
+ 0001:00006ef8       AsciiStrStr                0000000000007178 f   BaseLib:String.obj
+ 0001:00006f40       StrnLenS                   00000000000071c0 f   BaseLib:SafeString.obj
+ 0001:00006f74       AsciiStrDecimalToUintnS    00000000000071f4 f   BaseLib:SafeString.obj
+ 0001:00007058       AsciiStrHexToUintnS        00000000000072d8 f   BaseLib:SafeString.obj
+ 0001:00007170       UnicodeStrToAsciiStrS      00000000000073f0 f   BaseLib:SafeString.obj
+ 0001:00007200       AsciiStrToIpv6Address      0000000000007480 f   BaseLib:SafeString.obj
+ 0001:00007400       InternalAllocatePool       0000000000007680 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00007430       AllocateZeroPool           00000000000076b0 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:0000745c       IsLanguageSupported        00000000000076dc f   UefiLib:UefiLib.obj
+ 0001:00007500       EfiLibInstallDriverBindingComponentName2 0000000000007780 f   UefiLib:UefiDriverModel.obj
+ 0001:00007558       NetMapClean                00000000000077d8 f   DxeNetLib:DxeNetLib.obj
+ 0001:000075e0       NetMapAllocItem            0000000000007860 f   DxeNetLib:DxeNetLib.obj
+ 0001:00007650       NetMapInsertTail           00000000000078d0 f   DxeNetLib:DxeNetLib.obj
+ 0001:000076b4       NetMapIterate              0000000000007934 f   DxeNetLib:DxeNetLib.obj
+ 0001:00007708       NetLibCreateServiceChild   0000000000007988 f   DxeNetLib:DxeNetLib.obj
+ 0001:00007754       NetLibDestroyServiceChild  00000000000079d4 f   DxeNetLib:DxeNetLib.obj
+ 0001:000077a0       NetLibGetNicHandle         0000000000007a20 f   DxeNetLib:DxeNetLib.obj
+ 0001:0000780c       NetbufAllocStruct          0000000000007a8c f   DxeNetLib:NetBuffer.obj
+ 0001:000078b0       NetbufAlloc                0000000000007b30 f   DxeNetLib:NetBuffer.obj
+ 0001:00007940       NetbufFreeVector           0000000000007bc0 f   DxeNetLib:NetBuffer.obj
+ 0001:000079bc       NetbufFree                 0000000000007c3c f   DxeNetLib:NetBuffer.obj
+ 0001:000079e8       NetbufFreeList             0000000000007c68 f   DxeNetLib:NetBuffer.obj
+ 0001:00007a30       NetbufGetByte              0000000000007cb0 f   DxeNetLib:NetBuffer.obj
+ 0001:00007a8c       NetbufBuildExt             0000000000007d0c f   DxeNetLib:NetBuffer.obj
+ 0001:00007b00       NetbufFromBufList          0000000000007d80 f   DxeNetLib:NetBuffer.obj
+ 0001:00007c54       NetbufAllocSpace           0000000000007ed4 f   DxeNetLib:NetBuffer.obj
+ 0001:00007d08       NetbufCopy                 0000000000007f88 f   DxeNetLib:NetBuffer.obj
+ 0001:00007e5c       UriPercentDecode           00000000000080dc f   DxeHttpLib:DxeHttpLib.obj
+ 0001:00007f58       NetHttpParseAuthority      00000000000081d8 f   DxeHttpLib:DxeHttpLib.obj
+ 0001:000080d0       NetHttpParseUrlChar        0000000000008350 f   DxeHttpLib:DxeHttpLib.obj
+ 0001:000081b8       HttpParseUrl               0000000000008438 f   DxeHttpLib:DxeHttpLib.obj
+ 0001:0000834c       HttpFindHeader             00000000000085cc f   DxeHttpLib:DxeHttpLib.obj
+ 0001:000083b8       HttpInitMsgParser          0000000000008638 f   DxeHttpLib:DxeHttpLib.obj
+ 0001:000084e8       HttpParseMessageBody       0000000000008768 f   DxeHttpLib:DxeHttpLib.obj
+ 0001:00008868       HttpGenRequestMessage      0000000000008ae8 f   DxeHttpLib:DxeHttpLib.obj
+ 0001:00008bf0       HttpMappingToStatusCode    0000000000008e70 f   DxeHttpLib:DxeHttpLib.obj
+ 0002:00000000       gEfiLoadedImageProtocolGuid 00000000000090c0     HttpDxe:AutoGen.obj
+ 0002:00000010       gEfiDns4ServiceBindingProtocolGuid 00000000000090d0     HttpDxe:AutoGen.obj
+ 0002:00000020       gEdkiiHttpCallbackProtocolGuid 00000000000090e0     HttpDxe:AutoGen.obj
+ 0002:00000030       gEfiDns4ProtocolGuid       00000000000090f0     HttpDxe:AutoGen.obj
+ 0002:00000040       gEfiTlsProtocolGuid        0000000000009100     HttpDxe:AutoGen.obj
+ 0002:00000050       gEfiTlsCaCertificateGuid   0000000000009110     HttpDxe:AutoGen.obj
+ 0002:00000060       gEdkiiHttpTlsCipherListGuid 0000000000009120     HttpDxe:AutoGen.obj
+ 0002:00000070       gEfiComponentName2ProtocolGuid 0000000000009130     HttpDxe:AutoGen.obj
+ 0002:00000080       gEfiTlsServiceBindingProtocolGuid 0000000000009140     HttpDxe:AutoGen.obj
+ 0002:00000090       gEfiHttpProtocolGuid       0000000000009150     HttpDxe:AutoGen.obj
+ 0002:000000a0       gEfiIp6ConfigProtocolGuid  0000000000009160     HttpDxe:AutoGen.obj
+ 0002:000000b0       gEfiHttpUtilitiesProtocolGuid 0000000000009170     HttpDxe:AutoGen.obj
+ 0002:000000c0       gEfiDns6ServiceBindingProtocolGuid 0000000000009180     HttpDxe:AutoGen.obj
+ 0002:000000d0       gEfiIp4Config2ProtocolGuid 0000000000009190     HttpDxe:AutoGen.obj
+ 0002:000000e0       gEfiCertX509Guid           00000000000091a0     HttpDxe:AutoGen.obj
+ 0002:000000f0       gEfiDevicePathUtilitiesProtocolGuid 00000000000091b0     HttpDxe:AutoGen.obj
+ 0002:00000100       gEfiDns6ProtocolGuid       00000000000091c0     HttpDxe:AutoGen.obj
+ 0002:00000110       gEfiHttpServiceBindingProtocolGuid 00000000000091d0     HttpDxe:AutoGen.obj
+ 0002:00000120       gEfiDriverBindingProtocolGuid 00000000000091e0     HttpDxe:AutoGen.obj
+ 0002:00000130       gEfiTcp4ServiceBindingProtocolGuid 00000000000091f0     HttpDxe:AutoGen.obj
+ 0002:00000140       gEfiComponentNameProtocolGuid 0000000000009200     HttpDxe:AutoGen.obj
+ 0002:00000150       gEfiDpcProtocolGuid        0000000000009210     HttpDxe:AutoGen.obj
+ 0002:00000160       gEfiTlsConfigurationProtocolGuid 0000000000009220     HttpDxe:AutoGen.obj
+ 0002:00000170       gEfiTcp6ServiceBindingProtocolGuid 0000000000009230     HttpDxe:AutoGen.obj
+ 0002:00000180       gEfiTcp6ProtocolGuid       0000000000009240     HttpDxe:AutoGen.obj
+ 0002:00000190       gEfiTcp4ProtocolGuid       0000000000009250     HttpDxe:AutoGen.obj
+ 0002:000001a0       gHttpDxeIp4DriverBinding   0000000000009260     HttpDxe:HttpDriver.obj
+ 0002:000001d0       gHttpDxeIp6DriverBinding   0000000000009290     HttpDxe:HttpDriver.obj
+ 0002:00000200       gHttpDxeComponentName      00000000000092c0     HttpDxe:ComponentName.obj
+ 0002:00000218       gHttpDxeComponentName2     00000000000092d8     HttpDxe:ComponentName.obj
+ 0002:00000230       mHttpDxeDriverNameTable    00000000000092f0     HttpDxe:ComponentName.obj
+ 0002:00000250       mEfiHttpTemplate           0000000000009310     HttpDxe:HttpImpl.obj
+ 0002:00000280       ??_C@_04FMMHFHOO@?$AN?6?$AN?6@ 0000000000009340     HttpDxe:HttpProto.obj
+ 0002:00000288       ??_C@_03LKLGDMJI@eng@      0000000000009348     HttpDxe:ComponentName.obj
+ 0002:0000028c       ??_C@_02LFNMGJAP@en@       000000000000934c     HttpDxe:ComponentName.obj
+ 0002:00000290       ??_C@_06DALJLGPG@eng?$DLen@ 0000000000009350     HttpDxe:ComponentName.obj
+ 0002:00000298       ??_C@_1BA@CKLBJKNI@?$AAH?$AAt?$AAt?$AAp?$AAD?$AAx?$AAe@ 0000000000009358     HttpDxe:ComponentName.obj
+ 0002:000002a8       ??_C@_08IJEMDJGI@HTTP?11?41@ 0000000000009368     HttpDxe:HttpImpl.obj
+ 0002:000002b4       ??_C@_02PCIJFNDE@?$AN?6@   0000000000009374     HttpDxe:HttpImpl.obj
+ 0002:000002b8       ??_C@_08MFLLBFBE@https?3?1?1@ 0000000000009378     HttpDxe:HttpsSupport.obj
+ 0002:000002c8       ??_C@_1CC@GDBFHLFD@?$AAT?$AAl?$AAs?$AAC?$AAa?$AAC?$AAe?$AAr?$AAt?$AAi?$AAf?$AAi?$AAc?$AAa?$AAt@ 0000000000009388     HttpDxe:HttpsSupport.obj
+ 0002:000002f0       ??_C@_1CE@OILMPCKI@?$AAH?$AAt?$AAt?$AAp?$AAT?$AAl?$AAs?$AAC?$AAi?$AAp?$AAh?$AAe?$AAr?$AAL?$AAi@ 00000000000093b0     HttpDxe:HttpsSupport.obj
+ 0002:00000318       ??_C@_0P@HOJGPHBA@Content?9Length@ 00000000000093d8     DxeHttpLib:DxeHttpLib.obj
+ 0002:00000330       ??_C@_0BC@ELHLFCNH@Transfer?9Encoding@ 00000000000093f0     DxeHttpLib:DxeHttpLib.obj
+ 0002:00000348       ??_C@_08LBJOIDDC@identity@ 0000000000009408     DxeHttpLib:DxeHttpLib.obj
+ 0002:00000358       ??_C@_0M@IHFDHEJ@?5HTTP?11?41?$AN?6@ 0000000000009418     DxeHttpLib:DxeHttpLib.obj
+ 0002:00000364       ??_C@_03HAPOJHBM@GET@      0000000000009424     DxeHttpLib:DxeHttpLib.obj
+ 0002:00000368       ??_C@_03KBBGFLEK@PUT@      0000000000009428     DxeHttpLib:DxeHttpLib.obj
+ 0002:0000036c       ??_C@_05CJDDEJDD@PATCH@    000000000000942c     DxeHttpLib:DxeHttpLib.obj
+ 0002:00000374       ??_C@_04HCJEIHPL@POST@     0000000000009434     DxeHttpLib:DxeHttpLib.obj
+ 0002:0000037c       ??_C@_04BINJNOJD@HEAD@     000000000000943c     DxeHttpLib:DxeHttpLib.obj
+ 0002:00000384       ??_C@_06FKDAMKFP@DELETE@   0000000000009444     DxeHttpLib:DxeHttpLib.obj
+ 0002:0000038c       ??_C@_01CLKCMJKC@?5@       000000000000944c     DxeHttpLib:DxeHttpLib.obj
+ 0002:000003b0       mHttpUtilities             0000000000009470     HttpDxe:HttpDriver.obj
+ 0002:000003b8       gST                        0000000000009478     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000003c0       gBS                        0000000000009480     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000003c8       mDevicePathLibDevicePathUtilities 0000000000009488     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:000003d0       gRT                        0000000000009490     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0002:000003d8       mDpc                       0000000000009498     <common>
+ 0002:000003e0       __volatile_metadata        00000000000094a0     <linker-defined>
+
+ entry point at        0001:0000038c
+
+ Static symbols
+
+ 0001:0000001a       InternalMemCopyMem.0       000000000000029a     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:0000002a       @CopyBackward              00000000000002aa     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000033       @CopyBytes                 00000000000002b3     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:0000012a       @UseRepIo                  00000000000003aa     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:0000012c       @SevNoRepIo_Done           00000000000003ac     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000144       @IoReadFifo8_NoRep         00000000000003c4     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000146       @IoReadFifo8_Loop          00000000000003c6     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:0000014e       @IoReadFifo8_Done          00000000000003ce     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000167       @IoReadFifo16_NoRep        00000000000003e7     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000169       @IoReadFifo16_Loop         00000000000003e9     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000174       @IoReadFifo16_Done         00000000000003f4     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:0000018c       @IoReadFifo32_NoRep        000000000000040c     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:0000018e       @IoReadFifo32_Loop         000000000000040e     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000197       @IoReadFifo32_Done         0000000000000417     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001af       @IoWriteFifo8_NoRep        000000000000042f     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001b1       @IoWriteFifo8_Loop         0000000000000431     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001b9       @IoWriteFifo8_Done         0000000000000439     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001d2       @IoWriteFifo16_NoRep       0000000000000452     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001d4       @IoWriteFifo16_Loop        0000000000000454     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001df       @IoWriteFifo16_Done        000000000000045f     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001f7       @IoWriteFifo32_NoRep       0000000000000477     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001f9       @IoWriteFifo32_Loop        0000000000000479     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000202       @IoWriteFifo32_Done        0000000000000482     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0004:00000000       $unwind$_DriverUnloadHandler 00000000000099c0     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0004:00000010       $unwind$_ModuleEntryPoint  00000000000099d0     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0004:0000001c       $unwind$ProcessModuleEntryPointList 00000000000099dc     HttpDxe:AutoGen.obj
+ 0004:00000028       $unwind$HttpCleanService   00000000000099e8     HttpDxe:HttpDriver.obj
+ 0004:00000028       $unwind$HttpTcpTransmitNotifyDpc 00000000000099e8     HttpDxe:HttpProto.obj
+ 0004:00000030       $unwind$AsciiStrHexToUintnS 00000000000099f0     BaseLib:SafeString.obj
+ 0004:00000030       $unwind$UnicodeStrToAsciiStrS 00000000000099f0     BaseLib:SafeString.obj
+ 0004:00000030       $unwind$AllocateZeroPool   00000000000099f0     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0004:00000030       $unwind$HttpUtilitiesInstalledCallback 00000000000099f0     HttpDxe:HttpDriver.obj
+ 0004:00000030       $unwind$EfiHttpPoll        00000000000099f0     HttpDxe:HttpImpl.obj
+ 0004:00000030       $unwind$HttpCancelTokens   00000000000099f0     HttpDxe:HttpImpl.obj
+ 0004:00000030       $unwind$HttpCleanProtocol  00000000000099f0     HttpDxe:HttpProto.obj
+ 0004:00000030       $unwind$HttpCloseConnection 00000000000099f0     HttpDxe:HttpProto.obj
+ 0004:00000030       $unwind$HttpCloseTcpConnCloseEvent 00000000000099f0     HttpDxe:HttpProto.obj
+ 0004:00000030       $unwind$HttpTcpReceiveBody 00000000000099f0     HttpDxe:HttpProto.obj
+ 0004:00000030       $unwind$FreeNbufList       00000000000099f0     HttpDxe:HttpsSupport.obj
+ 0004:00000030       $unwind$TlsCloseTxRxEvent  00000000000099f0     HttpDxe:HttpsSupport.obj
+ 0004:00000030       $unwind$NetLibGetNicHandle 00000000000099f0     DxeNetLib:DxeNetLib.obj
+ 0004:00000030       $unwind$NetbufFree         00000000000099f0     DxeNetLib:NetBuffer.obj
+ 0004:00000038       $unwind$HttpDxeStart       00000000000099f8     HttpDxe:HttpDriver.obj
+ 0004:00000048       $unwind$HttpDxeStop        0000000000009a08     HttpDxe:HttpDriver.obj
+ 0004:00000060       $unwind$HttpDxeIp4DriverBindingStop 0000000000009a20     HttpDxe:HttpDriver.obj
+ 0004:00000060       $unwind$HttpDxeIp4DriverBindingSupported 0000000000009a20     HttpDxe:HttpDriver.obj
+ 0004:00000060       $unwind$HttpDxeIp6DriverBindingStop 0000000000009a20     HttpDxe:HttpDriver.obj
+ 0004:00000060       $unwind$HttpDxeIp6DriverBindingSupported 0000000000009a20     HttpDxe:HttpDriver.obj
+ 0004:00000068       $unwind$HttpServiceBindingCreateChild 0000000000009a28     HttpDxe:HttpDriver.obj
+ 0004:00000068       $unwind$HttpInitMsgParser  0000000000009a28     DxeHttpLib:DxeHttpLib.obj
+ 0004:00000068       $unwind$NetbufCopy         0000000000009a28     DxeNetLib:NetBuffer.obj
+ 0004:00000080       $unwind$HttpServiceBindingDestroyChild 0000000000009a40     HttpDxe:HttpDriver.obj
+ 0004:00000080       $unwind$HttpConnectTcp4    0000000000009a40     HttpDxe:HttpProto.obj
+ 0004:00000080       $unwind$HttpConnectTcp6    0000000000009a40     HttpDxe:HttpProto.obj
+ 0004:00000090       $unwind$HttpTcpReceiveNotifyDpc 0000000000009a50     HttpDxe:HttpProto.obj
+ 0004:000000a4       $unwind$HttpCreateTcpConnCloseEvent 0000000000009a64     HttpDxe:HttpProto.obj
+ 0004:000000b4       $unwind$HttpCreateTcpTxEvent 0000000000009a74     HttpDxe:HttpProto.obj
+ 0004:000000c0       $unwind$HttpCreateTcpRxEvent 0000000000009a80     HttpDxe:HttpProto.obj
+ 0004:000000c0       $unwind$HttpCreateTcpRxEventForHeader 0000000000009a80     HttpDxe:HttpProto.obj
+ 0004:000000c8       $unwind$HttpInitProtocol   0000000000009a88     HttpDxe:HttpProto.obj
+ 0004:000000dc       $unwind$EfiHttpConfigure   0000000000009a9c     HttpDxe:HttpImpl.obj
+ 0004:000000dc       $unwind$HttpCreateConnection 0000000000009a9c     HttpDxe:HttpProto.obj
+ 0004:000000dc       $unwind$HttpTcpTokenCleanup 0000000000009a9c     HttpDxe:HttpProto.obj
+ 0004:000000dc       $unwind$NetMapAllocItem    0000000000009a9c     DxeNetLib:DxeNetLib.obj
+ 0004:000000dc       $unwind$NetMapClean        0000000000009a9c     DxeNetLib:DxeNetLib.obj
+ 0004:000000dc       $unwind$NetbufFreeList     0000000000009a9c     DxeNetLib:NetBuffer.obj
+ 0004:000000dc       $unwind$NetbufFreeVector   0000000000009a9c     DxeNetLib:NetBuffer.obj
+ 0004:000000e8       $unwind$HttpConfigureTcp4  0000000000009aa8     HttpDxe:HttpProto.obj
+ 0004:000000e8       $unwind$HttpConfigureTcp6  0000000000009aa8     HttpDxe:HttpProto.obj
+ 0004:000000e8       $unwind$HttpFindHeader     0000000000009aa8     DxeHttpLib:DxeHttpLib.obj
+ 0004:000000e8       $unwind$NetMapIterate      0000000000009aa8     DxeNetLib:DxeNetLib.obj
+ 0004:000000fc       $unwind$HttpTransmitTcp    0000000000009abc     HttpDxe:HttpProto.obj
+ 0004:00000114       $unwind$HttpTcpTransmit    0000000000009ad4     HttpDxe:HttpProto.obj
+ 0004:00000124       $unwind$HttpTcpReceiveHeader 0000000000009ae4     HttpDxe:HttpProto.obj
+ 0004:0000013c       $unwind$HttpNotify         0000000000009afc     HttpDxe:HttpProto.obj
+ 0004:0000014c       $unwind$HttpDxeComponentNameGetDriverName 0000000000009b0c     HttpDxe:ComponentName.obj
+ 0004:00000160       $unwind$InternalAllocatePool 0000000000009b20     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0004:00000160       $unwind$EfiHttpGetModeData 0000000000009b20     HttpDxe:HttpImpl.obj
+ 0004:00000168       $unwind$EfiHttpRequest     0000000000009b28     HttpDxe:HttpImpl.obj
+ 0004:00000180       $unwind$HttpCancel         0000000000009b40     HttpDxe:HttpImpl.obj
+ 0004:00000180       $unwind$TlsCommonTransmit  0000000000009b40     HttpDxe:HttpsSupport.obj
+ 0004:00000180       $unwind$NetMapInsertTail   0000000000009b40     DxeNetLib:DxeNetLib.obj
+ 0004:00000180       $unwind$NetbufAlloc        0000000000009b40     DxeNetLib:NetBuffer.obj
+ 0004:00000180       $unwind$NetbufAllocStruct  0000000000009b40     DxeNetLib:NetBuffer.obj
+ 0004:00000190       $unwind$HttpResponseWorker 0000000000009b50     HttpDxe:HttpImpl.obj
+ 0004:000001a8       $unwind$EfiHttpResponse    0000000000009b68     HttpDxe:HttpImpl.obj
+ 0004:000001a8       $unwind$HttpParseUrl       0000000000009b68     DxeHttpLib:DxeHttpLib.obj
+ 0004:000001a8       $unwind$NetbufFromBufList  0000000000009b68     DxeNetLib:NetBuffer.obj
+ 0004:000001c0       $unwind$TlsCreateChild     0000000000009b80     HttpDxe:HttpsSupport.obj
+ 0004:000001d4       $unwind$TlsCreateTxRxEvent 0000000000009b94     HttpDxe:HttpsSupport.obj
+ 0004:000001ec       $unwind$TlsConfigCertificate 0000000000009bac     HttpDxe:HttpsSupport.obj
+ 0004:00000208       $unwind$TlsConfigCipherList 0000000000009bc8     HttpDxe:HttpsSupport.obj
+ 0004:00000218       $unwind$TlsConfigureSession 0000000000009bd8     HttpDxe:HttpsSupport.obj
+ 0004:00000230       $unwind$TlsCommonReceive   0000000000009bf0     HttpDxe:HttpsSupport.obj
+ 0004:00000248       $unwind$TlsReceiveOnePdu   0000000000009c08     HttpDxe:HttpsSupport.obj
+ 0004:00000264       $unwind$TlsConnectSession  0000000000009c24     HttpDxe:HttpsSupport.obj
+ 0004:0000027c       $unwind$TlsCloseSession    0000000000009c3c     HttpDxe:HttpsSupport.obj
+ 0004:00000290       $unwind$TlsProcessMessage  0000000000009c50     HttpDxe:HttpsSupport.obj
+ 0004:000002ac       $unwind$HttpsReceive       0000000000009c6c     HttpDxe:HttpsSupport.obj
+ 0004:000002c4       $unwind$HttpDns4           0000000000009c84     HttpDxe:HttpDns.obj
+ 0004:000002c4       $unwind$HttpDns6           0000000000009c84     HttpDxe:HttpDns.obj
+ 0004:000002e0       $unwind$AsciiStriCmp       0000000000009ca0     BaseLib:String.obj
+ 0004:000002ec       $unwind$AsciiStrDecimalToUintnS 0000000000009cac     BaseLib:SafeString.obj
+ 0004:000002ec       $unwind$NetbufBuildExt     0000000000009cac     DxeNetLib:NetBuffer.obj
+ 0004:000002f4       $unwind$AsciiStrToIpv6Address 0000000000009cb4     BaseLib:SafeString.obj
+ 0004:0000030c       $unwind$EfiLibInstallDriverBindingComponentName2 0000000000009ccc     UefiLib:UefiDriverModel.obj
+ 0004:00000314       $unwind$NetLibCreateServiceChild 0000000000009cd4     DxeNetLib:DxeNetLib.obj
+ 0004:00000314       $unwind$NetLibDestroyServiceChild 0000000000009cd4     DxeNetLib:DxeNetLib.obj
+ 0004:0000031c       $unwind$NetbufAllocSpace   0000000000009cdc     DxeNetLib:NetBuffer.obj
+ 0004:0000032c       $unwind$UriPercentDecode   0000000000009cec     DxeHttpLib:DxeHttpLib.obj
+ 0004:00000344       $unwind$NetHttpParseAuthority 0000000000009d04     DxeHttpLib:DxeHttpLib.obj
+ 0004:0000035c       $unwind$HttpParseMessageBody 0000000000009d1c     DxeHttpLib:DxeHttpLib.obj
+ 0004:00000374       $unwind$HttpGenRequestMessage 0000000000009d34     DxeHttpLib:DxeHttpLib.obj

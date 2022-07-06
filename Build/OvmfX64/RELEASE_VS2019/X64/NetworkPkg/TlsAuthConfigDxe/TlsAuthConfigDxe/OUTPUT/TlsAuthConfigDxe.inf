@@ -1,0 +1,243 @@
+## @file
+#  Provides the capability to configure Tls Authentication in a setup browser
+#  By this module, user may change the content of TlsCaCertificate.
+#
+# Copyright (c) 2016 - 2017, Intel Corporation. All rights reserved.<BR>
+# SPDX-License-Identifier: BSD-2-Clause-Patent
+#
+##
+
+# DO NOT EDIT
+# FILE auto-generated
+
+[Defines]
+  INF_VERSION                = 0x00010017
+  BASE_NAME                  = TlsAuthConfigDxe
+  FILE_GUID                  = 7ca1024f-eb17-11e5-9dba-28d2447c4829
+  MODULE_TYPE                = DXE_DRIVER
+  VERSION_STRING             = 1.0
+  ENTRY_POINT                = TlsAuthConfigDxeDriverEntryPoint
+  UNLOAD_IMAGE               = TlsAuthConfigDxeUnload
+  MODULE_UNI_FILE            = TlsAuthConfigDxe.uni
+
+[Packages.X64]
+  MdePkg/MdePkg.dec
+  MdeModulePkg/MdeModulePkg.dec
+  NetworkPkg/NetworkPkg.dec
+
+[Binaries.X64]
+  PE32|TlsAuthConfigDxe.efi
+  DXE_DEPEX|TlsAuthConfigDxe.depex
+  BIN|TlsAuthConfigDxeOffset.bin
+
+[PatchPcd.X64]
+
+[Protocols.X64]
+  ## SOMETIMES_CONSUMES
+  ## SOMETIMES_CONSUMES
+  ## PRODUCES
+  gEfiDevicePathProtocolGuid
+
+  ## PRODUCES
+  ## PRODUCES
+  gEfiHiiConfigAccessProtocolGuid
+
+  ## CONSUMES
+  gEfiHiiPopupProtocolGuid
+
+  ## SOMETIMES_CONSUMES
+  gPcdProtocolGuid
+
+  ## CONSUMES
+  gEfiPcdProtocolGuid
+
+  ## SOMETIMES_CONSUMES
+  gGetPcdInfoProtocolGuid
+
+  ## SOMETIMES_CONSUMES
+  gEfiGetPcdInfoProtocolGuid
+
+  ## CONSUMES
+  gEfiDevicePathUtilitiesProtocolGuid
+
+  ## SOMETIMES_CONSUMES
+  ## PRODUCES
+  gEfiDevicePathToTextProtocolGuid
+
+  ## SOMETIMES_CONSUMES
+  gEfiDevicePathFromTextProtocolGuid
+
+  ## SOMETIMES_CONSUMES
+  ## SOMETIMES_CONSUMES
+  gEfiHiiFontProtocolGuid
+
+  ## CONSUMES
+  gEfiHiiStringProtocolGuid
+
+  ## SOMETIMES_CONSUMES
+  gEfiHiiImageProtocolGuid
+
+  ## CONSUMES
+  gEfiHiiDatabaseProtocolGuid
+
+  ## CONSUMES
+  gEfiHiiConfigRoutingProtocolGuid
+
+  ## SOMETIMES_PRODUCES
+  gEfiDriverBindingProtocolGuid
+
+  ## SOMETIMES_CONSUMES
+  gEfiSimpleTextOutProtocolGuid
+
+  ## SOMETIMES_CONSUMES
+  gEfiGraphicsOutputProtocolGuid
+
+  ## SOMETIMES_CONSUMES
+  ## SOMETIMES_CONSUMES
+  gEfiSimpleFileSystemProtocolGuid
+
+  ## SOMETIMES_CONSUMES # Consumes if gEfiGraphicsOutputProtocolGuid uninstalled
+  gEfiUgaDrawProtocolGuid
+
+  ## SOMETIMES_PRODUCES # User chooses to produce it
+  gEfiComponentNameProtocolGuid
+
+  ## SOMETIMES_PRODUCES # User chooses to produce it
+  gEfiComponentName2ProtocolGuid
+
+  ## SOMETIMES_PRODUCES # User chooses to produce it
+  gEfiDriverConfigurationProtocolGuid
+
+  ## SOMETIMES_PRODUCES # User chooses to produce it
+  gEfiDriverConfiguration2ProtocolGuid
+
+  ## SOMETIMES_PRODUCES # User chooses to produce it
+  gEfiDriverDiagnosticsProtocolGuid
+
+  ## SOMETIMES_PRODUCES # User chooses to produce it
+  gEfiDriverDiagnostics2ProtocolGuid
+
+  ## SOMETIMES_CONSUMES
+  ## CONSUMES
+  gEfiFormBrowser2ProtocolGuid
+
+  ## SOMETIMES_CONSUMES
+  gEdkiiIoMmuProtocolGuid
+
+  ## SOMETIMES_CONSUMES
+  gEfiLoadedImageProtocolGuid
+
+
+[Ppis.X64]
+
+[Guids.X64]
+  ## PRODUCES  ## GUID
+  gTlsAuthConfigGuid
+
+  ## SOMETIMES_CONSUMES  ## GUID  # Indicate the cert type
+  gEfiCertX509Guid
+
+  ## SOMETIMES_CONSUMES ## GUID (Extended IFR Guid Opcode)
+  ## SOMETIMES_PRODUCES  ## HII
+  gEfiIfrTianoGuid
+
+  ## PRODUCES ## Variable:L"TlsCaCertificate"
+  ## PRODUCES  ## Variable:L"TlsCaCertificate"
+  gEfiTlsCaCertificateGuid
+
+  ## SOMETIMES_CONSUMES  ## Event
+  gEfiEventReadyToBootGuid
+
+  ## SOMETIMES_CONSUMES  ## Event
+  gEfiEventLegacyBootGuid
+
+  ## SOMETIMES_CONSUMES  ## Variable
+  gEfiGlobalVariableGuid
+
+  ## SOMETIMES_CONSUMES  ## SystemTable
+  gEfiAcpi20TableGuid
+
+  ## SOMETIMES_CONSUMES  ## SystemTable
+  gEfiAcpi10TableGuid
+
+  ## SOMETIMES_CONSUMES ## GUID
+  gEdkiiIfrBitVarstoreGuid
+
+  ## SOMETIMES_CONSUMES ## GUID (Indicate the information type is volume)
+  gEfiFileSystemVolumeLabelInfoIdGuid
+
+  ## PRODUCES ## Variable:L"HttpTlsCipherList"
+  gEdkiiHttpTlsCipherListGuid
+
+
+[PcdEx.X64]
+
+[LibraryClasses.X64]
+## @LIB_INSTANCES
+#  MdePkg/Library/RegisterFilterLibNull/RegisterFilterLibNull.inf
+#  UefiCpuPkg/Library/BaseUefiCpuLib/BaseUefiCpuLib.inf
+#  UefiCpuPkg/Library/BaseXApicX2ApicLib/BaseXApicX2ApicLib.inf
+#  OvmfPkg/Library/VmgExitLib/VmgExitLib.inf
+#  MdePkg/Library/DxePcdLib/DxePcdLib.inf
+#  MdePkg/Library/BaseCpuLib/BaseCpuLib.inf
+#  MdePkg/Library/BaseCacheMaintenanceLib/BaseCacheMaintenanceLib.inf
+#  OvmfPkg/Library/BaseMemEncryptSevLib/DxeMemEncryptSevLib.inf
+#  MdePkg/Library/BaseIoLibIntrinsic/BaseIoLibIntrinsicSev.inf
+#  MdePkg/Library/UefiMemoryAllocationLib/UefiMemoryAllocationLib.inf
+#  MdePkg/Library/BaseMemoryLibRepStr/BaseMemoryLibRepStr.inf
+#  MdePkg/Library/BaseLib/BaseLib.inf
+#  MdePkg/Library/BaseDebugPrintErrorLevelLib/BaseDebugPrintErrorLevelLib.inf
+#  MdePkg/Library/BasePrintLib/BasePrintLib.inf
+#  OvmfPkg/Library/PlatformDebugLibIoPort/PlatformDebugLibIoPort.inf
+#  MdePkg/Library/UefiBootServicesTableLib/UefiBootServicesTableLib.inf
+#  MdePkg/Library/BasePciExpressLib/BasePciExpressLib.inf
+#  MdePkg/Library/BasePciCf8Lib/BasePciCf8Lib.inf
+#  OvmfPkg/Library/DxePciLibI440FxQ35/DxePciLibI440FxQ35.inf
+#  OvmfPkg/Library/AcpiTimerLib/DxeAcpiTimerLib.inf
+#  MdePkg/Library/UefiDevicePathLibDevicePathProtocol/UefiDevicePathLibDevicePathProtocol.inf
+#  MdePkg/Library/UefiRuntimeServicesTableLib/UefiRuntimeServicesTableLib.inf
+#  MdeModulePkg/Library/UefiHiiServicesLib/UefiHiiServicesLib.inf
+#  MdePkg/Library/UefiLib/UefiLib.inf
+#  MdeModulePkg/Library/UefiHiiLib/UefiHiiLib.inf
+#  OvmfPkg/Library/QemuFwCfgLib/QemuFwCfgDxeLib.inf
+#  MdePkg/Library/UefiDriverEntryPoint/UefiDriverEntryPoint.inf
+#  MdeModulePkg/Library/FileExplorerLib/FileExplorerLib.inf
+#  OvmfPkg/Library/TlsAuthConfigLib/TlsAuthConfigLib.inf
+
+[Depex.X64]
+#  (gEfiHiiConfigRoutingProtocolGuid  AND gEfiHiiDatabaseProtocolGuid) AND (gEfiPcdProtocolGuid) AND (gEfiPcdProtocolGuid) AND (gEfiPcdProtocolGuid) AND (gEfiPcdProtocolGuid) AND (gEfiDevicePathUtilitiesProtocolGuid) AND (gEfiDevicePathUtilitiesProtocolGuid) AND (gEfiDevicePathUtilitiesProtocolGuid) AND (gEfiDevicePathUtilitiesProtocolGuid) AND (gEfiHiiStringProtocolGuid        AND gEfiHiiDatabaseProtocolGuid      AND gEfiHiiConfigRoutingProtocolGuid) AND (gEfiHiiStringProtocolGuid        AND gEfiHiiDatabaseProtocolGuid      AND gEfiHiiConfigRoutingProtocolGuid) AND (gEfiHiiStringProtocolGuid        AND gEfiHiiDatabaseProtocolGuid      AND gEfiHiiConfigRoutingProtocolGuid) AND (gEfiHiiStringProtocolGuid        AND gEfiHiiDatabaseProtocolGuid      AND gEfiHiiConfigRoutingProtocolGuid) AND (gEdkiiIoMmuProtocolGuid OR gIoMmuAbsentProtocolGuid) AND (gEfiBdsArchProtocolGuid AND gEfiCpuArchProtocolGuid AND gEfiMetronomeArchProtocolGuid AND gEfiMonotonicCounterArchProtocolGuid AND gEfiRealTimeClockArchProtocolGuid AND gEfiResetArchProtocolGuid AND gEfiRuntimeArchProtocolGuid AND gEfiSecurityArchProtocolGuid AND gEfiTimerArchProtocolGuid AND gEfiVariableWriteArchProtocolGuid AND gEfiVariableArchProtocolGuid AND gEfiWatchdogTimerArchProtocolGuid) AND (gEfiFormBrowser2ProtocolGuid AND gEfiHiiDatabaseProtocolGuid) AND (gEfiVariableWriteArchProtocolGuid)
+
+[UserExtensions.TianoCore."ExtraFiles"]
+TlsAuthConfigDxeExtra.uni
+
+
+
+#
+#  VALID_ARCHITECTURES           = IA32 X64
+#
+
+[BuildOptions.X64]
+## @AsBuilt
+##   MSFT:RELEASE_VS2019_X64_ASLPP_FLAGS = /nologo /E /C /FIAutoGen.h
+##   MSFT:RELEASE_VS2019_X64_ASLDLINK_FLAGS = /NODEFAULTLIB /ENTRY:ReferenceAcpiTable /SUBSYSTEM:CONSOLE
+##   MSFT:RELEASE_VS2019_X64_GENFW_FLAGS = --zero --keepexceptiontable
+##   MSFT:RELEASE_VS2019_X64_SLINK_FLAGS = /NOLOGO /LTCG
+##   MSFT:RELEASE_VS2019_X64_OBJCOPY_FLAGS = objcopy not needed for
+##   MSFT:RELEASE_VS2019_X64_DEPS_FLAGS = /showIncludes
+##   MSFT:RELEASE_VS2019_X64_ASM_FLAGS = /nologo /c /WX /W3 /Cx /Zd
+##   MSFT:RELEASE_VS2019_X64_CC_FLAGS = /nologo /c /WX /GS- /W4 /Gs32768 /D UNICODE /O1b2s /GL /Gy /FIAutoGen.h /EHs-c- /GR- /GF /Gw /D MDEPKG_NDEBUG /D DISABLE_NEW_DEPRECATED_INTERFACES /D ENABLE_MD5_DEPRECATED_INTERFACES
+##   MSFT:RELEASE_VS2019_X64_ASMLINK_FLAGS = /nologo /tiny
+##   MSFT:RELEASE_VS2019_X64_VFR_FLAGS = -l -n
+##   MSFT:RELEASE_VS2019_X64_ASLCC_FLAGS = /nologo /c /FIAutoGen.h /TC /Dmain=ReferenceAcpiTable
+##   MSFT:RELEASE_VS2019_X64_APP_FLAGS = /nologo /E /TC
+##   MSFT:RELEASE_VS2019_X64_NASM_FLAGS = -Ox -f win64
+##   MSFT:RELEASE_VS2019_X64_OPTROM_FLAGS = -e
+##   MSFT:RELEASE_VS2019_X64_DTC_FLAGS = -H epapr
+##   MSFT:RELEASE_VS2019_X64_MAKE_FLAGS = /nologo
+##   MSFT:RELEASE_VS2019_X64_SYMRENAME_FLAGS = Symbol renaming not needed for
+##   MSFT:RELEASE_VS2019_X64_PP_FLAGS = /nologo /E /TC /FIAutoGen.h
+##   MSFT:RELEASE_VS2019_X64_VFRPP_FLAGS = /nologo /E /TC /DVFRCOMPILE /FI$(MODULE_NAME)StrDefs.h
+##   MSFT:RELEASE_VS2019_X64_DLINK_FLAGS = /NOLOGO /NODEFAULTLIB /IGNORE:4001 /IGNORE:4281 /IGNORE:4254 /OPT:REF /OPT:ICF=10 /MAP /ALIGN:32 /SECTION:.xdata,D /SECTION:.pdata,D /Machine:X64 /LTCG /DLL /ENTRY:$(IMAGE_ENTRY_POINT) /SUBSYSTEM:EFI_BOOT_SERVICE_DRIVER /SAFESEH:NO /BASE:0 /DRIVER /MERGE:.rdata=.data
+##   MSFT:RELEASE_VS2019_X64_ASL_FLAGS = 
+##   MSFT:RELEASE_VS2019_X64_NASMB_FLAGS = -f bin
+##   MSFT:RELEASE_VS2019_X64_DLINK2_FLAGS = /WHOLEARCHIVE

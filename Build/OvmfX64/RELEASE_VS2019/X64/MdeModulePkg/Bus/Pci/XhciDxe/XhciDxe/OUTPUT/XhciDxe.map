@@ -1,0 +1,253 @@
+ XhciDxe
+
+ Timestamp is 61ee700c (Mon Jan 24 17:23:24 2022)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000060H .text                   CODE
+ 0001:00000060 0000676eH .text$mn                CODE
+ 0002:00000000 00000270H .data                   DATA
+ 0002:00000270 000000a0H .rdata                  DATA
+ 0002:00000310 00000020H .bss                    DATA
+ 0002:00000330 00000020H .rdata$voltmd           DATA
+ 0002:00000350 000000a8H .rdata$zzzdbg           DATA
+ 0003:00000000 000003c0H .pdata                  DATA
+ 0004:00000000 0000037cH .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __arm64x_redirection_metadata 0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_table          0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_count          0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_count      0000000000000000     <absolute>
+ 0000:00000000       __dynamic_value_reloc_table 0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_table      0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map_count    0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat     0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat_copy 0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_count      0000000000000000     <absolute>
+ 0000:00000000       __arm64x_native_entrypoint 0000000000000000     <absolute>
+ 0000:00000000       __guard_flags              0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_table      0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points 0000000000000000     <absolute>
+ 0000:00000000       __enclave_config           0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata_count 0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points_count 0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_count         0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table   0000000000000000     <absolute>
+ 0000:00000000       __AbsoluteZero             0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map          0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table_size 0000000000000000     <absolute>
+ 0000:00000000       __guard_check_icall_a64n_fptr 0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_table         0000000000000000     <absolute>
+ 0000:00000000       __ImageBase                0000000000000000     <linker-defined>
+ 0001:00000000       InternalMemCopyMem         0000000000000280     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000040       InternalMemZeroMem         00000000000002c0     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00000060       _ModuleEntryPoint          00000000000002e0 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:000000f8       XhcGetCapability           0000000000000378 f   XhciDxe:Xhci.obj
+ 0001:0000017c       XhcReset                   00000000000003fc f   XhciDxe:Xhci.obj
+ 0001:00000290       XhcGetState                0000000000000510 f   XhciDxe:Xhci.obj
+ 0001:000002fc       XhcSetState                000000000000057c f   XhciDxe:Xhci.obj
+ 0001:000003e4       XhcGetRootHubPortStatus    0000000000000664 f   XhciDxe:Xhci.obj
+ 0001:00000574       XhcSetRootHubPortFeature   00000000000007f4 f   XhciDxe:Xhci.obj
+ 0001:000006a8       XhcClearRootHubPortFeature 0000000000000928 f   XhciDxe:Xhci.obj
+ 0001:000007bc       XhcTransfer                0000000000000a3c f   XhciDxe:Xhci.obj
+ 0001:000008f4       XhcControlTransfer         0000000000000b74 f   XhciDxe:Xhci.obj
+ 0001:00000f6c       XhcBulkTransfer            00000000000011ec f   XhciDxe:Xhci.obj
+ 0001:00001108       XhcAsyncInterruptTransfer  0000000000001388 f   XhciDxe:Xhci.obj
+ 0001:000012f4       XhcSyncInterruptTransfer   0000000000001574 f   XhciDxe:Xhci.obj
+ 0001:00001478       XhcAsyncIsochronousTransfer 00000000000016f8 f   XhciDxe:Xhci.obj
+ 0001:00001478       XhcIsochronousTransfer     00000000000016f8 f   XhciDxe:Xhci.obj
+ 0001:00001484       XhcDriverBindingSupported  0000000000001704 f   XhciDxe:Xhci.obj
+ 0001:0000154c       XhcCreateUsbHc             00000000000017cc f   XhciDxe:Xhci.obj
+ 0001:00001758       XhcExitBootService         00000000000019d8 f   XhciDxe:Xhci.obj
+ 0001:000017cc       XhcDriverBindingStart      0000000000001a4c f   XhciDxe:Xhci.obj
+ 0001:00001ac8       XhcDriverBindingStop       0000000000001d48 f   XhciDxe:Xhci.obj
+ 0001:00001ca0       XhcReadCapReg              0000000000001f20 f   XhciDxe:XhciReg.obj
+ 0001:00001ce0       XhcReadOpReg               0000000000001f60 f   XhciDxe:XhciReg.obj
+ 0001:00001d28       XhcWriteOpReg              0000000000001fa8 f   XhciDxe:XhciReg.obj
+ 0001:00001d68       XhcReadRuntimeReg          0000000000001fe8 f   XhciDxe:XhciReg.obj
+ 0001:00001db0       XhcWriteRuntimeReg         0000000000002030 f   XhciDxe:XhciReg.obj
+ 0001:00001dec       XhcReadExtCapReg           000000000000206c f   XhciDxe:XhciReg.obj
+ 0001:00001e34       XhcWaitOpRegBit            00000000000020b4 f   XhciDxe:XhciReg.obj
+ 0001:00001f44       XhcClearBiosOwnership      00000000000021c4 f   XhciDxe:XhciReg.obj
+ 0001:00001fa4       XhcGetCapabilityAddr       0000000000002224 f   XhciDxe:XhciReg.obj
+ 0001:00001ff4       XhcResetHC                 0000000000002274 f   XhciDxe:XhciReg.obj
+ 0001:00002104       XhcHaltHC                  0000000000002384 f   XhciDxe:XhciReg.obj
+ 0001:00002150       XhcRunHC                   00000000000023d0 f   XhciDxe:XhciReg.obj
+ 0001:00002194       XhcCreateCmdTrb            0000000000002414 f   XhciDxe:XhciSched.obj
+ 0001:00002244       XhcCmdTransfer             00000000000024c4 f   XhciDxe:XhciSched.obj
+ 0001:00002330       XhcCreateUrb               00000000000025b0 f   XhciDxe:XhciSched.obj
+ 0001:0000241c       XhcCreateTransferTrb       000000000000269c f   XhciDxe:XhciSched.obj
+ 0001:00002834       XhcInitSched               0000000000002ab4 f   XhciDxe:XhciSched.obj
+ 0001:00002c74       XhcRecoverHaltedEndpoint   0000000000002ef4 f   XhciDxe:XhciSched.obj
+ 0001:00002d50       XhcDequeueTrbFromEndpoint  0000000000002fd0 f   XhciDxe:XhciSched.obj
+ 0001:00002e20       CreateTransferRing         00000000000030a0 f   XhciDxe:XhciSched.obj
+ 0001:00002ed0       XhcFreeSched               0000000000003150 f   XhciDxe:XhciSched.obj
+ 0001:000030ac       IsTransferRingTrb          000000000000332c f   XhciDxe:XhciSched.obj
+ 0001:00003150       XhcCheckUrbResult          00000000000033d0 f   XhciDxe:XhciSched.obj
+ 0001:00003494       XhcExecTransfer            0000000000003714 f   XhciDxe:XhciSched.obj
+ 0001:00003620       XhciDelAsyncIntTransfer    00000000000038a0 f   XhciDxe:XhciSched.obj
+ 0001:000036dc       XhciDelAllAsyncIntTransfers 000000000000395c f   XhciDxe:XhciSched.obj
+ 0001:00003780       XhciInsertAsyncIntTransfer 0000000000003a00 f   XhciDxe:XhciSched.obj
+ 0001:00003864       XhcUpdateAsyncRequest      0000000000003ae4 f   XhciDxe:XhciSched.obj
+ 0001:000038c8       XhcMonitorAsyncRequests    0000000000003b48 f   XhciDxe:XhciSched.obj
+ 0001:00003a68       XhcPollPortStatusChange    0000000000003ce8 f   XhciDxe:XhciSched.obj
+ 0001:00003be0       XhcBusDevAddrToSlotId      0000000000003e60 f   XhciDxe:XhciSched.obj
+ 0001:00003c3c       XhcRouteStringToSlotId     0000000000003ebc f   XhciDxe:XhciSched.obj
+ 0001:00003c98       XhcSyncTrsRing             0000000000003f18 f   XhciDxe:XhciSched.obj
+ 0001:00003d14       XhcRingDoorBell            0000000000003f94 f   XhciDxe:XhciSched.obj
+ 0001:00003d68       XhcInitializeDeviceSlot    0000000000003fe8 f   XhciDxe:XhciSched.obj
+ 0001:00004060       XhcInitializeDeviceSlot64  00000000000042e0 f   XhciDxe:XhciSched.obj
+ 0001:00004378       XhcDisableSlotCmd          00000000000045f8 f   XhciDxe:XhciSched.obj
+ 0001:00004520       XhcDisableSlotCmd64        00000000000047a0 f   XhciDxe:XhciSched.obj
+ 0001:000046c8       XhcInitializeEndpointContext 0000000000004948 f   XhciDxe:XhciSched.obj
+ 0001:00004950       XhcInitializeEndpointContext64 0000000000004bd0 f   XhciDxe:XhciSched.obj
+ 0001:00004c1c       XhcSetConfigCmd            0000000000004e9c f   XhciDxe:XhciSched.obj
+ 0001:00004db4       XhcSetConfigCmd64          0000000000005034 f   XhciDxe:XhciSched.obj
+ 0001:00004f4c       XhcStopEndpoint            00000000000051cc f   XhciDxe:XhciSched.obj
+ 0001:00004fd4       XhcSetTrDequeuePointer     0000000000005254 f   XhciDxe:XhciSched.obj
+ 0001:0000507c       XhcSetInterface            00000000000052fc f   XhciDxe:XhciSched.obj
+ 0001:00005360       XhcSetInterface64          00000000000055e0 f   XhciDxe:XhciSched.obj
+ 0001:00005644       XhcEvaluateContext         00000000000058c4 f   XhciDxe:XhciSched.obj
+ 0001:000056fc       XhcEvaluateContext64       000000000000597c f   XhciDxe:XhciSched.obj
+ 0001:000057b4       XhcConfigHubContext        0000000000005a34 f   XhciDxe:XhciSched.obj
+ 0001:000058b4       XhcConfigHubContext64      0000000000005b34 f   XhciDxe:XhciSched.obj
+ 0001:000059b4       XhciComponentNameGetDriverName 0000000000005c34 f   XhciDxe:ComponentName.obj
+ 0001:000059e8       XhciComponentNameGetControllerName 0000000000005c68 f   XhciDxe:ComponentName.obj
+ 0001:00005af4       UsbHcAllocMemBlock         0000000000005d74 f   XhciDxe:UsbHcMem.obj
+ 0001:00005bf8       UsbHcFreeMemBlock          0000000000005e78 f   XhciDxe:UsbHcMem.obj
+ 0001:00005c5c       UsbHcAllocMemFromBlock     0000000000005edc f   XhciDxe:UsbHcMem.obj
+ 0001:00005d5c       UsbHcGetPciAddrForHostAddr 0000000000005fdc f   XhciDxe:UsbHcMem.obj
+ 0001:00005da0       UsbHcAllocateMem           0000000000006020 f   XhciDxe:UsbHcMem.obj
+ 0001:00005ea0       UsbHcFreeMem               0000000000006120 f   XhciDxe:UsbHcMem.obj
+ 0001:00005f9c       UsbHcAllocateAlignedPages  000000000000621c f   XhciDxe:UsbHcMem.obj
+ 0001:00006130       InternalAllocatePool       00000000000063b0 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00006160       AllocateZeroPool           00000000000063e0 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:0000618c       InternalAllocateCopyPool   000000000000640c f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:000061cc       IsLanguageSupported        000000000000644c f   UefiLib:UefiLib.obj
+ 0001:00006270       LookupUnicodeString2       00000000000064f0 f   UefiLib:UefiLib.obj
+ 0001:00006388       AddUnicodeString2          0000000000006608 f   UefiLib:UefiLib.obj
+ 0001:000065c4       InternalReportStatusCode   0000000000006844 f   DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0001:00006658       ReportStatusCodeWithDevicePath 00000000000068d8 f   DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0002:00000000       gEfiStatusCodeSpecificDataGuid 0000000000006a60     XhciDxe:AutoGen.obj
+ 0002:00000010       gEfiStatusCodeRuntimeProtocolGuid 0000000000006a70     XhciDxe:AutoGen.obj
+ 0002:00000020       gEfiComponentName2ProtocolGuid 0000000000006a80     XhciDxe:AutoGen.obj
+ 0002:00000030       gEfiUsb2HcProtocolGuid     0000000000006a90     XhciDxe:AutoGen.obj
+ 0002:00000040       gEfiDevicePathProtocolGuid 0000000000006aa0     XhciDxe:AutoGen.obj
+ 0002:00000050       gEfiPciIoProtocolGuid      0000000000006ab0     XhciDxe:AutoGen.obj
+ 0002:00000060       gEfiDevicePathUtilitiesProtocolGuid 0000000000006ac0     XhciDxe:AutoGen.obj
+ 0002:00000070       gEfiDriverBindingProtocolGuid 0000000000006ad0     XhciDxe:AutoGen.obj
+ 0002:00000080       gEfiEventExitBootServicesGuid 0000000000006ae0     XhciDxe:AutoGen.obj
+ 0002:00000090       gEfiComponentNameProtocolGuid 0000000000006af0     XhciDxe:AutoGen.obj
+ 0002:000000a0       gEfiCallerIdGuid           0000000000006b00     XhciDxe:AutoGen.obj
+ 0002:000000b0       mUsbHubClearPortChangeMap  0000000000006b10     XhciDxe:Xhci.obj
+ 0002:000000d8       gXhciDriverBinding         0000000000006b38     XhciDxe:Xhci.obj
+ 0002:00000110       mUsbHubPortChangeMap       0000000000006b70     XhciDxe:Xhci.obj
+ 0002:00000130       mUsbClearPortChangeMap     0000000000006b90     XhciDxe:Xhci.obj
+ 0002:00000150       mUsbPortChangeMap          0000000000006bb0     XhciDxe:Xhci.obj
+ 0002:00000170       gXhciUsb2HcTemplate        0000000000006bd0     XhciDxe:Xhci.obj
+ 0002:000001e0       mUsbPortStateMap           0000000000006c40     XhciDxe:Xhci.obj
+ 0002:00000200       mUsbHubPortStateMap        0000000000006c60     XhciDxe:Xhci.obj
+ 0002:00000220       gXhciComponentName2        0000000000006c80     XhciDxe:ComponentName.obj
+ 0002:00000238       gXhciComponentName         0000000000006c98     XhciDxe:ComponentName.obj
+ 0002:00000250       mXhciDriverNameTable       0000000000006cb0     XhciDxe:ComponentName.obj
+ 0002:00000270       ??_C@_1EK@MAGMLEIH@?$AAe?$AAX?$AAt?$AAe?$AAn?$AAs?$AAi?$AAb?$AAl?$AAe?$AA?5?$AAH?$AAo?$AAs?$AAt@ 0000000000006cd0     XhciDxe:Xhci.obj
+ 0002:000002bc       ??_C@_03LKLGDMJI@eng@      0000000000006d1c     XhciDxe:Xhci.obj
+ 0002:000002c0       ??_C@_02LFNMGJAP@en@       0000000000006d20     XhciDxe:Xhci.obj
+ 0002:000002c4       ??_C@_06DALJLGPG@eng?$DLen@ 0000000000006d24     XhciDxe:ComponentName.obj
+ 0002:000002d0       ??_C@_1CA@KCGHEHFE@?$AAU?$AAs?$AAb?$AA?5?$AAX?$AAh?$AAc?$AAi?$AA?5?$AAD?$AAr?$AAi?$AAv?$AAe?$AAr@ 0000000000006d30     XhciDxe:ComponentName.obj
+ 0002:00000310       gST                        0000000000006d70     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000318       gBS                        0000000000006d78     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000320       mDevicePathLibDevicePathUtilities 0000000000006d80     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:00000328       mReportStatusCodeLibStatusCodeProtocol 0000000000006d88     DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0002:00000330       __volatile_metadata        0000000000006d90     <linker-defined>
+
+ entry point at        0001:00000060
+
+ Static symbols
+
+ 0001:0000001a       InternalMemCopyMem.0       000000000000029a     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:0000002a       @CopyBackward              00000000000002aa     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000033       @CopyBytes                 00000000000002b3     BaseMemoryLibRepStr:CopyMem.obj
+ 0004:00000000       $unwind$_ModuleEntryPoint  0000000000007220     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0004:00000008       $unwind$XhcGetCapability   0000000000007228     XhciDxe:Xhci.obj
+ 0004:00000008       $unwind$CreateTransferRing 0000000000007228     XhciDxe:XhciSched.obj
+ 0004:0000001c       $unwind$XhcGetState        000000000000723c     XhciDxe:Xhci.obj
+ 0004:0000001c       $unwind$XhcReset           000000000000723c     XhciDxe:Xhci.obj
+ 0004:0000001c       $unwind$XhcSetState        000000000000723c     XhciDxe:Xhci.obj
+ 0004:0000001c       $unwind$XhcGetCapabilityAddr 000000000000723c     XhciDxe:XhciReg.obj
+ 0004:0000001c       $unwind$XhcCreateCmdTrb    000000000000723c     XhciDxe:XhciSched.obj
+ 0004:0000001c       $unwind$XhciDelAsyncIntTransfer 000000000000723c     XhciDxe:XhciSched.obj
+ 0004:0000001c       $unwind$LookupUnicodeString2 000000000000723c     UefiLib:UefiLib.obj
+ 0004:0000002c       $unwind$XhcGetRootHubPortStatus 000000000000724c     XhciDxe:Xhci.obj
+ 0004:0000002c       $unwind$XhcCheckUrbResult  000000000000724c     XhciDxe:XhciSched.obj
+ 0004:00000048       $unwind$XhcSetRootHubPortFeature 0000000000007268     XhciDxe:Xhci.obj
+ 0004:00000060       $unwind$XhcClearRootHubPortFeature 0000000000007280     XhciDxe:Xhci.obj
+ 0004:00000060       $unwind$XhcFreeSched       0000000000007280     XhciDxe:XhciSched.obj
+ 0004:00000078       $unwind$XhcTransfer        0000000000007298     XhciDxe:Xhci.obj
+ 0004:00000090       $unwind$XhcControlTransfer 00000000000072b0     XhciDxe:Xhci.obj
+ 0004:000000a8       $unwind$XhcBulkTransfer    00000000000072c8     XhciDxe:Xhci.obj
+ 0004:000000a8       $unwind$XhcSyncInterruptTransfer 00000000000072c8     XhciDxe:Xhci.obj
+ 0004:000000c0       $unwind$XhcAsyncInterruptTransfer 00000000000072e0     XhciDxe:Xhci.obj
+ 0004:000000c0       $unwind$XhcExecTransfer    00000000000072e0     XhciDxe:XhciSched.obj
+ 0004:000000dc       $unwind$XhcDriverBindingSupported 00000000000072fc     XhciDxe:Xhci.obj
+ 0004:000000ec       $unwind$XhcCreateUsbHc     000000000000730c     XhciDxe:Xhci.obj
+ 0004:00000100       $unwind$UsbHcFreeMemBlock  0000000000007320     XhciDxe:UsbHcMem.obj
+ 0004:00000100       $unwind$XhcExitBootService 0000000000007320     XhciDxe:Xhci.obj
+ 0004:00000100       $unwind$XhcUpdateAsyncRequest 0000000000007320     XhciDxe:XhciSched.obj
+ 0004:00000100       $unwind$InternalAllocateCopyPool 0000000000007320     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0004:0000010c       $unwind$XhcDriverBindingStart 000000000000732c     XhciDxe:Xhci.obj
+ 0004:0000011c       $unwind$XhcDriverBindingStop 000000000000733c     XhciDxe:Xhci.obj
+ 0004:00000134       $unwind$XhciComponentNameGetDriverName 0000000000007354     XhciDxe:ComponentName.obj
+ 0004:00000134       $unwind$XhcReadCapReg      0000000000007354     XhciDxe:XhciReg.obj
+ 0004:00000134       $unwind$XhcReadExtCapReg   0000000000007354     XhciDxe:XhciReg.obj
+ 0004:00000134       $unwind$XhcReadOpReg       0000000000007354     XhciDxe:XhciReg.obj
+ 0004:00000134       $unwind$XhcReadRuntimeReg  0000000000007354     XhciDxe:XhciReg.obj
+ 0004:00000134       $unwind$XhcRingDoorBell    0000000000007354     XhciDxe:XhciSched.obj
+ 0004:0000013c       $unwind$XhcWriteOpReg      000000000000735c     XhciDxe:XhciReg.obj
+ 0004:0000013c       $unwind$XhcWriteRuntimeReg 000000000000735c     XhciDxe:XhciReg.obj
+ 0004:00000144       $unwind$XhcWaitOpRegBit    0000000000007364     XhciDxe:XhciReg.obj
+ 0004:0000015c       $unwind$XhcClearBiosOwnership 000000000000737c     XhciDxe:XhciReg.obj
+ 0004:0000015c       $unwind$XhcRunHC           000000000000737c     XhciDxe:XhciReg.obj
+ 0004:00000164       $unwind$XhcResetHC         0000000000007384     XhciDxe:XhciReg.obj
+ 0004:00000170       $unwind$XhcHaltHC          0000000000007390     XhciDxe:XhciReg.obj
+ 0004:00000170       $unwind$InternalReportStatusCode 0000000000007390     DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0004:0000017c       $unwind$XhcCmdTransfer     000000000000739c     XhciDxe:XhciSched.obj
+ 0004:00000190       $unwind$XhcCreateUrb       00000000000073b0     XhciDxe:XhciSched.obj
+ 0004:00000190       $unwind$XhcDequeueTrbFromEndpoint 00000000000073b0     XhciDxe:XhciSched.obj
+ 0004:00000190       $unwind$XhciDelAllAsyncIntTransfers 00000000000073b0     XhciDxe:XhciSched.obj
+ 0004:00000190       $unwind$AddUnicodeString2  00000000000073b0     UefiLib:UefiLib.obj
+ 0004:000001a8       $unwind$XhcCreateTransferTrb 00000000000073c8     XhciDxe:XhciSched.obj
+ 0004:000001bc       $unwind$XhcInitSched       00000000000073dc     XhciDxe:XhciSched.obj
+ 0004:000001d4       $unwind$XhcRecoverHaltedEndpoint 00000000000073f4     XhciDxe:XhciSched.obj
+ 0004:000001e8       $unwind$IsTransferRingTrb  0000000000007408     XhciDxe:XhciSched.obj
+ 0004:000001f4       $unwind$XhciInsertAsyncIntTransfer 0000000000007414     XhciDxe:XhciSched.obj
+ 0004:0000020c       $unwind$XhcMonitorAsyncRequests 000000000000742c     XhciDxe:XhciSched.obj
+ 0004:00000220       $unwind$XhcPollPortStatusChange 0000000000007440     XhciDxe:XhciSched.obj
+ 0004:0000023c       $unwind$XhcInitializeDeviceSlot 000000000000745c     XhciDxe:XhciSched.obj
+ 0004:0000023c       $unwind$XhcInitializeDeviceSlot64 000000000000745c     XhciDxe:XhciSched.obj
+ 0004:00000258       $unwind$XhcDisableSlotCmd  0000000000007478     XhciDxe:XhciSched.obj
+ 0004:00000258       $unwind$XhcDisableSlotCmd64 0000000000007478     XhciDxe:XhciSched.obj
+ 0004:0000026c       $unwind$XhcInitializeEndpointContext 000000000000748c     XhciDxe:XhciSched.obj
+ 0004:0000026c       $unwind$XhcInitializeEndpointContext64 000000000000748c     XhciDxe:XhciSched.obj
+ 0004:00000284       $unwind$XhcSetConfigCmd    00000000000074a4     XhciDxe:XhciSched.obj
+ 0004:00000284       $unwind$XhcSetConfigCmd64  00000000000074a4     XhciDxe:XhciSched.obj
+ 0004:0000029c       $unwind$XhcStopEndpoint    00000000000074bc     XhciDxe:XhciSched.obj
+ 0004:000002ac       $unwind$XhcEvaluateContext 00000000000074cc     XhciDxe:XhciSched.obj
+ 0004:000002ac       $unwind$XhcEvaluateContext64 00000000000074cc     XhciDxe:XhciSched.obj
+ 0004:000002ac       $unwind$XhcSetTrDequeuePointer 00000000000074cc     XhciDxe:XhciSched.obj
+ 0004:000002c0       $unwind$XhcSetInterface    00000000000074e0     XhciDxe:XhciSched.obj
+ 0004:000002c0       $unwind$XhcSetInterface64  00000000000074e0     XhciDxe:XhciSched.obj
+ 0004:000002d8       $unwind$XhcConfigHubContext 00000000000074f8     XhciDxe:XhciSched.obj
+ 0004:000002d8       $unwind$XhcConfigHubContext64 00000000000074f8     XhciDxe:XhciSched.obj
+ 0004:000002f0       $unwind$XhciComponentNameGetControllerName 0000000000007510     XhciDxe:ComponentName.obj
+ 0004:00000304       $unwind$UsbHcAllocMemBlock 0000000000007524     XhciDxe:UsbHcMem.obj
+ 0004:00000314       $unwind$UsbHcAllocMemFromBlock 0000000000007534     XhciDxe:UsbHcMem.obj
+ 0004:00000324       $unwind$UsbHcAllocateMem   0000000000007544     XhciDxe:UsbHcMem.obj
+ 0004:00000340       $unwind$UsbHcFreeMem       0000000000007560     XhciDxe:UsbHcMem.obj
+ 0004:00000340       $unwind$AllocateZeroPool   0000000000007560     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0004:00000348       $unwind$UsbHcAllocateAlignedPages 0000000000007568     XhciDxe:UsbHcMem.obj
+ 0004:00000360       $unwind$InternalAllocatePool 0000000000007580     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0004:00000368       $unwind$ReportStatusCodeWithDevicePath 0000000000007588     DxeReportStatusCodeLib:ReportStatusCodeLib.obj

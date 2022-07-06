@@ -1,0 +1,18 @@
+d:\edk2\edk2\Build\OvmfX64\RELEASE_VS2019\X64\OvmfPkg\ResetVector\ResetVector\OUTPUT\ResetVector.bin: d:\edk2\edk2\UefiCpuPkg\ResetVector\Vtf0\CommonMacros.inc \
+d:\edk2\edk2\UefiCpuPkg\ResetVector\Vtf0\PostCodes.inc \
+d:\edk2\edk2\UefiCpuPkg\ResetVector\Vtf0\Port80Debug.asm \
+d:\edk2\edk2\UefiCpuPkg\ResetVector\Vtf0\SerialDebug.asm \
+d:\edk2\edk2\UefiCpuPkg\ResetVector\Vtf0\DebugDisabled.asm \
+d:\edk2\edk2\UefiCpuPkg\ResetVector\Vtf0\Ia32\SearchForBfvBase.asm \
+d:\edk2\edk2\UefiCpuPkg\ResetVector\Vtf0\Ia32\SearchForSecEntry.asm \
+d:\edk2\edk2\OvmfPkg\ResetVector\X64\IntelTdxMetadata.asm \
+d:\edk2\edk2\OvmfPkg\ResetVector\Ia32\Flat32ToFlat64.asm \
+d:\edk2\edk2\OvmfPkg\ResetVector\Ia32\AmdSev.asm \
+d:\edk2\edk2\OvmfPkg\ResetVector\Ia32\PageTables64.asm \
+d:\edk2\edk2\OvmfPkg\ResetVector\Ia32\IntelTdx.asm \
+d:\edk2\edk2\OvmfPkg\ResetVector\X64\OvmfSevMetadata.asm \
+d:\edk2\edk2\UefiCpuPkg\ResetVector\Vtf0\Ia16\Real16ToFlat32.asm \
+d:\edk2\edk2\UefiCpuPkg\ResetVector\Vtf0\Ia16\Init16.asm \
+d:\edk2\edk2\OvmfPkg\ResetVector\Main.asm \
+d:\edk2\edk2\OvmfPkg\ResetVector\Ia16\ResetVectorVtf0.asm
+# Updated 

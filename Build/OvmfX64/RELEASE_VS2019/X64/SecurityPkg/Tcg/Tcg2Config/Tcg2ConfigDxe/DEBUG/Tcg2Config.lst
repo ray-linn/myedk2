@@ -1,0 +1,1051 @@
+//
+//  VFR compiler version  2.01 (UEFI 2.4) Developer Build based on Revision: Unknown
+//
+#line 1 "d:\\edk2\\edk2\\SecurityPkg\\Tcg\\Tcg2Config\\Tcg2Config.vfr"
+#line 1 "d:\\edk2\\edk2\\Build\\OvmfX64\\RELEASE_VS2019\\X64\\SecurityPkg\\Tcg\\Tcg2Config\\Tcg2ConfigDxe\\DEBUG\\Tcg2ConfigDxeStrDefs.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+extern unsigned char Tcg2ConfigDxeStrings[];
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 149 "d:\\edk2\\edk2\\Build\\OvmfX64\\RELEASE_VS2019\\X64\\SecurityPkg\\Tcg\\Tcg2Config\\Tcg2ConfigDxe\\DEBUG\\Tcg2ConfigDxeStrDefs.h"
+
+#line 151 "d:\\edk2\\edk2\\Build\\OvmfX64\\RELEASE_VS2019\\X64\\SecurityPkg\\Tcg\\Tcg2Config\\Tcg2ConfigDxe\\DEBUG\\Tcg2ConfigDxeStrDefs.h"
+#line 1 "d:\\edk2\\edk2\\SecurityPkg\\Tcg\\Tcg2Config\\Tcg2Config.vfr"
+
+
+
+
+
+
+
+
+#line 1 "d:\\edk2\\edk2\\SecurityPkg\\Tcg\\Tcg2Config\\Tcg2ConfigNvData.h"
+
+
+
+
+
+
+
+
+
+
+
+#line 1 "d:\\edk2\\edk2\\MdePkg\\Include\\Guid/HiiPlatformSetupFormset.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+extern EFI_GUID  gEfiHiiPlatformSetupFormsetGuid;
+extern EFI_GUID  gEfiHiiDriverHealthFormsetGuid;
+extern EFI_GUID  gEfiHiiUserCredentialFormsetGuid;
+extern EFI_GUID  gEfiHiiRestStyleFormsetGuid;
+
+#line 34 "d:\\edk2\\edk2\\MdePkg\\Include\\Guid/HiiPlatformSetupFormset.h"
+#line 13 "d:\\edk2\\edk2\\SecurityPkg\\Tcg\\Tcg2Config\\Tcg2ConfigNvData.h"
+#line 1 "d:\\edk2\\edk2\\SecurityPkg\\Include\\Guid/Tcg2ConfigHii.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+extern EFI_GUID  {0x6339d487, 0x26ba, 0x424b, { 0x9a, 0x5d, 0x68, 0x7e, 0x25, 0xd7, 0x40, 0xbc }};
+
+#line 20 "d:\\edk2\\edk2\\SecurityPkg\\Include\\Guid/Tcg2ConfigHii.h"
+#line 14 "d:\\edk2\\edk2\\SecurityPkg\\Tcg\\Tcg2Config\\Tcg2ConfigNvData.h"
+#line 1 "d:\\edk2\\edk2\\MdePkg\\Include\\IndustryStandard/TcgPhysicalPresence.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 124 "d:\\edk2\\edk2\\MdePkg\\Include\\IndustryStandard/TcgPhysicalPresence.h"
+#line 15 "d:\\edk2\\edk2\\SecurityPkg\\Tcg\\Tcg2Config\\Tcg2ConfigNvData.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+typedef struct {
+  UINT8    TpmDevice;
+} TCG2_CONFIGURATION;
+
+typedef struct {
+  UINT64    PpiVersion;
+  UINT8     Tpm2AcpiTableRev;
+} TCG2_VERSION;
+
+typedef struct {
+  BOOLEAN    Sha1Supported;
+  BOOLEAN    Sha256Supported;
+  BOOLEAN    Sha384Supported;
+  BOOLEAN    Sha512Supported;
+  BOOLEAN    Sm3Supported;
+  UINT8      TpmDeviceInterfaceAttempt;
+  BOOLEAN    TpmDeviceInterfacePtpFifoSupported;
+  BOOLEAN    TpmDeviceInterfacePtpCrbSupported;
+  BOOLEAN    ChangeEPSSupported;
+} TCG2_CONFIGURATION_INFO;
+
+
+
+
+
+typedef struct {
+  UINT8    TpmDeviceDetected;
+} TCG2_DEVICE_DETECTION;
+
+
+
+
+
+
+#line 90 "d:\\edk2\\edk2\\SecurityPkg\\Tcg\\Tcg2Config\\Tcg2ConfigNvData.h"
+#line 10 "d:\\edk2\\edk2\\SecurityPkg\\Tcg\\Tcg2Config\\Tcg2Config.vfr"
+
+formset
+>00000000: 0E A7 87 D4 39 63 BA 26 4B 42 9A 5D 68 7E 25 D7 40 BC 02 00 03 00 01 71 99 03 93 45 85 04 4B B4 5E 32 EB 83 26 04 0E 
+>00000027: 5C 06 00 00 00 00 
+>0000002D: 5C 06 00 00 01 00 
+  guid      = { 0x6339d487, 0x26ba, 0x424b, { 0x9a, 0x5d, 0x68, 0x7e, 0x25, 0xd7, 0x40, 0xbc } },
+  title     = STRING_TOKEN(0x0002),
+  help      = STRING_TOKEN(0x0003),
+  classguid = { 0x93039971, 0x8545, 0x4b04, { 0xb4, 0x5e, 0x32, 0xeb, 0x83, 0x26, 0x4, 0xe } },
+
+  efivarstore TCG2_CONFIGURATION_INFO,
+>00000033: 26 32 02 00 87 D4 39 63 BA 26 4B 42 9A 5D 68 7E 25 D7 40 BC 02 00 00 00 09 00 54 43 47 32 5F 43 4F 4E 46 49 47 55 52 41 54 49 4F 4E 5F 49 4E 46 4F 00 
+    varid = 0x0002,
+    attribute = 0x02,  
+    name  = TCG2_CONFIGURATION_INFO,
+    guid  = { 0x6339d487, 0x26ba, 0x424b, { 0x9a, 0x5d, 0x68, 0x7e, 0x25, 0xd7, 0x40, 0xbc } };
+
+  efivarstore TCG2_CONFIGURATION,
+>00000065: 26 2D 01 00 87 D4 39 63 BA 26 4B 42 9A 5D 68 7E 25 D7 40 BC 03 00 00 00 01 00 54 43 47 32 5F 43 4F 4E 46 49 47 55 52 41 54 49 4F 4E 00 
+    varid = 0x0001,
+    attribute = 0x03,  
+    name  = TCG2_CONFIGURATION,
+    guid  = { 0x6339d487, 0x26ba, 0x424b, { 0x9a, 0x5d, 0x68, 0x7e, 0x25, 0xd7, 0x40, 0xbc } };
+
+  efivarstore TCG2_VERSION,
+>00000092: 26 27 03 00 87 D4 39 63 BA 26 4B 42 9A 5D 68 7E 25 D7 40 BC 03 00 00 00 10 00 54 43 47 32 5F 56 45 52 53 49 4F 4E 00 
+    varid = 0x0003,
+    attribute = 0x03,  
+    name  = TCG2_VERSION,
+    guid  = { 0x6339d487, 0x26ba, 0x424b, { 0x9a, 0x5d, 0x68, 0x7e, 0x25, 0xd7, 0x40, 0xbc } };
+
+  form formid = 0x0001,
+>000000B9: 01 86 01 00 02 00 
+    title = STRING_TOKEN(0x0002);
+
+    subtitle text = STRING_TOKEN(0x0054);
+>000000BF: 02 87 54 00 00 00 00 
+>000000C6: 29 02 
+
+    text
+>000000C8: 03 08 04 00 05 00 06 00 
+      help   = STRING_TOKEN(0x0005),
+      text   = STRING_TOKEN(0x0004),
+        text   = STRING_TOKEN(0x0006);
+
+    oneof varid  = TCG2_CONFIGURATION.TpmDevice,
+>000000D0: 05 91 07 00 08 00 00 20 01 00 00 00 14 10 01 02 00 
+          questionid = 0x2000,
+          prompt = STRING_TOKEN(0x0007),
+          help   = STRING_TOKEN(0x0008),
+          flags  = INTERACTIVE,
+            option text = STRING_TOKEN(0x002E),          value = 1,          flags = DEFAULT | MANUFACTURING | RESET_REQUIRED;
+>000000E1: 09 07 2E 00 30 00 01 
+            option text = STRING_TOKEN(0x002F),     value = 2,     flags = RESET_REQUIRED;
+>000000E8: 09 07 2F 00 00 00 02 
+    endoneof;
+>000000EF: 29 02 
+
+    suppressif ideqvallist TCG2_CONFIGURATION.TpmDevice == 0 1;
+>000000F1: 0A 82 
+>000000F3: 14 0A 00 20 02 00 00 00 01 00 
+
+    subtitle text = STRING_TOKEN(0x0054);
+>000000FD: 02 87 54 00 00 00 00 
+>00000104: 29 02 
+
+    text
+>00000106: 03 08 0E 00 0F 00 10 00 
+      help   = STRING_TOKEN(0x000F),
+      text   = STRING_TOKEN(0x000E),
+        text   = STRING_TOKEN(0x0010);
+
+    text
+>0000010E: 03 08 11 00 12 00 13 00 
+      help   = STRING_TOKEN(0x0012),
+      text   = STRING_TOKEN(0x0011),
+        text   = STRING_TOKEN(0x0013);
+
+    oneof varid  = TCG2_VERSION.Tpm2AcpiTableRev,
+>00000116: 05 91 14 00 15 00 0A 20 03 00 08 00 14 10 03 04 00 
+          questionid = 0x200A,
+          prompt = STRING_TOKEN(0x0014),
+          help   = STRING_TOKEN(0x0015),
+          flags  = INTERACTIVE,
+            option text = STRING_TOKEN(0x0030),     value = 3,     flags = RESET_REQUIRED;
+>00000127: 09 07 30 00 00 00 03 
+            option text = STRING_TOKEN(0x0031),     value = 4,     flags = DEFAULT | MANUFACTURING | RESET_REQUIRED;
+>0000012E: 09 07 31 00 30 00 04 
+    endoneof;
+>00000135: 29 02 
+
+    subtitle text = STRING_TOKEN(0x0054);
+>00000137: 02 87 54 00 00 00 00 
+>0000013E: 29 02 
+
+    text
+>00000140: 03 08 16 00 17 00 18 00 
+      help   = STRING_TOKEN(0x0017),
+      text   = STRING_TOKEN(0x0016),
+        text   = STRING_TOKEN(0x0018);
+
+    text
+>00000148: 03 08 19 00 1A 00 1B 00 
+      help   = STRING_TOKEN(0x001A),
+      text   = STRING_TOKEN(0x0019),
+        text   = STRING_TOKEN(0x001B);
+
+    suppressif ideqval TCG2_CONFIGURATION_INFO.TpmDeviceInterfacePtpFifoSupported == 0
+>00000150: 0A 82 
+>00000152: 12 86 08 00 00 00 
+>00000160: 29 02 
+            OR ideqval TCG2_CONFIGURATION_INFO.TpmDeviceInterfacePtpCrbSupported == 0;
+>00000158: 12 06 07 00 00 00 
+>0000015E: 16 02 
+    oneof varid  = TCG2_CONFIGURATION_INFO.TpmDeviceInterfaceAttempt,
+>00000162: 05 91 1C 00 1D 00 08 20 02 00 05 00 14 10 00 02 00 
+          questionid = 0x2008,
+          prompt = STRING_TOKEN(0x001C),
+          help   = STRING_TOKEN(0x001D),
+          flags  = INTERACTIVE,
+            option text = STRING_TOKEN(0x001E),          value = 0,          flags = RESET_REQUIRED;
+>00000173: 09 07 1E 00 00 00 00 
+            option text = STRING_TOKEN(0x001F),     value = 1,     flags = RESET_REQUIRED;
+>0000017A: 09 07 1F 00 00 00 01 
+            option text = STRING_TOKEN(0x0020),      value = 2,      flags = DEFAULT | MANUFACTURING | RESET_REQUIRED;
+>00000181: 09 07 20 00 30 00 02 
+    endoneof;
+>00000188: 29 02 
+    endif;
+>0000018A: 29 02 
+
+    endif;
+>0000018C: 29 02 
+
+    subtitle text = STRING_TOKEN(0x0054);
+>0000018E: 02 87 54 00 00 00 00 
+>00000195: 29 02 
+
+    suppressif ideqvallist TCG2_CONFIGURATION.TpmDevice == 0 1;
+>00000197: 0A 82 
+>00000199: 14 0A 00 20 02 00 00 00 01 00 
+    text
+>000001A3: 03 08 34 00 35 00 36 00 
+      help   = STRING_TOKEN(0x0035),
+      text   = STRING_TOKEN(0x0034),
+        text   = STRING_TOKEN(0x0036);
+    text
+>000001AB: 03 08 37 00 38 00 39 00 
+      help   = STRING_TOKEN(0x0038),
+      text   = STRING_TOKEN(0x0037),
+        text   = STRING_TOKEN(0x0039);
+    text
+>000001B3: 03 08 3A 00 3B 00 3C 00 
+      help   = STRING_TOKEN(0x003B),
+      text   = STRING_TOKEN(0x003A),
+        text   = STRING_TOKEN(0x003C);
+
+    subtitle text = STRING_TOKEN(0x0054);
+>000001BB: 02 87 54 00 00 00 00 
+>000001C2: 29 02 
+    subtitle text = STRING_TOKEN(0x0021);
+>000001C4: 02 87 21 00 00 00 00 
+>000001CB: 29 02 
+
+    text
+>000001CD: 03 08 09 00 0A 00 0B 00 
+      help   = STRING_TOKEN(0x000A),
+      text   = STRING_TOKEN(0x0009),
+        text   = STRING_TOKEN(0x000B);
+
+    oneof varid  = TCG2_VERSION.PpiVersion,
+>000001D5: 05 A6 0C 00 0D 00 09 20 03 00 00 00 14 13 31 2E 32 00 00 00 00 00 31 2E 33 00 00 00 00 00 00 00 00 00 00 00 00 00 
+          questionid = 0x2009,
+          prompt = STRING_TOKEN(0x000C),
+          help   = STRING_TOKEN(0x000D),
+          flags  = INTERACTIVE,
+            option text = STRING_TOKEN(0x0032), value = 0x322E31, flags = RESET_REQUIRED;
+>000001FB: 09 0E 32 00 03 03 31 2E 32 00 00 00 00 00 
+            option text = STRING_TOKEN(0x0033), value = 0x332E31, flags = DEFAULT | MANUFACTURING | RESET_REQUIRED;
+>00000209: 09 0E 33 00 33 03 31 2E 33 00 00 00 00 00 
+    endoneof;
+>00000217: 29 02 
+
+    oneof name = Tpm2Operation,
+>00000219: 05 91 22 00 23 00 01 20 00 00 FF FF 14 10 00 22 00 
+          questionid = 0x2001,
+          prompt = STRING_TOKEN(0x0022),
+          help   = STRING_TOKEN(0x0023),
+          flags  = INTERACTIVE | NUMERIC_SIZE_1,
+            option text = STRING_TOKEN(0x0024), value = 0, flags = DEFAULT | MANUFACTURING | RESET_REQUIRED;
+>0000022A: 09 07 24 00 30 00 00 
+            option text = STRING_TOKEN(0x0025), value = 1, flags = RESET_REQUIRED;
+>00000231: 09 07 25 00 00 00 01 
+            option text = STRING_TOKEN(0x0026), value = 2, flags = RESET_REQUIRED;
+>00000238: 09 07 26 00 00 00 02 
+            option text = STRING_TOKEN(0x0027), value = 5, flags = RESET_REQUIRED;
+>0000023F: 09 07 27 00 00 00 05 
+            option text = STRING_TOKEN(0x0028), value = 23, flags = RESET_REQUIRED;
+>00000246: 09 07 28 00 00 00 17 
+            suppressif ideqval TCG2_CONFIGURATION_INFO.ChangeEPSSupported == 0;
+>0000024D: 0A 82 
+>0000024F: 12 06 06 00 00 00 
+            option text = STRING_TOKEN(0x0029), value = 24, flags = RESET_REQUIRED;
+>00000255: 09 07 29 00 00 00 18 
+            endif
+>0000025C: 29 02 
+            option text = STRING_TOKEN(0x002A), value = 33, flags = RESET_REQUIRED;
+>0000025E: 09 07 2A 00 00 00 21 
+            option text = STRING_TOKEN(0x002B), value = 34, flags = RESET_REQUIRED;
+>00000265: 09 07 2B 00 00 00 22 
+    endoneof;
+>0000026C: 29 02 
+
+    suppressif NOT questionref(Tpm2Operation) == 23;
+>0000026E: 0A 82 
+>00000270: 40 84 01 20 
+>00000274: 17 02 
+>00000276: 45 0A 17 00 00 00 00 00 00 00 
+>00000280: 2F 02 
+>00000282: 29 02 
+    numeric name = Tpm2OperationParameter,
+>00000284: 07 9A 2C 00 2D 00 02 20 00 00 FF FF 04 22 00 00 00 00 FF FF FF FF 00 00 00 00 
+            questionid = 0x2002,
+            prompt  = STRING_TOKEN(0x002C),
+            help    = STRING_TOKEN(0x002D),
+            flags   = DISPLAY_UINT_HEX | INTERACTIVE | NUMERIC_SIZE_4,
+            minimum = 0,
+            maximum = 0xFFFFFFFF,
+            step    = 0,
+            default = 0,
+>0000029E: 5B 09 00 00 02 00 00 00 00 
+    endnumeric;
+>000002A7: 29 02 
+    endif;
+>000002A9: 29 02 
+
+    subtitle text = STRING_TOKEN(0x0054);
+>000002AB: 02 87 54 00 00 00 00 
+>000002B2: 29 02 
+    subtitle text = STRING_TOKEN(0x003D);
+>000002B4: 02 87 3D 00 00 00 00 
+>000002BB: 29 02 
+
+    text
+>000002BD: 03 08 3E 00 3F 00 40 00 
+      help   = STRING_TOKEN(0x003F),
+      text   = STRING_TOKEN(0x003E),
+        text   = STRING_TOKEN(0x0040);
+
+    text
+>000002C5: 03 08 41 00 42 00 43 00 
+      help   = STRING_TOKEN(0x0042),
+      text   = STRING_TOKEN(0x0041),
+        text   = STRING_TOKEN(0x0043);
+
+    text
+>000002CD: 03 08 44 00 45 00 46 00 
+      help   = STRING_TOKEN(0x0045),
+      text   = STRING_TOKEN(0x0044),
+        text   = STRING_TOKEN(0x0046);
+
+    text
+>000002D5: 03 08 47 00 48 00 49 00 
+      help   = STRING_TOKEN(0x0048),
+      text   = STRING_TOKEN(0x0047),
+        text   = STRING_TOKEN(0x0049);
+
+    subtitle text = STRING_TOKEN(0x0054);
+>000002DD: 02 87 54 00 00 00 00 
+>000002E4: 29 02 
+
+  suppressif ideqval TCG2_CONFIGURATION_INFO.Sha1Supported == 0;
+>000002E6: 0A 82 
+>000002E8: 12 06 05 00 00 00 
+    checkbox name = TCG2ActivatePCRBank0,
+>000002EE: 06 8E 4A 00 4B 00 03 20 00 00 FF FF 14 00 
+            questionid = 0x2003,
+            prompt     = STRING_TOKEN(0x004A),
+            help       = STRING_TOKEN(0x004B),
+            flags      = INTERACTIVE | RESET_REQUIRED,
+            default    = 1,
+>000002FC: 5B 06 00 00 04 01 
+    endcheckbox;
+>00000302: 29 02 
+  endif;
+>00000304: 29 02 
+
+  suppressif ideqval TCG2_CONFIGURATION_INFO.Sha256Supported == 0;
+>00000306: 0A 82 
+>00000308: 12 06 04 00 00 00 
+    checkbox name = TCG2ActivatePCRBank1,
+>0000030E: 06 8E 4C 00 4D 00 04 20 00 00 FF FF 14 00 
+            questionid = 0x2004,
+            prompt     = STRING_TOKEN(0x004C),
+            help       = STRING_TOKEN(0x004D),
+            flags      = INTERACTIVE | RESET_REQUIRED,
+            default    = 0,
+>0000031C: 5B 06 00 00 04 00 
+    endcheckbox;
+>00000322: 29 02 
+  endif;
+>00000324: 29 02 
+
+  suppressif ideqval TCG2_CONFIGURATION_INFO.Sha384Supported == 0;
+>00000326: 0A 82 
+>00000328: 12 06 03 00 00 00 
+    checkbox name = TCG2ActivatePCRBank2,
+>0000032E: 06 8E 4E 00 4F 00 05 20 00 00 FF FF 14 00 
+            questionid = 0x2005,
+            prompt     = STRING_TOKEN(0x004E),
+            help       = STRING_TOKEN(0x004F),
+            flags      = INTERACTIVE | RESET_REQUIRED,
+            default    = 0,
+>0000033C: 5B 06 00 00 04 00 
+    endcheckbox;
+>00000342: 29 02 
+  endif;
+>00000344: 29 02 
+
+  suppressif ideqval TCG2_CONFIGURATION_INFO.Sha512Supported == 0;
+>00000346: 0A 82 
+>00000348: 12 06 02 00 00 00 
+    checkbox name = TCG2ActivatePCRBank3,
+>0000034E: 06 8E 50 00 51 00 06 20 00 00 FF FF 14 00 
+            questionid = 0x2006,
+            prompt     = STRING_TOKEN(0x0050),
+            help       = STRING_TOKEN(0x0051),
+            flags      = INTERACTIVE | RESET_REQUIRED,
+            default    = 0,
+>0000035C: 5B 06 00 00 04 00 
+    endcheckbox;
+>00000362: 29 02 
+  endif;
+>00000364: 29 02 
+
+  suppressif ideqval TCG2_CONFIGURATION_INFO.Sm3Supported == 0;
+>00000366: 0A 82 
+>00000368: 12 06 01 00 00 00 
+    checkbox name = TCG2ActivatePCRBank4,
+>0000036E: 06 8E 52 00 53 00 07 20 00 00 FF FF 14 00 
+            questionid = 0x2007,
+            prompt     = STRING_TOKEN(0x0052),
+            help       = STRING_TOKEN(0x0053),
+            flags      = INTERACTIVE | RESET_REQUIRED,
+            default    = 0,
+>0000037C: 5B 06 00 00 04 00 
+    endcheckbox;
+>00000382: 29 02 
+  endif;
+>00000384: 29 02 
+
+    endif;
+>00000386: 29 02 
+
+  endform;
+>00000426: 29 02 
+
+endformset;
+>00000388: 1E 82 
+>0000038A: 46 02 
+>0000038C: 07 91 00 00 00 00 01 00 02 00 04 00 00 10 00 FF 00 
+>0000039D: 29 02 
+>0000039F: 07 91 00 00 00 00 02 00 02 00 03 00 00 10 00 FF 00 
+>000003B0: 29 02 
+>000003B2: 07 91 00 00 00 00 03 00 02 00 02 00 00 10 00 FF 00 
+>000003C3: 29 02 
+>000003C5: 07 91 00 00 00 00 04 00 02 00 01 00 00 10 00 FF 00 
+>000003D6: 29 02 
+>000003D8: 07 91 00 00 00 00 05 00 02 00 00 00 00 10 00 FF 00 
+>000003E9: 29 02 
+>000003EB: 07 91 00 00 00 00 06 00 02 00 08 00 00 10 00 FF 00 
+>000003FC: 29 02 
+>000003FE: 07 91 00 00 00 00 07 00 02 00 07 00 00 10 00 FF 00 
+>0000040F: 29 02 
+>00000411: 07 91 00 00 00 00 08 00 02 00 06 00 00 10 00 FF 00 
+>00000422: 29 02 
+>00000424: 29 02 
+>00000428: 29 02 
+
+//
+// All Opcode Record List 
+//
+>00000000: 0E A7 87 D4 39 63 BA 26 4B 42 9A 5D 68 7E 25 D7 40 BC 02 00 03 00 01 71 99 03 93 45 85 04 4B B4 5E 32 EB 83 26 04 0E 
+>00000027: 5C 06 00 00 00 00 
+>0000002D: 5C 06 00 00 01 00 
+>00000033: 26 32 02 00 87 D4 39 63 BA 26 4B 42 9A 5D 68 7E 25 D7 40 BC 02 00 00 00 09 00 54 43 47 32 5F 43 4F 4E 46 49 47 55 52 41 54 49 4F 4E 5F 49 4E 46 4F 00 
+>00000065: 26 2D 01 00 87 D4 39 63 BA 26 4B 42 9A 5D 68 7E 25 D7 40 BC 03 00 00 00 01 00 54 43 47 32 5F 43 4F 4E 46 49 47 55 52 41 54 49 4F 4E 00 
+>00000092: 26 27 03 00 87 D4 39 63 BA 26 4B 42 9A 5D 68 7E 25 D7 40 BC 03 00 00 00 10 00 54 43 47 32 5F 56 45 52 53 49 4F 4E 00 
+>000000B9: 01 86 01 00 02 00 
+>000000BF: 02 87 54 00 00 00 00 
+>000000C6: 29 02 
+>000000C8: 03 08 04 00 05 00 06 00 
+>000000D0: 05 91 07 00 08 00 00 20 01 00 00 00 14 10 01 02 00 
+>000000E1: 09 07 2E 00 30 00 01 
+>000000E8: 09 07 2F 00 00 00 02 
+>000000EF: 29 02 
+>000000F1: 0A 82 
+>000000F3: 14 0A 00 20 02 00 00 00 01 00 
+>000000FD: 02 87 54 00 00 00 00 
+>00000104: 29 02 
+>00000106: 03 08 0E 00 0F 00 10 00 
+>0000010E: 03 08 11 00 12 00 13 00 
+>00000116: 05 91 14 00 15 00 0A 20 03 00 08 00 14 10 03 04 00 
+>00000127: 09 07 30 00 00 00 03 
+>0000012E: 09 07 31 00 30 00 04 
+>00000135: 29 02 
+>00000137: 02 87 54 00 00 00 00 
+>0000013E: 29 02 
+>00000140: 03 08 16 00 17 00 18 00 
+>00000148: 03 08 19 00 1A 00 1B 00 
+>00000150: 0A 82 
+>00000152: 12 86 08 00 00 00 
+>00000158: 12 06 07 00 00 00 
+>0000015E: 16 02 
+>00000160: 29 02 
+>00000162: 05 91 1C 00 1D 00 08 20 02 00 05 00 14 10 00 02 00 
+>00000173: 09 07 1E 00 00 00 00 
+>0000017A: 09 07 1F 00 00 00 01 
+>00000181: 09 07 20 00 30 00 02 
+>00000188: 29 02 
+>0000018A: 29 02 
+>0000018C: 29 02 
+>0000018E: 02 87 54 00 00 00 00 
+>00000195: 29 02 
+>00000197: 0A 82 
+>00000199: 14 0A 00 20 02 00 00 00 01 00 
+>000001A3: 03 08 34 00 35 00 36 00 
+>000001AB: 03 08 37 00 38 00 39 00 
+>000001B3: 03 08 3A 00 3B 00 3C 00 
+>000001BB: 02 87 54 00 00 00 00 
+>000001C2: 29 02 
+>000001C4: 02 87 21 00 00 00 00 
+>000001CB: 29 02 
+>000001CD: 03 08 09 00 0A 00 0B 00 
+>000001D5: 05 A6 0C 00 0D 00 09 20 03 00 00 00 14 13 31 2E 32 00 00 00 00 00 31 2E 33 00 00 00 00 00 00 00 00 00 00 00 00 00 
+>000001FB: 09 0E 32 00 03 03 31 2E 32 00 00 00 00 00 
+>00000209: 09 0E 33 00 33 03 31 2E 33 00 00 00 00 00 
+>00000217: 29 02 
+>00000219: 05 91 22 00 23 00 01 20 00 00 FF FF 14 10 00 22 00 
+>0000022A: 09 07 24 00 30 00 00 
+>00000231: 09 07 25 00 00 00 01 
+>00000238: 09 07 26 00 00 00 02 
+>0000023F: 09 07 27 00 00 00 05 
+>00000246: 09 07 28 00 00 00 17 
+>0000024D: 0A 82 
+>0000024F: 12 06 06 00 00 00 
+>00000255: 09 07 29 00 00 00 18 
+>0000025C: 29 02 
+>0000025E: 09 07 2A 00 00 00 21 
+>00000265: 09 07 2B 00 00 00 22 
+>0000026C: 29 02 
+>0000026E: 0A 82 
+>00000270: 40 84 01 20 
+>00000274: 17 02 
+>00000276: 45 0A 17 00 00 00 00 00 00 00 
+>00000280: 2F 02 
+>00000282: 29 02 
+>00000284: 07 9A 2C 00 2D 00 02 20 00 00 FF FF 04 22 00 00 00 00 FF FF FF FF 00 00 00 00 
+>0000029E: 5B 09 00 00 02 00 00 00 00 
+>000002A7: 29 02 
+>000002A9: 29 02 
+>000002AB: 02 87 54 00 00 00 00 
+>000002B2: 29 02 
+>000002B4: 02 87 3D 00 00 00 00 
+>000002BB: 29 02 
+>000002BD: 03 08 3E 00 3F 00 40 00 
+>000002C5: 03 08 41 00 42 00 43 00 
+>000002CD: 03 08 44 00 45 00 46 00 
+>000002D5: 03 08 47 00 48 00 49 00 
+>000002DD: 02 87 54 00 00 00 00 
+>000002E4: 29 02 
+>000002E6: 0A 82 
+>000002E8: 12 06 05 00 00 00 
+>000002EE: 06 8E 4A 00 4B 00 03 20 00 00 FF FF 14 00 
+>000002FC: 5B 06 00 00 04 01 
+>00000302: 29 02 
+>00000304: 29 02 
+>00000306: 0A 82 
+>00000308: 12 06 04 00 00 00 
+>0000030E: 06 8E 4C 00 4D 00 04 20 00 00 FF FF 14 00 
+>0000031C: 5B 06 00 00 04 00 
+>00000322: 29 02 
+>00000324: 29 02 
+>00000326: 0A 82 
+>00000328: 12 06 03 00 00 00 
+>0000032E: 06 8E 4E 00 4F 00 05 20 00 00 FF FF 14 00 
+>0000033C: 5B 06 00 00 04 00 
+>00000342: 29 02 
+>00000344: 29 02 
+>00000346: 0A 82 
+>00000348: 12 06 02 00 00 00 
+>0000034E: 06 8E 50 00 51 00 06 20 00 00 FF FF 14 00 
+>0000035C: 5B 06 00 00 04 00 
+>00000362: 29 02 
+>00000364: 29 02 
+>00000366: 0A 82 
+>00000368: 12 06 01 00 00 00 
+>0000036E: 06 8E 52 00 53 00 07 20 00 00 FF FF 14 00 
+>0000037C: 5B 06 00 00 04 00 
+>00000382: 29 02 
+>00000384: 29 02 
+>00000386: 29 02 
+>00000388: 1E 82 
+>0000038A: 46 02 
+>0000038C: 07 91 00 00 00 00 01 00 02 00 04 00 00 10 00 FF 00 
+>0000039D: 29 02 
+>0000039F: 07 91 00 00 00 00 02 00 02 00 03 00 00 10 00 FF 00 
+>000003B0: 29 02 
+>000003B2: 07 91 00 00 00 00 03 00 02 00 02 00 00 10 00 FF 00 
+>000003C3: 29 02 
+>000003C5: 07 91 00 00 00 00 04 00 02 00 01 00 00 10 00 FF 00 
+>000003D6: 29 02 
+>000003D8: 07 91 00 00 00 00 05 00 02 00 00 00 00 10 00 FF 00 
+>000003E9: 29 02 
+>000003EB: 07 91 00 00 00 00 06 00 02 00 08 00 00 10 00 FF 00 
+>000003FC: 29 02 
+>000003FE: 07 91 00 00 00 00 07 00 02 00 07 00 00 10 00 FF 00 
+>0000040F: 29 02 
+>00000411: 07 91 00 00 00 00 08 00 02 00 06 00 00 10 00 FF 00 
+>00000422: 29 02 
+>00000424: 29 02 
+>00000426: 29 02 
+>00000428: 29 02 
+
+Total Size of all record is 0x0000042A
+
+
+***************************************************************
+		mPackAlign = 8
+		struct TCG2_DEVICE_DETECTION : mAlign [1] mTotalSize [0x1]
+
+		struct TCG2_DEVICE_DETECTION {
+			+00000000[00000000] TpmDeviceDetected <UINT8>
+		};
+---------------------------------------------------------------
+		struct TCG2_CONFIGURATION_INFO : mAlign [1] mTotalSize [0x9]
+
+		struct TCG2_CONFIGURATION_INFO {
+			+00000000[00000000] Sha1Supported <BOOLEAN>
+			+00000001[00000001] Sha256Supported <BOOLEAN>
+			+00000002[00000002] Sha384Supported <BOOLEAN>
+			+00000003[00000003] Sha512Supported <BOOLEAN>
+			+00000004[00000004] Sm3Supported <BOOLEAN>
+			+00000005[00000005] TpmDeviceInterfaceAttempt <UINT8>
+			+00000006[00000006] TpmDeviceInterfacePtpFifoSupported <BOOLEAN>
+			+00000007[00000007] TpmDeviceInterfacePtpCrbSupported <BOOLEAN>
+			+00000008[00000008] ChangeEPSSupported <BOOLEAN>
+		};
+---------------------------------------------------------------
+		struct TCG2_VERSION : mAlign [8] mTotalSize [0x10]
+
+		struct TCG2_VERSION {
+			+00000000[00000000] PpiVersion <UINT64>
+			+00000008[00000008] Tpm2AcpiTableRev <UINT8>
+		};
+---------------------------------------------------------------
+		struct TCG2_CONFIGURATION : mAlign [1] mTotalSize [0x1]
+
+		struct TCG2_CONFIGURATION {
+			+00000000[00000000] TpmDevice <UINT8>
+		};
+---------------------------------------------------------------
+		struct EFI_HII_REF : mAlign [16] mTotalSize [0x16]
+
+		struct EFI_HII_REF {
+			+00000000[00000000] QuestionId <UINT16>
+			+00000002[00000002] FormId <UINT16>
+			+00000004[00000004] FormSetGuid <(null)>
+			+00000020[00000014] DevicePath <EFI_STRING_ID>
+		};
+---------------------------------------------------------------
+		struct EFI_HII_TIME : mAlign [1] mTotalSize [0x3]
+
+		struct EFI_HII_TIME {
+			+00000000[00000000] Hours <UINT8>
+			+00000001[00000001] Minutes <UINT8>
+			+00000002[00000002] Seconds <UINT8>
+		};
+---------------------------------------------------------------
+		struct EFI_STRING_ID : mAlign [2] mTotalSize [0x2]
+
+		struct EFI_STRING_ID {
+		};
+---------------------------------------------------------------
+		struct EFI_HII_DATE : mAlign [2] mTotalSize [0x4]
+
+		struct EFI_HII_DATE {
+			+00000000[00000000] Year <UINT16>
+			+00000002[00000002] Month <UINT8>
+			+00000003[00000003] Day <UINT8>
+		};
+---------------------------------------------------------------
+		struct BOOLEAN : mAlign [1] mTotalSize [0x1]
+
+		struct BOOLEAN {
+		};
+---------------------------------------------------------------
+		struct UINT8 : mAlign [1] mTotalSize [0x1]
+
+		struct UINT8 {
+		};
+---------------------------------------------------------------
+		struct UINT16 : mAlign [2] mTotalSize [0x2]
+
+		struct UINT16 {
+		};
+---------------------------------------------------------------
+		struct UINT32 : mAlign [4] mTotalSize [0x4]
+
+		struct UINT32 {
+		};
+---------------------------------------------------------------
+		struct UINT64 : mAlign [8] mTotalSize [0x8]
+
+		struct UINT64 {
+		};
+---------------------------------------------------------------
+***************************************************************

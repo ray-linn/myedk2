@@ -1,0 +1,74 @@
+ EnglishDxe
+
+ Timestamp is 61ee700a (Mon Jan 24 17:23:22 2022)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000441H .text$mn                CODE
+ 0002:00000000 00000090H .data                   DATA
+ 0002:00000090 00000050H .rdata                  DATA
+ 0002:000000e0 00000320H .bss                    DATA
+ 0002:00000400 00000020H .rdata$voltmd           DATA
+ 0002:00000420 00000098H .rdata$zzzdbg           DATA
+ 0003:00000000 00000030H .pdata                  DATA
+ 0004:00000000 00000030H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __arm64x_extra_rfe_table_size 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map          0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map_count    0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_native_entrypoint 0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_table      0000000000000000     <absolute>
+ 0000:00000000       __enclave_config           0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata_count 0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_count      0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points_count 0000000000000000     <absolute>
+ 0000:00000000       __guard_flags              0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_table         0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table   0000000000000000     <absolute>
+ 0000:00000000       __guard_check_icall_a64n_fptr 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata 0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_count         0000000000000000     <absolute>
+ 0000:00000000       __AbsoluteZero             0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_table          0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_table      0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat_copy 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat     0000000000000000     <absolute>
+ 0000:00000000       __dynamic_value_reloc_table 0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_count      0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_count          0000000000000000     <absolute>
+ 0000:00000000       __ImageBase                0000000000000000     <linker-defined>
+ 0001:00000000       _ModuleEntryPoint          0000000000000280 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:00000020       ProcessModuleEntryPointList 00000000000002a0 f   EnglishDxe:AutoGen.obj
+ 0001:0000010c       EngStriColl                000000000000038c f   EnglishDxe:UnicodeCollationEng.obj
+ 0001:00000184       EngStrLwr                  0000000000000404 f   EnglishDxe:UnicodeCollationEng.obj
+ 0001:000001b0       EngStrUpr                  0000000000000430 f   EnglishDxe:UnicodeCollationEng.obj
+ 0001:000001dc       EngMetaiMatch              000000000000045c f   EnglishDxe:UnicodeCollationEng.obj
+ 0001:000003a8       EngFatToStr                0000000000000628 f   EnglishDxe:UnicodeCollationEng.obj
+ 0001:000003d0       EngStrToFat                0000000000000650 f   EnglishDxe:UnicodeCollationEng.obj
+ 0002:00000000       gEfiUnicodeCollation2ProtocolGuid 00000000000006e0     EnglishDxe:AutoGen.obj
+ 0002:00000010       gEfiUnicodeCollationProtocolGuid 00000000000006f0     EnglishDxe:AutoGen.obj
+ 0002:00000020       UnicodeEng                 0000000000000700     EnglishDxe:UnicodeCollationEng.obj
+ 0002:00000058       Unicode2Eng                0000000000000738     EnglishDxe:UnicodeCollationEng.obj
+ 0002:00000090       ??_C@_03LKLGDMJI@eng@      0000000000000770     EnglishDxe:UnicodeCollationEng.obj
+ 0002:00000094       ??_C@_02LFNMGJAP@en@       0000000000000774     EnglishDxe:UnicodeCollationEng.obj
+ 0002:000000a0       mOtherChars                0000000000000780     EnglishDxe:UnicodeCollationEng.obj
+ 0002:000000e0       mHandle                    00000000000007c0     EnglishDxe:UnicodeCollationEng.obj
+ 0002:000000e8       gST                        00000000000007c8     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000000f0       gBS                        00000000000007d0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000100       mEngLowerMap               00000000000007e0     <common>
+ 0002:00000200       mEngInfoMap                00000000000008e0     <common>
+ 0002:00000300       mEngUpperMap               00000000000009e0     <common>
+ 0002:00000400       __volatile_metadata        0000000000000ae0     <linker-defined>
+
+ entry point at        0001:00000000
+
+ Static symbols
+
+ 0004:00000000       $unwind$_ModuleEntryPoint  0000000000000be0     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0004:00000008       $unwind$ProcessModuleEntryPointList 0000000000000be8     EnglishDxe:AutoGen.obj
+ 0004:00000010       $unwind$EngMetaiMatch      0000000000000bf0     EnglishDxe:UnicodeCollationEng.obj
+ 0004:00000028       $unwind$EngStrToFat        0000000000000c08     EnglishDxe:UnicodeCollationEng.obj

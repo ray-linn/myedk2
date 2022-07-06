@@ -1,0 +1,143 @@
+ EnrollDefaultKeys
+
+ Timestamp is 61ee7039 (Mon Jan 24 17:24:09 2022)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000060H .text                   CODE
+ 0001:00000060 00001bf0H .text$mn                CODE
+ 0002:00000000 000000e0H .data                   DATA
+ 0002:000000e0 00001980H .rdata                  DATA
+ 0002:00001a60 00000020H .bss                    DATA
+ 0002:00001a80 00000020H .rdata$voltmd           DATA
+ 0002:00001aa0 000000a8H .rdata$zzzdbg           DATA
+ 0003:00000000 000000a8H .pdata                  DATA
+ 0004:00000000 000000e4H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __x64_code_ranges_to_entry_points_count 0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_table          0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map_count    0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_table      0000000000000000     <absolute>
+ 0000:00000000       __arm64x_native_entrypoint 0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_table      0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points 0000000000000000     <absolute>
+ 0000:00000000       __enclave_config           0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata_count 0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_count          0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_count      0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_count         0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_count      0000000000000000     <absolute>
+ 0000:00000000       __guard_flags              0000000000000000     <absolute>
+ 0000:00000000       __dynamic_value_reloc_table 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat     0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat_copy 0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_table         0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table   0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map          0000000000000000     <absolute>
+ 0000:00000000       __AbsoluteZero             0000000000000000     <absolute>
+ 0000:00000000       __guard_check_icall_a64n_fptr 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table_size 0000000000000000     <absolute>
+ 0000:00000000       __ImageBase                0000000000000000     <linker-defined>
+ 0001:00000000       InternalMemCopyMem         0000000000000260     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000040       InternalMemZeroMem         00000000000002a0     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00000060       _ModuleEntryPoint          00000000000002c0 f   UefiApplicationEntryPoint:ApplicationEntryPoint.obj
+ 0001:000000b8       ProcessModuleEntryPointList 0000000000000318 f   EnrollDefaultKeys:AutoGen.obj
+ 0001:000007d8       ShellAppMain               0000000000000a38 f   EnrollDefaultKeys:EnrollDefaultKeys.obj
+ 0001:00000b50       Base64Decode               0000000000000db0 f   BaseLib:String.obj
+ 0001:00000d10       StrnLenS                   0000000000000f70 f   BaseLib:SafeString.obj
+ 0001:00000d3c       AsciiSPrint                0000000000000f9c f   BasePrintLib:PrintLib.obj
+ 0001:00000d68       BasePrintLibFillBuffer     0000000000000fc8 f   BasePrintLib:PrintLibInternal.obj
+ 0001:00000d9c       BasePrintLibSPrintMarker   0000000000000ffc f   BasePrintLib:PrintLibInternal.obj
+ 0001:00001b38       BasePrintLibSPrint         0000000000001d98 f   BasePrintLib:PrintLibInternal.obj
+ 0001:00001b5c       InternalAllocatePool       0000000000001dbc f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00001b8c       AsciiInternalPrint         0000000000001dec f   UefiLib:UefiLibPrint.obj
+ 0001:00001c20       AsciiPrint                 0000000000001e80 f   UefiLib:UefiLibPrint.obj
+ 0002:00000000       gEfiGlobalVariableGuid     0000000000001ec0     EnrollDefaultKeys:AutoGen.obj
+ 0002:00000010       gEfiSecureBootEnableDisableGuid 0000000000001ed0     EnrollDefaultKeys:AutoGen.obj
+ 0002:00000020       gEfiImageSecurityDatabaseGuid 0000000000001ee0     EnrollDefaultKeys:AutoGen.obj
+ 0002:00000030       gEfiCertSha256Guid         0000000000001ef0     EnrollDefaultKeys:AutoGen.obj
+ 0002:00000040       gEfiCertPkcs7Guid          0000000000001f00     EnrollDefaultKeys:AutoGen.obj
+ 0002:00000050       gEfiCustomModeEnableGuid   0000000000001f10     EnrollDefaultKeys:AutoGen.obj
+ 0002:00000060       gEfiSmbiosProtocolGuid     0000000000001f20     EnrollDefaultKeys:AutoGen.obj
+ 0002:00000070       gMicrosoftVendorGuid       0000000000001f30     EnrollDefaultKeys:AutoGen.obj
+ 0002:00000080       gEfiCertX509Guid           0000000000001f40     EnrollDefaultKeys:AutoGen.obj
+ 0002:00000090       gEfiDevicePathUtilitiesProtocolGuid 0000000000001f50     EnrollDefaultKeys:AutoGen.obj
+ 0002:000000a0       gEfiShellParametersProtocolGuid 0000000000001f60     EnrollDefaultKeys:AutoGen.obj
+ 0002:000000b0       gOvmfPkKek1AppPrefixGuid   0000000000001f70     EnrollDefaultKeys:AutoGen.obj
+ 0002:000000c0       gEfiCallerIdGuid           0000000000001f80     EnrollDefaultKeys:AutoGen.obj
+ 0002:000000d0       gEfiShellInterfaceGuid     0000000000001f90     EnrollDefaultKeys:AutoGen.obj
+ 0002:000000e0       ??_C@_03CBGGHMDD@?$CFg?3@  0000000000001fa0     EnrollDefaultKeys:EnrollDefaultKeys.obj
+ 0002:000000e8       ??_C@_0DB@EHFFJDOJ@error?3?5failed?5to?5locate?5EFI_SMB@ 0000000000001fa8     EnrollDefaultKeys:EnrollDefaultKeys.obj
+ 0002:00000120       ??_C@_0DE@PIFPEOCN@error?3?5OEM?5String?5with?5app?5pref@ 0000000000001fe0     EnrollDefaultKeys:EnrollDefaultKeys.obj
+ 0002:00000158       ??_C@_0CO@COJNLGOG@error?3?5empty?5certificate?5after?5@ 0000000000002018     EnrollDefaultKeys:EnrollDefaultKeys.obj
+ 0002:00000188       ??_C@_0DC@IDDEKNDN@error?3?5invalid?5base64?5string?5af@ 0000000000002048     EnrollDefaultKeys:EnrollDefaultKeys.obj
+ 0002:000001c0       ??_C@_0CC@FOJNEOB@error?3?5failed?5to?5allocate?5memor@ 0000000000002080     EnrollDefaultKeys:EnrollDefaultKeys.obj
+ 0002:000001e8       ??_C@_0BC@HAJLLGEJ@EnrollListOfCerts@ 00000000000020a8     EnrollDefaultKeys:EnrollDefaultKeys.obj
+ 0002:00000200       ??_C@_0BJ@GJPOJHCB@error?3?5?$CFa?$CI?$CC?$CFs?$CC?0?5?$CFg?$CJ?3?5?$CFr?6@ 00000000000020c0     EnrollDefaultKeys:EnrollDefaultKeys.obj
+ 0002:00000220       ??_C@_0CC@CPDHANAC@error?3?5GetVariable?$CI?$CC?$CFs?$CC?0?5?$CFg?$CJ?3?5?$CF@ 00000000000020e0     EnrollDefaultKeys:EnrollDefaultKeys.obj
+ 0002:00000248       ??_C@_0DO@EFKKBCOF@error?3?5GetVariable?$CI?$CC?$CFs?$CC?0?5?$CFg?$CJ?3?5e@ 0000000000002108     EnrollDefaultKeys:EnrollDefaultKeys.obj
+ 0002:00000288       ??_C@_1BE@DFEPFMAE@?$AAS?$AAe?$AAt?$AAu?$AAp?$AAM?$AAo?$AAd?$AAe@ 0000000000002148     EnrollDefaultKeys:EnrollDefaultKeys.obj
+ 0002:000002a0       ??_C@_1BG@JEGAFCNI@?$AAS?$AAe?$AAc?$AAu?$AAr?$AAe?$AAB?$AAo?$AAo?$AAt@ 0000000000002160     EnrollDefaultKeys:EnrollDefaultKeys.obj
+ 0002:000002b8       ??_C@_1CC@OHKABGKH@?$AAS?$AAe?$AAc?$AAu?$AAr?$AAe?$AAB?$AAo?$AAo?$AAt?$AAE?$AAn?$AAa?$AAb?$AAl@ 0000000000002178     EnrollDefaultKeys:EnrollDefaultKeys.obj
+ 0002:000002e0       ??_C@_1BG@PJLHNPEI@?$AAC?$AAu?$AAs?$AAt?$AAo?$AAm?$AAM?$AAo?$AAd?$AAe@ 00000000000021a0     EnrollDefaultKeys:EnrollDefaultKeys.obj
+ 0002:000002f8       ??_C@_1BG@OIEIGDIF@?$AAV?$AAe?$AAn?$AAd?$AAo?$AAr?$AAK?$AAe?$AAy?$AAs@ 00000000000021b8     EnrollDefaultKeys:EnrollDefaultKeys.obj
+ 0002:00000310       ??_C@_0FC@CACMEPIO@info?3?5SetupMode?$DN?$CFd?5SecureBoot?$DN?$CF@ 00000000000021d0     EnrollDefaultKeys:EnrollDefaultKeys.obj
+ 0002:00000370       ??_C@_1BK@JEBEAOKK@?$AA?9?$AA?9?$AAn?$AAo?$AA?9?$AAd?$AAe?$AAf?$AAa?$AAu?$AAl?$AAt@ 0000000000002230     EnrollDefaultKeys:EnrollDefaultKeys.obj
+ 0002:00000390       ??_C@_0BN@KFNCACLK@error?3?5already?5in?5User?5Mode?6@ 0000000000002250     EnrollDefaultKeys:EnrollDefaultKeys.obj
+ 0002:000003b0       ??_C@_0CC@BAACMNBC@error?3?5SetVariable?$CI?$CC?$CFs?$CC?0?5?$CFg?$CJ?3?5?$CF@ 0000000000002270     EnrollDefaultKeys:EnrollDefaultKeys.obj
+ 0002:000003d4       ??_C@_15EMHHCMJI@?$AAd?$AAb@ 0000000000002294     EnrollDefaultKeys:EnrollDefaultKeys.obj
+ 0002:000003e0       ??_C@_17CFMLKIPF@?$AAd?$AAb?$AAx@ 00000000000022a0     EnrollDefaultKeys:EnrollDefaultKeys.obj
+ 0002:000003e8       ??_C@_17PNKKLKMO@?$AAK?$AAE?$AAK@ 00000000000022a8     EnrollDefaultKeys:EnrollDefaultKeys.obj
+ 0002:000003f0       ??_C@_15OKGIJJH@?$AAP?$AAK@ 00000000000022b0     EnrollDefaultKeys:EnrollDefaultKeys.obj
+ 0002:000003f8       ??_C@_0BD@FDPAHEHO@error?3?5unexpected?6@ 00000000000022b8     EnrollDefaultKeys:EnrollDefaultKeys.obj
+ 0002:00000410       ??_C@_0P@LHMOBACL@info?3?5success?6@ 00000000000022d0     EnrollDefaultKeys:EnrollDefaultKeys.obj
+ 0002:00000420       mMicrosoftUefiCa           00000000000022e0     EnrollDefaultKeys:AuthData.obj
+ 0002:00000a40       mMicrosoftPca              0000000000002900     EnrollDefaultKeys:AuthData.obj
+ 0002:00001020       mMicrosoftKek              0000000000002ee0     EnrollDefaultKeys:AuthData.obj
+ 0002:00001610       mSha256OfDevNull           00000000000034d0     EnrollDefaultKeys:AuthData.obj
+ 0002:00001630       ??_C@_0O@MLOLIMFM@?$DMnull?5string?$DO@ 00000000000034f0     BasePrintLib:PrintLibInternal.obj
+ 0002:00001640       ??_C@_0M@BJJDNPHK@?$DMnull?5guid?$DO@ 0000000000003500     BasePrintLib:PrintLibInternal.obj
+ 0002:00001650       ??_C@_0DB@PMLHLBMO@?$CF08x?9?$CF04x?9?$CF04x?9?$CF02x?$CF02x?9?$CF02x?$CF02@ 0000000000003510     BasePrintLib:PrintLibInternal.obj
+ 0002:00001688       ??_C@_0M@LHGBCIKM@?$DMnull?5time?$DO@ 0000000000003548     BasePrintLib:PrintLibInternal.obj
+ 0002:00001698       ??_C@_0BK@FCPKCIDD@?$CF02d?1?$CF02d?1?$CF04d?5?5?$CF02d?3?$CF02d@ 0000000000003558     BasePrintLib:PrintLibInternal.obj
+ 0002:000016b4       ??_C@_04JIMNDDED@?$CF08X@  0000000000003574     BasePrintLib:PrintLibInternal.obj
+ 0002:000016bc       ??_C@_02PCIJFNDE@?$AN?6@   000000000000357c     BasePrintLib:PrintLibInternal.obj
+ 0002:000016c0       ??_C@_01LIIJDEN@?$AN@      0000000000003580     BasePrintLib:PrintLibInternal.obj
+ 0002:000016d0       mWarningString             0000000000003590     BasePrintLib:PrintLibInternal.obj
+ 0002:00001770       mErrorString               0000000000003630     BasePrintLib:PrintLibInternal.obj
+ 0002:00001a30       mHexStr                    00000000000038f0     BasePrintLib:PrintLibInternal.obj
+ 0002:00001a60       gST                        0000000000003920     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00001a68       gBS                        0000000000003928     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00001a70       mDevicePathLibDevicePathUtilities 0000000000003930     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:00001a78       gRT                        0000000000003938     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0002:00001a80       __volatile_metadata        0000000000003940     <linker-defined>
+
+ entry point at        0001:00000060
+
+ Static symbols
+
+ 0001:0000001a       InternalMemCopyMem.0       000000000000027a     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:0000002a       @CopyBackward              000000000000028a     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000033       @CopyBytes                 0000000000000293     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:0000016c       GetPkKek1                  00000000000003cc f   EnrollDefaultKeys:EnrollDefaultKeys.obj
+ 0001:00000480       EnrollListOfCerts          00000000000006e0 f   EnrollDefaultKeys:EnrollDefaultKeys.obj
+ 0001:00000660       GetExact                   00000000000008c0 f   EnrollDefaultKeys:EnrollDefaultKeys.obj
+ 0001:00000728       GetSettings                0000000000000988 f   EnrollDefaultKeys:EnrollDefaultKeys.obj
+ 0004:00000000       $unwind$_ModuleEntryPoint  0000000000003ae0     UefiApplicationEntryPoint:ApplicationEntryPoint.obj
+ 0004:0000000c       $unwind$ProcessModuleEntryPointList 0000000000003aec     EnrollDefaultKeys:AutoGen.obj
+ 0004:0000001c       $unwind$GetPkKek1          0000000000003afc     EnrollDefaultKeys:EnrollDefaultKeys.obj
+ 0004:00000038       $unwind$EnrollListOfCerts  0000000000003b18     EnrollDefaultKeys:EnrollDefaultKeys.obj
+ 0004:00000050       $unwind$GetExact           0000000000003b30     EnrollDefaultKeys:EnrollDefaultKeys.obj
+ 0004:00000064       $unwind$GetSettings        0000000000003b44     EnrollDefaultKeys:EnrollDefaultKeys.obj
+ 0004:0000006c       $unwind$ShellAppMain       0000000000003b4c     EnrollDefaultKeys:EnrollDefaultKeys.obj
+ 0004:0000007c       $unwind$Base64Decode       0000000000003b5c     BaseLib:String.obj
+ 0004:00000090       $unwind$AsciiSPrint        0000000000003b70     BasePrintLib:PrintLib.obj
+ 0004:00000098       $unwind$BasePrintLibSPrintMarker 0000000000003b78     BasePrintLib:PrintLibInternal.obj
+ 0004:000000b4       $unwind$BasePrintLibSPrint 0000000000003b94     BasePrintLib:PrintLibInternal.obj
+ 0004:000000bc       $unwind$InternalAllocatePool 0000000000003b9c     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0004:000000c4       $unwind$AsciiInternalPrint 0000000000003ba4     UefiLib:UefiLibPrint.obj
+ 0004:000000dc       $unwind$AsciiPrint         0000000000003bbc     UefiLib:UefiLibPrint.obj

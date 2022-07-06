@@ -1,0 +1,810 @@
+ BdsDxe
+
+ Timestamp is 61ee7044 (Mon Jan 24 17:24:20 2022)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000388H .text                   CODE
+ 0001:00000388 00012288H .text$mn                CODE
+ 0002:00000000 00001190H .data                   DATA
+ 0002:00001190 000011b0H .rdata                  DATA
+ 0002:00002340 0000014cH .bss                    DATA
+ 0002:0000248c 00000134H .rdata$voltmd           DATA
+ 0002:000025c0 000000a8H .rdata$zzzdbg           DATA
+ 0003:00000000 0000099cH .pdata                  DATA
+ 0004:00000000 00000a4cH .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __arm64x_redirection_metadata 0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points_count 0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_count          0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_count      0000000000000000     <absolute>
+ 0000:00000000       __dynamic_value_reloc_table 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat     0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat_copy 0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_table          0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_table      0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points 0000000000000000     <absolute>
+ 0000:00000000       __AbsoluteZero             0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_count         0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table   0000000000000000     <absolute>
+ 0000:00000000       __guard_check_icall_a64n_fptr 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map          0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_table         0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table_size 0000000000000000     <absolute>
+ 0000:00000000       __guard_flags              0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_count      0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map_count    0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata_count 0000000000000000     <absolute>
+ 0000:00000000       __enclave_config           0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_table      0000000000000000     <absolute>
+ 0000:00000000       __arm64x_native_entrypoint 0000000000000000     <absolute>
+ 0000:00000000       __ImageBase                0000000000000000     <linker-defined>
+ 0001:00000000       InternalMemCopyMem         0000000000000280     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000040       CpuPause                   00000000000002c0     BaseLib:CpuPause.obj
+ 0001:00000050       SevNoRepIo                 00000000000002d0     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000090       IoReadFifo8                0000000000000310     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000000b2       IoReadFifo16               0000000000000332     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000000d8       IoReadFifo32               0000000000000358     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000000fb       IoWriteFifo8               000000000000037b     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:0000011d       IoWriteFifo16              000000000000039d     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000143       IoWriteFifo32              00000000000003c3     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000170       InternalMemZeroMem         00000000000003f0     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00000190       InternalMemSetMem          0000000000000410     BaseMemoryLibRepStr:SetMem.obj
+ 0001:000001b0       InternalMemCompareMem      0000000000000430     BaseMemoryLibRepStr:CompareMem.obj
+ 0001:000001d0       InternalMemSetMem64        0000000000000450     BaseMemoryLibRepStr:SetMem64.obj
+ 0001:000001f0       InternalMemSetMem32        0000000000000470     BaseMemoryLibRepStr:SetMem32.obj
+ 0001:00000210       AsmCpuid                   0000000000000490     BaseLib:CpuId.obj
+ 0001:00000240       InternalMemScanMem8        00000000000004c0     BaseMemoryLibRepStr:ScanMem8.obj
+ 0001:00000260       InternalMemScanMem64       00000000000004e0     BaseMemoryLibRepStr:ScanMem64.obj
+ 0001:00000280       InternalMemScanMem32       0000000000000500     BaseMemoryLibRepStr:ScanMem32.obj
+ 0001:000002a0       EnableInterrupts           0000000000000520     BaseLib:EnableInterrupts.obj
+ 0001:000002b0       DisableInterrupts          0000000000000530     BaseLib:DisableInterrupts.obj
+ 0001:000002c0       AsmReadEflags              0000000000000540     BaseLib:ReadEflags.obj
+ 0001:000002d0       JumpToKernel               0000000000000550     LoadLinuxLib:JumpToKernel.obj
+ 0001:00000317       JumpToUefiKernel           0000000000000597     LoadLinuxLib:JumpToKernel.obj
+ 0001:00000340       InternalMemIsZeroBuffer    00000000000005c0     BaseMemoryLibRepStr:IsZeroBuffer.obj
+ 0001:00000370       InternalX86WriteGdtr       00000000000005f0     BaseLib:WriteGdtr.obj
+ 0001:00000380       InternalX86WriteIdtr       0000000000000600     BaseLib:WriteIdtr.obj
+ 0001:00000388       _ModuleEntryPoint          0000000000000608 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:000003f8       ProcessLibraryConstructorList 0000000000000678 f   BdsDxe:AutoGen.obj
+ 0001:00000624       CheckDeferredLoadImageOnReadyToBoot 00000000000008a4 f   BdsDxe:BdsEntry.obj
+ 0001:0000071c       ProcessLoadOptions         000000000000099c f   BdsDxe:BdsEntry.obj
+ 0001:00000820       BdsFormalizeConsoleVariable 0000000000000aa0 f   BdsDxe:BdsEntry.obj
+ 0001:00000890       BdsEntry                   0000000000000b10 f   BdsDxe:BdsEntry.obj
+ 0001:000012f8       BdsDxeSetVariableAndReportStatusCodeOnError 0000000000001578 f   BdsDxe:BdsEntry.obj
+ 0001:00001438       IsLangInSupportedLangCodes 00000000000016b8 f   BdsDxe:Language.obj
+ 0001:000014ec       InitializeLangVariable     000000000000176c f   BdsDxe:Language.obj
+ 0001:0000158c       GetPcdProtocol             000000000000180c f   DxePcdLib:DxePcdLib.obj
+ 0001:000015c8       AllocatePool               0000000000001848 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:000015fc       InternalAllocateZeroPool   000000000000187c f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:0000164c       InternalAllocateCopyPool   00000000000018cc f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:000016ac       InternalReallocatePool     000000000000192c f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00001724       StrCmp                     00000000000019a4 f   BaseLib:String.obj
+ 0001:0000175c       StrnCmp                    00000000000019dc f   BaseLib:String.obj
+ 0001:00001798       AsciiStrnCmp               0000000000001a18 f   BaseLib:String.obj
+ 0001:000017cc       StrnLenS                   0000000000001a4c f   BaseLib:SafeString.obj
+ 0001:00001800       StrCpyS                    0000000000001a80 f   BaseLib:SafeString.obj
+ 0001:0000189c       StrnCpyS                   0000000000001b1c f   BaseLib:SafeString.obj
+ 0001:0000193c       StrCatS                    0000000000001bbc f   BaseLib:SafeString.obj
+ 0001:00001a10       StrnCatS                   0000000000001c90 f   BaseLib:SafeString.obj
+ 0001:00001b3c       AsciiStrToUnicodeStrS      0000000000001dbc f   BaseLib:SafeString.obj
+ 0001:00001bd8       UnicodeSPrint              0000000000001e58 f   BasePrintLib:PrintLib.obj
+ 0001:00001c0c       UnicodeSPrintAsciiFormat   0000000000001e8c f   BasePrintLib:PrintLib.obj
+ 0001:00001c40       BasePrintLibFillBuffer     0000000000001ec0 f   BasePrintLib:PrintLibInternal.obj
+ 0001:00001c74       BasePrintLibConvertValueToStringS 0000000000001ef4 f   BasePrintLib:PrintLibInternal.obj
+ 0001:00001ddc       BasePrintLibSPrintMarker   000000000000205c f   BasePrintLib:PrintLibInternal.obj
+ 0001:00002bc0       BasePrintLibSPrint         0000000000002e40 f   BasePrintLib:PrintLibInternal.obj
+ 0001:00002be4       PciWrite8                  0000000000002e64 f   DxePciLibI440FxQ35:PciLib.obj
+ 0001:00002c20       IsDevicePathValid          0000000000002ea0 f   UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0001:00002c8c       DevicePathFromHandle       0000000000002f0c f   UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0001:00002cc0       FileDevicePath             0000000000002f40 f   UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0001:00002da0       UefiDevicePathLibLocateProtocol 0000000000003020 f   UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0001:00002dd0       ConvertDevicePathToText    0000000000003050 f   UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0001:00002e14       EfiGetSystemConfigurationTable 0000000000003094 f   UefiLib:UefiLib.obj
+ 0001:00002e74       EfiCreateProtocolNotifyEvent 00000000000030f4 f   UefiLib:UefiLib.obj
+ 0001:00002ed8       EfiEventGroupSignal        0000000000003158 f   UefiLib:UefiLib.obj
+ 0001:00002f50       EfiEventEmptyFunction      00000000000031d0 f   UefiLib:UefiLib.obj
+ 0001:00002f54       EfiAcquireLock             00000000000031d4 f   UefiLib:UefiLib.obj
+ 0001:00002f80       GetVariable2               0000000000003200 f   UefiLib:UefiLib.obj
+ 0001:00003058       GetBestLanguage            00000000000032d8 f   UefiLib:UefiLib.obj
+ 0001:00003184       InternalPrint              0000000000003404 f   UefiLib:UefiLibPrint.obj
+ 0001:0000321c       Print                      000000000000349c f   UefiLib:UefiLibPrint.obj
+ 0001:0000324c       AsciiInternalPrint         00000000000034cc f   UefiLib:UefiLibPrint.obj
+ 0001:000032e0       AsciiPrint                 0000000000003560 f   UefiLib:UefiLibPrint.obj
+ 0001:00003310       InternalPrintGraphic       0000000000003590 f   UefiLib:UefiLibPrint.obj
+ 0001:000036b8       PrintXY                    0000000000003938 f   UefiLib:UefiLibPrint.obj
+ 0001:00003744       GetHobList                 00000000000039c4 f   DxeHobLib:HobLib.obj
+ 0001:00003774       GetFirstGuidHob            00000000000039f4 f   DxeHobLib:HobLib.obj
+ 0001:000037cc       InternalReportStatusCode   0000000000003a4c f   DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0001:00003884       ReportStatusCodeEx         0000000000003b04 f   DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0001:00003b3c       InternalQemuFwCfgDmaBytes  0000000000003dbc f   QemuFwCfgDxeLib:QemuFwCfgDxe.obj
+ 0001:00003d7c       QemuFwCfgReadBytes         0000000000003ffc f   QemuFwCfgDxeLib:QemuFwCfgLib.obj
+ 0001:00003dd4       QemuFwCfgFindFile          0000000000004054 f   QemuFwCfgDxeLib:QemuFwCfgLib.obj
+ 0001:00003f34       BmForEachVariable          00000000000041b4 f   UefiBootManagerLib:BmLoadOption.obj
+ 0001:00003ff8       BmGetFreeOptionNumber      0000000000004278 f   UefiBootManagerLib:BmLoadOption.obj
+ 0001:000040f8       EfiBootManagerLoadOptionToVariable 0000000000004378 f   UefiBootManagerLib:BmLoadOption.obj
+ 0001:0000430c       BmAddOptionNumberToOrderVariable 000000000000458c f   UefiBootManagerLib:BmLoadOption.obj
+ 0001:0000442c       EfiBootManagerAddLoadOptionVariable 00000000000046ac f   UefiBootManagerLib:BmLoadOption.obj
+ 0001:000044c8       EfiBootManagerInitializeLoadOption 0000000000004748 f   UefiBootManagerLib:BmLoadOption.obj
+ 0001:000045c4       EfiBootManagerFindLoadOption 0000000000004844 f   UefiBootManagerLib:BmLoadOption.obj
+ 0001:0000468c       EfiBootManagerDeleteLoadOptionVariable 000000000000490c f   UefiBootManagerLib:BmLoadOption.obj
+ 0001:000047d4       BmValidateOption           0000000000004a54 f   UefiBootManagerLib:BmLoadOption.obj
+ 0001:00004888       EfiBootManagerIsValidLoadOptionVariableName 0000000000004b08 f   UefiBootManagerLib:BmLoadOption.obj
+ 0001:000049a0       EfiBootManagerVariableToLoadOptionEx 0000000000004c20 f   UefiBootManagerLib:BmLoadOption.obj
+ 0001:00004ad0       BmCollectLoadOptions       0000000000004d50 f   UefiBootManagerLib:BmLoadOption.obj
+ 0001:00004bec       EfiBootManagerGetLoadOptions 0000000000004e6c f   UefiBootManagerLib:BmLoadOption.obj
+ 0001:00004d68       EfiBootManagerFreeLoadOption 0000000000004fe8 f   UefiBootManagerLib:BmLoadOption.obj
+ 0001:00004dc4       EfiBootManagerFreeLoadOptions 0000000000005044 f   UefiBootManagerLib:BmLoadOption.obj
+ 0001:00004e24       BmGetNextLoadOptionBuffer  00000000000050a4 f   UefiBootManagerLib:BmLoadOption.obj
+ 0001:00004fc0       EfiBootManagerProcessLoadOption 0000000000005240 f   UefiBootManagerLib:BmLoadOption.obj
+ 0001:00005188       BmIsKeyOptionValid         0000000000005408 f   UefiBootManagerLib:BmHotkey.obj
+ 0001:00005238       BmCollectKeyOptions        00000000000054b8 f   UefiBootManagerLib:BmHotkey.obj
+ 0001:000053e4       BmInitializeKeyFields      0000000000005664 f   UefiBootManagerLib:BmHotkey.obj
+ 0001:000054f0       BmHotkeyCallback           0000000000005770 f   UefiBootManagerLib:BmHotkey.obj
+ 0001:00005614       BmGetActiveConsoleIn       0000000000005894 f   UefiBootManagerLib:BmHotkey.obj
+ 0001:000056b8       BmRegisterHotkeyNotify     0000000000005938 f   UefiBootManagerLib:BmHotkey.obj
+ 0001:00005720       BmGenerateKeyShiftState    00000000000059a0 f   UefiBootManagerLib:BmHotkey.obj
+ 0001:0000586c       BmProcessKeyOption         0000000000005aec f   UefiBootManagerLib:BmHotkey.obj
+ 0001:00005a34       BmTxtInExCallback          0000000000005cb4 f   UefiBootManagerLib:BmHotkey.obj
+ 0001:00005b20       EfiBootManagerRegisterContinueKeyOption 0000000000005da0 f   UefiBootManagerLib:BmHotkey.obj
+ 0001:00005bac       BmStopHotkeyService        0000000000005e2c f   UefiBootManagerLib:BmHotkey.obj
+ 0001:00005ce4       EfiBootManagerStartHotkeyService 0000000000005f64 f   UefiBootManagerLib:BmHotkey.obj
+ 0001:00005ea0       EfiBootManagerAddKeyOptionVariable 0000000000006120 f   UefiBootManagerLib:BmHotkey.obj
+ 0001:000060bc       BmFindBootOptionInVariable 000000000000633c f   UefiBootManagerLib:BmBoot.obj
+ 0001:00006214       BmAdjustFvFilePath         0000000000006494 f   UefiBootManagerLib:BmBoot.obj
+ 0001:0000639c       BmMatchUsbClass            000000000000661c f   UefiBootManagerLib:BmBoot.obj
+ 0001:00006454       BmMatchUsbWwid             00000000000066d4 f   UefiBootManagerLib:BmBoot.obj
+ 0001:000065fc       BmExpandUsbDevicePath      000000000000687c f   UefiBootManagerLib:BmBoot.obj
+ 0001:00006804       BmExpandFileDevicePath     0000000000006a84 f   UefiBootManagerLib:BmBoot.obj
+ 0001:00006990       BmExpandUriDevicePath      0000000000006c10 f   UefiBootManagerLib:BmBoot.obj
+ 0001:00006ac0       BmCachePartitionDevicePath 0000000000006d40 f   UefiBootManagerLib:BmBoot.obj
+ 0001:00006b88       BmExpandPartitionDevicePath 0000000000006e08 f   UefiBootManagerLib:BmBoot.obj
+ 0001:00006e2c       BmExpandMediaDevicePath    00000000000070ac f   UefiBootManagerLib:BmBoot.obj
+ 0001:00007040       BmExpandNetworkFileSystem  00000000000072c0 f   UefiBootManagerLib:BmBoot.obj
+ 0001:00007150       BmGetRamDiskDevicePath     00000000000073d0 f   UefiBootManagerLib:BmBoot.obj
+ 0001:000071e4       BmDestroyRamDisk           0000000000007464 f   UefiBootManagerLib:BmBoot.obj
+ 0001:00007298       BmExpandLoadFile           0000000000007518 f   UefiBootManagerLib:BmBoot.obj
+ 0001:00007438       BmExpandLoadFiles          00000000000076b8 f   UefiBootManagerLib:BmBoot.obj
+ 0001:000075dc       BmGetNextLoadOptionDevicePath 000000000000785c f   UefiBootManagerLib:BmBoot.obj
+ 0001:000077d8       BmIsBootManagerMenuFilePath 0000000000007a58 f   UefiBootManagerLib:BmBoot.obj
+ 0001:00007848       BmReportLoadFailure        0000000000007ac8 f   UefiBootManagerLib:BmBoot.obj
+ 0001:000078a4       EfiBootManagerBoot         0000000000007b24 f   UefiBootManagerLib:BmBoot.obj
+ 0001:00007c58       BmMatchPartitionDevicePathNode 0000000000007ed8 f   UefiBootManagerLib:BmBoot.obj
+ 0001:00007cd8       BmEnumerateBootOptions     0000000000007f58 f   UefiBootManagerLib:BmBoot.obj
+ 0001:00008184       BmRegisterBootManagerMenu  0000000000008404 f   UefiBootManagerLib:BmBoot.obj
+ 0001:000083e8       EfiBootManagerGetBootManagerMenu 0000000000008668 f   UefiBootManagerLib:BmBoot.obj
+ 0001:000084b0       EfiBootManagerConnectAll   0000000000008730 f   UefiBootManagerLib:BmConnect.obj
+ 0001:00008540       EfiBootManagerConnectDevicePath 00000000000087c0 f   UefiBootManagerLib:BmConnect.obj
+ 0001:00008658       BmConnectUsbShortFormDevicePath 00000000000088d8 f   UefiBootManagerLib:BmConnect.obj
+ 0001:00008798       BmUpdateSystemTableConsole 0000000000008a18 f   UefiBootManagerLib:BmConsole.obj
+ 0001:000088e8       EfiBootManagerUpdateConsoleVariable 0000000000008b68 f   UefiBootManagerLib:BmConsole.obj
+ 0001:00008a50       EfiBootManagerConnectConsoleVariable 0000000000008cd0 f   UefiBootManagerLib:BmConsole.obj
+ 0001:00008c2c       EfiBootManagerConnectAllDefaultConsoles 0000000000008eac f   UefiBootManagerLib:BmConsole.obj
+ 0001:00008d3c       BmDelPartMatchInstance     0000000000008fbc f   UefiBootManagerLib:BmMisc.obj
+ 0001:00008e40       BmMatchDevicePaths         00000000000090c0 f   UefiBootManagerLib:BmMisc.obj
+ 0001:00008ec4       BmSetMemoryTypeInformationVariable 0000000000009144 f   UefiBootManagerLib:BmMisc.obj
+ 0001:0000906c       BmSetVariableAndReportStatusCodeOnError 00000000000092ec f   UefiBootManagerLib:BmMisc.obj
+ 0001:000091a0       EfiBootManagerDispatchDeferredImages 0000000000009420 f   UefiBootManagerLib:BmMisc.obj
+ 0001:00009354       BmEliminateExtraSpaces     00000000000095d4 f   UefiBootManagerLib:BmBootDescription.obj
+ 0001:00009390       BmGetDescriptionFromDiskInfo 0000000000009610 f   UefiBootManagerLib:BmBootDescription.obj
+ 0001:000095f4       BmGetUsbDescription        0000000000009874 f   UefiBootManagerLib:BmBootDescription.obj
+ 0001:000097d4       BmGetNetworkDescription    0000000000009a54 f   UefiBootManagerLib:BmBootDescription.obj
+ 0001:00009a24       BmGetLoadFileDescription   0000000000009ca4 f   UefiBootManagerLib:BmBootDescription.obj
+ 0001:00009ad8       BmGetNvmeDescription       0000000000009d58 f   UefiBootManagerLib:BmBootDescription.obj
+ 0001:00009c8c       BmGetMiscDescription       0000000000009f0c f   UefiBootManagerLib:BmBootDescription.obj
+ 0001:00009e30       BmGetBootDescription       000000000000a0b0 f   UefiBootManagerLib:BmBootDescription.obj
+ 0001:00009f5c       BmGetControllerName        000000000000a1dc f   UefiBootManagerLib:BmDriverHealth.obj
+ 0001:0000a0c4       BmDisplayMessages          000000000000a344 f   UefiBootManagerLib:BmDriverHealth.obj
+ 0001:0000a194       BmRepairNotify             000000000000a414 f   UefiBootManagerLib:BmDriverHealth.obj
+ 0001:0000a1b4       BmGetSingleControllerHealthStatus 000000000000a434 f   UefiBootManagerLib:BmDriverHealth.obj
+ 0001:0000a318       EfiBootManagerGetDriverHealthInfo 000000000000a598 f   UefiBootManagerLib:BmDriverHealth.obj
+ 0001:0000a4a0       EfiBootManagerFreeDriverHealthInfo 000000000000a720 f   UefiBootManagerLib:BmDriverHealth.obj
+ 0001:0000a4f8       BmRepairAllControllers     000000000000a778 f   UefiBootManagerLib:BmDriverHealth.obj
+ 0001:0000a7cc       PlatformBootManagerBeforeConsole 000000000000aa4c f   PlatformBootManagerLib:BdsPlatform.obj
+ 0001:0000aa44       ConnectRootBridge          000000000000acc4 f   PlatformBootManagerLib:BdsPlatform.obj
+ 0001:0000ab80       PrepareLpcBridgeDevicePath 000000000000ae00 f   PlatformBootManagerLib:BdsPlatform.obj
+ 0001:0000ad24       PreparePciDisplayDevicePath 000000000000afa4 f   PlatformBootManagerLib:BdsPlatform.obj
+ 0001:0000b1d4       VisitAllInstancesOfProtocol 000000000000b454 f   PlatformBootManagerLib:BdsPlatform.obj
+ 0001:0000b294       VisitingAPciInstance       000000000000b514 f   PlatformBootManagerLib:BdsPlatform.obj
+ 0001:0000b2ec       DetectAndPreparePlatformPciDevicePath 000000000000b56c f   PlatformBootManagerLib:BdsPlatform.obj
+ 0001:0000b424       PlatformInitializeConsole  000000000000b6a4 f   PlatformBootManagerLib:BdsPlatform.obj
+ 0001:0000b534       SetPciIntLine              000000000000b7b4 f   PlatformBootManagerLib:BdsPlatform.obj
+ 0001:0000b674       ConnectRecursivelyIfPciMassStorage 000000000000b8f4 f   PlatformBootManagerLib:BdsPlatform.obj
+ 0001:0000b710       EmuVariablesUpdatedCallback 000000000000b990 f   PlatformBootManagerLib:BdsPlatform.obj
+ 0001:0000b72c       VisitingFileSystemInstance 000000000000b9ac f   PlatformBootManagerLib:BdsPlatform.obj
+ 0001:0000b79c       PlatformBootManagerAfterConsole 000000000000ba1c f   PlatformBootManagerLib:BdsPlatform.obj
+ 0001:0000bdcc       NotifyDevPath              000000000000c04c f   PlatformBootManagerLib:BdsPlatform.obj
+ 0001:0000bf60       PlatformBootManagerWaitCallback 000000000000c1e0 f   PlatformBootManagerLib:BdsPlatform.obj
+ 0001:0000c038       PciCf8Write8               000000000000c2b8 f   BasePciCf8Lib:PciCf8Lib.obj
+ 0001:0000c0b8       PciCf8Read32               000000000000c338 f   BasePciCf8Lib:PciCf8Lib.obj
+ 0001:0000c11c       EfiSignalEventReadyToBoot  000000000000c39c f   UefiLib:UefiNotTiano.obj
+ 0001:0000c190       InternalImageHandleToFvHandle 000000000000c410 f   DxeServicesLib:DxeServicesLib.obj
+ 0001:0000c1c8       InternalGetSectionFromFv   000000000000c448 f   DxeServicesLib:DxeServicesLib.obj
+ 0001:0000c250       GetFileBufferByFilePath    000000000000c4d0 f   DxeServicesLib:DxeServicesLib.obj
+ 0001:0000c6c0       GetFileDevicePathFromAnyFv 000000000000c940 f   DxeServicesLib:DxeServicesLib.obj
+ 0001:0000c8b4       HiiGetString               000000000000cb34 f   UefiHiiLib:HiiString.obj
+ 0001:0000ca34       HiiAddPackages             000000000000ccb4 f   UefiHiiLib:HiiLib.obj
+ 0001:0000cb50       HiiGetHiiHandles           000000000000cdd0 f   UefiHiiLib:HiiLib.obj
+ 0001:0000cbe0       HiiGetSupportedLanguages   000000000000ce60 f   UefiHiiLib:HiiLanguage.obj
+ 0001:0000cc6c       XenGetInfoHOB              000000000000ceec f   XenPlatformLib:XenPlatformLib.obj
+ 0001:0000ce04       Tpm2CommandClear           000000000000d084 f   Tcg2PhysicalPresenceLibQemu:DxeTcg2PhysicalPresenceLib.obj
+ 0001:0000eb5c       ConnectDevicesFromQemu     000000000000eddc f   QemuBootOrderLib:QemuBootOrderLib.obj
+ 0001:0000ef90       SetBootOrderFromQemu       000000000000f210 f   QemuBootOrderLib:QemuBootOrderLib.obj
+ 0001:0000f380       CreateExtraRootBusMap      000000000000f600 f   QemuBootOrderLib:ExtraRootBusMap.obj
+ 0001:0000fa90       QemuLoadKernelImage        000000000000fd10 f   X86QemuLoadImageLib:X86QemuLoadImageLib.obj
+ 0001:0000fcf0       QemuStartKernelImage       000000000000ff70 f   X86QemuLoadImageLib:X86QemuLoadImageLib.obj
+ 0001:0000fd98       QemuUnloadKernelImage      0000000000010018 f   X86QemuLoadImageLib:X86QemuLoadImageLib.obj
+ 0001:0000feb4       ConnectNvVarsToFileSystem  0000000000010134 f   NvVarsFileLib:NvVarsFileLib.obj
+ 0001:0000ff5c       GetNvVarsFile              00000000000101dc f   NvVarsFileLib:FsAccess.obj
+ 0001:0000ffe4       ReadNvVarsFile             0000000000010264 f   NvVarsFileLib:FsAccess.obj
+ 0001:0001016c       SaveNvVarsToFs             00000000000103ec f   NvVarsFileLib:FsAccess.obj
+ 0001:00010364       BootLogoEnableLogo         00000000000105e4 f   BootLogoLib:BootLogoLib.obj
+ 0001:000107d0       BootLogoUpdateProgress     0000000000010a50 f   BootLogoLib:BootLogoLib.obj
+ 0001:00010a38       SaveAndDisableInterrupts   0000000000010cb8 f   BaseLib:Cpu.obj
+ 0001:00010a5c       Tpm2PcrAllocate            0000000000010cdc f   Tpm2CommandLib:Tpm2Integrity.obj
+ 0001:00010cb4       Tpm2PcrAllocateBanks       0000000000010f34 f   Tpm2CommandLib:Tpm2Integrity.obj
+ 0001:00010f4c       Tpm2Clear                  00000000000111cc f   Tpm2CommandLib:Tpm2Hierarchy.obj
+ 0001:0001108c       Tpm2GetCapability          000000000001130c f   Tpm2CommandLib:Tpm2Capability.obj
+ 0001:00011178       Tpm2GetCapabilityPcrs      00000000000113f8 f   Tpm2CommandLib:Tpm2Capability.obj
+ 0001:00011264       Tpm2GetCapabilitySupportedAndActivePcrs 00000000000114e4 f   Tpm2CommandLib:Tpm2Capability.obj
+ 0001:00011384       CopyAuthSessionCommand     0000000000011604 f   Tpm2CommandLib:Tpm2Help.obj
+ 0001:00011478       OrderedCollectionNext      00000000000116f8 f   BaseOrderedCollectionRedBlackTreeLib:BaseOrderedCollectionRedBlackTreeLib.obj
+ 0001:000114b8       RedBlackTreeRotateRight    0000000000011738 f   BaseOrderedCollectionRedBlackTreeLib:BaseOrderedCollectionRedBlackTreeLib.obj
+ 0001:000114f8       RedBlackTreeRotateLeft     0000000000011778 f   BaseOrderedCollectionRedBlackTreeLib:BaseOrderedCollectionRedBlackTreeLib.obj
+ 0001:00011538       OrderedCollectionInsert    00000000000117b8 f   BaseOrderedCollectionRedBlackTreeLib:BaseOrderedCollectionRedBlackTreeLib.obj
+ 0001:000116d0       OrderedCollectionDelete    0000000000011950 f   BaseOrderedCollectionRedBlackTreeLib:BaseOrderedCollectionRedBlackTreeLib.obj
+ 0001:00011e2c       LoadLinux                  00000000000120ac f   LoadLinuxLib:Linux.obj
+ 0001:00012180       SerializeVariablesFreeInstance 0000000000012400 f   DxeSerializeVariablesLib:SerializeVariablesLib.obj
+ 0001:000121c8       SerializeVariablesIterateSystemVariables 0000000000012448 f   DxeSerializeVariablesLib:SerializeVariablesLib.obj
+ 0001:00012398       SerializeVariablesAddVariable 0000000000012618 f   DxeSerializeVariablesLib:SerializeVariablesLib.obj
+ 0001:000124dc       FileHandleGetInfo          000000000001275c f   UefiFileHandleLib:UefiFileHandleLib.obj
+ 0001:00012564       Tpm2SubmitCommand          00000000000127e4 f   Tpm2DeviceLibTcg2:Tpm2DeviceLibTcg2.obj
+ 0002:00000000       gEfiLoadedImageProtocolGuid 00000000000128a0     BdsDxe:AutoGen.obj
+ 0002:00000010       gEfiStatusCodeSpecificDataGuid 00000000000128b0     BdsDxe:AutoGen.obj
+ 0002:00000020       gEdkiiPlatformLogoProtocolGuid 00000000000128c0     BdsDxe:AutoGen.obj
+ 0002:00000030       gEfiDriverHealthProtocolGuid 00000000000128d0     BdsDxe:AutoGen.obj
+ 0002:00000040       gRootBridgesConnectedEventGroupGuid 00000000000128e0     BdsDxe:AutoGen.obj
+ 0002:00000050       gEfiMemoryTypeInformationGuid 00000000000128f0     BdsDxe:AutoGen.obj
+ 0002:00000060       gEfiPciRootBridgeIoProtocolGuid 0000000000012900     BdsDxe:AutoGen.obj
+ 0002:00000070       gEfiGlobalVariableGuid     0000000000012910     BdsDxe:AutoGen.obj
+ 0002:00000080       gEfiStatusCodeRuntimeProtocolGuid 0000000000012920     BdsDxe:AutoGen.obj
+ 0002:00000090       gEfiDiskInfoProtocolGuid   0000000000012930     BdsDxe:AutoGen.obj
+ 0002:000000a0       gOvmfLoadedX86LinuxKernelProtocolGuid 0000000000012940     BdsDxe:AutoGen.obj
+ 0002:000000b0       gEfiRamDiskProtocolGuid    0000000000012950     BdsDxe:AutoGen.obj
+ 0002:000000c0       gEdkiiBootLogo2ProtocolGuid 0000000000012960     BdsDxe:AutoGen.obj
+ 0002:000000d0       gEfiEventReadyToBootGuid   0000000000012970     BdsDxe:AutoGen.obj
+ 0002:000000e0       gEfiDiskInfoScsiInterfaceGuid 0000000000012980     BdsDxe:AutoGen.obj
+ 0002:000000f0       gEfiBdsArchProtocolGuid    0000000000012990     BdsDxe:AutoGen.obj
+ 0002:00000100       gEfiComponentName2ProtocolGuid 00000000000129a0     BdsDxe:AutoGen.obj
+ 0002:00000110       gEfiDiskInfoIdeInterfaceGuid 00000000000129b0     BdsDxe:AutoGen.obj
+ 0002:00000120       gEdkiiVariableLockProtocolGuid 00000000000129c0     BdsDxe:AutoGen.obj
+ 0002:00000130       gPcdProtocolGuid           00000000000129d0     BdsDxe:AutoGen.obj
+ 0002:00000140       gEfiDxeSmmReadyToLockProtocolGuid 00000000000129e0     BdsDxe:AutoGen.obj
+ 0002:00000150       gEfiSimpleTextOutProtocolGuid 00000000000129f0     BdsDxe:AutoGen.obj
+ 0002:00000160       gEfiLoadFileProtocolGuid   0000000000012a00     BdsDxe:AutoGen.obj
+ 0002:00000170       gEfiDiskInfoSdMmcInterfaceGuid 0000000000012a10     BdsDxe:AutoGen.obj
+ 0002:00000180       gUefiShellFileGuid         0000000000012a20     BdsDxe:AutoGen.obj
+ 0002:00000190       gEfiDeferredImageLoadProtocolGuid 0000000000012a30     BdsDxe:AutoGen.obj
+ 0002:000001a0       gEdkiiPlatformBootManagerProtocolGuid 0000000000012a40     BdsDxe:AutoGen.obj
+ 0002:000001b0       gEfiFileInfoGuid           0000000000012a50     BdsDxe:AutoGen.obj
+ 0002:000001c0       gEfiNvmExpressPassThruProtocolGuid 0000000000012a60     BdsDxe:AutoGen.obj
+ 0002:000001d0       gEfiXenInfoGuid            0000000000012a70     BdsDxe:AutoGen.obj
+ 0002:000001e0       gEfiDevicePathProtocolGuid 0000000000012a80     BdsDxe:AutoGen.obj
+ 0002:000001f0       gEfiPciIoProtocolGuid      0000000000012a90     BdsDxe:AutoGen.obj
+ 0002:00000200       gEfiFirmwareVolume2ProtocolGuid 0000000000012aa0     BdsDxe:AutoGen.obj
+ 0002:00000210       gEfiDevicePathToTextProtocolGuid 0000000000012ab0     BdsDxe:AutoGen.obj
+ 0002:00000220       gEfiHiiConfigRoutingProtocolGuid 0000000000012ac0     BdsDxe:AutoGen.obj
+ 0002:00000230       gEfiDiskInfoAhciInterfaceGuid 0000000000012ad0     BdsDxe:AutoGen.obj
+ 0002:00000240       gEfiSimpleTextInputExProtocolGuid 0000000000012ae0     BdsDxe:AutoGen.obj
+ 0002:00000250       gEfiSimpleTextInProtocolGuid 0000000000012af0     BdsDxe:AutoGen.obj
+ 0002:00000260       gEfiUsbIoProtocolGuid      0000000000012b00     BdsDxe:AutoGen.obj
+ 0002:00000270       gEfiTcg2PhysicalPresenceGuid 0000000000012b10     BdsDxe:AutoGen.obj
+ 0002:00000280       gEfiHiiImageProtocolGuid   0000000000012b20     BdsDxe:AutoGen.obj
+ 0002:00000290       gEfiS3SaveStateProtocolGuid 0000000000012b30     BdsDxe:AutoGen.obj
+ 0002:000002a0       gEfiDevicePathUtilitiesProtocolGuid 0000000000012b40     BdsDxe:AutoGen.obj
+ 0002:000002b0       gEfiDevicePathFromTextProtocolGuid 0000000000012b50     BdsDxe:AutoGen.obj
+ 0002:000002c0       gEfiGraphicsOutputProtocolGuid 0000000000012b60     BdsDxe:AutoGen.obj
+ 0002:000002d0       gEfiHiiDatabaseProtocolGuid 0000000000012b70     BdsDxe:AutoGen.obj
+ 0002:000002e0       gEfiRscHandlerProtocolGuid 0000000000012b80     BdsDxe:AutoGen.obj
+ 0002:000002f0       gEfiSimpleFileSystemProtocolGuid 0000000000012b90     BdsDxe:AutoGen.obj
+ 0002:00000300       gEfiHiiStringProtocolGuid  0000000000012ba0     BdsDxe:AutoGen.obj
+ 0002:00000310       gEfiUgaDrawProtocolGuid    0000000000012bb0     BdsDxe:AutoGen.obj
+ 0002:00000320       gEfiTcg2ProtocolGuid       0000000000012bc0     BdsDxe:AutoGen.obj
+ 0002:00000330       gEfiHobListGuid            0000000000012bd0     BdsDxe:AutoGen.obj
+ 0002:00000340       gEdkiiIoMmuProtocolGuid    0000000000012be0     BdsDxe:AutoGen.obj
+ 0002:00000350       gEdkiiStatusCodeDataTypeVariableGuid 0000000000012bf0     BdsDxe:AutoGen.obj
+ 0002:00000360       gEfiBootLogoProtocolGuid   0000000000012c00     BdsDxe:AutoGen.obj
+ 0002:00000370       gEfiFormBrowser2ProtocolGuid 0000000000012c10     BdsDxe:AutoGen.obj
+ 0002:00000380       gEfiComponentNameProtocolGuid 0000000000012c20     BdsDxe:AutoGen.obj
+ 0002:00000390       gEfiEndOfDxeEventGroupGuid 0000000000012c30     BdsDxe:AutoGen.obj
+ 0002:000003a0       gEfiBlockIoProtocolGuid    0000000000012c40     BdsDxe:AutoGen.obj
+ 0002:000003b0       gEfiDxeServicesTableGuid   0000000000012c50     BdsDxe:AutoGen.obj
+ 0002:000003c0       gEfiCallerIdGuid           0000000000012c60     BdsDxe:AutoGen.obj
+ 0002:000003d0       gEdkiiVariablePolicyProtocolGuid 0000000000012c70     BdsDxe:AutoGen.obj
+ 0002:000003e0       gEfiHiiFontProtocolGuid    0000000000012c80     BdsDxe:AutoGen.obj
+ 0002:000003f0       gBds                       0000000000012c90     BdsDxe:BdsEntry.obj
+ 0002:00000400       mEfiColors                 0000000000012ca0     UefiLib:UefiLibPrint.obj
+ 0002:00000440       mBmHotkeyList              0000000000012ce0     UefiBootManagerLib:BmHotkey.obj
+ 0002:00000450       mBmHotkeyBootOption        0000000000012cf0     UefiBootManagerLib:BmHotkey.obj
+ 0002:000004a8       mBmHotkeyLock              0000000000012d48     UefiBootManagerLib:BmHotkey.obj
+ 0002:000004c0       mBmHardDriveBootVariableGuid 0000000000012d60     UefiBootManagerLib:BmBoot.obj
+ 0002:000004d0       mBmAutoCreateBootOptionGuid 0000000000012d70     UefiBootManagerLib:BmBoot.obj
+ 0002:000004e0       mPlatformBootDescriptionHandlers 0000000000012d80     UefiBootManagerLib:BmBootDescription.obj
+ 0002:000004f0       mBmUefiPrefix              0000000000012d90     UefiBootManagerLib:BmBootDescription.obj
+ 0002:00000500       serialDevicePath           0000000000012da0     PlatformBootManagerLib:BdsPlatform.obj
+ 0002:00000540       gPlatformConsole           0000000000012de0     PlatformBootManagerLib:PlatformData.obj
+ 0002:00000580       gXenPlatformConsole        0000000000012e20     PlatformBootManagerLib:PlatformData.obj
+ 0002:000005a0       gUartDeviceNode            0000000000012e40     PlatformBootManagerLib:PlatformData.obj
+ 0002:000005b8       gPnpPs2KeyboardDeviceNode  0000000000012e58     PlatformBootManagerLib:PlatformData.obj
+ 0002:000005c8       gTerminalTypeDeviceNode    0000000000012e68     PlatformBootManagerLib:PlatformData.obj
+ 0002:000005e0       gPnp16550ComPortDeviceNode 0000000000012e80     PlatformBootManagerLib:PlatformData.obj
+ 0002:00000620       gDebugAgentUartDevicePath  0000000000012ec0     PlatformBootManagerLib:PlatformData.obj
+ 0002:000006a0       Tcg2PhysicalPresenceLibQemuStrings 0000000000012f40     Tcg2PhysicalPresenceLibQemu:AutoGen.obj
+ 0002:00001190       ??_C@_06MKAOPKOC@BdsDxe@   0000000000013a30     BdsDxe:AutoGen.obj
+ 0002:00001198       _gPcd_FixedAtBuild_PcdDriverHealthConfigureForm 0000000000013a38     BdsDxe:AutoGen.obj
+ 0002:000011a8       _gPcd_FixedAtBuild_PcdUefiVariableDefaultPlatformLang 0000000000013a48     BdsDxe:AutoGen.obj
+ 0002:000011b0       _gPcd_FixedAtBuild_PcdFirmwareVendor 0000000000013a50     BdsDxe:AutoGen.obj
+ 0002:000011c0       _gPcd_FixedAtBuild_PcdUefiVariableDefaultLangCodes 0000000000013a60     BdsDxe:AutoGen.obj
+ 0002:000011d0       _gPcd_FixedAtBuild_PcdBootManagerMenuFile 0000000000013a70     BdsDxe:AutoGen.obj
+ 0002:000011e0       _gPcd_FixedAtBuild_PcdUefiVariableDefaultPlatformLangCodes 0000000000013a80     BdsDxe:AutoGen.obj
+ 0002:000011f4       _gPcd_FixedAtBuild_PcdUefiVariableDefaultLang 0000000000013a94     BdsDxe:AutoGen.obj
+ 0002:000011f8       ??_C@_1CE@GLBFGNOF@?$AAP?$AAl?$AAa?$AAt?$AAf?$AAo?$AAr?$AAm?$AAL?$AAa?$AAn?$AAg?$AAC?$AAo?$AAd@ 0000000000013a98     BdsDxe:BdsEntry.obj
+ 0002:00001220       ??_C@_1BE@PMKNNMNM@?$AAL?$AAa?$AAn?$AAg?$AAC?$AAo?$AAd?$AAe?$AAs@ 0000000000013ac0     BdsDxe:BdsEntry.obj
+ 0002:00001238       ??_C@_1CE@BKEAGEIL@?$AAB?$AAo?$AAo?$AAt?$AAO?$AAp?$AAt?$AAi?$AAo?$AAn?$AAS?$AAu?$AAp?$AAp?$AAo@ 0000000000013ad8     BdsDxe:BdsEntry.obj
+ 0002:00001260       ??_C@_1CA@BOALBJHG@?$AAH?$AAw?$AAE?$AAr?$AAr?$AAR?$AAe?$AAc?$AAS?$AAu?$AAp?$AAp?$AAo?$AAr?$AAt@ 0000000000013b00     BdsDxe:BdsEntry.obj
+ 0002:00001280       ??_C@_1CO@MENFEBKM@?$AAO?$AAs?$AAI?$AAn?$AAd?$AAi?$AAc?$AAa?$AAt?$AAi?$AAo?$AAn?$AAs?$AAS?$AAu@ 0000000000013b20     BdsDxe:BdsEntry.obj
+ 0002:000012b0       ??_C@_1O@GAOCKAOK@?$AAD?$AAr?$AAi?$AAv?$AAe?$AAr@ 0000000000013b50     BdsDxe:BdsEntry.obj
+ 0002:000012c0       ??_C@_1BA@IBFPPJON@?$AAS?$AAy?$AAs?$AAP?$AAr?$AAe?$AAp@ 0000000000013b60     BdsDxe:BdsEntry.obj
+ 0002:000012d0       ??_C@_19JCAOHIEH@?$AAB?$AAo?$AAo?$AAt@ 0000000000013b70     BdsDxe:BdsEntry.obj
+ 0002:000012e0       ??_C@_1CC@LGMJPJO@?$AAP?$AAl?$AAa?$AAt?$AAf?$AAo?$AAr?$AAm?$AAR?$AAe?$AAc?$AAo?$AAv?$AAe?$AAr@ 0000000000013b80     BdsDxe:BdsEntry.obj
+ 0002:00001308       ??_C@_1BM@MDLAABPK@?$AAO?$AAs?$AAI?$AAn?$AAd?$AAi?$AAc?$AAa?$AAt?$AAi?$AAo?$AAn?$AAs@ 0000000000013ba8     BdsDxe:BdsEntry.obj
+ 0002:00001328       ??_C@_1M@NFPEGKHA@?$AAC?$AAo?$AAn?$AAI?$AAn@ 0000000000013bc8     BdsDxe:BdsEntry.obj
+ 0002:00001338       ??_C@_1O@MJHLOIFA@?$AAC?$AAo?$AAn?$AAO?$AAu?$AAt@ 0000000000013bd8     BdsDxe:BdsEntry.obj
+ 0002:00001348       ??_C@_1O@JOJMCOJC@?$AAE?$AAr?$AAr?$AAO?$AAu?$AAt@ 0000000000013be8     BdsDxe:BdsEntry.obj
+ 0002:00001358       ??_C@_1BA@BKONPLFM@?$AAT?$AAi?$AAm?$AAe?$AAo?$AAu?$AAt@ 0000000000013bf8     BdsDxe:BdsEntry.obj
+ 0002:00001368       ??_C@_1BC@HGEHGBBD@?$AAB?$AAo?$AAo?$AAt?$AAN?$AAe?$AAx?$AAt@ 0000000000013c08     BdsDxe:BdsEntry.obj
+ 0002:00001380       ??_C@_1CM@POLGBFKG@?$AA?2?$AAE?$AAF?$AAI?$AA?2?$AAB?$AAO?$AAO?$AAT?$AA?2?$AAB?$AAO?$AAO?$AAT?$AAX@ 0000000000013c20     BdsDxe:BdsEntry.obj
+ 0002:000013b0       ??_C@_1DC@DDAANGAJ@?$AAD?$AAe?$AAf?$AAa?$AAu?$AAl?$AAt?$AA?5?$AAP?$AAl?$AAa?$AAt?$AAf?$AAo?$AAr@ 0000000000013c50     BdsDxe:BdsEntry.obj
+ 0002:000013f0       ??_C@_1EI@LNDJNEI@?$AA?$CK?$AA?$CK?$AA?5?$AA?5?$AAW?$AAA?$AAR?$AAN?$AAI?$AAN?$AAG?$AA?3?$AA?5?$AAT?$AAe@ 0000000000013c90     BdsDxe:BdsEntry.obj
+ 0002:00001438       ??_C@_1BC@HAMKBGJJ@?$AAB?$AAo?$AAo?$AAt?$AA?$CF?$AA0?$AA4?$AAx@ 0000000000013cd8     BdsDxe:BdsEntry.obj
+ 0002:00001450       mReadOnlyVariables         0000000000013cf0     BdsDxe:BdsEntry.obj
+ 0002:00001478       ??_C@_19BALNHBBC@?$AAL?$AAa?$AAn?$AAg@ 0000000000013d18     BdsDxe:Language.obj
+ 0002:00001488       ??_C@_1BK@GGGENMOA@?$AAP?$AAl?$AAa?$AAt?$AAf?$AAo?$AAr?$AAm?$AAL?$AAa?$AAn?$AAg@ 0000000000013d28     BdsDxe:Language.obj
+ 0002:000014a8       ??_C@_0O@MLOLIMFM@?$DMnull?5string?$DO@ 0000000000013d48     BasePrintLib:PrintLibInternal.obj
+ 0002:000014b8       ??_C@_0M@BJJDNPHK@?$DMnull?5guid?$DO@ 0000000000013d58     BasePrintLib:PrintLibInternal.obj
+ 0002:000014c8       ??_C@_0DB@PMLHLBMO@?$CF08x?9?$CF04x?9?$CF04x?9?$CF02x?$CF02x?9?$CF02x?$CF02@ 0000000000013d68     BasePrintLib:PrintLibInternal.obj
+ 0002:00001500       ??_C@_0M@LHGBCIKM@?$DMnull?5time?$DO@ 0000000000013da0     BasePrintLib:PrintLibInternal.obj
+ 0002:00001510       ??_C@_0BK@FCPKCIDD@?$CF02d?1?$CF02d?1?$CF04d?5?5?$CF02d?3?$CF02d@ 0000000000013db0     BasePrintLib:PrintLibInternal.obj
+ 0002:0000152c       ??_C@_04JIMNDDED@?$CF08X@  0000000000013dcc     BasePrintLib:PrintLibInternal.obj
+ 0002:00001534       ??_C@_02PCIJFNDE@?$AN?6@   0000000000013dd4     BasePrintLib:PrintLibInternal.obj
+ 0002:00001538       ??_C@_01LIIJDEN@?$AN@      0000000000013dd8     BasePrintLib:PrintLibInternal.obj
+ 0002:00001540       mWarningString             0000000000013de0     BasePrintLib:PrintLibInternal.obj
+ 0002:000015e0       mErrorString               0000000000013e80     BasePrintLib:PrintLibInternal.obj
+ 0002:000018a0       mHexStr                    0000000000014140     BasePrintLib:PrintLibInternal.obj
+ 0002:000018b0       mUefiDevicePathLibEndDevicePath 0000000000014150     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:000018b8       ??_C@_1BI@PDMCFEDG@?$AAD?$AAr?$AAi?$AAv?$AAe?$AAr?$AAO?$AAr?$AAd?$AAe?$AAr@ 0000000000014158     UefiBootManagerLib:BmLoadOption.obj
+ 0002:000018d0       ??_C@_1BK@CHMLNGLH@?$AAS?$AAy?$AAs?$AAP?$AAr?$AAe?$AAp?$AAO?$AAr?$AAd?$AAe?$AAr@ 0000000000014170     UefiBootManagerLib:BmLoadOption.obj
+ 0002:000018f0       ??_C@_1BE@CHCFCNKI@?$AAB?$AAo?$AAo?$AAt?$AAO?$AAr?$AAd?$AAe?$AAr@ 0000000000014190     UefiBootManagerLib:BmLoadOption.obj
+ 0002:00001908       ??_C@_1O@CJIOJFKI@?$AA?$CF?$AAs?$AA?$CF?$AA0?$AA4?$AAx@ 00000000000141a8     UefiBootManagerLib:BmLoadOption.obj
+ 0002:00001918       mBmLoadOptionOrderName     00000000000141b8     UefiBootManagerLib:BmLoadOption.obj
+ 0002:00001940       mBmLoadOptionName          00000000000141e0     UefiBootManagerLib:BmLoadOption.obj
+ 0002:00001960       ??_C@_17KACEIPNC@?$AAK?$AAe?$AAy@ 0000000000014200     UefiBootManagerLib:BmHotkey.obj
+ 0002:00001968       ??_C@_1BA@MLKFGFON@?$AAK?$AAe?$AAy?$AA?$CF?$AA0?$AA4?$AAx@ 0000000000014208     UefiBootManagerLib:BmHotkey.obj
+ 0002:00001978       ??_C@_19GDALFLBC@?$AAH?$AAD?$AAD?$AAP@ 0000000000014218     UefiBootManagerLib:BmBoot.obj
+ 0002:00001988       ??_C@_1BI@LBNGELID@?$AAB?$AAo?$AAo?$AAt?$AAC?$AAu?$AAr?$AAr?$AAe?$AAn?$AAt@ 0000000000014228     UefiBootManagerLib:BmBoot.obj
+ 0002:000019a0       ??_C@_1CE@NNDBOIGN@?$AAB?$AAo?$AAo?$AAt?$AA?5?$AAM?$AAa?$AAn?$AAa?$AAg?$AAe?$AAr?$AA?5?$AAM?$AAe@ 0000000000014240     UefiBootManagerLib:BmBoot.obj
+ 0002:000019c8       ??_C@_1BC@OBFMLJLI@?$AAC?$AAo?$AAn?$AAI?$AAn?$AAD?$AAe?$AAv@ 0000000000014268     UefiBootManagerLib:BmConsole.obj
+ 0002:000019e0       ??_C@_1BE@INNAKDAF@?$AAC?$AAo?$AAn?$AAO?$AAu?$AAt?$AAD?$AAe?$AAv@ 0000000000014280     UefiBootManagerLib:BmConsole.obj
+ 0002:000019f8       ??_C@_1BE@JFPOEAHF@?$AAE?$AAr?$AAr?$AAO?$AAu?$AAt?$AAD?$AAe?$AAv@ 0000000000014298     UefiBootManagerLib:BmConsole.obj
+ 0002:00001a10       mConVarName                00000000000142b0     UefiBootManagerLib:BmConsole.obj
+ 0002:00001a40       ??_C@_1CM@OLBNONPD@?$AAM?$AAe?$AAm?$AAo?$AAr?$AAy?$AAT?$AAy?$AAp?$AAe?$AAI?$AAn?$AAf?$AAo?$AAr@ 00000000000142e0     UefiBootManagerLib:BmMisc.obj
+ 0002:00001a70       ??_C@_1BE@HCCIKJOI@?$AAS?$AAD?$AA?5?$AAD?$AAe?$AAv?$AAi?$AAc?$AAe@ 0000000000014310     UefiBootManagerLib:BmBootDescription.obj
+ 0002:00001a88       ??_C@_1BI@MOIBBPND@?$AAe?$AAM?$AAM?$AAC?$AA?5?$AAD?$AAe?$AAv?$AAi?$AAc?$AAe@ 0000000000014328     UefiBootManagerLib:BmBootDescription.obj
+ 0002:00001aa0       ??_C@_13HOIJIPNN@?$AA?5@   0000000000014340     UefiBootManagerLib:BmBootDescription.obj
+ 0002:00001aa8       ??_C@_17IDOMPBMF@?$AAP?$AAX?$AAE@ 0000000000014348     UefiBootManagerLib:BmBootDescription.obj
+ 0002:00001ab0       ??_C@_19BMGGGIKC@?$AAH?$AAT?$AAT?$AAP@ 0000000000014350     UefiBootManagerLib:BmBootDescription.obj
+ 0002:00001ac0       ??_C@_1EK@KDADHDDD@?$AA?$CF?$AAs?$AAv?$AA?$CF?$AAd?$AA?5?$AA?$CI?$AAM?$AAA?$AAC?$AA?3?$AA?$CF?$AA0?$AA2?$AAx@ 0000000000014360     UefiBootManagerLib:BmBootDescription.obj
+ 0002:00001b10       ??_C@_1FI@BDHDKNGL@?$AA?$CF?$AAs?$AAv?$AA?$CF?$AAd?$AA?5?$AA?$CI?$AAM?$AAA?$AAC?$AA?3?$AA?$CF?$AA0?$AA2?$AAx@ 00000000000143b0     UefiBootManagerLib:BmBootDescription.obj
+ 0002:00001b68       ??_C@_1O@CLMODHEM@?$AAF?$AAl?$AAo?$AAp?$AAp?$AAy@ 0000000000014408     UefiBootManagerLib:BmBootDescription.obj
+ 0002:00001b78       ??_C@_1BE@CAANMHKL@?$AAD?$AAV?$AAD?$AA?1?$AAC?$AAD?$AAR?$AAO?$AAM@ 0000000000014418     UefiBootManagerLib:BmBootDescription.obj
+ 0002:00001b90       ??_C@_1BG@FNOOENMH@?$AAH?$AAa?$AAr?$AAd?$AA?5?$AAD?$AAr?$AAi?$AAv?$AAe@ 0000000000014430     UefiBootManagerLib:BmBootDescription.obj
+ 0002:00001ba8       ??_C@_1BG@PDJIKBEG@?$AAU?$AAS?$AAB?$AA?5?$AAD?$AAe?$AAv?$AAi?$AAc?$AAe@ 0000000000014448     UefiBootManagerLib:BmBootDescription.obj
+ 0002:00001bc0       ??_C@_1BI@NPAIJFIJ@?$AAS?$AAC?$AAS?$AAI?$AA?5?$AAD?$AAe?$AAv?$AAi?$AAc?$AAe@ 0000000000014460     UefiBootManagerLib:BmBootDescription.obj
+ 0002:00001bd8       ??_C@_1BO@NNOGFLGA@?$AAR?$AAe?$AAm?$AAo?$AAv?$AAa?$AAb?$AAl?$AAe?$AA?5?$AAD?$AAi?$AAs?$AAk@ 0000000000014478     UefiBootManagerLib:BmBootDescription.obj
+ 0002:00001bf8       ??_C@_1BI@IIOANEKN@?$AAM?$AAi?$AAs?$AAc?$AA?5?$AAD?$AAe?$AAv?$AAi?$AAc?$AAe@ 0000000000014498     UefiBootManagerLib:BmBootDescription.obj
+ 0002:00001c10       ??_C@_1CM@CCDJEPCI@?$AAN?$AAo?$AAn?$AA?9?$AAB?$AAl?$AAo?$AAc?$AAk?$AA?5?$AAB?$AAo?$AAo?$AAt?$AA?5@ 00000000000144b0     UefiBootManagerLib:BmBootDescription.obj
+ 0002:00001c40       ??_C@_1M@DJFDNGE@?$AA?$CF?$AAs?$AA?5?$AA?$CF?$AAd@ 00000000000144e0     UefiBootManagerLib:BmBootDescription.obj
+ 0002:00001c50       mBmBootDescriptionHandlers 00000000000144f0     UefiBootManagerLib:BmBootDescription.obj
+ 0002:00001c80       ??_C@_03LKLGDMJI@eng@      0000000000014520     UefiBootManagerLib:BmDriverHealth.obj
+ 0002:00001c84       ??_C@_05JJLPJMLG@en?9US@   0000000000014524     UefiBootManagerLib:BmDriverHealth.obj
+ 0002:00001c8a       ??_C@_00CNPNBAHC@@         000000000001452a     UefiBootManagerLib:BmDriverHealth.obj
+ 0002:00001c90       ??_C@_1CA@PLAOFDKP@?$AAC?$AAo?$AAn?$AAt?$AAr?$AAo?$AAl?$AAl?$AAe?$AAr?$AA?3?$AA?5?$AA?$CF?$AAs?$AA?6@ 0000000000014530     UefiBootManagerLib:BmDriverHealth.obj
+ 0002:00001cb0       ??_C@_1M@IANLBCIB@?$AA?5?$AA?5?$AA?$CF?$AAs?$AA?6@ 0000000000014550     UefiBootManagerLib:BmDriverHealth.obj
+ 0002:00001cc0       ??_C@_1DE@KPAEMAID@?$AA?$FL?$AAB?$AAD?$AAS?$AA?$FN?$AAR?$AAe?$AAp?$AAa?$AAi?$AAr?$AAN?$AAo?$AAt?$AAi@ 0000000000014560     UefiBootManagerLib:BmDriverHealth.obj
+ 0002:00001cf8       ??_C@_1CG@IECCGMCE@?$AAE?$AAF?$AAI?$AA?5?$AAI?$AAn?$AAt?$AAe?$AAr?$AAn?$AAa?$AAl?$AA?5?$AAS?$AAh@ 0000000000014598     PlatformBootManagerLib:BdsPlatform.obj
+ 0002:00001d20       ??_C@_1CE@DKOAHPNA@?$AAS?$AAt?$AAa?$AAr?$AAt?$AA?5?$AAb?$AAo?$AAo?$AAt?$AA?5?$AAo?$AAp?$AAt?$AAi@ 00000000000145c0     PlatformBootManagerLib:BdsPlatform.obj
+ 0002:00001d50       ??_C@_0FP@MEBIAJBD@?$CFa?3?5No?5bootable?5option?5or?5devic@ 00000000000145f0     PlatformBootManagerLib:BdsPlatform.obj
+ 0002:00001db4       PciHostIrqs                0000000000014654     PlatformBootManagerLib:BdsPlatform.obj
+ 0002:00001db8       mEndOfPakageList           0000000000014658     UefiHiiLib:HiiLib.obj
+ 0002:00001dc0       ??_C@_0P@FAALPMBM@etc?1tpm?1config@ 0000000000014660     Tcg2PhysicalPresenceLibQemu:DxeTcg2PhysicalPresenceLib.obj
+ 0002:00001dd0       ??_C@_15JOGBDECP@?$AA?0?$AA?5@ 0000000000014670     Tcg2PhysicalPresenceLibQemu:DxeTcg2PhysicalPresenceLib.obj
+ 0002:00001dd8       ??_C@_19DILNDFJH@?$AAS?$AAH?$AAA?$AA1@ 0000000000014678     Tcg2PhysicalPresenceLibQemu:DxeTcg2PhysicalPresenceLib.obj
+ 0002:00001de8       ??_C@_1O@HECGKAIN@?$AAS?$AAH?$AAA?$AA2?$AA5?$AA6@ 0000000000014688     Tcg2PhysicalPresenceLibQemu:DxeTcg2PhysicalPresenceLib.obj
+ 0002:00001df8       ??_C@_1O@KOBLHLEG@?$AAS?$AAH?$AAA?$AA3?$AA8?$AA4@ 0000000000014698     Tcg2PhysicalPresenceLibQemu:DxeTcg2PhysicalPresenceLib.obj
+ 0002:00001e08       ??_C@_1O@GKBAHMNF@?$AAS?$AAH?$AAA?$AA5?$AA1?$AA2@ 00000000000146a8     Tcg2PhysicalPresenceLibQemu:DxeTcg2PhysicalPresenceLib.obj
+ 0002:00001e20       ??_C@_1BA@GJCBBDME@?$AAS?$AAM?$AA3?$AA_?$AA2?$AA5?$AA6@ 00000000000146c0     Tcg2PhysicalPresenceLibQemu:DxeTcg2PhysicalPresenceLib.obj
+ 0002:00001e30       ??_C@_17KNINIBMC@?$AA?5?$AA?6?$AA?6@ 00000000000146d0     Tcg2PhysicalPresenceLibQemu:DxeTcg2PhysicalPresenceLib.obj
+ 0002:00001e40       ??_C@_1HG@KCLLKJOD@?$AAC?$AAu?$AAr?$AAr?$AAe?$AAn?$AAt?$AA?5?$AAP?$AAC?$AAR?$AAB?$AAa?$AAn?$AAk@ 00000000000146e0     Tcg2PhysicalPresenceLibQemu:DxeTcg2PhysicalPresenceLib.obj
+ 0002:00001eb8       ??_C@_15CGCMLLAO@?$AA?5?$AA?6@ 0000000000014758     Tcg2PhysicalPresenceLibQemu:DxeTcg2PhysicalPresenceLib.obj
+ 0002:00001ec0       ??_C@_1GE@JFNJAPEP@?$AAR?$AAe?$AAb?$AAo?$AAo?$AAt?$AAi?$AAn?$AAg?$AA?5?$AAs?$AAy?$AAs?$AAt?$AAe@ 0000000000014760     Tcg2PhysicalPresenceLibQemu:DxeTcg2PhysicalPresenceLib.obj
+ 0002:00001f30       ??_C@_1FK@LBBDFEMP@?$AA?$DM?$AAo?$AAu?$AAt?$AA?5?$AAo?$AAf?$AA?5?$AAm?$AAe?$AAm?$AAo?$AAr?$AAy?$AA?5@ 00000000000147d0     PlatformBmPrintScLib:StatusCodeHandler.obj
+ 0002:00001f90       ??_C@_07OBKGAHNP@loading@  0000000000014830     PlatformBmPrintScLib:StatusCodeHandler.obj
+ 0002:00001f98       ??_C@_08LBGAIFHM@starting@ 0000000000014838     PlatformBmPrintScLib:StatusCodeHandler.obj
+ 0002:00001fa8       ??_C@_1DA@GBHAOABH@?$AA?$CF?$AAa?$AA?3?$AA?5?$AA?$CF?$AAa?$AA?5?$AA?$CF?$AAs?$AA?5?$AA?$CC?$AA?$CF?$AAs?$AA?$CC?$AA?5@ 0000000000014848     PlatformBmPrintScLib:StatusCodeHandler.obj
+ 0002:00001fd8       ??_C@_04EONOHKEP@load@     0000000000014878     PlatformBmPrintScLib:StatusCodeHandler.obj
+ 0002:00001fe0       ??_C@_05FAGFPHJG@start@    0000000000014880     PlatformBmPrintScLib:StatusCodeHandler.obj
+ 0002:00001ff0       ??_C@_1EM@MNMOKNGC@?$AA?$CF?$AAa?$AA?3?$AA?5?$AAf?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AAt?$AAo?$AA?5?$AA?$CF@ 0000000000014890     PlatformBmPrintScLib:StatusCodeHandler.obj
+ 0002:0000203c       ??_C@_03ELCKCFOI@pci@      00000000000148dc     QemuBootOrderLib:QemuBootOrderLib.obj
+ 0002:00002040       ??_C@_0L@ONIOCFMC@pci?9bridge@ 00000000000148e0     QemuBootOrderLib:QemuBootOrderLib.obj
+ 0002:00002050       ??_C@_0BC@JJLHNODC@?1Pci?$CI0x?$CFLx?00x?$CFLx?$CJ@ 00000000000148f0     QemuBootOrderLib:QemuBootOrderLib.obj
+ 0002:00002064       ??_C@_03MPMBGEHE@ide@      0000000000014904     QemuBootOrderLib:QemuBootOrderLib.obj
+ 0002:00002068       ??_C@_05FAJCJDDG@drive@    0000000000014908     QemuBootOrderLib:QemuBootOrderLib.obj
+ 0002:00002070       ??_C@_04MDPPAFID@disk@     0000000000014910     QemuBootOrderLib:QemuBootOrderLib.obj
+ 0002:00002078       ??_C@_05FDIJKFCP@Slave@    0000000000014918     QemuBootOrderLib:QemuBootOrderLib.obj
+ 0002:00002080       ??_C@_06INNNFHKM@Master@   0000000000014920     QemuBootOrderLib:QemuBootOrderLib.obj
+ 0002:00002088       ??_C@_09PGGKEDN@Secondary@ 0000000000014928     QemuBootOrderLib:QemuBootOrderLib.obj
+ 0002:00002098       ??_C@_07NAEHBBNL@Primary@  0000000000014938     QemuBootOrderLib:QemuBootOrderLib.obj
+ 0002:000020a0       ??_C@_0DA@LLGECDDO@PciRoot?$CI0x?$CFx?$CJ?$CFs?1Pci?$CI0x?$CFLx?00x?$CFLx@ 0000000000014940     QemuBootOrderLib:QemuBootOrderLib.obj
+ 0002:000020d0       ??_C@_0N@BKJHPFAN@pci8086?02922@ 0000000000014970     QemuBootOrderLib:QemuBootOrderLib.obj
+ 0002:000020e0       ??_C@_0DI@IOKAPIOD@PciRoot?$CI0x?$CFx?$CJ?$CFs?1Pci?$CI0x?$CFLx?00x?$CFLx@ 0000000000014980     QemuBootOrderLib:QemuBootOrderLib.obj
+ 0002:00002118       ??_C@_03LCMEBEIF@isa@      00000000000149b8     QemuBootOrderLib:QemuBootOrderLib.obj
+ 0002:0000211c       ??_C@_03MBPINDKE@fdc@      00000000000149bc     QemuBootOrderLib:QemuBootOrderLib.obj
+ 0002:00002120       ??_C@_06CPJCHMJA@floppy@   00000000000149c0     QemuBootOrderLib:QemuBootOrderLib.obj
+ 0002:00002128       ??_C@_0CP@OHPKACDJ@PciRoot?$CI0x?$CFx?$CJ?$CFs?1Pci?$CI0x?$CFLx?00x?$CFLx@ 00000000000149c8     QemuBootOrderLib:QemuBootOrderLib.obj
+ 0002:00002158       ??_C@_04EMLEMMPH@scsi@     00000000000149f8     QemuBootOrderLib:QemuBootOrderLib.obj
+ 0002:00002160       ??_C@_0CB@KPEHMPMH@PciRoot?$CI0x?$CFx?$CJ?$CFs?1Pci?$CI0x?$CFLx?00x?$CFLx@ 0000000000014a00     QemuBootOrderLib:QemuBootOrderLib.obj
+ 0002:00002188       ??_C@_07MFOHDNMP@channel@  0000000000014a28     QemuBootOrderLib:QemuBootOrderLib.obj
+ 0002:00002190       ??_C@_0DD@KIFLCPPO@PciRoot?$CI0x?$CFx?$CJ?$CFs?1Pci?$CI0x?$CFLx?00x?$CFLx@ 0000000000014a30     QemuBootOrderLib:QemuBootOrderLib.obj
+ 0002:000021c8       ??_C@_0N@FLMHKEAN@pci8086?05845@ 0000000000014a68     QemuBootOrderLib:QemuBootOrderLib.obj
+ 0002:000021d8       ??_C@_09KPMGAFNI@namespace@ 0000000000014a78     QemuBootOrderLib:QemuBootOrderLib.obj
+ 0002:000021f0       ??_C@_0FF@JMKCDJHF@PciRoot?$CI0x?$CFx?$CJ?$CFs?1Pci?$CI0x?$CFLx?00x?$CFLx@ 0000000000014a90     QemuBootOrderLib:QemuBootOrderLib.obj
+ 0002:00002248       ??_C@_03IDCGKPGB@usb@      0000000000014ae8     QemuBootOrderLib:QemuBootOrderLib.obj
+ 0002:00002250       ??_C@_07MBNJONM@storage@   0000000000014af0     QemuBootOrderLib:QemuBootOrderLib.obj
+ 0002:00002258       ??_C@_0DA@EGDMDKEM@PciRoot?$CI0x?$CFx?$CJ?$CFs?1Pci?$CI0x?$CFLx?00x?$CFLx@ 0000000000014af8     QemuBootOrderLib:QemuBootOrderLib.obj
+ 0002:00002288       ??_C@_04NFKBMIMG@HALT@     0000000000014b28     QemuBootOrderLib:QemuBootOrderLib.obj
+ 0002:00002290       ??_C@_09MGLADHFF@bootorder@ 0000000000014b30     QemuBootOrderLib:QemuBootOrderLib.obj
+ 0002:000022a0       ??_C@_08DAJKOHHL@Boot?$CF04x@ 0000000000014b40     QemuBootOrderLib:QemuBootOrderLib.obj
+ 0002:000022b0       ??_C@_0BD@EOHODKCK@etc?1boot?9menu?9wait@ 0000000000014b50     QemuBootOrderLib:QemuBootOrderLib.obj
+ 0002:000022c8       ??_C@_0P@GKMHIHDO@?5initrd?$DNinitrd@ 0000000000014b68     X86QemuLoadImageLib:X86QemuLoadImageLib.obj
+ 0002:000022d8       ??_C@_04PBAGOGBN@?$CFa?$CFa@ 0000000000014b78     X86QemuLoadImageLib:X86QemuLoadImageLib.obj
+ 0002:00002310       ??_C@_1O@PIDKPFMP@?$AAN?$AAv?$AAV?$AAa?$AAr?$AAs@ 0000000000014bb0     NvVarsFileLib:FsAccess.obj
+ 0002:00002340       mPcd                       0000000000014be0     DxePcdLib:DxePcdLib.obj
+ 0002:00002348       gST                        0000000000014be8     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00002350       gBS                        0000000000014bf0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00002358       gImageHandle               0000000000014bf8     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00002360       gRT                        0000000000014c00     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0002:00002368       mDevicePathLibDevicePathFromText 0000000000014c08     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:00002370       mDevicePathLibDevicePathToText 0000000000014c10     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:00002378       mDevicePathLibDevicePathUtilities 0000000000014c18     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:00002380       mHobList                   0000000000014c20     DxeHobLib:HobLib.obj
+ 0002:00002388       gHiiString                 0000000000014c28     UefiHiiServicesLib:UefiHiiServicesLib.obj
+ 0002:00002390       gHiiFont                   0000000000014c30     UefiHiiServicesLib:UefiHiiServicesLib.obj
+ 0002:00002398       gHiiConfigRouting          0000000000014c38     UefiHiiServicesLib:UefiHiiServicesLib.obj
+ 0002:000023a0       gHiiImage                  0000000000014c40     UefiHiiServicesLib:UefiHiiServicesLib.obj
+ 0002:000023a8       gHiiDatabase               0000000000014c48     UefiHiiServicesLib:UefiHiiServicesLib.obj
+ 0002:000023b0       gDS                        0000000000014c50     DxeServicesTableLib:DxeServicesTableLib.obj
+ 0002:000023b8       mReportStatusCodeLibStatusCodeProtocol 0000000000014c58     DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0002:000023c8       mBmHotkeyTriggered         0000000000014c68     UefiBootManagerLib:BmHotkey.obj
+ 0002:000023d0       mBmHotkeySupportCount      0000000000014c70     UefiBootManagerLib:BmHotkey.obj
+ 0002:000023d8       mBmTxtInExRegistration     0000000000014c78     UefiBootManagerLib:BmHotkey.obj
+ 0002:000023e0       mBmHotkeyServiceStarted    0000000000014c80     UefiBootManagerLib:BmHotkey.obj
+ 0002:000023e8       mBmContinueKeyOption       0000000000014c88     UefiBootManagerLib:BmHotkey.obj
+ 0002:000023f0       mBmLegacyBoot              0000000000014c90     UefiBootManagerLib:BmBoot.obj
+ 0002:000023f8       mRamDisk                   0000000000014c98     UefiBootManagerLib:BmBoot.obj
+ 0002:00002400       mBmRefreshLegacyBootOption 0000000000014ca0     UefiBootManagerLib:BmBoot.obj
+ 0002:00002410       gPlatformConnectSequence   0000000000014cb0     PlatformBootManagerLib:PlatformData.obj
+ 0002:00002420       mNvVarsFileLibFsHandle     0000000000014cc0     NvVarsFileLib:NvVarsFileLib.obj
+ 0002:00002430       mTcg2Protocol              0000000000014cd0     Tpm2DeviceLibTcg2:Tpm2DeviceLibTcg2.obj
+ 0002:00002468       mTcg2PpStringPackHandle    0000000000014d08     <common>
+ 0002:00002470       mEmuVariableEventReg       0000000000014d10     <common>
+ 0002:00002478       mEmuVariableEvent          0000000000014d18     <common>
+ 0002:00002480       mEfiDevPathNotifyReg       0000000000014d20     <common>
+ 0002:00002488       mHostBridgeDevId           0000000000014d28     <common>
+ 0002:0000248c       __volatile_metadata        0000000000014d2c     <linker-defined>
+
+ entry point at        0001:00000388
+
+ Static symbols
+
+ 0001:0000001a       InternalMemCopyMem.0       000000000000029a     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:0000002a       @CopyBackward              00000000000002aa     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000033       @CopyBytes                 00000000000002b3     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:0000008a       @UseRepIo                  000000000000030a     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:0000008c       @SevNoRepIo_Done           000000000000030c     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000000a4       @IoReadFifo8_NoRep         0000000000000324     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000000a6       @IoReadFifo8_Loop          0000000000000326     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000000ae       @IoReadFifo8_Done          000000000000032e     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000000c7       @IoReadFifo16_NoRep        0000000000000347     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000000c9       @IoReadFifo16_Loop         0000000000000349     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000000d4       @IoReadFifo16_Done         0000000000000354     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000000ec       @IoReadFifo32_NoRep        000000000000036c     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000000ee       @IoReadFifo32_Loop         000000000000036e     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000000f7       @IoReadFifo32_Done         0000000000000377     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:0000010f       @IoWriteFifo8_NoRep        000000000000038f     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000111       @IoWriteFifo8_Loop         0000000000000391     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000119       @IoWriteFifo8_Done         0000000000000399     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000132       @IoWriteFifo16_NoRep       00000000000003b2     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000134       @IoWriteFifo16_Loop        00000000000003b4     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:0000013f       @IoWriteFifo16_Done        00000000000003bf     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000157       @IoWriteFifo32_NoRep       00000000000003d7     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000159       @IoWriteFifo32_Loop        00000000000003d9     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000162       @IoWriteFifo32_Done        00000000000003e2     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:0000021f       AsmCpuid.0                 000000000000049f     BaseLib:CpuId.obj
+ 0001:00000224       AsmCpuid.1                 00000000000004a4     BaseLib:CpuId.obj
+ 0001:0000022b       AsmCpuid.2                 00000000000004ab     BaseLib:CpuId.obj
+ 0001:00000234       AsmCpuid.3                 00000000000004b4     BaseLib:CpuId.obj
+ 0001:000002e0       JumpToKernel.0             0000000000000560     LoadLinuxLib:JumpToKernel.obj
+ 0001:00000365       @ReturnFalse               00000000000005e5     BaseMemoryLibRepStr:IsZeroBuffer.obj
+ 0001:00003a18       AllocFwCfgDmaAccessBuffer  0000000000003c98 f   QemuFwCfgDxeLib:QemuFwCfgDxe.obj
+ 0001:0000aa5c       ConnectVirtioPciRng        000000000000acdc f   PlatformBootManagerLib:BdsPlatform.obj
+ 0001:0000bfac       InternalMemEncryptSevStatus 000000000000c22c f   DxeMemEncryptSevLib:DxeMemEncryptSevLibInternal.obj
+ 0001:0000ccb4       QemuTpmInitPPI             000000000000cf34 f   Tcg2PhysicalPresenceLibQemu:DxeTcg2PhysicalPresenceLib.obj
+ 0001:0000cf80       Tpm2CommandChangeEps       000000000000d200 f   Tcg2PhysicalPresenceLibQemu:DxeTcg2PhysicalPresenceLib.obj
+ 0001:0000d0e0       Tcg2FillBufferWithBootHashAlg 000000000000d360 f   Tcg2PhysicalPresenceLibQemu:DxeTcg2PhysicalPresenceLib.obj
+ 0001:0000d2e8       Tcg2UserConfirm            000000000000d568 f   Tcg2PhysicalPresenceLibQemu:DxeTcg2PhysicalPresenceLib.obj
+ 0001:0000d9f0       Tcg2ExecutePendingTpmRequest 000000000000dc70 f   Tcg2PhysicalPresenceLibQemu:DxeTcg2PhysicalPresenceLib.obj
+ 0001:0000dc68       HandleStatusCode           000000000000dee8 f   PlatformBmPrintScLib:StatusCodeHandler.obj
+ 0001:0000de94       UnregisterAtExitBootServices 000000000000e114 f   PlatformBmPrintScLib:StatusCodeHandler.obj
+ 0001:0000dea0       SubstringEq                000000000000e120 f   QemuBootOrderLib:QemuBootOrderLib.obj
+ 0001:0000dedc       ParseUnitAddressHexList    000000000000e15c f   QemuBootOrderLib:QemuBootOrderLib.obj
+ 0001:0000dfbc       BootOrderAppend            000000000000e23c f   QemuBootOrderLib:QemuBootOrderLib.obj
+ 0001:0000e038       CollectActiveOptions       000000000000e2b8 f   QemuBootOrderLib:QemuBootOrderLib.obj
+ 0001:0000e104       ParseOfwNode               000000000000e384 f   QemuBootOrderLib:QemuBootOrderLib.obj
+ 0001:0000e264       TranslatePciOfwNodes       000000000000e4e4 f   QemuBootOrderLib:QemuBootOrderLib.obj
+ 0001:0000ea30       TranslateOfwPath           000000000000ecb0 f   QemuBootOrderLib:QemuBootOrderLib.obj
+ 0001:0000ed8c       Match                      000000000000f00c f   QemuBootOrderLib:QemuBootOrderLib.obj
+ 0001:0000eeb0       BootOrderComplete          000000000000f130 f   QemuBootOrderLib:QemuBootOrderLib.obj
+ 0001:0000f34c       RootBridgePathCompare      000000000000f5cc f   QemuBootOrderLib:ExtraRootBusMap.obj
+ 0001:0000f368       RootBridgePathKeyCompare   000000000000f5e8 f   QemuBootOrderLib:ExtraRootBusMap.obj
+ 0001:0000f57c       FreeLegacyImage            000000000000f7fc f   X86QemuLoadImageLib:X86QemuLoadImageLib.obj
+ 0001:0000f640       QemuLoadLegacyImage        000000000000f8c0 f   X86QemuLoadImageLib:X86QemuLoadImageLib.obj
+ 0001:0001194c       BasicKernelSetupCheck      0000000000011bcc f   LoadLinuxLib:Linux.obj
+ 0001:0001199c       SetupLinuxMemmap           0000000000011c1c f   LoadLinuxLib:Linux.obj
+ 0001:00011bac       SetupGraphicsFromGop       0000000000011e2c f   LoadLinuxLib:Linux.obj
+ 0001:00011d74       SetupLinuxBootParams       0000000000011ff4 f   LoadLinuxLib:Linux.obj
+ 0001:00011f68       IterateVariablesInBuffer   00000000000121e8 f   DxeSerializeVariablesLib:SerializeVariablesLib.obj
+ 0001:000120d8       IterateVariablesCallbackNop 0000000000012358 f   DxeSerializeVariablesLib:SerializeVariablesLib.obj
+ 0001:000120dc       IterateVariablesCallbackSetInInstance 000000000001235c f   DxeSerializeVariablesLib:SerializeVariablesLib.obj
+ 0001:000120e4       IterateVariablesCallbackSetSystemVariable 0000000000012364 f   DxeSerializeVariablesLib:SerializeVariablesLib.obj
+ 0001:00012148       AppendToBuffer             00000000000123c8 f   DxeSerializeVariablesLib:SerializeVariablesLib.obj
+ 0002:00000518       ?Fallback@?O@??SetPciIntLine@@9@9 0000000000012db8     PlatformBootManagerLib:BdsPlatform.obj
+ 0002:000005f0       gUsbKeyboardDevicePath     0000000000012e90     PlatformBootManagerLib:PlatformData.obj
+ 0002:00000600       gQemuRamfbDevicePath       0000000000012ea0     PlatformBootManagerLib:PlatformData.obj
+ 0002:00000660       gXenConsoleDevicePath      0000000000012f00     PlatformBootManagerLib:PlatformData.obj
+ 0002:00001128       ?ConvFallBack@?4??BootOrderComplete@@9@9 00000000000139c8     QemuBootOrderLib:QemuBootOrderLib.obj
+ 0002:00001150       GdtTemplate                00000000000139f0     LoadLinuxLib:LinuxGdt.obj
+ 0002:00001db0       ?Info@?1??SaveS3BootScript@@9@9 0000000000014650     PlatformBootManagerLib:BdsPlatform.obj
+ 0002:000022e0       mKernelDevicePath          0000000000014b80     X86QemuLoadImageLib:X86QemuLoadImageLib.obj
+ 0002:000023c0       mQemuFwCfgSupported        0000000000014c60     QemuFwCfgDxeLib:QemuFwCfgDxe.obj
+ 0002:00002408       ?ConnectedToFileSystem@?1??VisitingFileSystemInstance@@9@9 0000000000014ca8     PlatformBootManagerLib:BdsPlatform.obj
+ 0002:00002418       mSevStatus                 0000000000014cb8     DxeMemEncryptSevLib:DxeMemEncryptSevLibInternal.obj
+ 0002:00002419       mSevStatusChecked          0000000000014cb9     DxeMemEncryptSevLib:DxeMemEncryptSevLibInternal.obj
+ 0002:0000241a       ?Cached@?1??XenGetInfoHOB@@9@9 0000000000014cba     XenPlatformLib:XenPlatformLib.obj
+ 0002:00002428       mGdt                       0000000000014cc8     LoadLinuxLib:LinuxGdt.obj
+ 0002:00002438       mRunningOnQ35              0000000000014cd8     DxePciLibI440FxQ35:PciLib.obj
+ 0002:00002439       mQemuFwCfgDmaSupported     0000000000014cd9     QemuFwCfgDxeLib:QemuFwCfgDxe.obj
+ 0002:00002440       mIoMmuProtocol             0000000000014ce0     QemuFwCfgDxeLib:QemuFwCfgDxe.obj
+ 0002:00002448       ?XenInfo@?1??XenGetInfoHOB@@9@9 0000000000014ce8     XenPlatformLib:XenPlatformLib.obj
+ 0002:00002450       mPpi                       0000000000014cf0     Tcg2PhysicalPresenceLibQemu:DxeTcg2PhysicalPresenceLib.obj
+ 0002:00002458       mLoadPrep                  0000000000014cf8     PlatformBmPrintScLib:StatusCodeHandler.obj
+ 0002:0000245c       mStartFail                 0000000000014cfc     PlatformBmPrintScLib:StatusCodeHandler.obj
+ 0002:00002460       mStartPrep                 0000000000014d00     PlatformBmPrintScLib:StatusCodeHandler.obj
+ 0002:00002464       mLoadFail                  0000000000014d04     PlatformBmPrintScLib:StatusCodeHandler.obj
+ 0004:00000000       $unwind$_ModuleEntryPoint  00000000000158c0     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0004:00000000       $unwind$EfiSignalEventReadyToBoot 00000000000158c0     UefiLib:UefiNotTiano.obj
+ 0004:00000008       $unwind$ProcessLibraryConstructorList 00000000000158c8     BdsDxe:AutoGen.obj
+ 0004:00000014       $unwind$CheckDeferredLoadImageOnReadyToBoot 00000000000158d4     BdsDxe:BdsEntry.obj
+ 0004:00000024       $unwind$ProcessLoadOptions 00000000000158e4     BdsDxe:BdsEntry.obj
+ 0004:0000003c       $unwind$BdsFormalizeConsoleVariable 00000000000158fc     BdsDxe:BdsEntry.obj
+ 0004:00000044       $unwind$BdsEntry           0000000000015904     BdsDxe:BdsEntry.obj
+ 0004:00000060       $unwind$BdsDxeSetVariableAndReportStatusCodeOnError 0000000000015920     BdsDxe:BdsEntry.obj
+ 0004:0000007c       $unwind$EfiBootManagerFreeLoadOption 000000000001593c     UefiBootManagerLib:BmLoadOption.obj
+ 0004:0000007c       $unwind$IsLangInSupportedLangCodes 000000000001593c     BdsDxe:Language.obj
+ 0004:0000007c       $unwind$SaveAndDisableInterrupts 000000000001593c     BaseLib:Cpu.obj
+ 0004:0000007c       $unwind$PciCf8Read32       000000000001593c     BasePciCf8Lib:PciCf8Lib.obj
+ 0004:0000007c       $unwind$GetFirstGuidHob    000000000001593c     DxeHobLib:HobLib.obj
+ 0004:0000007c       $unwind$ConvertDevicePathToText 000000000001593c     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0004:0000007c       $unwind$InternalAllocateZeroPool 000000000001593c     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0004:0000007c       $unwind$SerializeVariablesFreeInstance 000000000001593c     DxeSerializeVariablesLib:SerializeVariablesLib.obj
+ 0004:0000007c       $unwind$XenGetInfoHOB      000000000001593c     XenPlatformLib:XenPlatformLib.obj
+ 0004:00000084       $unwind$InitializeLangVariable 0000000000015944     BdsDxe:Language.obj
+ 0004:00000098       $unwind$BmRepairNotify     0000000000015958     UefiBootManagerLib:BmDriverHealth.obj
+ 0004:00000098       $unwind$StrCpyS            0000000000015958     BaseLib:SafeString.obj
+ 0004:00000098       $unwind$GetHobList         0000000000015958     DxeHobLib:HobLib.obj
+ 0004:00000098       $unwind$GetPcdProtocol     0000000000015958     DxePcdLib:DxePcdLib.obj
+ 0004:00000098       $unwind$DevicePathFromHandle 0000000000015958     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0004:00000098       $unwind$UefiDevicePathLibLocateProtocol 0000000000015958     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0004:00000098       $unwind$EfiAcquireLock     0000000000015958     UefiLib:UefiLib.obj
+ 0004:00000098       $unwind$AllocatePool       0000000000015958     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0004:00000098       $unwind$PciWrite8          0000000000015958     DxePciLibI440FxQ35:PciLib.obj
+ 0004:00000098       $unwind$EmuVariablesUpdatedCallback 0000000000015958     PlatformBootManagerLib:BdsPlatform.obj
+ 0004:00000098       $unwind$QemuFwCfgReadBytes 0000000000015958     QemuFwCfgDxeLib:QemuFwCfgLib.obj
+ 0004:000000a0       $unwind$BmMatchPartitionDevicePathNode 0000000000015960     UefiBootManagerLib:BmBoot.obj
+ 0004:000000a0       $unwind$BmGetLoadFileDescription 0000000000015960     UefiBootManagerLib:BmBootDescription.obj
+ 0004:000000a0       $unwind$BmGetMiscDescription 0000000000015960     UefiBootManagerLib:BmBootDescription.obj
+ 0004:000000a0       $unwind$StrnCpyS           0000000000015960     BaseLib:SafeString.obj
+ 0004:000000a0       $unwind$PciCf8Write8       0000000000015960     BasePciCf8Lib:PciCf8Lib.obj
+ 0004:000000a0       $unwind$InternalAllocateCopyPool 0000000000015960     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0004:000000a0       $unwind$ConnectRecursivelyIfPciMassStorage 0000000000015960     PlatformBootManagerLib:BdsPlatform.obj
+ 0004:000000a0       $unwind$DetectAndPreparePlatformPciDevicePath 0000000000015960     PlatformBootManagerLib:BdsPlatform.obj
+ 0004:000000a0       $unwind$AppendToBuffer     0000000000015960     DxeSerializeVariablesLib:SerializeVariablesLib.obj
+ 0004:000000ac       $unwind$BmCachePartitionDevicePath 000000000001596c     UefiBootManagerLib:BmBoot.obj
+ 0004:000000ac       $unwind$EfiBootManagerConnectAllDefaultConsoles 000000000001596c     UefiBootManagerLib:BmConsole.obj
+ 0004:000000ac       $unwind$BmDisplayMessages  000000000001596c     UefiBootManagerLib:BmDriverHealth.obj
+ 0004:000000ac       $unwind$BmInitializeKeyFields 000000000001596c     UefiBootManagerLib:BmHotkey.obj
+ 0004:000000ac       $unwind$EfiBootManagerFindLoadOption 000000000001596c     UefiBootManagerLib:BmLoadOption.obj
+ 0004:000000ac       $unwind$InternalReallocatePool 000000000001596c     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0004:000000ac       $unwind$CopyAuthSessionCommand 000000000001596c     Tpm2CommandLib:Tpm2Help.obj
+ 0004:000000c0       $unwind$EfiBootManagerFreeDriverHealthInfo 0000000000015980     UefiBootManagerLib:BmDriverHealth.obj
+ 0004:000000c0       $unwind$EfiBootManagerFreeLoadOptions 0000000000015980     UefiBootManagerLib:BmLoadOption.obj
+ 0004:000000c0       $unwind$StrCatS            0000000000015980     BaseLib:SafeString.obj
+ 0004:000000c0       $unwind$PlatformInitializeConsole 0000000000015980     PlatformBootManagerLib:BdsPlatform.obj
+ 0004:000000c0       $unwind$BootOrderAppend    0000000000015980     QemuBootOrderLib:QemuBootOrderLib.obj
+ 0004:000000c0       $unwind$FreeLegacyImage    0000000000015980     X86QemuLoadImageLib:X86QemuLoadImageLib.obj
+ 0004:000000d0       $unwind$StrnCatS           0000000000015990     BaseLib:SafeString.obj
+ 0004:000000d0       $unwind$CollectActiveOptions 0000000000015990     QemuBootOrderLib:QemuBootOrderLib.obj
+ 0004:000000d0       $unwind$Tcg2FillBufferWithBootHashAlg 0000000000015990     Tcg2PhysicalPresenceLibQemu:DxeTcg2PhysicalPresenceLib.obj
+ 0004:000000e8       $unwind$UnicodeSPrint      00000000000159a8     BasePrintLib:PrintLib.obj
+ 0004:000000e8       $unwind$UnicodeSPrintAsciiFormat 00000000000159a8     BasePrintLib:PrintLib.obj
+ 0004:000000f0       $unwind$BasePrintLibConvertValueToStringS 00000000000159b0     BasePrintLib:PrintLibInternal.obj
+ 0004:000000fc       $unwind$BasePrintLibSPrintMarker 00000000000159bc     BasePrintLib:PrintLibInternal.obj
+ 0004:00000118       $unwind$BasePrintLibSPrint 00000000000159d8     BasePrintLib:PrintLibInternal.obj
+ 0004:00000120       $unwind$BmGetBootDescription 00000000000159e0     UefiBootManagerLib:BmBootDescription.obj
+ 0004:00000120       $unwind$EfiBootManagerIsValidLoadOptionVariableName 00000000000159e0     UefiBootManagerLib:BmLoadOption.obj
+ 0004:00000120       $unwind$FileDevicePath     00000000000159e0     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0004:00000138       $unwind$EfiGetSystemConfigurationTable 00000000000159f8     UefiLib:UefiLib.obj
+ 0004:00000140       $unwind$EfiCreateProtocolNotifyEvent 0000000000015a00     UefiLib:UefiLib.obj
+ 0004:00000148       $unwind$EfiBootManagerConnectAll 0000000000015a08     UefiBootManagerLib:BmConnect.obj
+ 0004:00000148       $unwind$BmGetActiveConsoleIn 0000000000015a08     UefiBootManagerLib:BmHotkey.obj
+ 0004:00000148       $unwind$EfiEventGroupSignal 0000000000015a08     UefiLib:UefiLib.obj
+ 0004:00000148       $unwind$InternalMemEncryptSevStatus 0000000000015a08     DxeMemEncryptSevLib:DxeMemEncryptSevLibInternal.obj
+ 0004:00000148       $unwind$PlatformBootManagerWaitCallback 0000000000015a08     PlatformBootManagerLib:BdsPlatform.obj
+ 0004:00000148       $unwind$VisitingFileSystemInstance 0000000000015a08     PlatformBootManagerLib:BdsPlatform.obj
+ 0004:00000148       $unwind$IterateVariablesCallbackSetSystemVariable 0000000000015a08     DxeSerializeVariablesLib:SerializeVariablesLib.obj
+ 0004:00000148       $unwind$QemuStartKernelImage 0000000000015a08     X86QemuLoadImageLib:X86QemuLoadImageLib.obj
+ 0004:00000150       $unwind$BmForEachVariable  0000000000015a10     UefiBootManagerLib:BmLoadOption.obj
+ 0004:00000150       $unwind$GetVariable2       0000000000015a10     UefiLib:UefiLib.obj
+ 0004:00000164       $unwind$GetBestLanguage    0000000000015a24     UefiLib:UefiLib.obj
+ 0004:00000174       $unwind$AsciiInternalPrint 0000000000015a34     UefiLib:UefiLibPrint.obj
+ 0004:00000174       $unwind$InternalPrint      0000000000015a34     UefiLib:UefiLibPrint.obj
+ 0004:0000018c       $unwind$AsciiPrint         0000000000015a4c     UefiLib:UefiLibPrint.obj
+ 0004:0000018c       $unwind$Print              0000000000015a4c     UefiLib:UefiLibPrint.obj
+ 0004:00000194       $unwind$InternalPrintGraphic 0000000000015a54     UefiLib:UefiLibPrint.obj
+ 0004:000001b4       $unwind$PrintXY            0000000000015a74     UefiLib:UefiLibPrint.obj
+ 0004:000001b4       $unwind$CreateExtraRootBusMap 0000000000015a74     QemuBootOrderLib:ExtraRootBusMap.obj
+ 0004:000001c4       $unwind$InternalReportStatusCode 0000000000015a84     DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0004:000001c4       $unwind$Tpm2SubmitCommand  0000000000015a84     Tpm2DeviceLibTcg2:Tpm2DeviceLibTcg2.obj
+ 0004:000001d8       $unwind$ReportStatusCodeEx 0000000000015a98     DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0004:000001f0       $unwind$AllocFwCfgDmaAccessBuffer 0000000000015ab0     QemuFwCfgDxeLib:QemuFwCfgDxe.obj
+ 0004:00000200       $unwind$InternalQemuFwCfgDmaBytes 0000000000015ac0     QemuFwCfgDxeLib:QemuFwCfgDxe.obj
+ 0004:00000214       $unwind$QemuFwCfgFindFile  0000000000015ad4     QemuFwCfgDxeLib:QemuFwCfgLib.obj
+ 0004:0000022c       $unwind$BmGetFreeOptionNumber 0000000000015aec     UefiBootManagerLib:BmLoadOption.obj
+ 0004:0000023c       $unwind$EfiBootManagerLoadOptionToVariable 0000000000015afc     UefiBootManagerLib:BmLoadOption.obj
+ 0004:00000250       $unwind$BmAddOptionNumberToOrderVariable 0000000000015b10     UefiBootManagerLib:BmLoadOption.obj
+ 0004:00000268       $unwind$EfiBootManagerAddLoadOptionVariable 0000000000015b28     UefiBootManagerLib:BmLoadOption.obj
+ 0004:00000274       $unwind$EfiBootManagerInitializeLoadOption 0000000000015b34     UefiBootManagerLib:BmLoadOption.obj
+ 0004:0000028c       $unwind$EfiBootManagerDeleteLoadOptionVariable 0000000000015b4c     UefiBootManagerLib:BmLoadOption.obj
+ 0004:000002a0       $unwind$EfiBootManagerVariableToLoadOptionEx 0000000000015b60     UefiBootManagerLib:BmLoadOption.obj
+ 0004:000002b4       $unwind$BmCollectLoadOptions 0000000000015b74     UefiBootManagerLib:BmLoadOption.obj
+ 0004:000002c4       $unwind$EfiBootManagerGetLoadOptions 0000000000015b84     UefiBootManagerLib:BmLoadOption.obj
+ 0004:000002dc       $unwind$BmGetNextLoadOptionBuffer 0000000000015b9c     UefiBootManagerLib:BmLoadOption.obj
+ 0004:000002f4       $unwind$EfiBootManagerProcessLoadOption 0000000000015bb4     UefiBootManagerLib:BmLoadOption.obj
+ 0004:00000308       $unwind$BmIsKeyOptionValid 0000000000015bc8     UefiBootManagerLib:BmHotkey.obj
+ 0004:00000310       $unwind$BmCollectKeyOptions 0000000000015bd0     UefiBootManagerLib:BmHotkey.obj
+ 0004:00000320       $unwind$BmHotkeyCallback   0000000000015be0     UefiBootManagerLib:BmHotkey.obj
+ 0004:00000330       $unwind$BmRegisterHotkeyNotify 0000000000015bf0     UefiBootManagerLib:BmHotkey.obj
+ 0004:00000344       $unwind$BmGenerateKeyShiftState 0000000000015c04     UefiBootManagerLib:BmHotkey.obj
+ 0004:00000360       $unwind$BmProcessKeyOption 0000000000015c20     UefiBootManagerLib:BmHotkey.obj
+ 0004:00000378       $unwind$BmTxtInExCallback  0000000000015c38     UefiBootManagerLib:BmHotkey.obj
+ 0004:00000384       $unwind$EfiBootManagerRegisterContinueKeyOption 0000000000015c44     UefiBootManagerLib:BmHotkey.obj
+ 0004:0000038c       $unwind$BmStopHotkeyService 0000000000015c4c     UefiBootManagerLib:BmHotkey.obj
+ 0004:000003a4       $unwind$EfiBootManagerStartHotkeyService 0000000000015c64     UefiBootManagerLib:BmHotkey.obj
+ 0004:000003b4       $unwind$EfiBootManagerAddKeyOptionVariable 0000000000015c74     UefiBootManagerLib:BmHotkey.obj
+ 0004:000003cc       $unwind$BmFindBootOptionInVariable 0000000000015c8c     UefiBootManagerLib:BmBoot.obj
+ 0004:000003e0       $unwind$BmAdjustFvFilePath 0000000000015ca0     UefiBootManagerLib:BmBoot.obj
+ 0004:000003f0       $unwind$BmMatchUsbClass    0000000000015cb0     UefiBootManagerLib:BmBoot.obj
+ 0004:000003fc       $unwind$BmExpandPartitionDevicePath 0000000000015cbc     UefiBootManagerLib:BmBoot.obj
+ 0004:000003fc       $unwind$BmMatchUsbWwid     0000000000015cbc     UefiBootManagerLib:BmBoot.obj
+ 0004:00000410       $unwind$BmExpandUsbDevicePath 0000000000015cd0     UefiBootManagerLib:BmBoot.obj
+ 0004:00000428       $unwind$BmExpandFileDevicePath 0000000000015ce8     UefiBootManagerLib:BmBoot.obj
+ 0004:00000440       $unwind$BmExpandUriDevicePath 0000000000015d00     UefiBootManagerLib:BmBoot.obj
+ 0004:00000440       $unwind$SaveNvVarsToFs     0000000000015d00     NvVarsFileLib:FsAccess.obj
+ 0004:00000454       $unwind$BmExpandMediaDevicePath 0000000000015d14     UefiBootManagerLib:BmBoot.obj
+ 0004:00000468       $unwind$BmExpandNetworkFileSystem 0000000000015d28     UefiBootManagerLib:BmBoot.obj
+ 0004:00000468       $unwind$EfiBootManagerGetDriverHealthInfo 0000000000015d28     UefiBootManagerLib:BmDriverHealth.obj
+ 0004:00000478       $unwind$BmGetRamDiskDevicePath 0000000000015d38     UefiBootManagerLib:BmBoot.obj
+ 0004:00000484       $unwind$BmDestroyRamDisk   0000000000015d44     UefiBootManagerLib:BmBoot.obj
+ 0004:00000494       $unwind$BmExpandLoadFile   0000000000015d54     UefiBootManagerLib:BmBoot.obj
+ 0004:000004a8       $unwind$BmExpandLoadFiles  0000000000015d68     UefiBootManagerLib:BmBoot.obj
+ 0004:000004a8       $unwind$BmConnectUsbShortFormDevicePath 0000000000015d68     UefiBootManagerLib:BmConnect.obj
+ 0004:000004a8       $unwind$QemuLoadKernelImage 0000000000015d68     X86QemuLoadImageLib:X86QemuLoadImageLib.obj
+ 0004:000004b8       $unwind$BmGetNextLoadOptionDevicePath 0000000000015d78     UefiBootManagerLib:BmBoot.obj
+ 0004:000004c4       $unwind$BmIsBootManagerMenuFilePath 0000000000015d84     UefiBootManagerLib:BmBoot.obj
+ 0004:000004c4       $unwind$InternalImageHandleToFvHandle 0000000000015d84     DxeServicesLib:DxeServicesLib.obj
+ 0004:000004cc       $unwind$BmReportLoadFailure 0000000000015d8c     UefiBootManagerLib:BmBoot.obj
+ 0004:000004d8       $unwind$EfiBootManagerBoot 0000000000015d98     UefiBootManagerLib:BmBoot.obj
+ 0004:000004ec       $unwind$BmEnumerateBootOptions 0000000000015dac     UefiBootManagerLib:BmBoot.obj
+ 0004:00000504       $unwind$BmRegisterBootManagerMenu 0000000000015dc4     UefiBootManagerLib:BmBoot.obj
+ 0004:00000518       $unwind$EfiBootManagerGetBootManagerMenu 0000000000015dd8     UefiBootManagerLib:BmBoot.obj
+ 0004:0000052c       $unwind$EfiBootManagerConnectDevicePath 0000000000015dec     UefiBootManagerLib:BmConnect.obj
+ 0004:00000540       $unwind$BmUpdateSystemTableConsole 0000000000015e00     UefiBootManagerLib:BmConsole.obj
+ 0004:00000558       $unwind$EfiBootManagerUpdateConsoleVariable 0000000000015e18     UefiBootManagerLib:BmConsole.obj
+ 0004:00000570       $unwind$EfiBootManagerConnectConsoleVariable 0000000000015e30     UefiBootManagerLib:BmConsole.obj
+ 0004:00000580       $unwind$BmDelPartMatchInstance 0000000000015e40     UefiBootManagerLib:BmMisc.obj
+ 0004:00000594       $unwind$BmMatchDevicePaths 0000000000015e54     UefiBootManagerLib:BmMisc.obj
+ 0004:00000594       $unwind$FileHandleGetInfo  0000000000015e54     UefiFileHandleLib:UefiFileHandleLib.obj
+ 0004:000005a0       $unwind$BmSetMemoryTypeInformationVariable 0000000000015e60     UefiBootManagerLib:BmMisc.obj
+ 0004:000005b8       $unwind$BmSetVariableAndReportStatusCodeOnError 0000000000015e78     UefiBootManagerLib:BmMisc.obj
+ 0004:000005d4       $unwind$EfiBootManagerDispatchDeferredImages 0000000000015e94     UefiBootManagerLib:BmMisc.obj
+ 0004:000005e4       $unwind$BmGetDescriptionFromDiskInfo 0000000000015ea4     UefiBootManagerLib:BmBootDescription.obj
+ 0004:000005f8       $unwind$BmGetUsbDescription 0000000000015eb8     UefiBootManagerLib:BmBootDescription.obj
+ 0004:00000604       $unwind$BmGetNetworkDescription 0000000000015ec4     UefiBootManagerLib:BmBootDescription.obj
+ 0004:0000061c       $unwind$BmGetNvmeDescription 0000000000015edc     UefiBootManagerLib:BmBootDescription.obj
+ 0004:0000062c       $unwind$BmGetControllerName 0000000000015eec     UefiBootManagerLib:BmDriverHealth.obj
+ 0004:00000640       $unwind$BmGetSingleControllerHealthStatus 0000000000015f00     UefiBootManagerLib:BmDriverHealth.obj
+ 0004:00000658       $unwind$BmRepairAllControllers 0000000000015f18     UefiBootManagerLib:BmDriverHealth.obj
+ 0004:00000670       $unwind$PlatformBootManagerBeforeConsole 0000000000015f30     PlatformBootManagerLib:BdsPlatform.obj
+ 0004:00000684       $unwind$ConnectVirtioPciRng 0000000000015f44     PlatformBootManagerLib:BdsPlatform.obj
+ 0004:00000694       $unwind$PrepareLpcBridgeDevicePath 0000000000015f54     PlatformBootManagerLib:BdsPlatform.obj
+ 0004:000006a0       $unwind$PreparePciDisplayDevicePath 0000000000015f60     PlatformBootManagerLib:BdsPlatform.obj
+ 0004:000006b8       $unwind$VisitAllInstancesOfProtocol 0000000000015f78     PlatformBootManagerLib:BdsPlatform.obj
+ 0004:000006cc       $unwind$VisitingAPciInstance 0000000000015f8c     PlatformBootManagerLib:BdsPlatform.obj
+ 0004:000006dc       $unwind$SetPciIntLine      0000000000015f9c     PlatformBootManagerLib:BdsPlatform.obj
+ 0004:000006ec       $unwind$PlatformBootManagerAfterConsole 0000000000015fac     PlatformBootManagerLib:BdsPlatform.obj
+ 0004:00000704       $unwind$NotifyDevPath      0000000000015fc4     PlatformBootManagerLib:BdsPlatform.obj
+ 0004:00000714       $unwind$InternalGetSectionFromFv 0000000000015fd4     DxeServicesLib:DxeServicesLib.obj
+ 0004:0000071c       $unwind$GetFileBufferByFilePath 0000000000015fdc     DxeServicesLib:DxeServicesLib.obj
+ 0004:00000738       $unwind$GetFileDevicePathFromAnyFv 0000000000015ff8     DxeServicesLib:DxeServicesLib.obj
+ 0004:00000748       $unwind$HiiGetString       0000000000016008     UefiHiiLib:HiiString.obj
+ 0004:0000075c       $unwind$HiiAddPackages     000000000001601c     UefiHiiLib:HiiLib.obj
+ 0004:00000770       $unwind$HiiGetHiiHandles   0000000000016030     UefiHiiLib:HiiLib.obj
+ 0004:00000778       $unwind$HiiGetSupportedLanguages 0000000000016038     UefiHiiLib:HiiLanguage.obj
+ 0004:00000784       $unwind$QemuTpmInitPPI     0000000000016044     Tcg2PhysicalPresenceLibQemu:DxeTcg2PhysicalPresenceLib.obj
+ 0004:0000078c       $unwind$Tpm2CommandChangeEps 000000000001604c     Tcg2PhysicalPresenceLibQemu:DxeTcg2PhysicalPresenceLib.obj
+ 0004:0000078c       $unwind$Tpm2CommandClear   000000000001604c     Tcg2PhysicalPresenceLibQemu:DxeTcg2PhysicalPresenceLib.obj
+ 0004:0000079c       $unwind$Tcg2UserConfirm    000000000001605c     Tcg2PhysicalPresenceLibQemu:DxeTcg2PhysicalPresenceLib.obj
+ 0004:000007b8       $unwind$Tcg2ExecutePendingTpmRequest 0000000000016078     Tcg2PhysicalPresenceLibQemu:DxeTcg2PhysicalPresenceLib.obj
+ 0004:000007c4       $unwind$HandleStatusCode   0000000000016084     PlatformBmPrintScLib:StatusCodeHandler.obj
+ 0004:000007dc       $unwind$ParseUnitAddressHexList 000000000001609c     QemuBootOrderLib:QemuBootOrderLib.obj
+ 0004:000007f0       $unwind$ParseOfwNode       00000000000160b0     QemuBootOrderLib:QemuBootOrderLib.obj
+ 0004:000007fc       $unwind$TranslatePciOfwNodes 00000000000160bc     QemuBootOrderLib:QemuBootOrderLib.obj
+ 0004:0000081c       $unwind$TranslateOfwPath   00000000000160dc     QemuBootOrderLib:QemuBootOrderLib.obj
+ 0004:00000838       $unwind$ConnectDevicesFromQemu 00000000000160f8     QemuBootOrderLib:QemuBootOrderLib.obj
+ 0004:00000854       $unwind$Match              0000000000016114     QemuBootOrderLib:QemuBootOrderLib.obj
+ 0004:00000868       $unwind$BootOrderComplete  0000000000016128     QemuBootOrderLib:QemuBootOrderLib.obj
+ 0004:00000884       $unwind$SetBootOrderFromQemu 0000000000016144     QemuBootOrderLib:QemuBootOrderLib.obj
+ 0004:0000089c       $unwind$QemuLoadLegacyImage 000000000001615c     X86QemuLoadImageLib:X86QemuLoadImageLib.obj
+ 0004:000008b0       $unwind$QemuUnloadKernelImage 0000000000016170     X86QemuLoadImageLib:X86QemuLoadImageLib.obj
+ 0004:000008bc       $unwind$ConnectNvVarsToFileSystem 000000000001617c     NvVarsFileLib:NvVarsFileLib.obj
+ 0004:000008c4       $unwind$GetNvVarsFile      0000000000016184     NvVarsFileLib:FsAccess.obj
+ 0004:000008d0       $unwind$ReadNvVarsFile     0000000000016190     NvVarsFileLib:FsAccess.obj
+ 0004:000008e0       $unwind$BootLogoEnableLogo 00000000000161a0     BootLogoLib:BootLogoLib.obj
+ 0004:000008f8       $unwind$BootLogoUpdateProgress 00000000000161b8     BootLogoLib:BootLogoLib.obj
+ 0004:00000910       $unwind$Tpm2PcrAllocate    00000000000161d0     Tpm2CommandLib:Tpm2Integrity.obj
+ 0004:0000092c       $unwind$Tpm2PcrAllocateBanks 00000000000161ec     Tpm2CommandLib:Tpm2Integrity.obj
+ 0004:0000093c       $unwind$Tpm2Clear          00000000000161fc     Tpm2CommandLib:Tpm2Hierarchy.obj
+ 0004:0000094c       $unwind$Tpm2GetCapability  000000000001620c     Tpm2CommandLib:Tpm2Capability.obj
+ 0004:0000095c       $unwind$Tpm2GetCapabilityPcrs 000000000001621c     Tpm2CommandLib:Tpm2Capability.obj
+ 0004:00000978       $unwind$Tpm2GetCapabilitySupportedAndActivePcrs 0000000000016238     Tpm2CommandLib:Tpm2Capability.obj
+ 0004:00000990       $unwind$OrderedCollectionInsert 0000000000016250     BaseOrderedCollectionRedBlackTreeLib:BaseOrderedCollectionRedBlackTreeLib.obj
+ 0004:000009a8       $unwind$OrderedCollectionDelete 0000000000016268     BaseOrderedCollectionRedBlackTreeLib:BaseOrderedCollectionRedBlackTreeLib.obj
+ 0004:000009c0       $unwind$SetupLinuxMemmap   0000000000016280     LoadLinuxLib:Linux.obj
+ 0004:000009d8       $unwind$SetupGraphicsFromGop 0000000000016298     LoadLinuxLib:Linux.obj
+ 0004:000009e8       $unwind$SetupLinuxBootParams 00000000000162a8     LoadLinuxLib:Linux.obj
+ 0004:000009f4       $unwind$LoadLinux          00000000000162b4     LoadLinuxLib:Linux.obj
+ 0004:00000a04       $unwind$IterateVariablesInBuffer 00000000000162c4     DxeSerializeVariablesLib:SerializeVariablesLib.obj
+ 0004:00000a1c       $unwind$SerializeVariablesIterateSystemVariables 00000000000162dc     DxeSerializeVariablesLib:SerializeVariablesLib.obj
+ 0004:00000a34       $unwind$SerializeVariablesAddVariable 00000000000162f4     DxeSerializeVariablesLib:SerializeVariablesLib.obj

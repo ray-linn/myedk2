@@ -1,0 +1,164 @@
+ PlatformDxe
+
+ Timestamp is 61ee7027 (Mon Jan 24 17:23:51 2022)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000080H .text                   CODE
+ 0001:00000080 00002375H .text$mn                CODE
+ 0002:00000000 000005c0H .data                   DATA
+ 0002:000005c0 00000448H .rdata                  DATA
+ 0002:00000a08 00000090H .bss                    DATA
+ 0002:00000a98 00000020H .rdata$voltmd           DATA
+ 0002:00000ab8 000000a8H .rdata$zzzdbg           DATA
+ 0003:00000000 00000150H .pdata                  DATA
+ 0004:00000000 0000015cH .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __x64_code_ranges_to_entry_points_count 0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map_count    0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata 0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_table          0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_count         0000000000000000     <absolute>
+ 0000:00000000       __arm64x_native_entrypoint 0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_table      0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table   0000000000000000     <absolute>
+ 0000:00000000       __enclave_config           0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_count          0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata_count 0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_count      0000000000000000     <absolute>
+ 0000:00000000       __dynamic_value_reloc_table 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map          0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat     0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat_copy 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table_size 0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_count      0000000000000000     <absolute>
+ 0000:00000000       __AbsoluteZero             0000000000000000     <absolute>
+ 0000:00000000       __guard_flags              0000000000000000     <absolute>
+ 0000:00000000       __guard_check_icall_a64n_fptr 0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_table         0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_table      0000000000000000     <absolute>
+ 0000:00000000       __ImageBase                0000000000000000     <linker-defined>
+ 0001:00000000       InternalMemZeroMem         0000000000000260     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00000020       InternalMemCopyMem         0000000000000280     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000060       InternalMemCompareMem      00000000000002c0     BaseMemoryLibRepStr:CompareMem.obj
+ 0001:00000080       _DriverUnloadHandler       00000000000002e0 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:00000100       _ModuleEntryPoint          0000000000000360 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:00000148       ProcessLibraryConstructorList 00000000000003a8 f   PlatformDxe:AutoGen.obj
+ 0001:00000990       PlatformInit               0000000000000bf0 f   PlatformDxe:Platform.obj
+ 0001:00000b5c       PlatformConfigLoad         0000000000000dbc f   PlatformDxe:PlatformConfig.obj
+ 0001:00000c18       GetPcdProtocol             0000000000000e78 f   DxePcdLib:DxePcdLib.obj
+ 0001:00000c54       UnicodeSPrintAsciiFormat   0000000000000eb4 f   BasePrintLib:PrintLib.obj
+ 0001:00000c88       BasePrintLibFillBuffer     0000000000000ee8 f   BasePrintLib:PrintLibInternal.obj
+ 0001:00000cbc       BasePrintLibSPrintMarker   0000000000000f1c f   BasePrintLib:PrintLibInternal.obj
+ 0001:00001a58       BasePrintLibSPrint         0000000000001cb8 f   BasePrintLib:PrintLibInternal.obj
+ 0001:00001a7c       InternalAllocatePool       0000000000001cdc f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00001aac       AllocateZeroPool           0000000000001d0c f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00001ad8       InternalReallocatePool     0000000000001d38 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00001b68       GetVariable2               0000000000001dc8 f   UefiLib:UefiLib.obj
+ 0001:00001c48       HiiAddPackages             0000000000001ea8 f   UefiHiiLib:HiiLib.obj
+ 0001:00001d64       HiiAllocateOpCodeHandle    0000000000001fc4 f   UefiHiiLib:HiiLib.obj
+ 0001:00001db8       InternalHiiGrowOpCodeHandle 0000000000002018 f   UefiHiiLib:HiiLib.obj
+ 0001:00001e18       InternalHiiCreateOpCodeExtended 0000000000002078 f   UefiHiiLib:HiiLib.obj
+ 0001:00001e74       InternalHiiAppendOpCodes   00000000000020d4 f   UefiHiiLib:HiiLib.obj
+ 0001:00001eb0       HiiCreateEndOpCode         0000000000002110 f   UefiHiiLib:HiiLib.obj
+ 0001:00001ed8       InternalHiiUpdateFormPackageData 0000000000002138 f   UefiHiiLib:HiiLib.obj
+ 0001:000020f4       HiiUpdateForm              0000000000002354 f   UefiHiiLib:HiiLib.obj
+ 0001:0000231c       HiiGetSupportedLanguages   000000000000257c f   UefiHiiLib:HiiLanguage.obj
+ 0001:000023cc       StrnLenS                   000000000000262c f   BaseLib:SafeString.obj
+ 0002:00000000       gEfiLoadedImageProtocolGuid 0000000000002660     PlatformDxe:AutoGen.obj
+ 0002:00000010       gEfiIfrTianoGuid           0000000000002670     PlatformDxe:AutoGen.obj
+ 0002:00000020       gOvmfPlatformConfigGuid    0000000000002680     PlatformDxe:AutoGen.obj
+ 0002:00000030       gPcdProtocolGuid           0000000000002690     PlatformDxe:AutoGen.obj
+ 0002:00000040       PlatformDxeStrings         00000000000026a0     PlatformDxe:AutoGen.obj
+ 0002:00000428       gEfiDevicePathProtocolGuid 0000000000002a88     PlatformDxe:AutoGen.obj
+ 0002:00000438       gEfiHiiConfigRoutingProtocolGuid 0000000000002a98     PlatformDxe:AutoGen.obj
+ 0002:00000448       gEfiHiiImageProtocolGuid   0000000000002aa8     PlatformDxe:AutoGen.obj
+ 0002:00000458       gEfiDevicePathUtilitiesProtocolGuid 0000000000002ab8     PlatformDxe:AutoGen.obj
+ 0002:00000468       gEfiGraphicsOutputProtocolGuid 0000000000002ac8     PlatformDxe:AutoGen.obj
+ 0002:00000478       gEfiHiiDatabaseProtocolGuid 0000000000002ad8     PlatformDxe:AutoGen.obj
+ 0002:00000488       gEfiHiiStringProtocolGuid  0000000000002ae8     PlatformDxe:AutoGen.obj
+ 0002:00000498       gEfiHiiConfigAccessProtocolGuid 0000000000002af8     PlatformDxe:AutoGen.obj
+ 0002:000004a8       gEfiCallerIdGuid           0000000000002b08     PlatformDxe:AutoGen.obj
+ 0002:000004b8       gEfiHiiFontProtocolGuid    0000000000002b18     PlatformDxe:AutoGen.obj
+ 0002:000004e0       PlatformFormsBin           0000000000002b40     PlatformDxe:PlatformForms.obj
+ 0002:000005c0       ??_C@_07BNNKDAOA@?$CFLdx?$CFLd@ 0000000000002c20     PlatformDxe:Platform.obj
+ 0002:000005c8       ??_C@_05EILJLEHP@Unset@    0000000000002c28     PlatformDxe:Platform.obj
+ 0002:000005d0       ??_C@_0O@MLOLIMFM@?$DMnull?5string?$DO@ 0000000000002c30     BasePrintLib:PrintLibInternal.obj
+ 0002:000005e0       ??_C@_0M@BJJDNPHK@?$DMnull?5guid?$DO@ 0000000000002c40     BasePrintLib:PrintLibInternal.obj
+ 0002:000005f0       ??_C@_0DB@PMLHLBMO@?$CF08x?9?$CF04x?9?$CF04x?9?$CF02x?$CF02x?9?$CF02x?$CF02@ 0000000000002c50     BasePrintLib:PrintLibInternal.obj
+ 0002:00000628       ??_C@_0M@LHGBCIKM@?$DMnull?5time?$DO@ 0000000000002c88     BasePrintLib:PrintLibInternal.obj
+ 0002:00000638       ??_C@_0BK@FCPKCIDD@?$CF02d?1?$CF02d?1?$CF04d?5?5?$CF02d?3?$CF02d@ 0000000000002c98     BasePrintLib:PrintLibInternal.obj
+ 0002:00000654       ??_C@_04JIMNDDED@?$CF08X@  0000000000002cb4     BasePrintLib:PrintLibInternal.obj
+ 0002:0000065c       ??_C@_02PCIJFNDE@?$AN?6@   0000000000002cbc     BasePrintLib:PrintLibInternal.obj
+ 0002:00000660       ??_C@_01LIIJDEN@?$AN@      0000000000002cc0     BasePrintLib:PrintLibInternal.obj
+ 0002:00000670       mWarningString             0000000000002cd0     BasePrintLib:PrintLibInternal.obj
+ 0002:00000710       mErrorString               0000000000002d70     BasePrintLib:PrintLibInternal.obj
+ 0002:000009d0       mHexStr                    0000000000003030     BasePrintLib:PrintLibInternal.obj
+ 0002:000009e0       ??_C@_06PLDEFKP@x?9UEFI@   0000000000003040     UefiHiiLib:HiiString.obj
+ 0002:000009e8       mEndOfPakageList           0000000000003048     UefiHiiLib:HiiLib.obj
+ 0002:00000a08       mPcd                       0000000000003068     DxePcdLib:DxePcdLib.obj
+ 0002:00000a10       gST                        0000000000003070     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000a18       gBS                        0000000000003078     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000a20       gRT                        0000000000003080     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0002:00000a28       mDevicePathLibDevicePathUtilities 0000000000003088     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:00000a30       gHiiConfigRouting          0000000000003090     UefiHiiServicesLib:UefiHiiServicesLib.obj
+ 0002:00000a38       gHiiString                 0000000000003098     UefiHiiServicesLib:UefiHiiServicesLib.obj
+ 0002:00000a40       gHiiFont                   00000000000030a0     UefiHiiServicesLib:UefiHiiServicesLib.obj
+ 0002:00000a48       gHiiImage                  00000000000030a8     UefiHiiServicesLib:UefiHiiServicesLib.obj
+ 0002:00000a50       gHiiDatabase               00000000000030b0     UefiHiiServicesLib:UefiHiiServicesLib.obj
+ 0002:00000a98       __volatile_metadata        00000000000030f8     <linker-defined>
+
+ entry point at        0001:00000100
+
+ Static symbols
+
+ 0001:0000003a       InternalMemCopyMem.0       000000000000029a     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:0000004a       @CopyBackward              00000000000002aa     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000053       @CopyBytes                 00000000000002b3     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000218       PlatformConfigToFormState  0000000000000478 f   PlatformDxe:Platform.obj
+ 0001:000002d8       ExtractConfig              0000000000000538 f   PlatformDxe:Platform.obj
+ 0001:0000033c       RouteConfig                000000000000059c f   PlatformDxe:Platform.obj
+ 0001:0000042c       Callback                   000000000000068c f   PlatformDxe:Platform.obj
+ 0001:00000468       CreateResolutionOptions    00000000000006c8 f   PlatformDxe:Platform.obj
+ 0001:000006b8       PopulateForm               0000000000000918 f   PlatformDxe:Platform.obj
+ 0001:00000870       GopInstalled               0000000000000ad0 f   PlatformDxe:Platform.obj
+ 0002:000004c8       mPkgDevicePath             0000000000002b28     PlatformDxe:Platform.obj
+ 0002:00000598       mVariableName              0000000000002bf8     PlatformDxe:PlatformConfig.obj
+ 0002:00000a58       mGopEvent                  00000000000030b8     PlatformDxe:Platform.obj
+ 0002:00000a60       mInstalledPackages         00000000000030c0     PlatformDxe:Platform.obj
+ 0002:00000a68       mGopModes                  00000000000030c8     PlatformDxe:Platform.obj
+ 0002:00000a70       mConfigAccess              00000000000030d0     PlatformDxe:Platform.obj
+ 0002:00000a88       mNumGopModes               00000000000030e8     PlatformDxe:Platform.obj
+ 0002:00000a90       mGopTracker                00000000000030f0     PlatformDxe:Platform.obj
+ 0004:00000000       $unwind$_DriverUnloadHandler 0000000000003320     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0004:00000008       $unwind$HiiAllocateOpCodeHandle 0000000000003328     UefiHiiLib:HiiLib.obj
+ 0004:00000008       $unwind$_ModuleEntryPoint  0000000000003328     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0004:00000008       $unwind$AllocateZeroPool   0000000000003328     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0004:00000010       $unwind$GetPcdProtocol     0000000000003330     DxePcdLib:DxePcdLib.obj
+ 0004:00000010       $unwind$InternalAllocatePool 0000000000003330     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0004:00000010       $unwind$ProcessLibraryConstructorList 0000000000003330     PlatformDxe:AutoGen.obj
+ 0004:00000018       $unwind$PlatformConfigToFormState 0000000000003338     PlatformDxe:Platform.obj
+ 0004:00000024       $unwind$ExtractConfig      0000000000003344     PlatformDxe:Platform.obj
+ 0004:00000034       $unwind$RouteConfig        0000000000003354     PlatformDxe:Platform.obj
+ 0004:00000048       $unwind$CreateResolutionOptions 0000000000003368     PlatformDxe:Platform.obj
+ 0004:00000064       $unwind$PopulateForm       0000000000003384     PlatformDxe:Platform.obj
+ 0004:0000007c       $unwind$GopInstalled       000000000000339c     PlatformDxe:Platform.obj
+ 0004:00000088       $unwind$PlatformInit       00000000000033a8     PlatformDxe:Platform.obj
+ 0004:00000094       $unwind$PlatformConfigLoad 00000000000033b4     PlatformDxe:PlatformConfig.obj
+ 0004:000000a4       $unwind$UnicodeSPrintAsciiFormat 00000000000033c4     BasePrintLib:PrintLib.obj
+ 0004:000000ac       $unwind$BasePrintLibSPrintMarker 00000000000033cc     BasePrintLib:PrintLibInternal.obj
+ 0004:000000c8       $unwind$BasePrintLibSPrint 00000000000033e8     BasePrintLib:PrintLibInternal.obj
+ 0004:000000d0       $unwind$InternalReallocatePool 00000000000033f0     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0004:000000e4       $unwind$GetVariable2       0000000000003404     UefiLib:UefiLib.obj
+ 0004:000000f4       $unwind$HiiAddPackages     0000000000003414     UefiHiiLib:HiiLib.obj
+ 0004:00000108       $unwind$InternalHiiAppendOpCodes 0000000000003428     UefiHiiLib:HiiLib.obj
+ 0004:00000108       $unwind$InternalHiiCreateOpCodeExtended 0000000000003428     UefiHiiLib:HiiLib.obj
+ 0004:00000108       $unwind$InternalHiiGrowOpCodeHandle 0000000000003428     UefiHiiLib:HiiLib.obj
+ 0004:00000114       $unwind$HiiCreateEndOpCode 0000000000003434     UefiHiiLib:HiiLib.obj
+ 0004:0000011c       $unwind$InternalHiiUpdateFormPackageData 000000000000343c     UefiHiiLib:HiiLib.obj
+ 0004:00000134       $unwind$HiiUpdateForm      0000000000003454     UefiHiiLib:HiiLib.obj
+ 0004:0000014c       $unwind$HiiGetSupportedLanguages 000000000000346c     UefiHiiLib:HiiLanguage.obj

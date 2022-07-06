@@ -1,0 +1,1637 @@
+//
+//  VFR compiler version  2.01 (UEFI 2.4) Developer Build based on Revision: Unknown
+//
+#line 1 "d:\\edk2\\edk2\\SecurityPkg\\VariableAuthenticated\\SecureBootConfigDxe\\SecureBootConfig.vfr"
+#line 1 "d:\\edk2\\edk2\\Build\\OvmfX64\\RELEASE_VS2019\\X64\\SecurityPkg\\VariableAuthenticated\\SecureBootConfigDxe\\SecureBootConfigDxe\\DEBUG\\SecureBootConfigDxeStrDefs.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+extern unsigned char SecureBootConfigDxeStrings[];
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 159 "d:\\edk2\\edk2\\Build\\OvmfX64\\RELEASE_VS2019\\X64\\SecurityPkg\\VariableAuthenticated\\SecureBootConfigDxe\\SecureBootConfigDxe\\DEBUG\\SecureBootConfigDxeStrDefs.h"
+
+#line 161 "d:\\edk2\\edk2\\Build\\OvmfX64\\RELEASE_VS2019\\X64\\SecurityPkg\\VariableAuthenticated\\SecureBootConfigDxe\\SecureBootConfigDxe\\DEBUG\\SecureBootConfigDxeStrDefs.h"
+#line 1 "d:\\edk2\\edk2\\SecurityPkg\\VariableAuthenticated\\SecureBootConfigDxe\\SecureBootConfig.vfr"
+
+
+
+
+
+
+
+
+#line 1 "d:\\edk2\\edk2\\SecurityPkg\\VariableAuthenticated\\SecureBootConfigDxe\\SecureBootConfigNvData.h"
+
+
+
+
+
+
+
+
+
+
+
+#line 1 "d:\\edk2\\edk2\\MdePkg\\Include\\Guid/HiiPlatformSetupFormset.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+extern EFI_GUID  gEfiHiiPlatformSetupFormsetGuid;
+extern EFI_GUID  gEfiHiiDriverHealthFormsetGuid;
+extern EFI_GUID  gEfiHiiUserCredentialFormsetGuid;
+extern EFI_GUID  gEfiHiiRestStyleFormsetGuid;
+
+#line 34 "d:\\edk2\\edk2\\MdePkg\\Include\\Guid/HiiPlatformSetupFormset.h"
+#line 13 "d:\\edk2\\edk2\\SecurityPkg\\VariableAuthenticated\\SecureBootConfigDxe\\SecureBootConfigNvData.h"
+#line 1 "d:\\edk2\\edk2\\SecurityPkg\\Include\\Guid/SecureBootConfigHii.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+extern EFI_GUID  { 0x5daf50a5, 0xea81, 0x4de2, {0x8f, 0x9b, 0xca, 0xbd, 0xa9, 0xcf, 0x5c, 0x14}};
+
+#line 20 "d:\\edk2\\edk2\\SecurityPkg\\Include\\Guid/SecureBootConfigHii.h"
+#line 14 "d:\\edk2\\edk2\\SecurityPkg\\VariableAuthenticated\\SecureBootConfigDxe\\SecureBootConfigNvData.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+typedef struct {
+  BOOLEAN         AttemptSecureBoot; 
+  BOOLEAN         HideSecureBoot;    
+  CHAR16          SignatureGuid[37];
+  BOOLEAN         PhysicalPresent; 
+  UINT8           SecureBootMode;  
+  BOOLEAN         DeletePk;
+  BOOLEAN         HasPk;             
+  BOOLEAN         AlwaysRevocation;  
+  UINT8           CertificateFormat; 
+  EFI_HII_DATE    RevocationDate;    
+  EFI_HII_TIME    RevocationTime;    
+  UINT8           FileEnrollType;    
+  UINT32          ListCount;         
+  UINT32          CheckedDataCount;  
+} SECUREBOOT_CONFIGURATION;
+
+#line 143 "d:\\edk2\\edk2\\SecurityPkg\\VariableAuthenticated\\SecureBootConfigDxe\\SecureBootConfigNvData.h"
+#line 10 "d:\\edk2\\edk2\\SecurityPkg\\VariableAuthenticated\\SecureBootConfigDxe\\SecureBootConfig.vfr"
+
+formset
+>00000000: 0E A7 A5 50 AF 5D 81 EA E2 4D 8F 9B CA BD A9 CF 5C 14 02 00 03 00 01 71 99 03 93 45 85 04 4B B4 5E 32 EB 83 26 04 0E 
+>00000027: 5C 06 00 00 00 00 
+>0000002D: 5C 06 00 00 01 00 
+  guid      = { 0x5daf50a5, 0xea81, 0x4de2, {0x8f, 0x9b, 0xca, 0xbd, 0xa9, 0xcf, 0x5c, 0x14} },
+  title     = STRING_TOKEN(0x0002),
+  help      = STRING_TOKEN(0x0003),
+  classguid = { 0x93039971, 0x8545, 0x4b04, { 0xb4, 0x5e, 0x32, 0xeb, 0x83, 0x26, 0x4, 0xe } },
+
+  varstore SECUREBOOT_CONFIGURATION,
+>00000033: 24 2F A5 50 AF 5D 81 EA E2 4D 8F 9B CA BD A9 CF 5C 14 01 00 64 00 53 45 43 55 52 45 42 4F 4F 54 5F 43 4F 4E 46 49 47 55 52 41 54 49 4F 4E 00 
+    varid = 0x0001,
+    name  = SECUREBOOT_CONFIGURATION,
+    guid  = { 0x5daf50a5, 0xea81, 0x4de2, {0x8f, 0x9b, 0xca, 0xbd, 0xa9, 0xcf, 0x5c, 0x14} };
+
+  
+  
+  
+  form formid = 0x01,
+>00000062: 01 86 01 00 02 00 
+    title = STRING_TOKEN(0x0002);
+
+    subtitle text = STRING_TOKEN(0x0004);
+>00000068: 02 87 04 00 00 00 00 
+>0000006F: 29 02 
+
+    text
+>00000071: 03 08 05 00 06 00 07 00 
+      help   = STRING_TOKEN(0x0006),
+      text   = STRING_TOKEN(0x0005),
+        text   = STRING_TOKEN(0x0007);
+
+    
+    
+    
+    grayoutif ideqval SECUREBOOT_CONFIGURATION.HideSecureBoot == 1 OR NOT ideqval SECUREBOOT_CONFIGURATION.PhysicalPresent == 1;
+>00000079: 19 82 
+>0000007B: 12 86 11 00 01 00 
+>00000081: 12 06 13 00 01 00 
+>00000087: 17 02 
+>00000089: 16 02 
+>0000008B: 29 02 
+    checkbox varid = SECUREBOOT_CONFIGURATION.AttemptSecureBoot,
+>0000008D: 06 8E 08 00 09 00 00 10 01 00 00 00 14 00 
+          questionid = 0x1000,
+          prompt = STRING_TOKEN(0x0008),
+          help   = STRING_TOKEN(0x0009),
+          flags  = INTERACTIVE | RESET_REQUIRED,
+    endcheckbox;
+>0000009B: 29 02 
+    endif;
+>0000009D: 29 02 
+
+    
+    
+    
+    oneof name = SecureBootMode,
+>0000009F: 05 91 2B 00 2C 00 01 10 00 00 FF FF 04 10 00 01 00 
+          questionid = 0x1001,
+          prompt = STRING_TOKEN(0x002B),
+          help   = STRING_TOKEN(0x002C),
+          flags  = INTERACTIVE | NUMERIC_SIZE_1,
+          option text = STRING_TOKEN(0x002D),    value = 0x00, flags = DEFAULT;
+>000000B0: 09 07 2D 00 10 00 00 
+          option text = STRING_TOKEN(0x002E),      value = 0x01,   flags = 0;
+>000000B7: 09 07 2E 00 00 00 01 
+    endoneof;
+>000000BE: 29 02 
+
+    
+    
+    
+    suppressif questionref(SecureBootMode) == 0x00;
+>000000C0: 0A 82 
+>000000C2: 40 84 01 10 
+>000000C6: 45 0A 00 00 00 00 00 00 00 00 
+>000000D0: 2F 02 
+>000000D2: 29 02 
+    grayoutif NOT ideqval SECUREBOOT_CONFIGURATION.PhysicalPresent == 1;
+>000000D4: 19 82 
+>000000D6: 12 86 13 00 01 00 
+>000000DC: 17 02 
+>000000DE: 29 02 
+    goto 0x02,
+>000000E0: 0F 0F 2F 00 30 00 00 11 00 00 FF FF 04 02 00 
+         prompt = STRING_TOKEN(0x002F),
+         help   = STRING_TOKEN(0x0030),
+         flags  = INTERACTIVE,
+         key    = 0x1100;
+    endif;
+>000000EF: 29 02 
+    endif;
+>000000F1: 29 02 
+
+    text
+      help   = STRING_TOKEN(0x000A),
+      text   = STRING_TOKEN(0x000B),
+      flags  = INTERACTIVE,
+>000000F3: 0C 8F 0B 00 0A 00 10 10 00 00 FF FF 04 00 00 
+      key    = 0x1010;
+>00000102: 29 02 
+
+  endform;
+>00000104: 29 02 
+
+  
+  
+  
+  form formid = 0x02,
+>00000106: 01 86 02 00 31 00 
+    title  = STRING_TOKEN(0x0031);
+
+    subtitle text = STRING_TOKEN(0x0004);
+>0000010C: 02 87 04 00 00 00 00 
+>00000113: 29 02 
+
+    goto 0x03,
+>00000115: 0F 0F 32 00 33 00 01 11 00 00 FF FF 04 03 00 
+         prompt = STRING_TOKEN(0x0032),
+         help   = STRING_TOKEN(0x0033),
+         flags  = INTERACTIVE,
+         key    = 0x1101;
+
+    subtitle text = STRING_TOKEN(0x0004);
+>00000124: 02 87 04 00 00 00 00 
+>0000012B: 29 02 
+
+    goto 0x04,
+>0000012D: 0F 0F 34 00 35 00 02 11 00 00 FF FF 04 04 00 
+         prompt = STRING_TOKEN(0x0034),
+         help   = STRING_TOKEN(0x0035),
+         flags  = INTERACTIVE,
+         key    = 0x1102;
+
+    subtitle text = STRING_TOKEN(0x0004);
+>0000013C: 02 87 04 00 00 00 00 
+>00000143: 29 02 
+
+    goto 0x05,
+>00000145: 0F 0F 36 00 37 00 03 11 00 00 FF FF 04 05 00 
+         prompt = STRING_TOKEN(0x0036),
+         help   = STRING_TOKEN(0x0037),
+         flags  = INTERACTIVE,
+         key    = 0x1103;
+
+    subtitle text = STRING_TOKEN(0x0004);
+>00000154: 02 87 04 00 00 00 00 
+>0000015B: 29 02 
+
+    goto 0x06,
+>0000015D: 0F 0F 38 00 39 00 04 11 00 00 FF FF 04 06 00 
+         prompt = STRING_TOKEN(0x0038),
+         help   = STRING_TOKEN(0x0039),
+         flags  = INTERACTIVE,
+         key    = 0x1104;
+
+    subtitle text = STRING_TOKEN(0x0004);
+>0000016C: 02 87 04 00 00 00 00 
+>00000173: 29 02 
+
+    goto 0x14,
+>00000175: 0F 0F 3A 00 3B 00 0D 11 00 00 FF FF 04 14 00 
+         prompt = STRING_TOKEN(0x003A),
+         help   = STRING_TOKEN(0x003B),
+         flags  = INTERACTIVE,
+         key    = 0x110d;
+
+  endform;
+>00000184: 29 02 
+
+  
+  
+  
+  form formid = 0x03,
+>00000186: 01 86 03 00 32 00 
+    title  = STRING_TOKEN(0x0032);
+
+    subtitle text = STRING_TOKEN(0x0004);
+>0000018C: 02 87 04 00 00 00 00 
+>00000193: 29 02 
+
+    
+    
+    
+    grayoutif ideqval SECUREBOOT_CONFIGURATION.HasPk == 1;
+>00000195: 19 82 
+>00000197: 12 06 12 00 01 00 
+    goto 0x07,
+>0000019D: 0F 0F 3C 00 3D 00 06 11 00 00 FF FF 04 07 00 
+         prompt = STRING_TOKEN(0x003C),
+         help   = STRING_TOKEN(0x003D),
+         flags  = INTERACTIVE,
+         key    = 0x1106;
+    endif;
+>000001AC: 29 02 
+
+    subtitle text = STRING_TOKEN(0x0004);
+>000001AE: 02 87 04 00 00 00 00 
+>000001B5: 29 02 
+
+    
+    
+    
+    grayoutif ideqval SECUREBOOT_CONFIGURATION.HideSecureBoot == 1;
+>000001B7: 19 82 
+>000001B9: 12 06 11 00 01 00 
+    checkbox varid = SECUREBOOT_CONFIGURATION.DeletePk,
+>000001BF: 06 8E 3F 00 40 00 05 11 01 00 4E 00 14 00 
+          questionid = 0x1105,
+          prompt = STRING_TOKEN(0x003F),
+          help   = STRING_TOKEN(0x0040),
+          flags  = INTERACTIVE | RESET_REQUIRED,
+    endcheckbox;
+>000001CD: 29 02 
+    endif;
+>000001CF: 29 02 
+  endform;
+>000001D1: 29 02 
+
+  
+  
+  
+  form formid = 0x07,
+>000001D3: 01 86 07 00 3C 00 
+    title  = STRING_TOKEN(0x003C);
+
+    subtitle text = STRING_TOKEN(0x0004);
+>000001D9: 02 87 04 00 00 00 00 
+>000001E0: 29 02 
+
+    goto 0x07,
+>000001E2: 0F 0F 3E 00 3E 00 07 00 00 00 FF FF 04 07 00 
+         prompt = STRING_TOKEN(0x003E),
+         help = STRING_TOKEN(0x003E),
+         flags = INTERACTIVE,
+         key = 0x07;
+
+    subtitle text = STRING_TOKEN(0x0004);
+>000001F1: 02 87 04 00 00 00 00 
+>000001F8: 29 02 
+    label 0x07;
+>000001FA: 5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 00 07 00 
+    label 0xffff;
+>0000020F: 5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 00 FF FF 
+    subtitle text = STRING_TOKEN(0x0004);
+>00000224: 02 87 04 00 00 00 00 
+>0000022B: 29 02 
+
+    goto 0x02,
+>0000022D: 0F 0F 29 00 29 00 04 10 00 00 FF FF 14 02 00 
+      prompt = STRING_TOKEN(0x0029),
+      help   = STRING_TOKEN(0x0029),
+      flags  = INTERACTIVE| RESET_REQUIRED,
+      key    = 0x1004;
+
+    goto 0x02,
+>0000023C: 0F 0F 2A 00 2A 00 05 10 00 00 FF FF 04 02 00 
+      prompt = STRING_TOKEN(0x002A),
+      help   = STRING_TOKEN(0x002A),
+      flags  = INTERACTIVE,
+      key    = 0x1005;
+
+  endform;
+>0000024B: 29 02 
+
+  
+  
+  
+  form formid = 0x04,
+>0000024D: 01 86 04 00 34 00 
+    title  = STRING_TOKEN(0x0034);
+
+    
+    
+    
+    goto 0x09,
+>00000253: 0F 0F 41 00 42 00 01 00 00 00 FF FF 04 09 00 
+         prompt = STRING_TOKEN(0x0041),
+         help   = STRING_TOKEN(0x0042),
+         flags  = INTERACTIVE;
+
+    subtitle text = STRING_TOKEN(0x0004);
+>00000262: 02 87 04 00 00 00 00 
+>00000269: 29 02 
+
+    
+    
+    
+    goto 0x0a,
+>0000026B: 0F 0F 43 00 44 00 08 11 00 00 FF FF 04 0A 00 
+         prompt = STRING_TOKEN(0x0043),
+         help   = STRING_TOKEN(0x0044),
+         flags  = INTERACTIVE,
+         key    = 0x1108;
+
+    subtitle text = STRING_TOKEN(0x0004);
+>0000027A: 02 87 04 00 00 00 00 
+>00000281: 29 02 
+  endform;
+>00000283: 29 02 
+
+  
+  
+  
+  form formid = 0x09,
+>00000285: 01 86 09 00 45 00 
+    title = STRING_TOKEN(0x0045);
+
+    subtitle text = STRING_TOKEN(0x0004);
+>0000028B: 02 87 04 00 00 00 00 
+>00000292: 29 02 
+
+    goto 0x09,
+>00000294: 0F 0F 47 00 48 00 09 00 00 00 FF FF 04 09 00 
+         prompt = STRING_TOKEN(0x0047),
+         help   = STRING_TOKEN(0x0048),
+         flags  = INTERACTIVE,
+         key    = 0x09;
+
+    subtitle text = STRING_TOKEN(0x0004);
+>000002A3: 02 87 04 00 00 00 00 
+>000002AA: 29 02 
+    label 0x09;
+>000002AC: 5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 00 09 00 
+    label 0xffff;
+>000002C1: 5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 00 FF FF 
+    subtitle text = STRING_TOKEN(0x0004);
+>000002D6: 02 87 04 00 00 00 00 
+>000002DD: 29 02 
+
+    string  varid   = SECUREBOOT_CONFIGURATION.SignatureGuid,
+>000002DF: 1C 90 16 00 17 00 0A 11 01 00 02 00 04 24 24 00 
+            prompt  = STRING_TOKEN(0x0016),
+            help    = STRING_TOKEN(0x0017),
+            flags   = INTERACTIVE,
+            key     = 0x110a,
+            minsize = 36,
+            maxsize = 36,
+    endstring;
+>000002EF: 29 02 
+
+    subtitle text = STRING_TOKEN(0x0004);
+>000002F1: 02 87 04 00 00 00 00 
+>000002F8: 29 02 
+    subtitle text = STRING_TOKEN(0x0004);
+>000002FA: 02 87 04 00 00 00 00 
+>00000301: 29 02 
+
+    goto 0x02,
+>00000303: 0F 0F 29 00 29 00 08 10 00 00 FF FF 04 02 00 
+      prompt = STRING_TOKEN(0x0029),
+      help   = STRING_TOKEN(0x0029),
+      flags  = INTERACTIVE,
+      key    = 0x1008;
+
+    goto 0x02,
+>00000312: 0F 0F 2A 00 2A 00 09 10 00 00 FF FF 04 02 00 
+      prompt = STRING_TOKEN(0x002A),
+      help   = STRING_TOKEN(0x002A),
+      flags  = INTERACTIVE,
+      key    = 0x1009;
+
+  endform;
+>00000321: 29 02 
+
+  
+  
+  
+  form formid = 0x0a,
+>00000323: 01 86 0A 00 46 00 
+    title  = STRING_TOKEN(0x0046);
+
+    label 0x1200;
+>00000329: 5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 00 00 12 
+    label 0xffff;
+>0000033E: 5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 00 FF FF 
+
+    subtitle text = STRING_TOKEN(0x0004);
+>00000353: 02 87 04 00 00 00 00 
+>0000035A: 29 02 
+
+  endform;
+>0000035C: 29 02 
+
+  
+  
+  
+  form formid = 0x05,
+>0000035E: 01 86 05 00 36 00 
+    title = STRING_TOKEN(0x0036);
+
+    subtitle text = STRING_TOKEN(0x0004);
+>00000364: 02 87 04 00 00 00 00 
+>0000036B: 29 02 
+
+    goto 0x0b,
+>0000036D: 0F 0F 0D 00 0D 00 02 00 00 00 FF FF 00 0B 00 
+    prompt = STRING_TOKEN (0x000D),
+    help   = STRING_TOKEN (0x000D),
+    flags  = 0;
+
+    subtitle text = STRING_TOKEN(0x0004);
+>0000037C: 02 87 04 00 00 00 00 
+>00000383: 29 02 
+
+    goto 0x0c,
+>00000385: 0F 0F 0E 00 0E 00 0C 00 00 00 FF FF 04 0C 00 
+    prompt = STRING_TOKEN (0x000E),
+    help   = STRING_TOKEN (0x000E),
+    flags  = INTERACTIVE,
+    key    = 0x0c;
+
+  endform;
+>00000394: 29 02 
+
+  
+  
+  
+  form formid = 0x06,
+>00000396: 01 86 06 00 38 00 
+    title = STRING_TOKEN(0x0038);
+
+    subtitle text = STRING_TOKEN(0x0004);
+>0000039C: 02 87 04 00 00 00 00 
+>000003A3: 29 02 
+
+    goto 0x0d,
+>000003A5: 0F 0F 0D 00 0D 00 03 00 00 00 FF FF 00 0D 00 
+    prompt = STRING_TOKEN (0x000D),
+    help   = STRING_TOKEN (0x000D),
+    flags  = 0;
+
+    subtitle text = STRING_TOKEN(0x0004);
+>000003B4: 02 87 04 00 00 00 00 
+>000003BB: 29 02 
+
+    goto 0x17,
+>000003BD: 0F 0F 0E 00 0E 00 0F 10 00 00 FF FF 04 17 00 
+    prompt = STRING_TOKEN (0x000E),
+    help   = STRING_TOKEN (0x000E),
+    flags  = INTERACTIVE,
+    key    = 0x100f;
+
+  endform;
+>000003CC: 29 02 
+
+  
+  
+  
+  form formid = 0x14,
+>000003CE: 01 86 14 00 3A 00 
+    title = STRING_TOKEN(0x003A);
+
+    subtitle text = STRING_TOKEN(0x0004);
+>000003D4: 02 87 04 00 00 00 00 
+>000003DB: 29 02 
+
+    goto 0x15,
+>000003DD: 0F 0F 0D 00 0D 00 04 00 00 00 FF FF 00 15 00 
+    prompt = STRING_TOKEN (0x000D),
+    help   = STRING_TOKEN (0x000D),
+    flags  = 0;
+
+    subtitle text = STRING_TOKEN(0x0004);
+>000003EC: 02 87 04 00 00 00 00 
+>000003F3: 29 02 
+
+    goto 0x16,
+>000003F5: 0F 0F 0E 00 0E 00 16 00 00 00 FF FF 04 16 00 
+    prompt = STRING_TOKEN (0x000E),
+    help   = STRING_TOKEN (0x000E),
+    flags  = INTERACTIVE,
+    key    = 0x16;
+
+  endform;
+>00000404: 29 02 
+
+  
+  
+  
+  form formid = 0x0c,
+>00000406: 01 86 0C 00 0E 00 
+    title  = STRING_TOKEN(0x000E);
+
+    label 0x1201;
+>0000040C: 5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 00 01 12 
+    label 0xffff;
+>00000421: 5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 00 FF FF 
+    subtitle text = STRING_TOKEN(0x0004);
+>00000436: 02 87 04 00 00 00 00 
+>0000043D: 29 02 
+
+  endform;
+>0000043F: 29 02 
+
+  
+  
+  
+  form formid = 0x17,
+>00000441: 01 86 17 00 0F 00 
+    title  = STRING_TOKEN(0x000F);
+
+    subtitle text = STRING_TOKEN(0x0004);
+>00000447: 02 87 04 00 00 00 00 
+>0000044E: 29 02 
+
+    grayoutif ideqval SECUREBOOT_CONFIGURATION.ListCount == 0;
+>00000450: 19 82 
+>00000452: 12 06 10 00 00 00 
+      label 0x1300;
+>00000458: 5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 00 00 13 
+      
+      
+      
+      label 0xffff;
+>0000046D: 5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 00 FF FF 
+   endif;
+>00000482: 29 02 
+
+   subtitle text = STRING_TOKEN(0x0004);
+>00000484: 02 87 04 00 00 00 00 
+>0000048B: 29 02 
+   label 0x1202;
+>0000048D: 5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 00 02 12 
+   label 0xffff;
+>000004A2: 5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 00 FF FF 
+   subtitle text = STRING_TOKEN(0x0004);
+>000004B7: 02 87 04 00 00 00 00 
+>000004BE: 29 02 
+
+  endform;
+>000004C0: 29 02 
+
+  
+  
+  
+  form formid = 0x18,
+>000004C2: 01 86 18 00 10 00 
+    title = STRING_TOKEN(0x0010);
+
+    subtitle text = STRING_TOKEN(0x0004);
+>000004C8: 02 87 04 00 00 00 00 
+>000004CF: 29 02 
+
+    goto 0x17,
+>000004D1: 0F 0F 12 00 14 00 10 11 00 00 FF FF 04 17 00 
+      prompt = STRING_TOKEN(0x0012),
+      help   = STRING_TOKEN(0x0014),
+      flags  = INTERACTIVE,
+      key    = 0x1110;
+
+    grayoutif ideqval SECUREBOOT_CONFIGURATION.CheckedDataCount == 0;
+>000004E0: 19 82 
+>000004E2: 12 06 0F 00 00 00 
+      goto 0x17,
+>000004E8: 0F 0F 13 00 15 00 11 11 00 00 FF FF 04 17 00 
+        prompt = STRING_TOKEN(0x0013),
+        help   = STRING_TOKEN(0x0015),
+        flags  = INTERACTIVE,
+        key    = 0x1111;
+    endif;
+>000004F7: 29 02 
+
+    subtitle text = STRING_TOKEN(0x0004);
+>000004F9: 02 87 04 00 00 00 00 
+>00000500: 29 02 
+    label 0x1204;
+>00000502: 5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 00 04 12 
+    label 0xffff;
+>00000517: 5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 00 FF FF 
+    subtitle text = STRING_TOKEN(0x0004);
+>0000052C: 02 87 04 00 00 00 00 
+>00000533: 29 02 
+
+  endform;
+>00000535: 29 02 
+
+
+  
+  
+  
+  form formid = 0x16,
+>00000537: 01 86 16 00 0E 00 
+    title  = STRING_TOKEN(0x000E);
+
+    label 0x1203;
+>0000053D: 5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 00 03 12 
+    label 0xffff;
+>00000552: 5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 00 FF FF 
+    subtitle text = STRING_TOKEN(0x0004);
+>00000567: 02 87 04 00 00 00 00 
+>0000056E: 29 02 
+
+  endform;
+>00000570: 29 02 
+
+  
+  
+  
+  form formid = 0x0b,
+>00000572: 01 86 0B 00 0D 00 
+    title = STRING_TOKEN(0x000D);
+
+    subtitle text = STRING_TOKEN(0x0004);
+>00000578: 02 87 04 00 00 00 00 
+>0000057F: 29 02 
+
+    goto 0x0b,
+>00000581: 0F 0F 18 00 18 00 0B 00 00 00 FF FF 04 0B 00 
+         prompt = STRING_TOKEN(0x0018),
+         help = STRING_TOKEN(0x0018),
+         flags = INTERACTIVE,
+         key = 0x0b;
+
+    subtitle text = STRING_TOKEN(0x0004);
+>00000590: 02 87 04 00 00 00 00 
+>00000597: 29 02 
+    label 0x0b;
+>00000599: 5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 00 0B 00 
+    label 0xffff;
+>000005AE: 5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 00 FF FF 
+    subtitle text = STRING_TOKEN(0x0004);
+>000005C3: 02 87 04 00 00 00 00 
+>000005CA: 29 02 
+
+    string  varid   = SECUREBOOT_CONFIGURATION.SignatureGuid,
+>000005CC: 1C 90 16 00 17 00 0B 11 01 00 02 00 04 24 24 00 
+            prompt  = STRING_TOKEN(0x0016),
+            help    = STRING_TOKEN(0x0017),
+            flags   = INTERACTIVE,
+            key     = 0x110b,
+            minsize = 36,
+            maxsize = 36,
+    endstring;
+>000005DC: 29 02 
+
+    subtitle text = STRING_TOKEN(0x0004);
+>000005DE: 02 87 04 00 00 00 00 
+>000005E5: 29 02 
+    subtitle text = STRING_TOKEN(0x0004);
+>000005E7: 02 87 04 00 00 00 00 
+>000005EE: 29 02 
+
+    goto 0x02,
+>000005F0: 0F 0F 29 00 29 00 02 10 00 00 FF FF 04 02 00 
+         prompt = STRING_TOKEN(0x0029),
+         help   = STRING_TOKEN(0x0029),
+         flags  = INTERACTIVE,
+         key    = 0x1002;
+
+    goto 0x02,
+>000005FF: 0F 0F 2A 00 2A 00 03 10 00 00 FF FF 04 02 00 
+         prompt = STRING_TOKEN(0x002A),
+         help   = STRING_TOKEN(0x002A),
+         flags  = INTERACTIVE,
+         key    = 0x1003;
+
+  endform;
+>0000060E: 29 02 
+
+  
+  
+  
+  form formid = 0x0d,
+>00000610: 01 86 0D 00 0D 00 
+    title = STRING_TOKEN(0x000D);
+
+    subtitle text = STRING_TOKEN(0x0004);
+>00000616: 02 87 04 00 00 00 00 
+>0000061D: 29 02 
+
+    goto 0x0d,
+>0000061F: 0F 0F 18 00 18 00 0D 00 00 00 FF FF 04 0D 00 
+         prompt = STRING_TOKEN(0x0018),
+         help = STRING_TOKEN(0x0018),
+         flags = INTERACTIVE,
+         key = 0x0d;
+
+    label 0x0d;
+>0000062E: 5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 00 0D 00 
+    label 0xffff;
+>00000643: 5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 00 FF FF 
+    subtitle text = STRING_TOKEN(0x0004);
+>00000658: 02 87 04 00 00 00 00 
+>0000065F: 29 02 
+
+    grayoutif ideqval SECUREBOOT_CONFIGURATION.FileEnrollType == 3;
+>00000661: 19 82 
+>00000663: 12 06 0E 00 03 00 
+      string  varid   = SECUREBOOT_CONFIGURATION.SignatureGuid,
+>00000669: 1C 90 16 00 17 00 0C 11 01 00 02 00 04 24 24 00 
+              prompt  = STRING_TOKEN(0x0016),
+              help    = STRING_TOKEN(0x0017),
+              flags   = INTERACTIVE,
+              key     = 0x110c,
+              minsize = 36,
+              maxsize = 36,
+      endstring;
+>00000679: 29 02 
+    endif;
+>0000067B: 29 02 
+
+    disableif NOT ideqval SECUREBOOT_CONFIGURATION.FileEnrollType == 1;
+>0000067D: 1E 82 
+>0000067F: 12 86 0E 00 01 00 
+>00000685: 17 02 
+>00000687: 29 02 
+      oneof name = X509SignatureFormatInDbx,
+>00000689: 05 91 19 00 1A 00 05 00 01 00 51 00 00 10 01 04 00 
+            varid       = SECUREBOOT_CONFIGURATION.CertificateFormat,
+            prompt      = STRING_TOKEN(0x0019),
+            help        = STRING_TOKEN(0x001A),
+            option text = STRING_TOKEN(0x001B), value = 0x1, flags = DEFAULT;
+>0000069A: 09 07 1B 00 10 00 01 
+            option text = STRING_TOKEN(0x001C), value = 0x2, flags = 0;
+>000006A1: 09 07 1C 00 00 00 02 
+            option text = STRING_TOKEN(0x001D), value = 0x3, flags = 0;
+>000006A8: 09 07 1D 00 00 00 03 
+            option text = STRING_TOKEN(0x001E), value = 0x4, flags = 0;
+>000006AF: 09 07 1E 00 00 00 04 
+      endoneof;
+>000006B6: 29 02 
+    endif;
+>000006B8: 29 02 
+
+    disableif NOT ideqval SECUREBOOT_CONFIGURATION.FileEnrollType == 2;
+>000006BA: 1E 82 
+>000006BC: 12 86 0E 00 02 00 
+>000006C2: 17 02 
+>000006C4: 29 02 
+      text
+>000006C6: 03 08 19 00 1F 00 20 00 
+        help   = STRING_TOKEN(0x001F),          
+        text   = STRING_TOKEN(0x0019),     
+        text   = STRING_TOKEN(0x0020);              
+    endif;
+>000006CE: 29 02 
+
+    disableif NOT ideqval SECUREBOOT_CONFIGURATION.FileEnrollType == 3;
+>000006D0: 1E 82 
+>000006D2: 12 86 0E 00 03 00 
+>000006D8: 17 02 
+>000006DA: 29 02 
+      text
+>000006DC: 03 08 19 00 21 00 22 00 
+        help   = STRING_TOKEN(0x0021),            
+        text   = STRING_TOKEN(0x0019),     
+        text   = STRING_TOKEN(0x0022);                 
+    endif;
+>000006E4: 29 02 
+
+    suppressif ideqval SECUREBOOT_CONFIGURATION.CertificateFormat == 4;
+>000006E6: 0A 82 
+>000006E8: 12 06 05 00 04 00 
+        checkbox varid  = SECUREBOOT_CONFIGURATION.AlwaysRevocation,
+>000006EE: 06 8E 27 00 28 00 06 00 01 00 50 00 04 00 
+               prompt = STRING_TOKEN(0x0027),
+               help   = STRING_TOKEN(0x0028),
+               flags  = INTERACTIVE,
+        endcheckbox;
+>000006FC: 29 02 
+
+        suppressif ideqval SECUREBOOT_CONFIGURATION.AlwaysRevocation == 1;
+>000006FE: 0A 82 
+>00000700: 12 06 06 00 01 00 
+            date  varid  = SECUREBOOT_CONFIGURATION.RevocationDate,
+>00000706: 1A 8E 25 00 26 00 08 00 01 00 52 00 00 00 
+                  prompt = STRING_TOKEN(0x0025),
+                  help   = STRING_TOKEN(0x0026),
+                  flags  = STORAGE_NORMAL,
+            enddate;
+>00000714: 29 02 
+
+            time varid   = SECUREBOOT_CONFIGURATION.RevocationTime,
+>00000716: 1B 8E 23 00 24 00 0A 00 01 00 56 00 00 00 
+                 prompt  = STRING_TOKEN(0x0023),
+                 help    = STRING_TOKEN(0x0024),
+                 flags   = STORAGE_NORMAL,
+            endtime;
+>00000724: 29 02 
+        endif;
+>00000726: 29 02 
+    endif;
+>00000728: 29 02 
+
+    subtitle text = STRING_TOKEN(0x0004);
+>0000072A: 02 87 04 00 00 00 00 
+>00000731: 29 02 
+    subtitle text = STRING_TOKEN(0x0004);
+>00000733: 02 87 04 00 00 00 00 
+>0000073A: 29 02 
+
+    goto 0x02,
+>0000073C: 0F 0F 29 00 29 00 0A 10 00 00 FF FF 04 02 00 
+         prompt = STRING_TOKEN(0x0029),
+         help   = STRING_TOKEN(0x0029),
+         flags  = INTERACTIVE,
+         key    = 0x100a;
+
+    goto 0x02,
+>0000074B: 0F 0F 2A 00 2A 00 0B 10 00 00 FF FF 04 02 00 
+         prompt = STRING_TOKEN(0x002A),
+         help   = STRING_TOKEN(0x002A),
+         flags  = INTERACTIVE,
+         key    = 0x100b;
+
+  endform;
+>0000075A: 29 02 
+
+  
+  
+  
+  form formid = 0x15,
+>0000075C: 01 86 15 00 0D 00 
+    title = STRING_TOKEN(0x000D);
+
+    subtitle text = STRING_TOKEN(0x0004);
+>00000762: 02 87 04 00 00 00 00 
+>00000769: 29 02 
+
+    goto 0x15,
+>0000076B: 0F 0F 18 00 18 00 15 00 00 00 FF FF 04 15 00 
+         prompt = STRING_TOKEN(0x0018),
+         help = STRING_TOKEN(0x0018),
+         flags = INTERACTIVE,
+         key = 0x15;
+
+    subtitle text = STRING_TOKEN(0x0004);
+>0000077A: 02 87 04 00 00 00 00 
+>00000781: 29 02 
+    label 0x15;
+>00000783: 5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 00 15 00 
+    label 0xffff;
+>00000798: 5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 00 FF FF 
+    subtitle text = STRING_TOKEN(0x0004);
+>000007AD: 02 87 04 00 00 00 00 
+>000007B4: 29 02 
+
+    string  varid   = SECUREBOOT_CONFIGURATION.SignatureGuid,
+>000007B6: 1C 90 16 00 17 00 0E 11 01 00 02 00 04 24 24 00 
+            prompt  = STRING_TOKEN(0x0016),
+            help    = STRING_TOKEN(0x0017),
+            flags   = INTERACTIVE,
+            key     = 0x110e,
+            minsize = 36,
+            maxsize = 36,
+    endstring;
+>000007C6: 29 02 
+
+    subtitle text = STRING_TOKEN(0x0004);
+>000007C8: 02 87 04 00 00 00 00 
+>000007CF: 29 02 
+    subtitle text = STRING_TOKEN(0x0004);
+>000007D1: 02 87 04 00 00 00 00 
+>000007D8: 29 02 
+
+    goto 0x02,
+>000007DA: 0F 0F 29 00 29 00 0D 10 00 00 FF FF 04 02 00 
+         prompt = STRING_TOKEN(0x0029),
+         help   = STRING_TOKEN(0x0029),
+         flags  = INTERACTIVE,
+         key    = 0x100d;
+
+    goto 0x02,
+>000007E9: 0F 0F 2A 00 2A 00 0E 10 00 00 FF FF 04 02 00 
+         prompt = STRING_TOKEN(0x002A),
+         help   = STRING_TOKEN(0x002A),
+         flags  = INTERACTIVE,
+         key    = 0x100e;
+
+  endform;
+>00000882: 29 02 
+
+endformset;
+>000007F8: 1E 82 
+>000007FA: 46 02 
+>000007FC: 07 91 00 00 00 00 0E 00 01 00 59 00 00 10 00 FF 00 
+>0000080D: 29 02 
+>0000080F: 07 9A 00 00 00 00 0F 00 01 00 60 00 00 12 00 00 00 00 FF FF FF FF 00 00 00 00 
+>00000829: 29 02 
+>0000082B: 07 9A 00 00 00 00 10 00 01 00 5C 00 00 12 00 00 00 00 FF FF FF FF 00 00 00 00 
+>00000845: 29 02 
+>00000847: 07 91 00 00 00 00 11 00 01 00 01 00 00 10 00 FF 00 
+>00000858: 29 02 
+>0000085A: 07 91 00 00 00 00 12 00 01 00 4F 00 00 10 00 FF 00 
+>0000086B: 29 02 
+>0000086D: 07 91 00 00 00 00 13 00 01 00 4C 00 00 10 00 FF 00 
+>0000087E: 29 02 
+>00000880: 29 02 
+>00000884: 29 02 
+
+//
+// All Opcode Record List 
+//
+>00000000: 0E A7 A5 50 AF 5D 81 EA E2 4D 8F 9B CA BD A9 CF 5C 14 02 00 03 00 01 71 99 03 93 45 85 04 4B B4 5E 32 EB 83 26 04 0E 
+>00000027: 5C 06 00 00 00 00 
+>0000002D: 5C 06 00 00 01 00 
+>00000033: 24 2F A5 50 AF 5D 81 EA E2 4D 8F 9B CA BD A9 CF 5C 14 01 00 64 00 53 45 43 55 52 45 42 4F 4F 54 5F 43 4F 4E 46 49 47 55 52 41 54 49 4F 4E 00 
+>00000062: 01 86 01 00 02 00 
+>00000068: 02 87 04 00 00 00 00 
+>0000006F: 29 02 
+>00000071: 03 08 05 00 06 00 07 00 
+>00000079: 19 82 
+>0000007B: 12 86 11 00 01 00 
+>00000081: 12 06 13 00 01 00 
+>00000087: 17 02 
+>00000089: 16 02 
+>0000008B: 29 02 
+>0000008D: 06 8E 08 00 09 00 00 10 01 00 00 00 14 00 
+>0000009B: 29 02 
+>0000009D: 29 02 
+>0000009F: 05 91 2B 00 2C 00 01 10 00 00 FF FF 04 10 00 01 00 
+>000000B0: 09 07 2D 00 10 00 00 
+>000000B7: 09 07 2E 00 00 00 01 
+>000000BE: 29 02 
+>000000C0: 0A 82 
+>000000C2: 40 84 01 10 
+>000000C6: 45 0A 00 00 00 00 00 00 00 00 
+>000000D0: 2F 02 
+>000000D2: 29 02 
+>000000D4: 19 82 
+>000000D6: 12 86 13 00 01 00 
+>000000DC: 17 02 
+>000000DE: 29 02 
+>000000E0: 0F 0F 2F 00 30 00 00 11 00 00 FF FF 04 02 00 
+>000000EF: 29 02 
+>000000F1: 29 02 
+>000000F3: 0C 8F 0B 00 0A 00 10 10 00 00 FF FF 04 00 00 
+>00000102: 29 02 
+>00000104: 29 02 
+>00000106: 01 86 02 00 31 00 
+>0000010C: 02 87 04 00 00 00 00 
+>00000113: 29 02 
+>00000115: 0F 0F 32 00 33 00 01 11 00 00 FF FF 04 03 00 
+>00000124: 02 87 04 00 00 00 00 
+>0000012B: 29 02 
+>0000012D: 0F 0F 34 00 35 00 02 11 00 00 FF FF 04 04 00 
+>0000013C: 02 87 04 00 00 00 00 
+>00000143: 29 02 
+>00000145: 0F 0F 36 00 37 00 03 11 00 00 FF FF 04 05 00 
+>00000154: 02 87 04 00 00 00 00 
+>0000015B: 29 02 
+>0000015D: 0F 0F 38 00 39 00 04 11 00 00 FF FF 04 06 00 
+>0000016C: 02 87 04 00 00 00 00 
+>00000173: 29 02 
+>00000175: 0F 0F 3A 00 3B 00 0D 11 00 00 FF FF 04 14 00 
+>00000184: 29 02 
+>00000186: 01 86 03 00 32 00 
+>0000018C: 02 87 04 00 00 00 00 
+>00000193: 29 02 
+>00000195: 19 82 
+>00000197: 12 06 12 00 01 00 
+>0000019D: 0F 0F 3C 00 3D 00 06 11 00 00 FF FF 04 07 00 
+>000001AC: 29 02 
+>000001AE: 02 87 04 00 00 00 00 
+>000001B5: 29 02 
+>000001B7: 19 82 
+>000001B9: 12 06 11 00 01 00 
+>000001BF: 06 8E 3F 00 40 00 05 11 01 00 4E 00 14 00 
+>000001CD: 29 02 
+>000001CF: 29 02 
+>000001D1: 29 02 
+>000001D3: 01 86 07 00 3C 00 
+>000001D9: 02 87 04 00 00 00 00 
+>000001E0: 29 02 
+>000001E2: 0F 0F 3E 00 3E 00 07 00 00 00 FF FF 04 07 00 
+>000001F1: 02 87 04 00 00 00 00 
+>000001F8: 29 02 
+>000001FA: 5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 00 07 00 
+>0000020F: 5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 00 FF FF 
+>00000224: 02 87 04 00 00 00 00 
+>0000022B: 29 02 
+>0000022D: 0F 0F 29 00 29 00 04 10 00 00 FF FF 14 02 00 
+>0000023C: 0F 0F 2A 00 2A 00 05 10 00 00 FF FF 04 02 00 
+>0000024B: 29 02 
+>0000024D: 01 86 04 00 34 00 
+>00000253: 0F 0F 41 00 42 00 01 00 00 00 FF FF 04 09 00 
+>00000262: 02 87 04 00 00 00 00 
+>00000269: 29 02 
+>0000026B: 0F 0F 43 00 44 00 08 11 00 00 FF FF 04 0A 00 
+>0000027A: 02 87 04 00 00 00 00 
+>00000281: 29 02 
+>00000283: 29 02 
+>00000285: 01 86 09 00 45 00 
+>0000028B: 02 87 04 00 00 00 00 
+>00000292: 29 02 
+>00000294: 0F 0F 47 00 48 00 09 00 00 00 FF FF 04 09 00 
+>000002A3: 02 87 04 00 00 00 00 
+>000002AA: 29 02 
+>000002AC: 5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 00 09 00 
+>000002C1: 5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 00 FF FF 
+>000002D6: 02 87 04 00 00 00 00 
+>000002DD: 29 02 
+>000002DF: 1C 90 16 00 17 00 0A 11 01 00 02 00 04 24 24 00 
+>000002EF: 29 02 
+>000002F1: 02 87 04 00 00 00 00 
+>000002F8: 29 02 
+>000002FA: 02 87 04 00 00 00 00 
+>00000301: 29 02 
+>00000303: 0F 0F 29 00 29 00 08 10 00 00 FF FF 04 02 00 
+>00000312: 0F 0F 2A 00 2A 00 09 10 00 00 FF FF 04 02 00 
+>00000321: 29 02 
+>00000323: 01 86 0A 00 46 00 
+>00000329: 5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 00 00 12 
+>0000033E: 5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 00 FF FF 
+>00000353: 02 87 04 00 00 00 00 
+>0000035A: 29 02 
+>0000035C: 29 02 
+>0000035E: 01 86 05 00 36 00 
+>00000364: 02 87 04 00 00 00 00 
+>0000036B: 29 02 
+>0000036D: 0F 0F 0D 00 0D 00 02 00 00 00 FF FF 00 0B 00 
+>0000037C: 02 87 04 00 00 00 00 
+>00000383: 29 02 
+>00000385: 0F 0F 0E 00 0E 00 0C 00 00 00 FF FF 04 0C 00 
+>00000394: 29 02 
+>00000396: 01 86 06 00 38 00 
+>0000039C: 02 87 04 00 00 00 00 
+>000003A3: 29 02 
+>000003A5: 0F 0F 0D 00 0D 00 03 00 00 00 FF FF 00 0D 00 
+>000003B4: 02 87 04 00 00 00 00 
+>000003BB: 29 02 
+>000003BD: 0F 0F 0E 00 0E 00 0F 10 00 00 FF FF 04 17 00 
+>000003CC: 29 02 
+>000003CE: 01 86 14 00 3A 00 
+>000003D4: 02 87 04 00 00 00 00 
+>000003DB: 29 02 
+>000003DD: 0F 0F 0D 00 0D 00 04 00 00 00 FF FF 00 15 00 
+>000003EC: 02 87 04 00 00 00 00 
+>000003F3: 29 02 
+>000003F5: 0F 0F 0E 00 0E 00 16 00 00 00 FF FF 04 16 00 
+>00000404: 29 02 
+>00000406: 01 86 0C 00 0E 00 
+>0000040C: 5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 00 01 12 
+>00000421: 5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 00 FF FF 
+>00000436: 02 87 04 00 00 00 00 
+>0000043D: 29 02 
+>0000043F: 29 02 
+>00000441: 01 86 17 00 0F 00 
+>00000447: 02 87 04 00 00 00 00 
+>0000044E: 29 02 
+>00000450: 19 82 
+>00000452: 12 06 10 00 00 00 
+>00000458: 5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 00 00 13 
+>0000046D: 5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 00 FF FF 
+>00000482: 29 02 
+>00000484: 02 87 04 00 00 00 00 
+>0000048B: 29 02 
+>0000048D: 5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 00 02 12 
+>000004A2: 5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 00 FF FF 
+>000004B7: 02 87 04 00 00 00 00 
+>000004BE: 29 02 
+>000004C0: 29 02 
+>000004C2: 01 86 18 00 10 00 
+>000004C8: 02 87 04 00 00 00 00 
+>000004CF: 29 02 
+>000004D1: 0F 0F 12 00 14 00 10 11 00 00 FF FF 04 17 00 
+>000004E0: 19 82 
+>000004E2: 12 06 0F 00 00 00 
+>000004E8: 0F 0F 13 00 15 00 11 11 00 00 FF FF 04 17 00 
+>000004F7: 29 02 
+>000004F9: 02 87 04 00 00 00 00 
+>00000500: 29 02 
+>00000502: 5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 00 04 12 
+>00000517: 5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 00 FF FF 
+>0000052C: 02 87 04 00 00 00 00 
+>00000533: 29 02 
+>00000535: 29 02 
+>00000537: 01 86 16 00 0E 00 
+>0000053D: 5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 00 03 12 
+>00000552: 5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 00 FF FF 
+>00000567: 02 87 04 00 00 00 00 
+>0000056E: 29 02 
+>00000570: 29 02 
+>00000572: 01 86 0B 00 0D 00 
+>00000578: 02 87 04 00 00 00 00 
+>0000057F: 29 02 
+>00000581: 0F 0F 18 00 18 00 0B 00 00 00 FF FF 04 0B 00 
+>00000590: 02 87 04 00 00 00 00 
+>00000597: 29 02 
+>00000599: 5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 00 0B 00 
+>000005AE: 5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 00 FF FF 
+>000005C3: 02 87 04 00 00 00 00 
+>000005CA: 29 02 
+>000005CC: 1C 90 16 00 17 00 0B 11 01 00 02 00 04 24 24 00 
+>000005DC: 29 02 
+>000005DE: 02 87 04 00 00 00 00 
+>000005E5: 29 02 
+>000005E7: 02 87 04 00 00 00 00 
+>000005EE: 29 02 
+>000005F0: 0F 0F 29 00 29 00 02 10 00 00 FF FF 04 02 00 
+>000005FF: 0F 0F 2A 00 2A 00 03 10 00 00 FF FF 04 02 00 
+>0000060E: 29 02 
+>00000610: 01 86 0D 00 0D 00 
+>00000616: 02 87 04 00 00 00 00 
+>0000061D: 29 02 
+>0000061F: 0F 0F 18 00 18 00 0D 00 00 00 FF FF 04 0D 00 
+>0000062E: 5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 00 0D 00 
+>00000643: 5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 00 FF FF 
+>00000658: 02 87 04 00 00 00 00 
+>0000065F: 29 02 
+>00000661: 19 82 
+>00000663: 12 06 0E 00 03 00 
+>00000669: 1C 90 16 00 17 00 0C 11 01 00 02 00 04 24 24 00 
+>00000679: 29 02 
+>0000067B: 29 02 
+>0000067D: 1E 82 
+>0000067F: 12 86 0E 00 01 00 
+>00000685: 17 02 
+>00000687: 29 02 
+>00000689: 05 91 19 00 1A 00 05 00 01 00 51 00 00 10 01 04 00 
+>0000069A: 09 07 1B 00 10 00 01 
+>000006A1: 09 07 1C 00 00 00 02 
+>000006A8: 09 07 1D 00 00 00 03 
+>000006AF: 09 07 1E 00 00 00 04 
+>000006B6: 29 02 
+>000006B8: 29 02 
+>000006BA: 1E 82 
+>000006BC: 12 86 0E 00 02 00 
+>000006C2: 17 02 
+>000006C4: 29 02 
+>000006C6: 03 08 19 00 1F 00 20 00 
+>000006CE: 29 02 
+>000006D0: 1E 82 
+>000006D2: 12 86 0E 00 03 00 
+>000006D8: 17 02 
+>000006DA: 29 02 
+>000006DC: 03 08 19 00 21 00 22 00 
+>000006E4: 29 02 
+>000006E6: 0A 82 
+>000006E8: 12 06 05 00 04 00 
+>000006EE: 06 8E 27 00 28 00 06 00 01 00 50 00 04 00 
+>000006FC: 29 02 
+>000006FE: 0A 82 
+>00000700: 12 06 06 00 01 00 
+>00000706: 1A 8E 25 00 26 00 08 00 01 00 52 00 00 00 
+>00000714: 29 02 
+>00000716: 1B 8E 23 00 24 00 0A 00 01 00 56 00 00 00 
+>00000724: 29 02 
+>00000726: 29 02 
+>00000728: 29 02 
+>0000072A: 02 87 04 00 00 00 00 
+>00000731: 29 02 
+>00000733: 02 87 04 00 00 00 00 
+>0000073A: 29 02 
+>0000073C: 0F 0F 29 00 29 00 0A 10 00 00 FF FF 04 02 00 
+>0000074B: 0F 0F 2A 00 2A 00 0B 10 00 00 FF FF 04 02 00 
+>0000075A: 29 02 
+>0000075C: 01 86 15 00 0D 00 
+>00000762: 02 87 04 00 00 00 00 
+>00000769: 29 02 
+>0000076B: 0F 0F 18 00 18 00 15 00 00 00 FF FF 04 15 00 
+>0000077A: 02 87 04 00 00 00 00 
+>00000781: 29 02 
+>00000783: 5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 00 15 00 
+>00000798: 5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 00 FF FF 
+>000007AD: 02 87 04 00 00 00 00 
+>000007B4: 29 02 
+>000007B6: 1C 90 16 00 17 00 0E 11 01 00 02 00 04 24 24 00 
+>000007C6: 29 02 
+>000007C8: 02 87 04 00 00 00 00 
+>000007CF: 29 02 
+>000007D1: 02 87 04 00 00 00 00 
+>000007D8: 29 02 
+>000007DA: 0F 0F 29 00 29 00 0D 10 00 00 FF FF 04 02 00 
+>000007E9: 0F 0F 2A 00 2A 00 0E 10 00 00 FF FF 04 02 00 
+>000007F8: 1E 82 
+>000007FA: 46 02 
+>000007FC: 07 91 00 00 00 00 0E 00 01 00 59 00 00 10 00 FF 00 
+>0000080D: 29 02 
+>0000080F: 07 9A 00 00 00 00 0F 00 01 00 60 00 00 12 00 00 00 00 FF FF FF FF 00 00 00 00 
+>00000829: 29 02 
+>0000082B: 07 9A 00 00 00 00 10 00 01 00 5C 00 00 12 00 00 00 00 FF FF FF FF 00 00 00 00 
+>00000845: 29 02 
+>00000847: 07 91 00 00 00 00 11 00 01 00 01 00 00 10 00 FF 00 
+>00000858: 29 02 
+>0000085A: 07 91 00 00 00 00 12 00 01 00 4F 00 00 10 00 FF 00 
+>0000086B: 29 02 
+>0000086D: 07 91 00 00 00 00 13 00 01 00 4C 00 00 10 00 FF 00 
+>0000087E: 29 02 
+>00000880: 29 02 
+>00000882: 29 02 
+>00000884: 29 02 
+
+Total Size of all record is 0x00000886
+
+
+***************************************************************
+		mPackAlign = 8
+		struct SECUREBOOT_CONFIGURATION : mAlign [4] mTotalSize [0x64]
+
+		struct SECUREBOOT_CONFIGURATION {
+			+00000000[00000000] AttemptSecureBoot <BOOLEAN>
+			+00000001[00000001] HideSecureBoot <BOOLEAN>
+			+00000002[00000002] SignatureGuid[37] <UINT16>
+			+00000076[0000004c] PhysicalPresent <BOOLEAN>
+			+00000077[0000004d] SecureBootMode <UINT8>
+			+00000078[0000004e] DeletePk <BOOLEAN>
+			+00000079[0000004f] HasPk <BOOLEAN>
+			+00000080[00000050] AlwaysRevocation <BOOLEAN>
+			+00000081[00000051] CertificateFormat <UINT8>
+			+00000082[00000052] RevocationDate <EFI_HII_DATE>
+			+00000086[00000056] RevocationTime <EFI_HII_TIME>
+			+00000089[00000059] FileEnrollType <UINT8>
+			+00000092[0000005c] ListCount <UINT32>
+			+00000096[00000060] CheckedDataCount <UINT32>
+		};
+---------------------------------------------------------------
+		struct EFI_HII_REF : mAlign [16] mTotalSize [0x16]
+
+		struct EFI_HII_REF {
+			+00000000[00000000] QuestionId <UINT16>
+			+00000002[00000002] FormId <UINT16>
+			+00000004[00000004] FormSetGuid <(null)>
+			+00000020[00000014] DevicePath <EFI_STRING_ID>
+		};
+---------------------------------------------------------------
+		struct EFI_HII_TIME : mAlign [1] mTotalSize [0x3]
+
+		struct EFI_HII_TIME {
+			+00000000[00000000] Hours <UINT8>
+			+00000001[00000001] Minutes <UINT8>
+			+00000002[00000002] Seconds <UINT8>
+		};
+---------------------------------------------------------------
+		struct EFI_STRING_ID : mAlign [2] mTotalSize [0x2]
+
+		struct EFI_STRING_ID {
+		};
+---------------------------------------------------------------
+		struct EFI_HII_DATE : mAlign [2] mTotalSize [0x4]
+
+		struct EFI_HII_DATE {
+			+00000000[00000000] Year <UINT16>
+			+00000002[00000002] Month <UINT8>
+			+00000003[00000003] Day <UINT8>
+		};
+---------------------------------------------------------------
+		struct BOOLEAN : mAlign [1] mTotalSize [0x1]
+
+		struct BOOLEAN {
+		};
+---------------------------------------------------------------
+		struct UINT8 : mAlign [1] mTotalSize [0x1]
+
+		struct UINT8 {
+		};
+---------------------------------------------------------------
+		struct UINT16 : mAlign [2] mTotalSize [0x2]
+
+		struct UINT16 {
+		};
+---------------------------------------------------------------
+		struct UINT32 : mAlign [4] mTotalSize [0x4]
+
+		struct UINT32 {
+		};
+---------------------------------------------------------------
+		struct UINT64 : mAlign [8] mTotalSize [0x8]
+
+		struct UINT64 {
+		};
+---------------------------------------------------------------
+***************************************************************

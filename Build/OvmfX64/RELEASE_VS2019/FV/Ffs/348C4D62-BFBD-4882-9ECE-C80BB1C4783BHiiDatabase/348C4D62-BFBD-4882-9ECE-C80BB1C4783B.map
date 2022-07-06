@@ -1,0 +1,493 @@
+ HiiDatabase
+
+ Timestamp is 61ee7022 (Mon Jan 24 17:23:46 2022)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000094H .text                   CODE
+ 0001:00000094 0001813eH .text$mn                CODE
+ 0002:00000000 00000340H .data                   DATA
+ 0002:00000340 00000760H .rdata                  DATA
+ 0002:00000aa0 00000070H .bss                    DATA
+ 0002:00000b10 00000020H .rdata$voltmd           DATA
+ 0002:00000b30 000000a8H .rdata$zzzdbg           DATA
+ 0003:00000000 000007a4H .pdata                  DATA
+ 0004:00000000 00000974H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __guard_eh_cont_count      0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_count          0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_count      0000000000000000     <absolute>
+ 0000:00000000       __dynamic_value_reloc_table 0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points_count 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat     0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat_copy 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table   0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map_count    0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_table          0000000000000000     <absolute>
+ 0000:00000000       __guard_flags              0000000000000000     <absolute>
+ 0000:00000000       __AbsoluteZero             0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table_size 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map          0000000000000000     <absolute>
+ 0000:00000000       __guard_check_icall_a64n_fptr 0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_table         0000000000000000     <absolute>
+ 0000:00000000       __arm64x_native_entrypoint 0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_table      0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_table      0000000000000000     <absolute>
+ 0000:00000000       __enclave_config           0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata_count 0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_count         0000000000000000     <absolute>
+ 0000:00000000       __ImageBase                0000000000000000     <linker-defined>
+ 0001:00000000       InternalMemCopyMem         0000000000000280     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000040       InternalMemZeroMem         00000000000002c0     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00000060       InternalMemCompareMem      00000000000002e0     BaseMemoryLibRepStr:CompareMem.obj
+ 0001:00000080       InternalMemSetMem32        0000000000000300     BaseMemoryLibRepStr:SetMem32.obj
+ 0001:00000094       _ModuleEntryPoint          0000000000000314 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:000000d8       ProcessModuleEntryPointList 0000000000000358 f   HiiDatabase:AutoGen.obj
+ 0001:00000240       KeyboardLayoutChangeNullEvent 00000000000004c0 f   HiiDatabase:HiiDatabaseEntry.obj
+ 0001:00000244       GetDevicePath              00000000000004c4 f   HiiDatabase:ConfigRouting.obj
+ 0001:000003e4       HiiToLower                 0000000000000664 f   HiiDatabase:ConfigRouting.obj
+ 0001:00000424       GenerateSubStr             00000000000006a4 f   HiiDatabase:ConfigRouting.obj
+ 0001:00000638       OutputConfigBody           00000000000008b8 f   HiiDatabase:ConfigRouting.obj
+ 0001:00000728       AppendToMultiString        00000000000009a8 f   HiiDatabase:ConfigRouting.obj
+ 0001:000007e8       GetValueOfNumber           0000000000000a68 f   HiiDatabase:ConfigRouting.obj
+ 0001:00000950       CompareBlockElementDefault 0000000000000bd0 f   HiiDatabase:ConfigRouting.obj
+ 0001:00000cb0       CompareNameElementDefault  0000000000000f30 f   HiiDatabase:ConfigRouting.obj
+ 0001:00000f78       CompareAndMergeDefaultString 00000000000011f8 f   HiiDatabase:ConfigRouting.obj
+ 0001:000011a0       MergeDefaultString         0000000000001420 f   HiiDatabase:ConfigRouting.obj
+ 0001:0000149c       InsertDefaultValue         000000000000171c f   HiiDatabase:ConfigRouting.obj
+ 0001:0000154c       InsertBlockData            00000000000017cc f   HiiDatabase:ConfigRouting.obj
+ 0001:000015e8       GetSupportedLanguages      0000000000001868 f   HiiDatabase:ConfigRouting.obj
+ 0001:000016ac       InternalGetString          000000000000192c f   HiiDatabase:ConfigRouting.obj
+ 0001:0000185c       BlockArrayCheck            0000000000001adc f   HiiDatabase:ConfigRouting.obj
+ 0001:00001924       GetFormPackageData         0000000000001ba4 f   HiiDatabase:ConfigRouting.obj
+ 0001:00001a20       GetVarStoreType            0000000000001ca0 f   HiiDatabase:ConfigRouting.obj
+ 0001:00001e5c       GetElementsFromRequest     00000000000020dc f   HiiDatabase:ConfigRouting.obj
+ 0001:00001ea0       IsThisVarstore             0000000000002120 f   HiiDatabase:ConfigRouting.obj
+ 0001:000020a8       IsThisPackageList          0000000000002328 f   HiiDatabase:ConfigRouting.obj
+ 0001:0000226c       IsThisOpcodeRequired       00000000000024ec f   HiiDatabase:ConfigRouting.obj
+ 0001:0000242c       ParseIfrData               00000000000026ac f   HiiDatabase:ConfigRouting.obj
+ 0001:0000314c       GetBlockElement            00000000000033cc f   HiiDatabase:ConfigRouting.obj
+ 0001:00003488       GetNameElement             0000000000003708 f   HiiDatabase:ConfigRouting.obj
+ 0001:00003624       GenerateConfigRequest      00000000000038a4 f   HiiDatabase:ConfigRouting.obj
+ 0001:000037d0       GenerateHdr                0000000000003a50 f   HiiDatabase:ConfigRouting.obj
+ 0001:00003b24       UpdateBlockDataArray       0000000000003da4 f   HiiDatabase:ConfigRouting.obj
+ 0001:00003d2c       GenerateAltConfigResp      0000000000003fac f   HiiDatabase:ConfigRouting.obj
+ 0001:0000412c       GetFullStringFromHiiFormPackages 00000000000043ac f   HiiDatabase:ConfigRouting.obj
+ 0001:00004618       GetConfigRespFromEfiVarStore 0000000000004898 f   HiiDatabase:ConfigRouting.obj
+ 0001:000047a0       RouteConfigRespForEfiVarStore 0000000000004a20 f   HiiDatabase:ConfigRouting.obj
+ 0001:0000494c       OffsetWidthValidate        0000000000004bcc f   HiiDatabase:ConfigRouting.obj
+ 0001:00004a3c       ConfigRequestValidate      0000000000004cbc f   HiiDatabase:ConfigRouting.obj
+ 0001:00004bb4       HiiConfigRoutingExtractConfig 0000000000004e34 f   HiiDatabase:ConfigRouting.obj
+ 0001:0000666c       HiiConfigRoutingExportConfig 00000000000068ec f   HiiDatabase:ConfigRouting.obj
+ 0001:00006954       HiiConfigRoutingRouteConfig 0000000000006bd4 f   HiiDatabase:ConfigRouting.obj
+ 0001:00006c98       HiiBlockToConfig           0000000000006f18 f   HiiDatabase:ConfigRouting.obj
+ 0001:000072dc       HiiConfigToBlock           000000000000755c f   HiiDatabase:ConfigRouting.obj
+ 0001:000076d8       HiiGetAltCfg               0000000000007958 f   HiiDatabase:ConfigRouting.obj
+ 0001:00007c9c       ReferFontInfoLocally       0000000000007f1c f   HiiDatabase:String.obj
+ 0001:00007d40       GetUnicodeStringTextOrSize 0000000000007fc0 f   HiiDatabase:String.obj
+ 0001:00007dac       FindStringBlock            000000000000802c f   HiiDatabase:String.obj
+ 0001:00008474       GetStringWorker            00000000000086f4 f   HiiDatabase:String.obj
+ 0001:00008620       InsertLackStringBlock      00000000000088a0 f   HiiDatabase:String.obj
+ 0001:00008844       SetStringWorker            0000000000008ac4 f   HiiDatabase:String.obj
+ 0001:00008ddc       HiiNewString               000000000000905c f   HiiDatabase:String.obj
+ 0001:0000982c       HiiGetString               0000000000009aac f   HiiDatabase:String.obj
+ 0001:000099bc       HiiSetString               0000000000009c3c f   HiiDatabase:String.obj
+ 0001:00009b54       HiiGetLanguages            0000000000009dd4 f   HiiDatabase:String.obj
+ 0001:00009c80       HiiGetSecondaryLanguages   0000000000009f00 f   HiiDatabase:String.obj
+ 0001:00009de8       HiiCompareLanguage         000000000000a068 f   HiiDatabase:String.obj
+ 0001:00009f18       NewCell                    000000000000a198 f   HiiDatabase:Font.obj
+ 0001:00009fb4       GetGlyphBuffer             000000000000a234 f   HiiDatabase:Font.obj
+ 0001:0000a268       NarrowGlyphToBlt           000000000000a4e8 f   HiiDatabase:Font.obj
+ 0001:0000a354       GlyphToBlt                 000000000000a5d4 f   HiiDatabase:Font.obj
+ 0001:0000a628       GlyphToImage               000000000000a8a8 f   HiiDatabase:Font.obj
+ 0001:0000a79c       WriteOutputParam           000000000000aa1c f   HiiDatabase:Font.obj
+ 0001:0000a83c       FindGlyphBlock             000000000000aabc f   HiiDatabase:Font.obj
+ 0001:0000adb4       SaveFontName               000000000000b034 f   HiiDatabase:Font.obj
+ 0001:0000ae3c       GetSystemFont              000000000000b0bc f   HiiDatabase:Font.obj
+ 0001:0000af50       IsSystemFontInfo           000000000000b1d0 f   HiiDatabase:Font.obj
+ 0001:0000b078       IsFontInfoExisted          000000000000b2f8 f   HiiDatabase:Font.obj
+ 0001:0000b624       IsLineBreak                000000000000b8a4 f   HiiDatabase:Font.obj
+ 0001:0000b714       HiiStringToImage           000000000000b994 f   HiiDatabase:Font.obj
+ 0001:0000c464       HiiStringIdToImage         000000000000c6e4 f   HiiDatabase:Font.obj
+ 0001:0000c7fc       HiiGetGlyph                000000000000ca7c f   HiiDatabase:Font.obj
+ 0001:0000caf4       HiiGetFontInfo             000000000000cd74 f   HiiDatabase:Font.obj
+ 0001:0000cdfc       HiiNewImageEx              000000000000d07c f   HiiDatabase:ImageEx.obj
+ 0001:0000ce08       HiiGetImageEx              000000000000d088 f   HiiDatabase:ImageEx.obj
+ 0001:0000ce20       HiiSetImageEx              000000000000d0a0 f   HiiDatabase:ImageEx.obj
+ 0001:0000ce2c       HiiDrawImageEx             000000000000d0ac f   HiiDatabase:ImageEx.obj
+ 0001:0000ce38       HiiDrawImageIdEx           000000000000d0b8 f   HiiDatabase:ImageEx.obj
+ 0001:0000cee4       LocateHiiImageDecoder      000000000000d164 f   HiiDatabase:ImageEx.obj
+ 0001:0000cfdc       HiiGetImageInfo            000000000000d25c f   HiiDatabase:ImageEx.obj
+ 0001:0000d134       GetImageIdOrAddress        000000000000d3b4 f   HiiDatabase:Image.obj
+ 0001:0000d29c       CopyGopToRgbPixel          000000000000d51c f   HiiDatabase:Image.obj
+ 0001:0000d2f0       CopyRgbToGopPixel          000000000000d570 f   HiiDatabase:Image.obj
+ 0001:0000d344       Output1bitPixel            000000000000d5c4 f   HiiDatabase:Image.obj
+ 0001:0000d548       Output4bitPixel            000000000000d7c8 f   HiiDatabase:Image.obj
+ 0001:0000d728       Output8bitPixel            000000000000d9a8 f   HiiDatabase:Image.obj
+ 0001:0000d87c       ImageToBlt                 000000000000dafc f   HiiDatabase:Image.obj
+ 0001:0000d9c4       HiiNewImage                000000000000dc44 f   HiiDatabase:Image.obj
+ 0001:0000dc5c       IGetImage                  000000000000dedc f   HiiDatabase:Image.obj
+ 0001:0000df0c       HiiGetImage                000000000000e18c f   HiiDatabase:Image.obj
+ 0001:0000df24       HiiSetImage                000000000000e1a4 f   HiiDatabase:Image.obj
+ 0001:0000e1d4       HiiDrawImage               000000000000e454 f   HiiDatabase:Image.obj
+ 0001:0000e608       HiiDrawImageId             000000000000e888 f   HiiDatabase:Image.obj
+ 0001:0000e6b0       ExtractDevicePath          000000000000e930 f   HiiDatabase:ConfigKeywordHandler.obj
+ 0001:0000e864       ExtractNameSpace           000000000000eae4 f   HiiDatabase:ConfigKeywordHandler.obj
+ 0001:0000ea00       ExtractKeyword             000000000000ec80 f   HiiDatabase:ConfigKeywordHandler.obj
+ 0001:0000eb2c       ExtractValue               000000000000edac f   HiiDatabase:ConfigKeywordHandler.obj
+ 0001:0000ec48       ExtractFilter              000000000000eec8 f   HiiDatabase:ConfigKeywordHandler.obj
+ 0001:0000eea0       ValidateFilter             000000000000f120 f   HiiDatabase:ConfigKeywordHandler.obj
+ 0001:0000ef9c       GetUnicodeStringTextAndSize 000000000000f21c f   HiiDatabase:ConfigKeywordHandler.obj
+ 0001:0000f030       GetStringIdFromString      000000000000f2b0 f   HiiDatabase:ConfigKeywordHandler.obj
+ 0001:0000f634       GetNextStringId            000000000000f8b4 f   HiiDatabase:ConfigKeywordHandler.obj
+ 0001:0000fbf0       GetStringIdFromRecord      000000000000fe70 f   HiiDatabase:ConfigKeywordHandler.obj
+ 0001:0000fcc8       FindQuestionFromStringId   000000000000ff48 f   HiiDatabase:ConfigKeywordHandler.obj
+ 0001:0000fd24       FindStorageFromVarId       000000000000ffa4 f   HiiDatabase:ConfigKeywordHandler.obj
+ 0001:0000fd88       GetWidth                   0000000000010008 f   HiiDatabase:ConfigKeywordHandler.obj
+ 0001:0000fe50       ConstructConfigHdr         00000000000100d0 f   HiiDatabase:ConfigKeywordHandler.obj
+ 0001:0001015c       ConstructRequestElement    00000000000103dc f   HiiDatabase:ConfigKeywordHandler.obj
+ 0001:00010230       GetNameFromId              00000000000104b0 f   HiiDatabase:ConfigKeywordHandler.obj
+ 0001:000103ec       ExtractConfigRequest       000000000001066c f   HiiDatabase:ConfigKeywordHandler.obj
+ 0001:00010570       ExtractConfigResp          00000000000107f0 f   HiiDatabase:ConfigKeywordHandler.obj
+ 0001:00010760       ExtractValueFromDriver     00000000000109e0 f   HiiDatabase:ConfigKeywordHandler.obj
+ 0001:00010830       GetStringIdFromDatabase    0000000000010ab0 f   HiiDatabase:ConfigKeywordHandler.obj
+ 0001:000109d4       GenerateKeywordResp        0000000000010c54 f   HiiDatabase:ConfigKeywordHandler.obj
+ 0001:00010bb4       EnumerateAllKeywords       0000000000010e34 f   HiiDatabase:ConfigKeywordHandler.obj
+ 0001:00011044       EfiConfigKeywordHandlerSetData 00000000000112c4 f   HiiDatabase:ConfigKeywordHandler.obj
+ 0001:000115cc       EfiConfigKeywordHandlerGetData 000000000001184c f   HiiDatabase:ConfigKeywordHandler.obj
+ 0001:00011a84       GenerateHiiDatabaseRecord  0000000000011d04 f   HiiDatabase:Database.obj
+ 0001:00011bec       InvokeRegisteredFunction   0000000000011e6c f   HiiDatabase:Database.obj
+ 0001:00011f40       ExportGuidPackages         00000000000121c0 f   HiiDatabase:Database.obj
+ 0001:0001206c       RemoveGuidPackages         00000000000122ec f   HiiDatabase:Database.obj
+ 0001:00012134       FindQuestionDefaultSetting 00000000000123b4 f   HiiDatabase:Database.obj
+ 0001:000124d0       UpdateDefaultSettingInFormPackage 0000000000012750 f   HiiDatabase:Database.obj
+ 0001:00012d18       ExportFormPackages         0000000000012f98 f   HiiDatabase:Database.obj
+ 0001:00012e50       RemoveFormPackages         00000000000130d0 f   HiiDatabase:Database.obj
+ 0001:00012f10       InsertStringPackage        0000000000013190 f   HiiDatabase:Database.obj
+ 0001:00013194       AdjustStringPackage        0000000000013414 f   HiiDatabase:Database.obj
+ 0001:000132cc       ExportStringPackages       000000000001354c f   HiiDatabase:Database.obj
+ 0001:00013420       RemoveStringPackages       00000000000136a0 f   HiiDatabase:Database.obj
+ 0001:00013514       InsertFontPackage          0000000000013794 f   HiiDatabase:Database.obj
+ 0001:000137d4       ExportFontPackages         0000000000013a54 f   HiiDatabase:Database.obj
+ 0001:00013928       RemoveFontPackages         0000000000013ba8 f   HiiDatabase:Database.obj
+ 0001:00013a78       InsertImagePackage         0000000000013cf8 f   HiiDatabase:Database.obj
+ 0001:00013c60       ExportImagePackages        0000000000013ee0 f   HiiDatabase:Database.obj
+ 0001:00013d68       RemoveImagePackages        0000000000013fe8 f   HiiDatabase:Database.obj
+ 0001:00013de4       ExportSimpleFontPackages   0000000000014064 f   HiiDatabase:Database.obj
+ 0001:00013ef8       RemoveSimpleFontPackages   0000000000014178 f   HiiDatabase:Database.obj
+ 0001:00013fa0       InsertDevicePathPackage    0000000000014220 f   HiiDatabase:Database.obj
+ 0001:00014084       ExportDevicePathPackage    0000000000014304 f   HiiDatabase:Database.obj
+ 0001:00014198       RemoveDevicePathPackage    0000000000014418 f   HiiDatabase:Database.obj
+ 0001:00014218       AddDevicePathPackage       0000000000014498 f   HiiDatabase:Database.obj
+ 0001:0001427c       ExportKeyboardLayoutPackages 00000000000144fc f   HiiDatabase:Database.obj
+ 0001:000143ac       RemoveKeyboardLayoutPackages 000000000001462c f   HiiDatabase:Database.obj
+ 0001:00014474       AddPackages                00000000000146f4 f   HiiDatabase:Database.obj
+ 0001:0001533c       ExportPackageList          00000000000155bc f   HiiDatabase:Database.obj
+ 0001:000155a8       HiiGetConfigRespInfo       0000000000015828 f   HiiDatabase:Database.obj
+ 0001:000156e4       HiiGetDatabaseInfo         0000000000015964 f   HiiDatabase:Database.obj
+ 0001:000157c8       HiiNewPackageList          0000000000015a48 f   HiiDatabase:Database.obj
+ 0001:0001598c       HiiRemovePackageList       0000000000015c0c f   HiiDatabase:Database.obj
+ 0001:00015be0       HiiUpdatePackageList       0000000000015e60 f   HiiDatabase:Database.obj
+ 0001:00015e34       HiiListPackageLists        00000000000160b4 f   HiiDatabase:Database.obj
+ 0001:00015f98       HiiExportPackageLists      0000000000016218 f   HiiDatabase:Database.obj
+ 0001:000160bc       HiiRegisterPackageNotify   000000000001633c f   HiiDatabase:Database.obj
+ 0001:000161b4       HiiUnregisterPackageNotify 0000000000016434 f   HiiDatabase:Database.obj
+ 0001:00016284       HiiFindKeyboardLayouts     0000000000016504 f   HiiDatabase:Database.obj
+ 0001:0001640c       HiiGetKeyboardLayout       000000000001668c f   HiiDatabase:Database.obj
+ 0001:000165fc       HiiSetKeyboardLayout       000000000001687c f   HiiDatabase:Database.obj
+ 0001:0001672c       HiiGetPackageListHandle    00000000000169ac f   HiiDatabase:Database.obj
+ 0001:00016780       GetPiPcdProtocol           0000000000016a00 f   DxePcdLib:DxePcdLib.obj
+ 0001:000167bc       StrnLenS                   0000000000016a3c f   BaseLib:SafeString.obj
+ 0001:000167f0       StrCpyS                    0000000000016a70 f   BaseLib:SafeString.obj
+ 0001:00016890       StrCatS                    0000000000016b10 f   BaseLib:SafeString.obj
+ 0001:00016964       StrnCatS                   0000000000016be4 f   BaseLib:SafeString.obj
+ 0001:00016a90       AsciiStrCpyS               0000000000016d10 f   BaseLib:SafeString.obj
+ 0001:00016b28       UnicodeStrToAsciiStrS      0000000000016da8 f   BaseLib:SafeString.obj
+ 0001:00016bb8       AsciiStrToUnicodeStrS      0000000000016e38 f   BaseLib:SafeString.obj
+ 0001:00016c54       StrCmp                     0000000000016ed4 f   BaseLib:String.obj
+ 0001:00016c8c       StrnCmp                    0000000000016f0c f   BaseLib:String.obj
+ 0001:00016cc8       StrStr                     0000000000016f48 f   BaseLib:String.obj
+ 0001:00016d18       InternalHexCharToUintn     0000000000016f98 f   BaseLib:String.obj
+ 0001:00016d48       StrHexToUint64             0000000000016fc8 f   BaseLib:String.obj
+ 0001:00016e30       AsciiStrnCmp               00000000000170b0 f   BaseLib:String.obj
+ 0001:00016e64       UnicodeSPrint              00000000000170e4 f   BasePrintLib:PrintLib.obj
+ 0001:00016e98       BasePrintLibFillBuffer     0000000000017118 f   BasePrintLib:PrintLibInternal.obj
+ 0001:00016ecc       BasePrintLibConvertValueToStringS 000000000001714c f   BasePrintLib:PrintLibInternal.obj
+ 0001:00017020       BasePrintLibSPrintMarker   00000000000172a0 f   BasePrintLib:PrintLibInternal.obj
+ 0001:00017e04       BasePrintLibSPrint         0000000000018084 f   BasePrintLib:PrintLibInternal.obj
+ 0001:00017e28       AllocatePool               00000000000180a8 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00017e5c       InternalAllocateZeroPool   00000000000180dc f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00017ea8       InternalAllocateCopyPool   0000000000018128 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00017f0c       InternalReallocatePool     000000000001818c f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00017f88       DevicePathFromHandle       0000000000018208 f   UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0001:00017fbc       EfiAcquireLock             000000000001823c f   UefiLib:UefiLib.obj
+ 0001:00017fe8       GetEfiGlobalVariable2      0000000000018268 f   UefiLib:UefiLib.obj
+ 0001:000180a4       GetBestLanguage            0000000000018324 f   UefiLib:UefiLib.obj
+ 0002:00000000       gEfiGlobalVariableGuid     0000000000018460     HiiDatabase:AutoGen.obj
+ 0002:00000010       gEfiHiiImageDecoderNamePngGuid 0000000000018470     HiiDatabase:AutoGen.obj
+ 0002:00000020       gEfiConfigKeywordHandlerProtocolGuid 0000000000018480     HiiDatabase:AutoGen.obj
+ 0002:00000030       gEfiHiiImageExProtocolGuid 0000000000018490     HiiDatabase:AutoGen.obj
+ 0002:00000040       gEfiGetPcdInfoProtocolGuid 00000000000184a0     HiiDatabase:AutoGen.obj
+ 0002:00000050       gEfiDevicePathProtocolGuid 00000000000184b0     HiiDatabase:AutoGen.obj
+ 0002:00000060       gEfiHiiConfigRoutingProtocolGuid 00000000000184c0     HiiDatabase:AutoGen.obj
+ 0002:00000070       gEfiPcdProtocolGuid        00000000000184d0     HiiDatabase:AutoGen.obj
+ 0002:00000080       gEfiHiiImageProtocolGuid   00000000000184e0     HiiDatabase:AutoGen.obj
+ 0002:00000090       gEfiDevicePathUtilitiesProtocolGuid 00000000000184f0     HiiDatabase:AutoGen.obj
+ 0002:000000a0       gEfiHiiDatabaseProtocolGuid 0000000000018500     HiiDatabase:AutoGen.obj
+ 0002:000000b0       gEfiHiiStringProtocolGuid  0000000000018510     HiiDatabase:AutoGen.obj
+ 0002:000000c0       gEfiHiiKeyBoardLayoutGuid  0000000000018520     HiiDatabase:AutoGen.obj
+ 0002:000000d0       gEfiMdeModulePkgTokenSpaceGuid 0000000000018530     HiiDatabase:AutoGen.obj
+ 0002:000000e0       gEfiHiiConfigAccessProtocolGuid 0000000000018540     HiiDatabase:AutoGen.obj
+ 0002:000000f0       gEfiHiiImageDecoderProtocolGuid 0000000000018550     HiiDatabase:AutoGen.obj
+ 0002:00000100       gEfiHiiImageDecoderNameJpegGuid 0000000000018560     HiiDatabase:AutoGen.obj
+ 0002:00000110       gEdkiiIfrBitVarstoreGuid   0000000000018570     HiiDatabase:AutoGen.obj
+ 0002:00000120       gEfiCallerIdGuid           0000000000018580     HiiDatabase:AutoGen.obj
+ 0002:00000130       gEfiHiiFontProtocolGuid    0000000000018590     HiiDatabase:AutoGen.obj
+ 0002:00000140       mPrivate                   00000000000185a0     HiiDatabase:HiiDatabaseEntry.obj
+ 0002:000002e8       mLanguageWindow            0000000000018748     HiiDatabase:String.obj
+ 0002:00000308       mHiiDatabaseLock           0000000000018768     HiiDatabase:Database.obj
+ 0002:00000320       gSkuId                     0000000000018780     HiiDatabase:Database.obj
+ 0002:00000328       gVarStorageList            0000000000018788     HiiDatabase:Database.obj
+ 0002:00000340       _gPcd_FixedAtBuild_PcdUefiVariableDefaultPlatformLang 00000000000187a0     HiiDatabase:AutoGen.obj
+ 0002:00000348       ??_C@_1O@KAHOBHOF@?$AA?$CG?$AAG?$AAU?$AAI?$AAD?$AA?$DN@ 00000000000187a8     HiiDatabase:ConfigRouting.obj
+ 0002:00000358       ??_C@_1M@PJAPFKED@?$AAP?$AAA?$AAT?$AAH?$AA?$DN@ 00000000000187b8     HiiDatabase:ConfigRouting.obj
+ 0002:00000364       ??_C@_13FLOCNAAB@?$AA?$CG@ 00000000000187c4     HiiDatabase:ConfigRouting.obj
+ 0002:00000368       ??_C@_1BC@JFJKDJKC@?$AA?$CG?$AAA?$AAL?$AAT?$AAC?$AAF?$AAG?$AA?$DN@ 00000000000187c8     HiiDatabase:ConfigRouting.obj
+ 0002:00000380       ??_C@_1M@DPLGJLCD@?$AAG?$AAU?$AAI?$AAD?$AA?$DN@ 00000000000187e0     HiiDatabase:ConfigRouting.obj
+ 0002:00000390       ??_C@_1BC@KLGPJAMP@?$AA?$CG?$AAO?$AAF?$AAF?$AAS?$AAE?$AAT?$AA?$DN@ 00000000000187f0     HiiDatabase:ConfigRouting.obj
+ 0002:000003a4       ??_C@_13NMPKAAJP@?$AA?$DN@ 0000000000018804     HiiDatabase:ConfigRouting.obj
+ 0002:000003a8       ??_C@_1M@COKHDCDN@?$AA?$CG?$AAG?$AAU?$AAI?$AAD@ 0000000000018808     HiiDatabase:ConfigRouting.obj
+ 0002:000003b8       ??_C@_1O@FMIENBLJ@?$AA?$CG?$AAN?$AAA?$AAM?$AAE?$AA?$DN@ 0000000000018818     HiiDatabase:ConfigRouting.obj
+ 0002:000003c8       ??_C@_1O@GGMHNGIF@?$AA?$CG?$AAP?$AAA?$AAT?$AAH?$AA?$DN@ 0000000000018828     HiiDatabase:ConfigRouting.obj
+ 0002:000003d6       ??_C@_00CNPNBAHC@@         0000000000018836     HiiDatabase:ConfigRouting.obj
+ 0002:000003d8       ??_C@_1BK@GGGENMOA@?$AAP?$AAl?$AAa?$AAt?$AAf?$AAo?$AAr?$AAm?$AAL?$AAa?$AAn?$AAg@ 0000000000018838     HiiDatabase:ConfigRouting.obj
+ 0002:000003f8       ??_C@_1M@MDEMFNHP@?$AAN?$AAA?$AAM?$AAE?$AA?$DN@ 0000000000018858     HiiDatabase:ConfigRouting.obj
+ 0002:00000408       ??_C@_1O@DICEHLNO@?$AAN?$AAA?$AAM?$AAE?$AA?$DN?$AA?$CG@ 0000000000018868     HiiDatabase:ConfigRouting.obj
+ 0002:00000418       ??_C@_1BA@BPJBLIJE@?$AA?$CG?$AAW?$AAI?$AAD?$AAT?$AAH?$AA?$DN@ 0000000000018878     HiiDatabase:ConfigRouting.obj
+ 0002:00000428       ??_C@_1BA@OHHBHMKI@?$AA?$CG?$AAV?$AAA?$AAL?$AAU?$AAE?$AA?$DN@ 0000000000018888     HiiDatabase:ConfigRouting.obj
+ 0002:00000438       ??_C@_17ILCPNALA@?$AA?$CG?$AA?$CF?$AAs@ 0000000000018898     HiiDatabase:ConfigRouting.obj
+ 0002:00000440       ??_C@_1DA@JIFMPMJE@?$AA?$CG?$AAO?$AAF?$AAF?$AAS?$AAE?$AAT?$AA?$DN?$AA?$CF?$AA0?$AA4?$AAX?$AA?$CG?$AAW?$AAI@ 00000000000188a0     HiiDatabase:ConfigRouting.obj
+ 0002:00000470       ??_C@_1CA@GGACGAGD@?$AA?$CG?$AA?$CF?$AAs?$AA?$CG?$AAA?$AAL?$AAT?$AAC?$AAF?$AAG?$AA?$DN?$AA?$CF?$AA0?$AA4?$AAX@ 00000000000188d0     HiiDatabase:ConfigRouting.obj
+ 0002:00000490       ??_C@_19GAFHNHDP@?$AA?$CG?$AA?$CF?$AAs?$AA?$DN@ 00000000000188f0     HiiDatabase:ConfigRouting.obj
+ 0002:000004a0       ??_C@_1DO@NCNJHDGD@?$AA?$CG?$AAO?$AAF?$AAF?$AAS?$AAE?$AAT?$AA?$DN?$AA?$CF?$AA0?$AA4?$AAX?$AA?$CG?$AAW?$AAI@ 0000000000018900     HiiDatabase:ConfigRouting.obj
+ 0002:000004e0       ??_C@_1BA@HDPFBAGC@?$AAO?$AAF?$AAF?$AAS?$AAE?$AAT?$AA?$DN@ 0000000000018940     HiiDatabase:ConfigRouting.obj
+ 0002:000004f0       ??_C@_1O@JONPFMKD@?$AAV?$AAA?$AAL?$AAU?$AAE?$AA?$DN@ 0000000000018950     HiiDatabase:ConfigRouting.obj
+ 0002:00000500       ??_C@_1BA@ENAALJAP@?$AAA?$AAL?$AAT?$AAC?$AAF?$AAG?$AA?$DN@ 0000000000018960     HiiDatabase:ConfigRouting.obj
+ 0002:00000510       ??_C@_01ICJEACDI@?$DL@     0000000000018970     HiiDatabase:String.obj
+ 0002:00000518       ??_C@_1BG@PCIHAGAA@?$AAs?$AAy?$AAs?$AAd?$AAe?$AAf?$AAa?$AAu?$AAl?$AAt@ 0000000000018978     HiiDatabase:Font.obj
+ 0002:00000530       mHiiEfiColors              0000000000018990     HiiDatabase:Font.obj
+ 0002:00000570       ??_C@_1BC@KEBNFPJO@?$AAK?$AAE?$AAY?$AAW?$AAO?$AAR?$AAD?$AA?$DN@ 00000000000189d0     HiiDatabase:ConfigKeywordHandler.obj
+ 0002:00000588       ??_C@_1BG@PHBLLIBG@?$AAN?$AAA?$AAM?$AAE?$AAS?$AAP?$AAA?$AAC?$AAE?$AA?$DN@ 00000000000189e8     HiiDatabase:ConfigKeywordHandler.obj
+ 0002:000005a0       ??_C@_1BC@LDFBNAGD@?$AAR?$AAe?$AAa?$AAd?$AAO?$AAn?$AAl?$AAy@ 0000000000018a00     HiiDatabase:ConfigKeywordHandler.obj
+ 0002:000005b8       ??_C@_1BE@HADLJAO@?$AAR?$AAe?$AAa?$AAd?$AAW?$AAr?$AAi?$AAt?$AAe@ 0000000000018a18     HiiDatabase:ConfigKeywordHandler.obj
+ 0002:000005d0       ??_C@_1O@GBAIGIHF@?$AAB?$AAu?$AAf?$AAf?$AAe?$AAr@ 0000000000018a30     HiiDatabase:ConfigKeywordHandler.obj
+ 0002:000005e0       ??_C@_1BA@BKFKFLJD@?$AAN?$AAu?$AAm?$AAe?$AAr?$AAi?$AAc@ 0000000000018a40     HiiDatabase:ConfigKeywordHandler.obj
+ 0002:000005f0       ??_C@_1M@OGLKDJIA@?$AA?$CG?$AAP?$AAA?$AAT?$AAH@ 0000000000018a50     HiiDatabase:ConfigKeywordHandler.obj
+ 0002:00000600       ??_C@_1BC@CFPGDLKH@?$AA?$CG?$AAK?$AAE?$AAY?$AAW?$AAO?$AAR?$AAD@ 0000000000018a60     HiiDatabase:ConfigKeywordHandler.obj
+ 0002:00000614       ??_C@_06PLDEFKP@x?9UEFI@   0000000000018a74     HiiDatabase:ConfigKeywordHandler.obj
+ 0002:0000061c       ??_C@_15GANGMFKL@?$AA?$CF?$AAs@ 0000000000018a7c     HiiDatabase:ConfigKeywordHandler.obj
+ 0002:00000628       ??_C@_1CO@DPPGKPKG@?$AAO?$AAF?$AAF?$AAS?$AAE?$AAT?$AA?$DN?$AA?$CF?$AA0?$AA4?$AAX?$AA?$CG?$AAW?$AAI?$AAD@ 0000000000018a88     HiiDatabase:ConfigKeywordHandler.obj
+ 0002:00000658       ??_C@_05JJLPJMLG@en?9US@   0000000000018ab8     HiiDatabase:ConfigKeywordHandler.obj
+ 0002:00000660       ??_C@_1BE@NJMCFJHO@?$AA?$CG?$AAR?$AAE?$AAA?$AAD?$AAO?$AAN?$AAL?$AAY@ 0000000000018ac0     HiiDatabase:ConfigKeywordHandler.obj
+ 0002:00000678       ??_C@_0O@MLOLIMFM@?$DMnull?5string?$DO@ 0000000000018ad8     BasePrintLib:PrintLibInternal.obj
+ 0002:00000688       ??_C@_0M@BJJDNPHK@?$DMnull?5guid?$DO@ 0000000000018ae8     BasePrintLib:PrintLibInternal.obj
+ 0002:00000698       ??_C@_0DB@PMLHLBMO@?$CF08x?9?$CF04x?9?$CF04x?9?$CF02x?$CF02x?9?$CF02x?$CF02@ 0000000000018af8     BasePrintLib:PrintLibInternal.obj
+ 0002:000006d0       ??_C@_0M@LHGBCIKM@?$DMnull?5time?$DO@ 0000000000018b30     BasePrintLib:PrintLibInternal.obj
+ 0002:000006e0       ??_C@_0BK@FCPKCIDD@?$CF02d?1?$CF02d?1?$CF04d?5?5?$CF02d?3?$CF02d@ 0000000000018b40     BasePrintLib:PrintLibInternal.obj
+ 0002:000006fc       ??_C@_04JIMNDDED@?$CF08X@  0000000000018b5c     BasePrintLib:PrintLibInternal.obj
+ 0002:00000704       ??_C@_02PCIJFNDE@?$AN?6@   0000000000018b64     BasePrintLib:PrintLibInternal.obj
+ 0002:00000708       ??_C@_01LIIJDEN@?$AN@      0000000000018b68     BasePrintLib:PrintLibInternal.obj
+ 0002:00000710       mWarningString             0000000000018b70     BasePrintLib:PrintLibInternal.obj
+ 0002:000007b0       mErrorString               0000000000018c10     BasePrintLib:PrintLibInternal.obj
+ 0002:00000a70       mHexStr                    0000000000018ed0     BasePrintLib:PrintLibInternal.obj
+ 0002:00000aa0       gExportAfterReadyToBoot    0000000000018f00     HiiDatabase:HiiDatabaseEntry.obj
+ 0002:00000aa8       gRTDatabaseInfoBuffer      0000000000018f08     HiiDatabase:Database.obj
+ 0002:00000ab0       gDatabaseInfoSize          0000000000018f10     HiiDatabase:Database.obj
+ 0002:00000ab8       gNvDefaultStoreSize        0000000000018f18     HiiDatabase:Database.obj
+ 0002:00000ac0       gConfigRespSize            0000000000018f20     HiiDatabase:Database.obj
+ 0002:00000ac8       gExportConfigResp          0000000000018f28     HiiDatabase:Database.obj
+ 0002:00000ad0       gRTConfigRespBuffer        0000000000018f30     HiiDatabase:Database.obj
+ 0002:00000ad8       mPiPcdInfo                 0000000000018f38     DxePcdLib:DxePcdLib.obj
+ 0002:00000ae0       mPiPcd                     0000000000018f40     DxePcdLib:DxePcdLib.obj
+ 0002:00000ae8       gST                        0000000000018f48     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000af0       gBS                        0000000000018f50     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000af8       gRT                        0000000000018f58     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0002:00000b00       mDevicePathLibDevicePathUtilities 0000000000018f60     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:00000b08       gHiiKeyboardLayoutChanged  0000000000018f68     <common>
+ 0002:00000b10       __volatile_metadata        0000000000018f70     <linker-defined>
+
+ entry point at        0001:00000094
+
+ Static symbols
+
+ 0001:0000001a       InternalMemCopyMem.0       000000000000029a     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:0000002a       @CopyBackward              00000000000002aa     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000033       @CopyBytes                 00000000000002b3     BaseMemoryLibRepStr:CopyMem.obj
+ 0004:00000000       $unwind$GetElementsFromRequest 0000000000019800     HiiDatabase:ConfigRouting.obj
+ 0004:00000000       $unwind$StrHexToUint64     0000000000019800     BaseLib:String.obj
+ 0004:00000000       $unwind$GetPiPcdProtocol   0000000000019800     DxePcdLib:DxePcdLib.obj
+ 0004:00000000       $unwind$DevicePathFromHandle 0000000000019800     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0004:00000000       $unwind$_ModuleEntryPoint  0000000000019800     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0004:00000000       $unwind$EfiAcquireLock     0000000000019800     UefiLib:UefiLib.obj
+ 0004:00000000       $unwind$AllocatePool       0000000000019800     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0004:00000008       $unwind$ProcessModuleEntryPointList 0000000000019808     HiiDatabase:AutoGen.obj
+ 0004:00000010       $unwind$ExtractDevicePath  0000000000019810     HiiDatabase:ConfigKeywordHandler.obj
+ 0004:00000010       $unwind$GetDevicePath      0000000000019810     HiiDatabase:ConfigRouting.obj
+ 0004:00000010       $unwind$GetValueOfNumber   0000000000019810     HiiDatabase:ConfigRouting.obj
+ 0004:00000028       $unwind$GenerateSubStr     0000000000019828     HiiDatabase:ConfigRouting.obj
+ 0004:00000044       $unwind$AppendToMultiString 0000000000019844     HiiDatabase:ConfigRouting.obj
+ 0004:00000044       $unwind$ConfigRequestValidate 0000000000019844     HiiDatabase:ConfigRouting.obj
+ 0004:00000044       $unwind$InsertDefaultValue 0000000000019844     HiiDatabase:ConfigRouting.obj
+ 0004:00000044       $unwind$OutputConfigBody   0000000000019844     HiiDatabase:ConfigRouting.obj
+ 0004:00000044       $unwind$GenerateHiiDatabaseRecord 0000000000019844     HiiDatabase:Database.obj
+ 0004:00000044       $unwind$WriteOutputParam   0000000000019844     HiiDatabase:Font.obj
+ 0004:00000044       $unwind$GetUnicodeStringTextOrSize 0000000000019844     HiiDatabase:String.obj
+ 0004:00000044       $unwind$ReferFontInfoLocally 0000000000019844     HiiDatabase:String.obj
+ 0004:00000044       $unwind$StrCatS            0000000000019844     BaseLib:SafeString.obj
+ 0004:00000054       $unwind$CompareBlockElementDefault 0000000000019854     HiiDatabase:ConfigRouting.obj
+ 0004:0000006c       $unwind$CompareNameElementDefault 000000000001986c     HiiDatabase:ConfigRouting.obj
+ 0004:00000084       $unwind$CompareAndMergeDefaultString 0000000000019884     HiiDatabase:ConfigRouting.obj
+ 0004:0000009c       $unwind$GetStringIdFromDatabase 000000000001989c     HiiDatabase:ConfigKeywordHandler.obj
+ 0004:0000009c       $unwind$MergeDefaultString 000000000001989c     HiiDatabase:ConfigRouting.obj
+ 0004:000000b8       $unwind$InsertBlockData    00000000000198b8     HiiDatabase:ConfigRouting.obj
+ 0004:000000b8       $unwind$InternalAllocateCopyPool 00000000000198b8     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0004:000000c4       $unwind$GetSupportedLanguages 00000000000198c4     HiiDatabase:ConfigRouting.obj
+ 0004:000000d4       $unwind$InternalGetString  00000000000198d4     HiiDatabase:ConfigRouting.obj
+ 0004:000000ec       $unwind$BlockArrayCheck    00000000000198ec     HiiDatabase:ConfigRouting.obj
+ 0004:00000104       $unwind$GetFormPackageData 0000000000019904     HiiDatabase:ConfigRouting.obj
+ 0004:00000118       $unwind$GetVarStoreType    0000000000019918     HiiDatabase:ConfigRouting.obj
+ 0004:00000130       $unwind$IsThisOpcodeRequired 0000000000019930     HiiDatabase:ConfigRouting.obj
+ 0004:00000130       $unwind$IsThisVarstore     0000000000019930     HiiDatabase:ConfigRouting.obj
+ 0004:00000130       $unwind$RouteConfigRespForEfiVarStore 0000000000019930     HiiDatabase:ConfigRouting.obj
+ 0004:00000148       $unwind$IsThisPackageList  0000000000019948     HiiDatabase:ConfigRouting.obj
+ 0004:00000160       $unwind$ParseIfrData       0000000000019960     HiiDatabase:ConfigRouting.obj
+ 0004:00000178       $unwind$GetBlockElement    0000000000019978     HiiDatabase:ConfigRouting.obj
+ 0004:00000190       $unwind$GetNameElement     0000000000019990     HiiDatabase:ConfigRouting.obj
+ 0004:00000190       $unwind$AdjustStringPackage 0000000000019990     HiiDatabase:Database.obj
+ 0004:00000190       $unwind$HiiUpdatePackageList 0000000000019990     HiiDatabase:Database.obj
+ 0004:000001ac       $unwind$GenerateConfigRequest 00000000000199ac     HiiDatabase:ConfigRouting.obj
+ 0004:000001ac       $unwind$FindQuestionDefaultSetting 00000000000199ac     HiiDatabase:Database.obj
+ 0004:000001c8       $unwind$GenerateHdr        00000000000199c8     HiiDatabase:ConfigRouting.obj
+ 0004:000001e0       $unwind$UpdateBlockDataArray 00000000000199e0     HiiDatabase:ConfigRouting.obj
+ 0004:000001f8       $unwind$GenerateAltConfigResp 00000000000199f8     HiiDatabase:ConfigRouting.obj
+ 0004:00000210       $unwind$GetFullStringFromHiiFormPackages 0000000000019a10     HiiDatabase:ConfigRouting.obj
+ 0004:00000228       $unwind$GetConfigRespFromEfiVarStore 0000000000019a28     HiiDatabase:ConfigRouting.obj
+ 0004:00000228       $unwind$ExportKeyboardLayoutPackages 0000000000019a28     HiiDatabase:Database.obj
+ 0004:00000240       $unwind$OffsetWidthValidate 0000000000019a40     HiiDatabase:ConfigRouting.obj
+ 0004:00000240       $unwind$HiiGetDatabaseInfo 0000000000019a40     HiiDatabase:Database.obj
+ 0004:00000240       $unwind$StrCpyS            0000000000019a40     BaseLib:SafeString.obj
+ 0004:00000240       $unwind$UnicodeStrToAsciiStrS 0000000000019a40     BaseLib:SafeString.obj
+ 0004:00000240       $unwind$InternalAllocateZeroPool 0000000000019a40     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0004:00000248       $unwind$HiiConfigRoutingExtractConfig 0000000000019a48     HiiDatabase:ConfigRouting.obj
+ 0004:00000260       $unwind$HiiConfigRoutingExportConfig 0000000000019a60     HiiDatabase:ConfigRouting.obj
+ 0004:00000260       $unwind$HiiConfigRoutingRouteConfig 0000000000019a60     HiiDatabase:ConfigRouting.obj
+ 0004:00000278       $unwind$HiiBlockToConfig   0000000000019a78     HiiDatabase:ConfigRouting.obj
+ 0004:00000278       $unwind$HiiNewString       0000000000019a78     HiiDatabase:String.obj
+ 0004:00000290       $unwind$HiiConfigToBlock   0000000000019a90     HiiDatabase:ConfigRouting.obj
+ 0004:000002a8       $unwind$HiiGetAltCfg       0000000000019aa8     HiiDatabase:ConfigRouting.obj
+ 0004:000002c0       $unwind$FindStringBlock    0000000000019ac0     HiiDatabase:String.obj
+ 0004:000002d8       $unwind$GetStringWorker    0000000000019ad8     HiiDatabase:String.obj
+ 0004:000002f0       $unwind$InsertLackStringBlock 0000000000019af0     HiiDatabase:String.obj
+ 0004:00000308       $unwind$SetStringWorker    0000000000019b08     HiiDatabase:String.obj
+ 0004:00000324       $unwind$HiiGetString       0000000000019b24     HiiDatabase:String.obj
+ 0004:0000033c       $unwind$HiiSetString       0000000000019b3c     HiiDatabase:String.obj
+ 0004:00000358       $unwind$HiiGetLanguages    0000000000019b58     HiiDatabase:String.obj
+ 0004:0000036c       $unwind$ExtractKeyword     0000000000019b6c     HiiDatabase:ConfigKeywordHandler.obj
+ 0004:0000036c       $unwind$ExtractValue       0000000000019b6c     HiiDatabase:ConfigKeywordHandler.obj
+ 0004:0000036c       $unwind$GetUnicodeStringTextAndSize 0000000000019b6c     HiiDatabase:ConfigKeywordHandler.obj
+ 0004:0000036c       $unwind$HiiGetSecondaryLanguages 0000000000019b6c     HiiDatabase:String.obj
+ 0004:0000036c       $unwind$StrnCatS           0000000000019b6c     BaseLib:SafeString.obj
+ 0004:00000384       $unwind$ExtractFilter      0000000000019b84     HiiDatabase:ConfigKeywordHandler.obj
+ 0004:00000384       $unwind$GetStringIdFromRecord 0000000000019b84     HiiDatabase:ConfigKeywordHandler.obj
+ 0004:00000384       $unwind$NewCell            0000000000019b84     HiiDatabase:Font.obj
+ 0004:00000384       $unwind$SaveFontName       0000000000019b84     HiiDatabase:Font.obj
+ 0004:00000384       $unwind$HiiCompareLanguage 0000000000019b84     HiiDatabase:String.obj
+ 0004:00000384       $unwind$InternalReallocatePool 0000000000019b84     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0004:00000398       $unwind$GetGlyphBuffer     0000000000019b98     HiiDatabase:Font.obj
+ 0004:000003b4       $unwind$NarrowGlyphToBlt   0000000000019bb4     HiiDatabase:Font.obj
+ 0004:000003d0       $unwind$GlyphToBlt         0000000000019bd0     HiiDatabase:Font.obj
+ 0004:000003d0       $unwind$ImageToBlt         0000000000019bd0     HiiDatabase:Image.obj
+ 0004:000003ec       $unwind$GlyphToImage       0000000000019bec     HiiDatabase:Font.obj
+ 0004:00000404       $unwind$FindGlyphBlock     0000000000019c04     HiiDatabase:Font.obj
+ 0004:0000041c       $unwind$HiiRegisterPackageNotify 0000000000019c1c     HiiDatabase:Database.obj
+ 0004:0000041c       $unwind$GetSystemFont      0000000000019c1c     HiiDatabase:Font.obj
+ 0004:00000438       $unwind$IsSystemFontInfo   0000000000019c38     HiiDatabase:Font.obj
+ 0004:0000044c       $unwind$IsFontInfoExisted  0000000000019c4c     HiiDatabase:Font.obj
+ 0004:00000464       $unwind$HiiStringToImage   0000000000019c64     HiiDatabase:Font.obj
+ 0004:00000480       $unwind$HiiStringIdToImage 0000000000019c80     HiiDatabase:Font.obj
+ 0004:0000049c       $unwind$HiiGetGlyph        0000000000019c9c     HiiDatabase:Font.obj
+ 0004:000004b8       $unwind$HiiGetFontInfo     0000000000019cb8     HiiDatabase:Font.obj
+ 0004:000004d4       $unwind$HiiGetImage        0000000000019cd4     HiiDatabase:Image.obj
+ 0004:000004d4       $unwind$HiiGetImageEx      0000000000019cd4     HiiDatabase:ImageEx.obj
+ 0004:000004dc       $unwind$HiiDrawImageId     0000000000019cdc     HiiDatabase:Image.obj
+ 0004:000004dc       $unwind$HiiDrawImageIdEx   0000000000019cdc     HiiDatabase:ImageEx.obj
+ 0004:000004ec       $unwind$LocateHiiImageDecoder 0000000000019cec     HiiDatabase:ImageEx.obj
+ 0004:000004fc       $unwind$HiiGetImageInfo    0000000000019cfc     HiiDatabase:ImageEx.obj
+ 0004:0000050c       $unwind$GetImageIdOrAddress 0000000000019d0c     HiiDatabase:Image.obj
+ 0004:00000514       $unwind$CopyGopToRgbPixel  0000000000019d14     HiiDatabase:Image.obj
+ 0004:00000514       $unwind$CopyRgbToGopPixel  0000000000019d14     HiiDatabase:Image.obj
+ 0004:00000524       $unwind$Output1bitPixel    0000000000019d24     HiiDatabase:Image.obj
+ 0004:0000053c       $unwind$HiiDrawImage       0000000000019d3c     HiiDatabase:Image.obj
+ 0004:0000053c       $unwind$Output4bitPixel    0000000000019d3c     HiiDatabase:Image.obj
+ 0004:00000558       $unwind$Output8bitPixel    0000000000019d58     HiiDatabase:Image.obj
+ 0004:00000574       $unwind$HiiRemovePackageList 0000000000019d74     HiiDatabase:Database.obj
+ 0004:00000574       $unwind$HiiNewImage        0000000000019d74     HiiDatabase:Image.obj
+ 0004:00000590       $unwind$IGetImage          0000000000019d90     HiiDatabase:Image.obj
+ 0004:000005a8       $unwind$HiiSetImage        0000000000019da8     HiiDatabase:Image.obj
+ 0004:000005c0       $unwind$ExtractNameSpace   0000000000019dc0     HiiDatabase:ConfigKeywordHandler.obj
+ 0004:000005dc       $unwind$ValidateFilter     0000000000019ddc     HiiDatabase:ConfigKeywordHandler.obj
+ 0004:000005f0       $unwind$GetStringIdFromString 0000000000019df0     HiiDatabase:ConfigKeywordHandler.obj
+ 0004:00000608       $unwind$GetNextStringId    0000000000019e08     HiiDatabase:ConfigKeywordHandler.obj
+ 0004:00000620       $unwind$ConstructConfigHdr 0000000000019e20     HiiDatabase:ConfigKeywordHandler.obj
+ 0004:0000063c       $unwind$ConstructRequestElement 0000000000019e3c     HiiDatabase:ConfigKeywordHandler.obj
+ 0004:00000654       $unwind$GetNameFromId      0000000000019e54     HiiDatabase:ConfigKeywordHandler.obj
+ 0004:00000668       $unwind$ExtractConfigRequest 0000000000019e68     HiiDatabase:ConfigKeywordHandler.obj
+ 0004:00000668       $unwind$ExtractConfigResp  0000000000019e68     HiiDatabase:ConfigKeywordHandler.obj
+ 0004:00000680       $unwind$ExtractValueFromDriver 0000000000019e80     HiiDatabase:ConfigKeywordHandler.obj
+ 0004:00000690       $unwind$GenerateKeywordResp 0000000000019e90     HiiDatabase:ConfigKeywordHandler.obj
+ 0004:000006a8       $unwind$EnumerateAllKeywords 0000000000019ea8     HiiDatabase:ConfigKeywordHandler.obj
+ 0004:000006c0       $unwind$EfiConfigKeywordHandlerSetData 0000000000019ec0     HiiDatabase:ConfigKeywordHandler.obj
+ 0004:000006dc       $unwind$EfiConfigKeywordHandlerGetData 0000000000019edc     HiiDatabase:ConfigKeywordHandler.obj
+ 0004:000006f8       $unwind$InvokeRegisteredFunction 0000000000019ef8     HiiDatabase:Database.obj
+ 0004:00000710       $unwind$ExportGuidPackages 0000000000019f10     HiiDatabase:Database.obj
+ 0004:00000710       $unwind$HiiFindKeyboardLayouts 0000000000019f10     HiiDatabase:Database.obj
+ 0004:00000728       $unwind$RemoveGuidPackages 0000000000019f28     HiiDatabase:Database.obj
+ 0004:00000728       $unwind$RemoveKeyboardLayoutPackages 0000000000019f28     HiiDatabase:Database.obj
+ 0004:00000740       $unwind$UpdateDefaultSettingInFormPackage 0000000000019f40     HiiDatabase:Database.obj
+ 0004:0000075c       $unwind$ExportFormPackages 0000000000019f5c     HiiDatabase:Database.obj
+ 0004:00000770       $unwind$RemoveFontPackages 0000000000019f70     HiiDatabase:Database.obj
+ 0004:00000770       $unwind$RemoveFormPackages 0000000000019f70     HiiDatabase:Database.obj
+ 0004:00000770       $unwind$RemoveSimpleFontPackages 0000000000019f70     HiiDatabase:Database.obj
+ 0004:00000770       $unwind$RemoveStringPackages 0000000000019f70     HiiDatabase:Database.obj
+ 0004:00000788       $unwind$InsertStringPackage 0000000000019f88     HiiDatabase:Database.obj
+ 0004:000007a4       $unwind$ExportFontPackages 0000000000019fa4     HiiDatabase:Database.obj
+ 0004:000007a4       $unwind$ExportStringPackages 0000000000019fa4     HiiDatabase:Database.obj
+ 0004:000007bc       $unwind$InsertFontPackage  0000000000019fbc     HiiDatabase:Database.obj
+ 0004:000007d8       $unwind$InsertImagePackage 0000000000019fd8     HiiDatabase:Database.obj
+ 0004:000007f0       $unwind$ExportImagePackages 0000000000019ff0     HiiDatabase:Database.obj
+ 0004:00000804       $unwind$HiiUnregisterPackageNotify 000000000001a004     HiiDatabase:Database.obj
+ 0004:00000804       $unwind$RemoveDevicePathPackage 000000000001a004     HiiDatabase:Database.obj
+ 0004:00000804       $unwind$RemoveImagePackages 000000000001a004     HiiDatabase:Database.obj
+ 0004:00000810       $unwind$ExportSimpleFontPackages 000000000001a010     HiiDatabase:Database.obj
+ 0004:0000082c       $unwind$InsertDevicePathPackage 000000000001a02c     HiiDatabase:Database.obj
+ 0004:00000840       $unwind$ExportDevicePathPackage 000000000001a040     HiiDatabase:Database.obj
+ 0004:00000858       $unwind$AddDevicePathPackage 000000000001a058     HiiDatabase:Database.obj
+ 0004:00000868       $unwind$AddPackages        000000000001a068     HiiDatabase:Database.obj
+ 0004:00000880       $unwind$ExportPackageList  000000000001a080     HiiDatabase:Database.obj
+ 0004:0000089c       $unwind$HiiGetConfigRespInfo 000000000001a09c     HiiDatabase:Database.obj
+ 0004:000008ac       $unwind$HiiNewPackageList  000000000001a0ac     HiiDatabase:Database.obj
+ 0004:000008c4       $unwind$HiiListPackageLists 000000000001a0c4     HiiDatabase:Database.obj
+ 0004:000008d8       $unwind$HiiExportPackageLists 000000000001a0d8     HiiDatabase:Database.obj
+ 0004:000008f0       $unwind$HiiGetKeyboardLayout 000000000001a0f0     HiiDatabase:Database.obj
+ 0004:00000908       $unwind$HiiSetKeyboardLayout 000000000001a108     HiiDatabase:Database.obj
+ 0004:0000091c       $unwind$UnicodeSPrint      000000000001a11c     BasePrintLib:PrintLib.obj
+ 0004:00000924       $unwind$BasePrintLibConvertValueToStringS 000000000001a124     BasePrintLib:PrintLibInternal.obj
+ 0004:00000934       $unwind$BasePrintLibSPrintMarker 000000000001a134     BasePrintLib:PrintLibInternal.obj
+ 0004:00000950       $unwind$BasePrintLibSPrint 000000000001a150     BasePrintLib:PrintLibInternal.obj
+ 0004:00000958       $unwind$GetEfiGlobalVariable2 000000000001a158     UefiLib:UefiLib.obj
+ 0004:00000964       $unwind$GetBestLanguage    000000000001a164     UefiLib:UefiLib.obj

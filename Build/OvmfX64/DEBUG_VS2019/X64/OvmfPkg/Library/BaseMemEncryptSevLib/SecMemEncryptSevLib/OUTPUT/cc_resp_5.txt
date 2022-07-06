@@ -1,0 +1,1 @@
+  d:\edk2\edk2\OvmfPkg\Library\BaseMemEncryptSevLib\X64\SecVirtualMemory.c d:\edk2\edk2\OvmfPkg\Library\BaseMemEncryptSevLib\X64\SnpPageStateChangeInternal.c d:\edk2\edk2\OvmfPkg\Library\BaseMemEncryptSevLib\X64\VirtualMemory.c d:\edk2\edk2\OvmfPkg\Library\BaseMemEncryptSevLib\X64\SecSnpSystemRamValidate.c d:\edk2\edk2\OvmfPkg\Library\BaseMemEncryptSevLib\X64\MemEncryptSevLib.c

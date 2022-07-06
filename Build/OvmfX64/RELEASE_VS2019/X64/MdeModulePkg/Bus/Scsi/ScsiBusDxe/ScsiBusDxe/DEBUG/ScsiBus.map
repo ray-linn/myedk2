@@ -1,0 +1,119 @@
+ ScsiBus
+
+ Timestamp is 61ee7011 (Mon Jan 24 17:23:29 2022)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 000000b4H .text                   CODE
+ 0001:000000b4 000015a3H .text$mn                CODE
+ 0002:00000000 00000130H .data                   DATA
+ 0002:00000130 00000050H .rdata                  DATA
+ 0002:00000180 00000028H .bss                    DATA
+ 0002:000001a8 00000020H .rdata$voltmd           DATA
+ 0002:000001c8 000000a8H .rdata$zzzdbg           DATA
+ 0003:00000000 000000ccH .pdata                  DATA
+ 0004:00000000 00000108H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __arm64x_extra_rfe_table   0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata 0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_table          0000000000000000     <absolute>
+ 0000:00000000       __guard_flags              0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map_count    0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_count          0000000000000000     <absolute>
+ 0000:00000000       __arm64x_native_entrypoint 0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_table      0000000000000000     <absolute>
+ 0000:00000000       __enclave_config           0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata_count 0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_count      0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_count      0000000000000000     <absolute>
+ 0000:00000000       __dynamic_value_reloc_table 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat     0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table_size 0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_count         0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points_count 0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points 0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_table         0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat_copy 0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_table      0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map          0000000000000000     <absolute>
+ 0000:00000000       __AbsoluteZero             0000000000000000     <absolute>
+ 0000:00000000       __guard_check_icall_a64n_fptr 0000000000000000     <absolute>
+ 0001:00000000       InternalMemCopyMem         0000000000000280     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000040       InternalMemZeroMem         00000000000002c0     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00000060       InternalMemSetMem          00000000000002e0     BaseMemoryLibRepStr:SetMem.obj
+ 0001:00000080       InternalMemSetMem64        0000000000000300     BaseMemoryLibRepStr:SetMem64.obj
+ 0001:000000a0       InternalMemSetMem32        0000000000000320     BaseMemoryLibRepStr:SetMem32.obj
+ 0001:000000b4       _ModuleEntryPoint          0000000000000334 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:0000014c       SCSIBusDriverBindingSupported 00000000000003cc f   ScsiBus:ScsiBus.obj
+ 0001:000002e0       SCSIBusDriverBindingStart  0000000000000560 f   ScsiBus:ScsiBus.obj
+ 0001:00000674       SCSIBusDriverBindingStop   00000000000008f4 f   ScsiBus:ScsiBus.obj
+ 0001:0000089c       ScsiGetDeviceType          0000000000000b1c f   ScsiBus:ScsiBus.obj
+ 0001:000008b4       ScsiGetDeviceLocation      0000000000000b34 f   ScsiBus:ScsiBus.obj
+ 0001:00000908       ScsiResetBus               0000000000000b88 f   ScsiBus:ScsiBus.obj
+ 0001:00000940       ScsiResetDevice            0000000000000bc0 f   ScsiBus:ScsiBus.obj
+ 0001:000009b4       ScsiExecuteSCSICommand     0000000000000c34 f   ScsiBus:ScsiBus.obj
+ 0001:00000c40       ScsiScanCreateDevice       0000000000000ec0 f   ScsiBus:ScsiBus.obj
+ 0001:00000eb0       DiscoverScsiDevice         0000000000001130 f   ScsiBus:ScsiBus.obj
+ 0001:00001054       PassThruToScsiioPacket     00000000000012d4 f   ScsiBus:ScsiBus.obj
+ 0001:000010b8       NotifyFunction             0000000000001338 f   ScsiBus:ScsiBus.obj
+ 0001:0000110c       ScsiBusComponentNameGetDriverName 000000000000138c f   ScsiBus:ComponentName.obj
+ 0001:00001238       ScsiBusComponentNameGetControllerName 00000000000014b8 f   ScsiBus:ComponentName.obj
+ 0001:00001244       InternalAllocateAlignedPages 00000000000014c4 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00001338       InternalAllocatePool       00000000000015b8 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00001368       AllocateZeroPool           00000000000015e8 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00001394       IsLanguageSupported        0000000000001614 f   UefiLib:UefiLib.obj
+ 0001:00001438       InternalReportStatusCode   00000000000016b8 f   DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0001:000014d4       ReportStatusCodeWithDevicePath 0000000000001754 f   DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0002:00000000       gEfiStatusCodeSpecificDataGuid 00000000000018e0     ScsiBus:AutoGen.obj
+ 0002:00000010       gEfiStatusCodeRuntimeProtocolGuid 00000000000018f0     ScsiBus:AutoGen.obj
+ 0002:00000020       gEfiExtScsiPassThruProtocolGuid 0000000000001900     ScsiBus:AutoGen.obj
+ 0002:00000030       gEfiComponentName2ProtocolGuid 0000000000001910     ScsiBus:AutoGen.obj
+ 0002:00000040       gEfiDevicePathProtocolGuid 0000000000001920     ScsiBus:AutoGen.obj
+ 0002:00000050       gEfiDevicePathUtilitiesProtocolGuid 0000000000001930     ScsiBus:AutoGen.obj
+ 0002:00000060       gEfiScsiPassThruProtocolGuid 0000000000001940     ScsiBus:AutoGen.obj
+ 0002:00000070       gEfiDriverBindingProtocolGuid 0000000000001950     ScsiBus:AutoGen.obj
+ 0002:00000080       gEfiComponentNameProtocolGuid 0000000000001960     ScsiBus:AutoGen.obj
+ 0002:00000090       gEfiScsiIoProtocolGuid     0000000000001970     ScsiBus:AutoGen.obj
+ 0002:000000a0       gEfiCallerIdGuid           0000000000001980     ScsiBus:AutoGen.obj
+ 0002:000000b0       gSCSIBusDriverBinding      0000000000001990     ScsiBus:ScsiBus.obj
+ 0002:000000e0       gScsiBusComponentName      00000000000019c0     ScsiBus:ComponentName.obj
+ 0002:000000f8       gScsiBusComponentName2     00000000000019d8     ScsiBus:ComponentName.obj
+ 0002:00000110       mScsiBusDriverNameTable    00000000000019f0     ScsiBus:ComponentName.obj
+ 0002:00000130       ??_C@_03LKLGDMJI@eng@      0000000000001a10     ScsiBus:ComponentName.obj
+ 0002:00000134       ??_C@_02LFNMGJAP@en@       0000000000001a14     ScsiBus:ComponentName.obj
+ 0002:00000138       ??_C@_06DALJLGPG@eng?$DLen@ 0000000000001a18     ScsiBus:ComponentName.obj
+ 0002:00000140       ??_C@_1CA@JNFBFCNB@?$AAS?$AAC?$AAS?$AAI?$AA?5?$AAB?$AAu?$AAs?$AA?5?$AAD?$AAr?$AAi?$AAv?$AAe?$AAr@ 0000000000001a20     ScsiBus:ComponentName.obj
+ 0002:00000180       gST                        0000000000001a60     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000188       gBS                        0000000000001a68     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000190       mDevicePathLibDevicePathUtilities 0000000000001a70     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:00000198       mReportStatusCodeLibStatusCodeProtocol 0000000000001a78     DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0002:000001a0       mWorkingBuffer             0000000000001a80     <common>
+ 0002:000001a8       __volatile_metadata        0000000000001a88     <linker-defined>
+
+ entry point at        0001:000000b4
+
+ Static symbols
+
+ 0001:0000001a       InternalMemCopyMem.0       000000000000029a     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:0000002a       @CopyBackward              00000000000002aa     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000033       @CopyBytes                 00000000000002b3     BaseMemoryLibRepStr:CopyMem.obj
+ 0004:00000000       $unwind$_ModuleEntryPoint  0000000000001c40     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0004:00000008       $unwind$SCSIBusDriverBindingSupported 0000000000001c48     ScsiBus:ScsiBus.obj
+ 0004:0000001c       $unwind$SCSIBusDriverBindingStart 0000000000001c5c     ScsiBus:ScsiBus.obj
+ 0004:00000034       $unwind$SCSIBusDriverBindingStop 0000000000001c74     ScsiBus:ScsiBus.obj
+ 0004:0000004c       $unwind$NotifyFunction     0000000000001c8c     ScsiBus:ScsiBus.obj
+ 0004:0000004c       $unwind$ScsiGetDeviceLocation 0000000000001c8c     ScsiBus:ScsiBus.obj
+ 0004:00000058       $unwind$ScsiResetBus       0000000000001c98     ScsiBus:ScsiBus.obj
+ 0004:00000058       $unwind$AllocateZeroPool   0000000000001c98     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0004:00000060       $unwind$ScsiResetDevice    0000000000001ca0     ScsiBus:ScsiBus.obj
+ 0004:0000006c       $unwind$ScsiExecuteSCSICommand 0000000000001cac     ScsiBus:ScsiBus.obj
+ 0004:00000080       $unwind$ScsiScanCreateDevice 0000000000001cc0     ScsiBus:ScsiBus.obj
+ 0004:00000098       $unwind$DiscoverScsiDevice 0000000000001cd8     ScsiBus:ScsiBus.obj
+ 0004:000000b0       $unwind$ScsiBusComponentNameGetDriverName 0000000000001cf0     ScsiBus:ComponentName.obj
+ 0004:000000c4       $unwind$InternalAllocateAlignedPages 0000000000001d04     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0004:000000d8       $unwind$InternalAllocatePool 0000000000001d18     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0004:000000e0       $unwind$InternalReportStatusCode 0000000000001d20     DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0004:000000f0       $unwind$ReportStatusCodeWithDevicePath 0000000000001d30     DxeReportStatusCodeLib:ReportStatusCodeLib.obj

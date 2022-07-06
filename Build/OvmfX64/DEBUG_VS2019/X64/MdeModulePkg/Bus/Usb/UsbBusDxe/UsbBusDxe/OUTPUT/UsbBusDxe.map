@@ -1,0 +1,463 @@
+ UsbBusDxe
+
+ Timestamp is 62b5731c (Fri Jun 24 16:17:32 2022)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 000000e4H .text                   CODE
+ 0001:000000e4 00006a06H .text$mn                CODE
+ 0002:00000000 000028c0H .rdata                  DATA
+ 0002:000028c0 00000020H .rdata$voltmd           DATA
+ 0002:000028e0 00000140H .rdata$zzzdbg           DATA
+ 0003:00000000 00000278H .data                   DATA
+ 0003:00000278 00000032H .bss                    DATA
+ 0004:00000000 00000414H .pdata                  DATA
+ 0005:00000000 000003a4H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __guard_longjmp_count      0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_table          0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_table      0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points 0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_count         0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_count          0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table   0000000000000000     <absolute>
+ 0000:00000000       __dynamic_value_reloc_table 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat     0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat_copy 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map          0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table_size 0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points_count 0000000000000000     <absolute>
+ 0000:00000000       __AbsoluteZero             0000000000000000     <absolute>
+ 0000:00000000       __guard_check_icall_a64n_fptr 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map_count    0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_table         0000000000000000     <absolute>
+ 0000:00000000       __guard_flags              0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_count      0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata_count 0000000000000000     <absolute>
+ 0000:00000000       __enclave_config           0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_table      0000000000000000     <absolute>
+ 0000:00000000       __arm64x_native_entrypoint 0000000000000000     <absolute>
+ 0001:00000000       InternalMemCopyMem         00000000000002c0     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000040       InternalMemZeroMem         0000000000000300     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00000060       InternalMemCompareMem      0000000000000320     BaseMemoryLibRepStr:CompareMem.obj
+ 0001:00000080       CpuPause                   0000000000000340     BaseLib:CpuPause.obj
+ 0001:00000090       InternalMemSetMem          0000000000000350     BaseMemoryLibRepStr:SetMem.obj
+ 0001:000000b0       InternalMemSetMem64        0000000000000370     BaseMemoryLibRepStr:SetMem64.obj
+ 0001:000000d0       InternalMemSetMem32        0000000000000390     BaseMemoryLibRepStr:SetMem32.obj
+ 0001:000000e4       _ModuleEntryPoint          00000000000003a4 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:00000190       ProcessLibraryConstructorList 0000000000000450 f   UsbBusDxe:AutoGen.obj
+ 0001:00000324       UsbIoControlTransfer       00000000000005e4 f   UsbBusDxe:UsbBus.obj
+ 0001:000005e4       UsbIoBulkTransfer          00000000000008a4 f   UsbBusDxe:UsbBus.obj
+ 0001:00000808       UsbIoSyncInterruptTransfer 0000000000000ac8 f   UsbBusDxe:UsbBus.obj
+ 0001:000009b8       UsbIoAsyncInterruptTransfer 0000000000000c78 f   UsbBusDxe:UsbBus.obj
+ 0001:00000b90       UsbIoAsyncIsochronousTransfer 0000000000000e50 f   UsbBusDxe:UsbBus.obj
+ 0001:00000b90       UsbIoIsochronousTransfer   0000000000000e50 f   UsbBusDxe:UsbBus.obj
+ 0001:00000b90       UsbBusComponentNameGetControllerName 0000000000000e50 f   UsbBusDxe:ComponentName.obj
+ 0001:00000b9c       UsbIoGetDeviceDescriptor   0000000000000e5c f   UsbBusDxe:UsbBus.obj
+ 0001:00000c34       UsbIoGetActiveConfigDescriptor 0000000000000ef4 f   UsbBusDxe:UsbBus.obj
+ 0001:00000ce8       UsbIoGetInterfaceDescriptor 0000000000000fa8 f   UsbBusDxe:UsbBus.obj
+ 0001:00000d7c       UsbIoGetEndpointDescriptor 000000000000103c f   UsbBusDxe:UsbBus.obj
+ 0001:00000e54       UsbIoGetSupportedLanguages 0000000000001114 f   UsbBusDxe:UsbBus.obj
+ 0001:00000ee4       UsbIoGetStringDescriptor   00000000000011a4 f   UsbBusDxe:UsbBus.obj
+ 0001:00001068       UsbIoPortReset             0000000000001328 f   UsbBusDxe:UsbBus.obj
+ 0001:00001240       UsbBusBuildProtocol        0000000000001500 f   UsbBusDxe:UsbBus.obj
+ 0001:000015f4       UsbBusControllerDriverSupported 00000000000018b4 f   UsbBusDxe:UsbBus.obj
+ 0001:00001740       UsbBusControllerDriverStart 0000000000001a00 f   UsbBusDxe:UsbBus.obj
+ 0001:000018d0       UsbBusControllerDriverStop 0000000000001b90 f   UsbBusDxe:UsbBus.obj
+ 0001:00001bcc       UsbCreateInterface         0000000000001e8c f   UsbBusDxe:UsbEnumer.obj
+ 0001:00001dac       UsbConnectDriver           000000000000206c f   UsbBusDxe:UsbEnumer.obj
+ 0001:00001ebc       UsbSelectSetting           000000000000217c f   UsbBusDxe:UsbEnumer.obj
+ 0001:00001fbc       UsbSelectConfig            000000000000227c f   UsbBusDxe:UsbEnumer.obj
+ 0001:000020e8       UsbRemoveConfig            00000000000023a8 f   UsbBusDxe:UsbEnumer.obj
+ 0001:00002308       UsbRemoveDevice            00000000000025c8 f   UsbBusDxe:UsbEnumer.obj
+ 0001:00002480       UsbFindChild               0000000000002740 f   UsbBusDxe:UsbEnumer.obj
+ 0001:000024cc       UsbEnumerateNewDev         000000000000278c f   UsbBusDxe:UsbEnumer.obj
+ 0001:0000294c       UsbEnumeratePort           0000000000002c0c f   UsbBusDxe:UsbEnumer.obj
+ 0001:00002af4       UsbHubEnumeration          0000000000002db4 f   UsbBusDxe:UsbEnumer.obj
+ 0001:00002c30       UsbRootHubEnumeration      0000000000002ef0 f   UsbBusDxe:UsbEnumer.obj
+ 0001:00002cac       UsbBusComponentNameGetDriverName 0000000000002f6c f   UsbBusDxe:ComponentName.obj
+ 0001:00002dac       UsbFreeInterfaceDesc       000000000000306c f   UsbBusDxe:UsbDesc.obj
+ 0001:00002e08       UsbFreeConfigDesc          00000000000030c8 f   UsbBusDxe:UsbDesc.obj
+ 0001:00002e9c       UsbCreateDesc              000000000000315c f   UsbBusDxe:UsbDesc.obj
+ 0001:00003018       UsbParseConfigDesc         00000000000032d8 f   UsbBusDxe:UsbDesc.obj
+ 0001:00003268       UsbCtrlRequest             0000000000003528 f   UsbBusDxe:UsbDesc.obj
+ 0001:00003378       UsbCtrlGetDesc             0000000000003638 f   UsbBusDxe:UsbDesc.obj
+ 0001:000033c4       UsbGetOneString            0000000000003684 f   UsbBusDxe:UsbDesc.obj
+ 0001:00003470       UsbGetOneConfig            0000000000003730 f   UsbBusDxe:UsbDesc.obj
+ 0001:00003550       UsbBuildDescTable          0000000000003810 f   UsbBusDxe:UsbDesc.obj
+ 0001:00003758       UsbHubCtrlClearTTBuffer    0000000000003a18 f   UsbBusDxe:UsbHub.obj
+ 0001:000037b4       UsbHubCtrlSetPortFeature   0000000000003a74 f   UsbBusDxe:UsbHub.obj
+ 0001:000037f8       UsbHubAckHubStatus         0000000000003ab8 f   UsbBusDxe:UsbHub.obj
+ 0001:000038cc       UsbOnHubInterrupt          0000000000003b8c f   UsbBusDxe:UsbHub.obj
+ 0001:00003a34       UsbHubInit                 0000000000003cf4 f   UsbBusDxe:UsbHub.obj
+ 0001:00003da0       UsbHubGetPortStatus        0000000000004060 f   UsbBusDxe:UsbHub.obj
+ 0001:00003de0       UsbHubClearPortChange      00000000000040a0 f   UsbBusDxe:UsbHub.obj
+ 0001:00003e80       UsbHubSetPortFeature       0000000000004140 f   UsbBusDxe:UsbHub.obj
+ 0001:00003e8c       UsbHubClearPortFeature     000000000000414c f   UsbBusDxe:UsbHub.obj
+ 0001:00003ed8       UsbHubResetPort            0000000000004198 f   UsbBusDxe:UsbHub.obj
+ 0001:00003f88       UsbHubRelease              0000000000004248 f   UsbBusDxe:UsbHub.obj
+ 0001:00004014       UsbRootHubInit             00000000000042d4 f   UsbBusDxe:UsbHub.obj
+ 0001:0000413c       UsbRootHubGetPortStatus    00000000000043fc f   UsbBusDxe:UsbHub.obj
+ 0001:00004158       UsbRootHubClearPortChange  0000000000004418 f   UsbBusDxe:UsbHub.obj
+ 0001:000041f4       UsbRootHubSetPortFeature   00000000000044b4 f   UsbBusDxe:UsbHub.obj
+ 0001:00004210       UsbRootHubClearPortFeature 00000000000044d0 f   UsbBusDxe:UsbHub.obj
+ 0001:0000422c       UsbRootHubResetPort        00000000000044ec f   UsbBusDxe:UsbHub.obj
+ 0001:00004424       UsbRootHubRelease          00000000000046e4 f   UsbBusDxe:UsbHub.obj
+ 0001:00004474       UsbHcControlTransfer       0000000000004734 f   UsbBusDxe:UsbUtility.obj
+ 0001:00004504       UsbOpenHostProtoByChild    00000000000047c4 f   UsbBusDxe:UsbUtility.obj
+ 0001:00004554       UsbGetCurrentTpl           0000000000004814 f   UsbBusDxe:UsbUtility.obj
+ 0001:00004584       GetUsbDPFromFullDP         0000000000004844 f   UsbBusDxe:UsbUtility.obj
+ 0001:00004698       SearchUsbDPInList          0000000000004958 f   UsbBusDxe:UsbUtility.obj
+ 0001:0000477c       MatchUsbClass              0000000000004a3c f   UsbBusDxe:UsbUtility.obj
+ 0001:00004890       MatchUsbWwid               0000000000004b50 f   UsbBusDxe:UsbUtility.obj
+ 0001:000049fc       UsbBusFreeUsbDPList        0000000000004cbc f   UsbBusDxe:UsbUtility.obj
+ 0001:00004a8c       UsbBusAddWantedUsbIoDP     0000000000004d4c f   UsbBusDxe:UsbUtility.obj
+ 0001:00004c18       UsbBusIsWantedUsbIO        0000000000004ed8 f   UsbBusDxe:UsbUtility.obj
+ 0001:00004dcc       UsbBusRecursivelyConnectWantedUsbIo 000000000000508c f   UsbBusDxe:UsbUtility.obj
+ 0001:00004fd8       InternalBaseLibIsListValid 0000000000005298 f   BaseLib:LinkedList.obj
+ 0001:00005044       InsertTailList             0000000000005304 f   BaseLib:LinkedList.obj
+ 0001:00005098       RemoveEntryList            0000000000005358 f   BaseLib:LinkedList.obj
+ 0001:00005100       CopyMem                    00000000000053c0 f   BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0001:0000519c       ZeroMem                    000000000000545c f   BaseMemoryLibRepStr:ZeroMemWrapper.obj
+ 0001:0000520c       CompareMem                 00000000000054cc f   BaseMemoryLibRepStr:CompareMemWrapper.obj
+ 0001:000052e4       DebugPrint                 00000000000055a4 f   BaseDebugLibSerialPort:DebugLib.obj
+ 0001:00005308       DebugPrintMarker           00000000000055c8 f   BaseDebugLibSerialPort:DebugLib.obj
+ 0001:000053b8       DebugAssert                0000000000005678 f   BaseDebugLibSerialPort:DebugLib.obj
+ 0001:00005430       InternalAllocatePool       00000000000056f0 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00005460       AllocateZeroPool           0000000000005720 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00005488       FreePool                   0000000000005748 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:000054cc       DevicePathNodeLength       000000000000578c f   UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0001:00005514       IsDevicePathEnd            00000000000057d4 f   UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0001:0000558c       IsLanguageSupported        000000000000584c f   UefiLib:UefiLib.obj
+ 0001:00005614       InternalReportStatusCode   00000000000058d4 f   DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0001:000056b0       ReportStatusCodeWithDevicePath 0000000000005970 f   DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0001:000058b0       AsciiStrLen                0000000000005b70 f   BaseLib:String.obj
+ 0001:0000591c       AsciiStrnCmp               0000000000005bdc f   BaseLib:String.obj
+ 0001:000059e8       StrnLenS                   0000000000005ca8 f   BaseLib:SafeString.obj
+ 0001:00005a40       CopyGuid                   0000000000005d00 f   BaseMemoryLibRepStr:MemLibGuid.obj
+ 0001:00005af0       AsciiSPrint                0000000000005db0 f   BasePrintLib:PrintLib.obj
+ 0001:00005b1c       BasePrintLibFillBuffer     0000000000005ddc f   BasePrintLib:PrintLibInternal.obj
+ 0001:00005b50       BasePrintLibValueToString  0000000000005e10 f   BasePrintLib:PrintLibInternal.obj
+ 0001:00005bbc       BasePrintLibSPrintMarker   0000000000005e7c f   BasePrintLib:PrintLibInternal.obj
+ 0001:00006ac8       BasePrintLibSPrint         0000000000006d88 f   BasePrintLib:PrintLibInternal.obj
+ 0002:00000000       ??_C@_0CB@DMEJJJHA@?6ASSERT_EFI_ERROR?5?$CIStatus?5?$DN?5?$CFr?$CJ@ 0000000000006dc0     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0002:00000028       ??_C@_0CH@BBNBJKHK@?$CB?$CI?$CI?$CIINTN?$CJ?$CIRETURN_STATUS?$CJ?$CIStatus@ 0000000000006de8     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0002:00000050       ??_C@_09HILPIJAO@UsbBusDxe@ 0000000000006e10     UsbBusDxe:AutoGen.obj
+ 0002:00000060       ??_C@_0GF@LICLMGEC@d?3?2edk2?2edk2?2Build?2OvmfX64?2DEBU@ 0000000000006e20     UsbBusDxe:AutoGen.obj
+ 0002:000000c8       ??_C@_0BF@NDBIKIKC@CR?5has?5Bad?5Signature@ 0000000000006e88     UsbBusDxe:UsbBus.obj
+ 0002:000000e0       ??_C@_0DF@PBFHKKEH@d?3?2edk2?2edk2?2MdeModulePkg?2Bus?2U@ 0000000000006ea0     UsbBusDxe:UsbBus.obj
+ 0002:00000118       ??_C@_0DM@BDAHCAFM@Dev?9?$DOTranslator?4TranslatorHubAd@ 0000000000006ed8     UsbBusDxe:UsbBus.obj
+ 0002:00000160       ??_C@_0EE@HDINMBJO@UsbIoControlTransfer?3?5configure@ 0000000000006f20     UsbBusDxe:UsbBus.obj
+ 0002:000001a8       ??_C@_0CB@LIIBIKHL@UsbIf?9?$DOIfDesc?9?$DOActiveIndex?5?$DM?525@ 0000000000006f68     UsbBusDxe:UsbBus.obj
+ 0002:000001d0       ??_C@_0L@NPKKFMNM@Index?5?$DM?516@ 0000000000006f90     UsbBusDxe:UsbBus.obj
+ 0002:000001e0       ??_C@_0DK@IJLBJMJO@UsbIoPortReset?3?5failed?5to?5reset@ 0000000000006fa0     UsbBusDxe:UsbBus.obj
+ 0002:00000220       ??_C@_0DK@NPPAGLIM@UsbIoPortReset?3?5failed?5to?5set?5a@ 0000000000006fe0     UsbBusDxe:UsbBus.obj
+ 0002:00000260       ??_C@_0CP@DDECNKJM@UsbIoPortReset?3?5device?5is?5now?5A@ 0000000000007020     UsbBusDxe:UsbBus.obj
+ 0002:00000290       ??_C@_0DM@PPICBFOM@UsbIoPortReset?3?5failed?5to?5set?5c@ 0000000000007050     UsbBusDxe:UsbBus.obj
+ 0002:000002d0       ??_C@_0CM@CGHPGNEK@UsbBusStart?3?5Failed?5to?5open?5dev@ 0000000000007090     UsbBusDxe:UsbBus.obj
+ 0002:00000300       ??_C@_0CP@MNPIBLEG@UsbBusStart?3?5Failed?5to?5open?5USB@ 00000000000070c0     UsbBusDxe:UsbBus.obj
+ 0002:00000330       ??_C@_0BP@CDICKFOP@UsbBus?9?$DOUsb2Hc?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000070f0     UsbBusDxe:UsbBus.obj
+ 0002:00000350       ??_C@_0DA@LIIMBOOA@UsbBusStart?3?5Failed?5to?5install?5@ 0000000000007110     UsbBusDxe:UsbBus.obj
+ 0002:00000380       ??_C@_0CJ@PKKCFCNC@UsbBusStart?3?5Failed?5to?5init?5roo@ 0000000000007140     UsbBusDxe:UsbBus.obj
+ 0002:000003b0       ??_C@_0DB@JOAFPCFA@UsbBusStart?3?5usb?5bus?5started?5on@ 0000000000007170     UsbBusDxe:UsbBus.obj
+ 0002:000003e8       ??_C@_0CM@ELEMKMOO@UsbBusStart?3?5Failed?5to?5start?5bu@ 00000000000071a8     UsbBusDxe:UsbBus.obj
+ 0002:00000418       ??_C@_0CD@PBDPIELH@UsbBusStop?3?5usb?5bus?5stopped?5on?5@ 00000000000071d8     UsbBusDxe:UsbBus.obj
+ 0002:00000440       ??_C@_0BH@EELCDNNL@Bus?9?$DOMaxDevices?5?$DM?$DN?5256@ 0000000000007200     UsbBusDxe:UsbBus.obj
+ 0002:00000458       ??_C@_0BK@ILDFOEPE@IfDesc?9?$DOActiveIndex?5?$DM?5256@ 0000000000007218     UsbBusDxe:UsbEnumer.obj
+ 0002:00000478       ??_C@_0DI@EJOLMIPF@d?3?2edk2?2edk2?2MdeModulePkg?2Bus?2U@ 0000000000007238     UsbBusDxe:UsbEnumer.obj
+ 0002:000004b0       ??_C@_0BG@HECEKKAL@HubIf?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000007270     UsbBusDxe:UsbEnumer.obj
+ 0002:000004c8       ??_C@_0DC@JOCPLLCI@UsbCreateInterface?3?5failed?5to?5c@ 0000000000007288     UsbBusDxe:UsbEnumer.obj
+ 0002:00000500       ??_C@_0DC@KJOHJNOE@UsbCreateInterface?3?5failed?5to?5i@ 00000000000072c0     UsbBusDxe:UsbEnumer.obj
+ 0002:00000538       ??_C@_0DI@LMKBNMEO@UsbCreateInterface?3?5failed?5to?5o@ 00000000000072f8     UsbBusDxe:UsbEnumer.obj
+ 0002:00000570       ??_C@_0CG@DHKBJOFN@UsbConnectDriver?3?5found?5a?5hub?5d@ 0000000000007330     UsbBusDxe:UsbEnumer.obj
+ 0002:00000598       ??_C@_0DA@FACLBEBN@UsbConnectDriver?3?5TPL?5before?5co@ 0000000000007358     UsbBusDxe:UsbEnumer.obj
+ 0002:000005c8       ??_C@_0CL@DGMIKEJF@UsbConnectDriver?3?5TPL?5after?5con@ 0000000000007388     UsbBusDxe:UsbEnumer.obj
+ 0002:000005f8       ??_C@_0BJ@JCDFFCEH@UsbGetCurrentTpl?5?$CI?$CJ?5?$DN?$DN?58@ 00000000000073b8     UsbBusDxe:UsbEnumer.obj
+ 0002:00000618       ??_C@_0M@BGFFLEGB@Index?5?$DM?5256@ 00000000000073d8     UsbBusDxe:UsbEnumer.obj
+ 0002:00000628       ??_C@_0BI@IKPJNFO@Setting?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000073e8     UsbBusDxe:UsbEnumer.obj
+ 0002:00000640       ??_C@_0DI@BCEJGAOE@UsbSelectSetting?3?5setting?5?$CFd?5se@ 0000000000007400     UsbBusDxe:UsbEnumer.obj
+ 0002:00000678       ??_C@_0DD@HNHHMCEB@UsbSelectConfig?3?5config?5?$CFd?5sele@ 0000000000007438     UsbBusDxe:UsbEnumer.obj
+ 0002:000006b0       ??_C@_0DH@IBMCCNED@UsbSelectConfig?3?5failed?5to?5conn@ 0000000000007470     UsbBusDxe:UsbEnumer.obj
+ 0002:000006e8       ??_C@_0CI@MPJBEGBE@UsbDisconnectDriver?3?5old?5TPL?5is@ 00000000000074a8     UsbBusDxe:UsbEnumer.obj
+ 0002:00000710       ??_C@_0DF@HIPBANFC@UsbDisconnectDriver?3?5TPL?5after?5@ 00000000000074d0     UsbBusDxe:UsbEnumer.obj
+ 0002:00000748       ??_C@_0DJ@NKGKOHLA@UsbRemoveDevice?3?5failed?5to?5remo@ 0000000000007508     UsbBusDxe:UsbEnumer.obj
+ 0002:00000788       ??_C@_0CE@MMEMEJJL@UsbRemoveDevice?3?5device?5?$CFd?5remo@ 0000000000007548     UsbBusDxe:UsbEnumer.obj
+ 0002:000007b0       ??_C@_0CC@OMEMJNHD@Device?9?$DOAddress?5?$DM?5Bus?9?$DOMaxDevic@ 0000000000007570     UsbBusDxe:UsbEnumer.obj
+ 0002:000007d8       ??_C@_0DC@NONOBOIJ@UsbEnumerateNewDev?3?5failed?5to?5r@ 0000000000007598     UsbBusDxe:UsbEnumer.obj
+ 0002:00000810       ??_C@_0CK@IGPBPGKG@UsbEnumerateNewDev?3?5hub?5port?5?$CFd@ 00000000000075d0     UsbBusDxe:UsbEnumer.obj
+ 0002:00000840       ??_C@_0DC@PMAMOFJK@UsbEnumerateNewDev?3?5hub?5port?5?$CFd@ 0000000000007600     UsbBusDxe:UsbEnumer.obj
+ 0002:00000878       ??_C@_0DE@JIDAAHFL@UsbEnumerateNewDev?3?5failed?5to?5g@ 0000000000007638     UsbBusDxe:UsbEnumer.obj
+ 0002:000008b0       ??_C@_0DC@LAKAOMFC@UsbEnumerateNewDev?3?5No?5device?5p@ 0000000000007670     UsbBusDxe:UsbEnumer.obj
+ 0002:000008e8       ??_C@_0CL@KNJELDIP@UsbEnumerateNewDev?3?5device?5is?5o@ 00000000000076a8     UsbBusDxe:UsbEnumer.obj
+ 0002:00000918       ??_C@_0DF@IBPIPIIO@UsbEnumerateNewDev?3?5device?5uses@ 00000000000076d8     UsbBusDxe:UsbEnumer.obj
+ 0002:00000950       ??_C@_0DG@HDPMOMOH@UsbEnumerateNewDev?3?5address?5poo@ 0000000000007710     UsbBusDxe:UsbEnumer.obj
+ 0002:00000988       ??_C@_0DH@MGOIILIG@UsbEnumerateNewDev?3?5failed?5to?5s@ 0000000000007748     UsbBusDxe:UsbEnumer.obj
+ 0002:000009c0       ??_C@_0DD@EMBDIKBD@UsbEnumerateNewDev?3?5device?5is?5n@ 0000000000007780     UsbBusDxe:UsbEnumer.obj
+ 0002:000009f8       ??_C@_0DM@EOCEMFIO@UsbEnumerateNewDev?3?5failed?5to?5g@ 00000000000077b8     UsbBusDxe:UsbEnumer.obj
+ 0002:00000a38       ??_C@_0DE@FIIEIJAC@UsbEnumerateNewDev?3?5max?5packet?5@ 00000000000077f8     UsbBusDxe:UsbEnumer.obj
+ 0002:00000a70       ??_C@_0DL@OHACEOKB@UsbEnumerateNewDev?3?5failed?5to?5b@ 0000000000007830     UsbBusDxe:UsbEnumer.obj
+ 0002:00000ab0       ??_C@_0DF@DMMNPIJE@UsbEnumerateNewDev?3?5failed?5to?5s@ 0000000000007870     UsbBusDxe:UsbEnumer.obj
+ 0002:00000ae8       ??_C@_0DI@LDFDBCMB@UsbEnumerateNewDev?3?5device?5?$CFd?5i@ 00000000000078a8     UsbBusDxe:UsbEnumer.obj
+ 0002:00000b20       ??_C@_0DG@CBKLPFAM@UsbEnumerateNewDev?3?5failed?5to?5c@ 00000000000078e0     UsbBusDxe:UsbEnumer.obj
+ 0002:00000b58       ??_C@_0DC@EFABKANM@UsbEnumeratePort?3?5failed?5to?5get@ 0000000000007918     UsbBusDxe:UsbEnumer.obj
+ 0002:00000b90       ??_C@_0DN@GDFIDKGN@UsbEnumeratePort?3?5port?5?$CFd?5state@ 0000000000007950     UsbBusDxe:UsbEnumer.obj
+ 0002:00000bd0       ??_C@_0CJ@KIIOOMOC@UsbEnumeratePort?3?5Critical?5Over@ 0000000000007990     UsbBusDxe:UsbEnumer.obj
+ 0002:00000c00       ??_C@_0DE@JEJNOHMD@UsbEnumeratePort?3?52?40?5device?5Re@ 00000000000079c0     UsbBusDxe:UsbEnumer.obj
+ 0002:00000c38       ??_C@_0DE@IMBBBDD@UsbEnumeratePort?3?51?41?5device?5Re@ 00000000000079f8     UsbBusDxe:UsbEnumer.obj
+ 0002:00000c70       ??_C@_0DG@HBPKCBHN@UsbEnumeratePort?3?5Device?5Connec@ 0000000000007a30     UsbBusDxe:UsbEnumer.obj
+ 0002:00000ca8       ??_C@_0DO@FIEFMLPG@UsbEnumeratePort?3?5device?5at?5por@ 0000000000007a68     UsbBusDxe:UsbEnumer.obj
+ 0002:00000ce8       ??_C@_0DD@ICGNDAJ@UsbEnumeratePort?3?5new?5device?5co@ 0000000000007aa8     UsbBusDxe:UsbEnumer.obj
+ 0002:00000d20       ??_C@_0DI@CIFHJNC@UsbEnumeratePort?3?5device?5discon@ 0000000000007ae0     UsbBusDxe:UsbEnumer.obj
+ 0002:00000d58       ??_C@_0BI@DNICFLOF@Context?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000007b18     UsbBusDxe:UsbEnumer.obj
+ 0002:00000d70       ??_C@_0FB@PKODFAKE@UsbEnumeratePort?3?5The?5device?5di@ 0000000000007b30     UsbBusDxe:UsbEnumer.obj
+ 0002:00000dd0       ??_C@_0FG@CDEPGCCM@UsbEnumeratePort?3?5The?5device?5di@ 0000000000007b90     UsbBusDxe:UsbEnumer.obj
+ 0002:00000e28       ??_C@_03LKLGDMJI@eng@      0000000000007be8     UsbBusDxe:ComponentName.obj
+ 0002:00000e2c       ??_C@_02LFNMGJAP@en@       0000000000007bec     UsbBusDxe:ComponentName.obj
+ 0002:00000e30       ??_C@_06DALJLGPG@eng?$DLen@ 0000000000007bf0     UsbBusDxe:ComponentName.obj
+ 0002:00000e38       ??_C@_1BO@MCMGEBFM@?$AAU?$AAs?$AAb?$AA?5?$AAB?$AAu?$AAs?$AA?5?$AAD?$AAr?$AAi?$AAv?$AAe?$AAr@ 0000000000007bf8     UsbBusDxe:ComponentName.obj
+ 0002:00000e58       ??_C@_0BC@FEDIJHFF@?$CI?$CIBOOLEAN?$CJ?$CI0?$DN?$DN1?$CJ?$CJ@ 0000000000007c18     UsbBusDxe:UsbDesc.obj
+ 0002:00000e70       ??_C@_0DG@NHKDBCCP@d?3?2edk2?2edk2?2MdeModulePkg?2Bus?2U@ 0000000000007c30     UsbBusDxe:UsbDesc.obj
+ 0002:00000ea8       ??_C@_0DO@DCNKIGAI@UsbCreateDesc?3?5met?5mal?9format?5d@ 0000000000007c68     UsbBusDxe:UsbDesc.obj
+ 0002:00000ee8       ??_C@_0DK@JJMNDEPD@UsbCreateDesc?3?5met?5mal?9format?5d@ 0000000000007ca8     UsbBusDxe:UsbDesc.obj
+ 0002:00000f28       ??_C@_0DL@OOBAJPOE@UsbCreateDesc?3?5met?5mal?9format?5d@ 0000000000007ce8     UsbBusDxe:UsbDesc.obj
+ 0002:00000f68       ??_C@_0DP@KJGLDJFE@UsbCreateDesc?3?5met?5mal?9format?5d@ 0000000000007d28     UsbBusDxe:UsbDesc.obj
+ 0002:00000fb0       ??_C@_0EB@CFNOGLN@UsbCreateDesc?3?5descriptor?5canno@ 0000000000007d70     UsbBusDxe:UsbDesc.obj
+ 0002:00000ff8       ??_C@_0DO@OOGKGLDD@UsbParseInterfaceDesc?3?5failed?5t@ 0000000000007db8     UsbBusDxe:UsbDesc.obj
+ 0002:00001040       ??_C@_0EC@OMMPGOCO@UsbParseInterfaceDesc?3?5interfac@ 0000000000007e00     UsbBusDxe:UsbDesc.obj
+ 0002:00001088       ??_C@_0DM@EGJOHGDE@UsbParseInterfaceDesc?3?5failed?5t@ 0000000000007e48     UsbBusDxe:UsbDesc.obj
+ 0002:000010c8       ??_C@_0BI@HPGPKCFE@DescBuf?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000007e88     UsbBusDxe:UsbDesc.obj
+ 0002:000010e0       ??_C@_0DB@LBHHELKB@UsbParseConfigDesc?3?5config?5?$CFd?5h@ 0000000000007ea0     UsbBusDxe:UsbDesc.obj
+ 0002:00001120       ??_C@_0FB@HHDLLIPM@UsbParseConfigDesc?3?5warning?3?5fa@ 0000000000007ee0     UsbBusDxe:UsbDesc.obj
+ 0002:00001178       ??_C@_0DH@PIBPGEDK@UsbParseConfigDesc?3?5malformatte@ 0000000000007f38     UsbBusDxe:UsbDesc.obj
+ 0002:000011b0       ??_C@_0DK@PNMEAJHB@?$CIUsbDev?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ?5?$CG?$CG?5?$CIUs@ 0000000000007f70     UsbBusDxe:UsbDesc.obj
+ 0002:000011f0       ??_C@_0DH@MJIPBGLP@UsbGetOneConfig?3?5failed?5to?5get?5@ 0000000000007fb0     UsbBusDxe:UsbDesc.obj
+ 0002:00001228       ??_C@_0CF@OIHDGFPL@UsbGetOneConfig?3?5total?5length?5i@ 0000000000007fe8     UsbBusDxe:UsbDesc.obj
+ 0002:00001250       ??_C@_0DB@EKKJNLNO@UsbGetOneConfig?3?5failed?5to?5get?5@ 0000000000008010     UsbBusDxe:UsbDesc.obj
+ 0002:00001288       ??_C@_0DJ@KEFDJFGN@UsbBuildDescTable?3?5failed?5to?5ge@ 0000000000008048     UsbBusDxe:UsbDesc.obj
+ 0002:000012c8       ??_C@_0CN@HONMPGAB@UsbBuildDescTable?3?5device?5has?5?$CF@ 0000000000008088     UsbBusDxe:UsbDesc.obj
+ 0002:000012f8       ??_C@_0DH@GEDKMDDP@UsbBuildDescTable?3?5failed?5to?5ge@ 00000000000080b8     UsbBusDxe:UsbDesc.obj
+ 0002:00001330       ??_C@_0DJ@GPMKGIFG@UsbBuildDescTable?3?5failed?5to?5pa@ 00000000000080f0     UsbBusDxe:UsbDesc.obj
+ 0002:00001370       ??_C@_0CN@LNGPBOFK@UsbBuildDescTable?3?5get?5language@ 0000000000008130     UsbBusDxe:UsbDesc.obj
+ 0002:000013a0       ??_C@_0DJ@DHKIJFCJ@UsbOnHubInterrupt?3?5failed?5to?5re@ 0000000000008160     UsbBusDxe:UsbHub.obj
+ 0002:000013e0       ??_C@_0DN@DKBPNEGM@UsbOnHubInterrupt?3?5failed?5to?5su@ 00000000000081a0     UsbBusDxe:UsbHub.obj
+ 0002:00001420       ??_C@_0FE@OLECHGDH@?$CISetting?9?$DOEndpoints?5?$CB?$DN?5?$CI?$CIvoid?5?$CK@ 00000000000081e0     UsbBusDxe:UsbHub.obj
+ 0002:00001478       ??_C@_0DF@LIGJLJNL@d?3?2edk2?2edk2?2MdeModulePkg?2Bus?2U@ 0000000000008238     UsbBusDxe:UsbHub.obj
+ 0002:000014b0       ??_C@_0DE@CIMIPCPC@UsbHubInit?3?5no?5interrupt?5endpoi@ 0000000000008270     UsbBusDxe:UsbHub.obj
+ 0002:000014e8       ??_C@_0CO@MHOOHJEF@UsbHubInit?3?5failed?5to?5read?5HUB?5@ 00000000000082a8     UsbBusDxe:UsbHub.obj
+ 0002:00001518       ??_C@_0CB@OIKCPGJB@UsbHubInit?3?5hub?5?$CFd?5has?5?$CFd?5ports@ 00000000000082d8     UsbBusDxe:UsbHub.obj
+ 0002:00001540       ??_C@_0CD@KPMAMLL@UsbHubInit?3?5Set?5Hub?5Depth?5as?50x@ 0000000000008300     UsbBusDxe:UsbHub.obj
+ 0002:00001568       ??_C@_0DF@MAMAAAAH@UsbHubInit?3?5failed?5to?5create?5si@ 0000000000008328     UsbBusDxe:UsbHub.obj
+ 0002:000015a0       ??_C@_0EA@PIJMMAKM@UsbHubInit?3?5failed?5to?5queue?5int@ 0000000000008360     UsbBusDxe:UsbHub.obj
+ 0002:000015e0       ??_C@_0CA@PJHCBDOC@UsbHubInit?3?5hub?5?$CFd?5initialized?6@ 00000000000083a0     UsbBusDxe:UsbHub.obj
+ 0002:00001600       ??_C@_0CH@PEJMPFJF@UsbHubRelease?3?5hub?5device?5?$CFd?5re@ 00000000000083c0     UsbBusDxe:UsbHub.obj
+ 0002:00001628       ??_C@_0DG@MHGCBNJM@UsbRootHubInit?3?5root?5hub?5?$CFp?5?9?5m@ 00000000000083e8     UsbBusDxe:UsbHub.obj
+ 0002:00001660       ??_C@_0DH@GEKNBDCI@UsbRootHubResetPort?3?5failed?5to?5@ 0000000000008420     UsbBusDxe:UsbHub.obj
+ 0002:00001698       ??_C@_0DH@PCHFDHKF@UsbRootHubResetPort?3?5failed?5to?5@ 0000000000008458     UsbBusDxe:UsbHub.obj
+ 0002:000016d0       ??_C@_0DM@MCCMKPEM@UsbRootHubResetPort?3?5reset?5not?5@ 0000000000008490     UsbBusDxe:UsbHub.obj
+ 0002:00001710       ??_C@_0EB@BBAPNCIN@UsbRootHubResetPort?3?5release?5lo@ 00000000000084d0     UsbBusDxe:UsbHub.obj
+ 0002:00001758       ??_C@_0DI@MNLHHLGJ@UsbRootHubResetPort?3?5failed?5to?5@ 0000000000008518     UsbBusDxe:UsbHub.obj
+ 0002:00001790       ??_C@_0DB@PGJINMEN@UsbRootHubRelease?3?5root?5hub?5rel@ 0000000000008550     UsbBusDxe:UsbHub.obj
+ 0002:000017c8       ??_C@_0CB@FOLAILGE@UsbDevicePathPtr?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50@ 0000000000008588     UsbBusDxe:UsbUtility.obj
+ 0002:000017f0       ??_C@_0DJ@MGHHKPLL@d?3?2edk2?2edk2?2MdeModulePkg?2Bus?2U@ 00000000000085b0     UsbBusDxe:UsbUtility.obj
+ 0002:00001830       ??_C@_0CF@KAKMOICH@ListItem?9?$DODevicePath?5?$CB?$DN?5?$CI?$CIvoid?5@ 00000000000085f0     UsbBusDxe:UsbUtility.obj
+ 0002:00001858       ??_C@_0BJ@NCBBNEMI@ListItem?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000008618     UsbBusDxe:UsbUtility.obj
+ 0002:00001874       ??_C@_01GBGANLPD@0@        0000000000008634     UsbBusDxe:UsbUtility.obj
+ 0002:00001878       ??_C@_0BO@EPDPKILK@DevicePathPtr?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000008638     UsbBusDxe:UsbUtility.obj
+ 0002:00001898       ??_C@_0CJ@DJKLNNEC@WantedListItem?9?$DODevicePath?9?$DOTyp@ 0000000000008658     UsbBusDxe:UsbUtility.obj
+ 0002:000018c8       ??_C@_0DP@BOJELFEC@UsbBusRecursivelyConnectWantedU@ 0000000000008688     UsbBusDxe:UsbUtility.obj
+ 0002:00001908       ??_C@_0DO@CKPDFGLG@UsbBusRecursivelyConnectWantedU@ 00000000000086c8     UsbBusDxe:UsbUtility.obj
+ 0002:00001948       ??_C@_0BF@NJNGJMPC@List?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000008708     BaseLib:LinkedList.obj
+ 0002:00001960       ??_C@_0DB@MIDNNFCL@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 0000000000008720     BaseLib:LinkedList.obj
+ 0002:00001998       ??_C@_0CC@KDLPLAED@List?9?$DOForwardLink?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?5@ 0000000000008758     BaseLib:LinkedList.obj
+ 0002:000019c0       ??_C@_0BP@IJJCCMAK@List?9?$DOBackLink?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000008780     BaseLib:LinkedList.obj
+ 0002:000019e0       ??_C@_0BJ@NJABNCDK@ListHead?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000087a0     BaseLib:LinkedList.obj
+ 0002:00001a00       ??_C@_0CG@LGIALJFK@InternalBaseLibIsListValid?5?$CILis@ 00000000000087c0     BaseLib:LinkedList.obj
+ 0002:00001a28       ??_C@_0BF@NMBJJECB@?$CBIsListEmpty?5?$CIEntry?$CJ@ 00000000000087e8     BaseLib:LinkedList.obj
+ 0002:00001a40       ??_C@_0ED@MKGCMJG@?$CILength?5?9?51?$CJ?5?$DM?$DN?5?$CI0xFFFFFFFFFFFF@ 0000000000008800     BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0002:00001a90       ??_C@_0EB@LOHEEPCE@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 0000000000008850     BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0002:00001ad8       ??_C@_0DO@MAOBOFEG@?$CILength?5?9?51?$CJ?5?$DM?$DN?5?$CI0xFFFFFFFFFFFF@ 0000000000008898     BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0002:00001b18       ??_C@_0BH@IACGKAP@Buffer?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000088d8     BaseMemoryLibRepStr:ZeroMemWrapper.obj
+ 0002:00001b30       ??_C@_0EB@KNGCOOD@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 00000000000088f0     BaseMemoryLibRepStr:ZeroMemWrapper.obj
+ 0002:00001b78       ??_C@_0DG@EEENIGGL@Length?5?$DM?$DN?5?$CI0xFFFFFFFFFFFFFFFFUL@ 0000000000008938     BaseMemoryLibRepStr:ZeroMemWrapper.obj
+ 0002:00001bb0       ??_C@_0CC@JOEHDGKB@DestinationBuffer?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?5@ 0000000000008970     BaseMemoryLibRepStr:CompareMemWrapper.obj
+ 0002:00001be0       ??_C@_0EE@JHMFOHJP@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 00000000000089a0     BaseMemoryLibRepStr:CompareMemWrapper.obj
+ 0002:00001c28       ??_C@_0BN@MDMCNBCC@SourceBuffer?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000089e8     BaseMemoryLibRepStr:CompareMemWrapper.obj
+ 0002:00001c48       ??_C@_0BH@LKMBFCBF@Format?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000008a08     BaseDebugLibSerialPort:DebugLib.obj
+ 0002:00001c60       ??_C@_0DO@CKBIDOOL@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 0000000000008a20     BaseDebugLibSerialPort:DebugLib.obj
+ 0002:00001ca0       ??_C@_0BI@NOCKJDBJ@ASSERT?5?$FL?$CFa?$FN?5?$CFa?$CI?$CFd?$CJ?3?5?$CFa?6@ 0000000000008a60     BaseDebugLibSerialPort:DebugLib.obj
+ 0002:00001cb8       ??_C@_0BN@COECPDCC@gImageHandle?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000008a78     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00001ce0       ??_C@_0FA@FOIHGFBE@d?3?2edk2?2edk2?2MdePkg?2Library?2Uef@ 0000000000008aa0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00001d30       ??_C@_0BE@DGNHAHIL@gST?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000008af0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00001d48       ??_C@_0BE@BDFJLGLN@gBS?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000008b08     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00001d60       ??_C@_0EK@GCCICMAJ@d?3?2edk2?2edk2?2MdePkg?2Library?2Uef@ 0000000000008b20     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0002:00001db0       ??_C@_0BE@OBDFIHND@gRT?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000008b70     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0002:00001dd0       ??_C@_0FG@JGJCMPKB@d?3?2edk2?2edk2?2MdePkg?2Library?2Uef@ 0000000000008b90     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0002:00001e30       ??_C@_0FE@ELFDCAAP@d?3?2edk2?2edk2?2MdePkg?2Library?2Uef@ 0000000000008bf0     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:00001e88       ??_C@_0DC@CNNBPJA@mDevicePathLibDevicePathUtiliti@ 0000000000008c48     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:00001ec0       ??_C@_0BL@JFODOCGB@DevicePath?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000008c80     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:00001ee0       ??_C@_0BF@CBLMFKOC@Node?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000008ca0     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:00001ef8       mUefiDevicePathLibEndDevicePath 0000000000008cb8     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:00001f00       ??_C@_0DG@PIJIOFBF@d?3?2edk2?2edk2?2MdePkg?2Library?2Uef@ 0000000000008cc0     UefiLib:UefiDriverModel.obj
+ 0002:00001f40       ??_C@_0EP@LHIPOJFB@d?3?2edk2?2edk2?2MdeModulePkg?2Libra@ 0000000000008d00     DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0002:00001f90       ??_C@_0BN@HMHGLLOO@ExtendedData?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000008d50     DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0002:00001fb0       ??_C@_0BG@BPIKKLEE@ExtendedDataSize?5?$CB?$DN?50@ 0000000000008d70     DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0002:00001fc8       ??_C@_0DN@HHIHPHHB@?$CB?$CI?$CIExtendedData?5?$DN?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000008d88     DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0002:00002008       ??_C@_0DN@BBBIFINB@?$CB?$CI?$CIExtendedData?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000008dc8     DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0002:00002048       ??_C@_0BH@MAAHKCPC@String?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000008e08     BaseLib:String.obj
+ 0002:00002060       ??_C@_0CN@LHBFELAO@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 0000000000008e20     BaseLib:String.obj
+ 0002:00002090       ??_C@_0CC@GFNLNIOC@?$CI?$CIUINTN?$CJString?5?$CG?50x00000001?$CJ?5?$DN?$DN@ 0000000000008e50     BaseLib:String.obj
+ 0002:000020b8       ??_C@_0DI@MDIKFADO@Length?5?$DM?5_gPcd_FixedAtBuild_Pcd@ 0000000000008e78     BaseLib:String.obj
+ 0002:000020f0       ??_C@_0BL@IKFBNFIL@AsciiStrSize?5?$CIFirstString?$CJ@ 0000000000008eb0     BaseLib:String.obj
+ 0002:00002110       ??_C@_0BM@EDNOKLLE@AsciiStrSize?5?$CISecondString?$CJ@ 0000000000008ed0     BaseLib:String.obj
+ 0002:00002130       ??_C@_0DJ@JJHGIFMP@Length?5?$DM?$DN?5_gPcd_FixedAtBuild_Pc@ 0000000000008ef0     BaseLib:String.obj
+ 0002:00002170       ??_C@_0DA@BDDONMJM@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 0000000000008f30     BaseLib:Unaligned.obj
+ 0002:000021a0       ??_C@_0DB@PKFMPMPC@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 0000000000008f60     BaseLib:SafeString.obj
+ 0002:000021d8       ??_C@_0BJ@CNKJJNE@?$CIBuffer?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ@ 0000000000008f98     BaseLib:SafeString.obj
+ 0002:000021f8       ??_C@_0N@KGHEHMDL@Divisor?5?$CB?$DN?50@ 0000000000008fb8     BaseLib:DivU64x32.obj
+ 0002:00002208       ??_C@_0DM@OAJIKNNG@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 0000000000008fc8     BasePrintLib:PrintLibInternal.obj
+ 0002:00002250       ??_C@_0EB@HDGIDCIO@?$CIBufferSize?5?$DM?$DN?5?$CI_gPcd_FixedAtBu@ 0000000000009010     BasePrintLib:PrintLibInternal.obj
+ 0002:00002298       ??_C@_0BJ@PPAKKDJG@?$CIFormat?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ@ 0000000000009058     BasePrintLib:PrintLibInternal.obj
+ 0002:000022c0       ??_C@_0ED@LPDDCECB@?$CIBufferSize?5?$DM?$DN?5?$CI_gPcd_FixedAtBu@ 0000000000009080     BasePrintLib:PrintLibInternal.obj
+ 0002:00002310       ??_C@_0IM@BFJJFLGB@?$CIStrnLenS?5?$CI?$CICHAR16?5?$CK?$CJFormat?0?5?$CI_@ 00000000000090d0     BasePrintLib:PrintLibInternal.obj
+ 0002:000023a0       ??_C@_0ID@PLGJGION@?$CIAsciiStrnLenS?5?$CIFormat?0?5?$CI_gPcd_@ 0000000000009160     BasePrintLib:PrintLibInternal.obj
+ 0002:00002428       ??_C@_0O@MLOLIMFM@?$DMnull?5string?$DO@ 00000000000091e8     BasePrintLib:PrintLibInternal.obj
+ 0002:00002438       ??_C@_0M@BJJDNPHK@?$DMnull?5guid?$DO@ 00000000000091f8     BasePrintLib:PrintLibInternal.obj
+ 0002:00002448       ??_C@_0DB@PMLHLBMO@?$CF08x?9?$CF04x?9?$CF04x?9?$CF02x?$CF02x?9?$CF02x?$CF02@ 0000000000009208     BasePrintLib:PrintLibInternal.obj
+ 0002:00002480       ??_C@_0M@LHGBCIKM@?$DMnull?5time?$DO@ 0000000000009240     BasePrintLib:PrintLibInternal.obj
+ 0002:00002490       ??_C@_0BK@FCPKCIDD@?$CF02d?1?$CF02d?1?$CF04d?5?5?$CF02d?3?$CF02d@ 0000000000009250     BasePrintLib:PrintLibInternal.obj
+ 0002:000024ac       ??_C@_04JIMNDDED@?$CF08X@  000000000000926c     BasePrintLib:PrintLibInternal.obj
+ 0002:000024b4       ??_C@_02PCIJFNDE@?$AN?6@   0000000000009274     BasePrintLib:PrintLibInternal.obj
+ 0002:000024b8       ??_C@_01LIIJDEN@?$AN@      0000000000009278     BasePrintLib:PrintLibInternal.obj
+ 0002:000024c0       mWarningString             0000000000009280     BasePrintLib:PrintLibInternal.obj
+ 0002:00002560       mErrorString               0000000000009320     BasePrintLib:PrintLibInternal.obj
+ 0002:00002820       mHexStr                    00000000000095e0     BasePrintLib:PrintLibInternal.obj
+ 0002:00002830       ??_C@_0DJ@FHIMIJAH@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 00000000000095f0     BaseLib:DivU64x32Remainder.obj
+ 0002:000028c0       __volatile_metadata        0000000000009680     <linker-defined>
+ 0003:00000000       gEfiStatusCodeSpecificDataGuid 00000000000097e0     UsbBusDxe:AutoGen.obj
+ 0003:00000010       gEfiStatusCodeRuntimeProtocolGuid 00000000000097f0     UsbBusDxe:AutoGen.obj
+ 0003:00000020       gEfiUsbHcProtocolGuid      0000000000009800     UsbBusDxe:AutoGen.obj
+ 0003:00000030       gEfiComponentName2ProtocolGuid 0000000000009810     UsbBusDxe:AutoGen.obj
+ 0003:00000040       gEfiUsb2HcProtocolGuid     0000000000009820     UsbBusDxe:AutoGen.obj
+ 0003:00000050       gEfiDevicePathProtocolGuid 0000000000009830     UsbBusDxe:AutoGen.obj
+ 0003:00000060       gEfiUsbIoProtocolGuid      0000000000009840     UsbBusDxe:AutoGen.obj
+ 0003:00000070       gEfiDevicePathUtilitiesProtocolGuid 0000000000009850     UsbBusDxe:AutoGen.obj
+ 0003:00000080       gEfiDriverBindingProtocolGuid 0000000000009860     UsbBusDxe:AutoGen.obj
+ 0003:00000090       gEfiComponentNameProtocolGuid 0000000000009870     UsbBusDxe:AutoGen.obj
+ 0003:000000a0       gEfiCallerIdGuid           0000000000009880     UsbBusDxe:AutoGen.obj
+ 0003:000000b0       mUsbIoProtocol             0000000000009890     UsbBusDxe:UsbBus.obj
+ 0003:00000118       mUsbBusDriverBinding       00000000000098f8     UsbBusDxe:UsbBus.obj
+ 0003:00000148       mUsbBusComponentName2      0000000000009928     UsbBusDxe:ComponentName.obj
+ 0003:00000160       mUsbBusComponentName       0000000000009940     UsbBusDxe:ComponentName.obj
+ 0003:00000180       mUsbBusDriverNameTable     0000000000009960     UsbBusDxe:ComponentName.obj
+ 0003:000001a0       mUsbRootHubApi             0000000000009980     UsbBusDxe:UsbHub.obj
+ 0003:000001d8       mUsbHubApi                 00000000000099b8     UsbBusDxe:UsbHub.obj
+ 0003:00000210       mHubFeatureMap             00000000000099f0     UsbBusDxe:UsbHub.obj
+ 0003:00000240       mRootHubFeatureMap         0000000000009a20     UsbBusDxe:UsbHub.obj
+ 0003:00000268       mAllUsbClassDevicePath     0000000000009a48     UsbBusDxe:UsbUtility.obj
+ 0003:00000278       gST                        0000000000009a58     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0003:00000280       gBS                        0000000000009a60     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0003:00000288       gImageHandle               0000000000009a68     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0003:00000290       gRT                        0000000000009a70     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0003:00000298       mDevicePathLibDevicePathUtilities 0000000000009a78     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0003:000002a0       mReportStatusCodeLibStatusCodeProtocol 0000000000009a80     DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0003:000002a8       gParity                    0000000000009a88     PcAtSerialPortLib:SerialPortLib.obj
+ 0003:000002a9       gBreakSet                  0000000000009a89     PcAtSerialPortLib:SerialPortLib.obj
+
+ entry point at        0001:000000e4
+
+ Static symbols
+
+ 0001:0000001a       InternalMemCopyMem.0       00000000000002da     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:0000002a       @CopyBackward              00000000000002ea     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000033       @CopyBytes                 00000000000002f3     BaseMemoryLibRepStr:CopyMem.obj
+ 0005:00000000       $unwind$UsbHubRelease      0000000000009ec0     UsbBusDxe:UsbHub.obj
+ 0005:00000000       $unwind$_ModuleEntryPoint  0000000000009ec0     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0005:00000008       $unwind$ProcessLibraryConstructorList 0000000000009ec8     UsbBusDxe:AutoGen.obj
+ 0005:00000008       $unwind$UsbFreeInterfaceDesc 0000000000009ec8     UsbBusDxe:UsbDesc.obj
+ 0005:00000008       $unwind$InsertTailList     0000000000009ec8     BaseLib:LinkedList.obj
+ 0005:00000008       $unwind$AsciiStrLen        0000000000009ec8     BaseLib:String.obj
+ 0005:00000008       $unwind$ZeroMem            0000000000009ec8     BaseMemoryLibRepStr:ZeroMemWrapper.obj
+ 0005:00000008       $unwind$IsDevicePathEnd    0000000000009ec8     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0005:00000014       $unwind$UsbIoControlTransfer 0000000000009ed4     UsbBusDxe:UsbBus.obj
+ 0005:00000030       $unwind$UsbIoBulkTransfer  0000000000009ef0     UsbBusDxe:UsbBus.obj
+ 0005:00000048       $unwind$UsbIoSyncInterruptTransfer 0000000000009f08     UsbBusDxe:UsbBus.obj
+ 0005:00000060       $unwind$UsbIoAsyncInterruptTransfer 0000000000009f20     UsbBusDxe:UsbBus.obj
+ 0005:00000078       $unwind$UsbIoGetDeviceDescriptor 0000000000009f38     UsbBusDxe:UsbBus.obj
+ 0005:00000078       $unwind$UsbIoGetInterfaceDescriptor 0000000000009f38     UsbBusDxe:UsbBus.obj
+ 0005:00000078       $unwind$UsbRootHubEnumeration 0000000000009f38     UsbBusDxe:UsbEnumer.obj
+ 0005:00000078       $unwind$GetUsbDPFromFullDP 0000000000009f38     UsbBusDxe:UsbUtility.obj
+ 0005:00000078       $unwind$MatchUsbClass      0000000000009f38     UsbBusDxe:UsbUtility.obj
+ 0005:00000078       $unwind$UsbBusFreeUsbDPList 0000000000009f38     UsbBusDxe:UsbUtility.obj
+ 0005:00000078       $unwind$AsciiStrnCmp       0000000000009f38     BaseLib:String.obj
+ 0005:00000078       $unwind$CopyGuid           0000000000009f38     BaseMemoryLibRepStr:MemLibGuid.obj
+ 0005:00000078       $unwind$BasePrintLibValueToString 0000000000009f38     BasePrintLib:PrintLibInternal.obj
+ 0005:00000078       $unwind$IsLanguageSupported 0000000000009f38     UefiLib:UefiLib.obj
+ 0005:00000088       $unwind$UsbIoGetActiveConfigDescriptor 0000000000009f48     UsbBusDxe:UsbBus.obj
+ 0005:00000088       $unwind$UsbIoGetEndpointDescriptor 0000000000009f48     UsbBusDxe:UsbBus.obj
+ 0005:00000088       $unwind$UsbIoGetSupportedLanguages 0000000000009f48     UsbBusDxe:UsbBus.obj
+ 0005:00000088       $unwind$UsbFreeConfigDesc  0000000000009f48     UsbBusDxe:UsbDesc.obj
+ 0005:00000088       $unwind$UsbHubEnumeration  0000000000009f48     UsbBusDxe:UsbEnumer.obj
+ 0005:00000088       $unwind$UsbSelectSetting   0000000000009f48     UsbBusDxe:UsbEnumer.obj
+ 0005:00000088       $unwind$UsbBusAddWantedUsbIoDP 0000000000009f48     UsbBusDxe:UsbUtility.obj
+ 0005:00000088       $unwind$CompareMem         0000000000009f48     BaseMemoryLibRepStr:CompareMemWrapper.obj
+ 0005:00000088       $unwind$CopyMem            0000000000009f48     BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0005:0000009c       $unwind$UsbIoGetStringDescriptor 0000000000009f5c     UsbBusDxe:UsbBus.obj
+ 0005:000000b8       $unwind$UsbIoPortReset     0000000000009f78     UsbBusDxe:UsbBus.obj
+ 0005:000000d0       $unwind$UsbBusBuildProtocol 0000000000009f90     UsbBusDxe:UsbBus.obj
+ 0005:000000ec       $unwind$UsbBusControllerDriverSupported 0000000000009fac     UsbBusDxe:UsbBus.obj
+ 0005:000000fc       $unwind$UsbBusControllerDriverStart 0000000000009fbc     UsbBusDxe:UsbBus.obj
+ 0005:0000010c       $unwind$UsbBusControllerDriverStop 0000000000009fcc     UsbBusDxe:UsbBus.obj
+ 0005:00000128       $unwind$UsbCreateInterface 0000000000009fe8     UsbBusDxe:UsbEnumer.obj
+ 0005:0000013c       $unwind$UsbConnectDriver   0000000000009ffc     UsbBusDxe:UsbEnumer.obj
+ 0005:0000014c       $unwind$UsbBusComponentNameGetDriverName 000000000000a00c     UsbBusDxe:ComponentName.obj
+ 0005:0000014c       $unwind$UsbRemoveDevice    000000000000a00c     UsbBusDxe:UsbEnumer.obj
+ 0005:0000014c       $unwind$UsbSelectConfig    000000000000a00c     UsbBusDxe:UsbEnumer.obj
+ 0005:0000014c       $unwind$MatchUsbWwid       000000000000a00c     UsbBusDxe:UsbUtility.obj
+ 0005:0000014c       $unwind$SearchUsbDPInList  000000000000a00c     UsbBusDxe:UsbUtility.obj
+ 0005:00000164       $unwind$UsbRemoveConfig    000000000000a024     UsbBusDxe:UsbEnumer.obj
+ 0005:00000180       $unwind$UsbEnumerateNewDev 000000000000a040     UsbBusDxe:UsbEnumer.obj
+ 0005:0000019c       $unwind$UsbEnumeratePort   000000000000a05c     UsbBusDxe:UsbEnumer.obj
+ 0005:000001b4       $unwind$UsbCreateDesc      000000000000a074     UsbBusDxe:UsbDesc.obj
+ 0005:000001cc       $unwind$UsbParseConfigDesc 000000000000a08c     UsbBusDxe:UsbDesc.obj
+ 0005:000001e4       $unwind$UsbCtrlRequest     000000000000a0a4     UsbBusDxe:UsbDesc.obj
+ 0005:000001f4       $unwind$UsbCtrlGetDesc     000000000000a0b4     UsbBusDxe:UsbDesc.obj
+ 0005:000001f4       $unwind$UsbHubClearPortFeature 000000000000a0b4     UsbBusDxe:UsbHub.obj
+ 0005:000001f4       $unwind$UsbHubCtrlClearTTBuffer 000000000000a0b4     UsbBusDxe:UsbHub.obj
+ 0005:000001f4       $unwind$UsbHubCtrlSetPortFeature 000000000000a0b4     UsbBusDxe:UsbHub.obj
+ 0005:000001fc       $unwind$UsbGetOneString    000000000000a0bc     UsbBusDxe:UsbDesc.obj
+ 0005:00000210       $unwind$UsbGetOneConfig    000000000000a0d0     UsbBusDxe:UsbDesc.obj
+ 0005:00000220       $unwind$UsbBuildDescTable  000000000000a0e0     UsbBusDxe:UsbDesc.obj
+ 0005:00000238       $unwind$UsbHubAckHubStatus 000000000000a0f8     UsbBusDxe:UsbHub.obj
+ 0005:0000024c       $unwind$UsbOnHubInterrupt  000000000000a10c     UsbBusDxe:UsbHub.obj
+ 0005:00000260       $unwind$UsbHubInit         000000000000a120     UsbBusDxe:UsbHub.obj
+ 0005:00000280       $unwind$UsbHubGetPortStatus 000000000000a140     UsbBusDxe:UsbHub.obj
+ 0005:00000288       $unwind$UsbHubClearPortChange 000000000000a148     UsbBusDxe:UsbHub.obj
+ 0005:0000029c       $unwind$UsbHubResetPort    000000000000a15c     UsbBusDxe:UsbHub.obj
+ 0005:000002ac       $unwind$UsbRootHubInit     000000000000a16c     UsbBusDxe:UsbHub.obj
+ 0005:000002b8       $unwind$UsbRootHubClearPortChange 000000000000a178     UsbBusDxe:UsbHub.obj
+ 0005:000002cc       $unwind$UsbRootHubResetPort 000000000000a18c     UsbBusDxe:UsbHub.obj
+ 0005:000002e0       $unwind$UsbRootHubRelease  000000000000a1a0     UsbBusDxe:UsbHub.obj
+ 0005:000002e0       $unwind$UsbGetCurrentTpl   000000000000a1a0     UsbBusDxe:UsbUtility.obj
+ 0005:000002e0       $unwind$InternalBaseLibIsListValid 000000000000a1a0     BaseLib:LinkedList.obj
+ 0005:000002e0       $unwind$RemoveEntryList    000000000000a1a0     BaseLib:LinkedList.obj
+ 0005:000002e0       $unwind$StrnLenS           000000000000a1a0     BaseLib:SafeString.obj
+ 0005:000002e0       $unwind$DevicePathNodeLength 000000000000a1a0     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0005:000002e0       $unwind$AllocateZeroPool   000000000000a1a0     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0005:000002e8       $unwind$UsbHcControlTransfer 000000000000a1a8     UsbBusDxe:UsbUtility.obj
+ 0005:000002f0       $unwind$UsbOpenHostProtoByChild 000000000000a1b0     UsbBusDxe:UsbUtility.obj
+ 0005:000002f8       $unwind$UsbBusIsWantedUsbIO 000000000000a1b8     UsbBusDxe:UsbUtility.obj
+ 0005:00000314       $unwind$UsbBusRecursivelyConnectWantedUsbIo 000000000000a1d4     UsbBusDxe:UsbUtility.obj
+ 0005:00000324       $unwind$DebugPrint         000000000000a1e4     BaseDebugLibSerialPort:DebugLib.obj
+ 0005:0000032c       $unwind$DebugPrintMarker   000000000000a1ec     BaseDebugLibSerialPort:DebugLib.obj
+ 0005:00000340       $unwind$DebugAssert        000000000000a200     BaseDebugLibSerialPort:DebugLib.obj
+ 0005:00000348       $unwind$FreePool           000000000000a208     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0005:00000348       $unwind$InternalAllocatePool 000000000000a208     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0005:00000350       $unwind$InternalReportStatusCode 000000000000a210     DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0005:00000360       $unwind$ReportStatusCodeWithDevicePath 000000000000a220     DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0005:00000378       $unwind$AsciiSPrint        000000000000a238     BasePrintLib:PrintLib.obj
+ 0005:00000380       $unwind$BasePrintLibSPrintMarker 000000000000a240     BasePrintLib:PrintLibInternal.obj
+ 0005:0000039c       $unwind$BasePrintLibSPrint 000000000000a25c     BasePrintLib:PrintLibInternal.obj

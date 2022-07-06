@@ -1,0 +1,1734 @@
+ DxeCore
+
+ Timestamp is 62b5733a (Fri Jun 24 16:18:02 2022)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000db8H .text                   CODE
+ 0001:00000db8 0001efb9H .text$mn                CODE
+ 0002:00000000 000064ecH .rdata                  DATA
+ 0002:000064ec 000001ccH .rdata$voltmd           DATA
+ 0002:000066b8 00000130H .rdata$zzzdbg           DATA
+ 0003:00000000 00001960H .data                   DATA
+ 0003:00001960 00002470H .bss                    DATA
+ 0004:00000000 00001194H .pdata                  DATA
+ 0005:00000000 00000c3cH .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __arm64x_redirection_metadata 0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_table      0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points 0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_count         0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_count          0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_count      0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table   0000000000000000     <absolute>
+ 0000:00000000       __dynamic_value_reloc_table 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat     0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat_copy 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map          0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table_size 0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_table          0000000000000000     <absolute>
+ 0000:00000000       __AbsoluteZero             0000000000000000     <absolute>
+ 0000:00000000       __guard_check_icall_a64n_fptr 0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_table         0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points_count 0000000000000000     <absolute>
+ 0000:00000000       __guard_flags              0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_count      0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata_count 0000000000000000     <absolute>
+ 0000:00000000       __enclave_config           0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_table      0000000000000000     <absolute>
+ 0000:00000000       __arm64x_native_entrypoint 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map_count    0000000000000000     <absolute>
+ 0000:00000000       __ImageBase                0000000000000000     <linker-defined>
+ 0001:00000000       SetJump                    00000000000002c0     BaseLib:SetJump.obj
+ 0001:000000d0       CpuPause                   0000000000000390     BaseLib:CpuPause.obj
+ 0001:000000e0       InternalLongJump           00000000000003a0     BaseLib:LongJump.obj
+ 0001:00000190       InternalMemCopyMem         0000000000000450     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:000001d0       InternalMemZeroMem         0000000000000490     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:000001f0       InternalMemSetMem          00000000000004b0     BaseMemoryLibRepStr:SetMem.obj
+ 0001:00000210       InternalMemCompareMem      00000000000004d0     BaseMemoryLibRepStr:CompareMem.obj
+ 0001:00000230       InternalMemSetMem64        00000000000004f0     BaseMemoryLibRepStr:SetMem64.obj
+ 0001:00000250       InternalMemSetMem32        0000000000000510     BaseMemoryLibRepStr:SetMem32.obj
+ 0001:00000270       AsmInterruptHandle         0000000000000530     PeCoffExtraActionLib:IntHandler.obj
+ 0001:00000284       Exception0Handle           0000000000000544     DxeDebugAgentLib:AsmFuncs.obj
+ 0001:00000400       TimerInterruptHandle       00000000000006c0     DxeDebugAgentLib:AsmFuncs.obj
+ 0001:000007c1       CommonInterruptEntry       0000000000000a81     DxeCpuExceptionHandlerLib:Xcode5ExceptionHandlerAsm.obj
+ 0001:000009f7       AsmGetTemplateAddressMap   0000000000000cb7     DxeCpuExceptionHandlerLib:Xcode5ExceptionHandlerAsm.obj
+ 0001:00000b35       AsmVectorNumFixup          0000000000000df5     DxeCpuExceptionHandlerLib:Xcode5ExceptionHandlerAsm.obj
+ 0001:00000b40       AsmWbinvd                  0000000000000e00     BaseLib:Wbinvd.obj
+ 0001:00000b50       AsmFlushCacheLine          0000000000000e10     BaseLib:FlushCacheLine.obj
+ 0001:00000b60       AsmInvd                    0000000000000e20     BaseLib:Invd.obj
+ 0001:00000b70       AsmCpuid                   0000000000000e30     BaseLib:CpuId.obj
+ 0001:00000ba0       AsmWriteDr2                0000000000000e60     BaseLib:WriteDr2.obj
+ 0001:00000bb0       AsmWriteDr3                0000000000000e70     BaseLib:WriteDr3.obj
+ 0001:00000bc0       AsmWriteCr4                0000000000000e80     BaseLib:WriteCr4.obj
+ 0001:00000bd0       AsmWriteDr1                0000000000000e90     BaseLib:WriteDr1.obj
+ 0001:00000be0       AsmReadDr2                 0000000000000ea0     BaseLib:ReadDr2.obj
+ 0001:00000bf0       AsmWriteDr7                0000000000000eb0     BaseLib:WriteDr7.obj
+ 0001:00000c00       AsmReadDr0                 0000000000000ec0     BaseLib:ReadDr0.obj
+ 0001:00000c10       AsmWriteDr0                0000000000000ed0     BaseLib:WriteDr0.obj
+ 0001:00000c20       AsmReadDr7                 0000000000000ee0     BaseLib:ReadDr7.obj
+ 0001:00000c30       AsmReadDr1                 0000000000000ef0     BaseLib:ReadDr1.obj
+ 0001:00000c40       AsmReadDr3                 0000000000000f00     BaseLib:ReadDr3.obj
+ 0001:00000c50       AsmReadCr4                 0000000000000f10     BaseLib:ReadCr4.obj
+ 0001:00000c60       AsmReadCs                  0000000000000f20     BaseLib:ReadCs.obj
+ 0001:00000c70       EnableInterrupts           0000000000000f30     BaseLib:EnableInterrupts.obj
+ 0001:00000c80       DisableInterrupts          0000000000000f40     BaseLib:DisableInterrupts.obj
+ 0001:00000c90       AsmCpuidEx                 0000000000000f50     BaseLib:CpuIdEx.obj
+ 0001:00000cc0       AsmWriteTr                 0000000000000f80     BaseLib:WriteTr.obj
+ 0001:00000cd0       AsmXGetBv                  0000000000000f90     BaseLib:XGetBv.obj
+ 0001:00000ce0       AsmVmgExit                 0000000000000fa0     BaseLib:VmgExit.obj
+ 0001:00000cf0       InternalX86ReadIdtr        0000000000000fb0     BaseLib:ReadIdtr.obj
+ 0001:00000d00       InternalX86WriteIdtr       0000000000000fc0     BaseLib:WriteIdtr.obj
+ 0001:00000d10       InternalX86ReadGdtr        0000000000000fd0     BaseLib:ReadGdtr.obj
+ 0001:00000d20       InternalX86WriteGdtr       0000000000000fe0     BaseLib:WriteGdtr.obj
+ 0001:00000d30       AsmReadEflags              0000000000000ff0     BaseLib:ReadEflags.obj
+ 0001:00000d40       InternalMemSetMem16        0000000000001000     BaseMemoryLibRepStr:SetMem16.obj
+ 0001:00000d60       AsmReadCr0                 0000000000001020     BaseLib:ReadCr0.obj
+ 0001:00000d70       AsmReadCr3                 0000000000001030     BaseLib:ReadCr3.obj
+ 0001:00000d80       AsmWriteCr0                0000000000001040     BaseLib:WriteCr0.obj
+ 0001:00000d90       AsmPvalidate               0000000000001050     BaseLib:Pvalidate.obj
+ 0001:00000db0       CpuFlushTlb                0000000000001070     BaseCpuLib:CpuFlushTlb.obj
+ 0001:00000db8       _ModuleEntryPoint          0000000000001078 f   DxeCoreEntryPoint:DxeCoreEntryPoint.obj
+ 0001:00000df8       ProcessLibraryConstructorList 00000000000010b8 f   DxeCore:AutoGen.obj
+ 0001:00001178       DxeMain                    0000000000001438 f   DxeCore:DxeMain.obj
+ 0001:00001c28       CoreEfiNotAvailableYetArg3 0000000000001ee8 f   DxeCore:DxeMain.obj
+ 0001:00001c28       CoreEfiNotAvailableYetArg1 0000000000001ee8 f   DxeCore:DxeMain.obj
+ 0001:00001c28       CoreEfiNotAvailableYetArg2 0000000000001ee8 f   DxeCore:DxeMain.obj
+ 0001:00001c28       CoreEfiNotAvailableYetArg5 0000000000001ee8 f   DxeCore:DxeMain.obj
+ 0001:00001c28       CoreEfiNotAvailableYetArg4 0000000000001ee8 f   DxeCore:DxeMain.obj
+ 0001:00001c34       CalculateEfiHdrCrc         0000000000001ef4 f   DxeCore:DxeMain.obj
+ 0001:00001c68       CoreExitBootServices       0000000000001f28 f   DxeCore:DxeMain.obj
+ 0001:00001e98       DxeMainUefiDecompressGetInfo 0000000000002158 f   DxeCore:DxeMain.obj
+ 0001:00001ed0       DxeMainUefiDecompress      0000000000002190 f   DxeCore:DxeMain.obj
+ 0001:00001f4c       CoreDumpGcdMemorySpaceMap  000000000000220c f   DxeCore:Gcd.obj
+ 0001:00002064       CoreDumpGcdIoSpaceMap      0000000000002324 f   DxeCore:Gcd.obj
+ 0001:0000216c       CoreAllocateGcdMapEntry    000000000000242c f   DxeCore:Gcd.obj
+ 0001:000021e8       CoreInsertGcdMapEntry      00000000000024a8 f   DxeCore:Gcd.obj
+ 0001:000022f0       CoreMergeGcdMapEntry       00000000000025b0 f   DxeCore:Gcd.obj
+ 0001:000023f8       CoreCleanupGcdMapEntry     00000000000026b8 f   DxeCore:Gcd.obj
+ 0001:00002460       CoreSearchGcdMapEntry      0000000000002720 f   DxeCore:Gcd.obj
+ 0001:00002538       CoreConvertSpace           00000000000027f8 f   DxeCore:Gcd.obj
+ 0001:000029fc       CoreAllocateSpace          0000000000002cbc f   DxeCore:Gcd.obj
+ 0001:00002f94       CoreInternalAddMemorySpace 0000000000003254 f   DxeCore:Gcd.obj
+ 0001:0000305c       CoreAllocateMemorySpace    000000000000331c f   DxeCore:Gcd.obj
+ 0001:000031a8       CoreAddMemorySpace         0000000000003468 f   DxeCore:Gcd.obj
+ 0001:000032e0       CoreFreeMemorySpace        00000000000035a0 f   DxeCore:Gcd.obj
+ 0001:00003334       CoreRemoveMemorySpace      00000000000035f4 f   DxeCore:Gcd.obj
+ 0001:00003388       CoreGetMemorySpaceDescriptor 0000000000003648 f   DxeCore:Gcd.obj
+ 0001:000034a4       CoreSetMemorySpaceAttributes 0000000000003764 f   DxeCore:Gcd.obj
+ 0001:00003518       CoreSetMemorySpaceCapabilities 00000000000037d8 f   DxeCore:Gcd.obj
+ 0001:000035e4       CoreGetMemorySpaceMap      00000000000038a4 f   DxeCore:Gcd.obj
+ 0001:00003750       CoreAddIoSpace             0000000000003a10 f   DxeCore:Gcd.obj
+ 0001:000037ec       CoreAllocateIoSpace        0000000000003aac f   DxeCore:Gcd.obj
+ 0001:00003938       CoreFreeIoSpace            0000000000003bf8 f   DxeCore:Gcd.obj
+ 0001:0000398c       CoreRemoveIoSpace          0000000000003c4c f   DxeCore:Gcd.obj
+ 0001:000039e0       CoreGetIoSpaceDescriptor   0000000000003ca0 f   DxeCore:Gcd.obj
+ 0001:00003aec       CoreGetIoSpaceMap          0000000000003dac f   DxeCore:Gcd.obj
+ 0001:00003c04       FindLargestFreeRegion      0000000000003ec4 f   DxeCore:Gcd.obj
+ 0001:00003cfc       CoreInitializeMemoryServices 0000000000003fbc f   DxeCore:Gcd.obj
+ 0001:00004114       CoreInitializeGcdServices  00000000000043d4 f   DxeCore:Gcd.obj
+ 0001:00004754       GenericProtocolNotify      0000000000004a14 f   DxeCore:DxeProtocolNotify.obj
+ 0001:000048f4       CoreNotifyOnProtocolEntryTable 0000000000004bb4 f   DxeCore:DxeProtocolNotify.obj
+ 0001:000049c4       CoreValidateHandle         0000000000004c84 f   DxeCore:Handle.obj
+ 0001:00004a60       CoreFindProtocolEntry      0000000000004d20 f   DxeCore:Handle.obj
+ 0001:00004ba8       CoreFindProtocolInterface  0000000000004e68 f   DxeCore:Handle.obj
+ 0001:00004c64       CoreUnregisterProtocolNotify 0000000000004f24 f   DxeCore:Handle.obj
+ 0001:00004d60       CoreInstallProtocolInterface 0000000000005020 f   DxeCore:Handle.obj
+ 0001:00004d74       CoreInstallProtocolInterfaceNotify 0000000000005034 f   DxeCore:Handle.obj
+ 0001:00004ff0       CoreInstallMultipleProtocolInterfaces 00000000000052b0 f   DxeCore:Handle.obj
+ 0001:00005124       CoreDisconnectControllersUsingProtocolInterface 00000000000053e4 f   DxeCore:Handle.obj
+ 0001:00005264       CoreUninstallProtocolInterface 0000000000005524 f   DxeCore:Handle.obj
+ 0001:0000537c       CoreUninstallMultipleProtocolInterfaces 000000000000563c f   DxeCore:Handle.obj
+ 0001:00005410       CoreGetProtocolInterface   00000000000056d0 f   DxeCore:Handle.obj
+ 0001:000054a0       CoreHandleProtocol         0000000000005760 f   DxeCore:Handle.obj
+ 0001:000054c4       CoreOpenProtocol           0000000000005784 f   DxeCore:Handle.obj
+ 0001:00005858       CoreCloseProtocol          0000000000005b18 f   DxeCore:Handle.obj
+ 0001:00005988       CoreOpenProtocolInformation 0000000000005c48 f   DxeCore:Handle.obj
+ 0001:00005adc       CoreProtocolsPerHandle     0000000000005d9c f   DxeCore:Handle.obj
+ 0001:00005c04       CoreConnectHandlesByKey    0000000000005ec4 f   DxeCore:Handle.obj
+ 0001:00005d38       CoreConnectController      0000000000005ff8 f   DxeCore:DriverSupport.obj
+ 0001:000060a4       AddSortedDriverBindingProtocol 0000000000006364 f   DxeCore:DriverSupport.obj
+ 0001:00006218       CoreConnectSingleController 00000000000064d8 f   DxeCore:DriverSupport.obj
+ 0001:000065f0       CoreDisconnectController   00000000000068b0 f   DxeCore:DriverSupport.obj
+ 0001:00006b90       RemoveMemoryMapEntry       0000000000006e50 f   DxeCore:Page.obj
+ 0001:00006bd0       CoreAddRange               0000000000006e90 f   DxeCore:Page.obj
+ 0001:00006d9c       CoreFreeMemoryMapStack     000000000000705c f   DxeCore:Page.obj
+ 0001:00006fa0       PromoteMemoryResource      0000000000007260 f   DxeCore:Page.obj
+ 0001:000070c8       CoreAddMemoryDescriptor    0000000000007388 f   DxeCore:Page.obj
+ 0001:0000734c       CoreConvertPagesEx         000000000000760c f   DxeCore:Page.obj
+ 0001:000077d4       CoreFindFreePagesI         0000000000007a94 f   DxeCore:Page.obj
+ 0001:000079a4       FindFreePages              0000000000007c64 f   DxeCore:Page.obj
+ 0001:00007a88       CoreInternalAllocatePages  0000000000007d48 f   DxeCore:Page.obj
+ 0001:00007c3c       CoreAllocatePages          0000000000007efc f   DxeCore:Page.obj
+ 0001:00007c9c       CoreFreePages              0000000000007f5c f   DxeCore:Page.obj
+ 0001:00007dbc       MergeMemoryMapDescriptor   000000000000807c f   DxeCore:Page.obj
+ 0001:00007e40       CoreGetMemoryMap           0000000000008100 f   DxeCore:Page.obj
+ 0001:00008378       CoreAllocatePoolPages      0000000000008638 f   DxeCore:Page.obj
+ 0001:0000840c       GetMachineTypeName         00000000000086cc f   DxeCore:Image.obj
+ 0001:00008518       CoreInitializeImageServices 00000000000087d8 f   DxeCore:Image.obj
+ 0001:00008794       CoreReadImageFile          0000000000008a54 f   DxeCore:Image.obj
+ 0001:00008984       CoreLoadPeImage            0000000000008c44 f   DxeCore:Image.obj
+ 0001:00008de8       CoreLoadedImageInfo        00000000000090a8 f   DxeCore:Image.obj
+ 0001:00008e74       CoreUnloadAndCloseImage    0000000000009134 f   DxeCore:Image.obj
+ 0001:000091e0       CoreLoadImageCommon        00000000000094a0 f   DxeCore:Image.obj
+ 0001:000096ac       CoreLoadImage              000000000000996c f   DxeCore:Image.obj
+ 0001:000096d4       CoreStartImage             0000000000009994 f   DxeCore:Image.obj
+ 0001:000099b0       CoreExit                   0000000000009c70 f   DxeCore:Image.obj
+ 0001:00009b08       CoreUnloadImage            0000000000009dc8 f   DxeCore:Image.obj
+ 0001:00009b80       GetUefiImageProtectionPolicy 0000000000009e40 f   DxeCore:MemoryProtection.obj
+ 0001:00009c58       SetUefiImageMemoryAttributes 0000000000009f18 f   DxeCore:MemoryProtection.obj
+ 0001:00009d28       SetUefiImageProtectionAttributes 0000000000009fe8 f   DxeCore:MemoryProtection.obj
+ 0001:00009e34       ProtectUefiImage           000000000000a0f4 f   DxeCore:MemoryProtection.obj
+ 0001:0000a25c       MemoryProtectionCpuArchProtocolNotify 000000000000a51c f   DxeCore:MemoryProtection.obj
+ 0001:0000a390       CoreNotifyProtocolEntry    000000000000a650 f   DxeCore:Notify.obj
+ 0001:0000a40c       CoreRemoveInterfaceFromProtocol 000000000000a6cc f   DxeCore:Notify.obj
+ 0001:0000a4d4       CoreRegisterProtocolNotify 000000000000a794 f   DxeCore:Notify.obj
+ 0001:0000a5a0       CoreReinstallProtocolInterface 000000000000a860 f   DxeCore:Notify.obj
+ 0001:0000a6c8       CoreNotifyEvent            000000000000a988 f   DxeCore:Event.obj
+ 0001:0000a748       CoreNotifySignalList       000000000000aa08 f   DxeCore:Event.obj
+ 0001:0000a7e4       CoreCreateEvent            000000000000aaa4 f   DxeCore:Event.obj
+ 0001:0000a828       CoreCreateEventEx          000000000000aae8 f   DxeCore:Event.obj
+ 0001:0000a854       CoreCreateEventInternal    000000000000ab14 f   DxeCore:Event.obj
+ 0001:0000aa24       CoreSignalEvent            000000000000ace4 f   DxeCore:Event.obj
+ 0001:0000aae8       CoreCheckEvent             000000000000ada8 f   DxeCore:Event.obj
+ 0001:0000abd0       CoreWaitForEvent           000000000000ae90 f   DxeCore:Event.obj
+ 0001:0000ac70       CoreCloseEvent             000000000000af30 f   DxeCore:Event.obj
+ 0001:0000ad4c       CoreSetWatchdogTimer       000000000000b00c f   DxeCore:SetWatchdogTimer.obj
+ 0001:0000ad94       CoreGetDepexSectionAndPreProccess 000000000000b054 f   DxeCore:Dispatcher.obj
+ 0001:0000ae50       CoreSchedule               000000000000b110 f   DxeCore:Dispatcher.obj
+ 0001:0000af3c       CoreTrust                  000000000000b1fc f   DxeCore:Dispatcher.obj
+ 0001:0000b010       CoreDispatcher             000000000000b2d0 f   DxeCore:Dispatcher.obj
+ 0001:0000b310       CoreInsertOnScheduledQueueWhileProcessingBeforeAndAfter 000000000000b5d0 f   DxeCore:Dispatcher.obj
+ 0001:0000b4dc       FvIsBeingProcessed         000000000000b79c f   DxeCore:Dispatcher.obj
+ 0001:0000b720       CoreFvToDevicePath         000000000000b9e0 f   DxeCore:Dispatcher.obj
+ 0001:0000b7dc       CoreAddToDriverList        000000000000ba9c f   DxeCore:Dispatcher.obj
+ 0001:0000b8b4       GetFvUsedSize              000000000000bb74 f   DxeCore:Dispatcher.obj
+ 0001:0000ba1c       CoreProcessFvImageFile     000000000000bcdc f   DxeCore:Dispatcher.obj
+ 0001:0000bd44       CoreFwVolEventProtocolNotify 000000000000c004 f   DxeCore:Dispatcher.obj
+ 0001:0000c1fc       InternalCoreLocateHandle   000000000000c4bc f   DxeCore:Locate.obj
+ 0001:0000c378       CoreLocateHandle           000000000000c638 f   DxeCore:Locate.obj
+ 0001:0000c3e4       CoreGetNextLocateAllHandles 000000000000c6a4 f   DxeCore:Locate.obj
+ 0001:0000c43c       CoreGetNextLocateByRegisterNotify 000000000000c6fc f   DxeCore:Locate.obj
+ 0001:0000c4ec       CoreGetNextLocateByProtocol 000000000000c7ac f   DxeCore:Locate.obj
+ 0001:0000c598       CoreLocateDevicePath       000000000000c858 f   DxeCore:Locate.obj
+ 0001:0000c800       CoreLocateProtocol         000000000000cac0 f   DxeCore:Locate.obj
+ 0001:0000c900       CoreLocateHandleBuffer     000000000000cbc0 f   DxeCore:Locate.obj
+ 0001:0000ca28       CoreInitializeDebugImageInfoTable 000000000000cce8 f   DxeCore:DebugImageInfo.obj
+ 0001:0000cbdc       CoreNewDebugImageInfoEntry 000000000000ce9c f   DxeCore:DebugImageInfo.obj
+ 0001:0000cd14       FwVolBlockGetAttributes    000000000000cfd4 f   DxeCore:FwVolBlock.obj
+ 0001:0000cd64       FwVolBlockWriteBlock       000000000000d024 f   DxeCore:FwVolBlock.obj
+ 0001:0000cd64       FvGetVolumeInfo            000000000000d024 f   DxeCore:FwVolAttrib.obj
+ 0001:0000cd64       FvWriteFile                000000000000d024 f   DxeCore:FwVolWrite.obj
+ 0001:0000cd64       FvSetVolumeAttributes      000000000000d024 f   DxeCore:FwVolAttrib.obj
+ 0001:0000cd64       FvSetVolumeInfo            000000000000d024 f   DxeCore:FwVolAttrib.obj
+ 0001:0000cd64       FwVolBlockSetAttributes    000000000000d024 f   DxeCore:FwVolBlock.obj
+ 0001:0000cd70       FwVolBlockEraseBlock       000000000000d030 f   DxeCore:FwVolBlock.obj
+ 0001:0000cd8c       FwVolBlockReadBlock        000000000000d04c f   DxeCore:FwVolBlock.obj
+ 0001:0000ce68       FwVolBlockGetPhysicalAddress 000000000000d128 f   DxeCore:FwVolBlock.obj
+ 0001:0000cecc       FwVolBlockGetBlockSize     000000000000d18c f   DxeCore:FwVolBlock.obj
+ 0001:0000cf74       ProduceFVBProtocolOnBuffer 000000000000d234 f   DxeCore:FwVolBlock.obj
+ 0001:0000d19c       CoreProcessFirmwareVolume  000000000000d45c f   DxeCore:FwVolBlock.obj
+ 0001:0000d230       CoreInsertEventTimer       000000000000d4f0 f   DxeCore:Timer.obj
+ 0001:0000d2e0       CoreCheckTimers            000000000000d5a0 f   DxeCore:Timer.obj
+ 0001:0000d3e0       CoreTimerTick              000000000000d6a0 f   DxeCore:Timer.obj
+ 0001:0000d470       CoreSetTimer               000000000000d730 f   DxeCore:Timer.obj
+ 0001:0000d58c       LookupPoolHead             000000000000d84c f   DxeCore:Pool.obj
+ 0001:0000d69c       CoreInternalAllocatePool   000000000000d95c f   DxeCore:Pool.obj
+ 0001:0000d740       CoreAllocatePool           000000000000da00 f   DxeCore:Pool.obj
+ 0001:0000d810       CoreAllocatePoolI          000000000000dad0 f   DxeCore:Pool.obj
+ 0001:0000db98       CoreInternalFreePool       000000000000de58 f   DxeCore:Pool.obj
+ 0001:0000dbf0       CoreFreePool               000000000000deb0 f   DxeCore:Pool.obj
+ 0001:0000dca0       CoreFreePoolI              000000000000df60 f   DxeCore:Pool.obj
+ 0001:0000dfa8       OpenSectionStreamEx        000000000000e268 f   DxeCore:CoreSectionExtraction.obj
+ 0001:0000e0b8       VerifyGuidedSectionGuid    000000000000e378 f   DxeCore:CoreSectionExtraction.obj
+ 0001:0000e120       NotifyGuidedExtraction     000000000000e3e0 f   DxeCore:CoreSectionExtraction.obj
+ 0001:0000e264       CreateChildNode            000000000000e524 f   DxeCore:CoreSectionExtraction.obj
+ 0001:0000e69c       FindChildNode              000000000000e95c f   DxeCore:CoreSectionExtraction.obj
+ 0001:0000e9dc       FindStreamNode             000000000000ec9c f   DxeCore:CoreSectionExtraction.obj
+ 0001:0000ead4       GetSection                 000000000000ed94 f   DxeCore:CoreSectionExtraction.obj
+ 0001:0000ecdc       CloseSectionStream         000000000000ef9c f   DxeCore:CoreSectionExtraction.obj
+ 0001:0000ee14       CustomGuidedSectionExtract 000000000000f0d4 f   DxeCore:CoreSectionExtraction.obj
+ 0001:0000efdc       CoreSetInterruptState      000000000000f29c f   DxeCore:Tpl.obj
+ 0001:0000f030       CoreRaiseTpl               000000000000f2f0 f   DxeCore:Tpl.obj
+ 0001:0000f0c8       CoreRestoreTpl             000000000000f388 f   DxeCore:Tpl.obj
+ 0001:0000f320       InstallMemoryAttributesTable 000000000000f5e0 f   DxeCore:MemoryAttributesTable.obj
+ 0001:0000f65c       InstallMemoryAttributesTableOnReadyToBoot 000000000000f91c f   DxeCore:MemoryAttributesTable.obj
+ 0001:0000f674       InstallMemoryAttributesTableOnEndOfDxe 000000000000f934 f   DxeCore:MemoryAttributesTable.obj
+ 0001:0000f680       MergeMemoryMap             000000000000f940 f   DxeCore:MemoryAttributesTable.obj
+ 0001:0000fd3c       CoreGetMemoryMapWithSeparatedImageSection 000000000000fffc f   DxeCore:MemoryAttributesTable.obj
+ 0001:0000fe6c       SortImageRecordCodeSection 000000000001012c f   DxeCore:MemoryAttributesTable.obj
+ 0001:0000ff30       IsImageRecordCodeSectionValid 00000000000101f0 f   DxeCore:MemoryAttributesTable.obj
+ 0001:00010158       InsertImageRecord          0000000000010418 f   DxeCore:MemoryAttributesTable.obj
+ 0001:00010528       RemoveImageRecord          00000000000107e8 f   DxeCore:MemoryAttributesTable.obj
+ 0001:00010678       CoreInternalWaitForTick    0000000000010938 f   DxeCore:Stall.obj
+ 0001:000106d4       CoreStall                  0000000000010994 f   DxeCore:Stall.obj
+ 0001:00010760       ReadFvbData                0000000000010a20 f   DxeCore:FwVol.obj
+ 0001:000108a0       GetFwVolHeader             0000000000010b60 f   DxeCore:FwVol.obj
+ 0001:000109a4       FvCheck                    0000000000010c64 f   DxeCore:FwVol.obj
+ 0001:00010efc       NotifyFwVolBlock           00000000000111bc f   DxeCore:FwVol.obj
+ 0001:0001118c       CoreInstallConfigurationTable 000000000001144c f   DxeCore:InstallConfigurationTable.obj
+ 0001:00011338       CoreAcquireLockOrFail      00000000000115f8 f   DxeCore:Library.obj
+ 0001:000113a8       CoreAcquireLock            0000000000011668 f   DxeCore:Library.obj
+ 0001:00011404       CoreReleaseLock            00000000000116c4 f   DxeCore:Library.obj
+ 0001:0001145c       FindGuardedMemoryMap       000000000001171c f   DxeCore:HeapGuard.obj
+ 0001:000116ec       SetGuardedMemoryBits       00000000000119ac f   DxeCore:HeapGuard.obj
+ 0001:0001180c       ClearGuardedMemoryBits     0000000000011acc f   DxeCore:HeapGuard.obj
+ 0001:0001192c       GetGuardedMemoryBits       0000000000011bec f   DxeCore:HeapGuard.obj
+ 0001:00011a6c       IsGuardPage                0000000000011d2c f   DxeCore:HeapGuard.obj
+ 0001:00011aa0       SetGuardPage               0000000000011d60 f   DxeCore:HeapGuard.obj
+ 0001:00011b0c       UnsetGuardPage             0000000000011dcc f   DxeCore:HeapGuard.obj
+ 0001:00011b74       SetGuardForMemory          0000000000011e34 f   DxeCore:HeapGuard.obj
+ 0001:00011bdc       UnsetGuardForMemory        0000000000011e9c f   DxeCore:HeapGuard.obj
+ 0001:00011c7c       AdjustMemoryF              0000000000011f3c f   DxeCore:HeapGuard.obj
+ 0001:00011d44       CoreConvertPagesWithGuard  0000000000012004 f   DxeCore:HeapGuard.obj
+ 0001:00011df0       GrowDepexStack             00000000000120b0 f   DxeCore:Dependency.obj
+ 0001:00011e94       PushBool                   0000000000012154 f   DxeCore:Dependency.obj
+ 0001:00011ed4       PopBool                    0000000000012194 f   DxeCore:Dependency.obj
+ 0001:00011f00       CoreIsSchedulable          00000000000121c0 f   DxeCore:Dependency.obj
+ 0001:000122c0       FvGetVolumeAttributes      0000000000012580 f   DxeCore:FwVolAttrib.obj
+ 0001:00012320       FvGetNextFile              00000000000125e0 f   DxeCore:FwVolRead.obj
+ 0001:00012494       FvReadFile                 0000000000012754 f   DxeCore:FwVolRead.obj
+ 0001:000126a8       FvReadFileSection          0000000000012968 f   DxeCore:FwVolRead.obj
+ 0001:000128a8       InternalAllocateAlignedPages 0000000000012b68 f   DxeCoreMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00012a38       AllocatePool               0000000000012cf8 f   DxeCoreMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00012a6c       InternalAllocateZeroPool   0000000000012d2c f   DxeCoreMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00012ab4       InternalAllocateCopyPool   0000000000012d74 f   DxeCoreMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00012b60       InternalReallocatePool     0000000000012e20 f   DxeCoreMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00012bcc       FreePool                   0000000000012e8c f   DxeCoreMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00012c0c       InternalBaseLibIsListValid 0000000000012ecc f   BaseLib:LinkedList.obj
+ 0001:00012c78       InsertHeadList             0000000000012f38 f   BaseLib:LinkedList.obj
+ 0001:00012cc8       InsertTailList             0000000000012f88 f   BaseLib:LinkedList.obj
+ 0001:00012d1c       GetFirstNode               0000000000012fdc f   BaseLib:LinkedList.obj
+ 0001:00012d50       GetNextNode                0000000000013010 f   BaseLib:LinkedList.obj
+ 0001:00012d84       IsListEmpty                0000000000013044 f   BaseLib:LinkedList.obj
+ 0001:00012dbc       IsNodeAtEnd                000000000001307c f   BaseLib:LinkedList.obj
+ 0001:00012e38       RemoveEntryList            00000000000130f8 f   BaseLib:LinkedList.obj
+ 0001:00012e80       LShiftU64                  0000000000013140 f   BaseLib:LShiftU64.obj
+ 0001:00012ec4       RShiftU64                  0000000000013184 f   BaseLib:RShiftU64.obj
+ 0001:00012f08       AsciiStrLen                00000000000131c8 f   BaseLib:String.obj
+ 0001:00012f74       DivU64x32Remainder         0000000000013234 f   BaseLib:DivU64x32Remainder.obj
+ 0001:00012fd4       CalculateSum8              0000000000013294 f   BaseLib:CheckSum.obj
+ 0001:00013050       CalculateSum16             0000000000013310 f   BaseLib:CheckSum.obj
+ 0001:00013100       InternalBaseLibBitFieldOrUint 00000000000133c0 f   BaseLib:BitField.obj
+ 0001:00013180       BitFieldWrite8             0000000000013440 f   BaseLib:BitField.obj
+ 0001:00013204       BitFieldOr8                00000000000134c4 f   BaseLib:BitField.obj
+ 0001:00013288       BitFieldAnd8               0000000000013548 f   BaseLib:BitField.obj
+ 0001:0001330c       BitFieldAndThenOr8         00000000000135cc f   BaseLib:BitField.obj
+ 0001:00013390       InternalAssertJumpBuffer   0000000000013650 f   BaseLib:SetJump.obj
+ 0001:000133c8       StrnLenS                   0000000000013688 f   BaseLib:SafeString.obj
+ 0001:00013420       CopyMem                    00000000000136e0 f   BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0001:000134bc       ZeroMem                    000000000001377c f   BaseMemoryLibRepStr:ZeroMemWrapper.obj
+ 0001:0001352c       SetMem                     00000000000137ec f   BaseMemoryLibRepStr:SetMemWrapper.obj
+ 0001:00013590       CopyGuid                   0000000000013850 f   BaseMemoryLibRepStr:MemLibGuid.obj
+ 0001:00013640       CompareGuid                0000000000013900 f   BaseMemoryLibRepStr:MemLibGuid.obj
+ 0001:00013704       CompareMem                 00000000000139c4 f   BaseMemoryLibRepStr:CompareMemWrapper.obj
+ 0001:000137dc       SetMem64                   0000000000013a9c f   BaseMemoryLibRepStr:SetMem64Wrapper.obj
+ 0001:000138a0       DebugPrint                 0000000000013b60 f   BaseDebugLibSerialPort:DebugLib.obj
+ 0001:000138c4       DebugPrintMarker           0000000000013b84 f   BaseDebugLibSerialPort:DebugLib.obj
+ 0001:00013974       DebugAssert                0000000000013c34 f   BaseDebugLibSerialPort:DebugLib.obj
+ 0001:000139ec       IsDevicePathValid          0000000000013cac f   UefiDevicePathLib:DevicePathUtilities.obj
+ 0001:00013acc       DevicePathNodeLength       0000000000013d8c f   UefiDevicePathLib:DevicePathUtilities.obj
+ 0001:00013b14       IsDevicePathEnd            0000000000013dd4 f   UefiDevicePathLib:DevicePathUtilities.obj
+ 0001:00013b8c       SetDevicePathNodeLength    0000000000013e4c f   UefiDevicePathLib:DevicePathUtilities.obj
+ 0001:00013bdc       GetDevicePathSize          0000000000013e9c f   UefiDevicePathLib:UefiDevicePathLib.obj
+ 0001:00013c60       DuplicateDevicePath        0000000000013f20 f   UefiDevicePathLib:UefiDevicePathLib.obj
+ 0001:00013c8c       AppendDevicePath           0000000000013f4c f   UefiDevicePathLib:UefiDevicePathLib.obj
+ 0001:00013d58       PeCoffLoaderExtraActionCommon 0000000000014018 f   PeCoffExtraActionLib:PeCoffExtraActionLib.obj
+ 0001:00013f30       EfiGetSystemConfigurationTable 00000000000141f0 f   UefiLib:UefiLib.obj
+ 0001:00013ff4       EfiCreateProtocolNotifyEvent 00000000000142b4 f   UefiLib:UefiLib.obj
+ 0001:00014134       SzFree                     00000000000143f4 f   LzmaDecompressLib:LzmaDecompress.obj
+ 0001:00014134       EfiEventEmptyFunction      00000000000143f4 f   UefiLib:UefiLib.obj
+ 0001:00014138       GetHobList                 00000000000143f8 f   DxeCoreHobLib:HobLib.obj
+ 0001:0001416c       GetNextHob                 000000000001442c f   DxeCoreHobLib:HobLib.obj
+ 0001:000141c4       GetNextGuidHob             0000000000014484 f   DxeCoreHobLib:HobLib.obj
+ 0001:0001420c       PeCoffLoaderGetEntryPoint  00000000000144cc f   BasePeCoffGetEntryPointLib:PeCoffGetEntryPoint.obj
+ 0001:000142b8       PeCoffLoaderGetPdbPointer  0000000000014578 f   BasePeCoffGetEntryPointLib:PeCoffGetEntryPoint.obj
+ 0001:00014404       PeCoffSearchImageBase      00000000000146c4 f   BasePeCoffGetEntryPointLib:PeCoffGetEntryPoint.obj
+ 0001:00014490       ReallocateExtractHandlerTable 0000000000014750 f   DxeExtractGuidedSectionLib:DxeExtractGuidedSectionLib.obj
+ 0001:00014574       ExtractGuidedSectionDecode 0000000000014834 f   DxeExtractGuidedSectionLib:DxeExtractGuidedSectionLib.obj
+ 0001:00014688       FillBuf                    0000000000014948 f   BaseUefiDecompressLib:BaseUefiDecompressLib.obj
+ 0001:00014730       MakeTable                  00000000000149f0 f   BaseUefiDecompressLib:BaseUefiDecompressLib.obj
+ 0001:00014a30       ReadPTLen                  0000000000014cf0 f   BaseUefiDecompressLib:BaseUefiDecompressLib.obj
+ 0001:00014bd4       ReadCLen                   0000000000014e94 f   BaseUefiDecompressLib:BaseUefiDecompressLib.obj
+ 0001:00014d9c       Decode                     000000000001505c f   BaseUefiDecompressLib:BaseUefiDecompressLib.obj
+ 0001:00014fb0       UefiDecompressGetInfo      0000000000015270 f   BaseUefiDecompressLib:BaseUefiDecompressLib.obj
+ 0001:000150a4       UefiDecompress             0000000000015364 f   BaseUefiDecompressLib:BaseUefiDecompressLib.obj
+ 0001:000151d0       PeCoffLoaderGetPeHeader    0000000000015490 f   BasePeCoffLib:BasePeCoff.obj
+ 0001:000156cc       PeCoffLoaderGetImageInfo   000000000001598c f   BasePeCoffLib:BasePeCoff.obj
+ 0001:00015a3c       PeCoffLoaderRelocateImage  0000000000015cfc f   BasePeCoffLib:BasePeCoff.obj
+ 0001:00015d3c       PeCoffLoaderLoadImage      0000000000015ffc f   BasePeCoffLib:BasePeCoff.obj
+ 0001:00016314       PeCoffLoaderImageReadFromMemory 00000000000165d4 f   BasePeCoffLib:BasePeCoff.obj
+ 0001:000163b4       InternalReportStatusCode   0000000000016674 f   DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0001:0001646c       ReportStatusCodeWithExtendedData 000000000001672c f   DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0001:0001652c       GetFileBufferByFilePath    00000000000167ec f   DxeServicesLib:DxeServicesLib.obj
+ 0001:00016ac4       InternalConstructorWorker  0000000000016d84 f   DxeDebugAgentLib:DxeDebugAgentLib.obj
+ 0001:00016c78       GetMailboxPointer          0000000000016f38 f   DxeDebugAgentLib:DxeDebugAgentLib.obj
+ 0001:00016cb8       SetupDebugAgentEnvironment 0000000000016f78 f   DxeDebugAgentLib:DxeDebugAgentLib.obj
+ 0001:00016f24       InitializeDebugTimer       00000000000171e4 f   DxeDebugAgentLib:DebugTimer.obj
+ 0001:00017110       SaveAndSetDebugTimerInterrupt 00000000000173d0 f   DxeDebugAgentLib:DebugTimer.obj
+ 0001:0001718c       IsDebugTimerTimeout        000000000001744c f   DxeDebugAgentLib:DebugTimer.obj
+ 0001:000171e0       CalculateCrc16             00000000000174a0 f   DxeDebugAgentLib:DebugAgent.obj
+ 0001:00017244       TriggerSoftInterrupt       0000000000017504 f   DxeDebugAgentLib:DebugAgent.obj
+ 0001:00017298       VerifyMailboxChecksum      0000000000017558 f   DxeDebugAgentLib:DebugAgent.obj
+ 0001:0001731c       UpdateMailboxContent       00000000000175dc f   DxeDebugAgentLib:DebugAgent.obj
+ 0001:00017510       DebugAgentReadBuffer       00000000000177d0 f   DxeDebugAgentLib:DebugAgent.obj
+ 0001:00017630       SetDebugFlag               00000000000178f0 f   DxeDebugAgentLib:DebugAgent.obj
+ 0001:000176a0       GetDebugFlag               0000000000017960 f   DxeDebugAgentLib:DebugAgent.obj
+ 0001:000176e0       SendDebugMsgPacket         00000000000179a0 f   DxeDebugAgentLib:DebugAgent.obj
+ 0001:00017758       DebugAgentMsgPrint         0000000000017a18 f   DxeDebugAgentLib:DebugAgent.obj
+ 0001:000177d4       DebugAgentDataMsgPrint     0000000000017a94 f   DxeDebugAgentLib:DebugAgent.obj
+ 0001:000178cc       ReadRemainingBreakPacket   0000000000017b8c f   DxeDebugAgentLib:DebugAgent.obj
+ 0001:000179cc       ArchReadFxStatOffset       0000000000017c8c f   DxeDebugAgentLib:DebugAgent.obj
+ 0001:00017ac4       SendPacketWithoutData      0000000000017d84 f   DxeDebugAgentLib:DebugAgent.obj
+ 0001:00017b34       SendAckPacket              0000000000017df4 f   DxeDebugAgentLib:DebugAgent.obj
+ 0001:00017bac       DecompressDataInPlace      0000000000017e6c f   DxeDebugAgentLib:DebugAgent.obj
+ 0001:00017c84       ReceivePacket              0000000000017f44 f   DxeDebugAgentLib:DebugAgent.obj
+ 0001:00017e04       SendCommandAndWaitForAckOK 00000000000180c4 f   DxeDebugAgentLib:DebugAgent.obj
+ 0001:00017f70       GetBreakCause              0000000000018230 f   DxeDebugAgentLib:DebugAgent.obj
+ 0001:00018044       CopyMemByWidth             0000000000018304 f   DxeDebugAgentLib:DebugAgent.obj
+ 0001:00018124       CompressData               00000000000183e4 f   DxeDebugAgentLib:DebugAgent.obj
+ 0001:00018274       ReadMemoryAndSendResponsePacket 0000000000018534 f   DxeDebugAgentLib:DebugAgent.obj
+ 0001:0001848c       AttachHost                 000000000001874c f   DxeDebugAgentLib:DebugAgent.obj
+ 0001:00018580       SendBreakPacketToHost      0000000000018840 f   DxeDebugAgentLib:DebugAgent.obj
+ 0001:00018614       CommandCommunication       00000000000188d4 f   DxeDebugAgentLib:DebugAgent.obj
+ 0001:00019284       InterruptProcess           0000000000019544 f   DxeDebugAgentLib:DebugAgent.obj
+ 0001:0001984c       AcquireMpSpinLock          0000000000019b0c f   DxeDebugAgentLib:DebugMp.obj
+ 0001:00019878       HaltOtherProcessors        0000000000019b38 f   DxeDebugAgentLib:DebugMp.obj
+ 0001:000198e0       GetProcessorIndex          0000000000019ba0 f   DxeDebugAgentLib:DebugMp.obj
+ 0001:00019968       DebugAgentIsBsp            0000000000019c28 f   DxeDebugAgentLib:DebugMp.obj
+ 0001:000199cc       SetCpuStopFlagByIndex      0000000000019c8c f   DxeDebugAgentLib:DebugMp.obj
+ 0001:00019a30       SetCpuBreakFlagByIndex     0000000000019cf0 f   DxeDebugAgentLib:DebugMp.obj
+ 0001:00019a94       SetDebugViewPoint          0000000000019d54 f   DxeDebugAgentLib:DebugMp.obj
+ 0001:00019acc       FindNextPendingBreakCpu    0000000000019d8c f   DxeDebugAgentLib:DebugMp.obj
+ 0001:00019b14       SerialReset                0000000000019dd4 f   DxeDebugAgentLib:SerialIo.obj
+ 0001:00019b28       SerialSetAttributes        0000000000019de8 f   DxeDebugAgentLib:SerialIo.obj
+ 0001:00019b48       SerialSetControl           0000000000019e08 f   DxeDebugAgentLib:SerialIo.obj
+ 0001:00019b64       SerialGetControl           0000000000019e24 f   DxeDebugAgentLib:SerialIo.obj
+ 0001:00019be4       SerialWrite                0000000000019ea4 f   DxeDebugAgentLib:SerialIo.obj
+ 0001:00019c9c       SerialRead                 0000000000019f5c f   DxeDebugAgentLib:SerialIo.obj
+ 0001:00019e78       DebugReadBreakFromDebugPort 000000000001a138 f   DxeDebugAgentLib:SerialIo.obj
+ 0001:00019f68       CommonExceptionHandler     000000000001a228 f   DxeCpuExceptionHandlerLib:DxeException.obj
+ 0001:00019f70       InitializeCpuExceptionHandlers 000000000001a230 f   DxeCpuExceptionHandlerLib:DxeException.obj
+ 0001:0001a090       CommonExceptionHandlerWorker 000000000001a350 f   DxeCpuExceptionHandlerLib:PeiDxeSmmCpuException.obj
+ 0001:0001a344       UpdateIdtTable             000000000001a604 f   DxeCpuExceptionHandlerLib:PeiDxeSmmCpuException.obj
+ 0001:0001a464       DumpCpuContext             000000000001a724 f   DxeCpuExceptionHandlerLib:ArchExceptionHandler.obj
+ 0001:0001a748       InternalPrintMessage       000000000001aa08 f   DxeCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0001:0001a7c8       DumpModuleImageInfo        000000000001aa88 f   DxeCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0001:0001a878       LzmaGuidedSectionGetInfo   000000000001ab38 f   LzmaDecompressLib:GuidedSectionExtraction.obj
+ 0001:0001a9a4       LzmaGuidedSectionExtraction 000000000001ac64 f   LzmaDecompressLib:GuidedSectionExtraction.obj
+ 0001:0001aaa4       SzAlloc                    000000000001ad64 f   LzmaDecompressLib:LzmaDecompress.obj
+ 0001:0001aae8       LzmaUefiDecompressGetInfo  000000000001ada8 f   LzmaDecompressLib:LzmaDecompress.obj
+ 0001:0001ab68       LzmaUefiDecompress         000000000001ae28 f   LzmaDecompressLib:LzmaDecompress.obj
+ 0001:0001bf08       LzmaDec_DecodeToDic        000000000001c1c8 f   LzmaDecompressLib:LzmaDec.obj
+ 0001:0001c1d8       LzmaProps_Decode           000000000001c498 f   LzmaDecompressLib:LzmaDec.obj
+ 0001:0001c2d0       IoRead16                   000000000001c590 f   BaseIoLibIntrinsicSev:IoLibMsc.obj
+ 0001:0001c304       IoWrite16                  000000000001c5c4 f   BaseIoLibIntrinsicSev:IoLibMsc.obj
+ 0001:0001c348       IoRead32                   000000000001c608 f   BaseIoLibIntrinsicSev:IoLibMsc.obj
+ 0001:0001c37c       IoWrite32                  000000000001c63c f   BaseIoLibIntrinsicSev:IoLibMsc.obj
+ 0001:0001c3bc       MmioRead16                 000000000001c67c f   BaseIoLibIntrinsicSev:IoLib.obj
+ 0001:0001c3ec       MmioRead32                 000000000001c6ac f   BaseIoLibIntrinsicSev:IoLib.obj
+ 0001:0001c41c       MmioWrite32                000000000001c6dc f   BaseIoLibIntrinsicSev:IoLib.obj
+ 0001:0001c458       MmioRead64                 000000000001c718 f   BaseIoLibIntrinsicSev:IoLib.obj
+ 0001:0001c488       VmgExitHandleVc            000000000001c748 f   VmgExitLib:PeiDxeVmgExitVcHandler.obj
+ 0001:0001dd9c       InternalVmgExitHandleVc    000000000001e05c f   VmgExitLib:VmgExitVcHandler.obj
+ 0001:0001e04c       VmgExit                    000000000001e30c f   VmgExitLib:VmgExitLib.obj
+ 0001:0001e138       LocalApicBaseAddressMsrSupported 000000000001e3f8 f   BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0001:0001e174       GetLocalApicBaseAddress    000000000001e434 f   BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0001:0001e1b4       ReadLocalApicReg           000000000001e474 f   BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0001:0001e214       WriteLocalApicReg          000000000001e4d4 f   BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0001:0001e280       SendIpi                    000000000001e540 f   BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0001:0001e33c       GetApicMode                000000000001e5fc f   BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0001:0001e390       GetApicId                  000000000001e650 f   BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0001:0001e44c       GetApicTimerState          000000000001e70c f   BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0001:0001e4d4       SaveAndDisableInterrupts   000000000001e794 f   BaseLib:Cpu.obj
+ 0001:0001e4f8       SetMem16                   000000000001e7b8 f   BaseMemoryLibRepStr:SetMem16Wrapper.obj
+ 0001:0001e5c0       AsciiSPrint                000000000001e880 f   BasePrintLib:PrintLib.obj
+ 0001:0001e5ec       BasePrintLibFillBuffer     000000000001e8ac f   BasePrintLib:PrintLibInternal.obj
+ 0001:0001e620       BasePrintLibValueToString  000000000001e8e0 f   BasePrintLib:PrintLibInternal.obj
+ 0001:0001e670       BasePrintLibSPrintMarker   000000000001e930 f   BasePrintLib:PrintLibInternal.obj
+ 0001:0001f57c       BasePrintLibSPrint         000000000001f83c f   BasePrintLib:PrintLibInternal.obj
+ 0001:0001f5a0       PciOr8                     000000000001f860 f   BasePciLibCf8:PciLib.obj
+ 0001:0001f670       PciAndThenOr32             000000000001f930 f   BasePciLibCf8:PciLib.obj
+ 0001:0001f73c       InternalAcpiDelay          000000000001f9fc f   BaseAcpiTimerLib:AcpiTimerLib.obj
+ 0001:0001f7a0       MicroSecondDelay           000000000001fa60 f   BaseAcpiTimerLib:AcpiTimerLib.obj
+ 0001:0001f7d4       DebugPortWriteBuffer       000000000001fa94 f   DebugCommunicationLibSerialPort:DebugCommunicationLibSerialPort.obj
+ 0001:0001f810       ResetCold                  000000000001fad0 f   BaseResetSystemLib:ResetSystemLib.obj
+ 0001:0001f848       AcquireSpinLockOrFail      000000000001fb08 f   BaseSynchronizationLib:SynchronizationMsc.obj
+ 0001:0001f8c8       ReleaseSpinLock            000000000001fb88 f   BaseSynchronizationLib:SynchronizationMsc.obj
+ 0001:0001f938       InternalMemEncryptSevGetAddressRangeState 000000000001fbf8 f   DxeMemEncryptSevLib:VirtualMemory.obj
+ 0001:0001fb14       GetPcdProtocol             000000000001fdd4 f   DxePcdLib:DxePcdLib.obj
+ 0001:0001fba0       PciCf8Read8                000000000001fe60 f   BasePciCf8Lib:PciCf8Lib.obj
+ 0001:0001fc54       PciCf8Read16               000000000001ff14 f   BasePciCf8Lib:PciCf8Lib.obj
+ 0001:0001fcc8       PciCf8Read32               000000000001ff88 f   BasePciCf8Lib:PciCf8Lib.obj
+ 0002:00000000       ??_C@_0BC@FEDIJHFF@?$CI?$CIBOOLEAN?$CJ?$CI0?$DN?$DN1?$CJ?$CJ@ 0000000000020040     DxeCoreEntryPoint:DxeCoreEntryPoint.obj
+ 0002:00000020       ??_C@_0EC@DIMBIDEP@d?3?2edk2?2edk2?2MdePkg?2Library?2Dxe@ 0000000000020060     DxeCoreEntryPoint:DxeCoreEntryPoint.obj
+ 0002:00000068       ??_C@_07IDFNAKDE@DxeCore@  00000000000200a8     DxeCore:AutoGen.obj
+ 0002:00000070       ??_C@_0CE@IBFOBMLB@?6ASSERT_RETURN_ERROR?5?$CIStatus?5?$DN?5@ 00000000000200b0     DxeCore:AutoGen.obj
+ 0002:00000098       ??_C@_0CH@BBNBJKHK@?$CB?$CI?$CI?$CIINTN?$CJ?$CIRETURN_STATUS?$CJ?$CIStatus@ 00000000000200d8     DxeCore:AutoGen.obj
+ 0002:000000c0       ??_C@_0FK@BAMIDGML@d?3?2edk2?2edk2?2Build?2OvmfX64?2DEBU@ 0000000000020100     DxeCore:AutoGen.obj
+ 0002:00000120       ??_C@_0CB@DMEJJJHA@?6ASSERT_EFI_ERROR?5?$CIStatus?5?$DN?5?$CFr?$CJ@ 0000000000020160     DxeCore:AutoGen.obj
+ 0002:00000144       _gPcd_FixedAtBuild_PcdControlFlowEnforcementPropertyMask 0000000000020184     DxeCore:AutoGen.obj
+ 0002:00000148       ??_C@_0DF@FEPHOFDM@d?3?2edk2?2edk2?2MdeModulePkg?2Core?2@ 0000000000020188     DxeCore:DxeMain.obj
+ 0002:00000180       ??_C@_0BL@KFDMJOEH@gDxeCoreST?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000201c0     DxeCore:DxeMain.obj
+ 0002:000001a0       ??_C@_0BL@HCNOBOBP@gDxeCoreRT?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000201e0     DxeCore:DxeMain.obj
+ 0002:000001c0       ??_C@_07CPDFFGDM@DxeMain@  0000000000020200     DxeCore:DxeMain.obj
+ 0002:000001c8       ??_C@_0DA@FJJALMKI@?$CFa?3?5MemoryBaseAddress?$DN0x?$CFLx?5Mem@ 0000000000020208     DxeCore:DxeMain.obj
+ 0002:000001f8       ??_C@_0BP@JHIGBJBJ@HOBLIST?5address?5in?5DXE?5?$DN?50x?$CFp?6@ 0000000000020238     DxeCore:DxeMain.obj
+ 0002:00000218       ??_C@_0CK@DGGNNHLJ@Memory?5Allocation?50x?$CF08x?50x?$CF0lx@ 0000000000020258     DxeCore:DxeMain.obj
+ 0002:00000248       ??_C@_0CD@IPELIEAD@FV?5Hob?5?5?5?5?5?5?5?5?5?5?5?50x?$CF0lx?5?9?50x?$CF0@ 0000000000020288     DxeCore:DxeMain.obj
+ 0002:00000270       ??_C@_0CD@PNLGIPJF@FV2?5Hob?5?5?5?5?5?5?5?5?5?5?50x?$CF0lx?5?9?50x?$CF0@ 00000000000202b0     DxeCore:DxeMain.obj
+ 0002:00000298       ??_C@_0BL@HNODMJIL@?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?$CFg?5?9?5?$CFg?6@ 00000000000202d8     DxeCore:DxeMain.obj
+ 0002:000002b8       ??_C@_0DB@OOMKHHHJ@FV3?5Hob?5?5?5?5?5?5?5?5?5?5?50x?$CF0lx?5?9?50x?$CF0@ 00000000000202f8     DxeCore:DxeMain.obj
+ 0002:000002f0       ??_C@_0BL@JCKLHDNI@VectorInfo?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000020330     DxeCore:DxeMain.obj
+ 0002:00000310       ??_C@_09CLHHHE@NonExist?5@ 0000000000020350     DxeCore:Gcd.obj
+ 0002:00000320       ??_C@_09KKOLAJOM@Reserved?5@ 0000000000020360     DxeCore:Gcd.obj
+ 0002:00000330       ??_C@_09OGAEAMND@SystemMem@ 0000000000020370     DxeCore:Gcd.obj
+ 0002:00000340       ??_C@_09BHOLMENB@MMIO?5?5?5?5?5@ 0000000000020380     DxeCore:Gcd.obj
+ 0002:00000350       ??_C@_09OGNINBDN@PersisMem@ 0000000000020390     DxeCore:Gcd.obj
+ 0002:00000360       ??_C@_09JJJEBDHA@MoreRelia@ 00000000000203a0     DxeCore:Gcd.obj
+ 0002:00000370       ??_C@_09EFIBGIME@Unknown?5?5@ 00000000000203b0     DxeCore:Gcd.obj
+ 0002:00000380       ??_C@_08BABJFEMI@NonExist@ 00000000000203c0     DxeCore:Gcd.obj
+ 0002:00000390       ??_C@_08NKCLJDKG@Reserved@ 00000000000203d0     DxeCore:Gcd.obj
+ 0002:000003a0       ??_C@_08DCEEMMCJ@I?1O?5?5?5?5?5@ 00000000000203e0     DxeCore:Gcd.obj
+ 0002:000003b0       ??_C@_08GFFKJBOF@Unknown?5@ 00000000000203f0     DxeCore:Gcd.obj
+ 0002:000003c0       ??_C@_0BK@CPLEOACC@AnySearchBottomUp?5?5?5?5?5?5?5?5@ 0000000000020400     DxeCore:Gcd.obj
+ 0002:000003e0       ??_C@_0BK@NJMEKB@MaxAddressSearchBottomUp?5@ 0000000000020420     DxeCore:Gcd.obj
+ 0002:00000400       ??_C@_0BK@DEGJCJIH@AtAddress?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5@ 0000000000020440     DxeCore:Gcd.obj
+ 0002:00000420       ??_C@_0BK@OKALKAAN@AnySearchTopDown?5?5?5?5?5?5?5?5?5@ 0000000000020460     DxeCore:Gcd.obj
+ 0002:00000440       ??_C@_0BK@GHIGEAJF@MaxAddressSearchTopDown?5?5@ 0000000000020480     DxeCore:Gcd.obj
+ 0002:00000460       ??_C@_0BK@PEMENPCN@Unknown?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5@ 00000000000204a0     DxeCore:Gcd.obj
+ 0002:00000480       ??_C@_0CO@JMLEMKJG@Status?5?$DN?$DN?50?5?$CG?$CG?5MemorySpaceMap?5?$CB@ 00000000000204c0     DxeCore:Gcd.obj
+ 0002:000004b0       ??_C@_0CN@PJANHJML@d?3?2edk2?2edk2?2MdeModulePkg?2Core?2@ 00000000000204f0     DxeCore:Gcd.obj
+ 0002:000004e0       ??_C@_0CC@PDPAILAB@GCD?3Initial?5GCD?5Memory?5Space?5Ma@ 0000000000020520     DxeCore:Gcd.obj
+ 0002:00000510       ??_C@_0FA@NJMGIMOE@GCDMemType?5Range?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5@ 0000000000020550     DxeCore:Gcd.obj
+ 0002:00000560       ??_C@_0FA@IPOENJGI@?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?5?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN@ 00000000000205a0     DxeCore:Gcd.obj
+ 0002:000005b0       ??_C@_0CD@IGLICNPJ@?$CFa?5?5?$CF016lx?9?$CF016lx?5?$CF016lx?5?$CF016lx@ 00000000000205f0     DxeCore:Gcd.obj
+ 0002:000005d4       ??_C@_01EEMJAFIK@?6@       0000000000020614     DxeCore:Gcd.obj
+ 0002:000005d8       ??_C@_0CK@GPMPHKNK@Status?5?$DN?$DN?50?5?$CG?$CG?5IoSpaceMap?5?$CB?$DN?5?$CI?$CI@ 0000000000020618     DxeCore:Gcd.obj
+ 0002:00000608       ??_C@_0BP@JBOEBKAB@GCD?3Initial?5GCD?5I?1O?5Space?5Map?6@ 0000000000020648     DxeCore:Gcd.obj
+ 0002:00000628       ??_C@_0CO@EOOAKPNG@GCDIoType?5?5Range?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5@ 0000000000020668     DxeCore:Gcd.obj
+ 0002:00000658       ??_C@_0CO@HLPKCBGC@?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?5?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN@ 0000000000020698     DxeCore:Gcd.obj
+ 0002:00000688       ??_C@_0BG@GLMAILEI@?$CFa?5?5?5?$CF016lx?9?$CF016lx?$CFc?6@ 00000000000206c8     DxeCore:Gcd.obj
+ 0002:000006a0       ??_C@_0EF@EKFPBING@?$CI?$CIAttributes?5?$CG?50x00000080?$CJ?5?$DN?$DN?50@ 00000000000206e0     DxeCore:Gcd.obj
+ 0002:000006f0       ??_C@_0EF@BHOJOGHC@?$CI?$CIAttributes?5?$CG?50x00000100?$CJ?5?$DN?$DN?50@ 0000000000020730     DxeCore:Gcd.obj
+ 0002:00000740       ??_C@_0EF@FEKALAGL@?$CI?$CIAttributes?5?$CG?50x00000200?$CJ?5?$DN?$DN?50@ 0000000000020780     DxeCore:Gcd.obj
+ 0002:00000790       ??_C@_0EF@JFAOEMFI@?$CI?$CIAttributes?5?$CG?50x00040000?$CJ?5?$DN?$DN?50@ 00000000000207d0     DxeCore:Gcd.obj
+ 0002:000007e0       ??_C@_0EF@NMKLCIFM@?$CI?$CIAttributes?5?$CG?50x00800000?$CJ?5?$DN?$DN?50@ 0000000000020820     DxeCore:Gcd.obj
+ 0002:00000828       ??_C@_0M@OJOIOPDA@Length?5?$CB?$DN?50@ 0000000000020868     DxeCore:Gcd.obj
+ 0002:00000838       ??_C@_0BM@OMDEEKNK@BottomEntry?9?$DOSignature?5?$DN?$DN?50@ 0000000000020878     DxeCore:Gcd.obj
+ 0002:00000858       ??_C@_0BJ@EIBDJLA@TopEntry?9?$DOSignature?5?$DN?$DN?50@ 0000000000020898     DxeCore:Gcd.obj
+ 0002:00000878       ??_C@_0BF@NDBIKIKC@CR?5has?5Bad?5Signature@ 00000000000208b8     DxeCore:Gcd.obj
+ 0002:00000890       ??_C@_0P@IEHMCOMK@?5?5Status?5?$DN?5?$CFr?6@ 00000000000208d0     DxeCore:Gcd.obj
+ 0002:000008a0       ??_C@_0DF@KHIFOALB@StartLink?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?5?$CG?$CG?5En@ 00000000000208e0     DxeCore:Gcd.obj
+ 0002:000008d8       ??_C@_0DI@DJEDOKDG@TopEntry?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?5?$CG?$CG?5Bot@ 0000000000020918     DxeCore:Gcd.obj
+ 0002:00000910       ??_C@_0O@CCLKPNAN@?5?5Status?5?$DN?5?$CFr@ 0000000000020950     DxeCore:Gcd.obj
+ 0002:00000920       ??_C@_0BJ@DDJOAKJB@?5?5?$CIBaseAddress?5?$DN?5?$CF016lx?$CJ@ 0000000000020960     DxeCore:Gcd.obj
+ 0002:00000940       ??_C@_0CP@CEAOLIMI@GCD?3AddMemorySpace?$CIBase?$DN?$CF016lx?0@ 0000000000020980     DxeCore:Gcd.obj
+ 0002:00000970       ??_C@_0BI@GDHAEIMH@?5?5GcdMemoryType?5?5?5?$DN?5?$CFa?6@ 00000000000209b0     DxeCore:Gcd.obj
+ 0002:00000988       ??_C@_0BM@PIDCDDFH@?5?5Capabilities?5?5?5?5?$DN?5?$CF016lx?6@ 00000000000209c8     DxeCore:Gcd.obj
+ 0002:000009a8       ??_C@_0DE@OCFOPPEM@GCD?3AllocateMemorySpace?$CIBase?$DN?$CF0@ 00000000000209e8     DxeCore:Gcd.obj
+ 0002:000009e0       ??_C@_0DE@CDAAHKFC@GCD?3AllocateMemorySpace?$CIBase?$DN?$DMN@ 0000000000020a20     DxeCore:Gcd.obj
+ 0002:00000a18       ??_C@_0BI@PGPKBGLH@?5?5GcdAllocateType?5?$DN?5?$CFa?6@ 0000000000020a58     DxeCore:Gcd.obj
+ 0002:00000a30       ??_C@_0BM@OMGGPGCO@?5?5Alignment?5?5?5?5?5?5?5?$DN?5?$CF016lx?6@ 0000000000020a70     DxeCore:Gcd.obj
+ 0002:00000a50       ??_C@_0BI@GIOHJBHB@?5?5ImageHandle?5?5?5?5?5?$DN?5?$CFp?6@ 0000000000020a90     DxeCore:Gcd.obj
+ 0002:00000a68       ??_C@_0BI@DEAPEPHO@?5?5DeviceHandle?5?5?5?5?$DN?5?$CFp?6@ 0000000000020aa8     DxeCore:Gcd.obj
+ 0002:00000a80       ??_C@_0DA@HMHHABJF@GCD?3FreeMemorySpace?$CIBase?$DN?$CF016lx@ 0000000000020ac0     DxeCore:Gcd.obj
+ 0002:00000ab0       ??_C@_0DC@MCJPLFAC@GCD?3RemoveMemorySpace?$CIBase?$DN?$CF016@ 0000000000020af0     DxeCore:Gcd.obj
+ 0002:00000ae8       ??_C@_0DJ@BKEGNNKB@GCD?3SetMemorySpaceAttributes?$CIBa@ 0000000000020b28     DxeCore:Gcd.obj
+ 0002:00000b28       ??_C@_0BI@PMFKMIML@?5?5Attributes?5?5?$DN?5?$CF016lx?6@ 0000000000020b68     DxeCore:Gcd.obj
+ 0002:00000b40       ??_C@_0DP@KFHGIBOG@GCD?3CoreSetMemorySpaceCapabilit@ 0000000000020b80     DxeCore:Gcd.obj
+ 0002:00000b80       ??_C@_0BK@LLICKKMF@?5?5Capabilities?5?5?$DN?5?$CF016lx?6@ 0000000000020bc0     DxeCore:Gcd.obj
+ 0002:00000ba0       ??_C@_0CL@IHLLEJAB@GCD?3AddIoSpace?$CIBase?$DN?$CF016lx?0Leng@ 0000000000020be0     DxeCore:Gcd.obj
+ 0002:00000bd0       ??_C@_0BF@HMLBENFG@?5?5GcdIoType?5?5?5?5?$DN?5?$CFa?6@ 0000000000020c10     DxeCore:Gcd.obj
+ 0002:00000be8       ??_C@_0DA@IIHELIHJ@GCD?3AllocateIoSpace?$CIBase?$DN?$CF016lx@ 0000000000020c28     DxeCore:Gcd.obj
+ 0002:00000c18       ??_C@_0DA@EJCKDNGH@GCD?3AllocateIoSpace?$CIBase?$DN?$DMNULL?$DO@ 0000000000020c58     DxeCore:Gcd.obj
+ 0002:00000c48       ??_C@_0BI@EKBMIDBF@?5?5GcdIoType?5?5?5?5?5?5?5?$DN?5?$CFa?6@ 0000000000020c88     DxeCore:Gcd.obj
+ 0002:00000c60       ??_C@_0CM@FKMOMCIM@GCD?3FreeIoSpace?$CIBase?$DN?$CF016lx?0Len@ 0000000000020ca0     DxeCore:Gcd.obj
+ 0002:00000c90       ??_C@_0CO@EMFMKEDD@GCD?3RemoveIoSpace?$CIBase?$DN?$CF016lx?0L@ 0000000000020cd0     DxeCore:Gcd.obj
+ 0002:00000cc0       ??_C@_0DK@DDONJNGD@?$CI?$CI?$CK?$CIEFI_HOB_GENERIC_HEADER?5?$CK?$CK?$CJ?$CG@ 0000000000020d00     DxeCore:Gcd.obj
+ 0002:00000cfc       ??_C@_05JDGHEPJG@Found@    0000000000020d3c     DxeCore:Gcd.obj
+ 0002:00000d08       ??_C@_0BP@GPENAPDN@CoreInitializeMemoryServices?3?6@ 0000000000020d48     DxeCore:Gcd.obj
+ 0002:00000d30       ??_C@_0EG@HIPBHLMB@?5?5BaseAddress?5?9?50x?$CFlx?5Length?5?9?5@ 0000000000020d70     DxeCore:Gcd.obj
+ 0002:00000d78       ??_C@_0CC@NHBJGGMC@Length?5?$DO?$DN?5MinimalMemorySizeNeed@ 0000000000020db8     DxeCore:Gcd.obj
+ 0002:00000da0       ??_C@_0BH@LILALLBE@CpuHob?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000020de0     DxeCore:Gcd.obj
+ 0002:00000db8       ??_C@_0BG@LAOOPKAA@Entry?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000020df8     DxeCore:Gcd.obj
+ 0002:00000dd0       ??_C@_0HJ@FLJHFJCH@?$CIDescriptor?4GcdMemoryType?5?$DN?$DN?5Ef@ 0000000000020e10     DxeCore:Gcd.obj
+ 0002:00000e50       ??_C@_0M@JADJBBKG@Status?5?$DN?$DN?50@ 0000000000020e90     DxeCore:Gcd.obj
+ 0002:00000e60       ??_C@_0BL@KMGNLCAF@NewHobList?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000020ea0     DxeCore:Gcd.obj
+ 0002:00000e80       mGcdMemoryTypeNames        0000000000020ec0     DxeCore:Gcd.obj
+ 0002:00000eb8       mGcdAllocationTypeNames    0000000000020ef8     DxeCore:Gcd.obj
+ 0002:00000ef0       mGcdIoTypeNames            0000000000020f30     DxeCore:Gcd.obj
+ 0002:00000f10       ??_C@_08EDKKPLCC@Security@ 0000000000020f50     DxeCore:DxeProtocolNotify.obj
+ 0002:00000f1c       ??_C@_03PMGKFAJB@CPU@      0000000000020f5c     DxeCore:DxeProtocolNotify.obj
+ 0002:00000f20       ??_C@_09NGEINFHN@Metronome@ 0000000000020f60     DxeCore:DxeProtocolNotify.obj
+ 0002:00000f2c       ??_C@_05NHFJDMOA@Timer@    0000000000020f6c     DxeCore:DxeProtocolNotify.obj
+ 0002:00000f34       ??_C@_03KEGKPJJM@Bds@      0000000000020f74     DxeCore:DxeProtocolNotify.obj
+ 0002:00000f38       ??_C@_0P@DENBLOAF@Watchdog?5Timer@ 0000000000020f78     DxeCore:DxeProtocolNotify.obj
+ 0002:00000f48       ??_C@_07BDIJHMJM@Runtime@  0000000000020f88     DxeCore:DxeProtocolNotify.obj
+ 0002:00000f50       ??_C@_08DMMJCAML@Variable@ 0000000000020f90     DxeCore:DxeProtocolNotify.obj
+ 0002:00000f60       ??_C@_0P@MMKCCJJA@Variable?5Write@ 0000000000020fa0     DxeCore:DxeProtocolNotify.obj
+ 0002:00000f70       ??_C@_07KAPIMIBP@Capsule@  0000000000020fb0     DxeCore:DxeProtocolNotify.obj
+ 0002:00000f78       ??_C@_0BC@PDACIGNG@Monotonic?5Counter@ 0000000000020fb8     DxeCore:DxeProtocolNotify.obj
+ 0002:00000f8c       ??_C@_05CCGMLFNG@Reset@    0000000000020fcc     DxeCore:DxeProtocolNotify.obj
+ 0002:00000f98       ??_C@_0BA@NFHCMGKF@Real?5Time?5Clock@ 0000000000020fd8     DxeCore:DxeProtocolNotify.obj
+ 0002:00000fa8       ??_C@_00CNPNBAHC@@         0000000000020fe8     DxeCore:DxeProtocolNotify.obj
+ 0002:00000fb0       ??_C@_0DP@EAMIMEJA@d?3?2edk2?2edk2?2MdeModulePkg?2Core?2@ 0000000000020ff0     DxeCore:DxeProtocolNotify.obj
+ 0002:00000ff0       ??_C@_0CB@PCGLEABO@?6?$CFa?5Arch?5Protocol?5not?5present?$CB?$CB@ 0000000000021030     DxeCore:DxeProtocolNotify.obj
+ 0002:00001020       mMissingProtocols          0000000000021060     DxeCore:DxeProtocolNotify.obj
+ 0002:00001100       ??_C@_0DB@CHMIKOJP@d?3?2edk2?2edk2?2MdeModulePkg?2Core?2@ 0000000000021140     DxeCore:Handle.obj
+ 0002:00001138       ??_C@_0CC@CBAFNOJA@?$CGgProtocolDatabaseLock?5not?5lock@ 0000000000021178     DxeCore:Handle.obj
+ 0002:00001160       ??_C@_0CB@FGNELNDC@InstallProtocolInterface?3?5?$CFg?5?$CFp@ 00000000000211a0     DxeCore:Handle.obj
+ 0002:00001188       ??_C@_0DL@JMLDNLDN@InstallProtocolInterface?3?5input@ 00000000000211c8     DxeCore:Handle.obj
+ 0002:000011d0       ??_C@_0EI@LMEPGOGI@CoreFindProtocolInterface?5?$CIHand@ 0000000000021210     DxeCore:Handle.obj
+ 0002:00001218       ??_C@_0DA@DJMJHNBL@InstallProtocolInterface?3?5?$CFg?5?$CFp@ 0000000000021258     DxeCore:Handle.obj
+ 0002:00001248       ??_C@_0BF@IEAGJIOD@Prot?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000021288     DxeCore:Handle.obj
+ 0002:00001260       ??_C@_0CK@BNHBJELF@Count?5?$DN?$DN?5ProtocolInterface?9?$DOOpe@ 00000000000212a0     DxeCore:Handle.obj
+ 0002:00001290       ??_C@_0BP@HJGHBKEE@HandleFilePath?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000212d0     DxeCore:DriverSupport.obj
+ 0002:000012b0       ??_C@_0DI@PJGCCIKN@d?3?2edk2?2edk2?2MdeModulePkg?2Core?2@ 00000000000212f0     DxeCore:DriverSupport.obj
+ 0002:000012e8       ??_C@_0BN@JGHNALBE@TempFilePath?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000021328     DxeCore:DriverSupport.obj
+ 0002:00001308       ??_C@_0BF@DKMPHDPK@?$CIStart?5?$CG?50xFFF?$CJ?5?$DN?$DN?50@ 0000000000021348     DxeCore:Page.obj
+ 0002:00001320       ??_C@_0CO@JNMLAIIJ@d?3?2edk2?2edk2?2MdeModulePkg?2Core?2@ 0000000000021360     DxeCore:Page.obj
+ 0002:00001350       ??_C@_0M@DCLLLGMI@End?5?$DO?5Start@ 0000000000021390     DxeCore:Page.obj
+ 0002:00001360       ??_C@_0BI@ONJDKCMB@?$CGgMemoryLock?5not?5locked@ 00000000000213a0     DxeCore:Page.obj
+ 0002:00001378       ??_C@_0BJ@PAOKAOFD@AddRange?3?5?$CFlx?9?$CFlx?5to?5?$CFd?6@ 00000000000213b8     DxeCore:Page.obj
+ 0002:00001398       ??_C@_0O@LJAPMOCN@mMapDepth?5?$DM?56@ 00000000000213d8     DxeCore:Page.obj
+ 0002:000013a8       ??_C@_05HKHPEFOF@Entry@    00000000000213e8     DxeCore:Page.obj
+ 0002:000013b0       ??_C@_0BN@HEIGHNIJ@Promote?5the?5memory?5resource?6@ 00000000000213f0     DxeCore:Page.obj
+ 0002:000013d0       ??_C@_0O@IJLJOHG@NumberOfPages@ 0000000000021410     DxeCore:Page.obj
+ 0002:000013e0       ??_C@_0FB@EAPGANKD@?$CIChangingType?5?$DN?$DN?5?$CI?$CIBOOLEAN?$CJ?$CI0?$DN?$DN@ 0000000000021420     DxeCore:Page.obj
+ 0002:00001438       ??_C@_0CO@EJFJFKFK@ConvertPages?3?5failed?5to?5find?5ra@ 0000000000021478     DxeCore:Page.obj
+ 0002:00001468       ??_C@_0DH@BHHHBMDC@ConvertPages?3?5range?5?$CFlx?5?9?5?$CFlx?5c@ 00000000000214a8     DxeCore:Page.obj
+ 0002:000014a0       ??_C@_0CC@IIKOLMNI@ConvertRange?3?5?$CFlx?9?$CFlx?5to?5type?5?$CF@ 00000000000214e0     DxeCore:Page.obj
+ 0002:000014c8       ??_C@_0CD@PGFFIJEA@ConvertRange?3?5?$CFlx?9?$CFlx?5to?5attr?5?$CF@ 0000000000021508     DxeCore:Page.obj
+ 0002:000014f0       ??_C@_0CK@FPPGCKMP@ConvertPages?3?5Incompatible?5memo@ 0000000000021530     DxeCore:Page.obj
+ 0002:00001520       ??_C@_0CD@FCKMKELM@the?5pages?5to?5free?5have?5been?5fre@ 0000000000021560     DxeCore:Page.obj
+ 0002:00001548       ??_C@_0CL@CLDEPKJP@the?5pages?5to?5allocate?5have?5been@ 0000000000021588     DxeCore:Page.obj
+ 0002:00001578       ??_C@_0BK@OGIMILJG@Entry?9?$DOStart?5?$DM?5Entry?9?$DOEnd@ 00000000000215b8     DxeCore:Page.obj
+ 0002:00001598       ??_C@_0BJ@MBGAPCJG@Entry?9?$DOVirtualStart?5?$DN?$DN?50@ 00000000000215d8     DxeCore:Page.obj
+ 0002:000015b8       ??_C@_0CM@DHDJDGHH@?$CIMergeGcdMapEntry?4BaseAddress?5?$CG@ 00000000000215f8     DxeCore:Page.obj
+ 0002:000015f0       ??_C@_0FA@CAHBMJDL@?$CI?$CIMergeGcdMapEntry?4EndAddress?5?9@ 0000000000021630     DxeCore:Page.obj
+ 0002:00001640       ??_C@_0DA@DGIDMPCM@AllocatePoolPages?3?5failed?5to?5al@ 0000000000021680     DxeCore:Page.obj
+ 0002:00001670       ??_C@_0CE@NFNPJFE@Entry?9?$DOType?5?$CB?$DN?5EfiACPIReclaimMe@ 00000000000216b0     DxeCore:Page.obj
+ 0002:00001698       ??_C@_0CA@DFKEOJOC@Entry?9?$DOType?5?$CB?$DN?5EfiACPIMemoryNVS@ 00000000000216d8     DxeCore:Page.obj
+ 0002:000016c0       ??_C@_0EI@MMBIIJHJ@ExitBootServices?3?5A?5RUNTIME?5mem@ 0000000000021700     DxeCore:Page.obj
+ 0002:00001708       ??_C@_19EDCBDMLJ@?$AAI?$AAA?$AA3?$AA2@ 0000000000021748     DxeCore:Image.obj
+ 0002:00001718       ??_C@_19DGIHPCNG@?$AAI?$AAA?$AA6?$AA4@ 0000000000021758     DxeCore:Image.obj
+ 0002:00001728       ??_C@_17LBHEEDKD@?$AAX?$AA6?$AA4@ 0000000000021768     DxeCore:Image.obj
+ 0002:00001730       ??_C@_17FHNCMLPJ@?$AAA?$AAR?$AAM@ 0000000000021770     DxeCore:Image.obj
+ 0002:00001738       ??_C@_1BA@LNDLOPGI@?$AAA?$AAA?$AAR?$AAC?$AAH?$AA6?$AA4@ 0000000000021778     DxeCore:Image.obj
+ 0002:00001748       ??_C@_1BE@BGMELJBK@?$AA?$DM?$AAU?$AAn?$AAk?$AAn?$AAo?$AAw?$AAn?$AA?$DO@ 0000000000021788     DxeCore:Image.obj
+ 0002:00001760       ??_C@_0DB@JCKHHGDB@d?3?2edk2?2edk2?2MdeModulePkg?2Core?2@ 00000000000217a0     DxeCore:Image.obj
+ 0002:00001798       ??_C@_0BP@LNDCHNN@DxeCoreHob?4Raw?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000217d8     DxeCore:Image.obj
+ 0002:000017c0       ??_C@_0EK@DBFEBAJP@FHand?9?$DOSignature?5?$DN?$DN?5?$CI?$CI?$CI?8i?8?$CJ?5?$HM?5?$CI@ 0000000000021800     DxeCore:Image.obj
+ 0002:00001810       ??_C@_0DC@EJDBEBLN@Image?5type?5?$CFs?5can?8t?5be?5loaded?5o@ 0000000000021850     DxeCore:Image.obj
+ 0002:00001848       ??_C@_0CM@DHEJGNGM@Loading?5driver?5at?50x?$CF11p?5EntryP@ 0000000000021888     DxeCore:Image.obj
+ 0002:00001874       ??_C@_02ECNOPIAA@?$CFa@    00000000000218b4     DxeCore:Image.obj
+ 0002:00001878       ??_C@_0CM@OGKPDMHB@CoreLoadedImageInfo?3?5Not?5an?5Ima@ 00000000000218b8     DxeCore:Image.obj
+ 0002:000018a8       ??_C@_0BE@LIDLKJIC@gEfiCurrentTpl?5?$DM?516@ 00000000000218e8     DxeCore:Image.obj
+ 0002:000018c0       ??_C@_0DA@PNFPMGEN@LoadImageEx?3?5Parent?5handle?5not?5@ 0000000000021900     DxeCore:Image.obj
+ 0002:000018f0       ??_C@_0BK@CFBPOBLI@gSecurity?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000021930     DxeCore:Image.obj
+ 0002:00001910       ??_C@_0CA@LMDJIDC@Image?5type?5?$CFs?5can?8t?5be?5started?5@ 0000000000021950     DxeCore:Image.obj
+ 0002:00001930       ??_C@_0BE@PMMMCCHM@on?5?$CFs?5UEFI?5system?4?6@ 0000000000021970     DxeCore:Image.obj
+ 0002:00001950       ??_C@_0EG@GLDEAECD@CoreLoadPeImage?3?5Failed?5to?5regi@ 0000000000021990     DxeCore:Image.obj
+ 0002:00001998       ??_C@_0CH@BJEHJFJH@Error?3?5Image?5at?5?$CF11p?5start?5fail@ 00000000000219d8     DxeCore:Image.obj
+ 0002:000019c0       ??_C@_0BN@KFGHOKFH@Image?9?$DOTpl?5?$DN?$DN?5gEfiCurrentTpl@ 0000000000021a00     DxeCore:Image.obj
+ 0002:000019e0       ??_C@_0CJ@DLIJNNII@StartImage?3?5ExitDataSize?5?$CFd?0?5Ex@ 0000000000021a20     DxeCore:Image.obj
+ 0002:00001a0c       ??_C@_06KDJDKIDM@?5?$CI?$CFhs?$CJ@ 0000000000021a4c     DxeCore:Image.obj
+ 0002:00001a18       ??_C@_0CD@CIGCNLDL@Exit?3?5Image?5is?5not?5exitable?5ima@ 0000000000021a58     DxeCore:Image.obj
+ 0002:00001a40       ??_C@_0DL@JEBPBIHD@d?3?2edk2?2edk2?2MdeModulePkg?2Core?2@ 0000000000021a80     DxeCore:MemoryProtection.obj
+ 0002:00001a80       ??_C@_0DP@JAPMDJLG@SetUefiImageMemoryAttributes?5?9?5@ 0000000000021ac0     DxeCore:MemoryProtection.obj
+ 0002:00001ac0       ??_C@_0BF@BBBPPCMC@gCpu?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000021b00     DxeCore:MemoryProtection.obj
+ 0002:00001ad8       ??_C@_0DH@OJNENLBH@CurrentBase?5?$DM?$DN?5ImageRecordCodeS@ 0000000000021b18     DxeCore:MemoryProtection.obj
+ 0002:00001b10       ??_C@_0BI@DPJDPFEL@CurrentBase?5?$DM?$DN?5ImageEnd@ 0000000000021b50     DxeCore:MemoryProtection.obj
+ 0002:00001b28       ??_C@_0BP@FGDIJMOP@ProtectUefiImageCommon?5?9?50x?$CFx?6@ 0000000000021b68     DxeCore:MemoryProtection.obj
+ 0002:00001b48       ??_C@_0BJ@NHGBELDF@?5?5?9?50x?$CF016lx?5?9?50x?$CF016lx?6@ 0000000000021b88     DxeCore:MemoryProtection.obj
+ 0002:00001b68       ??_C@_0O@GJKANIFG@?5?5Image?5?9?5?$CFa?6@ 0000000000021ba8     DxeCore:MemoryProtection.obj
+ 0002:00001b78       ??_C@_0CE@KGIOJPEE@Hdr?4Pe32?9?$DOSignature?5invalid?5?9?50@ 0000000000021bb8     DxeCore:MemoryProtection.obj
+ 0002:00001ba0       ??_C@_0FD@JNAIFBND@?$CB?$CB?$CB?$CB?$CB?$CB?$CB?$CB?5?5ProtectUefiImageCommo@ 0000000000021be0     DxeCore:MemoryProtection.obj
+ 0002:00001bf8       ??_C@_0CA@NBAFADJB@?$CB?$CB?$CB?$CB?$CB?$CB?$CB?$CB?5?5Image?5?9?5?$CFa?5?5?$CB?$CB?$CB?$CB?$CB?$CB?$CB?$CB?6@ 0000000000021c38     DxeCore:MemoryProtection.obj
+ 0002:00001c18       ??_C@_0CA@GPIAGBEH@?5?5Section?5?9?5?8?$CFc?$CFc?$CFc?$CFc?$CFc?$CFc?$CFc?$CFc?8?6@ 0000000000021c58     DxeCore:MemoryProtection.obj
+ 0002:00001c38       ??_C@_0CB@EKAMCFDI@?5?5VirtualSize?5?5?5?5?5?5?5?5?5?5?9?50x?$CF08x@ 0000000000021c78     DxeCore:MemoryProtection.obj
+ 0002:00001c60       ??_C@_0CB@KKEKOMIG@?5?5VirtualAddress?5?5?5?5?5?5?5?9?50x?$CF08x@ 0000000000021ca0     DxeCore:MemoryProtection.obj
+ 0002:00001c88       ??_C@_0CB@MPCKBEL@?5?5SizeOfRawData?5?5?5?5?5?5?5?5?9?50x?$CF08x@ 0000000000021cc8     DxeCore:MemoryProtection.obj
+ 0002:00001cb0       ??_C@_0CB@IDPJBNGA@?5?5PointerToRawData?5?5?5?5?5?9?50x?$CF08x@ 0000000000021cf0     DxeCore:MemoryProtection.obj
+ 0002:00001cd8       ??_C@_0CB@BCLIADLG@?5?5PointerToRelocations?5?9?50x?$CF08x@ 0000000000021d18     DxeCore:MemoryProtection.obj
+ 0002:00001d00       ??_C@_0CB@HOPNHHBP@?5?5PointerToLinenumbers?5?9?50x?$CF08x@ 0000000000021d40     DxeCore:MemoryProtection.obj
+ 0002:00001d28       ??_C@_0CB@GGIKHHDP@?5?5NumberOfRelocations?5?5?9?50x?$CF08x@ 0000000000021d68     DxeCore:MemoryProtection.obj
+ 0002:00001d50       ??_C@_0CB@MJOMCJAH@?5?5NumberOfLinenumbers?5?5?9?50x?$CF08x@ 0000000000021d90     DxeCore:MemoryProtection.obj
+ 0002:00001d78       ??_C@_0CB@PPJDJDMP@?5?5Characteristics?5?5?5?5?5?5?9?50x?$CF08x@ 0000000000021db8     DxeCore:MemoryProtection.obj
+ 0002:00001da0       ??_C@_0CA@OPEGNBON@ImageCode?3?50x?$CF016lx?5?9?50x?$CF016lx?6@ 0000000000021de0     DxeCore:MemoryProtection.obj
+ 0002:00001dc0       ??_C@_0EE@DLCMPJLO@?$CB?$CB?$CB?$CB?$CB?$CB?$CB?$CB?5?5ProtectUefiImageCommo@ 0000000000021e00     DxeCore:MemoryProtection.obj
+ 0002:00001e08       ??_C@_0CG@FKONGJEN@IsImageRecordCodeSectionValid?5?9@ 0000000000021e48     DxeCore:MemoryProtection.obj
+ 0002:00001e30       ??_C@_0DJ@CIDFFKAG@Status?5?$DN?$DN?5?$CI?$CIRETURN_STATUS?$CJ?$CI0x80@ 0000000000021e70     DxeCore:MemoryProtection.obj
+ 0002:00001e70       ??_C@_0BK@BEMEMBP@MemoryMap?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000021eb0     DxeCore:MemoryProtection.obj
+ 0002:00001e90       ??_C@_0CI@KKNIBCOL@MemoryProtectionCpuArchProtocol@ 0000000000021ed0     DxeCore:MemoryProtection.obj
+ 0002:00001eb8       ??_C@_0DB@GOBHOFPP@d?3?2edk2?2edk2?2MdeModulePkg?2Core?2@ 0000000000021ef8     DxeCore:Notify.obj
+ 0002:00001ef0       ??_C@_0CF@FMPFMLED@gEventQueueLock?4OwnerTpl?5?$DN?$DN?5Pri@ 0000000000021f30     DxeCore:Event.obj
+ 0002:00001f18       ??_C@_0DB@BHOJNMKP@d?3?2edk2?2edk2?2MdeModulePkg?2Core?2@ 0000000000021f58     DxeCore:Event.obj
+ 0002:00001f50       ??_C@_0CG@BNFJMDOB@Event?9?$DONotifyFunction?5?$CB?$DN?5?$CI?$CIvoid@ 0000000000021f90     DxeCore:Event.obj
+ 0002:00001f78       ??_C@_0BM@MHJDAOFB@?$CGgEventQueueLock?5not?5locked@ 0000000000021fb8     DxeCore:Event.obj
+ 0002:00001fa0       mEventTable                0000000000021fe0     DxeCore:Event.obj
+ 0002:00001fc0       ??_C@_0DL@KBHOJLKA@d?3?2edk2?2edk2?2MdeModulePkg?2Core?2@ 0000000000022000     DxeCore:Dispatcher.obj
+ 0002:00002000       ??_C@_0CA@IFALBDJD@Schedule?5FFS?$CI?$CFg?$CJ?5?9?5EFI_SUCCESS?6@ 0000000000022040     DxeCore:Dispatcher.obj
+ 0002:00002020       ??_C@_0CC@DLDPKBBM@Schedule?5FFS?$CI?$CFg?$CJ?5?9?5EFI_NOT_FOUN@ 0000000000022060     DxeCore:Dispatcher.obj
+ 0002:00002048       ??_C@_0BD@GOHKOBCJ@Loading?5driver?5?$CFg?6@ 0000000000022088     DxeCore:Dispatcher.obj
+ 0002:00002060       ??_C@_0CJ@GOOBNJLF@DriverEntry?9?$DOImageHandle?5?$CB?$DN?5?$CI?$CIv@ 00000000000220a0     DxeCore:Dispatcher.obj
+ 0002:00002090       ??_C@_0CA@ICIDHKK@Evaluate?5DXE?5DEPEX?5for?5FFS?$CI?$CFg?$CJ?6@ 00000000000220d0     DxeCore:Dispatcher.obj
+ 0002:000020b0       ??_C@_0ED@KMLPGIKP@?5?5SOR?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5@ 00000000000220f0     DxeCore:Dispatcher.obj
+ 0002:000020f8       ??_C@_0BC@KNMKMBFG@?5?5RESULT?5?$DN?5FALSE?6@ 0000000000022138     DxeCore:Dispatcher.obj
+ 0002:00002110       ??_C@_0BE@NGDMDIJA@?5?5BEFORE?5FFS?$CI?$CFg?$CJ?5?$DN?5@ 0000000000022150     DxeCore:Dispatcher.obj
+ 0002:00002128       ??_C@_0BM@FKEPNHMN@TRUE?6?5?5END?6?5?5RESULT?5?$DN?5TRUE?6@ 0000000000022168     DxeCore:Dispatcher.obj
+ 0002:00002148       ??_C@_0BO@IOEAMIGE@FALSE?6?5?5END?6?5?5RESULT?5?$DN?5FALSE?6@ 0000000000022188     DxeCore:Dispatcher.obj
+ 0002:00002168       ??_C@_0BD@NIJHLBPK@?5?5AFTER?5FFS?$CI?$CFg?$CJ?5?$DN?5@ 00000000000221a8     DxeCore:Dispatcher.obj
+ 0002:00002180       ??_C@_0BE@CMNLMPMF@Fvb?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000221c0     DxeCore:Dispatcher.obj
+ 0002:00002198       ??_C@_0BM@DMAELHGE@FwVolHeader?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000221d8     DxeCore:Dispatcher.obj
+ 0002:000021b8       ??_C@_0DL@FBBCBGFD@FvImage?5on?5FvHandle?5?$CFp?5and?5?$CFp?5h@ 00000000000221f8     DxeCore:Dispatcher.obj
+ 0002:000021f8       ??_C@_0BM@PPFNPPMA@KnownHandle?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000022238     DxeCore:Dispatcher.obj
+ 0002:00002218       ??_C@_0BM@HECPJCLL@DriverEntry?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000022258     DxeCore:Dispatcher.obj
+ 0002:00002238       ??_C@_0DJ@LKNCCCCL@FV?5at?50x?$CFx?5has?50x?$CFx?5used?5size?0?5@ 0000000000022278     DxeCore:Dispatcher.obj
+ 0002:00002278       ??_C@_0BH@LLNEDFOL@CoreProcessFvImageFile@ 00000000000222b8     DxeCore:Dispatcher.obj
+ 0002:00002290       ??_C@_0CP@HPHALLJH@?$CFa?$CI?$CJ?5FV?5at?50x?$CFx?0?5FvAlignment?5re@ 00000000000222d0     DxeCore:Dispatcher.obj
+ 0002:000022c0       ??_C@_0BL@HMFJNHJC@?5?5RESULT?5?$DN?5TRUE?5?$CIApriori?$CJ?6@ 0000000000022300     DxeCore:Dispatcher.obj
+ 0002:000022e0       ??_C@_0CL@LMDLCLKA@Driver?5?$CFg?5was?5discovered?5but?5no@ 0000000000022320     DxeCore:Dispatcher.obj
+ 0002:0000230c       mDxeFileTypes              000000000002234c     DxeCore:Dispatcher.obj
+ 0002:00002318       ??_C@_0DB@OCEMBJB@d?3?2edk2?2edk2?2MdeModulePkg?2Core?2@ 0000000000022358     DxeCore:Locate.obj
+ 0002:00002350       ??_C@_0BK@BPKPPMIP@SearchKey?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000022390     DxeCore:Locate.obj
+ 0002:00002370       ??_C@_0EP@IMFJAECC@ProtNotify?9?$DOSignature?5?$DN?$DN?5?$CI?$CI?$CI?8p?8@ 00000000000223b0     DxeCore:Locate.obj
+ 0002:000023c0       ??_C@_09KGHPCAJJ@Size?5?$DO?$DN?50@ 0000000000022400     DxeCore:Locate.obj
+ 0002:000023d0       ??_C@_0BC@KDNKCHNM@Size?5?$CB?$DN?5BestMatch@ 0000000000022410     DxeCore:Locate.obj
+ 0002:000023e8       ??_C@_0DJ@BJCAEFPD@d?3?2edk2?2edk2?2MdeModulePkg?2Core?2@ 0000000000022428     DxeCore:DebugImageInfo.obj
+ 0002:00002428       ??_C@_0BM@KCFHPMG@mDebugTable?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000022468     DxeCore:DebugImageInfo.obj
+ 0002:00002448       ??_C@_0BJ@GBLMKKIK@Index?5?$DM?5mMaxTableEntries@ 0000000000022488     DxeCore:DebugImageInfo.obj
+ 0002:00002468       ??_C@_0DL@KGGOADCJ@d?3?2edk2?2edk2?2MdeModulePkg?2Core?2@ 00000000000224a8     DxeCore:FwVolBlock.obj
+ 0002:000024b0       ??_C@_0EI@EOAGIEHL@Unaligned?5FvImage?5found?5at?50x?$CFl@ 00000000000224f0     DxeCore:FwVolBlock.obj
+ 0002:000024f8       ??_C@_0CC@PBCMMGPK@?$CKFVProtocolHandle?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?5@ 0000000000022538     DxeCore:FwVolBlock.obj
+ 0002:00002520       ??_C@_0DB@IIIGONJN@d?3?2edk2?2edk2?2MdeModulePkg?2Core?2@ 0000000000022560     DxeCore:Timer.obj
+ 0002:00002558       ??_C@_0BK@OEHKHKCA@?$CGmEfiTimerLock?5not?5locked@ 0000000000022598     DxeCore:Timer.obj
+ 0002:00002578       ??_C@_0CO@OKLJGNLC@d?3?2edk2?2edk2?2MdeModulePkg?2Core?2@ 00000000000225b8     DxeCore:Pool.obj
+ 0002:000025a8       ??_C@_0BM@KKFMLGIB@?$CGmPoolMemoryLock?5not?5locked@ 00000000000225e8     DxeCore:Pool.obj
+ 0002:000025d0       ??_C@_0ED@BJPMJCNA@Index?5?$DM?5?$CI?$CIsizeof?5?$CImPoolSizeTabl@ 0000000000022610     DxeCore:Pool.obj
+ 0002:00002618       ??_C@_0BE@IGCHCEAB@Offset?5?$DN?$DN?5MaxOffset@ 0000000000022658     DxeCore:Pool.obj
+ 0002:00002630       ??_C@_0DA@MFNGHLKJ@AllocatePoolI?3?5Type?5?$CFx?0?5Addr?5?$CFp@ 0000000000022670     DxeCore:Pool.obj
+ 0002:00002660       ??_C@_0CM@HBBDHNH@AllocatePool?3?5failed?5to?5allocat@ 00000000000226a0     DxeCore:Pool.obj
+ 0002:00002690       ??_C@_0BH@IACGKAP@Buffer?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000226d0     DxeCore:Pool.obj
+ 0002:000026a8       ??_C@_0BF@FBEMMEEB@Head?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000226e8     DxeCore:Pool.obj
+ 0002:000026c0       ??_C@_0JF@FCLDABPD@Head?9?$DOSignature?5?$DN?$DN?5?$CI?$CI?$CI?8p?8?$CJ?5?$HM?5?$CI?8@ 0000000000022700     DxeCore:Pool.obj
+ 0002:00002758       ??_C@_0BF@HNLOIDLA@Tail?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000022798     DxeCore:Pool.obj
+ 0002:00002770       ??_C@_0EJ@NAAKIGKI@Tail?9?$DOSignature?5?$DN?$DN?5?$CI?$CI?$CI?8p?8?$CJ?5?$HM?5?$CI?8@ 00000000000227b0     DxeCore:Pool.obj
+ 0002:000027c0       ??_C@_0BJ@LNLMFOPC@Head?9?$DOSize?5?$DN?$DN?5Tail?9?$DOSize@ 0000000000022800     DxeCore:Pool.obj
+ 0002:000027e0       ??_C@_0BN@HPFHKNAN@FreePool?3?5?$CFp?5?$CIlen?5?$CFlx?$CJ?5?$CF?0ld?6@ 0000000000022820     DxeCore:Pool.obj
+ 0002:00002800       ??_C@_0BF@IFDLHOEE@Free?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000022840     DxeCore:Pool.obj
+ 0002:00002840       ??_C@_0EN@MLINDLHB@d?3?2edk2?2edk2?2MdeModulePkg?2Core?2@ 0000000000022880     DxeCore:CoreSectionExtraction.obj
+ 0002:00002890       ??_C@_0CI@HIJAFAGE@GuidedHeader?9?$DOCommonHeader?4Type@ 00000000000228d0     DxeCore:CoreSectionExtraction.obj
+ 0002:000028b8       ??_C@_0BI@DNICFLOF@Context?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000228f8     DxeCore:CoreSectionExtraction.obj
+ 0002:000028d0       ??_C@_0BL@IIFJKKLG@Decompress?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000022910     DxeCore:CoreSectionExtraction.obj
+ 0002:000028f0       ??_C@_0BF@FBJGGPOH@?$CKSectionInstance?5?$DO?50@ 0000000000022930     DxeCore:CoreSectionExtraction.obj
+ 0002:00002908       ??_C@_0CB@CNFLOPGM@CurrentChildNode?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50@ 0000000000022948     DxeCore:CoreSectionExtraction.obj
+ 0002:00002930       ??_C@_0CL@NNCAIFHP@?$CI?$CI?$CIINTN?$CJ?$CIRETURN_STATUS?$CJ?$CIErrorSt@ 0000000000022970     DxeCore:CoreSectionExtraction.obj
+ 0002:00002960       ??_C@_0L@IPEEMBLD@GetSection@ 00000000000229a0     DxeCore:CoreSectionExtraction.obj
+ 0002:00002970       ??_C@_0CM@HDKOPCPM@?$CFa?3?5recursion?5aborted?5due?5to?5ne@ 00000000000229b0     DxeCore:CoreSectionExtraction.obj
+ 0002:000029a0       ??_C@_0EO@LAPNMKO@?$CI?$CI?$CIEFI_COMMON_SECTION_HEADER2?5?$CK@ 00000000000229e0     DxeCore:CoreSectionExtraction.obj
+ 0002:000029f0       ??_C@_0DM@GLCAIADA@It?5is?5a?5FFS3?5formatted?5section?5@ 0000000000022a30     DxeCore:CoreSectionExtraction.obj
+ 0002:00002a30       ??_C@_0EO@CPIGPIBK@ChildNode?9?$DOSignature?5?$DN?$DN?5?$CI?$CI?$CI?8S?8?$CJ@ 0000000000022a70     DxeCore:CoreSectionExtraction.obj
+ 0002:00002a80       ??_C@_0CJ@LEPGFEOI@GetInfo?5from?5guided?5section?5Fai@ 0000000000022ac0     DxeCore:CoreSectionExtraction.obj
+ 0002:00002ab0       ??_C@_0CE@CGCKLIFH@Extract?5guided?5section?5Failed?5?9@ 0000000000022af0     DxeCore:CoreSectionExtraction.obj
+ 0002:00002ad8       ??_C@_0DJ@BEDKBBDO@FATAL?5ERROR?5?9?5RaiseTpl?5with?5Old@ 0000000000022b18     DxeCore:Tpl.obj
+ 0002:00002b18       ??_C@_0CP@CPBIPPJG@d?3?2edk2?2edk2?2MdeModulePkg?2Core?2@ 0000000000022b58     DxeCore:Tpl.obj
+ 0002:00002b48       ??_C@_0BB@DKMJFNAG@?$CI?$CINewTpl?$CJ?5?$DM?$DN?531?$CJ@ 0000000000022b88     DxeCore:Tpl.obj
+ 0002:00002b60       ??_C@_0DL@IMFJACGO@FATAL?5ERROR?5?9?5RestoreTpl?5with?5N@ 0000000000022ba0     DxeCore:Tpl.obj
+ 0002:00002ba0       ??_C@_0BJ@OAAKNPEN@Pe32Data?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000022be0     DxeCore:MemoryProfileRecord.obj
+ 0002:00002bc0       ??_C@_0BL@OOFMKHJH@EntryPoint?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000022c00     DxeCore:MemoryProfileRecord.obj
+ 0002:00002be0       ??_C@_0CI@JIIAGMAO@Cannot?5install?5Memory?5Attribute@ 0000000000022c20     DxeCore:MemoryAttributesTable.obj
+ 0002:00002c08       ??_C@_0DG@GNEGIFLJ@because?5Runtime?5Driver?5Section?5@ 0000000000022c48     DxeCore:MemoryAttributesTable.obj
+ 0002:00002c40       ??_C@_0EA@FBEIJGCL@d?3?2edk2?2edk2?2MdeModulePkg?2Core?2@ 0000000000022c80     DxeCore:MemoryAttributesTable.obj
+ 0002:00002c80       ??_C@_0CG@FPGHNECH@MemoryAttributesTable?5?$CB?$DN?5?$CI?$CIvoid@ 0000000000022cc0     DxeCore:MemoryAttributesTable.obj
+ 0002:00002ca8       ??_C@_0BI@HNOKICAB@MemoryAttributesTable?3?6@ 0000000000022ce8     DxeCore:MemoryAttributesTable.obj
+ 0002:00002cc0       ??_C@_0CB@GMMBKKEK@?5?5Version?5?5?5?5?5?5?5?5?5?5?5?5?5?5?9?50x?$CF08x@ 0000000000022d00     DxeCore:MemoryAttributesTable.obj
+ 0002:00002ce8       ??_C@_0CB@KMMAFNLM@?5?5NumberOfEntries?5?5?5?5?5?5?9?50x?$CF08x@ 0000000000022d28     DxeCore:MemoryAttributesTable.obj
+ 0002:00002d10       ??_C@_0CB@FHOLKKC@?5?5DescriptorSize?5?5?5?5?5?5?5?9?50x?$CF08x@ 0000000000022d50     DxeCore:MemoryAttributesTable.obj
+ 0002:00002d38       ??_C@_0O@BJLMFKPN@Entry?5?$CI0x?$CFx?$CJ?6@ 0000000000022d78     DxeCore:MemoryAttributesTable.obj
+ 0002:00002d48       ??_C@_0BM@OFOMNHPM@?5?5Type?5?5?5?5?5?5?5?5?5?5?5?5?5?5?9?50x?$CFx?6@ 0000000000022d88     DxeCore:MemoryAttributesTable.obj
+ 0002:00002d68       ??_C@_0CA@LKNOBKLP@?5?5PhysicalStart?5?5?5?5?5?9?50x?$CF016lx?6@ 0000000000022da8     DxeCore:MemoryAttributesTable.obj
+ 0002:00002d88       ??_C@_0CA@OBLLFPPH@?5?5VirtualStart?5?5?5?5?5?5?9?50x?$CF016lx?6@ 0000000000022dc8     DxeCore:MemoryAttributesTable.obj
+ 0002:00002da8       ??_C@_0CA@HKCNAHEO@?5?5NumberOfPages?5?5?5?5?5?9?50x?$CF016lx?6@ 0000000000022de8     DxeCore:MemoryAttributesTable.obj
+ 0002:00002dc8       ??_C@_0CA@EEMGMJFM@?5?5Attribute?5?5?5?5?5?5?5?5?5?9?50x?$CF016lx?6@ 0000000000022e08     DxeCore:MemoryAttributesTable.obj
+ 0002:00002de8       ??_C@_0BJ@NAIEONGB@TotalNewRecordCount?5?$CB?$DN?50@ 0000000000022e28     DxeCore:MemoryAttributesTable.obj
+ 0002:00002e08       ??_C@_0DC@FCBJINEH@SetMemoryAttributesTableSection@ 0000000000022e48     DxeCore:MemoryAttributesTable.obj
+ 0002:00002e40       ??_C@_0BP@HMLPPEAA@ImageCode?5SegmentCount?5?9?50x?$CFx?6@ 0000000000022e80     DxeCore:MemoryAttributesTable.obj
+ 0002:00002e60       ??_C@_0BK@BDNMFFLI@InsertImageRecord?5?9?50x?$CFx?6@ 0000000000022ea0     DxeCore:MemoryAttributesTable.obj
+ 0002:00002e80       ??_C@_0CJ@ECLGJEFI@InsertImageRecord?5?9?50x?$CF016lx?5?9?5@ 0000000000022ec0     DxeCore:MemoryAttributesTable.obj
+ 0002:00002eb0       ??_C@_0DD@CPDCPODE@Do?5not?5insert?5runtime?5image?5rec@ 0000000000022ef0     DxeCore:MemoryAttributesTable.obj
+ 0002:00002ee8       ??_C@_0BJ@HBALMFCL@ImageRecordCount?5?9?50x?$CFx?6@ 0000000000022f28     DxeCore:MemoryAttributesTable.obj
+ 0002:00002f10       ??_C@_0EM@BFAJKMLL@?$CB?$CB?$CB?$CB?$CB?$CB?$CB?$CB?5?5InsertImageRecord?5?9?5S@ 0000000000022f50     DxeCore:MemoryAttributesTable.obj
+ 0002:00002f60       ??_C@_0DP@DCIHFLBD@?$CB?$CB?$CB?$CB?$CB?$CB?$CB?$CB?5?5InsertImageRecord?5?9?5C@ 0000000000022fa0     DxeCore:MemoryAttributesTable.obj
+ 0002:00002fa0       ??_C@_0BK@HPPNGIAO@RemoveImageRecord?5?9?50x?$CFx?6@ 0000000000022fe0     DxeCore:MemoryAttributesTable.obj
+ 0002:00002fc0       ??_C@_0CJ@LNPAJGNG@RemoveImageRecord?5?9?50x?$CF016lx?5?9?5@ 0000000000023000     DxeCore:MemoryAttributesTable.obj
+ 0002:00002ff0       ??_C@_0DD@GJBAEOGG@Do?5not?5remove?5runtime?5image?5rec@ 0000000000023030     DxeCore:MemoryAttributesTable.obj
+ 0002:00003028       ??_C@_0CJ@MHHEPHPJ@?$CB?$CB?$CB?$CB?$CB?$CB?$CB?$CB?5ImageRecord?5not?5found?5@ 0000000000023068     DxeCore:MemoryAttributesTable.obj
+ 0002:00003058       ??_C@_0DN@IHGHEFGN@Found?5a?5FFS3?5formatted?5file?3?5?$CFg@ 0000000000023098     DxeCore:FwVol.obj
+ 0002:000030a0       ??_C@_0FK@ECOJJFD@?$CI?$CIUINT32?$CJ?5?$CI?$CI?$CIEFI_FFS_FILE_HEADE@ 00000000000230e0     DxeCore:FwVol.obj
+ 0002:00003100       ??_C@_0DB@CCIFPFEN@d?3?2edk2?2edk2?2MdeModulePkg?2Core?2@ 0000000000023140     DxeCore:FwVol.obj
+ 0002:00003138       ??_C@_0BF@JGGLMCFN@Lock?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000023178     DxeCore:Library.obj
+ 0002:00003150       ??_C@_0DF@LLLFJNOM@d?3?2edk2?2edk2?2MdeModulePkg?2Core?2@ 0000000000023190     DxeCore:Library.obj
+ 0002:00003188       ??_C@_0CD@PGOFFOAH@Lock?9?$DOLock?5?$CB?$DN?5EfiLockUninitiali@ 00000000000231c8     DxeCore:Library.obj
+ 0002:000031b0       ??_C@_0BO@IJOPPPFL@Lock?9?$DOLock?5?$DN?$DN?5EfiLockReleased@ 00000000000231f0     DxeCore:Library.obj
+ 0002:000031d0       ??_C@_0BO@FHNOFLFJ@Lock?9?$DOLock?5?$DN?$DN?5EfiLockAcquired@ 0000000000023210     DxeCore:Library.obj
+ 0002:000031f0       ??_C@_0BG@NIPFGNEI@BitNumber?5?$DM?$DN?5?$CI1?5?$DM?$DM?56?$CJ@ 0000000000023230     DxeCore:HeapGuard.obj
+ 0002:00003208       ??_C@_0DD@DCIEKGON@d?3?2edk2?2edk2?2MdeModulePkg?2Core?2@ 0000000000023248     DxeCore:HeapGuard.obj
+ 0002:00003240       ??_C@_0P@BELBPKJL@MapMemory?5?$CB?$DN?50@ 0000000000023280     DxeCore:HeapGuard.obj
+ 0002:00003250       ??_C@_0BH@CPAFCLMN@BitMap?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000023290     DxeCore:HeapGuard.obj
+ 0002:00003268       ??_C@_0BA@BDENPEJJ@Target?5?$DO?$DN?5Start@ 00000000000232a8     DxeCore:HeapGuard.obj
+ 0002:00003278       ??_C@_0DF@CGKKDMDF@?5?5All?5UEFI?5Services?5Available?5?5@ 00000000000232b8     DxeCore:Dependency.obj
+ 0002:000032b0       ??_C@_0BI@OJJILPHO@FALSE?6?5?5RESULT?5?$DN?5FALSE?6@ 00000000000232f0     DxeCore:Dependency.obj
+ 0002:000032c8       ??_C@_0BG@PMDFLICB@TRUE?6?5?5RESULT?5?$DN?5TRUE?6@ 0000000000023308     DxeCore:Dependency.obj
+ 0002:000032e0       ??_C@_0DH@HJNPFLMD@?5?5RESULT?5?$DN?5FALSE?5?$CIAttempt?5to?5fe@ 0000000000023320     DxeCore:Dependency.obj
+ 0002:00003318       ??_C@_0DG@BLEOFCEK@?5?5RESULT?5?$DN?5FALSE?5?$CIUnexpected?5BE@ 0000000000023358     DxeCore:Dependency.obj
+ 0002:00003350       ??_C@_0DL@LCNLKAPA@d?3?2edk2?2edk2?2MdeModulePkg?2Core?2@ 0000000000023390     DxeCore:Dependency.obj
+ 0002:0000338c       ??_C@_06IDJBPDAP@?5?5SOR?6@ 00000000000233cc     DxeCore:Dependency.obj
+ 0002:00003398       ??_C@_0CK@PBPNBCDP@?5?5RESULT?5?$DN?5FALSE?5?$CIUnexpected?5SO@ 00000000000233d8     DxeCore:Dependency.obj
+ 0002:000033c8       ??_C@_0DP@KKBOABM@?5?5SOR?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5@ 0000000000023408     DxeCore:Dependency.obj
+ 0002:00003408       ??_C@_0BJ@NLJMNGGI@?5?5PUSH?5GUID?$CI?$CFg?$CJ?5?$DN?5FALSE?6@ 0000000000023448     DxeCore:Dependency.obj
+ 0002:00003428       ??_C@_0BI@OMMPINOL@?5?5PUSH?5GUID?$CI?$CFg?$CJ?5?$DN?5TRUE?6@ 0000000000023468     DxeCore:Dependency.obj
+ 0002:00003440       ??_C@_0CF@JIJFBAAC@?5?5RESULT?5?$DN?5FALSE?5?$CIUnexpected?5er@ 0000000000023480     DxeCore:Dependency.obj
+ 0002:00003468       ??_C@_06DJKGIPEK@?5?5AND?6@ 00000000000234a8     DxeCore:Dependency.obj
+ 0002:00003470       ??_C@_05NOPACOFB@?5?5OR?6@ 00000000000234b0     DxeCore:Dependency.obj
+ 0002:00003478       ??_C@_06BPGMNMIO@?5?5NOT?6@ 00000000000234b8     DxeCore:Dependency.obj
+ 0002:00003480       ??_C@_07JLHPFCH@?5?5TRUE?6@ 00000000000234c0     DxeCore:Dependency.obj
+ 0002:00003488       ??_C@_08EJKLCAIL@?5?5FALSE?6@ 00000000000234c8     DxeCore:Dependency.obj
+ 0002:00003494       ??_C@_06MMCGCJIK@?5?5END?6@ 00000000000234d4     DxeCore:Dependency.obj
+ 0002:0000349c       ??_C@_04HCDDPBNL@TRUE@     00000000000234dc     DxeCore:Dependency.obj
+ 0002:000034a4       ??_C@_05MAJJAKPI@FALSE@    00000000000234e4     DxeCore:Dependency.obj
+ 0002:000034b0       ??_C@_0P@GJLOBHPI@?5?5RESULT?5?$DN?5?$CFa?6@ 00000000000234f0     DxeCore:Dependency.obj
+ 0002:000034c0       ??_C@_0CD@LDMHFHNL@?5?5RESULT?5?$DN?5FALSE?5?$CIUnknown?5opcod@ 0000000000023500     DxeCore:Dependency.obj
+ 0002:000034e8       ??_C@_0DH@DLEFJH@d?3?2edk2?2edk2?2MdeModulePkg?2Core?2@ 0000000000023528     DxeCore:FwVolAttrib.obj
+ 0002:00003520       ??_C@_0DF@NIGBCIFE@d?3?2edk2?2edk2?2MdeModulePkg?2Core?2@ 0000000000023560     DxeCore:FwVolRead.obj
+ 0002:00003558       mFvAttributes2             0000000000023598     DxeCore:FwVolRead.obj
+ 0002:00003560       mFvAttributes              00000000000235a0     DxeCore:FwVolRead.obj
+ 0002:00003568       ??_C@_0L@LBCNCHJA@Pages?5?$CB?$DN?50@ 00000000000235a8     DxeCoreMemoryAllocationLib:MemoryAllocationLib.obj
+ 0002:00003580       ??_C@_0FD@GKHDFFLM@d?3?2edk2?2edk2?2MdeModulePkg?2Libra@ 00000000000235c0     DxeCoreMemoryAllocationLib:MemoryAllocationLib.obj
+ 0002:000035d8       ??_C@_0CD@GECBLADO@?$CIAlignment?5?$CG?5?$CIAlignment?5?9?51?$CJ?$CJ?5?$DN@ 0000000000023618     DxeCoreMemoryAllocationLib:MemoryAllocationLib.obj
+ 0002:00003600       ??_C@_0BC@BDMGDFME@RealPages?5?$DO?5Pages@ 0000000000023640     DxeCoreMemoryAllocationLib:MemoryAllocationLib.obj
+ 0002:00003618       ??_C@_0DO@GEEICOOO@AllocationSize?5?$DM?$DN?5?$CI0xFFFFFFFFFF@ 0000000000023658     DxeCoreMemoryAllocationLib:MemoryAllocationLib.obj
+ 0002:00003658       ??_C@_0BF@NJNGJMPC@List?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000023698     BaseLib:LinkedList.obj
+ 0002:00003670       ??_C@_0DB@MIDNNFCL@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 00000000000236b0     BaseLib:LinkedList.obj
+ 0002:000036a8       ??_C@_0CC@KDLPLAED@List?9?$DOForwardLink?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?5@ 00000000000236e8     BaseLib:LinkedList.obj
+ 0002:000036d0       ??_C@_0BP@IJJCCMAK@List?9?$DOBackLink?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000023710     BaseLib:LinkedList.obj
+ 0002:000036f0       ??_C@_0CI@BMHOPIIO@InternalBaseLibIsListValid?5?$CIFir@ 0000000000023730     BaseLib:LinkedList.obj
+ 0002:00003718       ??_C@_0BJ@NJABNCDK@ListHead?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000023758     BaseLib:LinkedList.obj
+ 0002:00003738       ??_C@_0CG@LGIALJFK@InternalBaseLibIsListValid?5?$CILis@ 0000000000023778     BaseLib:LinkedList.obj
+ 0002:00003760       ??_C@_0CC@JLDICICM@InternalBaseLibIsListValid?5?$CILis@ 00000000000237a0     BaseLib:LinkedList.obj
+ 0002:00003788       ??_C@_0BF@NMBJJECB@?$CBIsListEmpty?5?$CIEntry?$CJ@ 00000000000237c8     BaseLib:LinkedList.obj
+ 0002:000037a0       ??_C@_0L@MEMPDLHB@Count?5?$DM?564@ 00000000000237e0     BaseLib:LShiftU64.obj
+ 0002:000037b0       ??_C@_0DA@ICOGLKEH@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 00000000000237f0     BaseLib:LShiftU64.obj
+ 0002:000037e0       ??_C@_0DA@GHMPIEKF@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 0000000000023820     BaseLib:RShiftU64.obj
+ 0002:00003810       ??_C@_0DA@BDDONMJM@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 0000000000023850     BaseLib:Unaligned.obj
+ 0002:00003840       ??_C@_0BH@MAAHKCPC@String?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000023880     BaseLib:String.obj
+ 0002:00003858       ??_C@_0CN@LHBFELAO@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 0000000000023898     BaseLib:String.obj
+ 0002:00003888       ??_C@_0CC@GFNLNIOC@?$CI?$CIUINTN?$CJString?5?$CG?50x00000001?$CJ?5?$DN?$DN@ 00000000000238c8     BaseLib:String.obj
+ 0002:000038b0       ??_C@_0DI@MDIKFADO@Length?5?$DM?5_gPcd_FixedAtBuild_Pcd@ 00000000000238f0     BaseLib:String.obj
+ 0002:000038e8       ??_C@_0BM@NLNKOJGD@Destination?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000023928     BaseLib:String.obj
+ 0002:00003908       ??_C@_0N@KGHEHMDL@Divisor?5?$CB?$DN?50@ 0000000000023948     BaseLib:DivU64x32Remainder.obj
+ 0002:00003918       ??_C@_0DJ@FHIMIJAH@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 0000000000023958     BaseLib:DivU64x32Remainder.obj
+ 0002:00003958       ??_C@_0CP@KLEECECF@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 0000000000023998     BaseLib:CheckSum.obj
+ 0002:00003988       ??_C@_0DI@FAOGOFLE@Length?5?$DM?$DN?5?$CI0xFFFFFFFFFFFFFFFFUL@ 00000000000239c8     BaseLib:CheckSum.obj
+ 0002:000039c0       ??_C@_0BL@CMBJDOF@?$CI?$CIUINTN?$CJBuffer?5?$CG?50x1?$CJ?5?$DN?$DN?50@ 0000000000023a00     BaseLib:CheckSum.obj
+ 0002:000039e0       ??_C@_0BE@FFFDBMIE@?$CILength?5?$CG?50x1?$CJ?5?$DN?$DN?50@ 0000000000023a20     BaseLib:CheckSum.obj
+ 0002:00003a00       ??_C@_0EJ@KBPJPBK@?$CIOrData?5?$DO?$DO?5?$CIEndBit?5?9?5StartBit?$CJ?$CJ@ 0000000000023a40     BaseLib:BitField.obj
+ 0002:00003a50       ??_C@_0CP@NKGBOFDL@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 0000000000023a90     BaseLib:BitField.obj
+ 0002:00003a80       ??_C@_0L@EMANAOKC@EndBit?5?$DM?58@ 0000000000023ac0     BaseLib:BitField.obj
+ 0002:00003a90       ??_C@_0BD@JDBPFJOM@StartBit?5?$DM?$DN?5EndBit@ 0000000000023ad0     BaseLib:BitField.obj
+ 0002:00003aa8       ??_C@_0BL@CPGKAMND@JumpBuffer?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000023ae8     BaseLib:SetJump.obj
+ 0002:00003ac8       ??_C@_0CO@FKGPPAGH@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 0000000000023b08     BaseLib:SetJump.obj
+ 0002:00003af8       ??_C@_0CD@OEHNCIHG@?$CI?$CIUINTN?$CJJumpBuffer?5?$CG?5?$CI8?5?9?51?$CJ?$CJ?5?$DN@ 0000000000023b38     BaseLib:SetJump.obj
+ 0002:00003b20       ??_C@_0DB@PKFMPMPC@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 0000000000023b60     BaseLib:SafeString.obj
+ 0002:00003b58       ??_C@_0BJ@CNKJJNE@?$CIBuffer?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ@ 0000000000023b98     BaseLib:SafeString.obj
+ 0002:00003b78       ??_C@_0DJ@EPHLDLOO@?$CILength?5?9?51?$CJ?5?$DM?$DN?5?$CI0xFFFFFFFFFFFF@ 0000000000023bb8     BaseCacheMaintenanceLib:X86Cache.obj
+ 0002:00003bb8       ??_C@_0DP@JBOCKDIN@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 0000000000023bf8     BaseCacheMaintenanceLib:X86Cache.obj
+ 0002:00003c00       ??_C@_0ED@MKGCMJG@?$CILength?5?9?51?$CJ?5?$DM?$DN?5?$CI0xFFFFFFFFFFFF@ 0000000000023c40     BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0002:00003c50       ??_C@_0EB@LOHEEPCE@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 0000000000023c90     BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0002:00003c98       ??_C@_0DO@MAOBOFEG@?$CILength?5?9?51?$CJ?5?$DM?$DN?5?$CI0xFFFFFFFFFFFF@ 0000000000023cd8     BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0002:00003ce0       ??_C@_0EB@KNGCOOD@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 0000000000023d20     BaseMemoryLibRepStr:ZeroMemWrapper.obj
+ 0002:00003d28       ??_C@_0DG@EEENIGGL@Length?5?$DM?$DN?5?$CI0xFFFFFFFFFFFFFFFFUL@ 0000000000023d68     BaseMemoryLibRepStr:ZeroMemWrapper.obj
+ 0002:00003d60       ??_C@_0DI@DAGDPLPG@?$CILength?5?9?51?$CJ?5?$DM?$DN?5?$CI0xFFFFFFFFFFFF@ 0000000000023da0     BaseMemoryLibRepStr:SetMemWrapper.obj
+ 0002:00003da0       ??_C@_0EA@JBMLOGBO@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 0000000000023de0     BaseMemoryLibRepStr:SetMemWrapper.obj
+ 0002:00003de0       ??_C@_0CC@JOEHDGKB@DestinationBuffer?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?5@ 0000000000023e20     BaseMemoryLibRepStr:CompareMemWrapper.obj
+ 0002:00003e10       ??_C@_0EE@JHMFOHJP@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 0000000000023e50     BaseMemoryLibRepStr:CompareMemWrapper.obj
+ 0002:00003e58       ??_C@_0BN@MDMCNBCC@SourceBuffer?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000023e98     BaseMemoryLibRepStr:CompareMemWrapper.obj
+ 0002:00003e80       ??_C@_0EC@CIIDOJJA@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 0000000000023ec0     BaseMemoryLibRepStr:SetMem64Wrapper.obj
+ 0002:00003ec8       ??_C@_0CO@LECKNDNC@?$CI?$CI?$CIUINTN?$CJBuffer?$CJ?5?$CG?5?$CIsizeof?5?$CIVal@ 0000000000023f08     BaseMemoryLibRepStr:SetMem64Wrapper.obj
+ 0002:00003ef8       ??_C@_0CF@LEICOABD@?$CILength?5?$CG?5?$CIsizeof?5?$CIValue?$CJ?5?9?51?$CJ?$CJ@ 0000000000023f38     BaseMemoryLibRepStr:SetMem64Wrapper.obj
+ 0002:00003f20       ??_C@_0BH@LKMBFCBF@Format?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000023f60     BaseDebugLibSerialPort:DebugLib.obj
+ 0002:00003f38       ??_C@_0DO@CKBIDOOL@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 0000000000023f78     BaseDebugLibSerialPort:DebugLib.obj
+ 0002:00003f78       ??_C@_0BI@NOCKJDBJ@ASSERT?5?$FL?$CFa?$FN?5?$CFa?$CI?$CFd?$CJ?3?5?$CFa?6@ 0000000000023fb8     BaseDebugLibSerialPort:DebugLib.obj
+ 0002:00003f90       ??_C@_0BI@HAGPDMHJ@AcpiTimerLibConstructor@ 0000000000023fd0     BaseAcpiTimerLib:BaseAcpiTimerLib.obj
+ 0002:00003fa8       ??_C@_0CL@DGCOIACG@?$CFa?3?5Unknown?5Host?5Bridge?5Device?5@ 0000000000023fe8     BaseAcpiTimerLib:BaseAcpiTimerLib.obj
+ 0002:00003fd8       ??_C@_0DN@JKEGCPAJ@d?3?2edk2?2edk2?2OvmfPkg?2Library?2Ac@ 0000000000024018     BaseAcpiTimerLib:BaseAcpiTimerLib.obj
+ 0002:00004018       ??_C@_0BN@COECPDCC@gImageHandle?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000024058     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00004040       ??_C@_0FA@FOIHGFBE@d?3?2edk2?2edk2?2MdePkg?2Library?2Uef@ 0000000000024080     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00004090       ??_C@_0BE@DGNHAHIL@gST?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000240d0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000040a8       ??_C@_0BE@BDFJLGLN@gBS?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000240e8     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000040c0       ??_C@_0BE@OBDFIHND@gRT?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000024100     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0002:000040e0       ??_C@_0FG@JGJCMPKB@d?3?2edk2?2edk2?2MdePkg?2Library?2Uef@ 0000000000024120     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0002:00004138       ??_C@_0BF@CBLMFKOC@Node?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000024178     UefiDevicePathLib:DevicePathUtilities.obj
+ 0002:00004150       ??_C@_0EE@KNJCNLCF@d?3?2edk2?2edk2?2MdePkg?2Library?2Uef@ 0000000000024190     UefiDevicePathLib:DevicePathUtilities.obj
+ 0002:00004194       mUefiDevicePathLibEndDevicePath 00000000000241d4     UefiDevicePathLib:DevicePathUtilities.obj
+ 0002:00004198       ??_C@_0BN@MJEPDGEJ@ImageContext?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000241d8     PeCoffExtraActionLib:PeCoffExtraActionLib.obj
+ 0002:000041c0       ??_C@_0FK@PBDMBPA@d?3?2edk2?2edk2?2SourceLevelDebugPk@ 0000000000024200     PeCoffExtraActionLib:PeCoffExtraActionLib.obj
+ 0002:00004220       ??_C@_0O@NKPOEJD@?5?5?5?5PDB?5?$DN?5?$CFa?6@ 0000000000024260     PeCoffExtraActionLib:PeCoffExtraActionLib.obj
+ 0002:00004230       ??_C@_0BK@PPOBBAMB@TableGuid?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000024270     UefiLib:UefiLib.obj
+ 0002:00004250       ??_C@_0CO@NOFBMBBJ@d?3?2edk2?2edk2?2MdePkg?2Library?2Uef@ 0000000000024290     UefiLib:UefiLib.obj
+ 0002:00004280       ??_C@_0BG@JDKEGFNB@Table?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000242c0     UefiLib:UefiLib.obj
+ 0002:00004298       ??_C@_0BN@HHGHCLME@ProtocolGuid?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000242d8     UefiLib:UefiLib.obj
+ 0002:000042b8       ??_C@_0BP@DEIEJICI@NotifyFunction?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000242f8     UefiLib:UefiLib.obj
+ 0002:000042d8       ??_C@_0BN@OMCJCPAI@Registration?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000024318     UefiLib:UefiLib.obj
+ 0002:000042f8       ??_C@_0DD@DIGAFBOF@d?3?2edk2?2edk2?2MdePkg?2Library?2Uef@ 0000000000024338     UefiLib:UefiNotTiano.obj
+ 0002:00004330       ??_C@_0CB@OKGFGBHJ@FvDevicePathNode?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50@ 0000000000024370     UefiLib:UefiNotTiano.obj
+ 0002:00004358       ??_C@_0BJ@GMMGGIMG@NameGuid?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000024398     UefiLib:UefiNotTiano.obj
+ 0002:00004378       ??_C@_0BJ@FNDBAONE@gHobList?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000243b8     DxeCoreHobLib:HobLib.obj
+ 0002:00004398       ??_C@_0DD@CKFCEAHO@d?3?2edk2?2edk2?2MdePkg?2Library?2Dxe@ 00000000000243d8     DxeCoreHobLib:HobLib.obj
+ 0002:000043d0       ??_C@_0BJ@NOLLDKJB@HobStart?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000024410     DxeCoreHobLib:HobLib.obj
+ 0002:000043f0       ??_C@_0EN@EHNOEEFG@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 0000000000024430     BasePeCoffGetEntryPointLib:PeCoffGetEntryPoint.obj
+ 0002:00004440       ??_C@_0FE@LNKDKKBC@d?3?2edk2?2edk2?2MdePkg?2Library?2Dxe@ 0000000000024480     DxeExtractGuidedSectionLib:DxeExtractGuidedSectionLib.obj
+ 0002:00004498       ??_C@_0BN@GPAPAMAC@InputSection?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000244d8     DxeExtractGuidedSectionLib:DxeExtractGuidedSectionLib.obj
+ 0002:000044b8       ??_C@_0CB@BHALCANF@OutputBufferSize?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50@ 00000000000244f8     DxeExtractGuidedSectionLib:DxeExtractGuidedSectionLib.obj
+ 0002:000044e0       ??_C@_0CC@LILIPBNH@ScratchBufferSize?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?5@ 0000000000024520     DxeExtractGuidedSectionLib:DxeExtractGuidedSectionLib.obj
+ 0002:00004508       ??_C@_0CB@PMMMMPJH@SectionAttribute?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50@ 0000000000024548     DxeExtractGuidedSectionLib:DxeExtractGuidedSectionLib.obj
+ 0002:00004530       ??_C@_0BN@BPGHDJKK@OutputBuffer?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000024570     DxeExtractGuidedSectionLib:DxeExtractGuidedSectionLib.obj
+ 0002:00004550       ??_C@_0CF@CJGHKEF@AuthenticationStatus?5?$CB?$DN?5?$CI?$CIvoid?5@ 0000000000024590     DxeExtractGuidedSectionLib:DxeExtractGuidedSectionLib.obj
+ 0002:00004580       ??_C@_0EK@OGJMNJFE@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 00000000000245c0     BaseUefiDecompressLib:BaseUefiDecompressLib.obj
+ 0002:000045d0       ??_C@_0BH@GAGHCOEK@Source?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000024610     BaseUefiDecompressLib:BaseUefiDecompressLib.obj
+ 0002:000045e8       ??_C@_0CA@FMKFGCDF@DestinationSize?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000024628     BaseUefiDecompressLib:BaseUefiDecompressLib.obj
+ 0002:00004608       ??_C@_0BM@MHGBFJCP@ScratchSize?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000024648     BaseUefiDecompressLib:BaseUefiDecompressLib.obj
+ 0002:00004628       ??_C@_0BI@MGJALJLC@Scratch?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000024668     BaseUefiDecompressLib:BaseUefiDecompressLib.obj
+ 0002:00004640       ??_C@_0DH@OJNNBCEC@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 0000000000024680     BasePeCoffLib:BasePeCoff.obj
+ 0002:00004680       ??_C@_0FB@MOCPCCHF@?$CIUINTN?$CJFixupData?5?$DM?$DN?5?$CIUINTN?$CJImag@ 00000000000246c0     BasePeCoffLib:BasePeCoff.obj
+ 0002:000046d8       ??_C@_0BJ@KIAHAFBF@ReadSize?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000024718     BasePeCoffLib:BasePeCoff.obj
+ 0002:000046f8       ??_C@_0BL@INAOLIJI@FileHandle?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000024738     BasePeCoffLib:BasePeCoff.obj
+ 0002:00004720       ??_C@_0EP@LHIPOJFB@d?3?2edk2?2edk2?2MdeModulePkg?2Libra@ 0000000000024760     DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0002:00004770       ??_C@_0BN@HMHGLLOO@ExtendedData?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000247b0     DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0002:00004790       ??_C@_0DN@HHIHPHHB@?$CB?$CI?$CIExtendedData?5?$DN?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000247d0     DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0002:000047d0       ??_C@_0FD@DBEFKOFP@DebugAgent?3?5Cannot?5install?5conf@ 0000000000024810     DxeDebugAgentLib:DxeDebugAgentLib.obj
+ 0002:00004828       ??_C@_0DN@MOFPKOLM@DebugAgent?3?5Cannot?5install?5conf@ 0000000000024868     DxeDebugAgentLib:DxeDebugAgentLib.obj
+ 0002:00004868       ??_C@_0DK@BJCEFPPC@DebugAgent?3?5Failed?5to?5install?5c@ 00000000000248a8     DxeDebugAgentLib:DxeDebugAgentLib.obj
+ 0002:000048a8       ??_C@_0CA@DNGHMHPI@Debug?5Timer?3?5FSB?5Clock?5?5?5?5?$DN?5?$CFd?6@ 00000000000248e8     DxeDebugAgentLib:DebugTimer.obj
+ 0002:000048c8       ??_C@_0CA@GADFCNMH@Debug?5Timer?3?5Divisor?5?5?5?5?5?5?$DN?5?$CFd?6@ 0000000000024908     DxeDebugAgentLib:DebugTimer.obj
+ 0002:000048e8       ??_C@_0CA@IMHEPAIB@Debug?5Timer?3?5Frequency?5?5?5?5?$DN?5?$CFd?6@ 0000000000024928     DxeDebugAgentLib:DebugTimer.obj
+ 0002:00004908       ??_C@_0CA@KMOEEHDE@Debug?5Timer?3?5InitialCount?5?$DN?5?$CFd?6@ 0000000000024948     DxeDebugAgentLib:DebugTimer.obj
+ 0002:00004928       ??_C@_0DM@BDNKNEGD@DebugAgent?3?5Mailbox?5checksum?5er@ 0000000000024968     DxeDebugAgentLib:DebugAgent.obj
+ 0002:00004970       ??_C@_0EP@CAGBDIEH@DebugAgent?3?5CheckSum?5?$DN?5?$CFx?0?5Mail@ 00000000000249b0     DxeDebugAgentLib:DebugAgent.obj
+ 0002:000049c0       ??_C@_0N@JDBFFBFC@Sent?5data?5?$FL?5@ 0000000000024a00     DxeDebugAgentLib:DebugAgent.obj
+ 0002:000049d0       ??_C@_0BB@JBKPKGMF@Received?5data?5?$FL?5@ 0000000000024a10     DxeDebugAgentLib:DebugAgent.obj
+ 0002:000049e4       ??_C@_05CNDJFPDP@?$CF02x?5@ 0000000000024a24     DxeDebugAgentLib:DebugAgent.obj
+ 0002:000049ec       ??_C@_02JODFHDIE@?$FN?6@   0000000000024a2c     DxeDebugAgentLib:DebugAgent.obj
+ 0002:000049f0       ??_C@_0CC@BPBDKJLH@Timeout?5in?5Debug?5Timer?5interrup@ 0000000000024a30     DxeDebugAgentLib:DebugAgent.obj
+ 0002:00004a18       ??_C@_0CD@MJPNODCO@Debug?5Timer?5CRC?5?$CI?$CFx?$CJ?5against?5?$CI?$CF@ 0000000000024a58     DxeDebugAgentLib:DebugAgent.obj
+ 0002:00004a40       ??_C@_0BF@GOMLGJOE@Attach?5status?5is?5?$CFd?6@ 0000000000024a80     DxeDebugAgentLib:DebugAgent.obj
+ 0002:00004a58       ??_C@_0O@LLNPHJBI@Send?5ACK?$CI?$CFd?$CJ?6@ 0000000000024a98     DxeDebugAgentLib:DebugAgent.obj
+ 0002:00004a68       ??_C@_0CA@KCJDKBGI@SendAckPacket?3?5SequenceNo?5?$DN?5?$CFx?6@ 0000000000024aa8     DxeDebugAgentLib:DebugAgent.obj
+ 0002:00004a88       ??_C@_0DA@ODCCDM@Length?5?$DM?$DN?5?$CI0xff?5?9?5sizeof?5?$CIDEBUG@ 0000000000024ac8     DxeDebugAgentLib:DebugAgent.obj
+ 0002:00004ac0       ??_C@_0FC@KALJAHNI@d?3?2edk2?2edk2?2SourceLevelDebugPk@ 0000000000024b00     DxeDebugAgentLib:DebugAgent.obj
+ 0002:00004b18       ??_C@_0CL@GDHMDIAD@DebugAgentReadBuffer?$CIStartSymbo@ 0000000000024b58     DxeDebugAgentLib:DebugAgent.obj
+ 0002:00004b48       ??_C@_0CG@POHMMICE@Invalid?5start?5symbol?5received?5?$FL@ 0000000000024b88     DxeDebugAgentLib:DebugAgent.obj
+ 0002:00004b70       ??_C@_0CH@JDGCKKDH@DebugAgentReadBuffer?$CICommand?$CJ?5t@ 0000000000024bb0     DxeDebugAgentLib:DebugAgent.obj
+ 0002:00004b98       ??_C@_0CK@PCGFFEGH@DebugAgentReadBuffer?$CISequenceNo@ 0000000000024bd8     DxeDebugAgentLib:DebugAgent.obj
+ 0002:00004bc8       ??_C@_0CA@KOMNEPHF@CRC?5Error?5?$CIreceived?5CRC?5is?5?$CFx?$CJ?6@ 0000000000024c08     DxeDebugAgentLib:DebugAgent.obj
+ 0002:00004be8       ??_C@_0CO@FBJALMLE@TARGET?3?5Timeout?5when?5waiting?5fo@ 0000000000024c28     DxeDebugAgentLib:DebugAgent.obj
+ 0002:00004c18       ??_C@_0CD@OLECMCCF@TARGET?3?5Receive?5GO?$CI?$CJ?5in?5last?5bo@ 0000000000024c58     DxeDebugAgentLib:DebugAgent.obj
+ 0002:00004c40       ??_C@_0BN@BEIHKMON@Command?5?$DN?$DN?5?$CI?$CI0?5?$DM?$DM?57?$CJ?5?$HM?50x3F?$CJ@ 0000000000024c80     DxeDebugAgentLib:DebugAgent.obj
+ 0002:00004c60       ??_C@_0L@PLNFFABB@Length?5?$DO?50@ 0000000000024ca0     DxeDebugAgentLib:DebugAgent.obj
+ 0002:00004c70       ??_C@_0CN@MDIHKJOJ@TARGET?3?5Timeout?5in?5SendDataResp@ 0000000000024cb0     DxeDebugAgentLib:DebugAgent.obj
+ 0002:00004ca0       ??_C@_0FC@JIHDFAPN@TARGET?3?5Received?5one?5old?5or?5new@ 0000000000024ce0     DxeDebugAgentLib:DebugAgent.obj
+ 0002:00004cf8       ??_C@_0CK@KLMONJKF@processor?$FL?$CFx?$FN?3Send?5Break?5Packet@ 0000000000024d38     DxeDebugAgentLib:DebugAgent.obj
+ 0002:00004d28       ??_C@_0CD@JPIHDIMB@processor?$FL?$CFx?$FN?3Try?5to?5attach?5HOS@ 0000000000024d68     DxeDebugAgentLib:DebugAgent.obj
+ 0002:00004d50       ??_C@_0CJ@HCAPKGNH@TARGET?3?5Try?5to?5get?5command?5from@ 0000000000024d90     DxeDebugAgentLib:DebugAgent.obj
+ 0002:00004d80       ??_C@_0EB@MMMHKPFC@TARGET?3?5Get?5command?$FL?$CFx?$FN?5sequenc@ 0000000000024dc0     DxeDebugAgentLib:DebugAgent.obj
+ 0002:00004dd0       ??_C@_0ED@GONDGPBK@TARGET?3?5Get?5command?5failed?5or?5i@ 0000000000024e10     DxeDebugAgentLib:DebugAgent.obj
+ 0002:00004e18       ??_C@_0DJ@LENMLHNM@TARGET?3?5Receive?5one?5old?5command@ 0000000000024e58     DxeDebugAgentLib:DebugAgent.obj
+ 0002:00004e58       ??_C@_0DF@DCECPJEB@Receive?5one?5invalid?5command?$FL?$CFx?$FN@ 0000000000024e98     DxeDebugAgentLib:DebugAgent.obj
+ 0002:00004e90       ??_C@_0CI@DIMDIDBK@Processor?$FL?$CFx?$FN?3Received?5one?5comm@ 0000000000024ed0     DxeDebugAgentLib:DebugAgent.obj
+ 0002:00004eb8       ??_C@_0BP@HACIGIHB@Width?5?$DN?$DN?5RegisterWrite?9?$DOLength@ 0000000000024ef8     DxeDebugAgentLib:DebugAgent.obj
+ 0002:00004ee0       ??_C@_0EB@MOLLNJNN@Debug?5agent?5meet?5one?5Exception?0@ 0000000000024f20     DxeDebugAgentLib:DebugAgent.obj
+ 0002:00004f28       ??_C@_0BG@EOCIJOIC@Received?5data?5?$FL?$CF02x?$FN?6@ 0000000000024f68     DxeDebugAgentLib:DebugAgent.obj
+ 0002:00004f40       ??_C@_0DF@DJLBEBCI@Exception?5happened?0?5ExceptionNu@ 0000000000024f80     DxeDebugAgentLib:DebugAgent.obj
+ 0002:00004f78       ??_C@_0CN@BHKMFMGJ@processor?$FL?$CFx?$FN?3Try?5to?5halt?5other@ 0000000000024fb8     DxeDebugAgentLib:DebugMp.obj
+ 0002:00004fb0       ??_C@_0EG@KKOBIBCJ@Debug?5Agent?3?5Failed?5to?5install?5@ 0000000000024ff0     DxeDebugAgentLib:SerialIo.obj
+ 0002:00004ff8       ??_C@_0CJ@JMHOCNPK@Terminal?5Timer?5attach?5symbol?5re@ 0000000000025038     DxeDebugAgentLib:SerialIo.obj
+ 0002:00005028       ??_C@_0CI@FDLNPNOL@Terminal?5Timer?5break?5symbol?5rec@ 0000000000025068     DxeDebugAgentLib:SerialIo.obj
+ 0002:00005050       ??_C@_0CG@JMJILBGG@Debug?5Timer?5attach?5symbol?5recei@ 0000000000025090     DxeDebugAgentLib:SerialIo.obj
+ 0002:00005078       ??_C@_0CF@LFCBGBOL@Debug?5Timer?5break?5symbol?5receiv@ 00000000000250b8     DxeDebugAgentLib:SerialIo.obj
+ 0002:000050a0       ??_C@_0CK@KOLJIBMC@TemplateMap?4ExceptionStubHeader@ 00000000000250e0     DxeCpuExceptionHandlerLib:DxeException.obj
+ 0002:000050d0       mDoFarReturnFlag           0000000000025110     DxeCpuExceptionHandlerLib:DxeException.obj
+ 0002:000050e0       ??_C@_0EP@DHHENDIA@d?3?2edk2?2edk2?2UefiCpuPkg?2Library@ 0000000000025120     DxeCpuExceptionHandlerLib:PeiDxeSmmCpuException.obj
+ 0002:00005130       ??_C@_0DN@OILJOCCP@?$CB?$CB?$CB?$CB?5X64?5Exception?5Type?5?9?5?$CF02x?$CI@ 0000000000025170     DxeCpuExceptionHandlerLib:ArchExceptionHandler.obj
+ 0002:00005170       ??_C@_0BH@GDPLHCJG@ExceptionData?5?9?5?$CF016lx@ 00000000000251b0     DxeCpuExceptionHandlerLib:ArchExceptionHandler.obj
+ 0002:00005188       ??_C@_0CO@BBEHDOI@?5?5I?3?$CFx?5R?3?$CFx?5U?3?$CFx?5W?3?$CFx?5P?3?$CFx?5PK?3?$CF@ 00000000000251c8     DxeCpuExceptionHandlerLib:ArchExceptionHandler.obj
+ 0002:000051b8       ??_C@_0CO@OABPHBNC@RIP?5?5?9?5?$CF016lx?0?5CS?5?5?9?5?$CF016lx?0?5RF@ 00000000000251f8     DxeCpuExceptionHandlerLib:ArchExceptionHandler.obj
+ 0002:000051e8       ??_C@_0CL@EBCIBAPN@RAX?5?5?9?5?$CF016lx?0?5RCX?5?9?5?$CF016lx?0?5RD@ 0000000000025228     DxeCpuExceptionHandlerLib:ArchExceptionHandler.obj
+ 0002:00005218       ??_C@_0CL@NEKHLEEE@RBX?5?5?9?5?$CF016lx?0?5RSP?5?9?5?$CF016lx?0?5RB@ 0000000000025258     DxeCpuExceptionHandlerLib:ArchExceptionHandler.obj
+ 0002:00005248       ??_C@_0BN@KJEBEAEC@RSI?5?5?9?5?$CF016lx?0?5RDI?5?9?5?$CF016lx?6@ 0000000000025288     DxeCpuExceptionHandlerLib:ArchExceptionHandler.obj
+ 0002:00005268       ??_C@_0CL@IAICEOHO@R8?5?5?5?9?5?$CF016lx?0?5R9?5?5?9?5?$CF016lx?0?5R1@ 00000000000252a8     DxeCpuExceptionHandlerLib:ArchExceptionHandler.obj
+ 0002:00005298       ??_C@_0CL@JAMCECPD@R11?5?5?9?5?$CF016lx?0?5R12?5?9?5?$CF016lx?0?5R1@ 00000000000252d8     DxeCpuExceptionHandlerLib:ArchExceptionHandler.obj
+ 0002:000052c8       ??_C@_0BN@PKAAKNBO@R14?5?5?9?5?$CF016lx?0?5R15?5?9?5?$CF016lx?6@ 0000000000025308     DxeCpuExceptionHandlerLib:ArchExceptionHandler.obj
+ 0002:000052e8       ??_C@_0CL@DLLIMCBJ@DS?5?5?5?9?5?$CF016lx?0?5ES?5?5?9?5?$CF016lx?0?5FS@ 0000000000025328     DxeCpuExceptionHandlerLib:ArchExceptionHandler.obj
+ 0002:00005318       ??_C@_0BN@EICEFBKL@GS?5?5?5?9?5?$CF016lx?0?5SS?5?5?9?5?$CF016lx?6@ 0000000000025358     DxeCpuExceptionHandlerLib:ArchExceptionHandler.obj
+ 0002:00005338       ??_C@_0CL@DIOBDFLD@CR0?5?5?9?5?$CF016lx?0?5CR2?5?9?5?$CF016lx?0?5CR@ 0000000000025378     DxeCpuExceptionHandlerLib:ArchExceptionHandler.obj
+ 0002:00005368       ??_C@_0BN@JAPKHAJM@CR4?5?5?9?5?$CF016lx?0?5CR8?5?9?5?$CF016lx?6@ 00000000000253a8     DxeCpuExceptionHandlerLib:ArchExceptionHandler.obj
+ 0002:00005388       ??_C@_0CL@DONNALBH@DR0?5?5?9?5?$CF016lx?0?5DR1?5?9?5?$CF016lx?0?5DR@ 00000000000253c8     DxeCpuExceptionHandlerLib:ArchExceptionHandler.obj
+ 0002:000053b8       ??_C@_0CL@JNPELAID@DR3?5?5?9?5?$CF016lx?0?5DR6?5?9?5?$CF016lx?0?5DR@ 00000000000253f8     DxeCpuExceptionHandlerLib:ArchExceptionHandler.obj
+ 0002:000053e8       ??_C@_0CF@MGIBIPBB@GDTR?5?9?5?$CF016lx?5?$CF016lx?0?5LDTR?5?9?5?$CF0@ 0000000000025428     DxeCpuExceptionHandlerLib:ArchExceptionHandler.obj
+ 0002:00005410       ??_C@_0CF@DMFPLAJK@IDTR?5?9?5?$CF016lx?5?$CF016lx?0?5?5?5TR?5?9?5?$CF0@ 0000000000025450     DxeCpuExceptionHandlerLib:ArchExceptionHandler.obj
+ 0002:00005438       ??_C@_0BH@PFOFIBPH@FXSAVE_STATE?5?9?5?$CF016lx?6@ 0000000000025478     DxeCpuExceptionHandlerLib:ArchExceptionHandler.obj
+ 0002:00005450       mErrorCodeFlag             0000000000025490     DxeCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0002:00005458       ??_C@_0BD@PANICNEP@?$CDDE?5?9?5Divide?5Error@ 0000000000025498     DxeCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0002:00005470       ??_C@_0M@BENGJJME@?$CDDB?5?9?5Debug@ 00000000000254b0     DxeCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0002:00005480       ??_C@_0O@PELAMGDH@NMI?5Interrupt@ 00000000000254c0     DxeCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0002:00005490       ??_C@_0BB@ONIBFOGK@?$CDBP?5?9?5Breakpoint@ 00000000000254d0     DxeCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0002:000054a8       ??_C@_0P@BBLCINEF@?$CDOF?5?9?5Overflow@ 00000000000254e8     DxeCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0002:000054b8       ??_C@_0BL@FGFNPPKN@?$CDBR?5?9?5BOUND?5Range?5Exceeded@ 00000000000254f8     DxeCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0002:000054d8       ??_C@_0BF@PAJDEHLF@?$CDUD?5?9?5Invalid?5Opcode@ 0000000000025518     DxeCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0002:000054f0       ??_C@_0BL@HAMCGOMD@?$CDNM?5?9?5Device?5Not?5Available@ 0000000000025530     DxeCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0002:00005510       ??_C@_0BD@POLKFCFP@?$CDDF?5?9?5Double?5Fault@ 0000000000025550     DxeCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0002:00005528       ??_C@_0BM@LFJODCLN@Coprocessor?5Segment?5Overrun@ 0000000000025568     DxeCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0002:00005548       ??_C@_0BC@NJGFAHLO@?$CDTS?5?9?5Invalid?5TSS@ 0000000000025588     DxeCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0002:00005560       ??_C@_0BK@CJDBEANG@?$CDNP?5?9?5Segment?5Not?5Present@ 00000000000255a0     DxeCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0002:00005580       ??_C@_0BI@DKNGHJJN@?$CDSS?5?9?5Stack?5Fault?5Fault@ 00000000000255c0     DxeCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0002:00005598       ??_C@_0BJ@OPPOMNHK@?$CDGP?5?9?5General?5Protection@ 00000000000255d8     DxeCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0002:000055b8       ??_C@_0BB@CJKCEJGM@?$CDPF?5?9?5Page?9Fault@ 00000000000255f8     DxeCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0002:000055d0       ??_C@_0CD@DAPDALEP@?$CDMF?5?9?5x87?5FPU?5Floating?9Point?5Er@ 0000000000025610     DxeCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0002:000055f8       ??_C@_0BG@JJECJFKO@?$CDAC?5?9?5Alignment?5Check@ 0000000000025638     DxeCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0002:00005610       ??_C@_0BE@CIGFNHHH@?$CDMC?5?9?5Machine?9Check@ 0000000000025650     DxeCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0002:00005628       ??_C@_0BK@IKBNPED@?$CDXM?5?9?5SIMD?5floating?9point@ 0000000000025668     DxeCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0002:00005648       ??_C@_0BF@MIEADEIE@?$CDVE?5?9?5Virtualization@ 0000000000025688     DxeCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0002:00005660       ??_C@_0BJ@POMBGBMH@?$CDCP?5?9?5Control?5Protection@ 00000000000256a0     DxeCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0002:00005680       ??_C@_0BI@HOPEKCJH@?$CDVC?5?9?5VMM?5Communication@ 00000000000256c0     DxeCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0002:00005698       ??_C@_0CJ@NIJFIMND@?$CB?$CB?$CB?$CB?5Can?8t?5find?5image?5informati@ 00000000000256d8     DxeCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0002:000056c8       ??_C@_0CD@FDHAHDMO@?$CB?$CB?$CB?$CB?5Find?5image?5based?5on?5IP?$CI0x?$CF@ 0000000000025708     DxeCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0002:000056f0       ??_C@_09KCCBLILG@?$CINo?5PDB?$CJ?5@ 0000000000025730     DxeCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0002:00005700       ??_C@_0CM@GKFIOCPE@?5?$CIImageBase?$DN?$CF016lp?0?5EntryPoint?$DN@ 0000000000025740     DxeCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0002:00005730       mExceptionNameStr          0000000000025770     DxeCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0002:00005820       mExceptionReservedStr      0000000000025860     DxeCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0002:00005830       ??_C@_0FE@KCIAENEN@d?3?2edk2?2edk2?2MdeModulePkg?2Libra@ 0000000000025870     LzmaDecompressLib:GuidedSectionExtraction.obj
+ 0002:00005890       ??_C@_0EL@JGMKCGDP@d?3?2edk2?2edk2?2MdeModulePkg?2Libra@ 00000000000258d0     LzmaDecompressLib:LzmaDecompress.obj
+ 0002:000058e0       ??_C@_0BG@GMOOJNAG@SourceSize?5?$DO?$DN?5?$CI5?5?$CL?58?$CJ@ 0000000000025920     LzmaDecompressLib:LzmaDecompress.obj
+ 0002:000058f8       ??_C@_0BA@DAGHIEBA@?$CIPort?5?$CG?51?$CJ?5?$DN?$DN?50@ 0000000000025938     BaseIoLibIntrinsicSev:IoLibMsc.obj
+ 0002:00005908       ??_C@_0DK@HAPDFBOC@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 0000000000025948     BaseIoLibIntrinsicSev:IoLibMsc.obj
+ 0002:00005948       ??_C@_0BA@HCECIDGN@?$CIPort?5?$CG?53?$CJ?5?$DN?$DN?50@ 0000000000025988     BaseIoLibIntrinsicSev:IoLibMsc.obj
+ 0002:00005958       ??_C@_0DH@FEKOHHMP@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 0000000000025998     BaseIoLibIntrinsicSev:IoLib.obj
+ 0002:00005990       ??_C@_0BD@KOOFJLFH@?$CIAddress?5?$CG?51?$CJ?5?$DN?$DN?50@ 00000000000259d0     BaseIoLibIntrinsicSev:IoLib.obj
+ 0002:000059a8       ??_C@_0BD@OMMAJMCK@?$CIAddress?5?$CG?53?$CJ?5?$DN?$DN?50@ 00000000000259e8     BaseIoLibIntrinsicSev:IoLib.obj
+ 0002:000059c0       ??_C@_0BD@GIIKJCNA@?$CIAddress?5?$CG?57?$CJ?5?$DN?$DN?50@ 0000000000025a00     BaseIoLibIntrinsicSev:IoLib.obj
+ 0002:000059d8       ??_C@_0BL@KIAIPKNJ@Msr?4GhcbInfo?4Function?5?$DN?$DN?50@ 0000000000025a18     VmgExitLib:PeiDxeVmgExitVcHandler.obj
+ 0002:00005a00       ??_C@_0EB@NBLAEJHN@d?3?2edk2?2edk2?2OvmfPkg?2Library?2Vm@ 0000000000025a40     VmgExitLib:PeiDxeVmgExitVcHandler.obj
+ 0002:00005a48       ??_C@_0O@EHFDMHO@Msr?4Ghcb?5?$CB?$DN?50@ 0000000000025a88     VmgExitLib:PeiDxeVmgExitVcHandler.obj
+ 0002:00005a58       ??_C@_0BE@NGBOFDPN@Reg?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000025a98     VmgExitLib:VmgExitVcHandler.obj
+ 0002:00005a70       ??_C@_0DL@CEIEAOGP@d?3?2edk2?2edk2?2OvmfPkg?2Library?2Vm@ 0000000000025ab0     VmgExitLib:VmgExitVcHandler.obj
+ 0002:00005ab0       ??_C@_0CC@NFFCFAPI@MMIO?5using?5encrypted?5memory?3?5?$CFl@ 0000000000025af0     VmgExitLib:VmgExitVcHandler.obj
+ 0002:00005ad8       ??_C@_0BK@ENLBMHMC@Invalid?5MMIO?5opcode?5?$CI?$CFx?$CJ?6@ 0000000000025b18     VmgExitLib:VmgExitVcHandler.obj
+ 0002:00005b00       ??_C@_0EN@HLCGLLBG@?$CIExitInfo?4Elements?4Lower32Bits?5@ 0000000000025b40     VmgExitLib:VmgExitLib.obj
+ 0002:00005b50       ??_C@_0DF@CCJOHDAG@d?3?2edk2?2edk2?2OvmfPkg?2Library?2Vm@ 0000000000025b90     VmgExitLib:VmgExitLib.obj
+ 0002:00005b88       ??_C@_0CA@KLMDHBCA@Ghcb?9?$DOSaveArea?4SwExitInfo2?5?$CB?$DN?50@ 0000000000025bc8     VmgExitLib:VmgExitLib.obj
+ 0002:00005bb0       ??_C@_0EI@CPPEJMEB@d?3?2edk2?2edk2?2UefiCpuPkg?2Library@ 0000000000025bf0     BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0002:00005bf8       ??_C@_0BI@IFINGPEJ@?$CIMmioOffset?5?$CG?50xf?$CJ?5?$DN?$DN?50@ 0000000000025c38     BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0002:00005c10       ??_C@_0BJ@MBLFAKBO@ApicBaseMsr?4Bits?4EN?5?$CB?$DN?50@ 0000000000025c50     BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0002:00005c30       ??_C@_0BD@KIGMPOME@DivideValue?5?$DM?$DN?5128@ 0000000000025c70     BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0002:00005c48       ??_C@_0DF@NNGMMEOC@DivideValue?5?$DN?$DN?5GetPowerOfTwo32?5@ 0000000000025c88     BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0002:00005c80       ??_C@_0CN@CPPCCLLE@?$CIReadLocalApicReg?5?$CI0x0f0?$CJ?5?$CG?50x0@ 0000000000025cc0     BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0002:00005cb0       ??_C@_0EC@EHHLJNO@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 0000000000025cf0     BaseMemoryLibRepStr:SetMem16Wrapper.obj
+ 0002:00005cf8       ??_C@_0DM@OAJIKNNG@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 0000000000025d38     BasePrintLib:PrintLibInternal.obj
+ 0002:00005d40       ??_C@_0EB@HDGIDCIO@?$CIBufferSize?5?$DM?$DN?5?$CI_gPcd_FixedAtBu@ 0000000000025d80     BasePrintLib:PrintLibInternal.obj
+ 0002:00005d88       ??_C@_0BJ@PPAKKDJG@?$CIFormat?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ@ 0000000000025dc8     BasePrintLib:PrintLibInternal.obj
+ 0002:00005db0       ??_C@_0ED@LPDDCECB@?$CIBufferSize?5?$DM?$DN?5?$CI_gPcd_FixedAtBu@ 0000000000025df0     BasePrintLib:PrintLibInternal.obj
+ 0002:00005e00       ??_C@_0IM@BFJJFLGB@?$CIStrnLenS?5?$CI?$CICHAR16?5?$CK?$CJFormat?0?5?$CI_@ 0000000000025e40     BasePrintLib:PrintLibInternal.obj
+ 0002:00005e90       ??_C@_0ID@PLGJGION@?$CIAsciiStrnLenS?5?$CIFormat?0?5?$CI_gPcd_@ 0000000000025ed0     BasePrintLib:PrintLibInternal.obj
+ 0002:00005f18       ??_C@_0O@MLOLIMFM@?$DMnull?5string?$DO@ 0000000000025f58     BasePrintLib:PrintLibInternal.obj
+ 0002:00005f28       ??_C@_0M@BJJDNPHK@?$DMnull?5guid?$DO@ 0000000000025f68     BasePrintLib:PrintLibInternal.obj
+ 0002:00005f38       ??_C@_0DB@PMLHLBMO@?$CF08x?9?$CF04x?9?$CF04x?9?$CF02x?$CF02x?9?$CF02x?$CF02@ 0000000000025f78     BasePrintLib:PrintLibInternal.obj
+ 0002:00005f70       ??_C@_0M@LHGBCIKM@?$DMnull?5time?$DO@ 0000000000025fb0     BasePrintLib:PrintLibInternal.obj
+ 0002:00005f80       ??_C@_0BK@FCPKCIDD@?$CF02d?1?$CF02d?1?$CF04d?5?5?$CF02d?3?$CF02d@ 0000000000025fc0     BasePrintLib:PrintLibInternal.obj
+ 0002:00005f9c       ??_C@_04JIMNDDED@?$CF08X@  0000000000025fdc     BasePrintLib:PrintLibInternal.obj
+ 0002:00005fa4       ??_C@_02PCIJFNDE@?$AN?6@   0000000000025fe4     BasePrintLib:PrintLibInternal.obj
+ 0002:00005fa8       ??_C@_01LIIJDEN@?$AN@      0000000000025fe8     BasePrintLib:PrintLibInternal.obj
+ 0002:00005fb0       mWarningString             0000000000025ff0     BasePrintLib:PrintLibInternal.obj
+ 0002:00006050       mErrorString               0000000000026090     BasePrintLib:PrintLibInternal.obj
+ 0002:00006310       mHexStr                    0000000000026350     BasePrintLib:PrintLibInternal.obj
+ 0002:00006320       ??_C@_0BJ@FKJAAJLB@SpinLock?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000026360     BaseSynchronizationLib:SynchronizationMsc.obj
+ 0002:00006340       ??_C@_0EI@HFGCNAO@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 0000000000026380     BaseSynchronizationLib:SynchronizationMsc.obj
+ 0002:00006388       ??_C@_0DF@GPAOIIHK@LockValue?5?$DN?$DN?5?$CI?$CIUINTN?$CJ?52?$CJ?5?$HM?$HM?5Loc@ 00000000000263c8     BaseSynchronizationLib:SynchronizationMsc.obj
+ 0002:000063c0       ??_C@_0DC@FABBJIGJ@d?3?2edk2?2edk2?2MdePkg?2Library?2Dxe@ 0000000000026400     DxePcdLib:DxePcdLib.obj
+ 0002:000063f8       ??_C@_0BF@OOKDELHM@mPcd?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000026438     DxePcdLib:DxePcdLib.obj
+ 0002:00006410       ??_C@_0CG@KIJMJHBN@?$CI?$CIAddress?$CJ?5?$CG?5?$CI?$HO0xffff0ff?5?$HM?5?$CI0?$CJ?$CJ@ 0000000000026450     BasePciCf8Lib:PciCf8Lib.obj
+ 0002:00006438       ??_C@_0DG@KOAEBPEO@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 0000000000026478     BasePciCf8Lib:PciCf8Lib.obj
+ 0002:00006470       ??_C@_0CG@EDKLCMBO@?$CI?$CIAddress?$CJ?5?$CG?5?$CI?$HO0xffff0ff?5?$HM?5?$CI3?$CJ?$CJ@ 00000000000264b0     BasePciCf8Lib:PciCf8Lib.obj
+ 0002:000064ec       __volatile_metadata        000000000002652c     <linker-defined>
+ 0003:00000000       ExceptionStubHeaderSize    0000000000026840     DxeDebugAgentLib:AsmFuncs.obj
+ 0003:00000010       gEfiStatusCodeSpecificDataGuid 0000000000026850     DxeCore:AutoGen.obj
+ 0003:00000020       gEfiResetArchProtocolGuid  0000000000026860     DxeCore:AutoGen.obj
+ 0003:00000030       gEfiMemoryTypeInformationGuid 0000000000026870     DxeCore:AutoGen.obj
+ 0003:00000040       gIdleLoopEventGuid         0000000000026880     DxeCore:AutoGen.obj
+ 0003:00000050       gEfiStatusCodeRuntimeProtocolGuid 0000000000026890     DxeCore:AutoGen.obj
+ 0003:00000060       gEfiSecurityArchProtocolGuid 00000000000268a0     DxeCore:AutoGen.obj
+ 0003:00000070       gEdkiiPeCoffImageEmulatorProtocolGuid 00000000000268b0     DxeCore:AutoGen.obj
+ 0003:00000080       gEfiFirmwareVolumeBlockProtocolGuid 00000000000268c0     DxeCore:AutoGen.obj
+ 0003:00000090       gEfiEventMemoryMapChangeGuid 00000000000268d0     DxeCore:AutoGen.obj
+ 0003:000000a0       gEventExitBootServicesFailedGuid 00000000000268e0     DxeCore:AutoGen.obj
+ 0003:000000b0       gEfiWatchdogTimerArchProtocolGuid 00000000000268f0     DxeCore:AutoGen.obj
+ 0003:000000c0       gEfiLoadedImageDevicePathProtocolGuid 0000000000026900     DxeCore:AutoGen.obj
+ 0003:000000d0       gEfiEventReadyToBootGuid   0000000000026910     DxeCore:AutoGen.obj
+ 0003:000000e0       gEfiBdsArchProtocolGuid    0000000000026920     DxeCore:AutoGen.obj
+ 0003:000000f0       gEfiFirmwareFileSystem3Guid 0000000000026930     DxeCore:AutoGen.obj
+ 0003:00000100       gEfiHiiPackageListProtocolGuid 0000000000026940     DxeCore:AutoGen.obj
+ 0003:00000110       gEfiVariableWriteArchProtocolGuid 0000000000026950     DxeCore:AutoGen.obj
+ 0003:00000120       gPcdProtocolGuid           0000000000026960     DxeCore:AutoGen.obj
+ 0003:00000130       gEfiLoadFileProtocolGuid   0000000000026970     DxeCore:AutoGen.obj
+ 0003:00000140       gEfiCapsuleArchProtocolGuid 0000000000026980     DxeCore:AutoGen.obj
+ 0003:00000150       gEfiHobMemoryAllocModuleGuid 0000000000026990     DxeCore:AutoGen.obj
+ 0003:00000160       gEfiSerialIoProtocolGuid   00000000000269a0     DxeCore:AutoGen.obj
+ 0003:00000170       gEfiFileInfoGuid           00000000000269b0     DxeCore:AutoGen.obj
+ 0003:00000180       gEfiDevicePathProtocolGuid 00000000000269c0     DxeCore:AutoGen.obj
+ 0003:00000190       gEfiDriverFamilyOverrideProtocolGuid 00000000000269d0     DxeCore:AutoGen.obj
+ 0003:000001a0       gEfiLoadedImageProtocolGuid 00000000000269e0     DxeCore:AutoGen.obj
+ 0003:000001b0       gEfiFirmwareVolume2ProtocolGuid 00000000000269f0     DxeCore:AutoGen.obj
+ 0003:000001c0       gEfiMemoryAttributesTableGuid 0000000000026a00     DxeCore:AutoGen.obj
+ 0003:000001d0       gEfiVectorHandoffInfoPpiGuid 0000000000026a10     DxeCore:AutoGen.obj
+ 0003:000001e0       gEfiBusSpecificDriverOverrideProtocolGuid 0000000000026a20     DxeCore:AutoGen.obj
+ 0003:000001f0       gAprioriGuid               0000000000026a30     DxeCore:AutoGen.obj
+ 0003:00000200       gEfiCpuArchProtocolGuid    0000000000026a40     DxeCore:AutoGen.obj
+ 0003:00000210       gEfiFirmwareFileSystem2Guid 0000000000026a50     DxeCore:AutoGen.obj
+ 0003:00000220       gEfiDebugImageInfoTableGuid 0000000000026a60     DxeCore:AutoGen.obj
+ 0003:00000230       gLzmaCustomDecompressGuid  0000000000026a70     DxeCore:AutoGen.obj
+ 0003:00000240       gEfiSimpleFileSystemProtocolGuid 0000000000026a80     DxeCore:AutoGen.obj
+ 0003:00000250       gEfiRuntimeArchProtocolGuid 0000000000026a90     DxeCore:AutoGen.obj
+ 0003:00000260       gEfiEventDxeDispatchGuid   0000000000026aa0     DxeCore:AutoGen.obj
+ 0003:00000270       gEfiMetronomeArchProtocolGuid 0000000000026ab0     DxeCore:AutoGen.obj
+ 0003:00000280       gEfiTimerArchProtocolGuid  0000000000026ac0     DxeCore:AutoGen.obj
+ 0003:00000290       gEfiVectorHandoffTableGuid 0000000000026ad0     DxeCore:AutoGen.obj
+ 0003:000002a0       gEfiHobListGuid            0000000000026ae0     DxeCore:AutoGen.obj
+ 0003:000002b0       gEfiDriverBindingProtocolGuid 0000000000026af0     DxeCore:AutoGen.obj
+ 0003:000002c0       gEfiRealTimeClockArchProtocolGuid 0000000000026b00     DxeCore:AutoGen.obj
+ 0003:000002d0       gEfiEventExitBootServicesGuid 0000000000026b10     DxeCore:AutoGen.obj
+ 0003:000002e0       gEfiSecurity2ArchProtocolGuid 0000000000026b20     DxeCore:AutoGen.obj
+ 0003:000002f0       gEfiMonotonicCounterArchProtocolGuid 0000000000026b30     DxeCore:AutoGen.obj
+ 0003:00000300       gEfiEndOfDxeEventGroupGuid 0000000000026b40     DxeCore:AutoGen.obj
+ 0003:00000310       gEfiSmmBase2ProtocolGuid   0000000000026b50     DxeCore:AutoGen.obj
+ 0003:00000320       gEfiEventVirtualAddressChangeGuid 0000000000026b60     DxeCore:AutoGen.obj
+ 0003:00000330       gEfiPlatformDriverOverrideProtocolGuid 0000000000026b70     DxeCore:AutoGen.obj
+ 0003:00000340       gEfiDxeServicesTableGuid   0000000000026b80     DxeCore:AutoGen.obj
+ 0003:00000350       gEfiDecompressProtocolGuid 0000000000026b90     DxeCore:AutoGen.obj
+ 0003:00000360       gEfiCallerIdGuid           0000000000026ba0     DxeCore:AutoGen.obj
+ 0003:00000370       gEfiVariableArchProtocolGuid 0000000000026bb0     DxeCore:AutoGen.obj
+ 0003:00000380       gEfiDebugAgentGuid         0000000000026bc0     DxeCore:AutoGen.obj
+ 0003:00000390       gEfiLoadFile2ProtocolGuid  0000000000026bd0     DxeCore:AutoGen.obj
+ 0003:000003a0       mEfiSystemTableTemplate    0000000000026be0     DxeCore:DxeMain.obj
+ 0003:00000418       gRuntime                   0000000000026c58     DxeCore:DxeMain.obj
+ 0003:00000420       mDxeServices               0000000000026c60     DxeCore:DxeMain.obj
+ 0003:000004d0       mEfiRuntimeServicesTableTemplate 0000000000026d10     DxeCore:DxeMain.obj
+ 0003:00000558       gDxeCoreRT                 0000000000026d98     DxeCore:DxeMain.obj
+ 0003:00000560       mBootServices              0000000000026da0     DxeCore:DxeMain.obj
+ 0003:000006e0       gRuntimeTemplate           0000000000026f20     DxeCore:DxeMain.obj
+ 0003:00000730       gEfiDecompress             0000000000026f70     DxeCore:DxeMain.obj
+ 0003:00000740       mGcdMemorySpaceLock        0000000000026f80     DxeCore:Gcd.obj
+ 0003:00000760       mGcdMemorySpaceMapEntryTemplate 0000000000026fa0     DxeCore:Gcd.obj
+ 0003:000007b0       mGcdIoSpaceLock            0000000000026ff0     DxeCore:Gcd.obj
+ 0003:000007d0       mGcdIoSpaceMapEntryTemplate 0000000000027010     DxeCore:Gcd.obj
+ 0003:00000820       mGcdMemorySpaceMap         0000000000027060     DxeCore:Gcd.obj
+ 0003:00000830       mAttributeConversionTable  0000000000027070     DxeCore:Gcd.obj
+ 0003:00000998       mGcdIoSpaceMap             00000000000271d8     DxeCore:Gcd.obj
+ 0003:000009b0       mArchProtocols             00000000000271f0     DxeCore:DxeProtocolNotify.obj
+ 0003:00000be0       mOptionalProtocols         0000000000027420     DxeCore:DxeProtocolNotify.obj
+ 0003:00000c58       mProtocolDatabase          0000000000027498     DxeCore:Handle.obj
+ 0003:00000c68       gProtocolDatabaseLock      00000000000274a8     DxeCore:Handle.obj
+ 0003:00000c80       gHandleList                00000000000274c0     DxeCore:Handle.obj
+ 0003:00000c90       gMemoryTypeInformation     00000000000274d0     DxeCore:Page.obj
+ 0003:00000d10       mFreeMemoryMapEntryList    0000000000027550     DxeCore:Page.obj
+ 0003:00000d20       mDefaultMaximumAddress     0000000000027560     DxeCore:Page.obj
+ 0003:00000d30       mMemoryTypeStatistics      0000000000027570     DxeCore:Page.obj
+ 0003:00001030       mDefaultBaseAddress        0000000000027870     DxeCore:Page.obj
+ 0003:00001040       mCorePrivateImage          0000000000027880     DxeCore:Image.obj
+ 0003:000011d0       mMachineTypeInfo           0000000000027a10     DxeCore:Image.obj
+ 0003:00001220       gEfiCurrentTpl             0000000000027a60     DxeCore:Event.obj
+ 0003:00001228       gEventQueueLock            0000000000027a68     DxeCore:Event.obj
+ 0003:00001240       gEventSignalQueue          0000000000027a80     DxeCore:Event.obj
+ 0003:00001250       mDispatcherLock            0000000000027a90     DxeCore:Dispatcher.obj
+ 0003:00001268       mScheduledQueue            0000000000027aa8     DxeCore:Dispatcher.obj
+ 0003:00001278       mFvHandleList              0000000000027ab8     DxeCore:Dispatcher.obj
+ 0003:00001288       mDiscoveredList            0000000000027ac8     DxeCore:Dispatcher.obj
+ 0003:000012a0       mFwVolBlock                0000000000027ae0     DxeCore:FwVolBlock.obj
+ 0003:00001320       mFvMemmapDevicePathTemplate 0000000000027b60     DxeCore:FwVolBlock.obj
+ 0003:00001340       mFvPIWGDevicePathTemplate  0000000000027b80     DxeCore:FwVolBlock.obj
+ 0003:00001358       mEfiTimerList              0000000000027b98     DxeCore:Timer.obj
+ 0003:00001368       mEfiSystemTimeLock         0000000000027ba8     DxeCore:Timer.obj
+ 0003:00001380       mEfiTimerLock              0000000000027bc0     DxeCore:Timer.obj
+ 0003:000013b0       mPoolHeadList              0000000000027bf0     DxeCore:Pool.obj
+ 0003:000013c0       mCustomGuidedSectionExtractionProtocol 0000000000027c00     DxeCore:CoreSectionExtraction.obj
+ 0003:000013c8       mStreamRoot                0000000000027c08     DxeCore:CoreSectionExtraction.obj
+ 0003:000013d8       mMemoryAttributesTableEnable 0000000000027c18     DxeCore:MemoryAttributesTable.obj
+ 0003:00001420       mFvDevice                  0000000000027c60     DxeCore:FwVol.obj
+ 0003:000014c0       mLevelMask                 0000000000027d00     DxeCore:HeapGuard.obj
+ 0003:000014e8       mMapLevel                  0000000000027d28     DxeCore:HeapGuard.obj
+ 0003:000014f0       mLevelShift                0000000000027d30     DxeCore:HeapGuard.obj
+ 0003:00001518       gMemoryMap                 0000000000027d58     DxeCore:MemData.obj
+ 0003:00001528       gMemoryLock                0000000000027d68     DxeCore:MemData.obj
+ 0003:00001540       mVectorHandoffInfoDebugAgent 0000000000027d80     DxeDebugAgentLib:DebugAgent.obj
+ 0003:00001720       mErrorMsgVersionAlert      0000000000027f60     DxeDebugAgentLib:DebugAgent.obj
+ 0003:00001790       mErrorMsgSendInitPacket    0000000000027fd0     DxeDebugAgentLib:DebugAgent.obj
+ 0003:000017f0       mErrorMsgConnectOK         0000000000028030     DxeDebugAgentLib:DebugAgent.obj
+ 0003:00001820       mWarningMsgIngoreBreakpoint 0000000000028060     DxeDebugAgentLib:DebugAgent.obj
+ 0003:00001868       mErrorMsgConnectFail       00000000000280a8     DxeDebugAgentLib:DebugAgent.obj
+ 0003:00001890       mSerialIo                  00000000000280d0     DxeDebugAgentLib:SerialIo.obj
+ 0003:000018d8       mSerialFifoForDebug        0000000000028118     DxeDebugAgentLib:SerialIo.obj
+ 0003:000018e8       mSerialFifoForTerminal     0000000000028128     DxeDebugAgentLib:SerialIo.obj
+ 0003:000018f8       mSerialIoMode              0000000000028138     DxeDebugAgentLib:SerialIo.obj
+ 0003:00001918       mSerialIoDevicePath        0000000000028158     DxeDebugAgentLib:SerialIo.obj
+ 0003:00001960       gHobList                   00000000000281a0     DxeCoreEntryPoint:DxeCoreEntryPoint.obj
+ 0003:00001968       gDxeCoreST                 00000000000281a8     DxeCore:DxeMain.obj
+ 0003:00001970       gBds                       00000000000281b0     DxeCore:DxeMain.obj
+ 0003:00001978       mDecompressHandle          00000000000281b8     DxeCore:DxeMain.obj
+ 0003:00001980       gDxeCoreImageHandle        00000000000281c0     DxeCore:DxeMain.obj
+ 0003:00001988       gMetronome                 00000000000281c8     DxeCore:DxeMain.obj
+ 0003:00001990       gSmmBase2                  00000000000281d0     DxeCore:DxeMain.obj
+ 0003:00001998       gMemoryMapTerminated       00000000000281d8     DxeCore:DxeMain.obj
+ 0003:000019a0       gSecurity2                 00000000000281e0     DxeCore:DxeMain.obj
+ 0003:000019a8       gSecurity                  00000000000281e8     DxeCore:DxeMain.obj
+ 0003:000019b0       gTimer                     00000000000281f0     DxeCore:DxeMain.obj
+ 0003:000019b8       gCpu                       00000000000281f8     DxeCore:DxeMain.obj
+ 0003:000019c0       gWatchdogTimer             0000000000028200     DxeCore:DxeMain.obj
+ 0003:000019c8       gHandleDatabaseKey         0000000000028208     DxeCore:Handle.obj
+ 0003:000019d0       mFreeMapStack              0000000000028210     DxeCore:Page.obj
+ 0003:000019d8       mMemoryMapKey              0000000000028218     DxeCore:Page.obj
+ 0003:000019e0       mMemoryTypeInformationInitialized 0000000000028220     DxeCore:Page.obj
+ 0003:000019e8       mMapDepth                  0000000000028228     DxeCore:Page.obj
+ 0003:000019f0       mDxeCoreImageMachineType   0000000000028230     DxeCore:Image.obj
+ 0003:000019f8       mCurrentImage              0000000000028238     DxeCore:Image.obj
+ 0003:00001a00       gEventPending              0000000000028240     DxeCore:Event.obj
+ 0003:00001a08       gIdleLoopEvent             0000000000028248     DxeCore:Event.obj
+ 0003:00001a10       gDispatcherRunning         0000000000028250     DxeCore:Dispatcher.obj
+ 0003:00001a18       mEfiLocateHandleRequest    0000000000028258     DxeCore:Locate.obj
+ 0003:00001a20       mDebugInfoTableHeader      0000000000028260     DxeCore:DebugImageInfo.obj
+ 0003:00001a30       mDebugTable                0000000000028270     DxeCore:DebugImageInfo.obj
+ 0003:00001a38       mMaxTableEntries           0000000000028278     DxeCore:DebugImageInfo.obj
+ 0003:00001a40       mEfiSystemTime             0000000000028280     DxeCore:Timer.obj
+ 0003:00001a48       mEfiCheckTimerEvent        0000000000028288     DxeCore:Timer.obj
+ 0003:00001a50       mSectionExtractionHandle   0000000000028290     DxeCore:CoreSectionExtraction.obj
+ 0003:00001a58       mMemoryAttributesTableReadyToBoot 0000000000028298     DxeCore:MemoryAttributesTable.obj
+ 0003:00001a60       mMemoryAttributesTable     00000000000282a0     DxeCore:MemoryAttributesTable.obj
+ 0003:00001a68       mMemoryAttributesTableEndOfDxe 00000000000282a8     DxeCore:MemoryAttributesTable.obj
+ 0003:00001a70       mSystemTableAllocateSize   00000000000282b0     DxeCore:InstallConfigurationTable.obj
+ 0003:00001a78       mOnGuarding                00000000000282b8     DxeCore:HeapGuard.obj
+ 0003:00001a80       mGuardedMemoryMap          00000000000282c0     DxeCore:HeapGuard.obj
+ 0003:00001a88       mDepexEvaluationStack      00000000000282c8     DxeCore:Dependency.obj
+ 0003:00001a90       mDepexEvaluationStackEnd   00000000000282d0     DxeCore:Dependency.obj
+ 0003:00001a98       mDepexEvaluationStackPointer 00000000000282d8     DxeCore:Dependency.obj
+ 0003:00001aa0       gBS                        00000000000282e0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0003:00001aa8       gST                        00000000000282e8     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0003:00001ab0       gImageHandle               00000000000282f0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0003:00001ab8       gRT                        00000000000282f8     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0003:00001ac0       mNumberOfExtractHandler    0000000000028300     DxeExtractGuidedSectionLib:DxeExtractGuidedSectionLib.obj
+ 0003:00001ac4       mMaxNumberOfExtractHandler 0000000000028304     DxeExtractGuidedSectionLib:DxeExtractGuidedSectionLib.obj
+ 0003:00001ac8       mExtractDecodeHandlerTable 0000000000028308     DxeExtractGuidedSectionLib:DxeExtractGuidedSectionLib.obj
+ 0003:00001ad0       mExtractHandlerGuidTable   0000000000028310     DxeExtractGuidedSectionLib:DxeExtractGuidedSectionLib.obj
+ 0003:00001ad8       mExtractGetInfoHandlerTable 0000000000028318     DxeExtractGuidedSectionLib:DxeExtractGuidedSectionLib.obj
+ 0003:00001ae0       mReportStatusCodeLibStatusCodeProtocol 0000000000028320     DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0003:00001ae8       mSkipBreakpoint            0000000000028328     DxeDebugAgentLib:DxeDebugAgentLib.obj
+ 0003:00001ae9       mMultiProcessorDebugSupport 0000000000028329     DxeDebugAgentLib:DxeDebugAgentLib.obj
+ 0003:00001af0       mMailboxPointer            0000000000028330     DxeDebugAgentLib:DxeDebugAgentLib.obj
+ 0003:00001af8       mDxeCoreFlag               0000000000028338     DxeDebugAgentLib:DxeDebugAgentLib.obj
+ 0003:00001b00       mDebugMpContext            0000000000028340     DxeDebugAgentLib:DebugMp.obj
+ 0003:00001b70       mDebugCpuData              00000000000283b0     DxeDebugAgentLib:DebugMp.obj
+ 0003:00001d78       mSerialIoHandle            00000000000285b8     DxeDebugAgentLib:SerialIo.obj
+ 0003:00001d80       mLoopbackBuffer            00000000000285c0     DxeDebugAgentLib:SerialIo.obj
+ 0003:00001d88       gParity                    00000000000285c8     PcAtSerialPortLib:SerialPortLib.obj
+ 0003:00001d89       gBreakSet                  00000000000285c9     PcAtSerialPortLib:SerialPortLib.obj
+ 0003:00001d98       mPcd                       00000000000285d8     DxePcdLib:DxePcdLib.obj
+ 0003:00001de0       mExceptionHandlerData      0000000000028620     <common>
+ 0003:00001e00       mReservedVectorsData       0000000000028640     <common>
+ 0003:00002900       mExternalInterruptHandlerTable 0000000000029140     <common>
+ 0003:00002a00       mIdtEntryTable             0000000000029240     <common>
+ 0003:00002c20       mMailbox                   0000000000029460     <common>
+ 0003:00002c48       gEfiFwVolBlockNotifyReg    0000000000029488     <common>
+ 0003:00002c60       mPoolHead                  00000000000294a0     <common>
+ 0003:000039f8       mFwVolEventRegistration    000000000002a238     <common>
+ 0003:00003a00       mFvDevicePath              000000000002a240     <common>
+ 0003:00003a20       gEventQueue                000000000002a260     <common>
+ 0003:00003c20       mImageProtectionPolicy     000000000002a460     <common>
+ 0003:00003c40       mMapStack                  000000000002a480     <common>
+ 0003:00003dc0       gDxeCoreFileName           000000000002a600     <common>
+ 0003:00003dc8       gDxeCoreLoadedImage        000000000002a608     <common>
+
+ entry point at        0001:00000db8
+
+ Static symbols
+
+ 0001:00000043       CetDone                    0000000000000303     BaseLib:SetJump.obj
+ 0001:00000110       CetDone                    00000000000003d0     BaseLib:LongJump.obj
+ 0001:000001aa       InternalMemCopyMem.0       000000000000046a     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:000001ba       @CopyBackward              000000000000047a     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:000001c3       @CopyBytes                 0000000000000483     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000297       Exception1Handle           0000000000000557     DxeDebugAgentLib:AsmFuncs.obj
+ 0001:000002aa       Exception2Handle           000000000000056a     DxeDebugAgentLib:AsmFuncs.obj
+ 0001:000002bd       Exception3Handle           000000000000057d     DxeDebugAgentLib:AsmFuncs.obj
+ 0001:000002d0       Exception4Handle           0000000000000590     DxeDebugAgentLib:AsmFuncs.obj
+ 0001:000002e3       Exception5Handle           00000000000005a3     DxeDebugAgentLib:AsmFuncs.obj
+ 0001:000002f6       Exception6Handle           00000000000005b6     DxeDebugAgentLib:AsmFuncs.obj
+ 0001:00000309       Exception7Handle           00000000000005c9     DxeDebugAgentLib:AsmFuncs.obj
+ 0001:0000031c       Exception8Handle           00000000000005dc     DxeDebugAgentLib:AsmFuncs.obj
+ 0001:0000032f       Exception9Handle           00000000000005ef     DxeDebugAgentLib:AsmFuncs.obj
+ 0001:00000342       Exception10Handle          0000000000000602     DxeDebugAgentLib:AsmFuncs.obj
+ 0001:00000355       Exception11Handle          0000000000000615     DxeDebugAgentLib:AsmFuncs.obj
+ 0001:00000368       Exception12Handle          0000000000000628     DxeDebugAgentLib:AsmFuncs.obj
+ 0001:0000037b       Exception13Handle          000000000000063b     DxeDebugAgentLib:AsmFuncs.obj
+ 0001:0000038e       Exception14Handle          000000000000064e     DxeDebugAgentLib:AsmFuncs.obj
+ 0001:000003a1       Exception15Handle          0000000000000661     DxeDebugAgentLib:AsmFuncs.obj
+ 0001:000003b4       Exception16Handle          0000000000000674     DxeDebugAgentLib:AsmFuncs.obj
+ 0001:000003c7       Exception17Handle          0000000000000687     DxeDebugAgentLib:AsmFuncs.obj
+ 0001:000003da       Exception18Handle          000000000000069a     DxeDebugAgentLib:AsmFuncs.obj
+ 0001:000003ed       Exception19Handle          00000000000006ad     DxeDebugAgentLib:AsmFuncs.obj
+ 0001:0000040f       CommonEntry                00000000000006cf     DxeDebugAgentLib:AsmFuncs.obj
+ 0001:00000445       NoExtrPush                 0000000000000705     DxeDebugAgentLib:AsmFuncs.obj
+ 0001:000005b0       AsmIdtVectorBegin          0000000000000870     DxeCpuExceptionHandlerLib:Xcode5ExceptionHandlerAsm.obj
+ 0001:00000790       AsmIdtVectorEnd            0000000000000a50     DxeCpuExceptionHandlerLib:Xcode5ExceptionHandlerAsm.obj
+ 0001:00000790       HookAfterStubHeaderBegin   0000000000000a50     DxeCpuExceptionHandlerLib:Xcode5ExceptionHandlerAsm.obj
+ 0001:00000791       @VectorNum                 0000000000000a51     DxeCpuExceptionHandlerLib:Xcode5ExceptionHandlerAsm.obj
+ 0001:0000079d       JmpAbsoluteAddress         0000000000000a5d     DxeCpuExceptionHandlerLib:Xcode5ExceptionHandlerAsm.obj
+ 0001:0000079f       HookAfterStubHeaderEnd     0000000000000a5f     DxeCpuExceptionHandlerLib:Xcode5ExceptionHandlerAsm.obj
+ 0001:000007bb       HookAfterStubHeaderEnd.0   0000000000000a7b     DxeCpuExceptionHandlerLib:Xcode5ExceptionHandlerAsm.obj
+ 0001:000007dc       NoErrorCode                0000000000000a9c     DxeCpuExceptionHandlerLib:Xcode5ExceptionHandlerAsm.obj
+ 0001:000007e8       HasErrorCode               0000000000000aa8     DxeCpuExceptionHandlerLib:Xcode5ExceptionHandlerAsm.obj
+ 0001:000008b6       VcDebugRegs                0000000000000b76     DxeCpuExceptionHandlerLib:Xcode5ExceptionHandlerAsm.obj
+ 0001:000008bf       DrFinish                   0000000000000b7f     DxeCpuExceptionHandlerLib:Xcode5ExceptionHandlerAsm.obj
+ 0001:0000094b       CetDone                    0000000000000c0b     DxeCpuExceptionHandlerLib:Xcode5ExceptionHandlerAsm.obj
+ 0001:000009cb       ErrorCode                  0000000000000c8b     DxeCpuExceptionHandlerLib:Xcode5ExceptionHandlerAsm.obj
+ 0001:000009d3       DoReturn                   0000000000000c93     DxeCpuExceptionHandlerLib:Xcode5ExceptionHandlerAsm.obj
+ 0001:000009f5       DoIret                     0000000000000cb5     DxeCpuExceptionHandlerLib:Xcode5ExceptionHandlerAsm.obj
+ 0001:00000b7f       AsmCpuid.0                 0000000000000e3f     BaseLib:CpuId.obj
+ 0001:00000b84       AsmCpuid.1                 0000000000000e44     BaseLib:CpuId.obj
+ 0001:00000b8b       AsmCpuid.2                 0000000000000e4b     BaseLib:CpuId.obj
+ 0001:00000b94       AsmCpuid.3                 0000000000000e54     BaseLib:CpuId.obj
+ 0001:00000ca5       AsmCpuidEx.0               0000000000000f65     BaseLib:CpuIdEx.obj
+ 0001:00000cac       AsmCpuidEx.1               0000000000000f6c     BaseLib:CpuIdEx.obj
+ 0001:00000cb3       AsmCpuidEx.2               0000000000000f73     BaseLib:CpuIdEx.obj
+ 0001:00000cbc       AsmCpuidEx.3               0000000000000f7c     BaseLib:CpuIdEx.obj
+ 0001:00000daa       PvalidateExit              000000000000106a     BaseLib:Pvalidate.obj
+ 0001:0000843c       PeCoffEmuProtocolNotify    00000000000086fc f   DxeCore:Image.obj
+ 0001:000088c0       CoreIsImageTypeSupported   0000000000008b80 f   DxeCore:Image.obj
+ 0001:0000d780       CoreAllocatePoolPagesI     000000000000da40 f   DxeCore:Pool.obj
+ 0001:0000dc2c       CoreFreePoolPagesI         000000000000deec f   DxeCore:Pool.obj
+ 0001:0000f728       GetImageRecordByAddress    000000000000f9e8 f   DxeCore:MemoryAttributesTable.obj
+ 0001:0000f7b4       SetNewRecord               000000000000fa74 f   DxeCore:MemoryAttributesTable.obj
+ 0001:0000f9b0       SplitTable                 000000000000fc70 f   DxeCore:MemoryAttributesTable.obj
+ 0001:0000fff8       SortImageRecord            00000000000102b8 f   DxeCore:MemoryAttributesTable.obj
+ 0001:0001aca0       LzmaDec_DecodeReal_3       000000000001af60 f   LzmaDecompressLib:LzmaDec.obj
+ 0001:0001b7ec       LzmaDec_WriteRem           000000000001baac f   LzmaDecompressLib:LzmaDec.obj
+ 0001:0001b874       LzmaDec_DecodeReal2        000000000001bb34 f   LzmaDecompressLib:LzmaDec.obj
+ 0001:0001b918       LzmaDec_TryDummy           000000000001bbd8 f   LzmaDecompressLib:LzmaDec.obj
+ 0001:0001c250       LzmaDec_AllocateProbs2     000000000001c510 f   LzmaDecompressLib:LzmaDec.obj
+ 0001:0001c600       GetRegisterPointer         000000000001c8c0 f   VmgExitLib:VmgExitVcHandler.obj
+ 0001:0001c714       GetEffectiveMemoryAddress  000000000001c9d4 f   VmgExitLib:VmgExitVcHandler.obj
+ 0001:0001c880       DecodeModRm                000000000001cb40 f   VmgExitLib:VmgExitVcHandler.obj
+ 0001:0001c984       UnsupportedExit            000000000001cc44 f   VmgExitLib:VmgExitVcHandler.obj
+ 0001:0001c9b4       ValidateMmioMemory         000000000001cc74 f   VmgExitLib:VmgExitVcHandler.obj
+ 0001:0001ca24       MmioExit                   000000000001cce4 f   VmgExitLib:VmgExitVcHandler.obj
+ 0001:0001cfe0       MwaitExit                  000000000001d2a0 f   VmgExitLib:VmgExitVcHandler.obj
+ 0001:0001d058       MonitorExit                000000000001d318 f   VmgExitLib:VmgExitVcHandler.obj
+ 0001:0001d0ec       WbinvdExit                 000000000001d3ac f   VmgExitLib:VmgExitVcHandler.obj
+ 0001:0001d0fc       RdtscpExit                 000000000001d3bc f   VmgExitLib:VmgExitVcHandler.obj
+ 0001:0001d198       VmmCallExit                000000000001d458 f   VmgExitLib:VmgExitVcHandler.obj
+ 0001:0001d24c       MsrExit                    000000000001d50c f   VmgExitLib:VmgExitVcHandler.obj
+ 0001:0001d354       IoioExit                   000000000001d614 f   VmgExitLib:VmgExitVcHandler.obj
+ 0001:0001d674       InvdExit                   000000000001d934 f   VmgExitLib:VmgExitVcHandler.obj
+ 0001:0001d684       GetCpuidHyp                000000000001d944 f   VmgExitLib:VmgExitVcHandler.obj
+ 0001:0001d778       GetCpuidFw                 000000000001da38 f   VmgExitLib:VmgExitVcHandler.obj
+ 0001:0001da60       CpuidExit                  000000000001dd20 f   VmgExitLib:VmgExitVcHandler.obj
+ 0001:0001db9c       RdpmcExit                  000000000001de5c f   VmgExitLib:VmgExitVcHandler.obj
+ 0001:0001dc38       RdtscExit                  000000000001def8 f   VmgExitLib:VmgExitVcHandler.obj
+ 0001:0001dcb4       Dr7WriteExit               000000000001df74 f   VmgExitLib:VmgExitVcHandler.obj
+ 0001:0001dd40       Dr7ReadExit                000000000001e000 f   VmgExitLib:VmgExitVcHandler.obj
+ 0002:00002820       mPoolSizeTable             0000000000022860     DxeCore:Pool.obj
+ 0003:00000004       CommonEntryAddr            0000000000026844     DxeDebugAgentLib:AsmFuncs.obj
+ 0003:00001398       mPoolMemoryLock            0000000000027bd8     DxeCore:Pool.obj
+ 0003:000013e0       mImagePropertiesPrivateData 0000000000027c20     DxeCore:MemoryAttributesTable.obj
+ 0003:00001408       mMemoryAttributesTableLock 0000000000027c48     DxeCore:MemoryAttributesTable.obj
+ 0003:00001d8a       mSevEncryptionMaskSaved    00000000000285ca     DxeMemEncryptSevLib:DxeMemEncryptSevLibInternal.obj
+ 0003:00001d90       mSevEncryptionMask         00000000000285d0     DxeMemEncryptSevLib:DxeMemEncryptSevLibInternal.obj
+ 0003:00001da0       mAvailableEmulators        00000000000285e0     DxeCore:Image.obj
+ 0003:00001db0       mPeCoffEmuProtocolRegistrationEvent 00000000000285f0     DxeCore:Image.obj
+ 0003:00001db8       mPeCoffEmuProtocolNotifyRegistration 00000000000285f8     DxeCore:Image.obj
+ 0003:00001dc0       mProtectedImageRecordList  0000000000028600     DxeCore:MemoryProtection.obj
+ 0003:00001dd0       mAcpiTimerIoAddr           0000000000028610     BaseAcpiTimerLib:BaseAcpiTimerLib.obj
+ 0005:00000000       $unwind$CoreSetInterruptState 000000000002b7c0     DxeCore:Tpl.obj
+ 0005:00000000       $unwind$IsGuardPage        000000000002b7c0     DxeCore:HeapGuard.obj
+ 0005:00000000       $unwind$SetGuardPage       000000000002b7c0     DxeCore:HeapGuard.obj
+ 0005:00000000       $unwind$UnsetGuardPage     000000000002b7c0     DxeCore:HeapGuard.obj
+ 0005:00000000       $unwind$InstallMemoryAttributesTableOnReadyToBoot 000000000002b7c0     DxeCore:MemoryAttributesTable.obj
+ 0005:00000000       $unwind$FreePool           000000000002b7c0     DxeCoreMemoryAllocationLib:MemoryAllocationLib.obj
+ 0005:00000000       $unwind$SzAlloc            000000000002b7c0     LzmaDecompressLib:LzmaDecompress.obj
+ 0005:00000000       $unwind$InternalAssertJumpBuffer 000000000002b7c0     BaseLib:SetJump.obj
+ 0005:00000000       $unwind$_ModuleEntryPoint  000000000002b7c0     DxeCoreEntryPoint:DxeCoreEntryPoint.obj
+ 0005:00000000       $unwind$GetHobList         000000000002b7c0     DxeCoreHobLib:HobLib.obj
+ 0005:00000000       $unwind$ReallocateExtractHandlerTable 000000000002b7c0     DxeExtractGuidedSectionLib:DxeExtractGuidedSectionLib.obj
+ 0005:00000000       $unwind$GetPcdProtocol     000000000002b7c0     DxePcdLib:DxePcdLib.obj
+ 0005:00000000       $unwind$ResetCold          000000000002b7c0     BaseResetSystemLib:ResetSystemLib.obj
+ 0005:00000000       $unwind$UnsupportedExit    000000000002b7c0     VmgExitLib:VmgExitVcHandler.obj
+ 0005:00000000       $unwind$GetMailboxPointer  000000000002b7c0     DxeDebugAgentLib:DxeDebugAgentLib.obj
+ 0005:00000000       $unwind$GetLocalApicBaseAddress 000000000002b7c0     BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0005:00000008       $unwind$ProcessLibraryConstructorList 000000000002b7c8     DxeCore:AutoGen.obj
+ 0005:00000008       $unwind$CoreCreateEventInternal 000000000002b7c8     DxeCore:Event.obj
+ 0005:00000008       $unwind$CoreOpenProtocolInformation 000000000002b7c8     DxeCore:Handle.obj
+ 0005:00000008       $unwind$Decode             000000000002b7c8     BaseUefiDecompressLib:BaseUefiDecompressLib.obj
+ 0005:00000008       $unwind$DecompressDataInPlace 000000000002b7c8     DxeDebugAgentLib:DebugAgent.obj
+ 0005:00000024       $unwind$DxeMain            000000000002b7e4     DxeCore:DxeMain.obj
+ 0005:0000003c       $unwind$PushBool           000000000002b7fc     DxeCore:Dependency.obj
+ 0005:0000003c       $unwind$CalculateEfiHdrCrc 000000000002b7fc     DxeCore:DxeMain.obj
+ 0005:0000003c       $unwind$CoreCloseEvent     000000000002b7fc     DxeCore:Event.obj
+ 0005:0000003c       $unwind$CoreSignalEvent    000000000002b7fc     DxeCore:Event.obj
+ 0005:0000003c       $unwind$CoreTimerTick      000000000002b7fc     DxeCore:Timer.obj
+ 0005:0000003c       $unwind$CoreGetNextLocateAllHandles 000000000002b7fc     DxeCore:Locate.obj
+ 0005:0000003c       $unwind$CoreAcquireLock    000000000002b7fc     DxeCore:Library.obj
+ 0005:0000003c       $unwind$CoreAcquireLockOrFail 000000000002b7fc     DxeCore:Library.obj
+ 0005:0000003c       $unwind$CoreReleaseLock    000000000002b7fc     DxeCore:Library.obj
+ 0005:0000003c       $unwind$CoreFreePool       000000000002b7fc     DxeCore:Pool.obj
+ 0005:0000003c       $unwind$CoreSetWatchdogTimer 000000000002b7fc     DxeCore:SetWatchdogTimer.obj
+ 0005:0000003c       $unwind$AllocatePool       000000000002b7fc     DxeCoreMemoryAllocationLib:MemoryAllocationLib.obj
+ 0005:0000003c       $unwind$MmioRead16         000000000002b7fc     BaseIoLibIntrinsicSev:IoLib.obj
+ 0005:0000003c       $unwind$MmioRead32         000000000002b7fc     BaseIoLibIntrinsicSev:IoLib.obj
+ 0005:0000003c       $unwind$MmioRead64         000000000002b7fc     BaseIoLibIntrinsicSev:IoLib.obj
+ 0005:0000003c       $unwind$IoRead16           000000000002b7fc     BaseIoLibIntrinsicSev:IoLibMsc.obj
+ 0005:0000003c       $unwind$IoRead32           000000000002b7fc     BaseIoLibIntrinsicSev:IoLibMsc.obj
+ 0005:0000003c       $unwind$SaveAndDisableInterrupts 000000000002b7fc     BaseLib:Cpu.obj
+ 0005:0000003c       $unwind$GetFirstNode       000000000002b7fc     BaseLib:LinkedList.obj
+ 0005:0000003c       $unwind$GetNextNode        000000000002b7fc     BaseLib:LinkedList.obj
+ 0005:0000003c       $unwind$InternalBaseLibIsListValid 000000000002b7fc     BaseLib:LinkedList.obj
+ 0005:0000003c       $unwind$IsListEmpty        000000000002b7fc     BaseLib:LinkedList.obj
+ 0005:0000003c       $unwind$RemoveEntryList    000000000002b7fc     BaseLib:LinkedList.obj
+ 0005:0000003c       $unwind$StrnLenS           000000000002b7fc     BaseLib:SafeString.obj
+ 0005:0000003c       $unwind$PeCoffLoaderGetPdbPointer 000000000002b7fc     BasePeCoffGetEntryPointLib:PeCoffGetEntryPoint.obj
+ 0005:0000003c       $unwind$ReleaseSpinLock    000000000002b7fc     BaseSynchronizationLib:SynchronizationMsc.obj
+ 0005:0000003c       $unwind$DevicePathNodeLength 000000000002b7fc     UefiDevicePathLib:DevicePathUtilities.obj
+ 0005:0000003c       $unwind$SetDevicePathNodeLength 000000000002b7fc     UefiDevicePathLib:DevicePathUtilities.obj
+ 0005:0000003c       $unwind$DuplicateDevicePath 000000000002b7fc     UefiDevicePathLib:UefiDevicePathLib.obj
+ 0005:0000003c       $unwind$MicroSecondDelay   000000000002b7fc     BaseAcpiTimerLib:AcpiTimerLib.obj
+ 0005:0000003c       $unwind$GetRegisterPointer 000000000002b7fc     VmgExitLib:VmgExitVcHandler.obj
+ 0005:0000003c       $unwind$GetDebugFlag       000000000002b7fc     DxeDebugAgentLib:DebugAgent.obj
+ 0005:0000003c       $unwind$AcquireMpSpinLock  000000000002b7fc     DxeDebugAgentLib:DebugMp.obj
+ 0005:0000003c       $unwind$DebugAgentIsBsp    000000000002b7fc     DxeDebugAgentLib:DebugMp.obj
+ 0005:0000003c       $unwind$HaltOtherProcessors 000000000002b7fc     DxeDebugAgentLib:DebugMp.obj
+ 0005:0000003c       $unwind$SetDebugViewPoint  000000000002b7fc     DxeDebugAgentLib:DebugMp.obj
+ 0005:0000003c       $unwind$GetApicMode        000000000002b7fc     BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0005:0000003c       $unwind$ReadLocalApicReg   000000000002b7fc     BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0005:00000044       $unwind$CoreExitBootServices 000000000002b804     DxeCore:DxeMain.obj
+ 0005:0000005c       $unwind$DxeMainUefiDecompress 000000000002b81c     DxeCore:DxeMain.obj
+ 0005:00000068       $unwind$CoreDumpGcdMemorySpaceMap 000000000002b828     DxeCore:Gcd.obj
+ 0005:00000078       $unwind$CoreDumpGcdIoSpaceMap 000000000002b838     DxeCore:Gcd.obj
+ 0005:00000088       $unwind$GrowDepexStack     000000000002b848     DxeCore:Dependency.obj
+ 0005:00000088       $unwind$CoreCheckEvent     000000000002b848     DxeCore:Event.obj
+ 0005:00000088       $unwind$CoreNotifyEvent    000000000002b848     DxeCore:Event.obj
+ 0005:00000088       $unwind$CoreRaiseTpl       000000000002b848     DxeCore:Tpl.obj
+ 0005:00000088       $unwind$FwVolBlockGetAttributes 000000000002b848     DxeCore:FwVolBlock.obj
+ 0005:00000088       $unwind$FwVolBlockGetPhysicalAddress 000000000002b848     DxeCore:FwVolBlock.obj
+ 0005:00000088       $unwind$FvGetVolumeAttributes 000000000002b848     DxeCore:FwVolAttrib.obj
+ 0005:00000088       $unwind$CoreAllocateGcdMapEntry 000000000002b848     DxeCore:Gcd.obj
+ 0005:00000088       $unwind$CoreNotifyProtocolEntry 000000000002b848     DxeCore:Notify.obj
+ 0005:00000088       $unwind$RemoveMemoryMapEntry 000000000002b848     DxeCore:Page.obj
+ 0005:00000088       $unwind$CoreAllocatePool   000000000002b848     DxeCore:Pool.obj
+ 0005:00000088       $unwind$CoreInternalFreePool 000000000002b848     DxeCore:Pool.obj
+ 0005:00000088       $unwind$CoreStall          000000000002b848     DxeCore:Stall.obj
+ 0005:00000088       $unwind$VerifyGuidedSectionGuid 000000000002b848     DxeCore:CoreSectionExtraction.obj
+ 0005:00000088       $unwind$InternalAllocateZeroPool 000000000002b848     DxeCoreMemoryAllocationLib:MemoryAllocationLib.obj
+ 0005:00000088       $unwind$MmioWrite32        000000000002b848     BaseIoLibIntrinsicSev:IoLib.obj
+ 0005:00000088       $unwind$IoWrite16          000000000002b848     BaseIoLibIntrinsicSev:IoLibMsc.obj
+ 0005:00000088       $unwind$IoWrite32          000000000002b848     BaseIoLibIntrinsicSev:IoLibMsc.obj
+ 0005:00000088       $unwind$LShiftU64          000000000002b848     BaseLib:LShiftU64.obj
+ 0005:00000088       $unwind$InsertHeadList     000000000002b848     BaseLib:LinkedList.obj
+ 0005:00000088       $unwind$InsertTailList     000000000002b848     BaseLib:LinkedList.obj
+ 0005:00000088       $unwind$RShiftU64          000000000002b848     BaseLib:RShiftU64.obj
+ 0005:00000088       $unwind$AsciiStrLen        000000000002b848     BaseLib:String.obj
+ 0005:00000088       $unwind$ZeroMem            000000000002b848     BaseMemoryLibRepStr:ZeroMemWrapper.obj
+ 0005:00000088       $unwind$PeCoffLoaderGetEntryPoint 000000000002b848     BasePeCoffGetEntryPointLib:PeCoffGetEntryPoint.obj
+ 0005:00000088       $unwind$GetNextGuidHob     000000000002b848     DxeCoreHobLib:HobLib.obj
+ 0005:00000088       $unwind$GetNextHob         000000000002b848     DxeCoreHobLib:HobLib.obj
+ 0005:00000088       $unwind$IsDevicePathEnd    000000000002b848     UefiDevicePathLib:DevicePathUtilities.obj
+ 0005:00000088       $unwind$DecodeModRm        000000000002b848     VmgExitLib:VmgExitVcHandler.obj
+ 0005:00000088       $unwind$GetCpuidHyp        000000000002b848     VmgExitLib:VmgExitVcHandler.obj
+ 0005:00000088       $unwind$MonitorExit        000000000002b848     VmgExitLib:VmgExitVcHandler.obj
+ 0005:00000088       $unwind$MwaitExit          000000000002b848     VmgExitLib:VmgExitVcHandler.obj
+ 0005:00000088       $unwind$GetBreakCause      000000000002b848     DxeDebugAgentLib:DebugAgent.obj
+ 0005:00000088       $unwind$SendDebugMsgPacket 000000000002b848     DxeDebugAgentLib:DebugAgent.obj
+ 0005:00000088       $unwind$SendPacketWithoutData 000000000002b848     DxeDebugAgentLib:DebugAgent.obj
+ 0005:00000088       $unwind$GetProcessorIndex  000000000002b848     DxeDebugAgentLib:DebugMp.obj
+ 0005:00000088       $unwind$GetApicTimerState  000000000002b848     BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0005:00000088       $unwind$WriteLocalApicReg  000000000002b848     BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0005:00000094       $unwind$CoreAddToDriverList 000000000002b854     DxeCore:Dispatcher.obj
+ 0005:00000094       $unwind$CoreSchedule       000000000002b854     DxeCore:Dispatcher.obj
+ 0005:00000094       $unwind$CoreTrust          000000000002b854     DxeCore:Dispatcher.obj
+ 0005:00000094       $unwind$CoreRestoreTpl     000000000002b854     DxeCore:Tpl.obj
+ 0005:00000094       $unwind$FwVolBlockReadBlock 000000000002b854     DxeCore:FwVolBlock.obj
+ 0005:00000094       $unwind$CoreInsertGcdMapEntry 000000000002b854     DxeCore:Gcd.obj
+ 0005:00000094       $unwind$CoreFindProtocolInterface 000000000002b854     DxeCore:Handle.obj
+ 0005:00000094       $unwind$CoreReinstallProtocolInterface 000000000002b854     DxeCore:Notify.obj
+ 0005:00000094       $unwind$CoreReadImageFile  000000000002b854     DxeCore:Image.obj
+ 0005:00000094       $unwind$CoreNewDebugImageInfoEntry 000000000002b854     DxeCore:DebugImageInfo.obj
+ 0005:00000094       $unwind$RemoveImageRecord  000000000002b854     DxeCore:MemoryAttributesTable.obj
+ 0005:00000094       $unwind$OpenSectionStreamEx 000000000002b854     DxeCore:CoreSectionExtraction.obj
+ 0005:00000094       $unwind$IsDevicePathValid  000000000002b854     UefiDevicePathLib:DevicePathUtilities.obj
+ 0005:00000094       $unwind$AppendDevicePath   000000000002b854     UefiDevicePathLib:UefiDevicePathLib.obj
+ 0005:00000094       $unwind$EfiGetSystemConfigurationTable 000000000002b854     UefiLib:UefiLib.obj
+ 0005:00000094       $unwind$CopyMemByWidth     000000000002b854     DxeDebugAgentLib:DebugAgent.obj
+ 0005:000000ac       $unwind$CoreNotifySignalList 000000000002b86c     DxeCore:Event.obj
+ 0005:000000ac       $unwind$CoreInsertEventTimer 000000000002b86c     DxeCore:Timer.obj
+ 0005:000000ac       $unwind$CoreGetIoSpaceMap  000000000002b86c     DxeCore:Gcd.obj
+ 0005:000000ac       $unwind$CoreMergeGcdMapEntry 000000000002b86c     DxeCore:Gcd.obj
+ 0005:000000ac       $unwind$CoreGetProtocolInterface 000000000002b86c     DxeCore:Handle.obj
+ 0005:000000ac       $unwind$CoreUninstallProtocolInterface 000000000002b86c     DxeCore:Handle.obj
+ 0005:000000ac       $unwind$CoreRegisterProtocolNotify 000000000002b86c     DxeCore:Notify.obj
+ 0005:000000ac       $unwind$CoreRemoveInterfaceFromProtocol 000000000002b86c     DxeCore:Notify.obj
+ 0005:000000ac       $unwind$CoreIsImageTypeSupported 000000000002b86c     DxeCore:Image.obj
+ 0005:000000ac       $unwind$LookupPoolHead     000000000002b86c     DxeCore:Pool.obj
+ 0005:000000ac       $unwind$GetImageRecordByAddress 000000000002b86c     DxeCore:MemoryAttributesTable.obj
+ 0005:000000ac       $unwind$SortImageRecordCodeSection 000000000002b86c     DxeCore:MemoryAttributesTable.obj
+ 0005:000000ac       $unwind$FindStreamNode     000000000002b86c     DxeCore:CoreSectionExtraction.obj
+ 0005:000000ac       $unwind$InternalAllocateCopyPool 000000000002b86c     DxeCoreMemoryAllocationLib:MemoryAllocationLib.obj
+ 0005:000000ac       $unwind$InternalReallocatePool 000000000002b86c     DxeCoreMemoryAllocationLib:MemoryAllocationLib.obj
+ 0005:000000ac       $unwind$LzmaGuidedSectionExtraction 000000000002b86c     LzmaDecompressLib:GuidedSectionExtraction.obj
+ 0005:000000ac       $unwind$LzmaGuidedSectionGetInfo 000000000002b86c     LzmaDecompressLib:GuidedSectionExtraction.obj
+ 0005:000000ac       $unwind$BitFieldOr8        000000000002b86c     BaseLib:BitField.obj
+ 0005:000000ac       $unwind$InternalBaseLibBitFieldOrUint 000000000002b86c     BaseLib:BitField.obj
+ 0005:000000ac       $unwind$CompareMem         000000000002b86c     BaseMemoryLibRepStr:CompareMemWrapper.obj
+ 0005:000000ac       $unwind$CopyMem            000000000002b86c     BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0005:000000ac       $unwind$PciCf8Read16       000000000002b86c     BasePciCf8Lib:PciCf8Lib.obj
+ 0005:000000ac       $unwind$PciCf8Read32       000000000002b86c     BasePciCf8Lib:PciCf8Lib.obj
+ 0005:000000ac       $unwind$PciCf8Read8        000000000002b86c     BasePciCf8Lib:PciCf8Lib.obj
+ 0005:000000ac       $unwind$PeCoffLoaderImageReadFromMemory 000000000002b86c     BasePeCoffLib:BasePeCoff.obj
+ 0005:000000ac       $unwind$UefiDecompressGetInfo 000000000002b86c     BaseUefiDecompressLib:BaseUefiDecompressLib.obj
+ 0005:000000ac       $unwind$MsrExit            000000000002b86c     VmgExitLib:VmgExitVcHandler.obj
+ 0005:000000ac       $unwind$SerialWrite        000000000002b86c     DxeDebugAgentLib:SerialIo.obj
+ 0005:000000ac       $unwind$SendIpi            000000000002b86c     BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0005:000000c0       $unwind$CoreCheckTimers    000000000002b880     DxeCore:Timer.obj
+ 0005:000000c0       $unwind$CoreCleanupGcdMapEntry 000000000002b880     DxeCore:Gcd.obj
+ 0005:000000c0       $unwind$CoreValidateHandle 000000000002b880     DxeCore:Handle.obj
+ 0005:000000c0       $unwind$CoreGetNextLocateByProtocol 000000000002b880     DxeCore:Locate.obj
+ 0005:000000c0       $unwind$CoreUnloadImage    000000000002b880     DxeCore:Image.obj
+ 0005:000000c0       $unwind$SetGuardForMemory  000000000002b880     DxeCore:HeapGuard.obj
+ 0005:000000c0       $unwind$PromoteMemoryResource 000000000002b880     DxeCore:Page.obj
+ 0005:000000c0       $unwind$CoreInternalAllocatePool 000000000002b880     DxeCore:Pool.obj
+ 0005:000000c0       $unwind$CoreInternalWaitForTick 000000000002b880     DxeCore:Stall.obj
+ 0005:000000c0       $unwind$LzmaUefiDecompressGetInfo 000000000002b880     LzmaDecompressLib:LzmaDecompress.obj
+ 0005:000000c0       $unwind$LzmaDec_AllocateProbs2 000000000002b880     LzmaDecompressLib:LzmaDec.obj
+ 0005:000000c0       $unwind$LzmaDec_DecodeReal2 000000000002b880     LzmaDecompressLib:LzmaDec.obj
+ 0005:000000c0       $unwind$BitFieldAnd8       000000000002b880     BaseLib:BitField.obj
+ 0005:000000c0       $unwind$BitFieldAndThenOr8 000000000002b880     BaseLib:BitField.obj
+ 0005:000000c0       $unwind$CalculateSum16     000000000002b880     BaseLib:CheckSum.obj
+ 0005:000000c0       $unwind$CalculateSum8      000000000002b880     BaseLib:CheckSum.obj
+ 0005:000000c0       $unwind$DivU64x32Remainder 000000000002b880     BaseLib:DivU64x32Remainder.obj
+ 0005:000000c0       $unwind$IsNodeAtEnd        000000000002b880     BaseLib:LinkedList.obj
+ 0005:000000c0       $unwind$CopyGuid           000000000002b880     BaseMemoryLibRepStr:MemLibGuid.obj
+ 0005:000000c0       $unwind$SetMem16           000000000002b880     BaseMemoryLibRepStr:SetMem16Wrapper.obj
+ 0005:000000c0       $unwind$SetMem64           000000000002b880     BaseMemoryLibRepStr:SetMem64Wrapper.obj
+ 0005:000000c0       $unwind$SetMem             000000000002b880     BaseMemoryLibRepStr:SetMemWrapper.obj
+ 0005:000000c0       $unwind$FillBuf            000000000002b880     BaseUefiDecompressLib:BaseUefiDecompressLib.obj
+ 0005:000000c0       $unwind$GetDevicePathSize  000000000002b880     UefiDevicePathLib:UefiDevicePathLib.obj
+ 0005:000000c0       $unwind$InternalAcpiDelay  000000000002b880     BaseAcpiTimerLib:AcpiTimerLib.obj
+ 0005:000000c0       $unwind$Dr7ReadExit        000000000002b880     VmgExitLib:VmgExitVcHandler.obj
+ 0005:000000c0       $unwind$Dr7WriteExit       000000000002b880     VmgExitLib:VmgExitVcHandler.obj
+ 0005:000000c0       $unwind$RdpmcExit          000000000002b880     VmgExitLib:VmgExitVcHandler.obj
+ 0005:000000c0       $unwind$RdtscExit          000000000002b880     VmgExitLib:VmgExitVcHandler.obj
+ 0005:000000c0       $unwind$RdtscpExit         000000000002b880     VmgExitLib:VmgExitVcHandler.obj
+ 0005:000000c0       $unwind$VmmCallExit        000000000002b880     VmgExitLib:VmgExitVcHandler.obj
+ 0005:000000c0       $unwind$SendAckPacket      000000000002b880     DxeDebugAgentLib:DebugAgent.obj
+ 0005:000000c0       $unwind$SetDebugFlag       000000000002b880     DxeDebugAgentLib:DebugAgent.obj
+ 0005:000000c0       $unwind$TriggerSoftInterrupt 000000000002b880     DxeDebugAgentLib:DebugAgent.obj
+ 0005:000000c0       $unwind$SetCpuBreakFlagByIndex 000000000002b880     DxeDebugAgentLib:DebugMp.obj
+ 0005:000000c0       $unwind$SetCpuStopFlagByIndex 000000000002b880     DxeDebugAgentLib:DebugMp.obj
+ 0005:000000c0       $unwind$IsDebugTimerTimeout 000000000002b880     DxeDebugAgentLib:DebugTimer.obj
+ 0005:000000c0       $unwind$SaveAndSetDebugTimerInterrupt 000000000002b880     DxeDebugAgentLib:DebugTimer.obj
+ 0005:000000c0       $unwind$SerialGetControl   000000000002b880     DxeDebugAgentLib:SerialIo.obj
+ 0005:000000d0       $unwind$CoreSearchGcdMapEntry 000000000002b890     DxeCore:Gcd.obj
+ 0005:000000d0       $unwind$CoreDisconnectControllersUsingProtocolInterface 000000000002b890     DxeCore:Handle.obj
+ 0005:000000d0       $unwind$CoreFindProtocolEntry 000000000002b890     DxeCore:Handle.obj
+ 0005:000000d0       $unwind$CoreProtocolsPerHandle 000000000002b890     DxeCore:Handle.obj
+ 0005:000000d0       $unwind$CoreUnregisterProtocolNotify 000000000002b890     DxeCore:Handle.obj
+ 0005:000000d0       $unwind$CoreExit           000000000002b890     DxeCore:Image.obj
+ 0005:000000d0       $unwind$MergeMemoryMap     000000000002b890     DxeCore:MemoryAttributesTable.obj
+ 0005:000000d0       $unwind$PciAndThenOr32     000000000002b890     BasePciLibCf8:PciLib.obj
+ 0005:000000d0       $unwind$PciOr8             000000000002b890     BasePciLibCf8:PciLib.obj
+ 0005:000000d0       $unwind$UefiDecompress     000000000002b890     BaseUefiDecompressLib:BaseUefiDecompressLib.obj
+ 0005:000000e8       $unwind$CoreConvertSpace   000000000002b8a8     DxeCore:Gcd.obj
+ 0005:00000100       $unwind$CoreAllocateSpace  000000000002b8c0     DxeCore:Gcd.obj
+ 0005:00000118       $unwind$CoreInternalAddMemorySpace 000000000002b8d8     DxeCore:Gcd.obj
+ 0005:00000130       $unwind$CoreAllocateIoSpace 000000000002b8f0     DxeCore:Gcd.obj
+ 0005:00000130       $unwind$CoreAllocateMemorySpace 000000000002b8f0     DxeCore:Gcd.obj
+ 0005:00000130       $unwind$InsertImageRecord  000000000002b8f0     DxeCore:MemoryAttributesTable.obj
+ 0005:0000014c       $unwind$CoreAddMemorySpace 000000000002b90c     DxeCore:Gcd.obj
+ 0005:00000164       $unwind$CoreFreeIoSpace    000000000002b924     DxeCore:Gcd.obj
+ 0005:00000164       $unwind$CoreFreeMemorySpace 000000000002b924     DxeCore:Gcd.obj
+ 0005:00000164       $unwind$CoreRemoveIoSpace  000000000002b924     DxeCore:Gcd.obj
+ 0005:00000164       $unwind$CoreRemoveMemorySpace 000000000002b924     DxeCore:Gcd.obj
+ 0005:00000164       $unwind$PeCoffEmuProtocolNotify 000000000002b924     DxeCore:Image.obj
+ 0005:00000164       $unwind$CoreAllocatePages  000000000002b924     DxeCore:Page.obj
+ 0005:00000170       $unwind$CoreGetIoSpaceDescriptor 000000000002b930     DxeCore:Gcd.obj
+ 0005:00000170       $unwind$CoreGetMemorySpaceDescriptor 000000000002b930     DxeCore:Gcd.obj
+ 0005:00000180       $unwind$CoreAddIoSpace     000000000002b940     DxeCore:Gcd.obj
+ 0005:00000180       $unwind$CoreSetMemorySpaceAttributes 000000000002b940     DxeCore:Gcd.obj
+ 0005:00000180       $unwind$GetUefiImageProtectionPolicy 000000000002b940     DxeCore:MemoryProtection.obj
+ 0005:00000190       $unwind$CoreSetMemorySpaceCapabilities 000000000002b950     DxeCore:Gcd.obj
+ 0005:00000190       $unwind$CoreLocateProtocol 000000000002b950     DxeCore:Locate.obj
+ 0005:000001a4       $unwind$CoreGetMemorySpaceMap 000000000002b964     DxeCore:Gcd.obj
+ 0005:000001bc       $unwind$FindLargestFreeRegion 000000000002b97c     DxeCore:Gcd.obj
+ 0005:000001cc       $unwind$CoreInitializeMemoryServices 000000000002b98c     DxeCore:Gcd.obj
+ 0005:000001e4       $unwind$CoreInitializeGcdServices 000000000002b9a4     DxeCore:Gcd.obj
+ 0005:000001fc       $unwind$GenericProtocolNotify 000000000002b9bc     DxeCore:DxeProtocolNotify.obj
+ 0005:0000020c       $unwind$CoreNotifyOnProtocolEntryTable 000000000002b9cc     DxeCore:DxeProtocolNotify.obj
+ 0005:0000021c       $unwind$CoreCreateEvent    000000000002b9dc     DxeCore:Event.obj
+ 0005:0000021c       $unwind$CoreHandleProtocol 000000000002b9dc     DxeCore:Handle.obj
+ 0005:0000021c       $unwind$CoreInstallProtocolInterface 000000000002b9dc     DxeCore:Handle.obj
+ 0005:0000021c       $unwind$LocalApicBaseAddressMsrSupported 000000000002b9dc     BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0005:00000224       $unwind$CoreInstallProtocolInterfaceNotify 000000000002b9e4     DxeCore:Handle.obj
+ 0005:00000224       $unwind$FindGuardedMemoryMap 000000000002b9e4     DxeCore:HeapGuard.obj
+ 0005:0000023c       $unwind$CoreInstallMultipleProtocolInterfaces 000000000002b9fc     DxeCore:Handle.obj
+ 0005:00000250       $unwind$CoreUninstallMultipleProtocolInterfaces 000000000002ba10     DxeCore:Handle.obj
+ 0005:0000025c       $unwind$CoreOpenProtocol   000000000002ba1c     DxeCore:Handle.obj
+ 0005:00000274       $unwind$CoreCloseProtocol  000000000002ba34     DxeCore:Handle.obj
+ 0005:00000274       $unwind$CoreStartImage     000000000002ba34     DxeCore:Image.obj
+ 0005:00000274       $unwind$SortImageRecord    000000000002ba34     DxeCore:MemoryAttributesTable.obj
+ 0005:00000274       $unwind$ExtractGuidedSectionDecode 000000000002ba34     DxeExtractGuidedSectionLib:DxeExtractGuidedSectionLib.obj
+ 0005:00000274       $unwind$UpdateIdtTable     000000000002ba34     DxeCpuExceptionHandlerLib:PeiDxeSmmCpuException.obj
+ 0005:00000290       $unwind$CoreConnectHandlesByKey 000000000002ba50     DxeCore:Handle.obj
+ 0005:00000290       $unwind$CompareGuid        000000000002ba50     BaseMemoryLibRepStr:MemLibGuid.obj
+ 0005:000002a8       $unwind$CoreConnectController 000000000002ba68     DxeCore:DriverSupport.obj
+ 0005:000002c4       $unwind$AddSortedDriverBindingProtocol 000000000002ba84     DxeCore:DriverSupport.obj
+ 0005:000002c4       $unwind$InternalCoreLocateHandle 000000000002ba84     DxeCore:Locate.obj
+ 0005:000002dc       $unwind$CoreConnectSingleController 000000000002ba9c     DxeCore:DriverSupport.obj
+ 0005:000002f4       $unwind$CoreDisconnectController 000000000002bab4     DxeCore:DriverSupport.obj
+ 0005:0000030c       $unwind$CoreAddRange       000000000002bacc     DxeCore:Page.obj
+ 0005:0000030c       $unwind$CoreInternalAllocatePages 000000000002bacc     DxeCore:Page.obj
+ 0005:0000030c       $unwind$CoreGetMemoryMapWithSeparatedImageSection 000000000002bacc     DxeCore:MemoryAttributesTable.obj
+ 0005:00000328       $unwind$CoreFreeMemoryMapStack 000000000002bae8     DxeCore:Page.obj
+ 0005:00000338       $unwind$CoreAddMemoryDescriptor 000000000002baf8     DxeCore:Page.obj
+ 0005:00000350       $unwind$CoreConvertPagesEx 000000000002bb10     DxeCore:Page.obj
+ 0005:0000036c       $unwind$CoreFindFreePagesI 000000000002bb2c     DxeCore:Page.obj
+ 0005:0000036c       $unwind$LzmaDec_DecodeToDic 000000000002bb2c     LzmaDecompressLib:LzmaDec.obj
+ 0005:00000388       $unwind$CoreLocateHandleBuffer 000000000002bb48     DxeCore:Locate.obj
+ 0005:00000388       $unwind$FindFreePages      000000000002bb48     DxeCore:Page.obj
+ 0005:000003a0       $unwind$CoreFreePages      000000000002bb60     DxeCore:Page.obj
+ 0005:000003b4       $unwind$MergeMemoryMapDescriptor 000000000002bb74     DxeCore:Page.obj
+ 0005:000003bc       $unwind$CoreGetMemoryMap   000000000002bb7c     DxeCore:Page.obj
+ 0005:000003d4       $unwind$CoreLocateHandle   000000000002bb94     DxeCore:Locate.obj
+ 0005:000003d4       $unwind$CoreAllocatePoolPages 000000000002bb94     DxeCore:Page.obj
+ 0005:000003d4       $unwind$InternalReportStatusCode 000000000002bb94     DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0005:000003d4       $unwind$BitFieldWrite8     000000000002bb94     BaseLib:BitField.obj
+ 0005:000003e8       $unwind$CoreInitializeImageServices 000000000002bba8     DxeCore:Image.obj
+ 0005:000003f8       $unwind$CoreLoadPeImage    000000000002bbb8     DxeCore:Image.obj
+ 0005:00000414       $unwind$CoreLoadedImageInfo 000000000002bbd4     DxeCore:Image.obj
+ 0005:00000420       $unwind$CoreUnloadAndCloseImage 000000000002bbe0     DxeCore:Image.obj
+ 0005:00000434       $unwind$CoreLoadImageCommon 000000000002bbf4     DxeCore:Image.obj
+ 0005:00000450       $unwind$CoreLoadImage      000000000002bc10     DxeCore:Image.obj
+ 0005:00000458       $unwind$SetUefiImageMemoryAttributes 000000000002bc18     DxeCore:MemoryProtection.obj
+ 0005:00000468       $unwind$SetUefiImageProtectionAttributes 000000000002bc28     DxeCore:MemoryProtection.obj
+ 0005:00000480       $unwind$ProtectUefiImage   000000000002bc40     DxeCore:MemoryProtection.obj
+ 0005:0000049c       $unwind$MemoryProtectionCpuArchProtocolNotify 000000000002bc5c     DxeCore:MemoryProtection.obj
+ 0005:000004ac       $unwind$CoreWaitForEvent   000000000002bc6c     DxeCore:Event.obj
+ 0005:000004ac       $unwind$FwVolBlockGetBlockSize 000000000002bc6c     DxeCore:FwVolBlock.obj
+ 0005:000004ac       $unwind$CoreGetNextLocateByRegisterNotify 000000000002bc6c     DxeCore:Locate.obj
+ 0005:000004ac       $unwind$IsImageRecordCodeSectionValid 000000000002bc6c     DxeCore:MemoryAttributesTable.obj
+ 0005:000004c0       $unwind$CoreGetDepexSectionAndPreProccess 000000000002bc80     DxeCore:Dispatcher.obj
+ 0005:000004d0       $unwind$CoreDispatcher     000000000002bc90     DxeCore:Dispatcher.obj
+ 0005:000004e4       $unwind$CoreInsertOnScheduledQueueWhileProcessingBeforeAndAfter 000000000002bca4     DxeCore:Dispatcher.obj
+ 0005:000004fc       $unwind$FvIsBeingProcessed 000000000002bcbc     DxeCore:Dispatcher.obj
+ 0005:00000514       $unwind$CoreFvToDevicePath 000000000002bcd4     DxeCore:Dispatcher.obj
+ 0005:00000520       $unwind$GetFvUsedSize      000000000002bce0     DxeCore:Dispatcher.obj
+ 0005:00000520       $unwind$CoreFreePoolI      000000000002bce0     DxeCore:Pool.obj
+ 0005:00000520       $unwind$ReadMemoryAndSendResponsePacket 000000000002bce0     DxeDebugAgentLib:DebugAgent.obj
+ 0005:0000053c       $unwind$CoreProcessFvImageFile 000000000002bcfc     DxeCore:Dispatcher.obj
+ 0005:00000554       $unwind$CoreFwVolEventProtocolNotify 000000000002bd14     DxeCore:Dispatcher.obj
+ 0005:00000570       $unwind$CoreLocateDevicePath 000000000002bd30     DxeCore:Locate.obj
+ 0005:00000588       $unwind$CoreInitializeDebugImageInfoTable 000000000002bd48     DxeCore:DebugImageInfo.obj
+ 0005:00000598       $unwind$ProduceFVBProtocolOnBuffer 000000000002bd58     DxeCore:FwVolBlock.obj
+ 0005:000005b0       $unwind$CoreProcessFirmwareVolume 000000000002bd70     DxeCore:FwVolBlock.obj
+ 0005:000005b0       $unwind$GetApicId          000000000002bd70     BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0005:000005b8       $unwind$CoreSetTimer       000000000002bd78     DxeCore:Timer.obj
+ 0005:000005b8       $unwind$CoreAllocatePoolPagesI 000000000002bd78     DxeCore:Pool.obj
+ 0005:000005c8       $unwind$CoreAllocatePoolI  000000000002bd88     DxeCore:Pool.obj
+ 0005:000005e0       $unwind$CoreFreePoolPagesI 000000000002bda0     DxeCore:Pool.obj
+ 0005:000005ec       $unwind$NotifyGuidedExtraction 000000000002bdac     DxeCore:CoreSectionExtraction.obj
+ 0005:000005fc       $unwind$CreateChildNode    000000000002bdbc     DxeCore:CoreSectionExtraction.obj
+ 0005:00000614       $unwind$FindChildNode      000000000002bdd4     DxeCore:CoreSectionExtraction.obj
+ 0005:00000630       $unwind$GetSection         000000000002bdf0     DxeCore:CoreSectionExtraction.obj
+ 0005:00000648       $unwind$CloseSectionStream 000000000002be08     DxeCore:CoreSectionExtraction.obj
+ 0005:00000660       $unwind$CustomGuidedSectionExtract 000000000002be20     DxeCore:CoreSectionExtraction.obj
+ 0005:0000067c       $unwind$InstallMemoryAttributesTable 000000000002be3c     DxeCore:MemoryAttributesTable.obj
+ 0005:00000694       $unwind$SetNewRecord       000000000002be54     DxeCore:MemoryAttributesTable.obj
+ 0005:000006ac       $unwind$SplitTable         000000000002be6c     DxeCore:MemoryAttributesTable.obj
+ 0005:000006c4       $unwind$ReadFvbData        000000000002be84     DxeCore:FwVol.obj
+ 0005:000006d8       $unwind$GetFwVolHeader     000000000002be98     DxeCore:FwVol.obj
+ 0005:000006e8       $unwind$FvCheck            000000000002bea8     DxeCore:FwVol.obj
+ 0005:00000700       $unwind$NotifyFwVolBlock   000000000002bec0     DxeCore:FwVol.obj
+ 0005:00000714       $unwind$CoreInstallConfigurationTable 000000000002bed4     DxeCore:InstallConfigurationTable.obj
+ 0005:0000072c       $unwind$ClearGuardedMemoryBits 000000000002beec     DxeCore:HeapGuard.obj
+ 0005:0000072c       $unwind$SetGuardedMemoryBits 000000000002beec     DxeCore:HeapGuard.obj
+ 0005:00000744       $unwind$GetGuardedMemoryBits 000000000002bf04     DxeCore:HeapGuard.obj
+ 0005:00000744       $unwind$SerialRead         000000000002bf04     DxeDebugAgentLib:SerialIo.obj
+ 0005:0000075c       $unwind$UnsetGuardForMemory 000000000002bf1c     DxeCore:HeapGuard.obj
+ 0005:0000076c       $unwind$AdjustMemoryF      000000000002bf2c     DxeCore:HeapGuard.obj
+ 0005:00000780       $unwind$CoreConvertPagesWithGuard 000000000002bf40     DxeCore:HeapGuard.obj
+ 0005:00000790       $unwind$CoreIsSchedulable  000000000002bf50     DxeCore:Dependency.obj
+ 0005:000007a4       $unwind$FvGetNextFile      000000000002bf64     DxeCore:FwVolRead.obj
+ 0005:000007bc       $unwind$FvReadFile         000000000002bf7c     DxeCore:FwVolRead.obj
+ 0005:000007d4       $unwind$FvReadFileSection  000000000002bf94     DxeCore:FwVolRead.obj
+ 0005:000007e8       $unwind$InternalAllocateAlignedPages 000000000002bfa8     DxeCoreMemoryAllocationLib:MemoryAllocationLib.obj
+ 0005:000007fc       $unwind$DebugPrint         000000000002bfbc     BaseDebugLibSerialPort:DebugLib.obj
+ 0005:00000804       $unwind$DebugPrintMarker   000000000002bfc4     BaseDebugLibSerialPort:DebugLib.obj
+ 0005:00000818       $unwind$DebugAssert        000000000002bfd8     BaseDebugLibSerialPort:DebugLib.obj
+ 0005:00000820       $unwind$PeCoffLoaderExtraActionCommon 000000000002bfe0     PeCoffExtraActionLib:PeCoffExtraActionLib.obj
+ 0005:0000083c       $unwind$EfiCreateProtocolNotifyEvent 000000000002bffc     UefiLib:UefiLib.obj
+ 0005:00000854       $unwind$MakeTable          000000000002c014     BaseUefiDecompressLib:BaseUefiDecompressLib.obj
+ 0005:0000086c       $unwind$ReadPTLen          000000000002c02c     BaseUefiDecompressLib:BaseUefiDecompressLib.obj
+ 0005:00000888       $unwind$ReadCLen           000000000002c048     BaseUefiDecompressLib:BaseUefiDecompressLib.obj
+ 0005:000008a4       $unwind$PeCoffLoaderGetPeHeader 000000000002c064     BasePeCoffLib:BasePeCoff.obj
+ 0005:000008c0       $unwind$PeCoffLoaderGetImageInfo 000000000002c080     BasePeCoffLib:BasePeCoff.obj
+ 0005:000008e0       $unwind$PeCoffLoaderRelocateImage 000000000002c0a0     BasePeCoffLib:BasePeCoff.obj
+ 0005:000008fc       $unwind$PeCoffLoaderLoadImage 000000000002c0bc     BasePeCoffLib:BasePeCoff.obj
+ 0005:00000914       $unwind$ReportStatusCodeWithExtendedData 000000000002c0d4     DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0005:0000092c       $unwind$GetFileBufferByFilePath 000000000002c0ec     DxeServicesLib:DxeServicesLib.obj
+ 0005:0000094c       $unwind$InternalConstructorWorker 000000000002c10c     DxeDebugAgentLib:DxeDebugAgentLib.obj
+ 0005:00000958       $unwind$SetupDebugAgentEnvironment 000000000002c118     DxeDebugAgentLib:DxeDebugAgentLib.obj
+ 0005:0000096c       $unwind$InitializeDebugTimer 000000000002c12c     DxeDebugAgentLib:DebugTimer.obj
+ 0005:00000984       $unwind$LzmaDec_WriteRem   000000000002c144     LzmaDecompressLib:LzmaDec.obj
+ 0005:00000984       $unwind$CalculateCrc16     000000000002c144     DxeDebugAgentLib:DebugAgent.obj
+ 0005:00000990       $unwind$VerifyMailboxChecksum 000000000002c150     DxeDebugAgentLib:DebugAgent.obj
+ 0005:000009a0       $unwind$UpdateMailboxContent 000000000002c160     DxeDebugAgentLib:DebugAgent.obj
+ 0005:000009b4       $unwind$DebugAgentReadBuffer 000000000002c174     DxeDebugAgentLib:DebugAgent.obj
+ 0005:000009d0       $unwind$DebugAgentMsgPrint 000000000002c190     DxeDebugAgentLib:DebugAgent.obj
+ 0005:000009dc       $unwind$DebugAgentDataMsgPrint 000000000002c19c     DxeDebugAgentLib:DebugAgent.obj
+ 0005:000009f4       $unwind$ReadRemainingBreakPacket 000000000002c1b4     DxeDebugAgentLib:DebugAgent.obj
+ 0005:00000a08       $unwind$ReceivePacket      000000000002c1c8     DxeDebugAgentLib:DebugAgent.obj
+ 0005:00000a24       $unwind$SendCommandAndWaitForAckOK 000000000002c1e4     DxeDebugAgentLib:DebugAgent.obj
+ 0005:00000a44       $unwind$CompressData       000000000002c204     DxeDebugAgentLib:DebugAgent.obj
+ 0005:00000a5c       $unwind$ValidateMmioMemory 000000000002c21c     VmgExitLib:VmgExitVcHandler.obj
+ 0005:00000a5c       $unwind$AttachHost         000000000002c21c     DxeDebugAgentLib:DebugAgent.obj
+ 0005:00000a68       $unwind$SendBreakPacketToHost 000000000002c228     DxeDebugAgentLib:DebugAgent.obj
+ 0005:00000a74       $unwind$CommandCommunication 000000000002c234     DxeDebugAgentLib:DebugAgent.obj
+ 0005:00000a94       $unwind$MmioExit           000000000002c254     VmgExitLib:VmgExitVcHandler.obj
+ 0005:00000a94       $unwind$InterruptProcess   000000000002c254     DxeDebugAgentLib:DebugAgent.obj
+ 0005:00000ab0       $unwind$DebugReadBreakFromDebugPort 000000000002c270     DxeDebugAgentLib:SerialIo.obj
+ 0005:00000ab8       $unwind$InitializeCpuExceptionHandlers 000000000002c278     DxeCpuExceptionHandlerLib:DxeException.obj
+ 0005:00000acc       $unwind$CommonExceptionHandlerWorker 000000000002c28c     DxeCpuExceptionHandlerLib:PeiDxeSmmCpuException.obj
+ 0005:00000ae0       $unwind$DumpCpuContext     000000000002c2a0     DxeCpuExceptionHandlerLib:ArchExceptionHandler.obj
+ 0005:00000af0       $unwind$InternalPrintMessage 000000000002c2b0     DxeCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0005:00000af8       $unwind$DumpModuleImageInfo 000000000002c2b8     DxeCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0005:00000b0c       $unwind$LzmaUefiDecompress 000000000002c2cc     LzmaDecompressLib:LzmaDecompress.obj
+ 0005:00000b24       $unwind$LzmaDec_DecodeReal_3 000000000002c2e4     LzmaDecompressLib:LzmaDec.obj
+ 0005:00000b3c       $unwind$LzmaDec_TryDummy   000000000002c2fc     LzmaDecompressLib:LzmaDec.obj
+ 0005:00000b58       $unwind$VmgExitHandleVc    000000000002c318     VmgExitLib:PeiDxeVmgExitVcHandler.obj
+ 0005:00000b6c       $unwind$GetEffectiveMemoryAddress 000000000002c32c     VmgExitLib:VmgExitVcHandler.obj
+ 0005:00000b80       $unwind$IoioExit           000000000002c340     VmgExitLib:VmgExitVcHandler.obj
+ 0005:00000b98       $unwind$GetCpuidFw         000000000002c358     VmgExitLib:VmgExitVcHandler.obj
+ 0005:00000bb4       $unwind$CpuidExit          000000000002c374     VmgExitLib:VmgExitVcHandler.obj
+ 0005:00000bcc       $unwind$InternalVmgExitHandleVc 000000000002c38c     VmgExitLib:VmgExitVcHandler.obj
+ 0005:00000bec       $unwind$BasePrintLibValueToString 000000000002c3ac     BasePrintLib:PrintLibInternal.obj
+ 0005:00000bec       $unwind$AcquireSpinLockOrFail 000000000002c3ac     BaseSynchronizationLib:SynchronizationMsc.obj
+ 0005:00000bec       $unwind$VmgExit            000000000002c3ac     VmgExitLib:VmgExitLib.obj
+ 0005:00000bf8       $unwind$AsciiSPrint        000000000002c3b8     BasePrintLib:PrintLib.obj
+ 0005:00000c00       $unwind$BasePrintLibSPrintMarker 000000000002c3c0     BasePrintLib:PrintLibInternal.obj
+ 0005:00000c1c       $unwind$BasePrintLibSPrint 000000000002c3dc     BasePrintLib:PrintLibInternal.obj
+ 0005:00000c24       $unwind$InternalMemEncryptSevGetAddressRangeState 000000000002c3e4     DxeMemEncryptSevLib:VirtualMemory.obj

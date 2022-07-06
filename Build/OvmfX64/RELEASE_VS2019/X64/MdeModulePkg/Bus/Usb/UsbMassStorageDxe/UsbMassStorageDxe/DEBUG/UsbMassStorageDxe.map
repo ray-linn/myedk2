@@ -1,0 +1,157 @@
+ UsbMassStorageDxe
+
+ Timestamp is 61ee703c (Mon Jan 24 17:24:12 2022)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 000000b4H .text                   CODE
+ 0001:000000b4 00002542H .text$mn                CODE
+ 0002:00000000 000001c0H .data                   DATA
+ 0002:000001c0 00000078H .rdata                  DATA
+ 0002:00000238 00000018H .bss                    DATA
+ 0002:00000250 00000020H .rdata$voltmd           DATA
+ 0002:00000270 000000a8H .rdata$zzzdbg           DATA
+ 0003:00000000 00000198H .pdata                  DATA
+ 0004:00000000 00000238H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __arm64x_redirection_metadata 0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points_count 0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_count          0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_count      0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map_count    0000000000000000     <absolute>
+ 0000:00000000       __dynamic_value_reloc_table 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_native_entrypoint 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat     0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_table      0000000000000000     <absolute>
+ 0000:00000000       __enclave_config           0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata_count 0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_table      0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat_copy 0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_count         0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_table          0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table   0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_count      0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_table         0000000000000000     <absolute>
+ 0000:00000000       __guard_flags              0000000000000000     <absolute>
+ 0000:00000000       __AbsoluteZero             0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map          0000000000000000     <absolute>
+ 0000:00000000       __guard_check_icall_a64n_fptr 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table_size 0000000000000000     <absolute>
+ 0001:00000000       InternalMemCopyMem         0000000000000280     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000040       InternalMemSetMem          00000000000002c0     BaseMemoryLibRepStr:SetMem.obj
+ 0001:00000060       InternalMemZeroMem         00000000000002e0     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00000080       InternalMemSetMem64        0000000000000300     BaseMemoryLibRepStr:SetMem64.obj
+ 0001:000000a0       InternalMemSetMem32        0000000000000320     BaseMemoryLibRepStr:SetMem32.obj
+ 0001:000000b4       _ModuleEntryPoint          0000000000000334 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:00000150       UsbMassReset               00000000000003d0 f   UsbMassStorageDxe:UsbMassImpl.obj
+ 0001:000001a8       UsbMassReadBlocks          0000000000000428 f   UsbMassStorageDxe:UsbMassImpl.obj
+ 0001:000002e4       UsbMassWriteBlocks         0000000000000564 f   UsbMassStorageDxe:UsbMassImpl.obj
+ 0001:0000041c       UsbMassFlushBlocks         000000000000069c f   UsbMassStorageDxe:UsbMassImpl.obj
+ 0001:00000420       UsbMassInitMedia           00000000000006a0 f   UsbMassStorageDxe:UsbMassImpl.obj
+ 0001:00000518       UsbMassInitMultiLun        0000000000000798 f   UsbMassStorageDxe:UsbMassImpl.obj
+ 0001:00000788       UsbMassInitNonLun          0000000000000a08 f   UsbMassStorageDxe:UsbMassImpl.obj
+ 0001:00000938       USBMassDriverBindingSupported 0000000000000bb8 f   UsbMassStorageDxe:UsbMassImpl.obj
+ 0001:00000a10       USBMassDriverBindingStart  0000000000000c90 f   UsbMassStorageDxe:UsbMassImpl.obj
+ 0001:00000c28       USBMassDriverBindingStop   0000000000000ea8 f   UsbMassStorageDxe:UsbMassImpl.obj
+ 0001:00000e98       UsbCbiInit                 0000000000001118 f   UsbMassStorageDxe:UsbMassCbi.obj
+ 0001:0000100c       UsbCbiSendCommand          000000000000128c f   UsbMassStorageDxe:UsbMassCbi.obj
+ 0001:000010b4       UsbCbiDataTransfer         0000000000001334 f   UsbMassStorageDxe:UsbMassCbi.obj
+ 0001:000011cc       UsbCbiGetStatus            000000000000144c f   UsbMassStorageDxe:UsbMassCbi.obj
+ 0001:00001258       UsbCbiExecCommand          00000000000014d8 f   UsbMassStorageDxe:UsbMassCbi.obj
+ 0001:00001364       UsbCbiResetDevice          00000000000015e4 f   UsbMassStorageDxe:UsbMassCbi.obj
+ 0001:00001408       UsbBotCleanUp              0000000000001688 f   UsbMassStorageDxe:UsbMassBot.obj
+ 0001:00001408       UsbCbiCleanUp              0000000000001688 f   UsbMassStorageDxe:UsbMassCbi.obj
+ 0001:00001420       UsbDiskInfoInquiry         00000000000016a0 f   UsbMassStorageDxe:UsbMassDiskInfo.obj
+ 0001:0000146c       UsbDiskInfoIdentify        00000000000016ec f   UsbMassStorageDxe:UsbMassDiskInfo.obj
+ 0001:0000146c       UsbDiskInfoSenseData       00000000000016ec f   UsbMassStorageDxe:UsbMassDiskInfo.obj
+ 0001:00001478       UsbDiskInfoWhichIde        00000000000016f8 f   UsbMassStorageDxe:UsbMassDiskInfo.obj
+ 0001:00001478       UsbMassStorageGetControllerName 00000000000016f8 f   UsbMassStorageDxe:ComponentName.obj
+ 0001:00001484       UsbMassStorageGetDriverName 0000000000001704 f   UsbMassStorageDxe:ComponentName.obj
+ 0001:000015b0       UsbBotInit                 0000000000001830 f   UsbMassStorageDxe:UsbMassBot.obj
+ 0001:00001708       UsbBotDataTransfer         0000000000001988 f   UsbMassStorageDxe:UsbMassBot.obj
+ 0001:000017cc       UsbBotGetStatus            0000000000001a4c f   UsbMassStorageDxe:UsbMassBot.obj
+ 0001:000018a0       UsbBotExecCommand          0000000000001b20 f   UsbMassStorageDxe:UsbMassBot.obj
+ 0001:000019f0       UsbBotResetDevice          0000000000001c70 f   UsbMassStorageDxe:UsbMassBot.obj
+ 0001:00001ab4       UsbBotGetMaxLun            0000000000001d34 f   UsbMassStorageDxe:UsbMassBot.obj
+ 0001:00001b34       UsbBootRequestSense        0000000000001db4 f   UsbMassStorageDxe:UsbMassBoot.obj
+ 0001:00001cb4       UsbBootExecCmdWithRetry    0000000000001f34 f   UsbMassStorageDxe:UsbMassBoot.obj
+ 0001:00001e40       UsbBootReadCapacity16      00000000000020c0 f   UsbMassStorageDxe:UsbMassBoot.obj
+ 0001:00001f74       UsbBootReadCapacity        00000000000021f4 f   UsbMassStorageDxe:UsbMassBoot.obj
+ 0001:0000205c       UsbBootDetectMedia         00000000000022dc f   UsbMassStorageDxe:UsbMassBoot.obj
+ 0001:00002234       UsbBootReadWriteBlocks     00000000000024b4 f   UsbMassStorageDxe:UsbMassBoot.obj
+ 0001:00002368       UsbBootReadWriteBlocks16   00000000000025e8 f   UsbMassStorageDxe:UsbMassBoot.obj
+ 0001:000024d8       UsbClearEndpointStall      0000000000002758 f   UsbMassStorageDxe:UsbMassBoot.obj
+ 0001:00002524       InternalAllocatePool       00000000000027a4 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00002554       IsLanguageSupported        00000000000027d4 f   UefiLib:UefiLib.obj
+ 0002:00000000       gEfiDiskInfoProtocolGuid   0000000000002880     UsbMassStorageDxe:AutoGen.obj
+ 0002:00000010       gEfiComponentName2ProtocolGuid 0000000000002890     UsbMassStorageDxe:AutoGen.obj
+ 0002:00000020       gEfiDevicePathProtocolGuid 00000000000028a0     UsbMassStorageDxe:AutoGen.obj
+ 0002:00000030       gEfiUsbIoProtocolGuid      00000000000028b0     UsbMassStorageDxe:AutoGen.obj
+ 0002:00000040       gEfiDevicePathUtilitiesProtocolGuid 00000000000028c0     UsbMassStorageDxe:AutoGen.obj
+ 0002:00000050       gEfiDriverBindingProtocolGuid 00000000000028d0     UsbMassStorageDxe:AutoGen.obj
+ 0002:00000060       gEfiComponentNameProtocolGuid 00000000000028e0     UsbMassStorageDxe:AutoGen.obj
+ 0002:00000070       gEfiBlockIoProtocolGuid    00000000000028f0     UsbMassStorageDxe:AutoGen.obj
+ 0002:00000080       gUSBMassDriverBinding      0000000000002900     UsbMassStorageDxe:UsbMassImpl.obj
+ 0002:000000b0       mUsbCbi0Transport          0000000000002930     UsbMassStorageDxe:UsbMassCbi.obj
+ 0002:000000e0       mUsbCbi1Transport          0000000000002960     UsbMassStorageDxe:UsbMassCbi.obj
+ 0002:00000110       gUsbDiskInfoProtocolTemplate 0000000000002990     UsbMassStorageDxe:UsbMassDiskInfo.obj
+ 0002:00000140       gUsbMassStorageComponentName2 00000000000029c0     UsbMassStorageDxe:ComponentName.obj
+ 0002:00000158       gUsbMassStorageComponentName 00000000000029d8     UsbMassStorageDxe:ComponentName.obj
+ 0002:00000170       mUsbMassStorageDriverNameTable 00000000000029f0     UsbMassStorageDxe:ComponentName.obj
+ 0002:00000190       mUsbBotTransport           0000000000002a10     UsbMassStorageDxe:UsbMassBot.obj
+ 0002:000001c0       mUsbMassTransport          0000000000002a40     UsbMassStorageDxe:UsbMassImpl.obj
+ 0002:000001d8       ??_C@_03LKLGDMJI@eng@      0000000000002a58     UsbMassStorageDxe:ComponentName.obj
+ 0002:000001dc       ??_C@_02LFNMGJAP@en@       0000000000002a5c     UsbMassStorageDxe:ComponentName.obj
+ 0002:000001e0       ??_C@_06DALJLGPG@eng?$DLen@ 0000000000002a60     UsbMassStorageDxe:ComponentName.obj
+ 0002:000001e8       ??_C@_1DA@EPHOEJAM@?$AAU?$AAs?$AAb?$AA?5?$AAM?$AAa?$AAs?$AAs?$AA?5?$AAS?$AAt?$AAo?$AAr?$AAa?$AAg@ 0000000000002a68     UsbMassStorageDxe:ComponentName.obj
+ 0002:00000238       gST                        0000000000002ab8     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000240       gBS                        0000000000002ac0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000248       mDevicePathLibDevicePathUtilities 0000000000002ac8     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:00000250       __volatile_metadata        0000000000002ad0     <linker-defined>
+
+ entry point at        0001:000000b4
+
+ Static symbols
+
+ 0001:0000001a       InternalMemCopyMem.0       000000000000029a     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:0000002a       @CopyBackward              00000000000002aa     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000033       @CopyBytes                 00000000000002b3     BaseMemoryLibRepStr:CopyMem.obj
+ 0004:00000000       $unwind$_ModuleEntryPoint  0000000000002d40     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0004:00000008       $unwind$UsbMassReset       0000000000002d48     UsbMassStorageDxe:UsbMassImpl.obj
+ 0004:00000018       $unwind$UsbMassReadBlocks  0000000000002d58     UsbMassStorageDxe:UsbMassImpl.obj
+ 0004:00000018       $unwind$UsbMassWriteBlocks 0000000000002d58     UsbMassStorageDxe:UsbMassImpl.obj
+ 0004:00000034       $unwind$UsbMassInitMedia   0000000000002d74     UsbMassStorageDxe:UsbMassImpl.obj
+ 0004:00000044       $unwind$UsbMassInitMultiLun 0000000000002d84     UsbMassStorageDxe:UsbMassImpl.obj
+ 0004:0000005c       $unwind$UsbMassInitNonLun  0000000000002d9c     UsbMassStorageDxe:UsbMassImpl.obj
+ 0004:00000070       $unwind$USBMassDriverBindingSupported 0000000000002db0     UsbMassStorageDxe:UsbMassImpl.obj
+ 0004:00000084       $unwind$USBMassDriverBindingStart 0000000000002dc4     UsbMassStorageDxe:UsbMassImpl.obj
+ 0004:00000098       $unwind$USBMassDriverBindingStop 0000000000002dd8     UsbMassStorageDxe:UsbMassImpl.obj
+ 0004:000000b4       $unwind$UsbCbiInit         0000000000002df4     UsbMassStorageDxe:UsbMassCbi.obj
+ 0004:000000c8       $unwind$UsbCbiSendCommand  0000000000002e08     UsbMassStorageDxe:UsbMassCbi.obj
+ 0004:000000dc       $unwind$UsbCbiDataTransfer 0000000000002e1c     UsbMassStorageDxe:UsbMassCbi.obj
+ 0004:000000f8       $unwind$UsbCbiGetStatus    0000000000002e38     UsbMassStorageDxe:UsbMassCbi.obj
+ 0004:0000010c       $unwind$UsbCbiExecCommand  0000000000002e4c     UsbMassStorageDxe:UsbMassCbi.obj
+ 0004:00000124       $unwind$UsbCbiResetDevice  0000000000002e64     UsbMassStorageDxe:UsbMassCbi.obj
+ 0004:00000130       $unwind$UsbBotCleanUp      0000000000002e70     UsbMassStorageDxe:UsbMassBot.obj
+ 0004:00000130       $unwind$UsbCbiCleanUp      0000000000002e70     UsbMassStorageDxe:UsbMassCbi.obj
+ 0004:00000130       $unwind$InternalAllocatePool 0000000000002e70     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0004:00000138       $unwind$UsbDiskInfoInquiry 0000000000002e78     UsbMassStorageDxe:UsbMassDiskInfo.obj
+ 0004:00000144       $unwind$UsbMassStorageGetDriverName 0000000000002e84     UsbMassStorageDxe:ComponentName.obj
+ 0004:00000158       $unwind$UsbBotInit         0000000000002e98     UsbMassStorageDxe:UsbMassBot.obj
+ 0004:0000016c       $unwind$UsbBotDataTransfer 0000000000002eac     UsbMassStorageDxe:UsbMassBot.obj
+ 0004:0000017c       $unwind$UsbBotGetStatus    0000000000002ebc     UsbMassStorageDxe:UsbMassBot.obj
+ 0004:00000190       $unwind$UsbBotExecCommand  0000000000002ed0     UsbMassStorageDxe:UsbMassBot.obj
+ 0004:000001a8       $unwind$UsbBotResetDevice  0000000000002ee8     UsbMassStorageDxe:UsbMassBot.obj
+ 0004:000001b8       $unwind$UsbBotGetMaxLun    0000000000002ef8     UsbMassStorageDxe:UsbMassBot.obj
+ 0004:000001c4       $unwind$UsbBootRequestSense 0000000000002f04     UsbMassStorageDxe:UsbMassBoot.obj
+ 0004:000001d4       $unwind$UsbBootExecCmdWithRetry 0000000000002f14     UsbMassStorageDxe:UsbMassBoot.obj
+ 0004:000001f0       $unwind$UsbBootReadCapacity16 0000000000002f30     UsbMassStorageDxe:UsbMassBoot.obj
+ 0004:000001fc       $unwind$UsbBootReadCapacity 0000000000002f3c     UsbMassStorageDxe:UsbMassBoot.obj
+ 0004:00000204       $unwind$UsbBootDetectMedia 0000000000002f44     UsbMassStorageDxe:UsbMassBoot.obj
+ 0004:00000218       $unwind$UsbBootReadWriteBlocks 0000000000002f58     UsbMassStorageDxe:UsbMassBoot.obj
+ 0004:00000218       $unwind$UsbBootReadWriteBlocks16 0000000000002f58     UsbMassStorageDxe:UsbMassBoot.obj
+ 0004:00000230       $unwind$UsbClearEndpointStall 0000000000002f70     UsbMassStorageDxe:UsbMassBoot.obj

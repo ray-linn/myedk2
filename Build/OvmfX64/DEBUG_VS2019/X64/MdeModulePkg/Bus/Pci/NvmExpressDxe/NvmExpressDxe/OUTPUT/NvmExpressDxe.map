@@ -1,0 +1,453 @@
+ NvmExpressDxe
+
+ Timestamp is 62b57319 (Fri Jun 24 16:17:29 2022)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 000000c4H .text                   CODE
+ 0001:000000c4 0000763dH .text$mn                CODE
+ 0002:00000000 00002200H .rdata                  DATA
+ 0002:00002200 00000020H .rdata$voltmd           DATA
+ 0002:00002220 0000014cH .rdata$zzzdbg           DATA
+ 0003:00000000 000001e8H .data                   DATA
+ 0003:000001e8 0000003aH .bss                    DATA
+ 0004:00000000 000003d8H .pdata                  DATA
+ 0005:00000000 000003b0H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __arm64x_redirection_metadata 0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points_count 0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_count          0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_count      0000000000000000     <absolute>
+ 0000:00000000       __dynamic_value_reloc_table 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat     0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat_copy 0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_table          0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_table      0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points 0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_count         0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map_count    0000000000000000     <absolute>
+ 0000:00000000       __AbsoluteZero             0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table   0000000000000000     <absolute>
+ 0000:00000000       __guard_check_icall_a64n_fptr 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map          0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_table         0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table_size 0000000000000000     <absolute>
+ 0000:00000000       __guard_flags              0000000000000000     <absolute>
+ 0000:00000000       __arm64x_native_entrypoint 0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_count      0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata_count 0000000000000000     <absolute>
+ 0000:00000000       __enclave_config           0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_table      0000000000000000     <absolute>
+ 0001:00000000       InternalMemCopyMem         00000000000002c0     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000040       InternalMemZeroMem         0000000000000300     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00000060       CpuPause                   0000000000000320     BaseLib:CpuPause.obj
+ 0001:00000070       InternalMemSetMem          0000000000000330     BaseMemoryLibRepStr:SetMem.obj
+ 0001:00000090       InternalMemSetMem64        0000000000000350     BaseMemoryLibRepStr:SetMem64.obj
+ 0001:000000b0       InternalMemSetMem32        0000000000000370     BaseMemoryLibRepStr:SetMem32.obj
+ 0001:000000c4       _DriverUnloadHandler       0000000000000384 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:00000218       _ModuleEntryPoint          00000000000004d8 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:00000294       ProcessLibraryConstructorList 0000000000000554 f   NvmExpressDxe:AutoGen.obj
+ 0001:00000428       ProcessModuleEntryPointList 00000000000006e8 f   NvmExpressDxe:AutoGen.obj
+ 0001:00000568       EnumerateNvmeDevNamespace  0000000000000828 f   NvmExpressDxe:NvmExpress.obj
+ 0001:00000a94       UnregisterNvmeNamespace    0000000000000d54 f   NvmExpressDxe:NvmExpress.obj
+ 0001:00000d2c       ProcessAsyncTaskList       0000000000000fec f   NvmExpressDxe:NvmExpress.obj
+ 0001:00001150       NvmExpressDriverBindingSupported 0000000000001410 f   NvmExpressDxe:NvmExpress.obj
+ 0001:000012bc       NvmExpressDriverBindingStart 000000000000157c f   NvmExpressDxe:NvmExpress.obj
+ 0001:000017f8       NvmExpressDriverBindingStop 0000000000001ab8 f   NvmExpressDxe:NvmExpress.obj
+ 0001:00001a5c       ReadNvmeControllerConfiguration 0000000000001d1c f   NvmExpressDxe:NvmExpressHci.obj
+ 0001:00001ac8       WriteNvmeControllerConfiguration 0000000000001d88 f   NvmExpressDxe:NvmExpressHci.obj
+ 0001:00001be8       ReadNvmeControllerStatus   0000000000001ea8 f   NvmExpressDxe:NvmExpressHci.obj
+ 0001:00001c54       NvmeDisableController      0000000000001f14 f   NvmExpressDxe:NvmExpressHci.obj
+ 0001:00001d2c       NvmeEnableController       0000000000001fec f   NvmExpressDxe:NvmExpressHci.obj
+ 0001:00001df0       NvmeIdentifyController     00000000000020b0 f   NvmExpressDxe:NvmExpressHci.obj
+ 0001:00001ea0       NvmeIdentifyNamespace      0000000000002160 f   NvmExpressDxe:NvmExpressHci.obj
+ 0001:00001f58       NvmeCreateIoCompletionQueue 0000000000002218 f   NvmExpressDxe:NvmExpressHci.obj
+ 0001:00002098       NvmeCreateIoSubmissionQueue 0000000000002358 f   NvmExpressDxe:NvmExpressHci.obj
+ 0001:000021e8       NvmeControllerInit         00000000000024a8 f   NvmExpressDxe:NvmExpressHci.obj
+ 0001:00002840       NvmeShutdownAllControllers 0000000000002b00 f   NvmExpressDxe:NvmExpressHci.obj
+ 0001:00002a4c       ReadSectors                0000000000002d0c f   NvmExpressDxe:NvmExpressBlockIo.obj
+ 0001:00002b2c       WriteSectors               0000000000002dec f   NvmExpressDxe:NvmExpressBlockIo.obj
+ 0001:00002c18       NvmeRead                   0000000000002ed8 f   NvmExpressDxe:NvmExpressBlockIo.obj
+ 0001:00002d98       NvmeWrite                  0000000000003058 f   NvmExpressDxe:NvmExpressBlockIo.obj
+ 0001:00002f18       AsyncIoCallback            00000000000031d8 f   NvmExpressDxe:NvmExpressBlockIo.obj
+ 0001:00002fe8       AsyncReadSectors           00000000000032a8 f   NvmExpressDxe:NvmExpressBlockIo.obj
+ 0001:000031e0       AsyncWriteSectors          00000000000034a0 f   NvmExpressDxe:NvmExpressBlockIo.obj
+ 0001:000033dc       NvmeAsyncRead              000000000000369c f   NvmExpressDxe:NvmExpressBlockIo.obj
+ 0001:00003620       NvmeAsyncWrite             00000000000038e0 f   NvmExpressDxe:NvmExpressBlockIo.obj
+ 0001:00003864       NvmeBlockIoReset           0000000000003b24 f   NvmExpressDxe:NvmExpressBlockIo.obj
+ 0001:000038f8       NvmeBlockIoReadBlocks      0000000000003bb8 f   NvmExpressDxe:NvmExpressBlockIo.obj
+ 0001:00003a18       NvmeBlockIoWriteBlocks     0000000000003cd8 f   NvmExpressDxe:NvmExpressBlockIo.obj
+ 0001:00003b38       NvmeBlockIoFlushBlocks     0000000000003df8 f   NvmExpressDxe:NvmExpressBlockIo.obj
+ 0001:00003c34       NvmeBlockIoResetEx         0000000000003ef4 f   NvmExpressDxe:NvmExpressBlockIo.obj
+ 0001:00003d3c       NvmeBlockIoReadBlocksEx    0000000000003ffc f   NvmExpressDxe:NvmExpressBlockIo.obj
+ 0001:00003eac       NvmeBlockIoWriteBlocksEx   000000000000416c f   NvmExpressDxe:NvmExpressBlockIo.obj
+ 0001:0000401c       NvmeBlockIoFlushBlocksEx   00000000000042dc f   NvmExpressDxe:NvmExpressBlockIo.obj
+ 0001:00004120       TrustTransferNvmeDevice    00000000000043e0 f   NvmExpressDxe:NvmExpressBlockIo.obj
+ 0001:00004228       NvmeStorageSecurityReceiveData 00000000000044e8 f   NvmExpressDxe:NvmExpressBlockIo.obj
+ 0001:0000432c       NvmeStorageSecuritySendData 00000000000045ec f   NvmExpressDxe:NvmExpressBlockIo.obj
+ 0001:00004414       NvmExpressDiskInfoSenseData 00000000000046d4 f   NvmExpressDxe:NvmExpressDiskInfo.obj
+ 0001:00004414       NvmExpressDiskInfoInquiry  00000000000046d4 f   NvmExpressDxe:NvmExpressDiskInfo.obj
+ 0001:00004420       NvmExpressDiskInfoIdentify 00000000000046e0 f   NvmExpressDxe:NvmExpressDiskInfo.obj
+ 0001:000044b0       NvmExpressDiskInfoWhichIde 0000000000004770 f   NvmExpressDxe:NvmExpressDiskInfo.obj
+ 0001:000044bc       NvmExpressComponentNameGetDriverName 000000000000477c f   NvmExpressDxe:ComponentName.obj
+ 0001:000044f0       NvmExpressComponentNameGetControllerName 00000000000047b0 f   NvmExpressDxe:ComponentName.obj
+ 0001:000046b0       NvmeDumpStatus             0000000000004970 f   NvmExpressDxe:NvmExpressPassthru.obj
+ 0001:00004aa8       NvmeCreatePrpList          0000000000004d68 f   NvmExpressDxe:NvmExpressPassthru.obj
+ 0001:00004c64       AbortAsyncPassThruTasks    0000000000004f24 f   NvmExpressDxe:NvmExpressPassthru.obj
+ 0001:00004e94       NvmExpressPassThru         0000000000005154 f   NvmExpressDxe:NvmExpressPassthru.obj
+ 0001:00005778       NvmExpressGetNextNamespace 0000000000005a38 f   NvmExpressDxe:NvmExpressPassthru.obj
+ 0001:00005864       NvmExpressGetNamespace     0000000000005b24 f   NvmExpressDxe:NvmExpressPassthru.obj
+ 0001:00005918       NvmExpressBuildDevicePath  0000000000005bd8 f   NvmExpressDxe:NvmExpressPassthru.obj
+ 0001:00005a60       InternalBaseLibIsListValid 0000000000005d20 f   BaseLib:LinkedList.obj
+ 0001:00005acc       InsertHeadList             0000000000005d8c f   BaseLib:LinkedList.obj
+ 0001:00005b1c       InsertTailList             0000000000005ddc f   BaseLib:LinkedList.obj
+ 0001:00005b70       GetFirstNode               0000000000005e30 f   BaseLib:LinkedList.obj
+ 0001:00005ba4       IsListEmpty                0000000000005e64 f   BaseLib:LinkedList.obj
+ 0001:00005bdc       IsNull                     0000000000005e9c f   BaseLib:LinkedList.obj
+ 0001:00005c20       RemoveEntryList            0000000000005ee0 f   BaseLib:LinkedList.obj
+ 0001:00005c68       CopyMem                    0000000000005f28 f   BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0001:00005d04       ZeroMem                    0000000000005fc4 f   BaseMemoryLibRepStr:ZeroMemWrapper.obj
+ 0001:00005d74       UnicodeSPrintAsciiFormat   0000000000006034 f   BasePrintLib:PrintLib.obj
+ 0001:00005ddc       AsciiSPrint                000000000000609c f   BasePrintLib:PrintLib.obj
+ 0001:00005e08       BasePrintLibFillBuffer     00000000000060c8 f   BasePrintLib:PrintLibInternal.obj
+ 0001:00005e3c       BasePrintLibValueToString  00000000000060fc f   BasePrintLib:PrintLibInternal.obj
+ 0001:00005ea8       BasePrintLibSPrintMarker   0000000000006168 f   BasePrintLib:PrintLibInternal.obj
+ 0001:00006db4       BasePrintLibSPrint         0000000000007074 f   BasePrintLib:PrintLibInternal.obj
+ 0001:00006dd8       DebugPrint                 0000000000007098 f   BaseDebugLibSerialPort:DebugLib.obj
+ 0001:00006dfc       DebugPrintMarker           00000000000070bc f   BaseDebugLibSerialPort:DebugLib.obj
+ 0001:00006eac       DebugAssert                000000000000716c f   BaseDebugLibSerialPort:DebugLib.obj
+ 0001:00006f24       InternalAllocatePool       00000000000071e4 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00006f54       AllocateZeroPool           0000000000007214 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00006f7c       InternalAllocateCopyPool   000000000000723c f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00006ff4       FreePool                   00000000000072b4 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00007038       DevicePathNodeLength       00000000000072f8 f   UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0001:00007080       IsDevicePathEnd            0000000000007340 f   UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0001:000070f8       IsLanguageSupported        00000000000073b8 f   UefiLib:UefiLib.obj
+ 0001:00007180       LookupUnicodeString2       0000000000007440 f   UefiLib:UefiLib.obj
+ 0001:00007274       AddUnicodeString2          0000000000007534 f   UefiLib:UefiLib.obj
+ 0001:0000745c       InternalReportStatusCode   000000000000771c f   DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0001:000074e8       StrnLenS                   00000000000077a8 f   BaseLib:SafeString.obj
+ 0001:00007540       StrSize                    0000000000007800 f   BaseLib:String.obj
+ 0001:000075cc       AsciiStrLen                000000000000788c f   BaseLib:String.obj
+ 0001:00007638       AsciiStrnCmp               00000000000078f8 f   BaseLib:String.obj
+ 0002:00000000       ??_C@_0CB@DMEJJJHA@?6ASSERT_EFI_ERROR?5?$CIStatus?5?$DN?5?$CFr?$CJ@ 00000000000079e0     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0002:00000028       ??_C@_0CH@BBNBJKHK@?$CB?$CI?$CI?$CIINTN?$CJ?$CIRETURN_STATUS?$CJ?$CIStatus@ 0000000000007a08     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0002:00000050       ??_C@_0EE@LNNFMJLI@d?3?2edk2?2edk2?2MdePkg?2Library?2Uef@ 0000000000007a30     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0002:00000098       ??_C@_0O@OIIJCAFN@NvmExpressDxe@ 0000000000007a78     NvmExpressDxe:AutoGen.obj
+ 0002:000000b0       ??_C@_0GN@BACIPHKK@d?3?2edk2?2edk2?2Build?2OvmfX64?2DEBU@ 0000000000007a90     NvmExpressDxe:AutoGen.obj
+ 0002:00000120       ??_C@_0CK@FAGDKFCA@?5?$DN?$DN?5NVME?5IDENTIFY?5NAMESPACE?5?$FL?$CFd@ 0000000000007b00     NvmExpressDxe:NvmExpress.obj
+ 0002:00000150       ??_C@_0BI@NCGNFNCF@?5?5?5?5NSZE?5?5?5?5?5?5?5?5?3?50x?$CFx?6@ 0000000000007b30     NvmExpressDxe:NvmExpress.obj
+ 0002:00000168       ??_C@_0BI@PBKEDMKI@?5?5?5?5NCAP?5?5?5?5?5?5?5?5?3?50x?$CFx?6@ 0000000000007b48     NvmExpressDxe:NvmExpress.obj
+ 0002:00000180       ??_C@_0BI@LHLCEONL@?5?5?5?5NUSE?5?5?5?5?5?5?5?5?3?50x?$CFx?6@ 0000000000007b60     NvmExpressDxe:NvmExpress.obj
+ 0002:00000198       ??_C@_0BI@NBLKEILF@?5?5?5?5LBAF0?4LBADS?5?3?50x?$CFx?6@ 0000000000007b78     NvmExpressDxe:NvmExpress.obj
+ 0002:000001b0       ??_C@_08BLLABOKK@?$CFa?9?$CFa?9?$CFx@ 0000000000007b90     NvmExpressDxe:NvmExpress.obj
+ 0002:000001bc       ??_C@_03LKLGDMJI@eng@      0000000000007b9c     NvmExpressDxe:NvmExpress.obj
+ 0002:000001c0       ??_C@_02LFNMGJAP@en@       0000000000007ba0     NvmExpressDxe:NvmExpress.obj
+ 0002:000001c8       ??_C@_0BF@NDBIKIKC@CR?5has?5Bad?5Signature@ 0000000000007ba8     NvmExpressDxe:NvmExpress.obj
+ 0002:000001e0       ??_C@_0DN@NGJLKOMN@d?3?2edk2?2edk2?2MdeModulePkg?2Bus?2P@ 0000000000007bc0     NvmExpressDxe:NvmExpress.obj
+ 0002:00000220       ??_C@_0BE@HJFNIFOO@Cq?9?$DOSqid?5?$DN?$DN?5QueueId@ 0000000000007c00     NvmExpressDxe:NvmExpress.obj
+ 0002:00000238       ??_C@_0CF@JBEOALOK@NvmExpressDriverBindingStart?3?5s@ 0000000000007c18     NvmExpressDxe:NvmExpress.obj
+ 0002:00000260       ??_C@_0EN@PADGEPND@NvmExpressDriverBindingStart?3?5a@ 0000000000007c40     NvmExpressDxe:NvmExpress.obj
+ 0002:000002b0       ??_C@_0DA@BMBMCFMK@NvmExpressDriverBindingStart?3?5e@ 0000000000007c90     NvmExpressDxe:NvmExpress.obj
+ 0002:000002e0       ??_C@_0CL@BJLALELP@NvmExpressDriverBindingStart?3?5e@ 0000000000007cc0     NvmExpressDxe:NvmExpress.obj
+ 0002:00000310       ??_C@_0L@FHDIPDDL@Cc?4En?3?5?$CFd?6@ 0000000000007cf0     NvmExpressDxe:NvmExpressHci.obj
+ 0002:00000320       ??_C@_0M@FMICDHI@Cc?4Css?3?5?$CFd?6@ 0000000000007d00     NvmExpressDxe:NvmExpressHci.obj
+ 0002:00000330       ??_C@_0M@EDIFPPAJ@Cc?4Mps?3?5?$CFd?6@ 0000000000007d10     NvmExpressDxe:NvmExpressHci.obj
+ 0002:00000340       ??_C@_0M@ECAPCIOH@Cc?4Ams?3?5?$CFd?6@ 0000000000007d20     NvmExpressDxe:NvmExpressHci.obj
+ 0002:00000350       ??_C@_0M@IONALBHK@Cc?4Shn?3?5?$CFd?6@ 0000000000007d30     NvmExpressDxe:NvmExpressHci.obj
+ 0002:00000360       ??_C@_0P@NNLILNOF@Cc?4Iosqes?3?5?$CFd?6@ 0000000000007d40     NvmExpressDxe:NvmExpressHci.obj
+ 0002:00000370       ??_C@_0P@PKBGDMAN@Cc?4Iocqes?3?5?$CFd?6@ 0000000000007d50     NvmExpressDxe:NvmExpressHci.obj
+ 0002:00000380       ??_C@_0O@LBFMKGIL@Aqa?4Asqs?3?5?$CFd?6@ 0000000000007d60     NvmExpressDxe:NvmExpressHci.obj
+ 0002:00000390       ??_C@_0O@BNJMOEPK@Aqa?4Acqs?3?5?$CFd?6@ 0000000000007d70     NvmExpressDxe:NvmExpressHci.obj
+ 0002:000003a0       ??_C@_09BHLKFDIO@Asq?3?5?$CFlx?6@ 0000000000007d80     NvmExpressDxe:NvmExpressHci.obj
+ 0002:000003b0       ??_C@_0L@JMAFGCFI@Acq?3?5?$CFlxh?6@ 0000000000007d90     NvmExpressDxe:NvmExpressHci.obj
+ 0002:000003c0       ??_C@_0CP@MPOPIPKM@NVMe?5controller?5is?5disabled?5wit@ 0000000000007da0     NvmExpressDxe:NvmExpressHci.obj
+ 0002:000003f0       ??_C@_0CO@HGFCFCLE@NVMe?5controller?5is?5enabled?5with@ 0000000000007dd0     NvmExpressDxe:NvmExpressHci.obj
+ 0002:00000420       ??_C@_0DB@BNOEIPDF@NvmeControllerInit?3?5failed?5to?5e@ 0000000000007e00     NvmExpressDxe:NvmExpressHci.obj
+ 0002:00000458       ??_C@_0DG@PNBAEAFE@NvmeControllerInit?3?5failed?5to?5e@ 0000000000007e38     NvmExpressDxe:NvmExpressHci.obj
+ 0002:00000490       ??_C@_0EF@MOKJEDGP@NvmeControllerInit?3?5the?5control@ 0000000000007e70     NvmExpressDxe:NvmExpressHci.obj
+ 0002:000004d8       ??_C@_0CB@PONHFEHF@?$CIPrivate?9?$DOCap?4Mpsmin?5?$CL?512?$CJ?5?$DM?$DN?51@ 0000000000007eb8     NvmExpressDxe:NvmExpressHci.obj
+ 0002:00000500       ??_C@_0EA@CKKONJCO@d?3?2edk2?2edk2?2MdeModulePkg?2Bus?2P@ 0000000000007ee0     NvmExpressDxe:NvmExpressHci.obj
+ 0002:00000540       ??_C@_0BL@GLMJKHLL@Private?9?$DOBuffer?5?$DN?5?$FL?$CF016X?$FN?6@ 0000000000007f20     NvmExpressDxe:NvmExpressHci.obj
+ 0002:00000560       ??_C@_0DF@MGFDOKOF@Admin?5?5?5?5?5Submission?5Queue?5size@ 0000000000007f40     NvmExpressDxe:NvmExpressHci.obj
+ 0002:00000598       ??_C@_0DF@DHNHNCNJ@Admin?5?5?5?5?5Completion?5Queue?5size@ 0000000000007f78     NvmExpressDxe:NvmExpressHci.obj
+ 0002:000005d0       ??_C@_0DE@GMOLDLHB@Admin?5?5?5?5?5Submission?5Queue?5?$CISqB@ 0000000000007fb0     NvmExpressDxe:NvmExpressHci.obj
+ 0002:00000608       ??_C@_0DE@CFOIAGPB@Admin?5?5?5?5?5Completion?5Queue?5?$CICqB@ 0000000000007fe8     NvmExpressDxe:NvmExpressHci.obj
+ 0002:00000640       ??_C@_0DE@NLAICLOC@Sync?5?5I?1O?5Submission?5Queue?5?$CISqB@ 0000000000008020     NvmExpressDxe:NvmExpressHci.obj
+ 0002:00000678       ??_C@_0DE@JCALBGGC@Sync?5?5I?1O?5Completion?5Queue?5?$CICqB@ 0000000000008058     NvmExpressDxe:NvmExpressHci.obj
+ 0002:000006b0       ??_C@_0DE@MLJNDFAJ@Async?5I?1O?5Submission?5Queue?5?$CISqB@ 0000000000008090     NvmExpressDxe:NvmExpressHci.obj
+ 0002:000006e8       ??_C@_0DE@ICJOAIIJ@Async?5I?1O?5Completion?5Queue?5?$CICqB@ 00000000000080c8     NvmExpressDxe:NvmExpressHci.obj
+ 0002:00000720       ??_C@_0CG@LEAFCI@?5?$DN?$DN?5NVME?5IDENTIFY?5CONTROLLER?5DA@ 0000000000008100     NvmExpressDxe:NvmExpressHci.obj
+ 0002:00000748       ??_C@_0BG@CJMGMGAO@?5?5?5?5PCI?5VID?5?5?5?3?50x?$CFx?6@ 0000000000008128     NvmExpressDxe:NvmExpressHci.obj
+ 0002:00000760       ??_C@_0BG@DAILBHEL@?5?5?5?5PCI?5SSVID?5?3?50x?$CFx?6@ 0000000000008140     NvmExpressDxe:NvmExpressHci.obj
+ 0002:00000778       ??_C@_0BE@CCEIHHNM@?5?5?5?5SN?5?5?5?5?5?5?5?5?3?5?$CFa?6@ 0000000000008158     NvmExpressDxe:NvmExpressHci.obj
+ 0002:00000790       ??_C@_0BE@OEONLPOJ@?5?5?5?5MN?5?5?5?5?5?5?5?5?3?5?$CFa?6@ 0000000000008170     NvmExpressDxe:NvmExpressHci.obj
+ 0002:000007a8       ??_C@_0BG@MNELIIMG@?5?5?5?5FR?5?5?5?5?5?5?5?5?3?50x?$CFx?6@ 0000000000008188     NvmExpressDxe:NvmExpressHci.obj
+ 0002:000007c0       ??_C@_0CD@DJBFAJPD@?5?5?5?5TNVMCAP?5?$CIhigh?58?9byte?$CJ?5?3?50x?$CF@ 00000000000081a0     NvmExpressDxe:NvmExpressHci.obj
+ 0002:000007e8       ??_C@_0CD@EHKGCBNJ@?5?5?5?5TNVMCAP?5?$CIlow?58?9byte?$CJ?5?5?3?50x?$CF@ 00000000000081c8     NvmExpressDxe:NvmExpressHci.obj
+ 0002:00000810       ??_C@_0BG@BCGKGJMF@?5?5?5?5RAB?5?5?5?5?5?5?5?3?50x?$CFx?6@ 00000000000081f0     NvmExpressDxe:NvmExpressHci.obj
+ 0002:00000828       ??_C@_0BG@DOFGGCGB@?5?5?5?5IEEE?5?5?5?5?5?5?3?50x?$CFx?6@ 0000000000008208     NvmExpressDxe:NvmExpressHci.obj
+ 0002:00000840       ??_C@_0BG@EEKLBNOJ@?5?5?5?5AERL?5?5?5?5?5?5?3?50x?$CFx?6@ 0000000000008220     NvmExpressDxe:NvmExpressHci.obj
+ 0002:00000858       ??_C@_0BG@LBAOPJ@?5?5?5?5SQES?5?5?5?5?5?5?3?50x?$CFx?6@ 0000000000008238     NvmExpressDxe:NvmExpressHci.obj
+ 0002:00000870       ??_C@_0BG@COBCFCOB@?5?5?5?5CQES?5?5?5?5?5?5?3?50x?$CFx?6@ 0000000000008250     NvmExpressDxe:NvmExpressHci.obj
+ 0002:00000888       ??_C@_0BG@FIFDNHOG@?5?5?5?5NN?5?5?5?5?5?5?5?5?3?50x?$CFx?6@ 0000000000008268     NvmExpressDxe:NvmExpressHci.obj
+ 0002:000008a0       ??_C@_0EG@FMPNACEA@NvmeShutdownController?3?5shutdow@ 0000000000008280     NvmExpressDxe:NvmExpressHci.obj
+ 0002:000008e8       ??_C@_0DK@JLBCKOJK@NvmeShutdownController?3?5shutdow@ 00000000000082c8     NvmExpressDxe:NvmExpressHci.obj
+ 0002:00000930       ??_C@_0EM@LPDNMPEA@NVME?3?5ResetNotification?5absent?$CB@ 0000000000008310     NvmExpressDxe:NvmExpressHci.obj
+ 0002:00000980       ??_C@_08NBGOIMDB@NvmeRead@ 0000000000008360     NvmExpressDxe:NvmExpressBlockIo.obj
+ 0002:00000990       ??_C@_0FL@MNKMPGKL@?$CFa?3?5Lba?5?$DN?50x?$CF08Lx?0?5Original?5?$DN?50@ 0000000000008370     NvmExpressDxe:NvmExpressBlockIo.obj
+ 0002:000009f0       ??_C@_09BCBKKAOK@NvmeWrite@ 00000000000083d0     NvmExpressDxe:NvmExpressBlockIo.obj
+ 0002:00000a00       ??_C@_0O@HBAGBHNL@NvmeAsyncRead@ 00000000000083e0     NvmExpressDxe:NvmExpressBlockIo.obj
+ 0002:00000a10       ??_C@_0P@FCGFMDBH@NvmeAsyncWrite@ 00000000000083f0     NvmExpressDxe:NvmExpressBlockIo.obj
+ 0002:00000a20       ??_C@_0EE@KEFEMAKL@d?3?2edk2?2edk2?2MdeModulePkg?2Bus?2P@ 0000000000008400     NvmExpressDxe:NvmExpressBlockIo.obj
+ 0002:00000a70       ??_C@_0EF@IMIMODJC@d?3?2edk2?2edk2?2MdeModulePkg?2Bus?2P@ 0000000000008450     NvmExpressDxe:NvmExpressDiskInfo.obj
+ 0002:00000ab8       ??_C@_06DALJLGPG@eng?$DLen@ 0000000000008498     NvmExpressDxe:ComponentName.obj
+ 0002:00000ac0       ??_C@_1CG@BKFKFDGN@?$AAN?$AAV?$AAM?$AA?5?$AAE?$AAx?$AAp?$AAr?$AAe?$AAs?$AAs?$AA?5?$AAD?$AAr?$AAi@ 00000000000084a0     NvmExpressDxe:ComponentName.obj
+ 0002:00000ae8       ??_C@_1CO@MPAOIDHH@?$AAN?$AAV?$AAM?$AA?5?$AAE?$AAx?$AAp?$AAr?$AAe?$AAs?$AAs?$AA?5?$AAC?$AAo?$AAn@ 00000000000084c8     NvmExpressDxe:ComponentName.obj
+ 0002:00000b20       ??_C@_0EA@NOLBDKDF@d?3?2edk2?2edk2?2MdeModulePkg?2Bus?2P@ 0000000000008500     NvmExpressDxe:ComponentName.obj
+ 0002:00000b60       ??_C@_0DA@NCCNLDOC@Dump?5NVMe?5Completion?5Entry?5Stat@ 0000000000008540     NvmExpressDxe:NvmExpressPassthru.obj
+ 0002:00000b90       ??_C@_0EF@BHBOGFJN@?5?5SQ?5Identifier?5?3?5?$FL0x?$CFx?$FN?0?5Phase@ 0000000000008570     NvmExpressDxe:NvmExpressPassthru.obj
+ 0002:00000bd8       ??_C@_0BP@BANDLCOI@?5?5NVMe?5Cmd?5Execution?5Result?5?9?5@ 00000000000085b8     NvmExpressDxe:NvmExpressPassthru.obj
+ 0002:00000bf8       ??_C@_0BH@BNHPBGMP@Successful?5Completion?6@ 00000000000085d8     NvmExpressDxe:NvmExpressPassthru.obj
+ 0002:00000c10       ??_C@_0BI@CMLPDJAN@Invalid?5Command?5Opcode?6@ 00000000000085f0     NvmExpressDxe:NvmExpressPassthru.obj
+ 0002:00000c28       ??_C@_0BK@JOEODDGF@Invalid?5Field?5in?5Command?6@ 0000000000008608     NvmExpressDxe:NvmExpressPassthru.obj
+ 0002:00000c48       ??_C@_0BF@PNNPMMLG@Command?5ID?5Conflict?6@ 0000000000008628     NvmExpressDxe:NvmExpressPassthru.obj
+ 0002:00000c60       ??_C@_0BF@BECFLAIB@Data?5Transfer?5Error?6@ 0000000000008640     NvmExpressDxe:NvmExpressPassthru.obj
+ 0002:00000c78       ??_C@_0DB@DGMMDHNL@Commands?5Aborted?5due?5to?5Power?5L@ 0000000000008658     NvmExpressDxe:NvmExpressPassthru.obj
+ 0002:00000cb0       ??_C@_0BH@NHJOALJJ@Internal?5Device?5Error?6@ 0000000000008690     NvmExpressDxe:NvmExpressPassthru.obj
+ 0002:00000cc8       ??_C@_0BJ@HEPNNOAL@Command?5Abort?5Requested?6@ 00000000000086a8     NvmExpressDxe:NvmExpressPassthru.obj
+ 0002:00000ce8       ??_C@_0CE@NLHPOCMH@Command?5Aborted?5due?5to?5SQ?5Delet@ 00000000000086c8     NvmExpressDxe:NvmExpressPassthru.obj
+ 0002:00000d10       ??_C@_0CN@FBHNJJAI@Command?5Aborted?5due?5to?5Failed?5F@ 00000000000086f0     NvmExpressDxe:NvmExpressPassthru.obj
+ 0002:00000d40       ??_C@_0CO@MACBOPKL@Command?5Aborted?5due?5to?5Missing?5@ 0000000000008720     NvmExpressDxe:NvmExpressPassthru.obj
+ 0002:00000d70       ??_C@_0BN@GCLDHLOF@Invalid?5Namespace?5or?5Format?6@ 0000000000008750     NvmExpressDxe:NvmExpressPassthru.obj
+ 0002:00000d90       ??_C@_0BI@GFOEBHGJ@Command?5Sequence?5Error?6@ 0000000000008770     NvmExpressDxe:NvmExpressPassthru.obj
+ 0002:00000da8       ??_C@_0CF@KHIDMCGH@Invalid?5SGL?5Last?5Segment?5Descri@ 0000000000008788     NvmExpressDxe:NvmExpressPassthru.obj
+ 0002:00000dd0       ??_C@_0CD@EDOGFMNH@Invalid?5Number?5of?5SGL?5Descripto@ 00000000000087b0     NvmExpressDxe:NvmExpressPassthru.obj
+ 0002:00000df8       ??_C@_0BJ@CEHBBIKA@Data?5SGL?5Length?5Invalid?6@ 00000000000087d8     NvmExpressDxe:NvmExpressPassthru.obj
+ 0002:00000e18       ??_C@_0BN@ELAPHMHG@Metadata?5SGL?5Length?5Invalid?6@ 00000000000087f8     NvmExpressDxe:NvmExpressPassthru.obj
+ 0002:00000e38       ??_C@_0BN@OEKFDNBN@SGL?5Descriptor?5Type?5Invalid?6@ 0000000000008818     NvmExpressDxe:NvmExpressPassthru.obj
+ 0002:00000e58       ??_C@_0BC@BLBOCKOB@LBA?5Out?5of?5Range?6@ 0000000000008838     NvmExpressDxe:NvmExpressPassthru.obj
+ 0002:00000e70       ??_C@_0BD@DNBHCHIG@Capacity?5Exceeded?6@ 0000000000008850     NvmExpressDxe:NvmExpressPassthru.obj
+ 0002:00000e88       ??_C@_0BF@MJLNMNGI@Namespace?5Not?5Ready?6@ 0000000000008868     NvmExpressDxe:NvmExpressPassthru.obj
+ 0002:00000ea0       ??_C@_0BG@CJFKPJLN@Reservation?5Conflict?6@ 0000000000008880     NvmExpressDxe:NvmExpressPassthru.obj
+ 0002:00000eb8       ??_C@_0BK@OOPEBGON@Completion?5Queue?5Invalid?6@ 0000000000008898     NvmExpressDxe:NvmExpressPassthru.obj
+ 0002:00000ed8       ??_C@_0BK@MNKFDNKA@Invalid?5Queue?5Identifier?6@ 00000000000088b8     NvmExpressDxe:NvmExpressPassthru.obj
+ 0002:00000ef8       ??_C@_0BN@FJJIDLH@Maximum?5Queue?5Size?5Exceeded?6@ 00000000000088d8     NvmExpressDxe:NvmExpressPassthru.obj
+ 0002:00000f18       ??_C@_0BO@JNDODJGM@Abort?5Command?5Limit?5Exceeded?6@ 00000000000088f8     NvmExpressDxe:NvmExpressPassthru.obj
+ 0002:00000f38       ??_C@_0CL@LMMONBBI@Asynchronous?5Event?5Request?5Limi@ 0000000000008918     NvmExpressDxe:NvmExpressPassthru.obj
+ 0002:00000f68       ??_C@_0BH@FHHKEDFI@Invalid?5Firmware?5Slot?6@ 0000000000008948     NvmExpressDxe:NvmExpressPassthru.obj
+ 0002:00000f80       ??_C@_0BI@CJONJBCH@Invalid?5Firmware?5Image?6@ 0000000000008960     NvmExpressDxe:NvmExpressPassthru.obj
+ 0002:00000f98       ??_C@_0BK@DKMLLFDB@Invalid?5Interrupt?5Vector?6@ 0000000000008978     NvmExpressDxe:NvmExpressPassthru.obj
+ 0002:00000fb8       ??_C@_0BC@LFAOOENH@Invalid?5Log?5Page?6@ 0000000000008998     NvmExpressDxe:NvmExpressPassthru.obj
+ 0002:00000fd0       ??_C@_0BA@ENDBBFJN@Invalid?5Format?6@ 00000000000089b0     NvmExpressDxe:NvmExpressPassthru.obj
+ 0002:00000fe0       ??_C@_0DC@MPPNAIDM@Firmware?5Application?5Requires?5C@ 00000000000089c0     NvmExpressDxe:NvmExpressPassthru.obj
+ 0002:00001018       ??_C@_0BI@OHLAJOJJ@Invalid?5Queue?5Deletion?6@ 00000000000089f8     NvmExpressDxe:NvmExpressPassthru.obj
+ 0002:00001030       ??_C@_0CB@BEIKPCNK@Feature?5Identifier?5Not?5Saveable@ 0000000000008a10     NvmExpressDxe:NvmExpressPassthru.obj
+ 0002:00001058       ??_C@_0BI@EFNCJCIL@Feature?5Not?5Changeable?6@ 0000000000008a38     NvmExpressDxe:NvmExpressPassthru.obj
+ 0002:00001070       ??_C@_0CA@ICHPAIHF@Feature?5Not?5Namespace?5Specific?6@ 0000000000008a50     NvmExpressDxe:NvmExpressPassthru.obj
+ 0002:00001090       ??_C@_0DD@BFNHPMBJ@Firmware?5Application?5Requires?5N@ 0000000000008a70     NvmExpressDxe:NvmExpressPassthru.obj
+ 0002:000010c8       ??_C@_0BI@ONOLJPIP@Conflicting?5Attributes?6@ 0000000000008aa8     NvmExpressDxe:NvmExpressPassthru.obj
+ 0002:000010e0       ??_C@_0CA@PDLFAIHJ@Invalid?5Protection?5Information?6@ 0000000000008ac0     NvmExpressDxe:NvmExpressPassthru.obj
+ 0002:00001100       ??_C@_0CE@IJBCJOFO@Attempted?5Write?5to?5Read?5Only?5Ra@ 0000000000008ae0     NvmExpressDxe:NvmExpressPassthru.obj
+ 0002:00001128       ??_C@_0N@HKBMCPGD@Write?5Fault?6@ 0000000000008b08     NvmExpressDxe:NvmExpressPassthru.obj
+ 0002:00001138       ??_C@_0BI@OBBAGDKO@Unrecovered?5Read?5Error?6@ 0000000000008b18     NvmExpressDxe:NvmExpressPassthru.obj
+ 0002:00001150       ??_C@_0BO@INLLJADA@End?9to?9end?5Guard?5Check?5Error?6@ 0000000000008b30     NvmExpressDxe:NvmExpressPassthru.obj
+ 0002:00001170       ??_C@_0CI@NDBKLGPH@End?9to?9end?5Application?5Tag?5Chec@ 0000000000008b50     NvmExpressDxe:NvmExpressPassthru.obj
+ 0002:00001198       ??_C@_0CG@LPPFOMHL@End?9to?9end?5Reference?5Tag?5Check?5@ 0000000000008b78     NvmExpressDxe:NvmExpressPassthru.obj
+ 0002:000011c0       ??_C@_0BB@DKNEIBGJ@Compare?5Failure?6@ 0000000000008ba0     NvmExpressDxe:NvmExpressPassthru.obj
+ 0002:000011d8       ??_C@_0P@DLFLILDJ@Access?5Denied?6@ 0000000000008bb8     NvmExpressDxe:NvmExpressPassthru.obj
+ 0002:000011e8       ??_C@_0CM@DDOFHNPA@NvmeCreatePrpList?3?5create?5PrpLi@ 0000000000008bc8     NvmExpressDxe:NvmExpressPassthru.obj
+ 0002:00001220       ??_C@_0EF@JLADJPIH@d?3?2edk2?2edk2?2MdeModulePkg?2Bus?2P@ 0000000000008c00     NvmExpressDxe:NvmExpressPassthru.obj
+ 0002:00001268       ??_C@_0O@GJCFHNDM@Sq?9?$DOPsdt?5?$DN?$DN?50@ 0000000000008c48     NvmExpressDxe:NvmExpressPassthru.obj
+ 0002:00001278       ??_C@_0DD@JMFHEOGL@NvmExpressPassThru?3?5doesn?8t?5sup@ 0000000000008c58     NvmExpressDxe:NvmExpressPassthru.obj
+ 0002:000012b0       ??_C@_0EL@FOMLIMHE@NvmExpressPassThru?3?5Does?5not?5su@ 0000000000008c90     NvmExpressDxe:NvmExpressPassthru.obj
+ 0002:00001300       ??_C@_0DJ@OOFGLOJA@NvmExpressPassThru?3?5Timeout?5occ@ 0000000000008ce0     NvmExpressDxe:NvmExpressPassthru.obj
+ 0002:00001340       ??_C@_0N@ENBFIJHO@QueueId?5?$DN?$DN?50@ 0000000000008d20     NvmExpressDxe:NvmExpressPassthru.obj
+ 0002:00001350       ??_C@_0BF@NJNGJMPC@List?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000008d30     BaseLib:LinkedList.obj
+ 0002:00001368       ??_C@_0DB@MIDNNFCL@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 0000000000008d48     BaseLib:LinkedList.obj
+ 0002:000013a0       ??_C@_0CC@KDLPLAED@List?9?$DOForwardLink?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?5@ 0000000000008d80     BaseLib:LinkedList.obj
+ 0002:000013c8       ??_C@_0BP@IJJCCMAK@List?9?$DOBackLink?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000008da8     BaseLib:LinkedList.obj
+ 0002:000013e8       ??_C@_0BJ@NJABNCDK@ListHead?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000008dc8     BaseLib:LinkedList.obj
+ 0002:00001408       ??_C@_0CG@LGIALJFK@InternalBaseLibIsListValid?5?$CILis@ 0000000000008de8     BaseLib:LinkedList.obj
+ 0002:00001430       ??_C@_0CC@JLDICICM@InternalBaseLibIsListValid?5?$CILis@ 0000000000008e10     BaseLib:LinkedList.obj
+ 0002:00001458       ??_C@_0BF@NMBJJECB@?$CBIsListEmpty?5?$CIEntry?$CJ@ 0000000000008e38     BaseLib:LinkedList.obj
+ 0002:00001470       ??_C@_0BH@IACGKAP@Buffer?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000008e50     BaseLib:Unaligned.obj
+ 0002:00001488       ??_C@_0DA@BDDONMJM@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 0000000000008e68     BaseLib:Unaligned.obj
+ 0002:000014b8       ??_C@_0N@KGHEHMDL@Divisor?5?$CB?$DN?50@ 0000000000008e98     BaseLib:DivU64x64Remainder.obj
+ 0002:000014d0       ??_C@_0ED@MKGCMJG@?$CILength?5?9?51?$CJ?5?$DM?$DN?5?$CI0xFFFFFFFFFFFF@ 0000000000008eb0     BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0002:00001520       ??_C@_0EB@LOHEEPCE@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 0000000000008f00     BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0002:00001568       ??_C@_0DO@MAOBOFEG@?$CILength?5?9?51?$CJ?5?$DM?$DN?5?$CI0xFFFFFFFFFFFF@ 0000000000008f48     BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0002:000015b0       ??_C@_0EB@KNGCOOD@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 0000000000008f90     BaseMemoryLibRepStr:ZeroMemWrapper.obj
+ 0002:000015f8       ??_C@_0DG@EEENIGGL@Length?5?$DM?$DN?5?$CI0xFFFFFFFFFFFFFFFFUL@ 0000000000008fd8     BaseMemoryLibRepStr:ZeroMemWrapper.obj
+ 0002:00001630       ??_C@_0CI@BGLNHBLM@?$CI?$CI?$CIUINTN?$CJ?5?$CIStartOfBuffer?$CJ?$CJ?5?$CG?50x@ 0000000000009010     BasePrintLib:PrintLib.obj
+ 0002:00001658       ??_C@_0DE@LDGFCIFJ@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 0000000000009038     BasePrintLib:PrintLib.obj
+ 0002:00001690       ??_C@_0DM@OAJIKNNG@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 0000000000009070     BasePrintLib:PrintLibInternal.obj
+ 0002:000016d0       ??_C@_0BJ@CNKJJNE@?$CIBuffer?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ@ 00000000000090b0     BasePrintLib:PrintLibInternal.obj
+ 0002:000016f0       ??_C@_0EB@HDGIDCIO@?$CIBufferSize?5?$DM?$DN?5?$CI_gPcd_FixedAtBu@ 00000000000090d0     BasePrintLib:PrintLibInternal.obj
+ 0002:00001738       ??_C@_0BJ@PPAKKDJG@?$CIFormat?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ@ 0000000000009118     BasePrintLib:PrintLibInternal.obj
+ 0002:00001760       ??_C@_0ED@LPDDCECB@?$CIBufferSize?5?$DM?$DN?5?$CI_gPcd_FixedAtBu@ 0000000000009140     BasePrintLib:PrintLibInternal.obj
+ 0002:000017b0       ??_C@_0IM@BFJJFLGB@?$CIStrnLenS?5?$CI?$CICHAR16?5?$CK?$CJFormat?0?5?$CI_@ 0000000000009190     BasePrintLib:PrintLibInternal.obj
+ 0002:00001840       ??_C@_0ID@PLGJGION@?$CIAsciiStrnLenS?5?$CIFormat?0?5?$CI_gPcd_@ 0000000000009220     BasePrintLib:PrintLibInternal.obj
+ 0002:000018c8       ??_C@_0O@MLOLIMFM@?$DMnull?5string?$DO@ 00000000000092a8     BasePrintLib:PrintLibInternal.obj
+ 0002:000018d8       ??_C@_0M@BJJDNPHK@?$DMnull?5guid?$DO@ 00000000000092b8     BasePrintLib:PrintLibInternal.obj
+ 0002:000018e8       ??_C@_0DB@PMLHLBMO@?$CF08x?9?$CF04x?9?$CF04x?9?$CF02x?$CF02x?9?$CF02x?$CF02@ 00000000000092c8     BasePrintLib:PrintLibInternal.obj
+ 0002:00001920       ??_C@_0M@LHGBCIKM@?$DMnull?5time?$DO@ 0000000000009300     BasePrintLib:PrintLibInternal.obj
+ 0002:00001930       ??_C@_0BK@FCPKCIDD@?$CF02d?1?$CF02d?1?$CF04d?5?5?$CF02d?3?$CF02d@ 0000000000009310     BasePrintLib:PrintLibInternal.obj
+ 0002:0000194c       ??_C@_04JIMNDDED@?$CF08X@  000000000000932c     BasePrintLib:PrintLibInternal.obj
+ 0002:00001954       ??_C@_02PCIJFNDE@?$AN?6@   0000000000009334     BasePrintLib:PrintLibInternal.obj
+ 0002:00001958       ??_C@_01LIIJDEN@?$AN@      0000000000009338     BasePrintLib:PrintLibInternal.obj
+ 0002:00001960       mWarningString             0000000000009340     BasePrintLib:PrintLibInternal.obj
+ 0002:00001a00       mErrorString               00000000000093e0     BasePrintLib:PrintLibInternal.obj
+ 0002:00001cc0       mHexStr                    00000000000096a0     BasePrintLib:PrintLibInternal.obj
+ 0002:00001cd0       ??_C@_0BH@LKMBFCBF@Format?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000096b0     BaseDebugLibSerialPort:DebugLib.obj
+ 0002:00001ce8       ??_C@_0DO@CKBIDOOL@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 00000000000096c8     BaseDebugLibSerialPort:DebugLib.obj
+ 0002:00001d28       ??_C@_0BI@NOCKJDBJ@ASSERT?5?$FL?$CFa?$FN?5?$CFa?$CI?$CFd?$CJ?3?5?$CFa?6@ 0000000000009708     BaseDebugLibSerialPort:DebugLib.obj
+ 0002:00001d40       ??_C@_0BN@COECPDCC@gImageHandle?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000009720     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00001d60       ??_C@_0FA@FOIHGFBE@d?3?2edk2?2edk2?2MdePkg?2Library?2Uef@ 0000000000009740     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00001db0       ??_C@_0BE@DGNHAHIL@gST?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000009790     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00001dc8       ??_C@_0BE@BDFJLGLN@gBS?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000097a8     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00001de0       ??_C@_0EK@GCCICMAJ@d?3?2edk2?2edk2?2MdePkg?2Library?2Uef@ 00000000000097c0     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0002:00001e30       ??_C@_0DO@GEEICOOO@AllocationSize?5?$DM?$DN?5?$CI0xFFFFFFFFFF@ 0000000000009810     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0002:00001e70       ??_C@_0BE@OBDFIHND@gRT?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000009850     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0002:00001e90       ??_C@_0FG@JGJCMPKB@d?3?2edk2?2edk2?2MdePkg?2Library?2Uef@ 0000000000009870     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0002:00001ef0       ??_C@_0FE@ELFDCAAP@d?3?2edk2?2edk2?2MdePkg?2Library?2Uef@ 00000000000098d0     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:00001f48       ??_C@_0DC@CNNBPJA@mDevicePathLibDevicePathUtiliti@ 0000000000009928     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:00001f80       ??_C@_0BF@CBLMFKOC@Node?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000009960     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:00001f98       ??_C@_0DG@PIJIOFBF@d?3?2edk2?2edk2?2MdePkg?2Library?2Uef@ 0000000000009978     UefiLib:UefiDriverModel.obj
+ 0002:00001fd0       ??_C@_0DJ@FHIMIJAH@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 00000000000099b0     BaseLib:DivU64x32Remainder.obj
+ 0002:00002010       ??_C@_0CC@GFNLNIOC@?$CI?$CIUINTN?$CJString?5?$CG?50x00000001?$CJ?5?$DN?$DN@ 00000000000099f0     BaseLib:SafeString.obj
+ 0002:00002038       ??_C@_0DB@PKFMPMPC@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 0000000000009a18     BaseLib:SafeString.obj
+ 0002:00002070       ??_C@_0BH@MAAHKCPC@String?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000009a50     BaseLib:String.obj
+ 0002:00002088       ??_C@_0CN@LHBFELAO@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 0000000000009a68     BaseLib:String.obj
+ 0002:000020b8       ??_C@_0DK@EOJCOAME@Length?5?$DM?5_gPcd_FixedAtBuild_Pcd@ 0000000000009a98     BaseLib:String.obj
+ 0002:000020f8       ??_C@_0DI@MDIKFADO@Length?5?$DM?5_gPcd_FixedAtBuild_Pcd@ 0000000000009ad8     BaseLib:String.obj
+ 0002:00002130       ??_C@_0BL@IKFBNFIL@AsciiStrSize?5?$CIFirstString?$CJ@ 0000000000009b10     BaseLib:String.obj
+ 0002:00002150       ??_C@_0BM@EDNOKLLE@AsciiStrSize?5?$CISecondString?$CJ@ 0000000000009b30     BaseLib:String.obj
+ 0002:00002170       ??_C@_0DJ@JJHGIFMP@Length?5?$DM?$DN?5_gPcd_FixedAtBuild_Pc@ 0000000000009b50     BaseLib:String.obj
+ 0002:00002200       __volatile_metadata        0000000000009be0     <linker-defined>
+ 0003:00000000       gEfiLoadedImageProtocolGuid 0000000000009d60     NvmExpressDxe:AutoGen.obj
+ 0003:00000010       gEfiStatusCodeRuntimeProtocolGuid 0000000000009d70     NvmExpressDxe:AutoGen.obj
+ 0003:00000020       gEfiDiskInfoProtocolGuid   0000000000009d80     NvmExpressDxe:AutoGen.obj
+ 0003:00000030       gEfiDriverSupportedEfiVersionProtocolGuid 0000000000009d90     NvmExpressDxe:AutoGen.obj
+ 0003:00000040       gEfiComponentName2ProtocolGuid 0000000000009da0     NvmExpressDxe:AutoGen.obj
+ 0003:00000050       gEfiBlockIo2ProtocolGuid   0000000000009db0     NvmExpressDxe:AutoGen.obj
+ 0003:00000060       gEfiNvmExpressPassThruProtocolGuid 0000000000009dc0     NvmExpressDxe:AutoGen.obj
+ 0003:00000070       gEfiDevicePathProtocolGuid 0000000000009dd0     NvmExpressDxe:AutoGen.obj
+ 0003:00000080       gEfiPciIoProtocolGuid      0000000000009de0     NvmExpressDxe:AutoGen.obj
+ 0003:00000090       gEfiResetNotificationProtocolGuid 0000000000009df0     NvmExpressDxe:AutoGen.obj
+ 0003:000000a0       gEfiDevicePathUtilitiesProtocolGuid 0000000000009e00     NvmExpressDxe:AutoGen.obj
+ 0003:000000b0       gEfiDriverBindingProtocolGuid 0000000000009e10     NvmExpressDxe:AutoGen.obj
+ 0003:000000c0       gEfiStorageSecurityCommandProtocolGuid 0000000000009e20     NvmExpressDxe:AutoGen.obj
+ 0003:000000d0       gEfiComponentNameProtocolGuid 0000000000009e30     NvmExpressDxe:AutoGen.obj
+ 0003:000000e0       gEfiBlockIoProtocolGuid    0000000000009e40     NvmExpressDxe:AutoGen.obj
+ 0003:000000f0       gEfiCallerIdGuid           0000000000009e50     NvmExpressDxe:AutoGen.obj
+ 0003:00000100       gNvmExpressDriverBinding   0000000000009e60     NvmExpressDxe:NvmExpress.obj
+ 0003:00000130       gEfiNvmExpressPassThruMode 0000000000009e90     NvmExpressDxe:NvmExpress.obj
+ 0003:00000140       gNvmExpressDriverSupportedEfiVersion 0000000000009ea0     NvmExpressDxe:NvmExpress.obj
+ 0003:00000148       gNvmExpressDiskInfoProtocolTemplate 0000000000009ea8     NvmExpressDxe:NvmExpressDiskInfo.obj
+ 0003:00000178       gNvmExpressComponentName2  0000000000009ed8     NvmExpressDxe:ComponentName.obj
+ 0003:00000190       gNvmExpressComponentName   0000000000009ef0     NvmExpressDxe:ComponentName.obj
+ 0003:000001a8       mNvmExpressControllerNameTable 0000000000009f08     NvmExpressDxe:ComponentName.obj
+ 0003:000001c8       mNvmExpressDriverNameTable 0000000000009f28     NvmExpressDxe:ComponentName.obj
+ 0003:000001e8       mNvmeControllerNumber      0000000000009f48     NvmExpressDxe:NvmExpressHci.obj
+ 0003:000001f0       gST                        0000000000009f50     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0003:000001f8       gBS                        0000000000009f58     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0003:00000200       gImageHandle               0000000000009f60     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0003:00000208       gRT                        0000000000009f68     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0003:00000210       mDevicePathLibDevicePathUtilities 0000000000009f70     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0003:00000218       mReportStatusCodeLibStatusCodeProtocol 0000000000009f78     DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0003:00000220       gParity                    0000000000009f80     PcAtSerialPortLib:SerialPortLib.obj
+ 0003:00000221       gBreakSet                  0000000000009f81     PcAtSerialPortLib:SerialPortLib.obj
+
+ entry point at        0001:00000218
+
+ Static symbols
+
+ 0001:0000001a       InternalMemCopyMem.0       00000000000002da     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:0000002a       @CopyBackward              00000000000002ea     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000033       @CopyBytes                 00000000000002f3     BaseMemoryLibRepStr:CopyMem.obj
+ 0005:00000000       $unwind$_DriverUnloadHandler 000000000000a380     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0005:0000000c       $unwind$GetFirstNode       000000000000a38c     BaseLib:LinkedList.obj
+ 0005:0000000c       $unwind$InternalBaseLibIsListValid 000000000000a38c     BaseLib:LinkedList.obj
+ 0005:0000000c       $unwind$IsListEmpty        000000000000a38c     BaseLib:LinkedList.obj
+ 0005:0000000c       $unwind$RemoveEntryList    000000000000a38c     BaseLib:LinkedList.obj
+ 0005:0000000c       $unwind$StrnLenS           000000000000a38c     BaseLib:SafeString.obj
+ 0005:0000000c       $unwind$DevicePathNodeLength 000000000000a38c     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0005:0000000c       $unwind$_ModuleEntryPoint  000000000000a38c     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0005:0000000c       $unwind$AllocateZeroPool   000000000000a38c     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0005:00000014       $unwind$ProcessLibraryConstructorList 000000000000a394     NvmExpressDxe:AutoGen.obj
+ 0005:00000014       $unwind$NvmeBlockIoReset   000000000000a394     NvmExpressDxe:NvmExpressBlockIo.obj
+ 0005:00000014       $unwind$InsertHeadList     000000000000a394     BaseLib:LinkedList.obj
+ 0005:00000014       $unwind$InsertTailList     000000000000a394     BaseLib:LinkedList.obj
+ 0005:00000014       $unwind$IsNull             000000000000a394     BaseLib:LinkedList.obj
+ 0005:00000014       $unwind$AsciiStrLen        000000000000a394     BaseLib:String.obj
+ 0005:00000014       $unwind$ZeroMem            000000000000a394     BaseMemoryLibRepStr:ZeroMemWrapper.obj
+ 0005:00000014       $unwind$IsDevicePathEnd    000000000000a394     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0005:00000014       $unwind$InternalAllocateCopyPool 000000000000a394     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0005:00000020       $unwind$ProcessModuleEntryPointList 000000000000a3a0     NvmExpressDxe:AutoGen.obj
+ 0005:0000002c       $unwind$EnumerateNvmeDevNamespace 000000000000a3ac     NvmExpressDxe:NvmExpress.obj
+ 0005:00000048       $unwind$UnregisterNvmeNamespace 000000000000a3c8     NvmExpressDxe:NvmExpress.obj
+ 0005:00000060       $unwind$ProcessAsyncTaskList 000000000000a3e0     NvmExpressDxe:NvmExpress.obj
+ 0005:00000078       $unwind$NvmExpressDriverBindingSupported 000000000000a3f8     NvmExpressDxe:NvmExpress.obj
+ 0005:00000088       $unwind$NvmExpressDriverBindingStart 000000000000a408     NvmExpressDxe:NvmExpress.obj
+ 0005:0000009c       $unwind$NvmExpressDriverBindingStop 000000000000a41c     NvmExpressDxe:NvmExpress.obj
+ 0005:000000b4       $unwind$ReadNvmeControllerConfiguration 000000000000a434     NvmExpressDxe:NvmExpressHci.obj
+ 0005:000000b4       $unwind$ReadNvmeControllerStatus 000000000000a434     NvmExpressDxe:NvmExpressHci.obj
+ 0005:000000c0       $unwind$WriteNvmeControllerConfiguration 000000000000a440     NvmExpressDxe:NvmExpressHci.obj
+ 0005:000000cc       $unwind$NvmeDisableController 000000000000a44c     NvmExpressDxe:NvmExpressHci.obj
+ 0005:000000e0       $unwind$NvmeEnableController 000000000000a460     NvmExpressDxe:NvmExpressHci.obj
+ 0005:000000f0       $unwind$NvmeIdentifyController 000000000000a470     NvmExpressDxe:NvmExpressHci.obj
+ 0005:00000104       $unwind$NvmeBlockIoFlushBlocks 000000000000a484     NvmExpressDxe:NvmExpressBlockIo.obj
+ 0005:00000104       $unwind$NvmeIdentifyNamespace 000000000000a484     NvmExpressDxe:NvmExpressHci.obj
+ 0005:0000011c       $unwind$NvmeCreateIoCompletionQueue 000000000000a49c     NvmExpressDxe:NvmExpressHci.obj
+ 0005:0000011c       $unwind$NvmeCreateIoSubmissionQueue 000000000000a49c     NvmExpressDxe:NvmExpressHci.obj
+ 0005:00000138       $unwind$NvmeControllerInit 000000000000a4b8     NvmExpressDxe:NvmExpressHci.obj
+ 0005:00000150       $unwind$NvmeShutdownAllControllers 000000000000a4d0     NvmExpressDxe:NvmExpressHci.obj
+ 0005:0000016c       $unwind$ReadSectors        000000000000a4ec     NvmExpressDxe:NvmExpressBlockIo.obj
+ 0005:0000016c       $unwind$WriteSectors       000000000000a4ec     NvmExpressDxe:NvmExpressBlockIo.obj
+ 0005:0000018c       $unwind$NvmeRead           000000000000a50c     NvmExpressDxe:NvmExpressBlockIo.obj
+ 0005:0000018c       $unwind$NvmeWrite          000000000000a50c     NvmExpressDxe:NvmExpressBlockIo.obj
+ 0005:000001a8       $unwind$AsyncIoCallback    000000000000a528     NvmExpressDxe:NvmExpressBlockIo.obj
+ 0005:000001a8       $unwind$NvmExpressGetNamespace 000000000000a528     NvmExpressDxe:NvmExpressPassthru.obj
+ 0005:000001a8       $unwind$AsciiStrnCmp       000000000000a528     BaseLib:String.obj
+ 0005:000001a8       $unwind$StrSize            000000000000a528     BaseLib:String.obj
+ 0005:000001a8       $unwind$BasePrintLibValueToString 000000000000a528     BasePrintLib:PrintLibInternal.obj
+ 0005:000001a8       $unwind$IsLanguageSupported 000000000000a528     UefiLib:UefiLib.obj
+ 0005:000001b8       $unwind$AsyncReadSectors   000000000000a538     NvmExpressDxe:NvmExpressBlockIo.obj
+ 0005:000001b8       $unwind$AsyncWriteSectors  000000000000a538     NvmExpressDxe:NvmExpressBlockIo.obj
+ 0005:000001d0       $unwind$NvmeAsyncRead      000000000000a550     NvmExpressDxe:NvmExpressBlockIo.obj
+ 0005:000001d0       $unwind$NvmeAsyncWrite     000000000000a550     NvmExpressDxe:NvmExpressBlockIo.obj
+ 0005:000001e8       $unwind$NvmeBlockIoReadBlocks 000000000000a568     NvmExpressDxe:NvmExpressBlockIo.obj
+ 0005:000001e8       $unwind$NvmeBlockIoWriteBlocks 000000000000a568     NvmExpressDxe:NvmExpressBlockIo.obj
+ 0005:00000200       $unwind$NvmeBlockIoFlushBlocksEx 000000000000a580     NvmExpressDxe:NvmExpressBlockIo.obj
+ 0005:00000200       $unwind$NvmeBlockIoResetEx 000000000000a580     NvmExpressDxe:NvmExpressBlockIo.obj
+ 0005:00000200       $unwind$NvmExpressDiskInfoIdentify 000000000000a580     NvmExpressDxe:NvmExpressDiskInfo.obj
+ 0005:00000200       $unwind$NvmExpressGetNextNamespace 000000000000a580     NvmExpressDxe:NvmExpressPassthru.obj
+ 0005:00000200       $unwind$CopyMem            000000000000a580     BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0005:00000214       $unwind$NvmeBlockIoReadBlocksEx 000000000000a594     NvmExpressDxe:NvmExpressBlockIo.obj
+ 0005:00000214       $unwind$NvmeBlockIoWriteBlocksEx 000000000000a594     NvmExpressDxe:NvmExpressBlockIo.obj
+ 0005:0000022c       $unwind$TrustTransferNvmeDevice 000000000000a5ac     NvmExpressDxe:NvmExpressBlockIo.obj
+ 0005:0000024c       $unwind$NvmeStorageSecurityReceiveData 000000000000a5cc     NvmExpressDxe:NvmExpressBlockIo.obj
+ 0005:00000264       $unwind$NvmeStorageSecuritySendData 000000000000a5e4     NvmExpressDxe:NvmExpressBlockIo.obj
+ 0005:0000027c       $unwind$NvmExpressComponentNameGetDriverName 000000000000a5fc     NvmExpressDxe:ComponentName.obj
+ 0005:00000284       $unwind$NvmExpressComponentNameGetControllerName 000000000000a604     NvmExpressDxe:ComponentName.obj
+ 0005:0000029c       $unwind$NvmeDumpStatus     000000000000a61c     NvmExpressDxe:NvmExpressPassthru.obj
+ 0005:000002a8       $unwind$NvmeCreatePrpList  000000000000a628     NvmExpressDxe:NvmExpressPassthru.obj
+ 0005:000002c0       $unwind$AbortAsyncPassThruTasks 000000000000a640     NvmExpressDxe:NvmExpressPassthru.obj
+ 0005:000002dc       $unwind$NvmExpressPassThru 000000000000a65c     NvmExpressDxe:NvmExpressPassthru.obj
+ 0005:000002f8       $unwind$NvmExpressBuildDevicePath 000000000000a678     NvmExpressDxe:NvmExpressPassthru.obj
+ 0005:00000310       $unwind$UnicodeSPrintAsciiFormat 000000000000a690     BasePrintLib:PrintLib.obj
+ 0005:0000031c       $unwind$AsciiSPrint        000000000000a69c     BasePrintLib:PrintLib.obj
+ 0005:00000324       $unwind$BasePrintLibSPrintMarker 000000000000a6a4     BasePrintLib:PrintLibInternal.obj
+ 0005:00000340       $unwind$BasePrintLibSPrint 000000000000a6c0     BasePrintLib:PrintLibInternal.obj
+ 0005:00000348       $unwind$DebugPrint         000000000000a6c8     BaseDebugLibSerialPort:DebugLib.obj
+ 0005:00000350       $unwind$DebugPrintMarker   000000000000a6d0     BaseDebugLibSerialPort:DebugLib.obj
+ 0005:00000364       $unwind$DebugAssert        000000000000a6e4     BaseDebugLibSerialPort:DebugLib.obj
+ 0005:0000036c       $unwind$FreePool           000000000000a6ec     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0005:0000036c       $unwind$InternalAllocatePool 000000000000a6ec     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0005:00000374       $unwind$LookupUnicodeString2 000000000000a6f4     UefiLib:UefiLib.obj
+ 0005:0000038c       $unwind$AddUnicodeString2  000000000000a70c     UefiLib:UefiLib.obj
+ 0005:000003a8       $unwind$InternalReportStatusCode 000000000000a728     DxeReportStatusCodeLib:ReportStatusCodeLib.obj

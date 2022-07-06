@@ -1,0 +1,172 @@
+ Ps2KeyboardDxe
+
+ Timestamp is 61ee7052 (Mon Jan 24 17:24:34 2022)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000094H .text                   CODE
+ 0001:00000094 000026c5H .text$mn                CODE
+ 0002:00000000 00000420H .data                   DATA
+ 0002:00000420 00000088H .rdata                  DATA
+ 0002:000004a8 0000003cH .bss                    DATA
+ 0002:000004e4 00000024H .rdata$voltmd           DATA
+ 0002:00000508 000000a8H .rdata$zzzdbg           DATA
+ 0003:00000000 000001bcH .pdata                  DATA
+ 0004:00000000 00000134H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __guard_longjmp_table      0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points 0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_count         0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table   0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map_count    0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_table          0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map          0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table_size 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_native_entrypoint 0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_count          0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_table      0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_count      0000000000000000     <absolute>
+ 0000:00000000       __enclave_config           0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata_count 0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points_count 0000000000000000     <absolute>
+ 0000:00000000       __dynamic_value_reloc_table 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat     0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat_copy 0000000000000000     <absolute>
+ 0000:00000000       __guard_flags              0000000000000000     <absolute>
+ 0000:00000000       __AbsoluteZero             0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_count      0000000000000000     <absolute>
+ 0000:00000000       __guard_check_icall_a64n_fptr 0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_table         0000000000000000     <absolute>
+ 0001:00000000       InternalMemCopyMem         0000000000000280     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000040       InternalMemZeroMem         00000000000002c0     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00000060       CpuPause                   00000000000002e0     BaseLib:CpuPause.obj
+ 0001:00000070       EnableInterrupts           00000000000002f0     BaseLib:EnableInterrupts.obj
+ 0001:00000080       DisableInterrupts          0000000000000300     BaseLib:DisableInterrupts.obj
+ 0001:00000090       AsmReadEflags              0000000000000310     BaseLib:ReadEflags.obj
+ 0001:00000094       _ModuleEntryPoint          0000000000000314 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:0000010c       ProcessLibraryConstructorList 000000000000038c f   Ps2KeyboardDxe:AutoGen.obj
+ 0001:000001d0       KbdControllerDriverSupported 0000000000000450 f   Ps2KeyboardDxe:Ps2Keyboard.obj
+ 0001:000002c8       KbdControllerDriverStart   0000000000000548 f   Ps2KeyboardDxe:Ps2Keyboard.obj
+ 0001:00000748       KbdControllerDriverStop    00000000000009c8 f   Ps2KeyboardDxe:Ps2Keyboard.obj
+ 0001:000008e8       KbdFreeNotifyList          0000000000000b68 f   Ps2KeyboardDxe:Ps2Keyboard.obj
+ 0001:0000093c       GetScancodeBufHead         0000000000000bbc f   Ps2KeyboardDxe:Ps2KbdCtrller.obj
+ 0001:00000988       PopScancodeBufHead         0000000000000c08 f   Ps2KeyboardDxe:Ps2KbdCtrller.obj
+ 0001:000009e0       KeyboardTimerHandler       0000000000000c60 f   Ps2KeyboardDxe:Ps2KbdCtrller.obj
+ 0001:00000a8c       KeyboardRead               0000000000000d0c f   Ps2KeyboardDxe:Ps2KbdCtrller.obj
+ 0001:00000ae8       KeyboardWrite              0000000000000d68 f   Ps2KeyboardDxe:Ps2KbdCtrller.obj
+ 0001:00000b48       KeyboardCommand            0000000000000dc8 f   Ps2KeyboardDxe:Ps2KbdCtrller.obj
+ 0001:00000bd4       KeyboardWaitForValue       0000000000000e54 f   Ps2KeyboardDxe:Ps2KbdCtrller.obj
+ 0001:00000c64       UpdateStatusLights         0000000000000ee4 f   Ps2KeyboardDxe:Ps2KbdCtrller.obj
+ 0001:00000ce0       InitializeKeyState         0000000000000f60 f   Ps2KeyboardDxe:Ps2KbdCtrller.obj
+ 0001:00000db8       KeyGetchar                 0000000000001038 f   Ps2KeyboardDxe:Ps2KbdCtrller.obj
+ 0001:000012dc       InitKeyboard               000000000000155c f   Ps2KeyboardDxe:Ps2KbdCtrller.obj
+ 0001:0000164c       PopEfikeyBufHead           00000000000018cc f   Ps2KeyboardDxe:Ps2KbdTextIn.obj
+ 0001:000016b4       PushEfikeyBufTail          0000000000001934 f   Ps2KeyboardDxe:Ps2KbdTextIn.obj
+ 0001:00001720       KeyboardReadKeyStrokeWorker 00000000000019a0 f   Ps2KeyboardDxe:Ps2KbdTextIn.obj
+ 0001:000017dc       KeyboardEfiReset           0000000000001a5c f   Ps2KeyboardDxe:Ps2KbdTextIn.obj
+ 0001:000018b0       KeyboardReadKeyStroke      0000000000001b30 f   Ps2KeyboardDxe:Ps2KbdTextIn.obj
+ 0001:00001948       KeyboardWaitForKey         0000000000001bc8 f   Ps2KeyboardDxe:Ps2KbdTextIn.obj
+ 0001:00001a14       KeyboardWaitForKeyEx       0000000000001c94 f   Ps2KeyboardDxe:Ps2KbdTextIn.obj
+ 0001:00001a1c       KeyboardEfiResetEx         0000000000001c9c f   Ps2KeyboardDxe:Ps2KbdTextIn.obj
+ 0001:00001a28       KeyboardReadKeyStrokeEx    0000000000001ca8 f   Ps2KeyboardDxe:Ps2KbdTextIn.obj
+ 0001:00001a44       KeyboardSetState           0000000000001cc4 f   Ps2KeyboardDxe:Ps2KbdTextIn.obj
+ 0001:00001b20       KeyboardRegisterKeyNotify  0000000000001da0 f   Ps2KeyboardDxe:Ps2KbdTextIn.obj
+ 0001:00001c70       KeyboardUnregisterKeyNotify 0000000000001ef0 f   Ps2KeyboardDxe:Ps2KbdTextIn.obj
+ 0001:00001d24       KeyNotifyProcessHandler    0000000000001fa4 f   Ps2KeyboardDxe:Ps2KbdTextIn.obj
+ 0001:00001dd8       Ps2KeyboardComponentNameGetDriverName 0000000000002058 f   Ps2KeyboardDxe:ComponentName.obj
+ 0001:00001e0c       Ps2KeyboardComponentNameGetControllerName 000000000000208c f   Ps2KeyboardDxe:ComponentName.obj
+ 0001:00001f18       InternalAllocatePool       0000000000002198 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00001f48       InternalAllocateCopyPool   00000000000021c8 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00001f88       InternalReportStatusCode   0000000000002208 f   DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0001:00002040       ReportStatusCodeWithDevicePath 00000000000022c0 f   DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0001:000021c8       IsLanguageSupported        0000000000002448 f   UefiLib:UefiLib.obj
+ 0001:0000226c       LookupUnicodeString2       00000000000024ec f   UefiLib:UefiLib.obj
+ 0001:00002384       AddUnicodeString2          0000000000002604 f   UefiLib:UefiLib.obj
+ 0001:000025c0       FreeUnicodeStringTable     0000000000002840 f   UefiLib:UefiLib.obj
+ 0001:00002638       InternalAcpiDelay          00000000000028b8 f   DxeAcpiTimerLib:AcpiTimerLib.obj
+ 0001:00002698       GetPcdProtocol             0000000000002918 f   DxePcdLib:DxePcdLib.obj
+ 0001:000026d4       PciCf8Read32               0000000000002954 f   BasePciCf8Lib:PciCf8Lib.obj
+ 0001:00002738       SaveAndDisableInterrupts   00000000000029b8 f   BaseLib:Cpu.obj
+ 0002:00000000       gEfiStatusCodeSpecificDataGuid 00000000000029e0     Ps2KeyboardDxe:AutoGen.obj
+ 0002:00000010       gEfiStatusCodeRuntimeProtocolGuid 00000000000029f0     Ps2KeyboardDxe:AutoGen.obj
+ 0002:00000020       gEfiComponentName2ProtocolGuid 0000000000002a00     Ps2KeyboardDxe:AutoGen.obj
+ 0002:00000030       gPcdProtocolGuid           0000000000002a10     Ps2KeyboardDxe:AutoGen.obj
+ 0002:00000040       gEfiDevicePathProtocolGuid 0000000000002a20     Ps2KeyboardDxe:AutoGen.obj
+ 0002:00000050       gEfiSimpleTextInputExProtocolGuid 0000000000002a30     Ps2KeyboardDxe:AutoGen.obj
+ 0002:00000060       gEfiSimpleTextInProtocolGuid 0000000000002a40     Ps2KeyboardDxe:AutoGen.obj
+ 0002:00000070       gEfiSioProtocolGuid        0000000000002a50     Ps2KeyboardDxe:AutoGen.obj
+ 0002:00000080       gEfiDevicePathUtilitiesProtocolGuid 0000000000002a60     Ps2KeyboardDxe:AutoGen.obj
+ 0002:00000090       gEfiDriverBindingProtocolGuid 0000000000002a70     Ps2KeyboardDxe:AutoGen.obj
+ 0002:000000a0       gEfiComponentNameProtocolGuid 0000000000002a80     Ps2KeyboardDxe:AutoGen.obj
+ 0002:000000b0       gEfiCallerIdGuid           0000000000002a90     Ps2KeyboardDxe:AutoGen.obj
+ 0002:000000c0       gEfiPs2PolicyProtocolGuid  0000000000002aa0     Ps2KeyboardDxe:AutoGen.obj
+ 0002:000000d0       gKeyboardControllerDriver  0000000000002ab0     Ps2KeyboardDxe:Ps2Keyboard.obj
+ 0002:00000100       ConvertKeyboardScanCodeToEfiKey 0000000000002ae0     Ps2KeyboardDxe:Ps2KbdCtrller.obj
+ 0002:000003c8       mWaitForValueTimeOut       0000000000002da8     Ps2KeyboardDxe:Ps2KbdCtrller.obj
+ 0002:000003d0       gPs2KeyboardComponentName  0000000000002db0     Ps2KeyboardDxe:ComponentName.obj
+ 0002:000003e8       gPs2KeyboardComponentName2 0000000000002dc8     Ps2KeyboardDxe:ComponentName.obj
+ 0002:00000400       mPs2KeyboardDriverNameTable 0000000000002de0     Ps2KeyboardDxe:ComponentName.obj
+ 0002:00000420       ??_C@_1CK@BLFEGOEA@?$AAP?$AAS?$AA?1?$AA2?$AA?5?$AAK?$AAe?$AAy?$AAb?$AAo?$AAa?$AAr?$AAd?$AA?5?$AAD@ 0000000000002e00     Ps2KeyboardDxe:Ps2Keyboard.obj
+ 0002:0000044c       ??_C@_03LKLGDMJI@eng@      0000000000002e2c     Ps2KeyboardDxe:Ps2Keyboard.obj
+ 0002:00000450       ??_C@_02LFNMGJAP@en@       0000000000002e30     Ps2KeyboardDxe:Ps2Keyboard.obj
+ 0002:00000454       ??_C@_06DALJLGPG@eng?$DLen@ 0000000000002e34     Ps2KeyboardDxe:ComponentName.obj
+ 0002:00000460       ??_C@_1CK@LHNBPOK@?$AAP?$AAS?$AA?1?$AA2?$AA?5?$AAK?$AAe?$AAy?$AAb?$AAo?$AAa?$AAr?$AAd?$AA?5?$AAD@ 0000000000002e40     Ps2KeyboardDxe:ComponentName.obj
+ 0002:000004a8       gST                        0000000000002e88     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000004b0       gBS                        0000000000002e90     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000004b8       mDevicePathLibDevicePathUtilities 0000000000002e98     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:000004c0       gRT                        0000000000002ea0     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0002:000004c8       mReportStatusCodeLibStatusCodeProtocol 0000000000002ea8     DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0002:000004d0       mPcd                       0000000000002eb0     DxePcdLib:DxePcdLib.obj
+ 0002:000004e0       mEnableMouseInterface      0000000000002ec0     <common>
+ 0002:000004e4       __volatile_metadata        0000000000002ec4     <linker-defined>
+
+ entry point at        0001:00000094
+
+ Static symbols
+
+ 0001:0000001a       InternalMemCopyMem.0       000000000000029a     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:0000002a       @CopyBackward              00000000000002aa     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000033       @CopyBytes                 00000000000002b3     BaseMemoryLibRepStr:CopyMem.obj
+ 0002:000004d8       mRunningOnQ35              0000000000002eb8     DxePciLibI440FxQ35:PciLib.obj
+ 0002:000004dc       mAcpiTimerIoAddr           0000000000002ebc     DxeAcpiTimerLib:DxeAcpiTimerLib.obj
+ 0004:00000000       $unwind$_ModuleEntryPoint  0000000000003160     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0004:00000008       $unwind$ProcessLibraryConstructorList 0000000000003168     Ps2KeyboardDxe:AutoGen.obj
+ 0004:00000008       $unwind$KeyboardTimerHandler 0000000000003168     Ps2KeyboardDxe:Ps2KbdCtrller.obj
+ 0004:00000008       $unwind$UpdateStatusLights 0000000000003168     Ps2KeyboardDxe:Ps2KbdCtrller.obj
+ 0004:00000008       $unwind$InternalAllocateCopyPool 0000000000003168     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0004:00000014       $unwind$KbdControllerDriverSupported 0000000000003174     Ps2KeyboardDxe:Ps2Keyboard.obj
+ 0004:00000024       $unwind$KbdControllerDriverStart 0000000000003184     Ps2KeyboardDxe:Ps2Keyboard.obj
+ 0004:00000038       $unwind$KbdControllerDriverStop 0000000000003198     Ps2KeyboardDxe:Ps2Keyboard.obj
+ 0004:00000048       $unwind$PopEfikeyBufHead   00000000000031a8     Ps2KeyboardDxe:Ps2KbdTextIn.obj
+ 0004:00000048       $unwind$PushEfikeyBufTail  00000000000031a8     Ps2KeyboardDxe:Ps2KbdTextIn.obj
+ 0004:00000048       $unwind$KbdFreeNotifyList  00000000000031a8     Ps2KeyboardDxe:Ps2Keyboard.obj
+ 0004:00000048       $unwind$SaveAndDisableInterrupts 00000000000031a8     BaseLib:Cpu.obj
+ 0004:00000048       $unwind$PciCf8Read32       00000000000031a8     BasePciCf8Lib:PciCf8Lib.obj
+ 0004:00000050       $unwind$KeyboardRead       00000000000031b0     Ps2KeyboardDxe:Ps2KbdCtrller.obj
+ 0004:00000050       $unwind$KeyboardWrite      00000000000031b0     Ps2KeyboardDxe:Ps2KbdCtrller.obj
+ 0004:00000050       $unwind$KeyboardSetState   00000000000031b0     Ps2KeyboardDxe:Ps2KbdTextIn.obj
+ 0004:00000050       $unwind$FreeUnicodeStringTable 00000000000031b0     UefiLib:UefiLib.obj
+ 0004:00000050       $unwind$LookupUnicodeString2 00000000000031b0     UefiLib:UefiLib.obj
+ 0004:00000050       $unwind$InternalAcpiDelay  00000000000031b0     DxeAcpiTimerLib:AcpiTimerLib.obj
+ 0004:00000060       $unwind$KeyboardCommand    00000000000031c0     Ps2KeyboardDxe:Ps2KbdCtrller.obj
+ 0004:00000060       $unwind$KeyboardEfiReset   00000000000031c0     Ps2KeyboardDxe:Ps2KbdTextIn.obj
+ 0004:00000060       $unwind$KeyboardReadKeyStrokeWorker 00000000000031c0     Ps2KeyboardDxe:Ps2KbdTextIn.obj
+ 0004:00000060       $unwind$KeyboardUnregisterKeyNotify 00000000000031c0     Ps2KeyboardDxe:Ps2KbdTextIn.obj
+ 0004:00000074       $unwind$KeyboardWaitForValue 00000000000031d4     Ps2KeyboardDxe:Ps2KbdCtrller.obj
+ 0004:00000074       $unwind$AddUnicodeString2  00000000000031d4     UefiLib:UefiLib.obj
+ 0004:0000008c       $unwind$KeyGetchar         00000000000031ec     Ps2KeyboardDxe:Ps2KbdCtrller.obj
+ 0004:000000a4       $unwind$InitKeyboard       0000000000003204     Ps2KeyboardDxe:Ps2KbdCtrller.obj
+ 0004:000000b8       $unwind$KeyboardReadKeyStroke 0000000000003218     Ps2KeyboardDxe:Ps2KbdTextIn.obj
+ 0004:000000c8       $unwind$KeyNotifyProcessHandler 0000000000003228     Ps2KeyboardDxe:Ps2KbdTextIn.obj
+ 0004:000000c8       $unwind$KeyboardWaitForKey 0000000000003228     Ps2KeyboardDxe:Ps2KbdTextIn.obj
+ 0004:000000c8       $unwind$InternalReportStatusCode 0000000000003228     DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0004:000000dc       $unwind$KeyboardRegisterKeyNotify 000000000000323c     Ps2KeyboardDxe:Ps2KbdTextIn.obj
+ 0004:000000f8       $unwind$Ps2KeyboardComponentNameGetDriverName 0000000000003258     Ps2KeyboardDxe:ComponentName.obj
+ 0004:00000100       $unwind$Ps2KeyboardComponentNameGetControllerName 0000000000003260     Ps2KeyboardDxe:ComponentName.obj
+ 0004:00000114       $unwind$GetPcdProtocol     0000000000003274     DxePcdLib:DxePcdLib.obj
+ 0004:00000114       $unwind$InternalAllocatePool 0000000000003274     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0004:0000011c       $unwind$ReportStatusCodeWithDevicePath 000000000000327c     DxeReportStatusCodeLib:ReportStatusCodeLib.obj

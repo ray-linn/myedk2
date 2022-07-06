@@ -1,0 +1,4 @@
+d:\edk2\edk2\UefiCpuPkg\Library\BaseUefiCpuLib\BaseUefiCpuLib.inf
+d:\edk2\edk2\UefiCpuPkg\Library\BaseUefiCpuLib\X64\InitializeFpu.nasm
+d:\edk2\edk2\UefiCpuPkg\Library\BaseUefiCpuLib\BaseUefiCpuLib.c
+d:\edk2\edk2\Build\OvmfX64\RELEASE_VS2019\X64\UefiCpuPkg\Library\BaseUefiCpuLib\BaseUefiCpuLib\DEBUG\AutoGen.h

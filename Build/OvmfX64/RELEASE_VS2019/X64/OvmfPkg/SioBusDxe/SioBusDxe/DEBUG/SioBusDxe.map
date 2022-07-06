@@ -1,0 +1,107 @@
+ SioBusDxe
+
+ Timestamp is 61ee702c (Mon Jan 24 17:23:56 2022)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000060H .text                   CODE
+ 0001:00000060 00000cdfH .text$mn                CODE
+ 0002:00000000 000001a0H .data                   DATA
+ 0002:000001a0 00000058H .rdata                  DATA
+ 0002:000001f8 00000020H .bss                    DATA
+ 0002:00000218 00000020H .rdata$voltmd           DATA
+ 0002:00000238 000000a8H .rdata$zzzdbg           DATA
+ 0003:00000000 0000006cH .pdata                  DATA
+ 0004:00000000 000000b0H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __hybrid_code_map          0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points_count 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map_count    0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table   0000000000000000     <absolute>
+ 0000:00000000       __arm64x_native_entrypoint 0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_table      0000000000000000     <absolute>
+ 0000:00000000       __enclave_config           0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata_count 0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_table          0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points 0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_count          0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_count      0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_table      0000000000000000     <absolute>
+ 0000:00000000       __dynamic_value_reloc_table 0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_count      0000000000000000     <absolute>
+ 0000:00000000       __guard_flags              0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat     0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat_copy 0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_count         0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_table         0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table_size 0000000000000000     <absolute>
+ 0000:00000000       __AbsoluteZero             0000000000000000     <absolute>
+ 0000:00000000       __guard_check_icall_a64n_fptr 0000000000000000     <absolute>
+ 0001:00000000       InternalMemCopyMem         0000000000000280     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000040       InternalMemZeroMem         00000000000002c0     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00000060       _ModuleEntryPoint          00000000000002e0 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:000000f8       SioBusDriverBindingSupported 0000000000000378 f   SioBusDxe:SioBusDxe.obj
+ 0001:00000210       SioBusDriverBindingStart   0000000000000490 f   SioBusDxe:SioBusDxe.obj
+ 0001:000004e4       SioBusDriverBindingStop    0000000000000764 f   SioBusDxe:SioBusDxe.obj
+ 0001:00000720       SioBusComponentNameGetDriverName 00000000000009a0 f   SioBusDxe:ComponentName.obj
+ 0001:0000084c       SioBusComponentNameGetControllerName 0000000000000acc f   SioBusDxe:ComponentName.obj
+ 0001:00000858       SioPossibleResources       0000000000000ad8 f   SioBusDxe:SioService.obj
+ 0001:00000858       SioRegisterAccess          0000000000000ad8 f   SioBusDxe:SioService.obj
+ 0001:00000858       SioModify                  0000000000000ad8 f   SioBusDxe:SioService.obj
+ 0001:00000858       SioSetResources            0000000000000ad8 f   SioBusDxe:SioService.obj
+ 0001:0000085c       SioGetResources            0000000000000adc f   SioBusDxe:SioService.obj
+ 0001:0000088c       SioCreateChildDevice       0000000000000b0c f   SioBusDxe:SioService.obj
+ 0001:00000a4c       InternalAllocatePool       0000000000000ccc f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00000a7c       IsLanguageSupported        0000000000000cfc f   UefiLib:UefiLib.obj
+ 0001:00000b20       InternalReportStatusCode   0000000000000da0 f   DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0001:00000bbc       ReportStatusCodeWithDevicePath 0000000000000e3c f   DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0002:00000000       gEfiStatusCodeSpecificDataGuid 0000000000000fc0     SioBusDxe:AutoGen.obj
+ 0002:00000010       gEfiStatusCodeRuntimeProtocolGuid 0000000000000fd0     SioBusDxe:AutoGen.obj
+ 0002:00000020       gEfiComponentName2ProtocolGuid 0000000000000fe0     SioBusDxe:AutoGen.obj
+ 0002:00000030       gEfiDevicePathProtocolGuid 0000000000000ff0     SioBusDxe:AutoGen.obj
+ 0002:00000040       gEfiPciIoProtocolGuid      0000000000001000     SioBusDxe:AutoGen.obj
+ 0002:00000050       gEfiSioProtocolGuid        0000000000001010     SioBusDxe:AutoGen.obj
+ 0002:00000060       gEfiDevicePathUtilitiesProtocolGuid 0000000000001020     SioBusDxe:AutoGen.obj
+ 0002:00000070       gEfiDriverBindingProtocolGuid 0000000000001030     SioBusDxe:AutoGen.obj
+ 0002:00000080       gEfiComponentNameProtocolGuid 0000000000001040     SioBusDxe:AutoGen.obj
+ 0002:00000090       gEfiCallerIdGuid           0000000000001050     SioBusDxe:AutoGen.obj
+ 0002:000000a0       gSioBusDriverBinding       0000000000001060     SioBusDxe:SioBusDxe.obj
+ 0002:000000d0       gSioBusComponentName       0000000000001090     SioBusDxe:ComponentName.obj
+ 0002:000000e8       gSioBusComponentName2      00000000000010a8     SioBusDxe:ComponentName.obj
+ 0002:00000100       mSioBusDriverNameTable     00000000000010c0     SioBusDxe:ComponentName.obj
+ 0002:00000120       mDevicesInfo               00000000000010e0     SioBusDxe:SioService.obj
+ 0002:00000150       mCom1Resources             0000000000001110     SioBusDxe:SioService.obj
+ 0002:00000158       mPs2KeyboardDeviceResources 0000000000001118     SioBusDxe:SioService.obj
+ 0002:00000160       mAcpiDeviceNodeTemplate    0000000000001120     SioBusDxe:SioService.obj
+ 0002:00000170       mSioInterface              0000000000001130     SioBusDxe:SioService.obj
+ 0002:00000198       mCom2Resources             0000000000001158     SioBusDxe:SioService.obj
+ 0002:000001a0       ??_C@_06DALJLGPG@eng?$DLen@ 0000000000001160     SioBusDxe:ComponentName.obj
+ 0002:000001a8       ??_C@_1CI@MGFNHGKN@?$AAO?$AAV?$AAM?$AAF?$AA?5?$AAS?$AAi?$AAo?$AA?5?$AAB?$AAu?$AAs?$AA?5?$AAD?$AAr@ 0000000000001168     SioBusDxe:ComponentName.obj
+ 0002:000001d0       ??_C@_03LKLGDMJI@eng@      0000000000001190     SioBusDxe:ComponentName.obj
+ 0002:000001d4       ??_C@_02LFNMGJAP@en@       0000000000001194     SioBusDxe:ComponentName.obj
+ 0002:000001f8       gST                        00000000000011b8     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000200       gBS                        00000000000011c0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000208       mDevicePathLibDevicePathUtilities 00000000000011c8     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:00000210       mReportStatusCodeLibStatusCodeProtocol 00000000000011d0     DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0002:00000218       __volatile_metadata        00000000000011d8     <linker-defined>
+
+ entry point at        0001:00000060
+
+ Static symbols
+
+ 0001:0000001a       InternalMemCopyMem.0       000000000000029a     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:0000002a       @CopyBackward              00000000000002aa     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000033       @CopyBytes                 00000000000002b3     BaseMemoryLibRepStr:CopyMem.obj
+ 0004:00000000       $unwind$_ModuleEntryPoint  0000000000001320     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0004:00000008       $unwind$SioBusDriverBindingSupported 0000000000001328     SioBusDxe:SioBusDxe.obj
+ 0004:00000020       $unwind$SioBusDriverBindingStart 0000000000001340     SioBusDxe:SioBusDxe.obj
+ 0004:00000038       $unwind$SioBusDriverBindingStop 0000000000001358     SioBusDxe:SioBusDxe.obj
+ 0004:00000054       $unwind$SioBusComponentNameGetDriverName 0000000000001374     SioBusDxe:ComponentName.obj
+ 0004:00000068       $unwind$SioCreateChildDevice 0000000000001388     SioBusDxe:SioService.obj
+ 0004:00000080       $unwind$InternalAllocatePool 00000000000013a0     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0004:00000088       $unwind$InternalReportStatusCode 00000000000013a8     DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0004:00000098       $unwind$ReportStatusCodeWithDevicePath 00000000000013b8     DxeReportStatusCodeLib:ReportStatusCodeLib.obj

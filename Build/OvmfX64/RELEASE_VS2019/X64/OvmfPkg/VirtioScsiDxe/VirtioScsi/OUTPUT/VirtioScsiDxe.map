@@ -1,0 +1,110 @@
+ VirtioScsiDxe
+
+ Timestamp is 61ee7049 (Mon Jan 24 17:24:25 2022)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 000000b4H .text                   CODE
+ 0001:000000b4 0000164dH .text$mn                CODE
+ 0002:00000000 000000e0H .data                   DATA
+ 0002:000000e0 00000060H .rdata                  DATA
+ 0002:00000140 00000018H .bss                    DATA
+ 0002:00000158 000000a8H .rdata$voltmd           DATA
+ 0002:00000200 000000a8H .rdata$zzzdbg           DATA
+ 0003:00000000 000000b4H .pdata                  DATA
+ 0004:00000000 000000e4H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __guard_longjmp_table      0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map_count    0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points_count 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_native_entrypoint 0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_table      0000000000000000     <absolute>
+ 0000:00000000       __enclave_config           0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata_count 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata 0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_count         0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_table          0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table   0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_count          0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_count      0000000000000000     <absolute>
+ 0000:00000000       __dynamic_value_reloc_table 0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_table         0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat     0000000000000000     <absolute>
+ 0000:00000000       __guard_check_icall_a64n_fptr 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map          0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat_copy 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table_size 0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_count      0000000000000000     <absolute>
+ 0000:00000000       __guard_flags              0000000000000000     <absolute>
+ 0000:00000000       __AbsoluteZero             0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points 0000000000000000     <absolute>
+ 0001:00000000       InternalMemCopyMem         0000000000000280     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000040       InternalMemZeroMem         00000000000002c0     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00000060       InternalMemSetMem          00000000000002e0     BaseMemoryLibRepStr:SetMem.obj
+ 0001:00000080       InternalMemSetMem64        0000000000000300     BaseMemoryLibRepStr:SetMem64.obj
+ 0001:000000a0       InternalMemSetMem32        0000000000000320     BaseMemoryLibRepStr:SetMem32.obj
+ 0001:000000b4       _ModuleEntryPoint          0000000000000334 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:00000220       VirtioScsiPassThru         00000000000004a0 f   VirtioScsiDxe:VirtioScsi.obj
+ 0001:00000854       VirtioScsiGetNextTargetLun 0000000000000ad4 f   VirtioScsiDxe:VirtioScsi.obj
+ 0001:00000940       VirtioScsiBuildDevicePath  0000000000000bc0 f   VirtioScsiDxe:VirtioScsi.obj
+ 0001:000009f4       VirtioScsiGetTargetLun     0000000000000c74 f   VirtioScsiDxe:VirtioScsi.obj
+ 0001:00000aa4       VirtioScsiResetChannel     0000000000000d24 f   VirtioScsiDxe:VirtioScsi.obj
+ 0001:00000aa4       VirtioScsiResetTargetLun   0000000000000d24 f   VirtioScsiDxe:VirtioScsi.obj
+ 0001:00000aa4       VirtioScsiGetDeviceName    0000000000000d24 f   VirtioScsiDxe:VirtioScsi.obj
+ 0001:00000ab0       VirtioScsiGetNextTarget    0000000000000d30 f   VirtioScsiDxe:VirtioScsi.obj
+ 0001:000010bc       VirtioScsiDriverBindingSupported 000000000000133c f   VirtioScsiDxe:VirtioScsi.obj
+ 0001:00001150       VirtioScsiDriverBindingStart 00000000000013d0 f   VirtioScsiDxe:VirtioScsi.obj
+ 0001:000012ac       VirtioScsiDriverBindingStop 000000000000152c f   VirtioScsiDxe:VirtioScsi.obj
+ 0001:00001370       VirtioScsiGetDriverName    00000000000015f0 f   VirtioScsiDxe:VirtioScsi.obj
+ 0001:0000149c       InternalAllocatePool       000000000000171c f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:000014cc       IsLanguageSupported        000000000000174c f   UefiLib:UefiLib.obj
+ 0001:00001570       VirtioRingInit             00000000000017f0 f   VirtioLib:VirtioLib.obj
+ 0001:00001684       VirtioMapAllBytesInSharedBuffer 0000000000001904 f   VirtioLib:VirtioLib.obj
+ 0002:00000000       gEfiExtScsiPassThruProtocolGuid 00000000000019a0     VirtioScsiDxe:AutoGen.obj
+ 0002:00000010       gEfiComponentName2ProtocolGuid 00000000000019b0     VirtioScsiDxe:AutoGen.obj
+ 0002:00000020       gEfiDevicePathUtilitiesProtocolGuid 00000000000019c0     VirtioScsiDxe:AutoGen.obj
+ 0002:00000030       gEfiDriverBindingProtocolGuid 00000000000019d0     VirtioScsiDxe:AutoGen.obj
+ 0002:00000040       gVirtioDeviceProtocolGuid  00000000000019e0     VirtioScsiDxe:AutoGen.obj
+ 0002:00000050       gEfiComponentNameProtocolGuid 00000000000019f0     VirtioScsiDxe:AutoGen.obj
+ 0002:000000e0       ??_C@_06DALJLGPG@eng?$DLen@ 0000000000001a80     VirtioScsiDxe:VirtioScsi.obj
+ 0002:000000e8       ??_C@_1DA@KDNFBOHA@?$AAV?$AAi?$AAr?$AAt?$AAi?$AAo?$AA?5?$AAS?$AAC?$AAS?$AAI?$AA?5?$AAH?$AAo?$AAs@ 0000000000001a88     VirtioScsiDxe:VirtioScsi.obj
+ 0002:00000118       ??_C@_03LKLGDMJI@eng@      0000000000001ab8     VirtioScsiDxe:VirtioScsi.obj
+ 0002:0000011c       ??_C@_02LFNMGJAP@en@       0000000000001abc     VirtioScsiDxe:VirtioScsi.obj
+ 0002:00000140       gST                        0000000000001ae0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000148       gBS                        0000000000001ae8     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000150       mDevicePathLibDevicePathUtilities 0000000000001af0     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:00000158       __volatile_metadata        0000000000001af8     <linker-defined>
+
+ entry point at        0001:000000b4
+
+ Static symbols
+
+ 0001:0000001a       InternalMemCopyMem.0       000000000000029a     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:0000002a       @CopyBackward              00000000000002aa     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000033       @CopyBytes                 00000000000002b3     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:0000014c       ParseResponse              00000000000003cc f   VirtioScsiDxe:VirtioScsi.obj
+ 0001:00000b64       VirtioScsiInit             0000000000000de4 f   VirtioScsiDxe:VirtioScsi.obj
+ 0001:00001020       VirtioScsiUninit           00000000000012a0 f   VirtioScsiDxe:VirtioScsi.obj
+ 0001:000010ac       VirtioScsiExitBoot         000000000000132c f   VirtioScsiDxe:VirtioScsi.obj
+ 0002:00000060       mDriverNameTable           0000000000001a00     VirtioScsiDxe:VirtioScsi.obj
+ 0002:00000080       gDriverBinding             0000000000001a20     VirtioScsiDxe:VirtioScsi.obj
+ 0002:000000b0       gComponentName2            0000000000001a50     VirtioScsiDxe:VirtioScsi.obj
+ 0002:000000c8       gComponentName             0000000000001a68     VirtioScsiDxe:VirtioScsi.obj
+ 0004:00000000       $unwind$_ModuleEntryPoint  0000000000001d20     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0004:00000008       $unwind$VirtioScsiPassThru 0000000000001d28     VirtioScsiDxe:VirtioScsi.obj
+ 0004:00000024       $unwind$VirtioScsiGetNextTargetLun 0000000000001d44     VirtioScsiDxe:VirtioScsi.obj
+ 0004:00000038       $unwind$VirtioScsiBuildDevicePath 0000000000001d58     VirtioScsiDxe:VirtioScsi.obj
+ 0004:00000038       $unwind$VirtioScsiGetTargetLun 0000000000001d58     VirtioScsiDxe:VirtioScsi.obj
+ 0004:00000048       $unwind$VirtioScsiGetNextTarget 0000000000001d68     VirtioScsiDxe:VirtioScsi.obj
+ 0004:00000058       $unwind$VirtioScsiInit     0000000000001d78     VirtioScsiDxe:VirtioScsi.obj
+ 0004:00000070       $unwind$VirtioScsiUninit   0000000000001d90     VirtioScsiDxe:VirtioScsi.obj
+ 0004:0000007c       $unwind$VirtioScsiDriverBindingStop 0000000000001d9c     VirtioScsiDxe:VirtioScsi.obj
+ 0004:0000007c       $unwind$VirtioScsiDriverBindingSupported 0000000000001d9c     VirtioScsiDxe:VirtioScsi.obj
+ 0004:0000008c       $unwind$VirtioScsiDriverBindingStart 0000000000001dac     VirtioScsiDxe:VirtioScsi.obj
+ 0004:000000a0       $unwind$VirtioScsiGetDriverName 0000000000001dc0     VirtioScsiDxe:VirtioScsi.obj
+ 0004:000000b4       $unwind$InternalAllocatePool 0000000000001dd4     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0004:000000bc       $unwind$VirtioRingInit     0000000000001ddc     VirtioLib:VirtioLib.obj
+ 0004:000000d8       $unwind$VirtioMapAllBytesInSharedBuffer 0000000000001df8     VirtioLib:VirtioLib.obj

@@ -1,0 +1,73 @@
+ MonotonicCounterRuntimeDxe
+
+ Timestamp is 61ee7043 (Mon Jan 24 17:24:19 2022)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 000002ecH .text$mn                CODE
+ 0002:00000000 00000020H .data                   DATA
+ 0002:00000020 00000028H .rdata                  DATA
+ 0002:00000048 00000050H .bss                    DATA
+ 0002:00000098 00000020H .rdata$voltmd           DATA
+ 0002:000000b8 00000098H .rdata$zzzdbg           DATA
+ 0003:00000000 0000003cH .pdata                  DATA
+ 0004:00000000 00000020H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __hybrid_auxiliary_iat     0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map_count    0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_table      0000000000000000     <absolute>
+ 0000:00000000       __arm64x_native_entrypoint 0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_table      0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_count         0000000000000000     <absolute>
+ 0000:00000000       __enclave_config           0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata_count 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table   0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points_count 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata 0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_count      0000000000000000     <absolute>
+ 0000:00000000       __guard_flags              0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_table          0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_count          0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_table         0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_count      0000000000000000     <absolute>
+ 0000:00000000       __dynamic_value_reloc_table 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map          0000000000000000     <absolute>
+ 0000:00000000       __guard_check_icall_a64n_fptr 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table_size 0000000000000000     <absolute>
+ 0000:00000000       __AbsoluteZero             0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat_copy 0000000000000000     <absolute>
+ 0001:00000000       _ModuleEntryPoint          0000000000000260 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:000000b0       ProcessModuleEntryPointList 0000000000000310 f   MonotonicCounterRuntimeDxe:AutoGen.obj
+ 0001:0000018c       MonotonicCounterDriverGetNextMonotonicCount 00000000000003ec f   MonotonicCounterRuntimeDxe:MonotonicCounter.obj
+ 0001:00000210       MonotonicCounterDriverGetNextHighMonotonicCount 0000000000000470 f   MonotonicCounterRuntimeDxe:MonotonicCounter.obj
+ 0001:000002bc       EfiMtcEventHandler         000000000000051c f   MonotonicCounterRuntimeDxe:MonotonicCounter.obj
+ 0001:000002d0       RuntimeLibExitBootServicesEvent 0000000000000530 f   UefiRuntimeLib:RuntimeLib.obj
+ 0001:000002d8       RuntimeLibVirtualNotifyEvent 0000000000000538 f   UefiRuntimeLib:RuntimeLib.obj
+ 0002:00000000       gEfiMonotonicCounterArchProtocolGuid 0000000000000560     MonotonicCounterRuntimeDxe:AutoGen.obj
+ 0002:00000010       gMtcVendorGuid             0000000000000570     MonotonicCounterRuntimeDxe:AutoGen.obj
+ 0002:00000020       ??_C@_17DGPLEKJI@?$AAM?$AAT?$AAC@ 0000000000000580     MonotonicCounterRuntimeDxe:MonotonicCounter.obj
+ 0002:00000048       mMonotonicCounterHandle    00000000000005a8     MonotonicCounterRuntimeDxe:MonotonicCounter.obj
+ 0002:00000050       gST                        00000000000005b0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000058       gBS                        00000000000005b8     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000060       gRT                        00000000000005c0     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0002:00000068       mEfiAtRuntime              00000000000005c8     UefiRuntimeLib:RuntimeLib.obj
+ 0002:00000070       mEfiVirtualNotifyEvent     00000000000005d0     <common>
+ 0002:00000078       mInternalRT                00000000000005d8     <common>
+ 0002:00000080       mEfiExitBootServicesEvent  00000000000005e0     <common>
+ 0002:00000088       mEfiMtc                    00000000000005e8     <common>
+ 0002:00000090       mEfiMtcEvent               00000000000005f0     <common>
+ 0002:00000098       __volatile_metadata        00000000000005f8     <linker-defined>
+
+ entry point at        0001:00000000
+
+ Static symbols
+
+ 0004:00000000       $unwind$MonotonicCounterDriverGetNextHighMonotonicCount 0000000000000700     MonotonicCounterRuntimeDxe:MonotonicCounter.obj
+ 0004:00000000       $unwind$_ModuleEntryPoint  0000000000000700     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0004:00000008       $unwind$ProcessModuleEntryPointList 0000000000000708     MonotonicCounterRuntimeDxe:AutoGen.obj
+ 0004:00000010       $unwind$MonotonicCounterDriverGetNextMonotonicCount 0000000000000710     MonotonicCounterRuntimeDxe:MonotonicCounter.obj
+ 0004:00000018       $unwind$EfiMtcEventHandler 0000000000000718     MonotonicCounterRuntimeDxe:MonotonicCounter.obj

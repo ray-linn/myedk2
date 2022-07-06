@@ -1,0 +1,183 @@
+ AtaBusDxe
+
+ Timestamp is 61ee700b (Mon Jan 24 17:23:23 2022)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000094H .text                   CODE
+ 0001:00000094 000029d9H .text$mn                CODE
+ 0002:00000000 00000370H .data                   DATA
+ 0002:00000370 00000098H .rdata                  DATA
+ 0002:00000408 00000030H .bss                    DATA
+ 0002:00000438 00000024H .rdata$voltmd           DATA
+ 0002:0000045c 000000a8H .rdata$zzzdbg           DATA
+ 0003:00000000 000001ecH .pdata                  DATA
+ 0004:00000000 00000208H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __x64_code_ranges_to_entry_points_count 0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_count         0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata 0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points 0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_table          0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map          0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table_size 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map_count    0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_count          0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_count      0000000000000000     <absolute>
+ 0000:00000000       __dynamic_value_reloc_table 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_native_entrypoint 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table   0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat     0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_table      0000000000000000     <absolute>
+ 0000:00000000       __enclave_config           0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata_count 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat_copy 0000000000000000     <absolute>
+ 0000:00000000       __guard_flags              0000000000000000     <absolute>
+ 0000:00000000       __AbsoluteZero             0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_count      0000000000000000     <absolute>
+ 0000:00000000       __guard_check_icall_a64n_fptr 0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_table         0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_table      0000000000000000     <absolute>
+ 0000:00000000       __ImageBase                0000000000000000     <linker-defined>
+ 0001:00000000       InternalMemCopyMem         0000000000000280     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000040       InternalMemZeroMem         00000000000002c0     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00000060       CpuPause                   00000000000002e0     BaseLib:CpuPause.obj
+ 0001:00000070       EnableInterrupts           00000000000002f0     BaseLib:EnableInterrupts.obj
+ 0001:00000080       DisableInterrupts          0000000000000300     BaseLib:DisableInterrupts.obj
+ 0001:00000090       AsmReadEflags              0000000000000310     BaseLib:ReadEflags.obj
+ 0001:00000094       _ModuleEntryPoint          0000000000000314 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:0000010c       ProcessLibraryConstructorList 000000000000038c f   AtaBusDxe:AutoGen.obj
+ 0001:000001bc       ReleaseAtaResources        000000000000043c f   AtaBusDxe:AtaBus.obj
+ 0001:0000032c       RegisterAtaDevice          00000000000005ac f   AtaBusDxe:AtaBus.obj
+ 0001:0000067c       UnregisterAtaDevice        00000000000008fc f   AtaBusDxe:AtaBus.obj
+ 0001:0000085c       AtaBusDriverBindingSupported 0000000000000adc f   AtaBusDxe:AtaBus.obj
+ 0001:00000984       AtaBusDriverBindingStart   0000000000000c04 f   AtaBusDxe:AtaBus.obj
+ 0001:00000c14       AtaBusDriverBindingStop    0000000000000e94 f   AtaBusDxe:AtaBus.obj
+ 0001:00000d18       AtaBlockIoReset            0000000000000f98 f   AtaBusDxe:AtaBus.obj
+ 0001:00000d70       BlockIoReadWrite           0000000000000ff0 f   AtaBusDxe:AtaBus.obj
+ 0001:00000eac       AtaBlockIoReadBlocks       000000000000112c f   AtaBusDxe:AtaBus.obj
+ 0001:00000ed8       AtaBlockIoWriteBlocks      0000000000001158 f   AtaBusDxe:AtaBus.obj
+ 0001:00000f04       AtaBlockIoFlushBlocks      0000000000001184 f   AtaBusDxe:AtaBus.obj
+ 0001:00000f08       AtaBlockIoResetEx          0000000000001188 f   AtaBusDxe:AtaBus.obj
+ 0001:00001058       AtaBlockIoReadBlocksEx     00000000000012d8 f   AtaBusDxe:AtaBus.obj
+ 0001:00001084       AtaBlockIoWriteBlocksEx    0000000000001304 f   AtaBusDxe:AtaBus.obj
+ 0001:000010b0       AtaBlockIoFlushBlocksEx    0000000000001330 f   AtaBusDxe:AtaBus.obj
+ 0001:000010d8       AtaDiskInfoSenseData       0000000000001358 f   AtaBusDxe:AtaBus.obj
+ 0001:000010d8       AtaDiskInfoInquiry         0000000000001358 f   AtaBusDxe:AtaBus.obj
+ 0001:000010e4       AtaDiskInfoIdentify        0000000000001364 f   AtaBusDxe:AtaBus.obj
+ 0001:00001138       AtaDiskInfoWhichIde        00000000000013b8 f   AtaBusDxe:AtaBus.obj
+ 0001:00001148       AtaStorageSecurityReceiveData 00000000000013c8 f   AtaBusDxe:AtaBus.obj
+ 0001:00001238       AtaStorageSecuritySendData 00000000000014b8 f   AtaBusDxe:AtaBus.obj
+ 0001:00001304       AtaDevicePassThru          0000000000001584 f   AtaBusDxe:AtaPassThruExecute.obj
+ 0001:00001404       ResetAtaDevice             0000000000001684 f   AtaBusDxe:AtaPassThruExecute.obj
+ 0001:0000144c       IdentifyAtaDevice          00000000000016cc f   AtaBusDxe:AtaPassThruExecute.obj
+ 0001:000015e0       DiscoverAtaDevice          0000000000001860 f   AtaBusDxe:AtaPassThruExecute.obj
+ 0001:00001688       TransferAtaDevice          0000000000001908 f   AtaBusDxe:AtaPassThruExecute.obj
+ 0001:00001834       FreeAtaSubTask             0000000000001ab4 f   AtaBusDxe:AtaPassThruExecute.obj
+ 0001:0000187c       AtaNonBlockingCallBack     0000000000001afc f   AtaBusDxe:AtaPassThruExecute.obj
+ 0001:000019cc       AccessAtaDevice            0000000000001c4c f   AtaBusDxe:AtaPassThruExecute.obj
+ 0001:00001e1c       TrustTransferAtaDevice     000000000000209c f   AtaBusDxe:AtaPassThruExecute.obj
+ 0001:00001fe4       AtaBusComponentNameGetDriverName 0000000000002264 f   AtaBusDxe:ComponentName.obj
+ 0001:00002018       AtaBusComponentNameGetControllerName 0000000000002298 f   AtaBusDxe:ComponentName.obj
+ 0001:000021b8       InternalAllocateAlignedPages 0000000000002438 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:000022ac       InternalAllocatePool       000000000000252c f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:000022dc       InternalAllocateCopyPool   000000000000255c f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:0000231c       IsLanguageSupported        000000000000259c f   UefiLib:UefiLib.obj
+ 0001:000023c0       LookupUnicodeString2       0000000000002640 f   UefiLib:UefiLib.obj
+ 0001:000024d8       AddUnicodeString2          0000000000002758 f   UefiLib:UefiLib.obj
+ 0001:0000272c       InternalAcpiDelay          00000000000029ac f   DxeAcpiTimerLib:AcpiTimerLib.obj
+ 0001:0000278c       InternalReportStatusCode   0000000000002a0c f   DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0001:00002828       ReportStatusCodeWithDevicePath 0000000000002aa8 f   DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0001:000029ac       GetPcdProtocol             0000000000002c2c f   DxePcdLib:DxePcdLib.obj
+ 0001:000029e8       PciCf8Read32               0000000000002c68 f   BasePciCf8Lib:PciCf8Lib.obj
+ 0001:00002a4c       SaveAndDisableInterrupts   0000000000002ccc f   BaseLib:Cpu.obj
+ 0002:00000000       gEfiStatusCodeSpecificDataGuid 0000000000002d00     AtaBusDxe:AutoGen.obj
+ 0002:00000010       gEfiStatusCodeRuntimeProtocolGuid 0000000000002d10     AtaBusDxe:AutoGen.obj
+ 0002:00000020       gEfiDiskInfoProtocolGuid   0000000000002d20     AtaBusDxe:AutoGen.obj
+ 0002:00000030       gEfiAtaPassThruProtocolGuid 0000000000002d30     AtaBusDxe:AutoGen.obj
+ 0002:00000040       gEfiComponentName2ProtocolGuid 0000000000002d40     AtaBusDxe:AutoGen.obj
+ 0002:00000050       gEfiBlockIo2ProtocolGuid   0000000000002d50     AtaBusDxe:AutoGen.obj
+ 0002:00000060       gPcdProtocolGuid           0000000000002d60     AtaBusDxe:AutoGen.obj
+ 0002:00000070       gEfiDevicePathProtocolGuid 0000000000002d70     AtaBusDxe:AutoGen.obj
+ 0002:00000080       gEfiDiskInfoAhciInterfaceGuid 0000000000002d80     AtaBusDxe:AutoGen.obj
+ 0002:00000090       gEfiDevicePathUtilitiesProtocolGuid 0000000000002d90     AtaBusDxe:AutoGen.obj
+ 0002:000000a0       gEfiDriverBindingProtocolGuid 0000000000002da0     AtaBusDxe:AutoGen.obj
+ 0002:000000b0       gEfiStorageSecurityCommandProtocolGuid 0000000000002db0     AtaBusDxe:AutoGen.obj
+ 0002:000000c0       gEfiComponentNameProtocolGuid 0000000000002dc0     AtaBusDxe:AutoGen.obj
+ 0002:000000d0       gEfiBlockIoProtocolGuid    0000000000002dd0     AtaBusDxe:AutoGen.obj
+ 0002:000000e0       gEfiCallerIdGuid           0000000000002de0     AtaBusDxe:AutoGen.obj
+ 0002:000000f0       gAtaBusDriverBinding       0000000000002df0     AtaBusDxe:AtaBus.obj
+ 0002:00000120       gAtaDeviceTemplate         0000000000002e20     AtaBusDxe:AtaBus.obj
+ 0002:00000300       gAtaBusComponentName2      0000000000003000     AtaBusDxe:ComponentName.obj
+ 0002:00000318       gAtaBusComponentName       0000000000003018     AtaBusDxe:ComponentName.obj
+ 0002:00000330       mAtaBusControllerNameTable 0000000000003030     AtaBusDxe:ComponentName.obj
+ 0002:00000350       mAtaBusDriverNameTable     0000000000003050     AtaBusDxe:ComponentName.obj
+ 0002:00000370       ??_C@_03LKLGDMJI@eng@      0000000000003070     AtaBusDxe:AtaBus.obj
+ 0002:00000374       ??_C@_02LFNMGJAP@en@       0000000000003074     AtaBusDxe:AtaBus.obj
+ 0002:00000378       mMaxTransferBlockNumber    0000000000003078     AtaBusDxe:AtaPassThruExecute.obj
+ 0002:00000388       mAtaPassThruCmdProtocols   0000000000003088     AtaBusDxe:AtaPassThruExecute.obj
+ 0002:00000390       mAtaCommands               0000000000003090     AtaBusDxe:AtaPassThruExecute.obj
+ 0002:00000398       mAtaTrustCommands          0000000000003098     AtaBusDxe:AtaPassThruExecute.obj
+ 0002:0000039c       ??_C@_06DALJLGPG@eng?$DLen@ 000000000000309c     AtaBusDxe:ComponentName.obj
+ 0002:000003a8       ??_C@_1BO@MJNPMME@?$AAA?$AAT?$AAA?$AA?5?$AAB?$AAu?$AAs?$AA?5?$AAD?$AAr?$AAi?$AAv?$AAe?$AAr@ 00000000000030a8     AtaBusDxe:ComponentName.obj
+ 0002:000003c8       ??_C@_1BO@KHPHIBLI@?$AAA?$AAT?$AAA?$AA?5?$AAC?$AAo?$AAn?$AAt?$AAr?$AAo?$AAl?$AAl?$AAe?$AAr@ 00000000000030c8     AtaBusDxe:ComponentName.obj
+ 0002:00000408       gST                        0000000000003108     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000410       gBS                        0000000000003110     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000418       mDevicePathLibDevicePathUtilities 0000000000003118     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:00000420       mReportStatusCodeLibStatusCodeProtocol 0000000000003120     DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0002:00000428       mPcd                       0000000000003128     DxePcdLib:DxePcdLib.obj
+ 0002:00000438       __volatile_metadata        0000000000003138     <linker-defined>
+
+ entry point at        0001:00000094
+
+ Static symbols
+
+ 0001:0000001a       InternalMemCopyMem.0       000000000000029a     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:0000002a       @CopyBackward              00000000000002aa     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000033       @CopyBytes                 00000000000002b3     BaseMemoryLibRepStr:CopyMem.obj
+ 0002:00000430       mRunningOnQ35              0000000000003130     DxePciLibI440FxQ35:PciLib.obj
+ 0002:00000434       mAcpiTimerIoAddr           0000000000003134     DxeAcpiTimerLib:DxeAcpiTimerLib.obj
+ 0004:00000000       $unwind$_ModuleEntryPoint  0000000000003420     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0004:00000008       $unwind$ProcessLibraryConstructorList 0000000000003428     AtaBusDxe:AutoGen.obj
+ 0004:00000010       $unwind$ReleaseAtaResources 0000000000003430     AtaBusDxe:AtaBus.obj
+ 0004:00000024       $unwind$RegisterAtaDevice  0000000000003444     AtaBusDxe:AtaBus.obj
+ 0004:0000003c       $unwind$UnregisterAtaDevice 000000000000345c     AtaBusDxe:AtaBus.obj
+ 0004:00000050       $unwind$AtaBusDriverBindingSupported 0000000000003470     AtaBusDxe:AtaBus.obj
+ 0004:00000060       $unwind$AtaBusDriverBindingStart 0000000000003480     AtaBusDxe:AtaBus.obj
+ 0004:00000070       $unwind$AtaBusDriverBindingStop 0000000000003490     AtaBusDxe:AtaBus.obj
+ 0004:00000088       $unwind$AtaBlockIoReset    00000000000034a8     AtaBusDxe:AtaBus.obj
+ 0004:00000088       $unwind$AtaDiskInfoIdentify 00000000000034a8     AtaBusDxe:AtaBus.obj
+ 0004:00000088       $unwind$DiscoverAtaDevice  00000000000034a8     AtaBusDxe:AtaPassThruExecute.obj
+ 0004:00000088       $unwind$ResetAtaDevice     00000000000034a8     AtaBusDxe:AtaPassThruExecute.obj
+ 0004:00000088       $unwind$InternalAllocateCopyPool 00000000000034a8     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0004:00000094       $unwind$BlockIoReadWrite   00000000000034b4     AtaBusDxe:AtaBus.obj
+ 0004:000000ac       $unwind$AtaBlockIoReadBlocks 00000000000034cc     AtaBusDxe:AtaBus.obj
+ 0004:000000ac       $unwind$AtaBlockIoReadBlocksEx 00000000000034cc     AtaBusDxe:AtaBus.obj
+ 0004:000000ac       $unwind$AtaBlockIoWriteBlocks 00000000000034cc     AtaBusDxe:AtaBus.obj
+ 0004:000000ac       $unwind$AtaBlockIoWriteBlocksEx 00000000000034cc     AtaBusDxe:AtaBus.obj
+ 0004:000000b4       $unwind$AtaBlockIoResetEx  00000000000034d4     AtaBusDxe:AtaBus.obj
+ 0004:000000d0       $unwind$AtaBlockIoFlushBlocksEx 00000000000034f0     AtaBusDxe:AtaBus.obj
+ 0004:000000d0       $unwind$GetPcdProtocol     00000000000034f0     DxePcdLib:DxePcdLib.obj
+ 0004:000000d0       $unwind$InternalAllocatePool 00000000000034f0     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0004:000000d8       $unwind$AtaStorageSecurityReceiveData 00000000000034f8     AtaBusDxe:AtaBus.obj
+ 0004:000000f0       $unwind$AtaStorageSecuritySendData 0000000000003510     AtaBusDxe:AtaBus.obj
+ 0004:00000108       $unwind$AtaDevicePassThru  0000000000003528     AtaBusDxe:AtaPassThruExecute.obj
+ 0004:00000120       $unwind$IdentifyAtaDevice  0000000000003540     AtaBusDxe:AtaPassThruExecute.obj
+ 0004:0000012c       $unwind$TransferAtaDevice  000000000000354c     AtaBusDxe:AtaPassThruExecute.obj
+ 0004:00000148       $unwind$FreeAtaSubTask     0000000000003568     AtaBusDxe:AtaPassThruExecute.obj
+ 0004:00000148       $unwind$SaveAndDisableInterrupts 0000000000003568     BaseLib:Cpu.obj
+ 0004:00000148       $unwind$PciCf8Read32       0000000000003568     BasePciCf8Lib:PciCf8Lib.obj
+ 0004:00000150       $unwind$AtaNonBlockingCallBack 0000000000003570     AtaBusDxe:AtaPassThruExecute.obj
+ 0004:00000150       $unwind$InternalReportStatusCode 0000000000003570     DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0004:00000160       $unwind$AccessAtaDevice    0000000000003580     AtaBusDxe:AtaPassThruExecute.obj
+ 0004:00000178       $unwind$TrustTransferAtaDevice 0000000000003598     AtaBusDxe:AtaPassThruExecute.obj
+ 0004:00000194       $unwind$AtaBusComponentNameGetDriverName 00000000000035b4     AtaBusDxe:ComponentName.obj
+ 0004:0000019c       $unwind$AtaBusComponentNameGetControllerName 00000000000035bc     AtaBusDxe:ComponentName.obj
+ 0004:000001b4       $unwind$InternalAllocateAlignedPages 00000000000035d4     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0004:000001c8       $unwind$LookupUnicodeString2 00000000000035e8     UefiLib:UefiLib.obj
+ 0004:000001c8       $unwind$InternalAcpiDelay  00000000000035e8     DxeAcpiTimerLib:AcpiTimerLib.obj
+ 0004:000001d8       $unwind$AddUnicodeString2  00000000000035f8     UefiLib:UefiLib.obj
+ 0004:000001f0       $unwind$ReportStatusCodeWithDevicePath 0000000000003610     DxeReportStatusCodeLib:ReportStatusCodeLib.obj

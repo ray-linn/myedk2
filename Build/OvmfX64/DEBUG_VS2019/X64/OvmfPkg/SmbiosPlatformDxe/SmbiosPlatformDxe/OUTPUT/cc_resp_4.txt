@@ -1,0 +1,1 @@
+  d:\edk2\edk2\OvmfPkg\SmbiosPlatformDxe\Qemu.c d:\edk2\edk2\Build\OvmfX64\DEBUG_VS2019\X64\OvmfPkg\SmbiosPlatformDxe\SmbiosPlatformDxe\DEBUG\AutoGen.c d:\edk2\edk2\OvmfPkg\SmbiosPlatformDxe\CloudHv.c d:\edk2\edk2\OvmfPkg\SmbiosPlatformDxe\SmbiosPlatformDxe.c d:\edk2\edk2\OvmfPkg\SmbiosPlatformDxe\EntryPoint.c

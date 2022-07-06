@@ -1,0 +1,127 @@
+ BootManagerPolicyDxe
+
+ Timestamp is 61ee7053 (Mon Jan 24 17:24:35 2022)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000080H .text                   CODE
+ 0001:00000080 00000eb3H .text$mn                CODE
+ 0002:00000000 00000158H .data                   DATA
+ 0002:00000158 000000d0H .rdata                  DATA
+ 0002:00000228 00000058H .bss                    DATA
+ 0002:00000280 00000020H .rdata$voltmd           DATA
+ 0002:000002a0 000000a8H .rdata$zzzdbg           DATA
+ 0003:00000000 000000c0H .pdata                  DATA
+ 0004:00000000 000000c8H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __hybrid_code_map_count    0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points_count 0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_native_entrypoint 0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_table      0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata 0000000000000000     <absolute>
+ 0000:00000000       __enclave_config           0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_table          0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata_count 0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_count         0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table   0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_count          0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_count      0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map          0000000000000000     <absolute>
+ 0000:00000000       __dynamic_value_reloc_table 0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_table      0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_count      0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_table         0000000000000000     <absolute>
+ 0000:00000000       __guard_flags              0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat     0000000000000000     <absolute>
+ 0000:00000000       __guard_check_icall_a64n_fptr 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table_size 0000000000000000     <absolute>
+ 0000:00000000       __AbsoluteZero             0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat_copy 0000000000000000     <absolute>
+ 0001:00000000       InternalMemCopyMem         0000000000000280     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000040       InternalMemZeroMem         00000000000002c0     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00000060       InternalMemCompareMem      00000000000002e0     BaseMemoryLibRepStr:CompareMem.obj
+ 0001:00000080       _ModuleEntryPoint          0000000000000300 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:000000b8       ProcessLibraryConstructorList 0000000000000338 f   BootManagerPolicyDxe:AutoGen.obj
+ 0001:000001a0       ConnectAllAndCreateNetworkDeviceList 0000000000000420 f   BootManagerPolicyDxe:BootManagerPolicyDxe.obj
+ 0001:000002c8       BootManagerPolicyConnectDevicePath 0000000000000548 f   BootManagerPolicyDxe:BootManagerPolicyDxe.obj
+ 0001:00000378       BootManagerPolicyConnectDeviceClass 00000000000005f8 f   BootManagerPolicyDxe:BootManagerPolicyDxe.obj
+ 0001:000004c8       InternalAllocatePool       0000000000000748 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:000004f8       EfiGetSystemConfigurationTable 0000000000000778 f   UefiLib:UefiLib.obj
+ 0001:00000558       GetVariable2               00000000000007d8 f   UefiLib:UefiLib.obj
+ 0001:0000060c       GetHobList                 000000000000088c f   DxeHobLib:HobLib.obj
+ 0001:0000063c       EfiBootManagerConnectAll   00000000000008bc f   UefiBootManagerLib:BmConnect.obj
+ 0001:000006cc       EfiBootManagerConnectDevicePath 000000000000094c f   UefiBootManagerLib:BmConnect.obj
+ 0001:000007e4       BmConnectUsbShortFormDevicePath 0000000000000a64 f   UefiBootManagerLib:BmConnect.obj
+ 0001:00000924       BmUpdateSystemTableConsole 0000000000000ba4 f   UefiBootManagerLib:BmConsole.obj
+ 0001:00000a74       EfiBootManagerConnectConsoleVariable 0000000000000cf4 f   UefiBootManagerLib:BmConsole.obj
+ 0001:00000d20       EfiBootManagerConnectAllDefaultConsoles 0000000000000fa0 f   UefiBootManagerLib:BmConsole.obj
+ 0001:00000e30       BmDelPartMatchInstance     00000000000010b0 f   UefiBootManagerLib:BmMisc.obj
+ 0002:00000000       gEfiGlobalVariableGuid     00000000000011c0     BootManagerPolicyDxe:AutoGen.obj
+ 0002:00000010       gEfiSimpleTextOutProtocolGuid 00000000000011d0     BootManagerPolicyDxe:AutoGen.obj
+ 0002:00000020       gEfiBootManagerPolicyConsoleGuid 00000000000011e0     BootManagerPolicyDxe:AutoGen.obj
+ 0002:00000030       gEfiDevicePathProtocolGuid 00000000000011f0     BootManagerPolicyDxe:AutoGen.obj
+ 0002:00000040       gEfiPciIoProtocolGuid      0000000000001200     BootManagerPolicyDxe:AutoGen.obj
+ 0002:00000050       gEfiBootManagerPolicyNetworkGuid 0000000000001210     BootManagerPolicyDxe:AutoGen.obj
+ 0002:00000060       gEfiBootManagerPolicyProtocolGuid 0000000000001220     BootManagerPolicyDxe:AutoGen.obj
+ 0002:00000070       gEfiBootManagerPolicyConnectAllGuid 0000000000001230     BootManagerPolicyDxe:AutoGen.obj
+ 0002:00000080       gEfiHiiConfigRoutingProtocolGuid 0000000000001240     BootManagerPolicyDxe:AutoGen.obj
+ 0002:00000090       gEfiSimpleTextInProtocolGuid 0000000000001250     BootManagerPolicyDxe:AutoGen.obj
+ 0002:000000a0       gEfiHiiImageProtocolGuid   0000000000001260     BootManagerPolicyDxe:AutoGen.obj
+ 0002:000000b0       gEfiDevicePathUtilitiesProtocolGuid 0000000000001270     BootManagerPolicyDxe:AutoGen.obj
+ 0002:000000c0       gEfiHiiDatabaseProtocolGuid 0000000000001280     BootManagerPolicyDxe:AutoGen.obj
+ 0002:000000d0       gEfiHiiStringProtocolGuid  0000000000001290     BootManagerPolicyDxe:AutoGen.obj
+ 0002:000000e0       gEfiHobListGuid            00000000000012a0     BootManagerPolicyDxe:AutoGen.obj
+ 0002:000000f0       gEfiManagedNetworkServiceBindingProtocolGuid 00000000000012b0     BootManagerPolicyDxe:AutoGen.obj
+ 0002:00000100       gEfiDxeServicesTableGuid   00000000000012c0     BootManagerPolicyDxe:AutoGen.obj
+ 0002:00000110       gEfiCallerIdGuid           00000000000012d0     BootManagerPolicyDxe:AutoGen.obj
+ 0002:00000120       gEfiHiiFontProtocolGuid    00000000000012e0     BootManagerPolicyDxe:AutoGen.obj
+ 0002:00000130       mBootManagerPolicy         00000000000012f0     BootManagerPolicyDxe:BootManagerPolicyDxe.obj
+ 0002:00000148       mNetworkDeviceList         0000000000001308     BootManagerPolicyDxe:BootManagerPolicyDxe.obj
+ 0002:00000158       mUefiDevicePathLibEndDevicePath 0000000000001318     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:00000160       ??_C@_1M@NFPEGKHA@?$AAC?$AAo?$AAn?$AAI?$AAn@ 0000000000001320     UefiBootManagerLib:BmConsole.obj
+ 0002:00000170       ??_C@_1O@MJHLOIFA@?$AAC?$AAo?$AAn?$AAO?$AAu?$AAt@ 0000000000001330     UefiBootManagerLib:BmConsole.obj
+ 0002:00000180       ??_C@_1O@JOJMCOJC@?$AAE?$AAr?$AAr?$AAO?$AAu?$AAt@ 0000000000001340     UefiBootManagerLib:BmConsole.obj
+ 0002:00000190       ??_C@_1BC@OBFMLJLI@?$AAC?$AAo?$AAn?$AAI?$AAn?$AAD?$AAe?$AAv@ 0000000000001350     UefiBootManagerLib:BmConsole.obj
+ 0002:000001a8       ??_C@_1BE@INNAKDAF@?$AAC?$AAo?$AAn?$AAO?$AAu?$AAt?$AAD?$AAe?$AAv@ 0000000000001368     UefiBootManagerLib:BmConsole.obj
+ 0002:000001c0       ??_C@_1BE@JFPOEAHF@?$AAE?$AAr?$AAr?$AAO?$AAu?$AAt?$AAD?$AAe?$AAv@ 0000000000001380     UefiBootManagerLib:BmConsole.obj
+ 0002:000001d8       mConVarName                0000000000001398     UefiBootManagerLib:BmConsole.obj
+ 0002:00000228       gST                        00000000000013e8     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000230       gBS                        00000000000013f0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000238       gRT                        00000000000013f8     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0002:00000240       mDevicePathLibDevicePathUtilities 0000000000001400     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:00000248       gHiiString                 0000000000001408     UefiHiiServicesLib:UefiHiiServicesLib.obj
+ 0002:00000250       gHiiFont                   0000000000001410     UefiHiiServicesLib:UefiHiiServicesLib.obj
+ 0002:00000258       gHiiConfigRouting          0000000000001418     UefiHiiServicesLib:UefiHiiServicesLib.obj
+ 0002:00000260       gHiiImage                  0000000000001420     UefiHiiServicesLib:UefiHiiServicesLib.obj
+ 0002:00000268       gHiiDatabase               0000000000001428     UefiHiiServicesLib:UefiHiiServicesLib.obj
+ 0002:00000270       mHobList                   0000000000001430     DxeHobLib:HobLib.obj
+ 0002:00000278       gDS                        0000000000001438     DxeServicesTableLib:DxeServicesTableLib.obj
+ 0002:00000280       __volatile_metadata        0000000000001440     <linker-defined>
+
+ entry point at        0001:00000080
+
+ Static symbols
+
+ 0001:0000001a       InternalMemCopyMem.0       000000000000029a     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:0000002a       @CopyBackward              00000000000002aa     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000033       @CopyBytes                 00000000000002b3     BaseMemoryLibRepStr:CopyMem.obj
+ 0004:00000000       $unwind$ProcessLibraryConstructorList 00000000000015e0     BootManagerPolicyDxe:AutoGen.obj
+ 0004:00000000       $unwind$GetHobList         00000000000015e0     DxeHobLib:HobLib.obj
+ 0004:00000000       $unwind$_ModuleEntryPoint  00000000000015e0     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0004:00000000       $unwind$InternalAllocatePool 00000000000015e0     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0004:00000008       $unwind$ConnectAllAndCreateNetworkDeviceList 00000000000015e8     BootManagerPolicyDxe:BootManagerPolicyDxe.obj
+ 0004:00000014       $unwind$BootManagerPolicyConnectDevicePath 00000000000015f4     BootManagerPolicyDxe:BootManagerPolicyDxe.obj
+ 0004:00000020       $unwind$BootManagerPolicyConnectDeviceClass 0000000000001600     BootManagerPolicyDxe:BootManagerPolicyDxe.obj
+ 0004:00000030       $unwind$EfiGetSystemConfigurationTable 0000000000001610     UefiLib:UefiLib.obj
+ 0004:00000038       $unwind$GetVariable2       0000000000001618     UefiLib:UefiLib.obj
+ 0004:00000048       $unwind$EfiBootManagerConnectAll 0000000000001628     UefiBootManagerLib:BmConnect.obj
+ 0004:00000050       $unwind$EfiBootManagerConnectDevicePath 0000000000001630     UefiBootManagerLib:BmConnect.obj
+ 0004:00000064       $unwind$BmConnectUsbShortFormDevicePath 0000000000001644     UefiBootManagerLib:BmConnect.obj
+ 0004:00000074       $unwind$BmUpdateSystemTableConsole 0000000000001654     UefiBootManagerLib:BmConsole.obj
+ 0004:0000008c       $unwind$EfiBootManagerConnectConsoleVariable 000000000000166c     UefiBootManagerLib:BmConsole.obj
+ 0004:000000a0       $unwind$EfiBootManagerConnectAllDefaultConsoles 0000000000001680     UefiBootManagerLib:BmConsole.obj
+ 0004:000000b4       $unwind$BmDelPartMatchInstance 0000000000001694     UefiBootManagerLib:BmMisc.obj

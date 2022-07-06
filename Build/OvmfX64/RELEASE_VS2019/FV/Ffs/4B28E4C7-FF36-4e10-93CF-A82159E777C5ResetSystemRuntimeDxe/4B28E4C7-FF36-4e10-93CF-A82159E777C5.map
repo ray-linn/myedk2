@@ -1,0 +1,125 @@
+ ResetSystemRuntimeDxe
+
+ Timestamp is 61ee7055 (Mon Jan 24 17:24:37 2022)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000094H .text                   CODE
+ 0001:00000094 000007fdH .text$mn                CODE
+ 0002:00000000 00000118H .data                   DATA
+ 0002:00000118 00000020H .rdata                  DATA
+ 0002:00000138 00000078H .bss                    DATA
+ 0002:000001b0 00000044H .rdata$voltmd           DATA
+ 0002:000001f4 000000a8H .rdata$zzzdbg           DATA
+ 0003:00000000 000000ccH .pdata                  DATA
+ 0004:00000000 00000070H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __guard_longjmp_count      0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map_count    0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points 0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_count         0000000000000000     <absolute>
+ 0000:00000000       __arm64x_native_entrypoint 0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points_count 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table   0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata 0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_table      0000000000000000     <absolute>
+ 0000:00000000       __enclave_config           0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_table          0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata_count 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map          0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table_size 0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_count          0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_table      0000000000000000     <absolute>
+ 0000:00000000       __dynamic_value_reloc_table 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat     0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat_copy 0000000000000000     <absolute>
+ 0000:00000000       __AbsoluteZero             0000000000000000     <absolute>
+ 0000:00000000       __guard_flags              0000000000000000     <absolute>
+ 0000:00000000       __guard_check_icall_a64n_fptr 0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_table         0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_count      0000000000000000     <absolute>
+ 0001:00000000       InternalMemCopyMem         0000000000000280     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000040       InternalMemZeroMem         00000000000002c0     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00000060       CpuPause                   00000000000002e0     BaseLib:CpuPause.obj
+ 0001:00000070       EnableInterrupts           00000000000002f0     BaseLib:EnableInterrupts.obj
+ 0001:00000080       DisableInterrupts          0000000000000300     BaseLib:DisableInterrupts.obj
+ 0001:00000090       AsmReadEflags              0000000000000310     BaseLib:ReadEflags.obj
+ 0001:00000094       _ModuleEntryPoint          0000000000000314 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:00000134       ProcessLibraryConstructorList 00000000000003b4 f   ResetSystemRuntimeDxe:AutoGen.obj
+ 0001:00000340       ProcessLibraryDestructorList 00000000000005c0 f   ResetSystemRuntimeDxe:AutoGen.obj
+ 0001:00000390       RegisterResetNotify        0000000000000610 f   ResetSystemRuntimeDxe:ResetSystem.obj
+ 0001:00000414       UnregisterResetNotify      0000000000000694 f   ResetSystemRuntimeDxe:ResetSystem.obj
+ 0001:00000470       RuntimeServiceResetSystem  00000000000006f0 f   ResetSystemRuntimeDxe:ResetSystem.obj
+ 0001:00000590       InternalAllocatePool       0000000000000810 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:000005c8       RuntimeLibExitBootServicesEvent 0000000000000848 f   UefiRuntimeLib:RuntimeLib.obj
+ 0001:000005d0       RuntimeLibVirtualNotifyEvent 0000000000000850 f   UefiRuntimeLib:RuntimeLib.obj
+ 0001:000005e4       ResetShutdown              0000000000000864 f   DxeResetSystemLib:DxeResetShutdown.obj
+ 0001:00000654       ResetCold                  00000000000008d4 f   DxeResetSystemLib:ResetSystemLib.obj
+ 0001:0000068c       InternalGetReportStatusCode 000000000000090c f   RuntimeDxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0001:000006ec       ReportStatusCodeLibVirtualAddressChange 000000000000096c f   RuntimeDxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0001:00000714       ReportStatusCodeLibExitBootServices 0000000000000994 f   RuntimeDxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0001:0000072c       ReportStatusCode           00000000000009ac f   RuntimeDxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0001:00000770       GetPcdProtocol             00000000000009f0 f   DxePcdLib:DxePcdLib.obj
+ 0001:000007ac       PciCf8Read32               0000000000000a2c f   BasePciCf8Lib:PciCf8Lib.obj
+ 0001:00000810       InternalAcpiDelay          0000000000000a90 f   DxeAcpiTimerLib:AcpiTimerLib.obj
+ 0001:00000870       SaveAndDisableInterrupts   0000000000000af0 f   BaseLib:Cpu.obj
+ 0002:00000000       gEfiResetArchProtocolGuid  0000000000000b20     ResetSystemRuntimeDxe:AutoGen.obj
+ 0002:00000010       gEfiStatusCodeRuntimeProtocolGuid 0000000000000b30     ResetSystemRuntimeDxe:AutoGen.obj
+ 0002:00000020       gEdkiiPlatformSpecificResetFilterProtocolGuid 0000000000000b40     ResetSystemRuntimeDxe:AutoGen.obj
+ 0002:00000030       gPcdProtocolGuid           0000000000000b50     ResetSystemRuntimeDxe:AutoGen.obj
+ 0002:00000040       gEfiResetNotificationProtocolGuid 0000000000000b60     ResetSystemRuntimeDxe:AutoGen.obj
+ 0002:00000050       gEfiDevicePathUtilitiesProtocolGuid 0000000000000b70     ResetSystemRuntimeDxe:AutoGen.obj
+ 0002:00000060       gEfiEventExitBootServicesGuid 0000000000000b80     ResetSystemRuntimeDxe:AutoGen.obj
+ 0002:00000070       gEfiEventVirtualAddressChangeGuid 0000000000000b90     ResetSystemRuntimeDxe:AutoGen.obj
+ 0002:00000080       gEdkiiPlatformSpecificResetHandlerProtocolGuid 0000000000000ba0     ResetSystemRuntimeDxe:AutoGen.obj
+ 0002:00000090       gEfiCallerIdGuid           0000000000000bb0     ResetSystemRuntimeDxe:AutoGen.obj
+ 0002:000000a0       mPlatformSpecificResetHandler 0000000000000bc0     ResetSystemRuntimeDxe:ResetSystem.obj
+ 0002:000000c8       mPlatformSpecificResetFilter 0000000000000be8     ResetSystemRuntimeDxe:ResetSystem.obj
+ 0002:000000f0       mResetNotification         0000000000000c10     ResetSystemRuntimeDxe:ResetSystem.obj
+ 0002:00000138       mResetNotifyDepth          0000000000000c58     ResetSystemRuntimeDxe:ResetSystem.obj
+ 0002:00000140       gST                        0000000000000c60     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000148       gBS                        0000000000000c68     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000150       gRT                        0000000000000c70     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0002:00000158       mDevicePathLibDevicePathUtilities 0000000000000c78     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:00000160       mEfiAtRuntime              0000000000000c80     UefiRuntimeLib:RuntimeLib.obj
+ 0002:00000161       mHaveExitedBootServices    0000000000000c81     RuntimeDxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0002:00000168       mReportStatusCodeLibStatusCodeProtocol 0000000000000c88     RuntimeDxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0002:00000170       mPcd                       0000000000000c90     DxePcdLib:DxePcdLib.obj
+ 0002:00000188       mReportStatusCodeLibVirtualAddressChangeEvent 0000000000000ca8     <common>
+ 0002:00000190       mReportStatusCodeLibExitBootServicesEvent 0000000000000cb0     <common>
+ 0002:00000198       mEfiVirtualNotifyEvent     0000000000000cb8     <common>
+ 0002:000001a0       mInternalRT                0000000000000cc0     <common>
+ 0002:000001a8       mEfiExitBootServicesEvent  0000000000000cc8     <common>
+ 0002:000001b0       __volatile_metadata        0000000000000cd0     <linker-defined>
+
+ entry point at        0001:00000094
+
+ Static symbols
+
+ 0001:0000001a       InternalMemCopyMem.0       000000000000029a     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:0000002a       @CopyBackward              00000000000002aa     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000033       @CopyBytes                 00000000000002b3     BaseMemoryLibRepStr:CopyMem.obj
+ 0002:00000178       mRunningOnQ35              0000000000000c98     DxePciLibI440FxQ35:PciLib.obj
+ 0002:0000017c       mAcpiTimerIoAddr           0000000000000c9c     DxeAcpiTimerLib:DxeAcpiTimerLib.obj
+ 0002:00000180       mAcpiHwReducedSleepCtl     0000000000000ca0     DxeResetSystemLib:DxeResetShutdown.obj
+ 0002:00000184       mAcpiPmBaseAddress         0000000000000ca4     DxeResetSystemLib:DxeResetShutdown.obj
+ 0004:00000000       $unwind$_ModuleEntryPoint  0000000000000ea0     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0004:00000008       $unwind$ProcessLibraryConstructorList 0000000000000ea8     ResetSystemRuntimeDxe:AutoGen.obj
+ 0004:0000001c       $unwind$ReportStatusCodeLibExitBootServices 0000000000000ebc     RuntimeDxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0004:0000001c       $unwind$ReportStatusCodeLibVirtualAddressChange 0000000000000ebc     RuntimeDxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0004:0000001c       $unwind$ProcessLibraryDestructorList 0000000000000ebc     ResetSystemRuntimeDxe:AutoGen.obj
+ 0004:0000001c       $unwind$UnregisterResetNotify 0000000000000ebc     ResetSystemRuntimeDxe:ResetSystem.obj
+ 0004:0000001c       $unwind$GetPcdProtocol     0000000000000ebc     DxePcdLib:DxePcdLib.obj
+ 0004:0000001c       $unwind$ResetCold          0000000000000ebc     DxeResetSystemLib:ResetSystemLib.obj
+ 0004:00000024       $unwind$RegisterResetNotify 0000000000000ec4     ResetSystemRuntimeDxe:ResetSystem.obj
+ 0004:00000030       $unwind$RuntimeServiceResetSystem 0000000000000ed0     ResetSystemRuntimeDxe:ResetSystem.obj
+ 0004:00000048       $unwind$InternalAllocatePool 0000000000000ee8     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0004:00000050       $unwind$InternalGetReportStatusCode 0000000000000ef0     RuntimeDxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0004:00000050       $unwind$SaveAndDisableInterrupts 0000000000000ef0     BaseLib:Cpu.obj
+ 0004:00000050       $unwind$PciCf8Read32       0000000000000ef0     BasePciCf8Lib:PciCf8Lib.obj
+ 0004:00000050       $unwind$ResetShutdown      0000000000000ef0     DxeResetSystemLib:DxeResetShutdown.obj
+ 0004:00000058       $unwind$ReportStatusCode   0000000000000ef8     RuntimeDxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0004:00000060       $unwind$InternalAcpiDelay  0000000000000f00     DxeAcpiTimerLib:AcpiTimerLib.obj

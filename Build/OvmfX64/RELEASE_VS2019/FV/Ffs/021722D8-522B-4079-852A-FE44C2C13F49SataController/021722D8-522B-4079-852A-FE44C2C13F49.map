@@ -1,0 +1,101 @@
+ SataController
+
+ Timestamp is 61ee701b (Mon Jan 24 17:23:39 2022)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000060H .text                   CODE
+ 0001:00000060 00000c1dH .text$mn                CODE
+ 0002:00000000 00000100H .data                   DATA
+ 0002:00000100 00000088H .rdata                  DATA
+ 0002:00000188 00000018H .bss                    DATA
+ 0002:000001a0 00000020H .rdata$voltmd           DATA
+ 0002:000001c0 000000a8H .rdata$zzzdbg           DATA
+ 0003:00000000 00000090H .pdata                  DATA
+ 0004:00000000 000000acH .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __x64_code_ranges_to_entry_points_count 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map_count    0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_native_entrypoint 0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_table      0000000000000000     <absolute>
+ 0000:00000000       __enclave_config           0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata_count 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata 0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_count         0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_table          0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table   0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_table         0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_count          0000000000000000     <absolute>
+ 0000:00000000       __guard_check_icall_a64n_fptr 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map          0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_count      0000000000000000     <absolute>
+ 0000:00000000       __AbsoluteZero             0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table_size 0000000000000000     <absolute>
+ 0000:00000000       __dynamic_value_reloc_table 0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_count      0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_table      0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat     0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat_copy 0000000000000000     <absolute>
+ 0000:00000000       __guard_flags              0000000000000000     <absolute>
+ 0001:00000000       InternalMemCopyMem         0000000000000280     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000040       InternalMemZeroMem         00000000000002c0     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00000060       _ModuleEntryPoint          00000000000002e0 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:000000f8       CalculateBestPioMode       0000000000000378 f   SataController:SataController.obj
+ 0001:0000023c       SataControllerSupported    00000000000004bc f   SataController:SataController.obj
+ 0001:000002c4       SataControllerStart        0000000000000544 f   SataController:SataController.obj
+ 0001:000005d8       SataControllerStop         0000000000000858 f   SataController:SataController.obj
+ 0001:000006e8       IdeInitGetChannelInfo      0000000000000968 f   SataController:SataController.obj
+ 0001:0000070c       IdeInitNotifyPhase         000000000000098c f   SataController:SataController.obj
+ 0001:0000070c       IdeInitSetTiming           000000000000098c f   SataController:SataController.obj
+ 0001:00000710       IdeInitSubmitData          0000000000000990 f   SataController:SataController.obj
+ 0001:00000788       IdeInitDisqualifyMode      0000000000000a08 f   SataController:SataController.obj
+ 0001:000007e4       IdeInitCalculateMode       0000000000000a64 f   SataController:SataController.obj
+ 0001:00000984       SataControllerComponentNameGetDriverName 0000000000000c04 f   SataController:ComponentName.obj
+ 0001:000009b8       SataControllerComponentNameGetControllerName 0000000000000c38 f   SataController:ComponentName.obj
+ 0001:00000a94       InternalAllocatePool       0000000000000d14 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00000ac4       IsLanguageSupported        0000000000000d44 f   UefiLib:UefiLib.obj
+ 0001:00000b68       LookupUnicodeString2       0000000000000de8 f   UefiLib:UefiLib.obj
+ 0002:00000000       gEfiComponentName2ProtocolGuid 0000000000000f00     SataController:AutoGen.obj
+ 0002:00000010       gEfiPciIoProtocolGuid      0000000000000f10     SataController:AutoGen.obj
+ 0002:00000020       gEfiDevicePathUtilitiesProtocolGuid 0000000000000f20     SataController:AutoGen.obj
+ 0002:00000030       gEfiDriverBindingProtocolGuid 0000000000000f30     SataController:AutoGen.obj
+ 0002:00000040       gEfiIdeControllerInitProtocolGuid 0000000000000f40     SataController:AutoGen.obj
+ 0002:00000050       gEfiComponentNameProtocolGuid 0000000000000f50     SataController:AutoGen.obj
+ 0002:00000060       gSataControllerDriverBinding 0000000000000f60     SataController:SataController.obj
+ 0002:00000090       gSataControllerComponentName 0000000000000f90     SataController:ComponentName.obj
+ 0002:000000a8       gSataControllerComponentName2 0000000000000fa8     SataController:ComponentName.obj
+ 0002:000000c0       mSataControllerControllerNameTable 0000000000000fc0     SataController:ComponentName.obj
+ 0002:000000e0       mSataControllerDriverNameTable 0000000000000fe0     SataController:ComponentName.obj
+ 0002:00000100       ??_C@_03LKLGDMJI@eng@      0000000000001000     SataController:ComponentName.obj
+ 0002:00000104       ??_C@_02LFNMGJAP@en@       0000000000001004     SataController:ComponentName.obj
+ 0002:00000108       ??_C@_06DALJLGPG@eng?$DLen@ 0000000000001008     SataController:ComponentName.obj
+ 0002:00000110       ??_C@_1DI@EKKODBLH@?$AAS?$AAa?$AAt?$AAa?$AA?5?$AAC?$AAo?$AAn?$AAt?$AAr?$AAo?$AAl?$AAl?$AAe?$AAr@ 0000000000001010     SataController:ComponentName.obj
+ 0002:00000148       ??_C@_1CA@EHGIFMEH@?$AAS?$AAa?$AAt?$AAa?$AA?5?$AAC?$AAo?$AAn?$AAt?$AAr?$AAo?$AAl?$AAl?$AAe?$AAr@ 0000000000001048     SataController:ComponentName.obj
+ 0002:00000188       gST                        0000000000001088     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000190       gBS                        0000000000001090     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000198       mDevicePathLibDevicePathUtilities 0000000000001098     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:000001a0       __volatile_metadata        00000000000010a0     <linker-defined>
+
+ entry point at        0001:00000060
+
+ Static symbols
+
+ 0001:0000001a       InternalMemCopyMem.0       000000000000029a     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:0000002a       @CopyBackward              00000000000002aa     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000033       @CopyBytes                 00000000000002b3     BaseMemoryLibRepStr:CopyMem.obj
+ 0004:00000000       $unwind$_ModuleEntryPoint  0000000000001220     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0004:00000008       $unwind$CalculateBestPioMode 0000000000001228     SataController:SataController.obj
+ 0004:00000020       $unwind$SataControllerSupported 0000000000001240     SataController:SataController.obj
+ 0004:00000028       $unwind$SataControllerStart 0000000000001248     SataController:SataController.obj
+ 0004:0000003c       $unwind$SataControllerStop 000000000000125c     SataController:SataController.obj
+ 0004:00000050       $unwind$IdeInitSubmitData  0000000000001270     SataController:SataController.obj
+ 0004:0000005c       $unwind$InternalAllocatePool 000000000000127c     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0004:0000005c       $unwind$IdeInitDisqualifyMode 000000000000127c     SataController:SataController.obj
+ 0004:00000064       $unwind$IdeInitCalculateMode 0000000000001284     SataController:SataController.obj
+ 0004:0000007c       $unwind$SataControllerComponentNameGetDriverName 000000000000129c     SataController:ComponentName.obj
+ 0004:00000084       $unwind$SataControllerComponentNameGetControllerName 00000000000012a4     SataController:ComponentName.obj
+ 0004:0000009c       $unwind$LookupUnicodeString2 00000000000012bc     UefiLib:UefiLib.obj

@@ -1,0 +1,357 @@
+ TlsAuthConfigDxe
+
+ Timestamp is 61ee7058 (Mon Jan 24 17:24:40 2022)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000234H .text                   CODE
+ 0001:00000234 00005e61H .text$mn                CODE
+ 0002:00000000 000011a0H .data                   DATA
+ 0002:000011a0 000006e0H .rdata                  DATA
+ 0002:00001880 00000148H .bss                    DATA
+ 0002:000019c8 0000008cH .rdata$voltmd           DATA
+ 0002:00001a54 000000a8H .rdata$zzzdbg           DATA
+ 0003:00000000 00000384H .pdata                  DATA
+ 0004:00000000 00000368H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __x64_code_ranges_to_entry_points_count 0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_table          0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map_count    0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_table      0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points 0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_count          0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_count      0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_count         0000000000000000     <absolute>
+ 0000:00000000       __dynamic_value_reloc_table 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_native_entrypoint 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat     0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_table      0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat_copy 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table   0000000000000000     <absolute>
+ 0000:00000000       __AbsoluteZero             0000000000000000     <absolute>
+ 0000:00000000       __enclave_config           0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map          0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata_count 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table_size 0000000000000000     <absolute>
+ 0000:00000000       __guard_check_icall_a64n_fptr 0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_table         0000000000000000     <absolute>
+ 0000:00000000       __guard_flags              0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_count      0000000000000000     <absolute>
+ 0000:00000000       __ImageBase                0000000000000000     <linker-defined>
+ 0001:00000000       InternalMemCopyMem         0000000000000280     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000040       InternalMemZeroMem         00000000000002c0     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00000060       SevNoRepIo                 00000000000002e0     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000000a0       IoReadFifo8                0000000000000320     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000000c2       IoReadFifo16               0000000000000342     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000000e8       IoReadFifo32               0000000000000368     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:0000010b       IoWriteFifo8               000000000000038b     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:0000012d       IoWriteFifo16              00000000000003ad     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000153       IoWriteFifo32              00000000000003d3     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000180       InternalMemCompareMem      0000000000000400     BaseMemoryLibRepStr:CompareMem.obj
+ 0001:000001a0       InternalMemIsZeroBuffer    0000000000000420     BaseMemoryLibRepStr:IsZeroBuffer.obj
+ 0001:000001d0       AsmCpuid                   0000000000000450     BaseLib:CpuId.obj
+ 0001:00000200       CpuPause                   0000000000000480     BaseLib:CpuPause.obj
+ 0001:00000210       EnableInterrupts           0000000000000490     BaseLib:EnableInterrupts.obj
+ 0001:00000220       DisableInterrupts          00000000000004a0     BaseLib:DisableInterrupts.obj
+ 0001:00000230       AsmReadEflags              00000000000004b0     BaseLib:ReadEflags.obj
+ 0001:00000234       _DriverUnloadHandler       00000000000004b4 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:00000294       _ModuleEntryPoint          0000000000000514 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:000002ec       ProcessLibraryConstructorList 000000000000056c f   TlsAuthConfigDxe:AutoGen.obj
+ 0001:000005dc       ProcessLibraryDestructorList 000000000000085c f   TlsAuthConfigDxe:AutoGen.obj
+ 0001:00000654       ProcessModuleEntryPointList 00000000000008d4 f   TlsAuthConfigDxe:AutoGen.obj
+ 0001:00000718       UpdateDeletePage           0000000000000998 f   TlsAuthConfigDxe:TlsAuthConfigImpl.obj
+ 0001:000009fc       DeleteCert                 0000000000000c7c f   TlsAuthConfigDxe:TlsAuthConfigImpl.obj
+ 0001:00000d2c       CleanFileContext           0000000000000fac f   TlsAuthConfigDxe:TlsAuthConfigImpl.obj
+ 0001:00000d84       ExtractFileNameFromDevicePath 0000000000001004 f   TlsAuthConfigDxe:TlsAuthConfigImpl.obj
+ 0001:00000e48       EnrollX509toVariable       00000000000010c8 f   TlsAuthConfigDxe:TlsAuthConfigImpl.obj
+ 0001:00001080       EnrollCertDatabase         0000000000001300 f   TlsAuthConfigDxe:TlsAuthConfigImpl.obj
+ 0001:0000114c       UpdateCAFromFile           00000000000013cc f   TlsAuthConfigDxe:TlsAuthConfigImpl.obj
+ 0001:0000126c       TlsAuthConfigFormUnload    00000000000014ec f   TlsAuthConfigDxe:TlsAuthConfigImpl.obj
+ 0001:00001334       TlsAuthConfigFormInit      00000000000015b4 f   TlsAuthConfigDxe:TlsAuthConfigImpl.obj
+ 0001:00001464       TlsAuthConfigAccessExtractConfig 00000000000016e4 f   TlsAuthConfigDxe:TlsAuthConfigImpl.obj
+ 0001:00001600       TlsAuthConfigAccessRouteConfig 0000000000001880 f   TlsAuthConfigDxe:TlsAuthConfigImpl.obj
+ 0001:0000168c       TlsAuthConfigAccessCallback 000000000000190c f   TlsAuthConfigDxe:TlsAuthConfigImpl.obj
+ 0001:00001a70       InternalAllocatePool       0000000000001cf0 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00001aa0       AllocateZeroPool           0000000000001d20 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00001acc       InternalAllocateCopyPool   0000000000001d4c f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00001b0c       InternalReallocatePool     0000000000001d8c f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00001b9c       StrnCmp                    0000000000001e1c f   BaseLib:String.obj
+ 0001:00001bd8       StrStr                     0000000000001e58 f   BaseLib:String.obj
+ 0001:00001c28       InternalHexCharToUintn     0000000000001ea8 f   BaseLib:String.obj
+ 0001:00001c58       AsciiStrnCmp               0000000000001ed8 f   BaseLib:String.obj
+ 0001:00001c8c       StrnLenS                   0000000000001f0c f   BaseLib:SafeString.obj
+ 0001:00001cc0       StrCpyS                    0000000000001f40 f   BaseLib:SafeString.obj
+ 0001:00001d60       StrCatS                    0000000000001fe0 f   BaseLib:SafeString.obj
+ 0001:00001e34       StrHexToBytes              00000000000020b4 f   BaseLib:SafeString.obj
+ 0001:00001f14       UnicodeSPrint              0000000000002194 f   BasePrintLib:PrintLib.obj
+ 0001:00001f48       BasePrintLibFillBuffer     00000000000021c8 f   BasePrintLib:PrintLibInternal.obj
+ 0001:00001f7c       BasePrintLibConvertValueToStringS 00000000000021fc f   BasePrintLib:PrintLibInternal.obj
+ 0001:000020d0       BasePrintLibSPrintMarker   0000000000002350 f   BasePrintLib:PrintLibInternal.obj
+ 0001:00002eb4       BasePrintLibSPrint         0000000000003134 f   BasePrintLib:PrintLibInternal.obj
+ 0001:00002ed8       DevicePathFromHandle       0000000000003158 f   UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0001:00002f0c       FileDevicePath             000000000000318c f   UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0001:00002ff0       UefiDevicePathLibLocateProtocol 0000000000003270 f   UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0001:0000302c       GetEfiGlobalVariable2      00000000000032ac f   UefiLib:UefiLib.obj
+ 0001:000030e8       GetBestLanguage            0000000000003368 f   UefiLib:UefiLib.obj
+ 0001:00003214       EfiOpenFileByDevicePath    0000000000003494 f   UefiLib:UefiLib.obj
+ 0001:000033b4       HiiSetString               0000000000003634 f   UefiHiiLib:HiiString.obj
+ 0001:000034f8       HiiGetString               0000000000003778 f   UefiHiiLib:HiiString.obj
+ 0001:0000367c       HiiAddPackages             00000000000038fc f   UefiHiiLib:HiiLib.obj
+ 0001:00003798       InternalHiiBrowserCallback 0000000000003a18 f   UefiHiiLib:HiiLib.obj
+ 0001:000038c8       HiiConstructConfigHdr      0000000000003b48 f   UefiHiiLib:HiiLib.obj
+ 0001:00003b38       InternalHiiCompareSubString 0000000000003db8 f   UefiHiiLib:HiiLib.obj
+ 0001:00003bd0       HiiIsConfigHdrMatch        0000000000003e50 f   UefiHiiLib:HiiLib.obj
+ 0001:00003c50       HiiGetBrowserData          0000000000003ed0 f   UefiHiiLib:HiiLib.obj
+ 0001:00003d4c       HiiSetBrowserData          0000000000003fcc f   UefiHiiLib:HiiLib.obj
+ 0001:00003e54       HiiAllocateOpCodeHandle    00000000000040d4 f   UefiHiiLib:HiiLib.obj
+ 0001:00003ea8       HiiFreeOpCodeHandle        0000000000004128 f   UefiHiiLib:HiiLib.obj
+ 0001:00003ed8       InternalHiiGrowOpCodeHandle 0000000000004158 f   UefiHiiLib:HiiLib.obj
+ 0001:00003f38       InternalHiiCreateOpCodeExtended 00000000000041b8 f   UefiHiiLib:HiiLib.obj
+ 0001:00003f94       HiiCreateGuidOpCode        0000000000004214 f   UefiHiiLib:HiiLib.obj
+ 0001:00003ff0       HiiCreateGotoOpCode        0000000000004270 f   UefiHiiLib:HiiLib.obj
+ 0001:00004078       InternalHiiUpdateFormPackageData 00000000000042f8 f   UefiHiiLib:HiiLib.obj
+ 0001:00004318       HiiUpdateForm              0000000000004598 f   UefiHiiLib:HiiLib.obj
+ 0001:00004554       HiiGetSupportedLanguages   00000000000047d4 f   UefiHiiLib:HiiLanguage.obj
+ 0001:00004728       InternalQemuFwCfgDmaBytes  00000000000049a8 f   QemuFwCfgDxeLib:QemuFwCfgDxe.obj
+ 0001:00004968       QemuFwCfgReadBytes         0000000000004be8 f   QemuFwCfgDxeLib:QemuFwCfgLib.obj
+ 0001:000049c0       QemuFwCfgFindFile          0000000000004c40 f   QemuFwCfgDxeLib:QemuFwCfgLib.obj
+ 0001:00004b20       LibExtractConfig           0000000000004da0 f   FileExplorerLib:FileExplorer.obj
+ 0001:00004b44       LibRouteConfig             0000000000004dc4 f   FileExplorerLib:FileExplorer.obj
+ 0001:00004b68       LibCallback                0000000000004de8 f   FileExplorerLib:FileExplorer.obj
+ 0001:00004d60       LibCreateMenuEntry         0000000000004fe0 f   FileExplorerLib:FileExplorer.obj
+ 0001:00004db0       LibDestroyMenuEntry        0000000000005030 f   FileExplorerLib:FileExplorer.obj
+ 0001:00004e4c       LibFreeMenu                00000000000050cc f   FileExplorerLib:FileExplorer.obj
+ 0001:00004e98       LibStrDuplicate            0000000000005118 f   FileExplorerLib:FileExplorer.obj
+ 0001:00004f10       LibAppendFileName          0000000000005190 f   FileExplorerLib:FileExplorer.obj
+ 0001:000050ac       LibFindFileSystem          000000000000532c f   FileExplorerLib:FileExplorer.obj
+ 0001:00005324       LibGetFileHandleFromDevicePath 00000000000055a4 f   FileExplorerLib:FileExplorer.obj
+ 0001:00005558       LibCreateNewFile           00000000000057d8 f   FileExplorerLib:FileExplorer.obj
+ 0001:0000561c       LibFindFiles               000000000000589c f   FileExplorerLib:FileExplorer.obj
+ 0001:000058cc       LibUpdateFileExplorePage   0000000000005b4c f   FileExplorerLib:FileExplorer.obj
+ 0001:00005b64       LibUpdateFileExplorer      0000000000005de4 f   FileExplorerLib:FileExplorer.obj
+ 0001:00005c54       LibGetDevicePath           0000000000005ed4 f   FileExplorerLib:FileExplorer.obj
+ 0001:00005cb8       ChooseFile                 0000000000005f38 f   FileExplorerLib:FileExplorer.obj
+ 0001:00005d90       TlsAuthConfigInit          0000000000006010 f   TlsAuthConfigLib:TlsAuthConfigLib.obj
+ 0001:00005f48       GetPcdProtocol             00000000000061c8 f   DxePcdLib:DxePcdLib.obj
+ 0001:00006010       PciCf8Read32               0000000000006290 f   BasePciCf8Lib:PciCf8Lib.obj
+ 0001:00006074       SaveAndDisableInterrupts   00000000000062f4 f   BaseLib:Cpu.obj
+ 0002:00000000       gEfiLoadedImageProtocolGuid 0000000000006320     TlsAuthConfigDxe:AutoGen.obj
+ 0002:00000010       gTlsAuthConfigGuid         0000000000006330     TlsAuthConfigDxe:AutoGen.obj
+ 0002:00000020       gEfiGlobalVariableGuid     0000000000006340     TlsAuthConfigDxe:AutoGen.obj
+ 0002:00000030       gEfiIfrTianoGuid           0000000000006350     TlsAuthConfigDxe:AutoGen.obj
+ 0002:00000040       gEfiTlsCaCertificateGuid   0000000000006360     TlsAuthConfigDxe:AutoGen.obj
+ 0002:00000050       gEdkiiHttpTlsCipherListGuid 0000000000006370     TlsAuthConfigDxe:AutoGen.obj
+ 0002:00000060       gPcdProtocolGuid           0000000000006380     TlsAuthConfigDxe:AutoGen.obj
+ 0002:00000070       gEfiDevicePathProtocolGuid 0000000000006390     TlsAuthConfigDxe:AutoGen.obj
+ 0002:00000080       gEfiDevicePathToTextProtocolGuid 00000000000063a0     TlsAuthConfigDxe:AutoGen.obj
+ 0002:00000090       gEfiHiiConfigRoutingProtocolGuid 00000000000063b0     TlsAuthConfigDxe:AutoGen.obj
+ 0002:000000a0       gEfiHiiPopupProtocolGuid   00000000000063c0     TlsAuthConfigDxe:AutoGen.obj
+ 0002:000000b0       gEfiHiiImageProtocolGuid   00000000000063d0     TlsAuthConfigDxe:AutoGen.obj
+ 0002:000000c0       gEfiCertX509Guid           00000000000063e0     TlsAuthConfigDxe:AutoGen.obj
+ 0002:000000d0       gEfiDevicePathUtilitiesProtocolGuid 00000000000063f0     TlsAuthConfigDxe:AutoGen.obj
+ 0002:000000e0       gEfiHiiDatabaseProtocolGuid 0000000000006400     TlsAuthConfigDxe:AutoGen.obj
+ 0002:000000f0       gEfiSimpleFileSystemProtocolGuid 0000000000006410     TlsAuthConfigDxe:AutoGen.obj
+ 0002:00000100       gEfiHiiStringProtocolGuid  0000000000006420     TlsAuthConfigDxe:AutoGen.obj
+ 0002:00000110       gEfiHiiConfigAccessProtocolGuid 0000000000006430     TlsAuthConfigDxe:AutoGen.obj
+ 0002:00000120       gEfiFileSystemVolumeLabelInfoIdGuid 0000000000006440     TlsAuthConfigDxe:AutoGen.obj
+ 0002:00000130       gEdkiiIoMmuProtocolGuid    0000000000006450     TlsAuthConfigDxe:AutoGen.obj
+ 0002:00000140       gEfiFormBrowser2ProtocolGuid 0000000000006460     TlsAuthConfigDxe:AutoGen.obj
+ 0002:00000150       gEfiCallerIdGuid           0000000000006470     TlsAuthConfigDxe:AutoGen.obj
+ 0002:00000160       TlsAuthConfigDxeStrings    0000000000006480     TlsAuthConfigDxe:AutoGen.obj
+ 0002:00000588       gEfiHiiFontProtocolGuid    00000000000068a8     TlsAuthConfigDxe:AutoGen.obj
+ 0002:00000598       mTlsAuthConfigHiiVendorDevicePath 00000000000068b8     TlsAuthConfigDxe:TlsAuthConfigImpl.obj
+ 0002:000005b0       mTlsAuthConfigStorageName  00000000000068d0     TlsAuthConfigDxe:TlsAuthConfigImpl.obj
+ 0002:000005f0       TlsAuthConfigVfrBin        0000000000006910     TlsAuthConfigDxe:TlsAuthConfigVfr.obj
+ 0002:000007c0       FeHiiVendorDevicePath      0000000000006ae0     FileExplorerLib:FileExplorer.obj
+ 0002:000007d8       FileExplorerGuid           0000000000006af8     FileExplorerLib:FileExplorer.obj
+ 0002:000007e8       mNewFolderQuestionId       0000000000006b08     FileExplorerLib:FileExplorer.obj
+ 0002:000007f0       gFileExplorerPrivate       0000000000006b10     FileExplorerLib:FileExplorer.obj
+ 0002:00000848       mNewFileQuestionId         0000000000006b68     FileExplorerLib:FileExplorer.obj
+ 0002:00000850       mFsOptionMenu              0000000000006b70     FileExplorerLib:FileExplorer.obj
+ 0002:00000880       FileExplorerVfrBin         0000000000006ba0     FileExplorerLib:FileExplorerVfr.obj
+ 0002:00000980       FileExplorerLibStrings     0000000000006ca0     FileExplorerLib:AutoGen.obj
+ 0002:000011a0       ??_C@_19IKIKPFEM@?$AA?4?$AAc?$AAe?$AAr@ 00000000000074c0     TlsAuthConfigDxe:TlsAuthConfigImpl.obj
+ 0002:000011b0       ??_C@_19IAEPPMFF@?$AA?4?$AAd?$AAe?$AAr@ 00000000000074d0     TlsAuthConfigDxe:TlsAuthConfigImpl.obj
+ 0002:000011c0       ??_C@_19LBDCJILD@?$AA?4?$AAc?$AAr?$AAt@ 00000000000074e0     TlsAuthConfigDxe:TlsAuthConfigImpl.obj
+ 0002:000011d0       ??_C@_19HAMEIEEN@?$AA?4?$AAp?$AAe?$AAm@ 00000000000074f0     TlsAuthConfigDxe:TlsAuthConfigImpl.obj
+ 0002:000011dc       ??_C@_15LPKNAFGD@?$AA?$CF?$AAg@ 00000000000074fc     TlsAuthConfigDxe:TlsAuthConfigImpl.obj
+ 0002:000011e4       ??_C@_13FPGAJAPJ@?$AA?2@   0000000000007504     TlsAuthConfigDxe:TlsAuthConfigImpl.obj
+ 0002:000011e8       ??_C@_1O@LFMAFHMH@?$AAO?$AAF?$AAF?$AAS?$AAE?$AAT@ 0000000000007508     TlsAuthConfigDxe:TlsAuthConfigImpl.obj
+ 0002:000011f8       ??_C@_1DC@EPJEBJEB@?$AA?$CF?$AAs?$AA?$CG?$AAO?$AAF?$AAF?$AAS?$AAE?$AAT?$AA?$DN?$AA0?$AA?$CG?$AAW?$AAI?$AAD@ 0000000000007518     TlsAuthConfigDxe:TlsAuthConfigImpl.obj
+ 0002:00001230       ??_C@_1CC@GDBFHLFD@?$AAT?$AAl?$AAs?$AAC?$AAa?$AAC?$AAe?$AAr?$AAt?$AAi?$AAf?$AAi?$AAc?$AAa?$AAt@ 0000000000007550     TlsAuthConfigDxe:TlsAuthConfigImpl.obj
+ 0002:00001260       mDerPemEncodedSuffix       0000000000007580     TlsAuthConfigDxe:TlsAuthConfigImpl.obj
+ 0002:00001288       ??_C@_0O@MLOLIMFM@?$DMnull?5string?$DO@ 00000000000075a8     BasePrintLib:PrintLibInternal.obj
+ 0002:00001298       ??_C@_0M@BJJDNPHK@?$DMnull?5guid?$DO@ 00000000000075b8     BasePrintLib:PrintLibInternal.obj
+ 0002:000012a8       ??_C@_0DB@PMLHLBMO@?$CF08x?9?$CF04x?9?$CF04x?9?$CF02x?$CF02x?9?$CF02x?$CF02@ 00000000000075c8     BasePrintLib:PrintLibInternal.obj
+ 0002:000012e0       ??_C@_0M@LHGBCIKM@?$DMnull?5time?$DO@ 0000000000007600     BasePrintLib:PrintLibInternal.obj
+ 0002:000012f0       ??_C@_0BK@FCPKCIDD@?$CF02d?1?$CF02d?1?$CF04d?5?5?$CF02d?3?$CF02d@ 0000000000007610     BasePrintLib:PrintLibInternal.obj
+ 0002:0000130c       ??_C@_04JIMNDDED@?$CF08X@  000000000000762c     BasePrintLib:PrintLibInternal.obj
+ 0002:00001314       ??_C@_02PCIJFNDE@?$AN?6@   0000000000007634     BasePrintLib:PrintLibInternal.obj
+ 0002:00001318       ??_C@_01LIIJDEN@?$AN@      0000000000007638     BasePrintLib:PrintLibInternal.obj
+ 0002:00001320       mWarningString             0000000000007640     BasePrintLib:PrintLibInternal.obj
+ 0002:000013c0       mErrorString               00000000000076e0     BasePrintLib:PrintLibInternal.obj
+ 0002:00001680       mHexStr                    00000000000079a0     BasePrintLib:PrintLibInternal.obj
+ 0002:00001690       mUefiDevicePathLibEndDevicePath 00000000000079b0     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:00001694       ??_C@_06PLDEFKP@x?9UEFI@   00000000000079b4     UefiHiiLib:HiiString.obj
+ 0002:000016a0       ??_C@_1BK@GGGENMOA@?$AAP?$AAl?$AAa?$AAt?$AAf?$AAo?$AAr?$AAm?$AAL?$AAa?$AAn?$AAg@ 00000000000079c0     UefiHiiLib:HiiString.obj
+ 0002:000016ba       ??_C@_00CNPNBAHC@@         00000000000079da     UefiHiiLib:HiiString.obj
+ 0002:000016c0       ??_C@_1M@DPLGJLCD@?$AAG?$AAU?$AAI?$AAD?$AA?$DN@ 00000000000079e0     UefiHiiLib:HiiLib.obj
+ 0002:000016d0       ??_C@_1O@FMIENBLJ@?$AA?$CG?$AAN?$AAA?$AAM?$AAE?$AA?$DN@ 00000000000079f0     UefiHiiLib:HiiLib.obj
+ 0002:000016e0       ??_C@_1O@GGMHNGIF@?$AA?$CG?$AAP?$AAA?$AAT?$AAH?$AA?$DN@ 0000000000007a00     UefiHiiLib:HiiLib.obj
+ 0002:000016f0       ??_C@_1M@IDEFLMF@?$AA?$CF?$AAs?$AA?$CG?$AA?$CF?$AAs@ 0000000000007a10     UefiHiiLib:HiiLib.obj
+ 0002:00001700       mConfigHdrTemplate         0000000000007a20     UefiHiiLib:HiiLib.obj
+ 0002:00001770       mEndOfPakageList           0000000000007a90     UefiHiiLib:HiiLib.obj
+ 0002:00001778       ??_C@_1CI@JGIGCDAN@?$AAN?$AAO?$AA?5?$AAF?$AAI?$AAL?$AAE?$AA?5?$AAS?$AAY?$AAS?$AAT?$AAE?$AAM?$AA?5@ 0000000000007a98     FileExplorerLib:FileExplorer.obj
+ 0002:000017a0       ??_C@_1CA@KOPNEOKK@?$AAN?$AAO?$AA?5?$AAV?$AAO?$AAL?$AAU?$AAM?$AAE?$AA?5?$AAL?$AAA?$AAB?$AAE?$AAL@ 0000000000007ac0     FileExplorerLib:FileExplorer.obj
+ 0002:000017c0       ??_C@_1BC@GMOFGFBO@?$AA?$CF?$AAs?$AA?0?$AA?5?$AA?$FL?$AA?$CF?$AAs?$AA?$FN@ 0000000000007ae0     FileExplorerLib:FileExplorer.obj
+ 0002:000017d8       ??_C@_19ECGOGJPA@?$AA?$DM?$AA?$CF?$AAs?$AA?$DO@ 0000000000007af8     FileExplorerLib:FileExplorer.obj
+ 0002:000017f0       ??_C@_0BH@GLCJAKEE@etc?1edk2?1https?1cacerts@ 0000000000007b10     TlsAuthConfigLib:TlsAuthConfigLib.obj
+ 0002:00001810       ??_C@_0BH@OMFHODDD@etc?1edk2?1https?1ciphers@ 0000000000007b30     TlsAuthConfigLib:TlsAuthConfigLib.obj
+ 0002:00001828       ??_C@_1CE@OILMPCKI@?$AAH?$AAt?$AAt?$AAp?$AAT?$AAl?$AAs?$AAC?$AAi?$AAp?$AAh?$AAe?$AAr?$AAL?$AAi@ 0000000000007b48     TlsAuthConfigLib:TlsAuthConfigLib.obj
+ 0002:00001880       mStartLabel                0000000000007ba0     TlsAuthConfigDxe:TlsAuthConfigImpl.obj
+ 0002:00001888       mEndLabel                  0000000000007ba8     TlsAuthConfigDxe:TlsAuthConfigImpl.obj
+ 0002:00001890       mTlsAuthPrivateData        0000000000007bb0     TlsAuthConfigDxe:TlsAuthConfigImpl.obj
+ 0002:00001898       mStartOpCodeHandle         0000000000007bb8     TlsAuthConfigDxe:TlsAuthConfigImpl.obj
+ 0002:000018a0       mEndOpCodeHandle           0000000000007bc0     TlsAuthConfigDxe:TlsAuthConfigImpl.obj
+ 0002:000018a8       gST                        0000000000007bc8     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000018b0       gBS                        0000000000007bd0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000018b8       gImageHandle               0000000000007bd8     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000018c0       mDevicePathLibDevicePathToText 0000000000007be0     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:000018c8       mDevicePathLibDevicePathUtilities 0000000000007be8     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:000018d0       gRT                        0000000000007bf0     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0002:000018d8       gHiiConfigRouting          0000000000007bf8     UefiHiiServicesLib:UefiHiiServicesLib.obj
+ 0002:000018e0       gHiiString                 0000000000007c00     UefiHiiServicesLib:UefiHiiServicesLib.obj
+ 0002:000018e8       gHiiFont                   0000000000007c08     UefiHiiServicesLib:UefiHiiServicesLib.obj
+ 0002:000018f0       gHiiImage                  0000000000007c10     UefiHiiServicesLib:UefiHiiServicesLib.obj
+ 0002:000018f8       gHiiDatabase               0000000000007c18     UefiHiiServicesLib:UefiHiiServicesLib.obj
+ 0002:00001900       mUefiFormBrowser2          0000000000007c20     UefiHiiLib:HiiLib.obj
+ 0002:00001910       mLibEndOpCodeHandle        0000000000007c30     FileExplorerLib:FileExplorer.obj
+ 0002:00001918       mLibStartLabel             0000000000007c38     FileExplorerLib:FileExplorer.obj
+ 0002:00001920       mLibStartOpCodeHandle      0000000000007c40     FileExplorerLib:FileExplorer.obj
+ 0002:00001928       mLibEndLabel               0000000000007c48     FileExplorerLib:FileExplorer.obj
+ 0002:00001930       mPcd                       0000000000007c50     DxePcdLib:DxePcdLib.obj
+ 0002:00001950       mQuestionIdUpdate          0000000000007c70     <common>
+ 0002:00001960       mNewFolderName             0000000000007c80     <common>
+ 0002:00001988       gHiiVendorDevicePath       0000000000007ca8     <common>
+ 0002:000019a0       mNewFileName               0000000000007cc0     <common>
+ 0002:000019c8       __volatile_metadata        0000000000007ce8     <linker-defined>
+
+ entry point at        0001:00000294
+
+ Static symbols
+
+ 0001:0000001a       InternalMemCopyMem.0       000000000000029a     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:0000002a       @CopyBackward              00000000000002aa     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000033       @CopyBytes                 00000000000002b3     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:0000009a       @UseRepIo                  000000000000031a     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:0000009c       @SevNoRepIo_Done           000000000000031c     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000000b4       @IoReadFifo8_NoRep         0000000000000334     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000000b6       @IoReadFifo8_Loop          0000000000000336     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000000be       @IoReadFifo8_Done          000000000000033e     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000000d7       @IoReadFifo16_NoRep        0000000000000357     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000000d9       @IoReadFifo16_Loop         0000000000000359     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000000e4       @IoReadFifo16_Done         0000000000000364     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000000fc       @IoReadFifo32_NoRep        000000000000037c     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000000fe       @IoReadFifo32_Loop         000000000000037e     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000107       @IoReadFifo32_Done         0000000000000387     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:0000011f       @IoWriteFifo8_NoRep        000000000000039f     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000121       @IoWriteFifo8_Loop         00000000000003a1     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000129       @IoWriteFifo8_Done         00000000000003a9     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000142       @IoWriteFifo16_NoRep       00000000000003c2     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000144       @IoWriteFifo16_Loop        00000000000003c4     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:0000014f       @IoWriteFifo16_Done        00000000000003cf     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000167       @IoWriteFifo32_NoRep       00000000000003e7     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000169       @IoWriteFifo32_Loop        00000000000003e9     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000172       @IoWriteFifo32_Done        00000000000003f2     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001c5       @ReturnFalse               0000000000000445     BaseMemoryLibRepStr:IsZeroBuffer.obj
+ 0001:000001df       AsmCpuid.0                 000000000000045f     BaseLib:CpuId.obj
+ 0001:000001e4       AsmCpuid.1                 0000000000000464     BaseLib:CpuId.obj
+ 0001:000001eb       AsmCpuid.2                 000000000000046b     BaseLib:CpuId.obj
+ 0001:000001f4       AsmCpuid.3                 0000000000000474     BaseLib:CpuId.obj
+ 0001:00004604       AllocFwCfgDmaAccessBuffer  0000000000004884 f   QemuFwCfgDxeLib:QemuFwCfgDxe.obj
+ 0001:00005f84       InternalMemEncryptSevStatus 0000000000006204 f   DxeMemEncryptSevLib:DxeMemEncryptSevLibInternal.obj
+ 0002:00001908       mQemuFwCfgSupported        0000000000007c28     QemuFwCfgDxeLib:QemuFwCfgDxe.obj
+ 0002:00001938       mSevStatus                 0000000000007c58     DxeMemEncryptSevLib:DxeMemEncryptSevLibInternal.obj
+ 0002:00001939       mSevStatusChecked          0000000000007c59     DxeMemEncryptSevLib:DxeMemEncryptSevLibInternal.obj
+ 0002:00001940       mRunningOnQ35              0000000000007c60     DxePciLibI440FxQ35:PciLib.obj
+ 0002:00001941       mQemuFwCfgDmaSupported     0000000000007c61     QemuFwCfgDxeLib:QemuFwCfgDxe.obj
+ 0002:00001948       mIoMmuProtocol             0000000000007c68     QemuFwCfgDxeLib:QemuFwCfgDxe.obj
+ 0004:00000000       $unwind$LibCreateMenuEntry 00000000000081c0     FileExplorerLib:FileExplorer.obj
+ 0004:00000000       $unwind$LibGetDevicePath   00000000000081c0     FileExplorerLib:FileExplorer.obj
+ 0004:00000000       $unwind$HiiAllocateOpCodeHandle 00000000000081c0     UefiHiiLib:HiiLib.obj
+ 0004:00000000       $unwind$HiiFreeOpCodeHandle 00000000000081c0     UefiHiiLib:HiiLib.obj
+ 0004:00000000       $unwind$SaveAndDisableInterrupts 00000000000081c0     BaseLib:Cpu.obj
+ 0004:00000000       $unwind$StrCpyS            00000000000081c0     BaseLib:SafeString.obj
+ 0004:00000000       $unwind$PciCf8Read32       00000000000081c0     BasePciCf8Lib:PciCf8Lib.obj
+ 0004:00000000       $unwind$_DriverUnloadHandler 00000000000081c0     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0004:00000000       $unwind$_ModuleEntryPoint  00000000000081c0     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0004:00000000       $unwind$AllocateZeroPool   00000000000081c0     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0004:00000000       $unwind$CleanFileContext   00000000000081c0     TlsAuthConfigDxe:TlsAuthConfigImpl.obj
+ 0004:00000008       $unwind$ProcessLibraryConstructorList 00000000000081c8     TlsAuthConfigDxe:AutoGen.obj
+ 0004:00000014       $unwind$ProcessLibraryDestructorList 00000000000081d4     TlsAuthConfigDxe:AutoGen.obj
+ 0004:0000001c       $unwind$ProcessModuleEntryPointList 00000000000081dc     TlsAuthConfigDxe:AutoGen.obj
+ 0004:0000002c       $unwind$HiiUpdateForm      00000000000081ec     UefiHiiLib:HiiLib.obj
+ 0004:0000002c       $unwind$UpdateDeletePage   00000000000081ec     TlsAuthConfigDxe:TlsAuthConfigImpl.obj
+ 0004:00000044       $unwind$DeleteCert         0000000000008204     TlsAuthConfigDxe:TlsAuthConfigImpl.obj
+ 0004:0000005c       $unwind$LibStrDuplicate    000000000000821c     FileExplorerLib:FileExplorer.obj
+ 0004:0000005c       $unwind$InternalReallocatePool 000000000000821c     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0004:0000005c       $unwind$ExtractFileNameFromDevicePath 000000000000821c     TlsAuthConfigDxe:TlsAuthConfigImpl.obj
+ 0004:00000070       $unwind$EnrollX509toVariable 0000000000008230     TlsAuthConfigDxe:TlsAuthConfigImpl.obj
+ 0004:00000088       $unwind$EnrollCertDatabase 0000000000008248     TlsAuthConfigDxe:TlsAuthConfigImpl.obj
+ 0004:00000090       $unwind$UpdateCAFromFile   0000000000008250     TlsAuthConfigDxe:TlsAuthConfigImpl.obj
+ 0004:000000a0       $unwind$TlsAuthConfigFormUnload 0000000000008260     TlsAuthConfigDxe:TlsAuthConfigImpl.obj
+ 0004:000000a0       $unwind$InternalMemEncryptSevStatus 0000000000008260     DxeMemEncryptSevLib:DxeMemEncryptSevLibInternal.obj
+ 0004:000000a8       $unwind$TlsAuthConfigFormInit 0000000000008268     TlsAuthConfigDxe:TlsAuthConfigImpl.obj
+ 0004:000000b4       $unwind$HiiConstructConfigHdr 0000000000008274     UefiHiiLib:HiiLib.obj
+ 0004:000000b4       $unwind$TlsAuthConfigAccessExtractConfig 0000000000008274     TlsAuthConfigDxe:TlsAuthConfigImpl.obj
+ 0004:000000d0       $unwind$TlsAuthConfigAccessRouteConfig 0000000000008290     TlsAuthConfigDxe:TlsAuthConfigImpl.obj
+ 0004:000000e0       $unwind$TlsAuthConfigAccessCallback 00000000000082a0     TlsAuthConfigDxe:TlsAuthConfigImpl.obj
+ 0004:000000fc       $unwind$GetPcdProtocol     00000000000082bc     DxePcdLib:DxePcdLib.obj
+ 0004:000000fc       $unwind$DevicePathFromHandle 00000000000082bc     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0004:000000fc       $unwind$InternalAllocatePool 00000000000082bc     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0004:000000fc       $unwind$QemuFwCfgReadBytes 00000000000082bc     QemuFwCfgDxeLib:QemuFwCfgLib.obj
+ 0004:00000104       $unwind$LibCallback        00000000000082c4     FileExplorerLib:FileExplorer.obj
+ 0004:00000104       $unwind$LibDestroyMenuEntry 00000000000082c4     FileExplorerLib:FileExplorer.obj
+ 0004:00000104       $unwind$LibFreeMenu        00000000000082c4     FileExplorerLib:FileExplorer.obj
+ 0004:00000104       $unwind$InternalHiiCreateOpCodeExtended 00000000000082c4     UefiHiiLib:HiiLib.obj
+ 0004:00000104       $unwind$InternalHiiGrowOpCodeHandle 00000000000082c4     UefiHiiLib:HiiLib.obj
+ 0004:00000104       $unwind$StrHexToBytes      00000000000082c4     BaseLib:SafeString.obj
+ 0004:00000104       $unwind$InternalAllocateCopyPool 00000000000082c4     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0004:00000110       $unwind$HiiIsConfigHdrMatch 00000000000082d0     UefiHiiLib:HiiLib.obj
+ 0004:00000110       $unwind$InternalHiiCompareSubString 00000000000082d0     UefiHiiLib:HiiLib.obj
+ 0004:00000110       $unwind$StrCatS            00000000000082d0     BaseLib:SafeString.obj
+ 0004:00000120       $unwind$UnicodeSPrint      00000000000082e0     BasePrintLib:PrintLib.obj
+ 0004:00000128       $unwind$BasePrintLibConvertValueToStringS 00000000000082e8     BasePrintLib:PrintLibInternal.obj
+ 0004:00000138       $unwind$BasePrintLibSPrintMarker 00000000000082f8     BasePrintLib:PrintLibInternal.obj
+ 0004:00000154       $unwind$BasePrintLibSPrint 0000000000008314     BasePrintLib:PrintLibInternal.obj
+ 0004:0000015c       $unwind$FileDevicePath     000000000000831c     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0004:00000174       $unwind$UefiDevicePathLibLocateProtocol 0000000000008334     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0004:0000017c       $unwind$GetEfiGlobalVariable2 000000000000833c     UefiLib:UefiLib.obj
+ 0004:00000188       $unwind$GetBestLanguage    0000000000008348     UefiLib:UefiLib.obj
+ 0004:00000198       $unwind$EfiOpenFileByDevicePath 0000000000008358     UefiLib:UefiLib.obj
+ 0004:000001ac       $unwind$HiiSetString       000000000000836c     UefiHiiLib:HiiString.obj
+ 0004:000001c8       $unwind$HiiGetString       0000000000008388     UefiHiiLib:HiiString.obj
+ 0004:000001dc       $unwind$HiiAddPackages     000000000000839c     UefiHiiLib:HiiLib.obj
+ 0004:000001f0       $unwind$InternalHiiBrowserCallback 00000000000083b0     UefiHiiLib:HiiLib.obj
+ 0004:00000204       $unwind$HiiGetBrowserData  00000000000083c4     UefiHiiLib:HiiLib.obj
+ 0004:00000218       $unwind$HiiSetBrowserData  00000000000083d8     UefiHiiLib:HiiLib.obj
+ 0004:0000022c       $unwind$HiiCreateGuidOpCode 00000000000083ec     UefiHiiLib:HiiLib.obj
+ 0004:00000234       $unwind$HiiCreateGotoOpCode 00000000000083f4     UefiHiiLib:HiiLib.obj
+ 0004:00000248       $unwind$InternalHiiUpdateFormPackageData 0000000000008408     UefiHiiLib:HiiLib.obj
+ 0004:00000260       $unwind$HiiGetSupportedLanguages 0000000000008420     UefiHiiLib:HiiLanguage.obj
+ 0004:00000270       $unwind$AllocFwCfgDmaAccessBuffer 0000000000008430     QemuFwCfgDxeLib:QemuFwCfgDxe.obj
+ 0004:00000280       $unwind$InternalQemuFwCfgDmaBytes 0000000000008440     QemuFwCfgDxeLib:QemuFwCfgDxe.obj
+ 0004:00000294       $unwind$QemuFwCfgFindFile  0000000000008454     QemuFwCfgDxeLib:QemuFwCfgLib.obj
+ 0004:000002ac       $unwind$LibAppendFileName  000000000000846c     FileExplorerLib:FileExplorer.obj
+ 0004:000002c8       $unwind$LibFindFileSystem  0000000000008488     FileExplorerLib:FileExplorer.obj
+ 0004:000002dc       $unwind$LibGetFileHandleFromDevicePath 000000000000849c     FileExplorerLib:FileExplorer.obj
+ 0004:000002f4       $unwind$LibCreateNewFile   00000000000084b4     FileExplorerLib:FileExplorer.obj
+ 0004:00000304       $unwind$LibFindFiles       00000000000084c4     FileExplorerLib:FileExplorer.obj
+ 0004:0000031c       $unwind$LibUpdateFileExplorePage 00000000000084dc     FileExplorerLib:FileExplorer.obj
+ 0004:00000338       $unwind$LibUpdateFileExplorer 00000000000084f8     FileExplorerLib:FileExplorer.obj
+ 0004:0000034c       $unwind$ChooseFile         000000000000850c     FileExplorerLib:FileExplorer.obj
+ 0004:0000035c       $unwind$TlsAuthConfigInit  000000000000851c     TlsAuthConfigLib:TlsAuthConfigLib.obj

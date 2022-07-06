@@ -1,0 +1,262 @@
+ AmdSevDxe
+
+ Timestamp is 62b57327 (Fri Jun 24 16:17:43 2022)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 000001c4H .text                   CODE
+ 0001:000001c4 00002981H .text$mn                CODE
+ 0002:00000000 00001404H .rdata                  DATA
+ 0002:00001404 00000028H .rdata$voltmd           DATA
+ 0002:0000142c 00000130H .rdata$zzzdbg           DATA
+ 0003:00000000 00000068H .data                   DATA
+ 0003:00000068 00000068H .bss                    DATA
+ 0004:00000000 00000180H .pdata                  DATA
+ 0005:00000000 00000160H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __x64_code_ranges_to_entry_points_count 0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata 0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_count         0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_table          0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table   0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_count          0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map_count    0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_count      0000000000000000     <absolute>
+ 0000:00000000       __dynamic_value_reloc_table 0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_table      0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat     0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map          0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat_copy 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table_size 0000000000000000     <absolute>
+ 0000:00000000       __AbsoluteZero             0000000000000000     <absolute>
+ 0000:00000000       __guard_check_icall_a64n_fptr 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_native_entrypoint 0000000000000000     <absolute>
+ 0000:00000000       __guard_flags              0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_count      0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_table         0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_table      0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata_count 0000000000000000     <absolute>
+ 0000:00000000       __enclave_config           0000000000000000     <absolute>
+ 0001:00000000       InternalMemZeroMem         0000000000000280     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00000020       InternalMemCopyMem         00000000000002a0     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000060       InternalMemSetMem          00000000000002e0     BaseMemoryLibRepStr:SetMem.obj
+ 0001:00000080       InternalMemSetMem64        0000000000000300     BaseMemoryLibRepStr:SetMem64.obj
+ 0001:000000a0       InternalMemSetMem32        0000000000000320     BaseMemoryLibRepStr:SetMem32.obj
+ 0001:000000c0       AsmCpuid                   0000000000000340     BaseLib:CpuId.obj
+ 0001:000000f0       AsmReadCr0                 0000000000000370     BaseLib:ReadCr0.obj
+ 0001:00000100       AsmReadCr3                 0000000000000380     BaseLib:ReadCr3.obj
+ 0001:00000110       AsmWriteCr0                0000000000000390     BaseLib:WriteCr0.obj
+ 0001:00000120       AsmVmgExit                 00000000000003a0     BaseLib:VmgExit.obj
+ 0001:00000130       AsmPvalidate               00000000000003b0     BaseLib:Pvalidate.obj
+ 0001:00000150       CpuPause                   00000000000003d0     BaseLib:CpuPause.obj
+ 0001:00000160       CpuFlushTlb                00000000000003e0     BaseCpuLib:CpuFlushTlb.obj
+ 0001:00000170       EnableInterrupts           00000000000003f0     BaseLib:EnableInterrupts.obj
+ 0001:00000180       DisableInterrupts          0000000000000400     BaseLib:DisableInterrupts.obj
+ 0001:00000190       AsmWbinvd                  0000000000000410     BaseLib:Wbinvd.obj
+ 0001:000001a0       AsmFlushCacheLine          0000000000000420     BaseLib:FlushCacheLine.obj
+ 0001:000001b0       AsmInvd                    0000000000000430     BaseLib:Invd.obj
+ 0001:000001c0       AsmReadEflags              0000000000000440     BaseLib:ReadEflags.obj
+ 0001:000001c4       _ModuleEntryPoint          0000000000000444 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:000001d8       ProcessLibraryConstructorList 0000000000000458 f   AmdSevDxe:AutoGen.obj
+ 0001:000004fc       AmdSevDxeEntryPoint        000000000000077c f   AmdSevDxe:AmdSevDxe.obj
+ 0001:000006b0       GetPcdProtocol             0000000000000930 f   DxePcdLib:DxePcdLib.obj
+ 0001:0000073c       InternalAllocateAlignedPages 00000000000009bc f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:0000084c       FreePool                   0000000000000acc f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00000930       InternalGetMemEncryptionAddressMask 0000000000000bb0 f   DxeMemEncryptSevLib:PeiDxeVirtualMemory.obj
+ 0001:000011d4       SnpPageStateFailureTerminate 0000000000001454 f   DxeMemEncryptSevLib:SnpPageStateChangeInternal.obj
+ 0001:00001334       InternalSetPageState       00000000000015b4 f   DxeMemEncryptSevLib:SnpPageStateChangeInternal.obj
+ 0001:00001664       SetMem                     00000000000018e4 f   BaseMemoryLibRepStr:SetMemWrapper.obj
+ 0001:000016b4       RShiftU64                  0000000000001934 f   BaseLib:RShiftU64.obj
+ 0001:000016f8       DebugPrint                 0000000000001978 f   BaseDebugLibSerialPort:DebugLib.obj
+ 0001:0000171c       DebugPrintMarker           000000000000199c f   BaseDebugLibSerialPort:DebugLib.obj
+ 0001:000017cc       DebugAssert                0000000000001a4c f   BaseDebugLibSerialPort:DebugLib.obj
+ 0001:00001844       IoRead32                   0000000000001ac4 f   BaseIoLibIntrinsicSev:IoLibMsc.obj
+ 0001:00001878       WriteBackInvalidateDataCacheRange 0000000000001af8 f   BaseCacheMaintenanceLib:X86Cache.obj
+ 0001:00001930       CompareGuid                0000000000001bb0 f   BaseMemoryLibRepStr:MemLibGuid.obj
+ 0001:000019c4       AsciiStrLen                0000000000001c44 f   BaseLib:String.obj
+ 0001:00001a30       StrnLenS                   0000000000001cb0 f   BaseLib:SafeString.obj
+ 0001:00001a88       AsciiSPrint                0000000000001d08 f   BasePrintLib:PrintLib.obj
+ 0001:00001ab4       BasePrintLibFillBuffer     0000000000001d34 f   BasePrintLib:PrintLibInternal.obj
+ 0001:00001ae8       BasePrintLibValueToString  0000000000001d68 f   BasePrintLib:PrintLibInternal.obj
+ 0001:00001b54       BasePrintLibSPrintMarker   0000000000001dd4 f   BasePrintLib:PrintLibInternal.obj
+ 0001:00002a60       BasePrintLibSPrint         0000000000002ce0 f   BasePrintLib:PrintLibInternal.obj
+ 0001:00002a84       PciCf8Read32               0000000000002d04 f   BasePciCf8Lib:PciCf8Lib.obj
+ 0001:00002b24       SaveAndDisableInterrupts   0000000000002da4 f   BaseLib:Cpu.obj
+ 0002:00000000       ??_C@_0CB@DMEJJJHA@?6ASSERT_EFI_ERROR?5?$CIStatus?5?$DN?5?$CFr?$CJ@ 0000000000002de0     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0002:00000028       ??_C@_0CH@BBNBJKHK@?$CB?$CI?$CI?$CIINTN?$CJ?$CIRETURN_STATUS?$CJ?$CIStatus@ 0000000000002e08     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0002:00000050       ??_C@_09POAICCGJ@AmdSevDxe@ 0000000000002e30     AmdSevDxe:AutoGen.obj
+ 0002:00000060       ??_C@_0CE@IBFOBMLB@?6ASSERT_RETURN_ERROR?5?$CIStatus?5?$DN?5@ 0000000000002e40     AmdSevDxe:AutoGen.obj
+ 0002:00000090       ??_C@_0FI@NMCDAFFF@d?3?2edk2?2edk2?2Build?2OvmfX64?2DEBU@ 0000000000002e70     AmdSevDxe:AutoGen.obj
+ 0002:000000e8       ??_C@_0CL@PNNBOBOK@d?3?2edk2?2edk2?2OvmfPkg?2AmdSevDxe?2@ 0000000000002ec8     AmdSevDxe:AmdSevDxe.obj
+ 0002:00000118       ??_C@_0BC@FEDIJHFF@?$CI?$CIBOOLEAN?$CJ?$CI0?$DN?$DN1?$CJ?$CJ@ 0000000000002ef8     AmdSevDxe:AmdSevDxe.obj
+ 0002:00000130       ??_C@_0DC@FABBJIGJ@d?3?2edk2?2edk2?2MdePkg?2Library?2Dxe@ 0000000000002f10     DxePcdLib:DxePcdLib.obj
+ 0002:00000168       ??_C@_0BF@OOKDELHM@mPcd?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000002f48     DxePcdLib:DxePcdLib.obj
+ 0002:00000180       ??_C@_0BH@IACGKAP@Buffer?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000002f60     DxePcdLib:DxePcdLib.obj
+ 0002:000001a0       ??_C@_0EK@GCCICMAJ@d?3?2edk2?2edk2?2MdePkg?2Library?2Uef@ 0000000000002f80     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0002:000001f0       ??_C@_0BO@CDABGLIP@ERROR?3?5Out?5of?5aligned?5pages?$AN?6@ 0000000000002fd0     DxeMemEncryptSevLib:PeiDxeVirtualMemory.obj
+ 0002:00000210       ??_C@_0BI@ELPJHLDG@AllocatePageTableMemory@ 0000000000002ff0     DxeMemEncryptSevLib:PeiDxeVirtualMemory.obj
+ 0002:00000228       ??_C@_0BP@HBBDJMHC@?$CFa?3?$CFa?3?5Buffer?$DN0x?$CFLx?5Pages?$DN?$CFld?6@ 0000000000003008     DxeMemEncryptSevLib:PeiDxeVirtualMemory.obj
+ 0002:00000248       ??_C@_0BP@OKEOING@PageTableEntry?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000003028     DxeMemEncryptSevLib:PeiDxeVirtualMemory.obj
+ 0002:00000270       ??_C@_0EM@GPDCBOHC@d?3?2edk2?2edk2?2OvmfPkg?2Library?2Ba@ 0000000000003050     DxeMemEncryptSevLib:PeiDxeVirtualMemory.obj
+ 0002:000002c0       ??_C@_0BO@OLEBOBOB@?$CKPageEntry2M?5?$CG?5AddressEncMask@ 00000000000030a0     DxeMemEncryptSevLib:PeiDxeVirtualMemory.obj
+ 0002:000002e0       ??_C@_0BD@CAEJJLJJ@PageTableBase?5?$CB?$DN?50@ 00000000000030c0     DxeMemEncryptSevLib:PeiDxeVirtualMemory.obj
+ 0002:000002f8       ??_C@_0CD@FNMLGMNP@Index?5?$DM?50x00001000?1sizeof?5?$CIUINT@ 00000000000030d8     DxeMemEncryptSevLib:PeiDxeVirtualMemory.obj
+ 0002:00000320       ??_C@_09GNKFGBPM@Level?5?$DO?51@ 0000000000003100     DxeMemEncryptSevLib:PeiDxeVirtualMemory.obj
+ 0002:00000330       ??_C@_0BN@CIONDDJ@NewPageTable?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000003110     DxeMemEncryptSevLib:PeiDxeVirtualMemory.obj
+ 0002:00000350       ??_C@_0CD@KMCGCGEO@PageDirectoryEntry?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ@ 0000000000003130     DxeMemEncryptSevLib:PeiDxeVirtualMemory.obj
+ 0002:00000378       ??_C@_0BO@DJPNLHFP@?$CKPageEntry1G?5?$CG?5AddressEncMask@ 0000000000003158     DxeMemEncryptSevLib:PeiDxeVirtualMemory.obj
+ 0002:00000398       ??_C@_0CE@HOIHAIIB@?$CFa?3?$CFa?3?5bad?5PML4?5for?5Physical?$DN0x@ 0000000000003178     DxeMemEncryptSevLib:PeiDxeVirtualMemory.obj
+ 0002:000003c0       ??_C@_07OKGDHKCM@Decrypt@  00000000000031a0     DxeMemEncryptSevLib:PeiDxeVirtualMemory.obj
+ 0002:000003c8       ??_C@_0BA@CPMMHEB@SetMemoryEncDec@ 00000000000031a8     DxeMemEncryptSevLib:PeiDxeVirtualMemory.obj
+ 0002:000003e0       ??_C@_0FA@OKAAHGNJ@?$CFa?3?$CFa?3?5Cr3Base?$DN0x?$CFLx?5Physical?$DN0@ 00000000000031c0     DxeMemEncryptSevLib:PeiDxeVirtualMemory.obj
+ 0002:00000430       ??_C@_0CE@NADGKKGE@?$CFa?3?$CFa?3?5bad?5PDPE?5for?5Physical?$DN0x@ 0000000000003210     DxeMemEncryptSevLib:PeiDxeVirtualMemory.obj
+ 0002:00000458       ??_C@_0CN@IAPIMOJH@?$CFa?3?$CFa?3?5updated?51GB?5entry?5for?5Ph@ 0000000000003238     DxeMemEncryptSevLib:PeiDxeVirtualMemory.obj
+ 0002:00000488       ??_C@_0CO@PHABIDCB@?$CFa?3?$CFa?3?5splitting?51GB?5page?5for?5P@ 0000000000003268     DxeMemEncryptSevLib:PeiDxeVirtualMemory.obj
+ 0002:000004b8       ??_C@_0CD@NJKAIHIH@?$CFa?3?$CFa?3?5bad?5PDE?5for?5Physical?$DN0x?$CF@ 0000000000003298     DxeMemEncryptSevLib:PeiDxeVirtualMemory.obj
+ 0002:000004e0       ??_C@_0CO@FMMNPKJP@?$CFa?3?$CFa?3?5splitting?52MB?5page?5for?5P@ 00000000000032c0     DxeMemEncryptSevLib:PeiDxeVirtualMemory.obj
+ 0002:00000510       ??_C@_0CD@NINCABML@?$CFa?3?$CFa?3?5bad?5PTE?5for?5Physical?$DN0x?$CF@ 00000000000032f0     DxeMemEncryptSevLib:PeiDxeVirtualMemory.obj
+ 0002:00000534       ??_C@_01GBGANLPD@0@        0000000000003314     DxeMemEncryptSevLib:SnpPageStateChangeInternal.obj
+ 0002:00000540       ??_C@_0FD@FPNPNDIJ@d?3?2edk2?2edk2?2OvmfPkg?2Library?2Ba@ 0000000000003320     DxeMemEncryptSevLib:SnpPageStateChangeInternal.obj
+ 0002:00000598       ??_C@_08MDEIBFAO@Validate@ 0000000000003378     DxeMemEncryptSevLib:SnpPageStateChangeInternal.obj
+ 0002:000005a8       ??_C@_0L@KOBMCBEG@Invalidate@ 0000000000003388     DxeMemEncryptSevLib:SnpPageStateChangeInternal.obj
+ 0002:000005b8       ??_C@_0P@GIMDJCIF@PvalidateRange@ 0000000000003398     DxeMemEncryptSevLib:SnpPageStateChangeInternal.obj
+ 0002:000005c8       ??_C@_0DB@KKFDNHPJ@?$CFa?3?$CFa?3?5Failed?5to?5?$CFa?5address?50x?$CF@ 00000000000033a8     DxeMemEncryptSevLib:SnpPageStateChangeInternal.obj
+ 0002:000005fc       ??_C@_06LOOAMPBO@Shared@   00000000000033dc     DxeMemEncryptSevLib:SnpPageStateChangeInternal.obj
+ 0002:00000608       ??_C@_07CFINJGKH@Private@  00000000000033e8     DxeMemEncryptSevLib:SnpPageStateChangeInternal.obj
+ 0002:00000610       ??_C@_0BF@FFLJKNCE@InternalSetPageState@ 00000000000033f0     DxeMemEncryptSevLib:SnpPageStateChangeInternal.obj
+ 0002:00000628       ??_C@_0DI@BPIDEDLF@?$CFa?3?$CFa?5Address?50x?$CFLx?5?9?50x?$CFLx?5Sta@ 0000000000003408     DxeMemEncryptSevLib:SnpPageStateChangeInternal.obj
+ 0002:00000660       ??_C@_0DI@DAGDPLPG@?$CILength?5?9?51?$CJ?5?$DM?$DN?5?$CI0xFFFFFFFFFFFF@ 0000000000003440     BaseMemoryLibRepStr:SetMemWrapper.obj
+ 0002:000006a0       ??_C@_0EA@JBMLOGBO@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 0000000000003480     BaseMemoryLibRepStr:SetMemWrapper.obj
+ 0002:000006e0       ??_C@_0L@MEMPDLHB@Count?5?$DM?564@ 00000000000034c0     BaseLib:RShiftU64.obj
+ 0002:000006f0       ??_C@_0DA@GHMPIEKF@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 00000000000034d0     BaseLib:RShiftU64.obj
+ 0002:00000720       ??_C@_0BH@LKMBFCBF@Format?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000003500     BaseDebugLibSerialPort:DebugLib.obj
+ 0002:00000738       ??_C@_0DO@CKBIDOOL@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 0000000000003518     BaseDebugLibSerialPort:DebugLib.obj
+ 0002:00000778       ??_C@_0BI@NOCKJDBJ@ASSERT?5?$FL?$CFa?$FN?5?$CFa?$CI?$CFd?$CJ?3?5?$CFa?6@ 0000000000003558     BaseDebugLibSerialPort:DebugLib.obj
+ 0002:00000790       ??_C@_0BN@COECPDCC@gImageHandle?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000003570     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000007b0       ??_C@_0FA@FOIHGFBE@d?3?2edk2?2edk2?2MdePkg?2Library?2Uef@ 0000000000003590     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000800       ??_C@_0BE@DGNHAHIL@gST?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000035e0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000818       ??_C@_0BE@BDFJLGLN@gBS?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000035f8     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000830       ??_C@_0BI@HAGPDMHJ@AcpiTimerLibConstructor@ 0000000000003610     DxeAcpiTimerLib:DxeAcpiTimerLib.obj
+ 0002:00000848       ??_C@_0CL@DGCOIACG@?$CFa?3?5Unknown?5Host?5Bridge?5Device?5@ 0000000000003628     DxeAcpiTimerLib:DxeAcpiTimerLib.obj
+ 0002:00000878       ??_C@_0DM@NIEBGAOD@d?3?2edk2?2edk2?2OvmfPkg?2Library?2Ac@ 0000000000003658     DxeAcpiTimerLib:DxeAcpiTimerLib.obj
+ 0002:000008b8       ??_C@_0BE@OBDFIHND@gRT?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000003698     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0002:000008d0       ??_C@_0FG@JGJCMPKB@d?3?2edk2?2edk2?2MdePkg?2Library?2Uef@ 00000000000036b0     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0002:00000930       ??_C@_0FE@ELFDCAAP@d?3?2edk2?2edk2?2MdePkg?2Library?2Uef@ 0000000000003710     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:00000988       ??_C@_0DC@CNNBPJA@mDevicePathLibDevicePathUtiliti@ 0000000000003768     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:000009c0       ??_C@_0EG@LCOBMMJG@d?3?2edk2?2edk2?2MdePkg?2Library?2Dxe@ 00000000000037a0     DxeServicesTableLib:DxeServicesTableLib.obj
+ 0002:00000a08       ??_C@_0BE@IOIFLNKO@gDS?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000037e8     DxeServicesTableLib:DxeServicesTableLib.obj
+ 0002:00000a20       ??_C@_0DK@HAPDFBOC@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 0000000000003800     BaseIoLibIntrinsicSev:IoLibMsc.obj
+ 0002:00000a60       ??_C@_0BA@HCECIDGN@?$CIPort?5?$CG?53?$CJ?5?$DN?$DN?50@ 0000000000003840     BaseIoLibIntrinsicSev:IoLibMsc.obj
+ 0002:00000a70       ??_C@_0EN@HLCGLLBG@?$CIExitInfo?4Elements?4Lower32Bits?5@ 0000000000003850     VmgExitLib:VmgExitLib.obj
+ 0002:00000ac0       ??_C@_0DF@CCJOHDAG@d?3?2edk2?2edk2?2OvmfPkg?2Library?2Vm@ 00000000000038a0     VmgExitLib:VmgExitLib.obj
+ 0002:00000af8       ??_C@_0CA@KLMDHBCA@Ghcb?9?$DOSaveArea?4SwExitInfo2?5?$CB?$DN?50@ 00000000000038d8     VmgExitLib:VmgExitLib.obj
+ 0002:00000b18       ??_C@_0DJ@EPHLDLOO@?$CILength?5?9?51?$CJ?5?$DM?$DN?5?$CI0xFFFFFFFFFFFF@ 00000000000038f8     BaseCacheMaintenanceLib:X86Cache.obj
+ 0002:00000b58       ??_C@_0DP@JBOCKDIN@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 0000000000003938     BaseCacheMaintenanceLib:X86Cache.obj
+ 0002:00000b98       ??_C@_0BH@MAAHKCPC@String?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000003978     BaseLib:String.obj
+ 0002:00000bb0       ??_C@_0CN@LHBFELAO@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 0000000000003990     BaseLib:String.obj
+ 0002:00000be0       ??_C@_0CC@GFNLNIOC@?$CI?$CIUINTN?$CJString?5?$CG?50x00000001?$CJ?5?$DN?$DN@ 00000000000039c0     BaseLib:String.obj
+ 0002:00000c08       ??_C@_0DI@MDIKFADO@Length?5?$DM?5_gPcd_FixedAtBuild_Pcd@ 00000000000039e8     BaseLib:String.obj
+ 0002:00000c40       ??_C@_0DA@BDDONMJM@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 0000000000003a20     BaseLib:Unaligned.obj
+ 0002:00000c70       ??_C@_0DB@PKFMPMPC@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 0000000000003a50     BaseLib:SafeString.obj
+ 0002:00000ca8       ??_C@_0BJ@CNKJJNE@?$CIBuffer?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ@ 0000000000003a88     BaseLib:SafeString.obj
+ 0002:00000cc8       ??_C@_0N@KGHEHMDL@Divisor?5?$CB?$DN?50@ 0000000000003aa8     BaseLib:DivU64x32.obj
+ 0002:00000cd8       ??_C@_0DM@OAJIKNNG@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 0000000000003ab8     BasePrintLib:PrintLibInternal.obj
+ 0002:00000d20       ??_C@_0EB@HDGIDCIO@?$CIBufferSize?5?$DM?$DN?5?$CI_gPcd_FixedAtBu@ 0000000000003b00     BasePrintLib:PrintLibInternal.obj
+ 0002:00000d68       ??_C@_0BJ@PPAKKDJG@?$CIFormat?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ@ 0000000000003b48     BasePrintLib:PrintLibInternal.obj
+ 0002:00000d90       ??_C@_0ED@LPDDCECB@?$CIBufferSize?5?$DM?$DN?5?$CI_gPcd_FixedAtBu@ 0000000000003b70     BasePrintLib:PrintLibInternal.obj
+ 0002:00000de0       ??_C@_0IM@BFJJFLGB@?$CIStrnLenS?5?$CI?$CICHAR16?5?$CK?$CJFormat?0?5?$CI_@ 0000000000003bc0     BasePrintLib:PrintLibInternal.obj
+ 0002:00000e70       ??_C@_0ID@PLGJGION@?$CIAsciiStrnLenS?5?$CIFormat?0?5?$CI_gPcd_@ 0000000000003c50     BasePrintLib:PrintLibInternal.obj
+ 0002:00000ef8       ??_C@_0O@MLOLIMFM@?$DMnull?5string?$DO@ 0000000000003cd8     BasePrintLib:PrintLibInternal.obj
+ 0002:00000f08       ??_C@_0M@BJJDNPHK@?$DMnull?5guid?$DO@ 0000000000003ce8     BasePrintLib:PrintLibInternal.obj
+ 0002:00000f18       ??_C@_0DB@PMLHLBMO@?$CF08x?9?$CF04x?9?$CF04x?9?$CF02x?$CF02x?9?$CF02x?$CF02@ 0000000000003cf8     BasePrintLib:PrintLibInternal.obj
+ 0002:00000f50       ??_C@_0M@LHGBCIKM@?$DMnull?5time?$DO@ 0000000000003d30     BasePrintLib:PrintLibInternal.obj
+ 0002:00000f60       ??_C@_0BK@FCPKCIDD@?$CF02d?1?$CF02d?1?$CF04d?5?5?$CF02d?3?$CF02d@ 0000000000003d40     BasePrintLib:PrintLibInternal.obj
+ 0002:00000f7c       ??_C@_04JIMNDDED@?$CF08X@  0000000000003d5c     BasePrintLib:PrintLibInternal.obj
+ 0002:00000f84       ??_C@_02PCIJFNDE@?$AN?6@   0000000000003d64     BasePrintLib:PrintLibInternal.obj
+ 0002:00000f88       ??_C@_01LIIJDEN@?$AN@      0000000000003d68     BasePrintLib:PrintLibInternal.obj
+ 0002:00000f90       mWarningString             0000000000003d70     BasePrintLib:PrintLibInternal.obj
+ 0002:00001030       mErrorString               0000000000003e10     BasePrintLib:PrintLibInternal.obj
+ 0002:000012f0       mHexStr                    00000000000040d0     BasePrintLib:PrintLibInternal.obj
+ 0002:00001300       ??_C@_0DJ@FHIMIJAH@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 00000000000040e0     BaseLib:DivU64x32Remainder.obj
+ 0002:00001340       ??_C@_0DG@KOAEBPEO@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 0000000000004120     BasePciCf8Lib:PciCf8Lib.obj
+ 0002:00001378       ??_C@_0CG@EDKLCMBO@?$CI?$CIAddress?$CJ?5?$CG?5?$CI?$HO0xffff0ff?5?$HM?5?$CI3?$CJ?$CJ@ 0000000000004158     BasePciCf8Lib:PciCf8Lib.obj
+ 0002:000013a0       __xmm@000fffffc0000000000fffffc0000000 0000000000004180     DxeMemEncryptSevLib:PeiDxeVirtualMemory.obj
+ 0002:00001404       __volatile_metadata        00000000000041e4     <linker-defined>
+ 0003:00000000       gPcdProtocolGuid           0000000000004340     AmdSevDxe:AutoGen.obj
+ 0003:00000010       gEfiDevicePathUtilitiesProtocolGuid 0000000000004350     AmdSevDxe:AutoGen.obj
+ 0003:00000020       gConfidentialComputingSevSnpBlobGuid 0000000000004360     AmdSevDxe:AutoGen.obj
+ 0003:00000030       gEfiDxeServicesTableGuid   0000000000004370     AmdSevDxe:AutoGen.obj
+ 0003:00000068       mPcd                       00000000000043a8     DxePcdLib:DxePcdLib.obj
+ 0003:00000090       gST                        00000000000043d0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0003:00000098       gBS                        00000000000043d8     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0003:000000a0       gImageHandle               00000000000043e0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0003:000000a8       gRT                        00000000000043e8     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0003:000000b0       mDevicePathLibDevicePathUtilities 00000000000043f0     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0003:000000b8       gDS                        00000000000043f8     DxeServicesTableLib:DxeServicesTableLib.obj
+ 0003:000000c0       gParity                    0000000000004400     PcAtSerialPortLib:SerialPortLib.obj
+ 0003:000000c1       gBreakSet                  0000000000004401     PcAtSerialPortLib:SerialPortLib.obj
+
+ entry point at        0001:000001c4
+
+ Static symbols
+
+ 0001:0000003a       InternalMemCopyMem.0       00000000000002ba     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:0000004a       @CopyBackward              00000000000002ca     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000053       @CopyBytes                 00000000000002d3     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:000000cf       AsmCpuid.0                 000000000000034f     BaseLib:CpuId.obj
+ 0001:000000d4       AsmCpuid.1                 0000000000000354     BaseLib:CpuId.obj
+ 0001:000000db       AsmCpuid.2                 000000000000035b     BaseLib:CpuId.obj
+ 0001:000000e4       AsmCpuid.3                 0000000000000364     BaseLib:CpuId.obj
+ 0001:0000014a       PvalidateExit              00000000000003ca     BaseLib:Pvalidate.obj
+ 0001:00000890       InternalMemEncryptSevStatus 0000000000000b10 f   DxeMemEncryptSevLib:DxeMemEncryptSevLibInternal.obj
+ 0001:00000994       AllocatePageTableMemory    0000000000000c14 f   DxeMemEncryptSevLib:PeiDxeVirtualMemory.obj
+ 0001:00000a58       Split2MPageTo4K            0000000000000cd8 f   DxeMemEncryptSevLib:PeiDxeVirtualMemory.obj
+ 0001:00000b0c       SetPageTablePoolReadOnly   0000000000000d8c f   DxeMemEncryptSevLib:PeiDxeVirtualMemory.obj
+ 0001:00000d24       Split1GPageTo2M            0000000000000fa4 f   DxeMemEncryptSevLib:PeiDxeVirtualMemory.obj
+ 0001:00000dd4       SetMemoryEncDec            0000000000001054 f   DxeMemEncryptSevLib:PeiDxeVirtualMemory.obj
+ 0001:0000122c       PvalidateRange             00000000000014ac f   DxeMemEncryptSevLib:SnpPageStateChangeInternal.obj
+ 0003:00000040       mSnpBootDxeTable           0000000000004380     AmdSevDxe:AmdSevDxe.obj
+ 0003:00000070       mSevEncryptionMaskSaved    00000000000043b0     DxeMemEncryptSevLib:DxeMemEncryptSevLibInternal.obj
+ 0003:00000071       mSevStatus                 00000000000043b1     DxeMemEncryptSevLib:DxeMemEncryptSevLibInternal.obj
+ 0003:00000078       mSevEncryptionMask         00000000000043b8     DxeMemEncryptSevLib:DxeMemEncryptSevLibInternal.obj
+ 0003:00000080       mSevStatusChecked          00000000000043c0     DxeMemEncryptSevLib:DxeMemEncryptSevLibInternal.obj
+ 0003:00000081       mSevSnpStatus              00000000000043c1     DxeMemEncryptSevLib:DxeMemEncryptSevLibInternal.obj
+ 0003:00000082       mAddressEncMaskChecked     00000000000043c2     DxeMemEncryptSevLib:PeiDxeVirtualMemory.obj
+ 0003:00000088       mPageTablePool             00000000000043c8     DxeMemEncryptSevLib:PeiDxeVirtualMemory.obj
+ 0003:000000c8       mAddressEncMask            0000000000004408     DxeMemEncryptSevLib:PeiDxeVirtualMemory.obj
+ 0005:00000000       $unwind$GetPcdProtocol     00000000000045a0     DxePcdLib:DxePcdLib.obj
+ 0005:00000000       $unwind$_ModuleEntryPoint  00000000000045a0     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0005:00000000       $unwind$FreePool           00000000000045a0     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0005:00000000       $unwind$InternalGetMemEncryptionAddressMask 00000000000045a0     DxeMemEncryptSevLib:PeiDxeVirtualMemory.obj
+ 0005:00000000       $unwind$SnpPageStateFailureTerminate 00000000000045a0     DxeMemEncryptSevLib:SnpPageStateChangeInternal.obj
+ 0005:00000008       $unwind$ProcessLibraryConstructorList 00000000000045a8     AmdSevDxe:AutoGen.obj
+ 0005:00000020       $unwind$AmdSevDxeEntryPoint 00000000000045c0     AmdSevDxe:AmdSevDxe.obj
+ 0005:00000030       $unwind$InternalAllocateAlignedPages 00000000000045d0     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0005:00000040       $unwind$InternalMemEncryptSevStatus 00000000000045e0     DxeMemEncryptSevLib:DxeMemEncryptSevLibInternal.obj
+ 0005:00000040       $unwind$AllocatePageTableMemory 00000000000045e0     DxeMemEncryptSevLib:PeiDxeVirtualMemory.obj
+ 0005:00000048       $unwind$CompareGuid        00000000000045e8     BaseMemoryLibRepStr:MemLibGuid.obj
+ 0005:00000048       $unwind$Split2MPageTo4K    00000000000045e8     DxeMemEncryptSevLib:PeiDxeVirtualMemory.obj
+ 0005:00000060       $unwind$SetPageTablePoolReadOnly 0000000000004600     DxeMemEncryptSevLib:PeiDxeVirtualMemory.obj
+ 0005:0000007c       $unwind$Split1GPageTo2M    000000000000461c     DxeMemEncryptSevLib:PeiDxeVirtualMemory.obj
+ 0005:00000090       $unwind$SetMemoryEncDec    0000000000004630     DxeMemEncryptSevLib:PeiDxeVirtualMemory.obj
+ 0005:000000ac       $unwind$PvalidateRange     000000000000464c     DxeMemEncryptSevLib:SnpPageStateChangeInternal.obj
+ 0005:000000c4       $unwind$InternalSetPageState 0000000000004664     DxeMemEncryptSevLib:SnpPageStateChangeInternal.obj
+ 0005:000000dc       $unwind$RShiftU64          000000000000467c     BaseLib:RShiftU64.obj
+ 0005:000000dc       $unwind$AsciiStrLen        000000000000467c     BaseLib:String.obj
+ 0005:000000dc       $unwind$SetMem             000000000000467c     BaseMemoryLibRepStr:SetMemWrapper.obj
+ 0005:000000e8       $unwind$DebugPrint         0000000000004688     BaseDebugLibSerialPort:DebugLib.obj
+ 0005:000000f0       $unwind$DebugPrintMarker   0000000000004690     BaseDebugLibSerialPort:DebugLib.obj
+ 0005:00000104       $unwind$DebugAssert        00000000000046a4     BaseDebugLibSerialPort:DebugLib.obj
+ 0005:0000010c       $unwind$IoRead32           00000000000046ac     BaseIoLibIntrinsicSev:IoLibMsc.obj
+ 0005:0000010c       $unwind$SaveAndDisableInterrupts 00000000000046ac     BaseLib:Cpu.obj
+ 0005:0000010c       $unwind$StrnLenS           00000000000046ac     BaseLib:SafeString.obj
+ 0005:00000114       $unwind$WriteBackInvalidateDataCacheRange 00000000000046b4     BaseCacheMaintenanceLib:X86Cache.obj
+ 0005:00000124       $unwind$AsciiSPrint        00000000000046c4     BasePrintLib:PrintLib.obj
+ 0005:0000012c       $unwind$PciCf8Read32       00000000000046cc     BasePciCf8Lib:PciCf8Lib.obj
+ 0005:0000012c       $unwind$BasePrintLibValueToString 00000000000046cc     BasePrintLib:PrintLibInternal.obj
+ 0005:0000013c       $unwind$BasePrintLibSPrintMarker 00000000000046dc     BasePrintLib:PrintLibInternal.obj
+ 0005:00000158       $unwind$BasePrintLibSPrint 00000000000046f8     BasePrintLib:PrintLibInternal.obj

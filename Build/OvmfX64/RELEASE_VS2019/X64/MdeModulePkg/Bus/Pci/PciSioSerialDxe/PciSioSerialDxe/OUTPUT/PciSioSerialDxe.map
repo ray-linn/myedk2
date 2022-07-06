@@ -1,0 +1,165 @@
+ PciSioSerialDxe
+
+ Timestamp is 61ee7055 (Mon Jan 24 17:24:37 2022)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000060H .text                   CODE
+ 0001:00000060 00003b05H .text$mn                CODE
+ 0002:00000000 00000250H .data                   DATA
+ 0002:00000250 000004c0H .rdata                  DATA
+ 0002:00000710 00000020H .bss                    DATA
+ 0002:00000730 00000020H .rdata$voltmd           DATA
+ 0002:00000750 000000a8H .rdata$zzzdbg           DATA
+ 0003:00000000 00000180H .pdata                  DATA
+ 0004:00000000 000001e8H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __x64_code_ranges_to_entry_points_count 0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_table          0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_table      0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map_count    0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_count         0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_count          0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table   0000000000000000     <absolute>
+ 0000:00000000       __arm64x_native_entrypoint 0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_count      0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_table      0000000000000000     <absolute>
+ 0000:00000000       __dynamic_value_reloc_table 0000000000000000     <absolute>
+ 0000:00000000       __enclave_config           0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata_count 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map          0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat     0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat_copy 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table_size 0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_count      0000000000000000     <absolute>
+ 0000:00000000       __guard_flags              0000000000000000     <absolute>
+ 0000:00000000       __AbsoluteZero             0000000000000000     <absolute>
+ 0000:00000000       __guard_check_icall_a64n_fptr 0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_table         0000000000000000     <absolute>
+ 0000:00000000       __ImageBase                0000000000000000     <linker-defined>
+ 0001:00000000       InternalMemCopyMem         0000000000000280     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000040       InternalMemZeroMem         00000000000002c0     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00000060       _ModuleEntryPoint          00000000000002e0 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:000000a0       ProcessModuleEntryPointList 0000000000000320 f   PciSioSerialDxe:AutoGen.obj
+ 0001:00000150       IsSioSerialController      00000000000003d0 f   PciSioSerialDxe:Serial.obj
+ 0001:00000274       IsPciSerialController      00000000000004f4 f   PciSioSerialDxe:Serial.obj
+ 0001:000003ec       SerialControllerDriverSupported 000000000000066c f   PciSioSerialDxe:Serial.obj
+ 0001:000004dc       CreateSerialDevice         000000000000075c f   PciSioSerialDxe:Serial.obj
+ 0001:00000a54       GetChildSerialDevices      0000000000000cd4 f   PciSioSerialDxe:Serial.obj
+ 0001:00000b48       SerialControllerDriverStart 0000000000000dc8 f   PciSioSerialDxe:Serial.obj
+ 0001:00001174       SerialControllerDriverStop 00000000000013f4 f   PciSioSerialDxe:Serial.obj
+ 0001:0000140c       SerialComponentNameGetDriverName 000000000000168c f   PciSioSerialDxe:ComponentName.obj
+ 0001:00001440       SerialComponentNameGetControllerName 00000000000016c0 f   PciSioSerialDxe:ComponentName.obj
+ 0001:000015a8       VerifyUartParameters       0000000000001828 f   PciSioSerialDxe:SerialIo.obj
+ 0001:000016e0       SerialFifoAdd              0000000000001960 f   PciSioSerialDxe:SerialIo.obj
+ 0001:00001738       SerialFifoRemove           00000000000019b8 f   PciSioSerialDxe:SerialIo.obj
+ 0001:00001774       SerialReceiveTransmit      00000000000019f4 f   PciSioSerialDxe:SerialIo.obj
+ 0001:00001a18       SerialFlushTransmitFifo    0000000000001c98 f   PciSioSerialDxe:SerialIo.obj
+ 0001:00001a88       SerialReset                0000000000001d08 f   PciSioSerialDxe:SerialIo.obj
+ 0001:00001c20       SerialSetAttributes        0000000000001ea0 f   PciSioSerialDxe:SerialIo.obj
+ 0001:00001f30       SerialSetControl           00000000000021b0 f   PciSioSerialDxe:SerialIo.obj
+ 0001:000020b0       SerialGetControl           0000000000002330 f   PciSioSerialDxe:SerialIo.obj
+ 0001:00002194       SerialWrite                0000000000002414 f   PciSioSerialDxe:SerialIo.obj
+ 0001:000022e4       SerialRead                 0000000000002564 f   PciSioSerialDxe:SerialIo.obj
+ 0001:00002444       SerialReadRegister         00000000000026c4 f   PciSioSerialDxe:SerialIo.obj
+ 0001:000024b4       SerialWriteRegister        0000000000002734 f   PciSioSerialDxe:SerialIo.obj
+ 0001:00002544       UnicodeSPrint              00000000000027c4 f   BasePrintLib:PrintLib.obj
+ 0001:00002578       BasePrintLibFillBuffer     00000000000027f8 f   BasePrintLib:PrintLibInternal.obj
+ 0001:000025ac       BasePrintLibSPrintMarker   000000000000282c f   BasePrintLib:PrintLibInternal.obj
+ 0001:00003348       BasePrintLibSPrint         00000000000035c8 f   BasePrintLib:PrintLibInternal.obj
+ 0001:0000336c       InternalAllocatePool       00000000000035ec f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:0000339c       InternalAllocateCopyPool   000000000000361c f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:000033dc       InternalReportStatusCode   000000000000365c f   DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0001:00003494       ReportStatusCodeWithDevicePath 0000000000003714 f   DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0001:0000361c       EfiTestManagedDevice       000000000000389c f   UefiLib:UefiLib.obj
+ 0001:000036b4       IsLanguageSupported        0000000000003934 f   UefiLib:UefiLib.obj
+ 0001:00003758       LookupUnicodeString2       00000000000039d8 f   UefiLib:UefiLib.obj
+ 0001:00003870       AddUnicodeString2          0000000000003af0 f   UefiLib:UefiLib.obj
+ 0001:00003ac4       FreeUnicodeStringTable     0000000000003d44 f   UefiLib:UefiLib.obj
+ 0001:00003b3c       StrnLenS                   0000000000003dbc f   BaseLib:SafeString.obj
+ 0002:00000000       gEfiStatusCodeSpecificDataGuid 0000000000003e00     PciSioSerialDxe:AutoGen.obj
+ 0002:00000010       gEfiStatusCodeRuntimeProtocolGuid 0000000000003e10     PciSioSerialDxe:AutoGen.obj
+ 0002:00000020       gEfiComponentName2ProtocolGuid 0000000000003e20     PciSioSerialDxe:AutoGen.obj
+ 0002:00000030       gEfiSerialIoProtocolGuid   0000000000003e30     PciSioSerialDxe:AutoGen.obj
+ 0002:00000040       gEfiUartDevicePathGuid     0000000000003e40     PciSioSerialDxe:AutoGen.obj
+ 0002:00000050       gEfiDevicePathProtocolGuid 0000000000003e50     PciSioSerialDxe:AutoGen.obj
+ 0002:00000060       gEfiPciIoProtocolGuid      0000000000003e60     PciSioSerialDxe:AutoGen.obj
+ 0002:00000070       gEfiSioProtocolGuid        0000000000003e70     PciSioSerialDxe:AutoGen.obj
+ 0002:00000080       gEfiDevicePathUtilitiesProtocolGuid 0000000000003e80     PciSioSerialDxe:AutoGen.obj
+ 0002:00000090       gEfiDriverBindingProtocolGuid 0000000000003e90     PciSioSerialDxe:AutoGen.obj
+ 0002:000000a0       gEfiComponentNameProtocolGuid 0000000000003ea0     PciSioSerialDxe:AutoGen.obj
+ 0002:000000b0       gEfiCallerIdGuid           0000000000003eb0     PciSioSerialDxe:AutoGen.obj
+ 0002:000000c0       gSerialControllerDriver    0000000000003ec0     PciSioSerialDxe:Serial.obj
+ 0002:000000f0       mControllerDevicePathTemplate 0000000000003ef0     PciSioSerialDxe:Serial.obj
+ 0002:00000100       gSerialDevTemplate         0000000000003f00     PciSioSerialDxe:Serial.obj
+ 0002:00000200       gPciSioSerialComponentName2 0000000000004000     PciSioSerialDxe:ComponentName.obj
+ 0002:00000218       gPciSioSerialComponentName 0000000000004018     PciSioSerialDxe:ComponentName.obj
+ 0002:00000230       mSerialDriverNameTable     0000000000004030     PciSioSerialDxe:ComponentName.obj
+ 0002:00000250       _gPcd_FixedAtBuild_PcdPciSerialParameters 0000000000004050     PciSioSerialDxe:AutoGen.obj
+ 0002:00000254       ??_C@_03LKLGDMJI@eng@      0000000000004054     PciSioSerialDxe:ComponentName.obj
+ 0002:00000258       ??_C@_02LFNMGJAP@en@       0000000000004058     PciSioSerialDxe:ComponentName.obj
+ 0002:0000025c       ??_C@_06DALJLGPG@eng?$DLen@ 000000000000405c     PciSioSerialDxe:ComponentName.obj
+ 0002:00000268       ??_C@_1CM@PBMHCABN@?$AAP?$AAC?$AAI?$AA?5?$AAS?$AAI?$AAO?$AA?5?$AAS?$AAe?$AAr?$AAi?$AAa?$AAl?$AA?5@ 0000000000004068     PciSioSerialDxe:ComponentName.obj
+ 0002:00000298       ??_C@_1CI@PDNONFAE@?$AAP?$AAC?$AAI?$AA?5?$AAS?$AAe?$AAr?$AAi?$AAa?$AAl?$AA?5?$AAP?$AAo?$AAr?$AAt@ 0000000000004098     PciSioSerialDxe:ComponentName.obj
+ 0002:000002c0       ??_C@_1CI@GHKDJFGD@?$AAS?$AAI?$AAO?$AA?5?$AAS?$AAe?$AAr?$AAi?$AAa?$AAl?$AA?5?$AAP?$AAo?$AAr?$AAt@ 00000000000040c0     PciSioSerialDxe:ComponentName.obj
+ 0002:000002e8       ??_C@_0O@MLOLIMFM@?$DMnull?5string?$DO@ 00000000000040e8     BasePrintLib:PrintLibInternal.obj
+ 0002:000002f8       ??_C@_0M@BJJDNPHK@?$DMnull?5guid?$DO@ 00000000000040f8     BasePrintLib:PrintLibInternal.obj
+ 0002:00000308       ??_C@_0DB@PMLHLBMO@?$CF08x?9?$CF04x?9?$CF04x?9?$CF02x?$CF02x?9?$CF02x?$CF02@ 0000000000004108     BasePrintLib:PrintLibInternal.obj
+ 0002:00000340       ??_C@_0M@LHGBCIKM@?$DMnull?5time?$DO@ 0000000000004140     BasePrintLib:PrintLibInternal.obj
+ 0002:00000350       ??_C@_0BK@FCPKCIDD@?$CF02d?1?$CF02d?1?$CF04d?5?5?$CF02d?3?$CF02d@ 0000000000004150     BasePrintLib:PrintLibInternal.obj
+ 0002:0000036c       ??_C@_04JIMNDDED@?$CF08X@  000000000000416c     BasePrintLib:PrintLibInternal.obj
+ 0002:00000374       ??_C@_02PCIJFNDE@?$AN?6@   0000000000004174     BasePrintLib:PrintLibInternal.obj
+ 0002:00000378       ??_C@_01LIIJDEN@?$AN@      0000000000004178     BasePrintLib:PrintLibInternal.obj
+ 0002:00000380       mWarningString             0000000000004180     BasePrintLib:PrintLibInternal.obj
+ 0002:00000420       mErrorString               0000000000004220     BasePrintLib:PrintLibInternal.obj
+ 0002:000006e0       mHexStr                    00000000000044e0     BasePrintLib:PrintLibInternal.obj
+ 0002:00000710       gST                        0000000000004510     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000718       gBS                        0000000000004518     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000720       mDevicePathLibDevicePathUtilities 0000000000004520     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:00000728       mReportStatusCodeLibStatusCodeProtocol 0000000000004528     DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0002:00000730       __volatile_metadata        0000000000004530     <linker-defined>
+
+ entry point at        0001:00000060
+
+ Static symbols
+
+ 0001:0000001a       InternalMemCopyMem.0       000000000000029a     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:0000002a       @CopyBackward              00000000000002aa     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000033       @CopyBytes                 00000000000002b3     BaseMemoryLibRepStr:CopyMem.obj
+ 0004:00000000       $unwind$SerialControllerDriverSupported 0000000000004780     PciSioSerialDxe:Serial.obj
+ 0004:00000000       $unwind$_ModuleEntryPoint  0000000000004780     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0004:00000008       $unwind$ProcessModuleEntryPointList 0000000000004788     PciSioSerialDxe:AutoGen.obj
+ 0004:00000010       $unwind$IsSioSerialController 0000000000004790     PciSioSerialDxe:Serial.obj
+ 0004:0000001c       $unwind$IsPciSerialController 000000000000479c     PciSioSerialDxe:Serial.obj
+ 0004:00000028       $unwind$CreateSerialDevice 00000000000047a8     PciSioSerialDxe:Serial.obj
+ 0004:00000044       $unwind$GetChildSerialDevices 00000000000047c4     PciSioSerialDxe:Serial.obj
+ 0004:00000058       $unwind$SerialControllerDriverStart 00000000000047d8     PciSioSerialDxe:Serial.obj
+ 0004:00000074       $unwind$SerialControllerDriverStop 00000000000047f4     PciSioSerialDxe:Serial.obj
+ 0004:0000008c       $unwind$SerialComponentNameGetDriverName 000000000000480c     PciSioSerialDxe:ComponentName.obj
+ 0004:0000008c       $unwind$SerialReadRegister 000000000000480c     PciSioSerialDxe:SerialIo.obj
+ 0004:00000094       $unwind$SerialComponentNameGetControllerName 0000000000004814     PciSioSerialDxe:ComponentName.obj
+ 0004:000000ac       $unwind$SerialReceiveTransmit 000000000000482c     PciSioSerialDxe:SerialIo.obj
+ 0004:000000c4       $unwind$SerialFlushTransmitFifo 0000000000004844     PciSioSerialDxe:SerialIo.obj
+ 0004:000000c4       $unwind$SerialGetControl   0000000000004844     PciSioSerialDxe:SerialIo.obj
+ 0004:000000c4       $unwind$FreeUnicodeStringTable 0000000000004844     UefiLib:UefiLib.obj
+ 0004:000000c4       $unwind$LookupUnicodeString2 0000000000004844     UefiLib:UefiLib.obj
+ 0004:000000d4       $unwind$SerialReset        0000000000004854     PciSioSerialDxe:SerialIo.obj
+ 0004:000000ec       $unwind$SerialSetAttributes 000000000000486c     PciSioSerialDxe:SerialIo.obj
+ 0004:00000104       $unwind$SerialSetControl   0000000000004884     PciSioSerialDxe:SerialIo.obj
+ 0004:00000118       $unwind$SerialWrite        0000000000004898     PciSioSerialDxe:SerialIo.obj
+ 0004:00000130       $unwind$SerialRead         00000000000048b0     PciSioSerialDxe:SerialIo.obj
+ 0004:0000014c       $unwind$SerialWriteRegister 00000000000048cc     PciSioSerialDxe:SerialIo.obj
+ 0004:00000154       $unwind$UnicodeSPrint      00000000000048d4     BasePrintLib:PrintLib.obj
+ 0004:0000015c       $unwind$BasePrintLibSPrintMarker 00000000000048dc     BasePrintLib:PrintLibInternal.obj
+ 0004:00000178       $unwind$BasePrintLibSPrint 00000000000048f8     BasePrintLib:PrintLibInternal.obj
+ 0004:00000180       $unwind$InternalAllocatePool 0000000000004900     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0004:00000188       $unwind$InternalAllocateCopyPool 0000000000004908     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0004:00000194       $unwind$InternalReportStatusCode 0000000000004914     DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0004:000001a8       $unwind$ReportStatusCodeWithDevicePath 0000000000004928     DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0004:000001c0       $unwind$EfiTestManagedDevice 0000000000004940     UefiLib:UefiLib.obj
+ 0004:000001d0       $unwind$AddUnicodeString2  0000000000004950     UefiLib:UefiLib.obj

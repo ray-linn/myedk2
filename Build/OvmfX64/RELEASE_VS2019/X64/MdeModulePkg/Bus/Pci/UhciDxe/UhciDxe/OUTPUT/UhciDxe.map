@@ -1,0 +1,190 @@
+ UhciDxe
+
+ Timestamp is 61ee7053 (Mon Jan 24 17:24:35 2022)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000060H .text                   CODE
+ 0001:00000060 00003692H .text$mn                CODE
+ 0002:00000000 00000130H .data                   DATA
+ 0002:00000130 00000090H .rdata                  DATA
+ 0002:000001c0 00000020H .bss                    DATA
+ 0002:000001e0 00000020H .rdata$voltmd           DATA
+ 0002:00000200 000000a8H .rdata$zzzdbg           DATA
+ 0003:00000000 00000288H .pdata                  DATA
+ 0004:00000000 00000224H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __x64_code_ranges_to_entry_points_count 0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_table          0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_table      0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points 0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_count         0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map_count    0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_count          0000000000000000     <absolute>
+ 0000:00000000       __arm64x_native_entrypoint 0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_table      0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_count      0000000000000000     <absolute>
+ 0000:00000000       __enclave_config           0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata_count 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table   0000000000000000     <absolute>
+ 0000:00000000       __dynamic_value_reloc_table 0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_count      0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat     0000000000000000     <absolute>
+ 0000:00000000       __guard_flags              0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat_copy 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map          0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table_size 0000000000000000     <absolute>
+ 0000:00000000       __AbsoluteZero             0000000000000000     <absolute>
+ 0000:00000000       __guard_check_icall_a64n_fptr 0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_table         0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata 0000000000000000     <absolute>
+ 0001:00000000       InternalMemCopyMem         0000000000000280     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000040       InternalMemZeroMem         00000000000002c0     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00000060       _ModuleEntryPoint          00000000000002e0 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:000000f8       Uhci2Reset                 0000000000000378 f   UhciDxe:Uhci.obj
+ 0001:00000240       Uhci2GetState              00000000000004c0 f   UhciDxe:Uhci.obj
+ 0001:000002b0       Uhci2SetState              0000000000000530 f   UhciDxe:Uhci.obj
+ 0001:00000408       Uhci2GetCapability         0000000000000688 f   UhciDxe:Uhci.obj
+ 0001:00000484       Uhci2GetRootHubPortStatus  0000000000000704 f   UhciDxe:Uhci.obj
+ 0001:0000052c       Uhci2SetRootHubPortFeature 00000000000007ac f   UhciDxe:Uhci.obj
+ 0001:0000062c       Uhci2ClearRootHubPortFeature 00000000000008ac f   UhciDxe:Uhci.obj
+ 0001:00000730       Uhci2ControlTransfer       00000000000009b0 f   UhciDxe:Uhci.obj
+ 0001:000009d0       Uhci2BulkTransfer          0000000000000c50 f   UhciDxe:Uhci.obj
+ 0001:00000c00       Uhci2AsyncInterruptTransfer 0000000000000e80 f   UhciDxe:Uhci.obj
+ 0001:00000f50       Uhci2SyncInterruptTransfer 00000000000011d0 f   UhciDxe:Uhci.obj
+ 0001:00001190       Uhci2IsochronousTransfer   0000000000001410 f   UhciDxe:Uhci.obj
+ 0001:00001190       Uhci2AsyncIsochronousTransfer 0000000000001410 f   UhciDxe:Uhci.obj
+ 0001:0000119c       UhciDriverBindingSupported 000000000000141c f   UhciDxe:Uhci.obj
+ 0001:00001258       UhciAllocateDev            00000000000014d8 f   UhciDxe:Uhci.obj
+ 0001:00001420       UhciFreeDev                00000000000016a0 f   UhciDxe:Uhci.obj
+ 0001:000014f4       UhcExitBootService         0000000000001774 f   UhciDxe:Uhci.obj
+ 0001:00001540       UhciDriverBindingStart     00000000000017c0 f   UhciDxe:Uhci.obj
+ 0001:000017b4       UhciDriverBindingStop      0000000000001a34 f   UhciDxe:Uhci.obj
+ 0001:00001890       UhciInitFrameList          0000000000001b10 f   UhciDxe:UhciSched.obj
+ 0001:00001b50       UhciDestoryFrameList       0000000000001dd0 f   UhciDxe:UhciSched.obj
+ 0001:00001c24       UhciLinkQhToFrameList      0000000000001ea4 f   UhciDxe:UhciSched.obj
+ 0001:00001d0c       UhciCheckTdStatus          0000000000001f8c f   UhciDxe:UhciSched.obj
+ 0001:00001e28       UhciExecuteTransfer        00000000000020a8 f   UhciDxe:UhciSched.obj
+ 0001:00001ed4       UhciFreeAsyncReq           0000000000002154 f   UhciDxe:UhciSched.obj
+ 0001:00001f34       UhciUnlinkAsyncReq         00000000000021b4 f   UhciDxe:UhciSched.obj
+ 0001:00001fe8       UhciRecycleAsyncReq        0000000000002268 f   UhciDxe:UhciSched.obj
+ 0001:00002038       UhciFreeAllAsyncReq        00000000000022b8 f   UhciDxe:UhciSched.obj
+ 0001:00002080       UhciMonitorAsyncReqList    0000000000002300 f   UhciDxe:UhciSched.obj
+ 0001:000021d4       UhciComponentNameGetDriverName 0000000000002454 f   UhciDxe:ComponentName.obj
+ 0001:00002208       UhciComponentNameGetControllerName 0000000000002488 f   UhciDxe:ComponentName.obj
+ 0001:00002314       UsbHcAllocMemBlock         0000000000002594 f   UhciDxe:UsbHcMem.obj
+ 0001:00002450       UsbHcFreeMemBlock          00000000000026d0 f   UhciDxe:UsbHcMem.obj
+ 0001:000024b4       UsbHcAllocMemFromBlock     0000000000002734 f   UhciDxe:UsbHcMem.obj
+ 0001:000025b4       UsbHcGetPciAddressForHostMem 0000000000002834 f   UhciDxe:UsbHcMem.obj
+ 0001:000025f8       UsbHcFreeMemPool           0000000000002878 f   UhciDxe:UsbHcMem.obj
+ 0001:0000265c       UsbHcAllocateMem           00000000000028dc f   UhciDxe:UsbHcMem.obj
+ 0001:0000275c       UsbHcFreeMem               00000000000029dc f   UhciDxe:UsbHcMem.obj
+ 0001:00002858       UhciMapUserData            0000000000002ad8 f   UhciDxe:UhciQueue.obj
+ 0001:0000293c       UhciDestoryTds             0000000000002bbc f   UhciDxe:UhciQueue.obj
+ 0001:0000297c       UhciCreateQh               0000000000002bfc f   UhciDxe:UhciQueue.obj
+ 0001:000029dc       UhciCreateTd               0000000000002c5c f   UhciDxe:UhciQueue.obj
+ 0001:00002a10       UhciCreateDataTd           0000000000002c90 f   UhciDxe:UhciQueue.obj
+ 0001:00002acc       UhciCreateCtrlTds          0000000000002d4c f   UhciDxe:UhciQueue.obj
+ 0001:00002ddc       UhciCreateBulkOrIntTds     000000000000305c f   UhciDxe:UhciQueue.obj
+ 0001:00002f24       UhciReadReg                00000000000031a4 f   UhciDxe:UhciReg.obj
+ 0001:00002f64       UhciWriteReg               00000000000031e4 f   UhciDxe:UhciReg.obj
+ 0001:00002f98       UhciAckAllInterrupt        0000000000003218 f   UhciDxe:UhciReg.obj
+ 0001:00002fd8       UhciStopHc                 0000000000003258 f   UhciDxe:UhciReg.obj
+ 0001:00003054       InternalAllocatePool       00000000000032d4 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00003084       AllocateZeroPool           0000000000003304 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:000030b0       InternalAllocateCopyPool   0000000000003330 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:000030f0       IsLanguageSupported        0000000000003370 f   UefiLib:UefiLib.obj
+ 0001:00003194       LookupUnicodeString2       0000000000003414 f   UefiLib:UefiLib.obj
+ 0001:000032ac       AddUnicodeString2          000000000000352c f   UefiLib:UefiLib.obj
+ 0001:000034e8       InternalReportStatusCode   0000000000003768 f   DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0001:0000357c       ReportStatusCodeWithDevicePath 00000000000037fc f   DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0002:00000000       gEfiStatusCodeSpecificDataGuid 0000000000003980     UhciDxe:AutoGen.obj
+ 0002:00000010       gEfiStatusCodeRuntimeProtocolGuid 0000000000003990     UhciDxe:AutoGen.obj
+ 0002:00000020       gEfiComponentName2ProtocolGuid 00000000000039a0     UhciDxe:AutoGen.obj
+ 0002:00000030       gEfiUsb2HcProtocolGuid     00000000000039b0     UhciDxe:AutoGen.obj
+ 0002:00000040       gEfiDevicePathProtocolGuid 00000000000039c0     UhciDxe:AutoGen.obj
+ 0002:00000050       gEfiPciIoProtocolGuid      00000000000039d0     UhciDxe:AutoGen.obj
+ 0002:00000060       gEfiDevicePathUtilitiesProtocolGuid 00000000000039e0     UhciDxe:AutoGen.obj
+ 0002:00000070       gEfiDriverBindingProtocolGuid 00000000000039f0     UhciDxe:AutoGen.obj
+ 0002:00000080       gEfiEventExitBootServicesGuid 0000000000003a00     UhciDxe:AutoGen.obj
+ 0002:00000090       gEfiComponentNameProtocolGuid 0000000000003a10     UhciDxe:AutoGen.obj
+ 0002:000000a0       gEfiCallerIdGuid           0000000000003a20     UhciDxe:AutoGen.obj
+ 0002:000000b0       gUhciDriverBinding         0000000000003a30     UhciDxe:Uhci.obj
+ 0002:000000e0       gUhciComponentName2        0000000000003a60     UhciDxe:ComponentName.obj
+ 0002:000000f8       gUhciComponentName         0000000000003a78     UhciDxe:ComponentName.obj
+ 0002:00000110       mUhciDriverNameTable       0000000000003a90     UhciDxe:ComponentName.obj
+ 0002:00000130       ??_C@_1DM@FGGDIIJM@?$AAU?$AAs?$AAb?$AA?5?$AAU?$AAn?$AAi?$AAv?$AAe?$AAr?$AAs?$AAa?$AAl?$AA?5?$AAH@ 0000000000003ab0     UhciDxe:Uhci.obj
+ 0002:0000016c       ??_C@_03LKLGDMJI@eng@      0000000000003aec     UhciDxe:Uhci.obj
+ 0002:00000170       ??_C@_02LFNMGJAP@en@       0000000000003af0     UhciDxe:Uhci.obj
+ 0002:00000174       ??_C@_06DALJLGPG@eng?$DLen@ 0000000000003af4     UhciDxe:ComponentName.obj
+ 0002:00000180       ??_C@_1CA@JIEJIAJC@?$AAU?$AAs?$AAb?$AA?5?$AAU?$AAh?$AAc?$AAi?$AA?5?$AAD?$AAr?$AAi?$AAv?$AAe?$AAr@ 0000000000003b00     UhciDxe:ComponentName.obj
+ 0002:000001c0       gST                        0000000000003b40     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000001c8       gBS                        0000000000003b48     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000001d0       mDevicePathLibDevicePathUtilities 0000000000003b50     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:000001d8       mReportStatusCodeLibStatusCodeProtocol 0000000000003b58     DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0002:000001e0       __volatile_metadata        0000000000003b60     <linker-defined>
+
+ entry point at        0001:00000060
+
+ Static symbols
+
+ 0001:0000001a       InternalMemCopyMem.0       000000000000029a     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:0000002a       @CopyBackward              00000000000002aa     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000033       @CopyBytes                 00000000000002b3     BaseMemoryLibRepStr:CopyMem.obj
+ 0004:00000000       $unwind$_ModuleEntryPoint  0000000000003ee0     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0004:00000008       $unwind$Uhci2ClearRootHubPortFeature 0000000000003ee8     UhciDxe:Uhci.obj
+ 0004:00000008       $unwind$Uhci2Reset         0000000000003ee8     UhciDxe:Uhci.obj
+ 0004:00000008       $unwind$UhciFreeDev        0000000000003ee8     UhciDxe:Uhci.obj
+ 0004:00000008       $unwind$UhciCheckTdStatus  0000000000003ee8     UhciDxe:UhciSched.obj
+ 0004:0000001c       $unwind$Uhci2GetCapability 0000000000003efc     UhciDxe:Uhci.obj
+ 0004:0000001c       $unwind$Uhci2GetState      0000000000003efc     UhciDxe:Uhci.obj
+ 0004:0000001c       $unwind$UhciCreateDataTd   0000000000003efc     UhciDxe:UhciQueue.obj
+ 0004:0000001c       $unwind$UhciLinkQhToFrameList 0000000000003efc     UhciDxe:UhciSched.obj
+ 0004:0000001c       $unwind$LookupUnicodeString2 0000000000003efc     UefiLib:UefiLib.obj
+ 0004:0000002c       $unwind$Uhci2SetState      0000000000003f0c     UhciDxe:Uhci.obj
+ 0004:00000044       $unwind$UhcExitBootService 0000000000003f24     UhciDxe:Uhci.obj
+ 0004:00000044       $unwind$Uhci2GetRootHubPortStatus 0000000000003f24     UhciDxe:Uhci.obj
+ 0004:00000044       $unwind$UhciCreateQh       0000000000003f24     UhciDxe:UhciQueue.obj
+ 0004:00000044       $unwind$UhciAckAllInterrupt 0000000000003f24     UhciDxe:UhciReg.obj
+ 0004:00000044       $unwind$UsbHcFreeMem       0000000000003f24     UhciDxe:UsbHcMem.obj
+ 0004:00000044       $unwind$UsbHcFreeMemPool   0000000000003f24     UhciDxe:UsbHcMem.obj
+ 0004:00000044       $unwind$AllocateZeroPool   0000000000003f24     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0004:0000004c       $unwind$Uhci2SetRootHubPortFeature 0000000000003f2c     UhciDxe:Uhci.obj
+ 0004:0000004c       $unwind$AddUnicodeString2  0000000000003f2c     UefiLib:UefiLib.obj
+ 0004:00000064       $unwind$Uhci2ControlTransfer 0000000000003f44     UhciDxe:Uhci.obj
+ 0004:00000080       $unwind$Uhci2BulkTransfer  0000000000003f60     UhciDxe:Uhci.obj
+ 0004:00000080       $unwind$Uhci2SyncInterruptTransfer 0000000000003f60     UhciDxe:Uhci.obj
+ 0004:00000098       $unwind$Uhci2AsyncInterruptTransfer 0000000000003f78     UhciDxe:Uhci.obj
+ 0004:000000b0       $unwind$UhciDriverBindingStop 0000000000003f90     UhciDxe:Uhci.obj
+ 0004:000000b0       $unwind$UhciDriverBindingSupported 0000000000003f90     UhciDxe:Uhci.obj
+ 0004:000000c0       $unwind$UhciAllocateDev    0000000000003fa0     UhciDxe:Uhci.obj
+ 0004:000000d8       $unwind$UhciDriverBindingStart 0000000000003fb8     UhciDxe:Uhci.obj
+ 0004:000000e8       $unwind$UhciInitFrameList  0000000000003fc8     UhciDxe:UhciSched.obj
+ 0004:000000fc       $unwind$UhciDestoryFrameList 0000000000003fdc     UhciDxe:UhciSched.obj
+ 0004:00000108       $unwind$UhciExecuteTransfer 0000000000003fe8     UhciDxe:UhciSched.obj
+ 0004:00000124       $unwind$UhciStopHc         0000000000004004     UhciDxe:UhciReg.obj
+ 0004:00000124       $unwind$UhciFreeAllAsyncReq 0000000000004004     UhciDxe:UhciSched.obj
+ 0004:00000124       $unwind$UhciFreeAsyncReq   0000000000004004     UhciDxe:UhciSched.obj
+ 0004:00000124       $unwind$UhciRecycleAsyncReq 0000000000004004     UhciDxe:UhciSched.obj
+ 0004:00000124       $unwind$UsbHcFreeMemBlock  0000000000004004     UhciDxe:UsbHcMem.obj
+ 0004:00000124       $unwind$InternalAllocateCopyPool 0000000000004004     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0004:00000130       $unwind$UhciUnlinkAsyncReq 0000000000004010     UhciDxe:UhciSched.obj
+ 0004:00000138       $unwind$UhciMonitorAsyncReqList 0000000000004018     UhciDxe:UhciSched.obj
+ 0004:00000154       $unwind$UhciComponentNameGetDriverName 0000000000004034     UhciDxe:ComponentName.obj
+ 0004:00000154       $unwind$UhciReadReg        0000000000004034     UhciDxe:UhciReg.obj
+ 0004:0000015c       $unwind$UhciComponentNameGetControllerName 000000000000403c     UhciDxe:ComponentName.obj
+ 0004:00000170       $unwind$UsbHcAllocMemBlock 0000000000004050     UhciDxe:UsbHcMem.obj
+ 0004:00000184       $unwind$UsbHcAllocMemFromBlock 0000000000004064     UhciDxe:UsbHcMem.obj
+ 0004:00000194       $unwind$UsbHcAllocateMem   0000000000004074     UhciDxe:UsbHcMem.obj
+ 0004:000001b0       $unwind$UhciMapUserData    0000000000004090     UhciDxe:UhciQueue.obj
+ 0004:000001b8       $unwind$UhciDestoryTds     0000000000004098     UhciDxe:UhciQueue.obj
+ 0004:000001c4       $unwind$UhciCreateTd       00000000000040a4     UhciDxe:UhciQueue.obj
+ 0004:000001c4       $unwind$InternalAllocatePool 00000000000040a4     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0004:000001cc       $unwind$UhciCreateCtrlTds  00000000000040ac     UhciDxe:UhciQueue.obj
+ 0004:000001e4       $unwind$UhciCreateBulkOrIntTds 00000000000040c4     UhciDxe:UhciQueue.obj
+ 0004:000001fc       $unwind$UhciWriteReg       00000000000040dc     UhciDxe:UhciReg.obj
+ 0004:00000204       $unwind$InternalReportStatusCode 00000000000040e4     DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0004:00000210       $unwind$ReportStatusCodeWithDevicePath 00000000000040f0     DxeReportStatusCodeLib:ReportStatusCodeLib.obj

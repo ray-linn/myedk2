@@ -264,6 +264,10 @@ INF  OvmfPkg/LsiScsiDxe/LsiScsiDxe.inf
 !endif
 INF  MdeModulePkg/Universal/BootManagerPolicyDxe/BootManagerPolicyDxe.inf
 INF  SecurityPkg/Hash2DxeCrypto/Hash2DxeCrypto.inf
+
+
+
+
 INF  MdeModulePkg/Universal/WatchdogTimerDxe/WatchdogTimer.inf
 INF  MdeModulePkg/Universal/MonotonicCounterRuntimeDxe/MonotonicCounterRuntimeDxe.inf
 INF  MdeModulePkg/Universal/CapsuleRuntimeDxe/CapsuleRuntimeDxe.inf
@@ -383,12 +387,18 @@ INF  OvmfPkg/EmuVariableFvbRuntimeDxe/Fvb.inf
 INF  MdeModulePkg/Universal/FaultTolerantWriteDxe/FaultTolerantWriteDxe.inf
 INF  MdeModulePkg/Universal/Variable/RuntimeDxe/VariableRuntimeDxe.inf
 !endif
+#INF  CbmrPkg/Binaries/cbmr_driver.inf
+#FILE DRIVER = BCC8AF15-B751-450C-BDE6-0F9D6625BF41 {
 
 #
 # TPM support
 #
 !include OvmfPkg/OvmfTpmDxe.fdf.inc
 
+#FILE DRIVER = BCC8AF15-B751-450C-BDE6-0F9D6625BF41 {
+#  SECTION PE32 = CbmrPkg/Binaries/cbmr_driver.efi
+#  SECTION UI = "CloudBareMetalRecoveryDriver"
+#}
 ################################################################################
 
 [FV.FVMAIN_COMPACT]

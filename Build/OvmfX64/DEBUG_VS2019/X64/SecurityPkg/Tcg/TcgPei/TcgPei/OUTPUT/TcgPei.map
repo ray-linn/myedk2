@@ -1,0 +1,313 @@
+ TcgPei
+
+ Timestamp is 62b57360 (Fri Jun 24 16:18:40 2022)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000140H .text                   CODE
+ 0001:00000140 00003897H .text$mn                CODE
+ 0002:00000000 0000134cH .rdata                  DATA
+ 0002:0000134c 00000060H .rdata$voltmd           DATA
+ 0002:000013ac 00000130H .rdata$zzzdbg           DATA
+ 0003:00000000 000001b8H .data                   DATA
+ 0003:000001b8 00000030H .bss                    DATA
+ 0004:00000000 000002d0H .pdata                  DATA
+ 0005:00000000 000001f8H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __x64_code_ranges_to_entry_points_count 0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_table      0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_table          0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points 0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_count         0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table   0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_count          0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_count      0000000000000000     <absolute>
+ 0000:00000000       __dynamic_value_reloc_table 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map_count    0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat     0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map          0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat_copy 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table_size 0000000000000000     <absolute>
+ 0000:00000000       __AbsoluteZero             0000000000000000     <absolute>
+ 0000:00000000       __guard_check_icall_a64n_fptr 0000000000000000     <absolute>
+ 0000:00000000       __guard_flags              0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_count      0000000000000000     <absolute>
+ 0000:00000000       __arm64x_native_entrypoint 0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_table         0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata_count 0000000000000000     <absolute>
+ 0000:00000000       __enclave_config           0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_table      0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata 0000000000000000     <absolute>
+ 0001:00000000       InternalMemCopyMem         00000000000002c0     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000040       InternalMemZeroMem         0000000000000300     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00000060       CpuPause                   0000000000000320     BaseLib:CpuPause.obj
+ 0001:00000070       InternalMemSetMem          0000000000000330     BaseMemoryLibRepStr:SetMem.obj
+ 0001:00000090       InternalMemSetMem64        0000000000000350     BaseMemoryLibRepStr:SetMem64.obj
+ 0001:000000b0       InternalMemSetMem32        0000000000000370     BaseMemoryLibRepStr:SetMem32.obj
+ 0001:000000d0       InternalX86ReadIdtr        0000000000000390     BaseLib:ReadIdtr.obj
+ 0001:000000e0       InternalX86WriteIdtr       00000000000003a0     BaseLib:WriteIdtr.obj
+ 0001:000000f0       EnableInterrupts           00000000000003b0     BaseLib:EnableInterrupts.obj
+ 0001:00000100       DisableInterrupts          00000000000003c0     BaseLib:DisableInterrupts.obj
+ 0001:00000110       AsmReadEflags              00000000000003d0     BaseLib:ReadEflags.obj
+ 0001:00000120       InternalMemCompareMem      00000000000003e0     BaseMemoryLibRepStr:CompareMem.obj
+ 0001:00000140       _ModuleEntryPoint          0000000000000400 f   PeimEntryPoint:PeimEntryPoint.obj
+ 0001:000002d8       EndofPeiSignalNotifyCallBack 0000000000000598 f   TcgPei:TcgPei.obj
+ 0001:0000035c       HashLogExtendEvent         000000000000061c f   TcgPei:TcgPei.obj
+ 0001:000004f8       MeasureFvImage             00000000000007b8 f   TcgPei:TcgPei.obj
+ 0001:000006d8       MeasureMainBios            0000000000000998 f   TcgPei:TcgPei.obj
+ 0001:00000794       FirmwareVolumeInfoPpiNotifyCallback 0000000000000a54 f   TcgPei:TcgPei.obj
+ 0001:00000888       PhysicalPresencePpiNotifyCallback 0000000000000b48 f   TcgPei:TcgPei.obj
+ 0001:000008f4       PeimEntryMP                0000000000000bb4 f   TcgPei:TcgPei.obj
+ 0001:00000a18       PeimEntryMA                0000000000000cd8 f   TcgPei:TcgPei.obj
+ 0001:00000cf0       InternalAllocatePages      0000000000000fb0 f   PeiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00000d30       AllocatePool               0000000000000ff0 f   PeiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00000d6c       InternalAllocateZeroPool   000000000000102c f   PeiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00000dac       InternalReallocatePool     000000000000106c f   PeiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00000e0c       GetPcdPpiPointer           00000000000010cc f   PeiPcdLib:PeiPcdLib.obj
+ 0001:00000e5c       StrSize                    000000000000111c f   BaseLib:String.obj
+ 0001:00000ee4       AsciiStrLen                00000000000011a4 f   BaseLib:String.obj
+ 0001:00000f50       StrnLenS                   0000000000001210 f   BaseLib:SafeString.obj
+ 0001:00000fa8       CopyMem                    0000000000001268 f   BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0001:00001044       CopyGuid                   0000000000001304 f   BaseMemoryLibRepStr:MemLibGuid.obj
+ 0001:000010f4       CompareGuid                00000000000013b4 f   BaseMemoryLibRepStr:MemLibGuid.obj
+ 0001:000011b8       ZeroMem                    0000000000001478 f   BaseMemoryLibRepStr:ZeroMemWrapper.obj
+ 0001:00001228       PeiServicesLocatePpi       00000000000014e8 f   PeiServicesLib:PeiServicesLib.obj
+ 0001:00001260       GetHobList                 0000000000001520 f   PeiHobLib:HobLib.obj
+ 0001:000012d4       GetNextGuidHob             0000000000001594 f   PeiHobLib:HobLib.obj
+ 0001:00001360       InternalPeiCreateHob       0000000000001620 f   PeiHobLib:HobLib.obj
+ 0001:000013c4       BuildGuidHob               0000000000001684 f   PeiHobLib:HobLib.obj
+ 0001:00001440       DebugPrint                 0000000000001700 f   BaseDebugLibSerialPort:DebugLib.obj
+ 0001:00001464       DebugPrintMarker           0000000000001724 f   BaseDebugLibSerialPort:DebugLib.obj
+ 0001:00001514       DebugAssert                00000000000017d4 f   BaseDebugLibSerialPort:DebugLib.obj
+ 0001:0000158c       Tpm12GetPtpInterface       000000000000184c f   Tpm12DeviceLibDTpm:Tpm12Tis.obj
+ 0001:00001608       Tpm12TisPcWaitRegisterBits 00000000000018c8 f   Tpm12DeviceLibDTpm:Tpm12Tis.obj
+ 0001:00001684       Tpm12TisPcReadBurstCount   0000000000001944 f   Tpm12DeviceLibDTpm:Tpm12Tis.obj
+ 0001:0000170c       Tpm12TisTpmCommand         00000000000019cc f   Tpm12DeviceLibDTpm:Tpm12Tis.obj
+ 0001:00001ad0       Tpm12SubmitCommand         0000000000001d90 f   Tpm12DeviceLibDTpm:Tpm12Tis.obj
+ 0001:00001b34       Tpm12RequestUseTpm         0000000000001df4 f   Tpm12DeviceLibDTpm:Tpm12Tis.obj
+ 0001:00001bd0       InternalReportStatusCode   0000000000001e90 f   PeiReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0001:00001c20       Tpm12PhysicalPresence      0000000000001ee0 f   Tpm12CommandLib:Tpm12PhysicalPresence.obj
+ 0001:00001cb4       Tpm12GetCapabilityFlagPermanent 0000000000001f74 f   Tpm12CommandLib:Tpm12GetCapability.obj
+ 0001:00001dc0       Tpm12Startup               0000000000002080 f   Tpm12CommandLib:Tpm12Startup.obj
+ 0001:00001e60       Tpm12Extend                0000000000002120 f   Tpm12CommandLib:Tpm12Pcr.obj
+ 0001:00001f1c       GetPeiServicesTablePointer 00000000000021dc f   PeiServicesTablePointerLibIdt:PeiServicesTablePointer.obj
+ 0001:00001f5c       SetMem                     000000000000221c f   BaseMemoryLibRepStr:SetMemWrapper.obj
+ 0001:00001fb4       IoRead32                   0000000000002274 f   BaseIoLibIntrinsicSev:IoLibMsc.obj
+ 0001:00001fe8       IoWrite32                  00000000000022a8 f   BaseIoLibIntrinsicSev:IoLibMsc.obj
+ 0001:00002028       MmioRead32                 00000000000022e8 f   BaseIoLibIntrinsicSev:IoLib.obj
+ 0001:00002058       AsciiSPrint                0000000000002318 f   BasePrintLib:PrintLib.obj
+ 0001:00002084       BasePrintLibFillBuffer     0000000000002344 f   BasePrintLib:PrintLibInternal.obj
+ 0001:000020b8       BasePrintLibValueToString  0000000000002378 f   BasePrintLib:PrintLibInternal.obj
+ 0001:00002108       BasePrintLibSPrintMarker   00000000000023c8 f   BasePrintLib:PrintLibInternal.obj
+ 0001:00003014       BasePrintLibSPrint         00000000000032d4 f   BasePrintLib:PrintLibInternal.obj
+ 0001:00003038       PciOr8                     00000000000032f8 f   BasePciLibCf8:PciLib.obj
+ 0001:00003108       PciAndThenOr32             00000000000033c8 f   BasePciLibCf8:PciLib.obj
+ 0001:000031d4       InternalAcpiDelay          0000000000003494 f   BaseAcpiTimerLib:AcpiTimerLib.obj
+ 0001:00003238       SHA1_Update                00000000000034f8 f   OpensslLib:sha1dgst.obj
+ 0001:0000334c       SHA1_Final                 000000000000360c f   OpensslLib:sha1dgst.obj
+ 0001:00003768       DivU64x32Remainder         0000000000003a28 f   BaseLib:DivU64x32Remainder.obj
+ 0001:000037c8       PciCf8Read8                0000000000003a88 f   BasePciCf8Lib:PciCf8Lib.obj
+ 0001:0000387c       PciCf8Read16               0000000000003b3c f   BasePciCf8Lib:PciCf8Lib.obj
+ 0001:000038f0       PciCf8Read32               0000000000003bb0 f   BasePciCf8Lib:PciCf8Lib.obj
+ 0001:0000399c       SaveAndDisableInterrupts   0000000000003c5c f   BaseLib:Cpu.obj
+ 0001:000039c0       memset                     0000000000003c80 f   BaseIntrinsicLib:MemoryIntrinsics.obj
+ 0002:00000000       ??_C@_06CBFFONAL@TcgPei@   0000000000003ca0     TcgPei:AutoGen.obj
+ 0002:00000008       ??_C@_0CE@IBFOBMLB@?6ASSERT_RETURN_ERROR?5?$CIStatus?5?$DN?5@ 0000000000003ca8     TcgPei:AutoGen.obj
+ 0002:00000030       ??_C@_0CH@BBNBJKHK@?$CB?$CI?$CI?$CIINTN?$CJ?$CIRETURN_STATUS?$CJ?$CIStatus@ 0000000000003cd0     TcgPei:AutoGen.obj
+ 0002:00000060       ??_C@_0FK@MPMFCIGM@d?3?2edk2?2edk2?2Build?2OvmfX64?2DEBU@ 0000000000003d00     TcgPei:AutoGen.obj
+ 0002:000000bc       _gPcd_FixedAtBuild_PcdFirmwareVersionString 0000000000003d5c     TcgPei:AutoGen.obj
+ 0002:000000c0       ??_C@_0BI@PDOHMKFB@Sha1Ctx?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000003d60     TcgPei:TcgPei.obj
+ 0002:000000d8       ??_C@_0CN@CCBNOMBA@d?3?2edk2?2edk2?2SecurityPkg?2Tcg?2Tc@ 0000000000003d78     TcgPei:TcgPei.obj
+ 0002:00000108       ??_C@_0CH@OPMHCNCB@HashLogExtendEvent?5?9?5?$CFr?4?5Disabl@ 0000000000003da8     TcgPei:TcgPei.obj
+ 0002:00000130       ??_C@_0DE@ELBNCBEA@The?5FV?5which?5is?5excluded?5by?5Tcg@ 0000000000003dd0     TcgPei:TcgPei.obj
+ 0002:00000168       ??_C@_0DH@IHPLNOGP@The?5FV?5which?5is?5excluded?5by?5Tcg@ 0000000000003e08     TcgPei:TcgPei.obj
+ 0002:000001a0       ??_C@_0DE@ENNPBMGC@The?5FV?5which?5is?5measured?5by?5Tcg@ 0000000000003e40     TcgPei:TcgPei.obj
+ 0002:000001d8       ??_C@_0DH@KDLAKHMF@The?5FV?5which?5is?5measured?5by?5Tcg@ 0000000000003e78     TcgPei:TcgPei.obj
+ 0002:00000210       ??_C@_0CE@JOKAIKFH@mMeasuredBaseFvInfo?5?$CB?$DN?5?$CI?$CIvoid?5?$CK@ 0000000000003eb0     TcgPei:TcgPei.obj
+ 0002:00000238       ??_C@_0CB@DMEJJJHA@?6ASSERT_EFI_ERROR?5?$CIStatus?5?$DN?5?$CFr?$CJ@ 0000000000003ed8     TcgPei:TcgPei.obj
+ 0002:00000260       ??_C@_0CF@CHOLMMLM@mMeasuredChildFvInfo?5?$CB?$DN?5?$CI?$CIvoid?5@ 0000000000003f00     TcgPei:TcgPei.obj
+ 0002:00000288       ??_C@_0BN@NLBMDKMB@No?5TPM12?5instance?5required?$CB?6@ 0000000000003f28     TcgPei:TcgPei.obj
+ 0002:000002a8       ??_C@_0M@JGHOAELF@TPM?5error?$CB?6@ 0000000000003f48     TcgPei:TcgPei.obj
+ 0002:000002b8       ??_C@_0BD@KHNIIFAD@TPM?5not?5detected?$CB?6@ 0000000000003f58     TcgPei:TcgPei.obj
+ 0002:000002d0       ??_C@_0BG@NJBIOAGM@TPM?5error?$CB?5Build?5Hob?6@ 0000000000003f70     TcgPei:TcgPei.obj
+ 0002:000002e8       ??_C@_0CI@NNGADICP@?$CB?$CI?$CI?$CIINTN?$CJ?$CIRETURN_STATUS?$CJ?$CIStatus@ 0000000000003f88     TcgPei:TcgPei.obj
+ 0002:00000310       ??_C@_0BH@IACGKAP@Buffer?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000003fb0     PeiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0002:00000328       ??_C@_0DC@OFAEFPLN@d?3?2edk2?2edk2?2MdePkg?2Library?2Pei@ 0000000000003fc8     PeiPcdLib:PeiPcdLib.obj
+ 0002:00000360       ??_C@_0BF@PEDOPNMP@Guid?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000004000     PeiPcdLib:PeiPcdLib.obj
+ 0002:00000378       ??_C@_0BH@MAAHKCPC@String?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000004018     BaseLib:String.obj
+ 0002:00000390       ??_C@_0CN@LHBFELAO@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 0000000000004030     BaseLib:String.obj
+ 0002:000003c0       ??_C@_0CC@GFNLNIOC@?$CI?$CIUINTN?$CJString?5?$CG?50x00000001?$CJ?5?$DN?$DN@ 0000000000004060     BaseLib:String.obj
+ 0002:000003e8       ??_C@_0DK@EOJCOAME@Length?5?$DM?5_gPcd_FixedAtBuild_Pcd@ 0000000000004088     BaseLib:String.obj
+ 0002:00000428       ??_C@_0DI@MDIKFADO@Length?5?$DM?5_gPcd_FixedAtBuild_Pcd@ 00000000000040c8     BaseLib:String.obj
+ 0002:00000460       ??_C@_0DB@PKFMPMPC@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 0000000000004100     BaseLib:SafeString.obj
+ 0002:00000498       ??_C@_0BJ@CNKJJNE@?$CIBuffer?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ@ 0000000000004138     BaseLib:SafeString.obj
+ 0002:000004b8       ??_C@_0N@KGHEHMDL@Divisor?5?$CB?$DN?50@ 0000000000004158     BaseLib:DivU64x32.obj
+ 0002:000004d0       ??_C@_0ED@MKGCMJG@?$CILength?5?9?51?$CJ?5?$DM?$DN?5?$CI0xFFFFFFFFFFFF@ 0000000000004170     BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0002:00000520       ??_C@_0EB@LOHEEPCE@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 00000000000041c0     BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0002:00000568       ??_C@_0DO@MAOBOFEG@?$CILength?5?9?51?$CJ?5?$DM?$DN?5?$CI0xFFFFFFFFFFFF@ 0000000000004208     BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0002:000005a8       ??_C@_0DG@EEENIGGL@Length?5?$DM?$DN?5?$CI0xFFFFFFFFFFFFFFFFUL@ 0000000000004248     BaseMemoryLibRepStr:MemLibGuid.obj
+ 0002:000005e0       ??_C@_0EB@KNGCOOD@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 0000000000004280     BaseMemoryLibRepStr:ZeroMemWrapper.obj
+ 0002:00000628       ??_C@_0CP@HHPAEFCF@d?3?2edk2?2edk2?2MdePkg?2Library?2Pei@ 00000000000042c8     PeiHobLib:HobLib.obj
+ 0002:00000658       ??_C@_0BI@NCGMODPG@HobList?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000042f8     PeiHobLib:HobLib.obj
+ 0002:00000670       ??_C@_0BJ@NOLLDKJB@HobStart?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000004310     PeiHobLib:HobLib.obj
+ 0002:00000690       ??_C@_0BE@PICCCCHF@Hob?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000004330     PeiHobLib:HobLib.obj
+ 0002:000006a8       ??_C@_0DE@JLBHCAID@DataLength?5?$DM?$DN?5?$CI0xFFF8?5?9?5sizeof?5@ 0000000000004348     PeiHobLib:HobLib.obj
+ 0002:000006e0       ??_C@_0BC@FEDIJHFF@?$CI?$CIBOOLEAN?$CJ?$CI0?$DN?$DN1?$CJ?$CJ@ 0000000000004380     PeiHobLib:HobLib.obj
+ 0002:000006f8       ??_C@_0BH@LKMBFCBF@Format?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000004398     BaseDebugLibSerialPort:DebugLib.obj
+ 0002:00000710       ??_C@_0DO@CKBIDOOL@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 00000000000043b0     BaseDebugLibSerialPort:DebugLib.obj
+ 0002:00000750       ??_C@_0BI@NOCKJDBJ@ASSERT?5?$FL?$CFa?$FN?5?$CFa?$CI?$CFd?$CJ?3?5?$CFa?6@ 00000000000043f0     BaseDebugLibSerialPort:DebugLib.obj
+ 0002:00000768       ??_C@_0BI@HAGPDMHJ@AcpiTimerLibConstructor@ 0000000000004408     BaseAcpiTimerLib:BaseAcpiTimerLib.obj
+ 0002:00000780       ??_C@_0CL@DGCOIACG@?$CFa?3?5Unknown?5Host?5Bridge?5Device?5@ 0000000000004420     BaseAcpiTimerLib:BaseAcpiTimerLib.obj
+ 0002:000007b0       ??_C@_0DN@JKEGCPAJ@d?3?2edk2?2edk2?2OvmfPkg?2Library?2Ac@ 0000000000004450     BaseAcpiTimerLib:BaseAcpiTimerLib.obj
+ 0002:000007f0       ??_C@_0BL@EGJCJDID@Tpm12TisTpmCommand?5Send?5?9?5@ 0000000000004490     Tpm12DeviceLibDTpm:Tpm12Tis.obj
+ 0002:0000080c       ??_C@_05CNDJFPDP@?$CF02x?5@ 00000000000044ac     Tpm12DeviceLibDTpm:Tpm12Tis.obj
+ 0002:00000818       ??_C@_07ENEOHAFF@?4?4?4?4?4?4?5@ 00000000000044b8     Tpm12DeviceLibDTpm:Tpm12Tis.obj
+ 0002:00000820       ??_C@_01EEMJAFIK@?6@       00000000000044c0     Tpm12DeviceLibDTpm:Tpm12Tis.obj
+ 0002:00000828       ??_C@_0CB@PCDLEDCJ@Tpm12?5is?5not?5ready?5for?5command?$CB@ 00000000000044c8     Tpm12DeviceLibDTpm:Tpm12Tis.obj
+ 0002:00000850       ??_C@_0CC@PGGLEBAE@Tpm12?5The?5send?5buffer?5too?5small@ 00000000000044f0     Tpm12DeviceLibDTpm:Tpm12Tis.obj
+ 0002:00000878       ??_C@_0CJ@OCHADPHK@Wait?5for?5Tpm12?5response?5data?5ti@ 0000000000004518     Tpm12DeviceLibDTpm:Tpm12Tis.obj
+ 0002:000008a8       ??_C@_0CE@EPOBLBCM@Tpm12TisTpmCommand?5ReceiveHeade@ 0000000000004548     Tpm12DeviceLibDTpm:Tpm12Tis.obj
+ 0002:000008d0       ??_C@_0DF@DJKIMNGL@TPM12?3?5Response?5tag?5error?5?9?5cur@ 0000000000004570     Tpm12DeviceLibDTpm:Tpm12Tis.obj
+ 0002:00000908       ??_C@_0BO@HJJPPHKP@Tpm12TisTpmCommand?5Receive?5?9?5@ 00000000000045a8     Tpm12DeviceLibDTpm:Tpm12Tis.obj
+ 0002:00000928       ??_C@_0DF@CKGLKNMJ@Tpm12PhysicalPresence?3?5Response@ 00000000000045c8     Tpm12CommandLib:Tpm12PhysicalPresence.obj
+ 0002:00000960       ??_C@_0DP@PPIKABI@Tpm12GetCapabilityFlagPermanent@ 0000000000004600     Tpm12CommandLib:Tpm12GetCapability.obj
+ 0002:000009a0       ??_C@_0BL@CLINCDIA@TPM12Startup?3?5TPM_SUCCESS?6@ 0000000000004640     Tpm12CommandLib:Tpm12Startup.obj
+ 0002:000009c0       ??_C@_0CE@GCLKKALP@TPM12Startup?3?5TPM_INVALID_POSTI@ 0000000000004660     Tpm12CommandLib:Tpm12Startup.obj
+ 0002:000009e8       ??_C@_0CL@NFBCEJJB@Tpm12Extend?3?5Response?5Code?5erro@ 0000000000004688     Tpm12CommandLib:Tpm12Pcr.obj
+ 0002:00000a18       ??_C@_0DF@LMGPGEKN@Tpm12ContinueSelfTest?3?5Response@ 00000000000046b8     Tpm12CommandLib:Tpm12SelfTest.obj
+ 0002:00000a50       ??_C@_0DA@BDDONMJM@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 00000000000046f0     BaseLib:Unaligned.obj
+ 0002:00000a80       ??_C@_0BM@DAJCEFAH@PeiServices?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000004720     PeiServicesTablePointerLibIdt:PeiServicesTablePointer.obj
+ 0002:00000aa0       ??_C@_0FE@FIGBKNFO@d?3?2edk2?2edk2?2MdePkg?2Library?2Pei@ 0000000000004740     PeiServicesTablePointerLibIdt:PeiServicesTablePointer.obj
+ 0002:00000af8       ??_C@_0DI@DAGDPLPG@?$CILength?5?9?51?$CJ?5?$DM?$DN?5?$CI0xFFFFFFFFFFFF@ 0000000000004798     BaseMemoryLibRepStr:SetMemWrapper.obj
+ 0002:00000b30       ??_C@_0EA@JBMLOGBO@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 00000000000047d0     BaseMemoryLibRepStr:SetMemWrapper.obj
+ 0002:00000b70       ??_C@_0DK@HAPDFBOC@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 0000000000004810     BaseIoLibIntrinsicSev:IoLibMsc.obj
+ 0002:00000bb0       ??_C@_0BA@HCECIDGN@?$CIPort?5?$CG?53?$CJ?5?$DN?$DN?50@ 0000000000004850     BaseIoLibIntrinsicSev:IoLibMsc.obj
+ 0002:00000bc0       ??_C@_0DH@FEKOHHMP@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 0000000000004860     BaseIoLibIntrinsicSev:IoLib.obj
+ 0002:00000bf8       ??_C@_0BD@OMMAJMCK@?$CIAddress?5?$CG?53?$CJ?5?$DN?$DN?50@ 0000000000004898     BaseIoLibIntrinsicSev:IoLib.obj
+ 0002:00000c10       ??_C@_0DM@OAJIKNNG@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 00000000000048b0     BasePrintLib:PrintLibInternal.obj
+ 0002:00000c50       ??_C@_0EB@HDGIDCIO@?$CIBufferSize?5?$DM?$DN?5?$CI_gPcd_FixedAtBu@ 00000000000048f0     BasePrintLib:PrintLibInternal.obj
+ 0002:00000c98       ??_C@_0BJ@PPAKKDJG@?$CIFormat?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ@ 0000000000004938     BasePrintLib:PrintLibInternal.obj
+ 0002:00000cc0       ??_C@_0ED@LPDDCECB@?$CIBufferSize?5?$DM?$DN?5?$CI_gPcd_FixedAtBu@ 0000000000004960     BasePrintLib:PrintLibInternal.obj
+ 0002:00000d10       ??_C@_0IM@BFJJFLGB@?$CIStrnLenS?5?$CI?$CICHAR16?5?$CK?$CJFormat?0?5?$CI_@ 00000000000049b0     BasePrintLib:PrintLibInternal.obj
+ 0002:00000da0       ??_C@_0ID@PLGJGION@?$CIAsciiStrnLenS?5?$CIFormat?0?5?$CI_gPcd_@ 0000000000004a40     BasePrintLib:PrintLibInternal.obj
+ 0002:00000e28       ??_C@_0O@MLOLIMFM@?$DMnull?5string?$DO@ 0000000000004ac8     BasePrintLib:PrintLibInternal.obj
+ 0002:00000e38       ??_C@_0M@BJJDNPHK@?$DMnull?5guid?$DO@ 0000000000004ad8     BasePrintLib:PrintLibInternal.obj
+ 0002:00000e48       ??_C@_0DB@PMLHLBMO@?$CF08x?9?$CF04x?9?$CF04x?9?$CF02x?$CF02x?9?$CF02x?$CF02@ 0000000000004ae8     BasePrintLib:PrintLibInternal.obj
+ 0002:00000e80       ??_C@_0M@LHGBCIKM@?$DMnull?5time?$DO@ 0000000000004b20     BasePrintLib:PrintLibInternal.obj
+ 0002:00000e90       ??_C@_0BK@FCPKCIDD@?$CF02d?1?$CF02d?1?$CF04d?5?5?$CF02d?3?$CF02d@ 0000000000004b30     BasePrintLib:PrintLibInternal.obj
+ 0002:00000eac       ??_C@_04JIMNDDED@?$CF08X@  0000000000004b4c     BasePrintLib:PrintLibInternal.obj
+ 0002:00000eb4       ??_C@_02PCIJFNDE@?$AN?6@   0000000000004b54     BasePrintLib:PrintLibInternal.obj
+ 0002:00000eb8       ??_C@_01LIIJDEN@?$AN@      0000000000004b58     BasePrintLib:PrintLibInternal.obj
+ 0002:00000ec0       mWarningString             0000000000004b60     BasePrintLib:PrintLibInternal.obj
+ 0002:00000f60       mErrorString               0000000000004c00     BasePrintLib:PrintLibInternal.obj
+ 0002:00001220       mHexStr                    0000000000004ec0     BasePrintLib:PrintLibInternal.obj
+ 0002:00001230       ??_C@_0DJ@FHIMIJAH@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 0000000000004ed0     BaseLib:DivU64x32Remainder.obj
+ 0002:00001270       ??_C@_0CG@KIJMJHBN@?$CI?$CIAddress?$CJ?5?$CG?5?$CI?$HO0xffff0ff?5?$HM?5?$CI0?$CJ?$CJ@ 0000000000004f10     BasePciCf8Lib:PciCf8Lib.obj
+ 0002:00001298       ??_C@_0DG@KOAEBPEO@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 0000000000004f38     BasePciCf8Lib:PciCf8Lib.obj
+ 0002:000012d0       ??_C@_0CG@EDKLCMBO@?$CI?$CIAddress?$CJ?5?$CG?5?$CI?$HO0xffff0ff?5?$HM?5?$CI3?$CJ?$CJ@ 0000000000004f70     BasePciCf8Lib:PciCf8Lib.obj
+ 0002:0000134c       __volatile_metadata        0000000000004fec     <linker-defined>
+ 0003:00000000       _fltused                   0000000000005180     BaseIntrinsicLib:MemoryIntrinsics.obj
+ 0003:00000008       gTpmErrorHobGuid           0000000000005188     TcgPei:AutoGen.obj
+ 0003:00000018       gEdkiiTcgPpiGuid           0000000000005198     TcgPei:AutoGen.obj
+ 0003:00000028       gTcgEventEntryHobGuid      00000000000051a8     TcgPei:AutoGen.obj
+ 0003:00000038       gEfiPeiFirmwareVolumeInfo2PpiGuid 00000000000051b8     TcgPei:AutoGen.obj
+ 0003:00000048       gPeiTpmInitializationDonePpiGuid 00000000000051c8     TcgPei:AutoGen.obj
+ 0003:00000058       gEfiTpmDeviceInstanceTpm12Guid 00000000000051d8     TcgPei:AutoGen.obj
+ 0003:00000068       gPeiTpmInitializedPpiGuid  00000000000051e8     TcgPei:AutoGen.obj
+ 0003:00000078       gEdkiiMigratedFvInfoGuid   00000000000051f8     TcgPei:AutoGen.obj
+ 0003:00000088       gEfiEndOfPeiSignalPpiGuid  0000000000005208     TcgPei:AutoGen.obj
+ 0003:00000098       gPeiLockPhysicalPresencePpiGuid 0000000000005218     TcgPei:AutoGen.obj
+ 0003:000000a8       gEfiPeiFirmwareVolumeInfoPpiGuid 0000000000005228     TcgPei:AutoGen.obj
+ 0003:000000b8       gMeasuredFvHobGuid         0000000000005238     TcgPei:AutoGen.obj
+ 0003:000000c8       gEfiCallerIdGuid           0000000000005248     TcgPei:AutoGen.obj
+ 0003:000000d8       gEfiPeiFirmwareVolumeInfoMeasurementExcludedPpiGuid 0000000000005258     TcgPei:AutoGen.obj
+ 0003:000000e8       gPcdPpiGuid                0000000000005268     TcgPei:AutoGen.obj
+ 0003:00000100       mNotifyList                0000000000005280     TcgPei:TcgPei.obj
+ 0003:00000160       mTcgPpiList                00000000000052e0     TcgPei:TcgPei.obj
+ 0003:00000178       mEdkiiTcgPpi               00000000000052f8     TcgPei:TcgPei.obj
+ 0003:00000180       mTpmInitializedPpiList     0000000000005300     TcgPei:TcgPei.obj
+ 0003:00000198       mTpmInitializationDonePpiList 0000000000005318     TcgPei:TcgPei.obj
+ 0003:000001b8       mMeasuredChildFvIndex      0000000000005338     TcgPei:TcgPei.obj
+ 0003:000001bc       mMeasuredMaxBaseFvIndex    000000000000533c     TcgPei:TcgPei.obj
+ 0003:000001c0       mMeasuredBaseFvIndex       0000000000005340     TcgPei:TcgPei.obj
+ 0003:000001c4       mMeasuredMaxChildFvIndex   0000000000005344     TcgPei:TcgPei.obj
+ 0003:000001c8       mImageInMemory             0000000000005348     TcgPei:TcgPei.obj
+ 0003:000001c9       gParity                    0000000000005349     PcAtSerialPortLib:SerialPortLib.obj
+ 0003:000001ca       gBreakSet                  000000000000534a     PcAtSerialPortLib:SerialPortLib.obj
+ 0003:000001d0       mMeasurementExcludedFvPpi  0000000000005350     <common>
+ 0003:000001d8       mMeasuredChildFvInfo       0000000000005358     <common>
+ 0003:000001e0       mMeasuredBaseFvInfo        0000000000005360     <common>
+
+ entry point at        0001:00000140
+
+ Static symbols
+
+ 0001:0000001a       InternalMemCopyMem.0       00000000000002da     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:0000002a       @CopyBackward              00000000000002ea     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000033       @CopyBytes                 00000000000002f3     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00003494       sha1_block_data_order      0000000000003754 f   OpensslLib:sha1dgst.obj
+ 0003:000001b0       memset_func                0000000000005330     OpensslLib:mem_clr.obj
+ 0003:000001cc       mAcpiTimerIoAddr           000000000000534c     BaseAcpiTimerLib:BaseAcpiTimerLib.obj
+ 0005:00000000       $unwind$_ModuleEntryPoint  0000000000005660     PeimEntryPoint:PeimEntryPoint.obj
+ 0005:0000001c       $unwind$MmioRead32         000000000000567c     BaseIoLibIntrinsicSev:IoLib.obj
+ 0005:0000001c       $unwind$IoRead32           000000000000567c     BaseIoLibIntrinsicSev:IoLibMsc.obj
+ 0005:0000001c       $unwind$SaveAndDisableInterrupts 000000000000567c     BaseLib:Cpu.obj
+ 0005:0000001c       $unwind$StrnLenS           000000000000567c     BaseLib:SafeString.obj
+ 0005:0000001c       $unwind$InternalPeiCreateHob 000000000000567c     PeiHobLib:HobLib.obj
+ 0005:0000001c       $unwind$AllocatePool       000000000000567c     PeiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0005:0000001c       $unwind$InternalAllocatePages 000000000000567c     PeiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0005:0000001c       $unwind$InternalAllocateZeroPool 000000000000567c     PeiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0005:0000001c       $unwind$Tpm12GetPtpInterface 000000000000567c     Tpm12DeviceLibDTpm:Tpm12Tis.obj
+ 0005:0000001c       $unwind$EndofPeiSignalNotifyCallBack 000000000000567c     TcgPei:TcgPei.obj
+ 0005:00000024       $unwind$HashLogExtendEvent 0000000000005684     TcgPei:TcgPei.obj
+ 0005:0000003c       $unwind$MeasureFvImage     000000000000569c     TcgPei:TcgPei.obj
+ 0005:00000050       $unwind$MeasureMainBios    00000000000056b0     TcgPei:TcgPei.obj
+ 0005:0000005c       $unwind$IoWrite32          00000000000056bc     BaseIoLibIntrinsicSev:IoLibMsc.obj
+ 0005:0000005c       $unwind$AsciiStrLen        00000000000056bc     BaseLib:String.obj
+ 0005:0000005c       $unwind$SetMem             00000000000056bc     BaseMemoryLibRepStr:SetMemWrapper.obj
+ 0005:0000005c       $unwind$ZeroMem            00000000000056bc     BaseMemoryLibRepStr:ZeroMemWrapper.obj
+ 0005:0000005c       $unwind$BuildGuidHob       00000000000056bc     PeiHobLib:HobLib.obj
+ 0005:0000005c       $unwind$Tpm12RequestUseTpm 00000000000056bc     Tpm12DeviceLibDTpm:Tpm12Tis.obj
+ 0005:0000005c       $unwind$FirmwareVolumeInfoPpiNotifyCallback 00000000000056bc     TcgPei:TcgPei.obj
+ 0005:00000068       $unwind$PhysicalPresencePpiNotifyCallback 00000000000056c8     TcgPei:TcgPei.obj
+ 0005:00000074       $unwind$PeimEntryMP        00000000000056d4     TcgPei:TcgPei.obj
+ 0005:00000080       $unwind$PeimEntryMA        00000000000056e0     TcgPei:TcgPei.obj
+ 0005:00000090       $unwind$CopyMem            00000000000056f0     BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0005:00000090       $unwind$PciCf8Read16       00000000000056f0     BasePciCf8Lib:PciCf8Lib.obj
+ 0005:00000090       $unwind$PciCf8Read32       00000000000056f0     BasePciCf8Lib:PciCf8Lib.obj
+ 0005:00000090       $unwind$PciCf8Read8        00000000000056f0     BasePciCf8Lib:PciCf8Lib.obj
+ 0005:00000090       $unwind$GetNextGuidHob     00000000000056f0     PeiHobLib:HobLib.obj
+ 0005:00000090       $unwind$InternalReallocatePool 00000000000056f0     PeiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0005:000000a4       $unwind$GetHobList         0000000000005704     PeiHobLib:HobLib.obj
+ 0005:000000a4       $unwind$GetPcdPpiPointer   0000000000005704     PeiPcdLib:PeiPcdLib.obj
+ 0005:000000ac       $unwind$DivU64x32Remainder 000000000000570c     BaseLib:DivU64x32Remainder.obj
+ 0005:000000ac       $unwind$StrSize            000000000000570c     BaseLib:String.obj
+ 0005:000000ac       $unwind$CopyGuid           000000000000570c     BaseMemoryLibRepStr:MemLibGuid.obj
+ 0005:000000ac       $unwind$InternalAcpiDelay  000000000000570c     BaseAcpiTimerLib:AcpiTimerLib.obj
+ 0005:000000bc       $unwind$CompareGuid        000000000000571c     BaseMemoryLibRepStr:MemLibGuid.obj
+ 0005:000000d4       $unwind$PeiServicesLocatePpi 0000000000005734     PeiServicesLib:PeiServicesLib.obj
+ 0005:000000e0       $unwind$DebugPrint         0000000000005740     BaseDebugLibSerialPort:DebugLib.obj
+ 0005:000000e8       $unwind$DebugPrintMarker   0000000000005748     BaseDebugLibSerialPort:DebugLib.obj
+ 0005:000000fc       $unwind$DebugAssert        000000000000575c     BaseDebugLibSerialPort:DebugLib.obj
+ 0005:00000104       $unwind$SHA1_Update        0000000000005764     OpensslLib:sha1dgst.obj
+ 0005:00000104       $unwind$Tpm12TisPcWaitRegisterBits 0000000000005764     Tpm12DeviceLibDTpm:Tpm12Tis.obj
+ 0005:0000011c       $unwind$Tpm12TisPcReadBurstCount 000000000000577c     Tpm12DeviceLibDTpm:Tpm12Tis.obj
+ 0005:00000130       $unwind$Tpm12TisTpmCommand 0000000000005790     Tpm12DeviceLibDTpm:Tpm12Tis.obj
+ 0005:0000014c       $unwind$Tpm12SubmitCommand 00000000000057ac     Tpm12DeviceLibDTpm:Tpm12Tis.obj
+ 0005:00000160       $unwind$InternalReportStatusCode 00000000000057c0     PeiReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0005:00000160       $unwind$GetPeiServicesTablePointer 00000000000057c0     PeiServicesTablePointerLibIdt:PeiServicesTablePointer.obj
+ 0005:00000168       $unwind$Tpm12PhysicalPresence 00000000000057c8     Tpm12CommandLib:Tpm12PhysicalPresence.obj
+ 0005:00000168       $unwind$Tpm12Startup       00000000000057c8     Tpm12CommandLib:Tpm12Startup.obj
+ 0005:00000170       $unwind$Tpm12GetCapabilityFlagPermanent 00000000000057d0     Tpm12CommandLib:Tpm12GetCapability.obj
+ 0005:00000184       $unwind$Tpm12Extend        00000000000057e4     Tpm12CommandLib:Tpm12Pcr.obj
+ 0005:0000018c       $unwind$AsciiSPrint        00000000000057ec     BasePrintLib:PrintLib.obj
+ 0005:00000194       $unwind$BasePrintLibValueToString 00000000000057f4     BasePrintLib:PrintLibInternal.obj
+ 0005:000001a0       $unwind$BasePrintLibSPrintMarker 0000000000005800     BasePrintLib:PrintLibInternal.obj
+ 0005:000001bc       $unwind$BasePrintLibSPrint 000000000000581c     BasePrintLib:PrintLibInternal.obj
+ 0005:000001c4       $unwind$SHA1_Final         0000000000005824     OpensslLib:sha1dgst.obj
+ 0005:000001c4       $unwind$PciAndThenOr32     0000000000005824     BasePciLibCf8:PciLib.obj
+ 0005:000001c4       $unwind$PciOr8             0000000000005824     BasePciLibCf8:PciLib.obj
+ 0005:000001dc       $unwind$sha1_block_data_order 000000000000583c     OpensslLib:sha1dgst.obj

@@ -1,0 +1,15 @@
+d:\edk2\edk2\MdePkg\Library\UefiBootServicesTableLib\UefiBootServicesTableLib.inf
+d:\edk2\edk2\MdePkg\Library\UefiRuntimeLib\UefiRuntimeLib.inf
+d:\edk2\edk2\MdePkg\Library\BaseMemoryLibRepStr\BaseMemoryLibRepStr.inf
+d:\edk2\edk2\MdeModulePkg\Universal\MonotonicCounterRuntimeDxe\MonotonicCounter.c
+d:\edk2\edk2\MdePkg\Library\UefiRuntimeServicesTableLib\UefiRuntimeServicesTableLib.inf
+d:\edk2\edk2\Build\OvmfX64\RELEASE_VS2019\X64\MdeModulePkg\Universal\MonotonicCounterRuntimeDxe\MonotonicCounterRuntimeDxe\DEBUG\AutoGen.h
+d:\edk2\edk2\MdePkg\Library\BasePrintLib\BasePrintLib.inf
+d:\edk2\edk2\MdePkg\Library\BaseLib\BaseLib.inf
+d:\edk2\edk2\MdeModulePkg\Universal\MonotonicCounterRuntimeDxe\MonotonicCounterRuntimeDxe.inf
+d:\edk2\edk2\MdePkg\Library\BaseDebugPrintErrorLevelLib\BaseDebugPrintErrorLevelLib.inf
+d:\edk2\edk2\MdePkg\Library\RegisterFilterLibNull\RegisterFilterLibNull.inf
+d:\edk2\edk2\OvmfPkg\Library\PlatformDebugLibIoPort\PlatformDebugLibIoPort.inf
+d:\edk2\edk2\MdePkg\Library\UefiDriverEntryPoint\UefiDriverEntryPoint.inf
+d:\edk2\edk2\MdePkg\Library\BaseIoLibIntrinsic\BaseIoLibIntrinsicSev.inf
+d:\edk2\edk2\MdePkg\Library\DxePcdLib\DxePcdLib.inf

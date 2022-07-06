@@ -1,0 +1,1 @@
+  d:\edk2\edk2\UefiCpuPkg\CpuMpPei\CpuPaging.c d:\edk2\edk2\Build\OvmfX64\DEBUG_VS2019\X64\UefiCpuPkg\CpuMpPei\CpuMpPei\DEBUG\AutoGen.c d:\edk2\edk2\UefiCpuPkg\CpuMpPei\CpuMp2Pei.c d:\edk2\edk2\UefiCpuPkg\CpuMpPei\CpuBist.c d:\edk2\edk2\UefiCpuPkg\CpuMpPei\CpuMpPei.c

@@ -1,0 +1,318 @@
+ tftpDynamicCommand
+
+ Timestamp is 61ee7026 (Mon Jan 24 17:23:50 2022)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000208H .text                   CODE
+ 0001:00000208 000056f5H .text$mn                CODE
+ 0002:00000000 000001a0H .data                   DATA
+ 0002:000001a0 00000720H .rdata                  DATA
+ 0002:000008c0 000000f8H .bss                    DATA
+ 0002:000009b8 00000020H .rdata$voltmd           DATA
+ 0002:000009d8 000000d0H .rdata$zzzdbg           DATA
+ 0003:00000000 00000288H .pdata                  DATA
+ 0004:00000000 000002d0H .xdata                  DATA
+ 0005:00000000 00000060H .rsrc$01                DATA
+ 0005:00000060 00001ae0H .rsrc$02                DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __x64_code_ranges_to_entry_points_count 0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_table          0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_count          0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_count      0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_table      0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map_count    0000000000000000     <absolute>
+ 0000:00000000       __dynamic_value_reloc_table 0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_count         0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat     0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table   0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat_copy 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_native_entrypoint 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map          0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table_size 0000000000000000     <absolute>
+ 0000:00000000       __AbsoluteZero             0000000000000000     <absolute>
+ 0000:00000000       __guard_check_icall_a64n_fptr 0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_table      0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_table         0000000000000000     <absolute>
+ 0000:00000000       __guard_flags              0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_count      0000000000000000     <absolute>
+ 0000:00000000       __enclave_config           0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata_count 0000000000000000     <absolute>
+ 0000:00000000       __ImageBase                0000000000000000     <linker-defined>
+ 0001:00000000       InternalMemCopyMem         00000000000002c0     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000040       InternalMemZeroMem         0000000000000300     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00000060       InternalMemCompareMem      0000000000000320     BaseMemoryLibRepStr:CompareMem.obj
+ 0001:00000080       InternalMemSetMem          0000000000000340     BaseMemoryLibRepStr:SetMem.obj
+ 0001:000000a0       InternalMemSetMem64        0000000000000360     BaseMemoryLibRepStr:SetMem64.obj
+ 0001:000000c0       InternalMemSetMem32        0000000000000380     BaseMemoryLibRepStr:SetMem32.obj
+ 0001:000000e0       CpuPause                   00000000000003a0     BaseLib:CpuPause.obj
+ 0001:000000f0       SevNoRepIo                 00000000000003b0     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000130       IoReadFifo8                00000000000003f0     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000152       IoReadFifo16               0000000000000412     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000178       IoReadFifo32               0000000000000438     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:0000019b       IoWriteFifo8               000000000000045b     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001bd       IoWriteFifo16              000000000000047d     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001e3       IoWriteFifo32              00000000000004a3     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000208       _DriverUnloadHandler       00000000000004c8 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:00000258       _ModuleEntryPoint          0000000000000518 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:00000354       ProcessLibraryConstructorList 0000000000000614 f   tftpDynamicCommand:AutoGen.obj
+ 0001:0000045c       TftpCommandHandler         000000000000071c f   tftpDynamicCommand:TftpDynamicCommand.obj
+ 0001:00000470       TftpCommandGetHelp         0000000000000730 f   tftpDynamicCommand:TftpDynamicCommand.obj
+ 0001:00000484       RunTftp                    0000000000000744 f   tftpDynamicCommand:Tftp.obj
+ 0001:000013cc       StrCmp                     000000000000168c f   BaseLib:String.obj
+ 0001:00001404       StrnCmp                    00000000000016c4 f   BaseLib:String.obj
+ 0001:00001440       StrStr                     0000000000001700 f   BaseLib:String.obj
+ 0001:00001490       AsciiStrnCmp               0000000000001750 f   BaseLib:String.obj
+ 0001:000014c4       StrnLenS                   0000000000001784 f   BaseLib:SafeString.obj
+ 0001:000014f8       StrCpyS                    00000000000017b8 f   BaseLib:SafeString.obj
+ 0001:00001598       StrCatS                    0000000000001858 f   BaseLib:SafeString.obj
+ 0001:0000166c       StrnCatS                   000000000000192c f   BaseLib:SafeString.obj
+ 0001:00001798       StrDecimalToUintnS         0000000000001a58 f   BaseLib:SafeString.obj
+ 0001:00001890       AsciiStrDecimalToUintnS    0000000000001b50 f   BaseLib:SafeString.obj
+ 0001:00001944       UnicodeStrToAsciiStrS      0000000000001c04 f   BaseLib:SafeString.obj
+ 0001:000019d4       UnicodeSPrint              0000000000001c94 f   BasePrintLib:PrintLib.obj
+ 0001:00001a08       AsciiSPrint                0000000000001cc8 f   BasePrintLib:PrintLib.obj
+ 0001:00001a34       BasePrintLibFillBuffer     0000000000001cf4 f   BasePrintLib:PrintLibInternal.obj
+ 0001:00001a68       BasePrintLibSPrintMarker   0000000000001d28 f   BasePrintLib:PrintLibInternal.obj
+ 0001:0000284c       BasePrintLibSPrint         0000000000002b0c f   BasePrintLib:PrintLibInternal.obj
+ 0001:00002870       InternalAllocatePool       0000000000002b30 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:000028a0       AllocateZeroPool           0000000000002b60 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:000028cc       InternalAllocateCopyPool   0000000000002b8c f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:0000290c       InternalReallocatePool     0000000000002bcc f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:0000299c       GetEfiGlobalVariable2      0000000000002c5c f   UefiLib:UefiLib.obj
+ 0001:00002a58       GetBestLanguage            0000000000002d18 f   UefiLib:UefiLib.obj
+ 0001:00002b84       EfiOpenFileByDevicePath    0000000000002e44 f   UefiLib:UefiLib.obj
+ 0001:00002d34       HiiGetString               0000000000002ff4 f   UefiHiiLib:HiiString.obj
+ 0001:00002ec0       HiiGetSupportedLanguages   0000000000003180 f   UefiHiiLib:HiiLanguage.obj
+ 0001:00002f70       ShellFindSE2               0000000000003230 f   UefiShellLib:UefiShellLib.obj
+ 0001:00003148       ShellLibConstructorWorker  0000000000003408 f   UefiShellLib:UefiShellLib.obj
+ 0001:000033e8       ShellLibDestructor         00000000000036a8 f   UefiShellLib:UefiShellLib.obj
+ 0001:000034fc       ShellOpenFileByName        00000000000037bc f   UefiShellLib:UefiShellLib.obj
+ 0001:0000379c       InternalShellConvertFileListType 0000000000003a5c f   UefiShellLib:UefiShellLib.obj
+ 0001:00003910       ShellOpenFileMetaArg       0000000000003bd0 f   UefiShellLib:UefiShellLib.obj
+ 0001:00003b54       ShellCloseFileMetaArg      0000000000003e14 f   UefiShellLib:UefiShellLib.obj
+ 0001:00003c24       InternalIsOnCheckList      0000000000003ee4 f   UefiShellLib:UefiShellLib.obj
+ 0001:00003d6c       InternalCommandLineParse   000000000000402c f   UefiShellLib:UefiShellLib.obj
+ 0001:00004620       ShellCommandLineFreeVarList 00000000000048e0 f   UefiShellLib:UefiShellLib.obj
+ 0001:000046a0       ShellCommandLineGetValue   0000000000004960 f   UefiShellLib:UefiShellLib.obj
+ 0001:000047e0       ShellCopySearchAndReplace  0000000000004aa0 f   UefiShellLib:UefiShellLib.obj
+ 0001:000049fc       InternalPrintTo            0000000000004cbc f   UefiShellLib:UefiShellLib.obj
+ 0001:00004a8c       InternalShellPrintWorker   0000000000004d4c f   UefiShellLib:UefiShellLib.obj
+ 0001:00004d78       ShellPrintEx               0000000000005038 f   UefiShellLib:UefiShellLib.obj
+ 0001:00004da8       ShellPrintHiiEx            0000000000005068 f   UefiShellLib:UefiShellLib.obj
+ 0001:00004e04       StrnCatGrow                00000000000050c4 f   UefiShellLib:UefiShellLib.obj
+ 0001:00004f44       InternalShellIsHexOrDecimalNumber 0000000000005204 f   UefiShellLib:UefiShellLib.obj
+ 0001:0000502c       InternalShellStrHexToUint64 00000000000052ec f   UefiShellLib:UefiShellLib.obj
+ 0001:00005178       InternalShellStrDecimalToUint64 0000000000005438 f   UefiShellLib:UefiShellLib.obj
+ 0001:0000524c       ShellConvertStringToUint64 000000000000550c f   UefiShellLib:UefiShellLib.obj
+ 0001:0000537c       NetLibDestroyServiceChild  000000000000563c f   DxeNetLib:DxeNetLib.obj
+ 0001:000053cc       NetLibStrToIp4             000000000000568c f   DxeNetLib:DxeNetLib.obj
+ 0001:000054b4       PathRemoveLastItem         0000000000005774 f   BaseLib:FilePaths.obj
+ 0001:0000550c       PathCleanUpDirectories     00000000000057cc f   BaseLib:FilePaths.obj
+ 0001:000056e8       StringNoCaseCompare        00000000000059a8 f   UefiSortLib:UefiSortLib.obj
+ 0001:00005740       FileHandleGetInfo          0000000000005a00 f   UefiFileHandleLib:UefiFileHandleLib.obj
+ 0001:000057f0       FileHandleSetInfo          0000000000005ab0 f   UefiFileHandleLib:UefiFileHandleLib.obj
+ 0001:00005818       FileHandleRead             0000000000005ad8 f   UefiFileHandleLib:UefiFileHandleLib.obj
+ 0001:0000582c       FileHandleWrite            0000000000005aec f   UefiFileHandleLib:UefiFileHandleLib.obj
+ 0001:00005840       FileHandleClose            0000000000005b00 f   UefiFileHandleLib:UefiFileHandleLib.obj
+ 0001:00005854       FileHandleDelete           0000000000005b14 f   UefiFileHandleLib:UefiFileHandleLib.obj
+ 0001:00005868       FileHandleSetPosition      0000000000005b28 f   UefiFileHandleLib:UefiFileHandleLib.obj
+ 0001:0000587c       FileHandleGetPosition      0000000000005b3c f   UefiFileHandleLib:UefiFileHandleLib.obj
+ 0001:00005898       FileHandleFlush            0000000000005b58 f   UefiFileHandleLib:UefiFileHandleLib.obj
+ 0001:000058ac       FileHandleGetSize          0000000000005b6c f   UefiFileHandleLib:UefiFileHandleLib.obj
+ 0002:00000000       gEfiLoadedImageProtocolGuid 0000000000005bc0     tftpDynamicCommand:AutoGen.obj
+ 0002:00000010       gEfiGlobalVariableGuid     0000000000005bd0     tftpDynamicCommand:AutoGen.obj
+ 0002:00000020       gEfiUnicodeCollation2ProtocolGuid 0000000000005be0     tftpDynamicCommand:AutoGen.obj
+ 0002:00000030       gEfiMtftp4ProtocolGuid     0000000000005bf0     tftpDynamicCommand:AutoGen.obj
+ 0002:00000040       gEfiHiiPackageListProtocolGuid 0000000000005c00     tftpDynamicCommand:AutoGen.obj
+ 0002:00000050       gEfiShellDynamicCommandProtocolGuid 0000000000005c10     tftpDynamicCommand:AutoGen.obj
+ 0002:00000060       gEfiShellEnvironment2ExtGuid 0000000000005c20     tftpDynamicCommand:AutoGen.obj
+ 0002:00000070       gEfiFileInfoGuid           0000000000005c30     tftpDynamicCommand:AutoGen.obj
+ 0002:00000080       gEfiHiiConfigRoutingProtocolGuid 0000000000005c40     tftpDynamicCommand:AutoGen.obj
+ 0002:00000090       gEfiHiiImageProtocolGuid   0000000000005c50     tftpDynamicCommand:AutoGen.obj
+ 0002:000000a0       gEfiDevicePathUtilitiesProtocolGuid 0000000000005c60     tftpDynamicCommand:AutoGen.obj
+ 0002:000000b0       gEfiShellParametersProtocolGuid 0000000000005c70     tftpDynamicCommand:AutoGen.obj
+ 0002:000000c0       gEfiHiiDatabaseProtocolGuid 0000000000005c80     tftpDynamicCommand:AutoGen.obj
+ 0002:000000d0       gEfiSimpleFileSystemProtocolGuid 0000000000005c90     tftpDynamicCommand:AutoGen.obj
+ 0002:000000e0       gEfiHiiStringProtocolGuid  0000000000005ca0     tftpDynamicCommand:AutoGen.obj
+ 0002:000000f0       gEfiShellEnvironment2Guid  0000000000005cb0     tftpDynamicCommand:AutoGen.obj
+ 0002:00000100       gEfiManagedNetworkServiceBindingProtocolGuid 0000000000005cc0     tftpDynamicCommand:AutoGen.obj
+ 0002:00000110       gEfiMtftp4ServiceBindingProtocolGuid 0000000000005cd0     tftpDynamicCommand:AutoGen.obj
+ 0002:00000120       gEfiShellProtocolGuid      0000000000005ce0     tftpDynamicCommand:AutoGen.obj
+ 0002:00000130       gEfiManagedNetworkProtocolGuid 0000000000005cf0     tftpDynamicCommand:AutoGen.obj
+ 0002:00000140       gEfiShellInterfaceGuid     0000000000005d00     tftpDynamicCommand:AutoGen.obj
+ 0002:00000150       gEfiHiiFontProtocolGuid    0000000000005d10     tftpDynamicCommand:AutoGen.obj
+ 0002:00000160       mTftpDynamicCommand        0000000000005d20     tftpDynamicCommand:TftpDynamicCommand.obj
+ 0002:00000178       DefaultMtftp4ConfigData    0000000000005d38     tftpDynamicCommand:Tftp.obj
+ 0002:000001a0       ??_C@_19ONPPEBM@?$AAt?$AAf?$AAt?$AAp@ 0000000000005d60     tftpDynamicCommand:TftpDynamicCommand.obj
+ 0002:000001ac       ??_C@_15LDCBPADN@?$AA?9?$AAi@ 0000000000005d6c     tftpDynamicCommand:Tftp.obj
+ 0002:000001b4       ??_C@_15IEPPAAAP@?$AA?9?$AAl@ 0000000000005d74     tftpDynamicCommand:Tftp.obj
+ 0002:000001bc       ??_C@_15DEDJCAKD@?$AA?9?$AAr@ 0000000000005d7c     tftpDynamicCommand:Tftp.obj
+ 0002:000001c4       ??_C@_15NMJMBAFJ@?$AA?9?$AAc@ 0000000000005d84     tftpDynamicCommand:Tftp.obj
+ 0002:000001cc       ??_C@_15BBFCHPHP@?$AA?9?$AAt@ 0000000000005d8c     tftpDynamicCommand:Tftp.obj
+ 0002:000001d4       ??_C@_15IMIFEHMG@?$AA?9?$AAs@ 0000000000005d94     tftpDynamicCommand:Tftp.obj
+ 0002:000001dc       ??_C@_15DOHNAJB@?$AA?9?$AAw@ 0000000000005d9c     tftpDynamicCommand:Tftp.obj
+ 0002:000001e8       ??_C@_1M@CLFCEILF@?$AAe?$AAt?$AAh?$AA?$CF?$AAd@ 0000000000005da8     tftpDynamicCommand:Tftp.obj
+ 0002:000001f8       ??_C@_1M@JJEJLDIL@?$AAu?$AAn?$AAk?$AA?$CF?$AAd@ 0000000000005db8     tftpDynamicCommand:Tftp.obj
+ 0002:00000204       ??_C@_05GHDOEBHJ@tsize@    0000000000005dc4     tftpDynamicCommand:Tftp.obj
+ 0002:00000210       ??_C@_07JPIGAOKK@blksize@  0000000000005dd0     tftpDynamicCommand:Tftp.obj
+ 0002:00000218       ??_C@_02DPKJAMEF@?$CFd@    0000000000005dd8     tftpDynamicCommand:Tftp.obj
+ 0002:00000220       ??_C@_0L@HMPKIDCJ@windowsize@ 0000000000005de0     tftpDynamicCommand:Tftp.obj
+ 0002:00000230       ??_C@_1BM@MLPEDKFL@?$AA?$CF?$AAs?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA0?$AA?5?$AAK?$AAb@ 0000000000005df0     tftpDynamicCommand:Tftp.obj
+ 0002:0000024c       ??_C@_15GANGMFKL@?$AA?$CF?$AAs@ 0000000000005e0c     tftpDynamicCommand:Tftp.obj
+ 0002:00000258       ??_C@_1BA@PIMHAFJC@?$AA?5?$AA?$CF?$AA7?$AAd?$AA?5?$AAK?$AAb@ 0000000000005e18     tftpDynamicCommand:Tftp.obj
+ 0002:000003c0       ??_C@_0O@MLOLIMFM@?$DMnull?5string?$DO@ 0000000000005f80     BasePrintLib:PrintLibInternal.obj
+ 0002:000003d0       ??_C@_0M@BJJDNPHK@?$DMnull?5guid?$DO@ 0000000000005f90     BasePrintLib:PrintLibInternal.obj
+ 0002:000003e0       ??_C@_0DB@PMLHLBMO@?$CF08x?9?$CF04x?9?$CF04x?9?$CF02x?$CF02x?9?$CF02x?$CF02@ 0000000000005fa0     BasePrintLib:PrintLibInternal.obj
+ 0002:00000418       ??_C@_0M@LHGBCIKM@?$DMnull?5time?$DO@ 0000000000005fd8     BasePrintLib:PrintLibInternal.obj
+ 0002:00000428       ??_C@_0BK@FCPKCIDD@?$CF02d?1?$CF02d?1?$CF04d?5?5?$CF02d?3?$CF02d@ 0000000000005fe8     BasePrintLib:PrintLibInternal.obj
+ 0002:00000444       ??_C@_04JIMNDDED@?$CF08X@  0000000000006004     BasePrintLib:PrintLibInternal.obj
+ 0002:0000044c       ??_C@_02PCIJFNDE@?$AN?6@   000000000000600c     BasePrintLib:PrintLibInternal.obj
+ 0002:00000450       ??_C@_01LIIJDEN@?$AN@      0000000000006010     BasePrintLib:PrintLibInternal.obj
+ 0002:00000460       mWarningString             0000000000006020     BasePrintLib:PrintLibInternal.obj
+ 0002:00000500       mErrorString               00000000000060c0     BasePrintLib:PrintLibInternal.obj
+ 0002:000007c0       mHexStr                    0000000000006380     BasePrintLib:PrintLibInternal.obj
+ 0002:000007d0       ??_C@_1BK@GGGENMOA@?$AAP?$AAl?$AAa?$AAt?$AAf?$AAo?$AAr?$AAm?$AAL?$AAa?$AAn?$AAg@ 0000000000006390     UefiHiiLib:HiiString.obj
+ 0002:000007ea       ??_C@_00CNPNBAHC@@         00000000000063aa     UefiHiiLib:HiiString.obj
+ 0002:000007f0       ??_C@_17CLELIOII@?$AAN?$AAU?$AAL@ 00000000000063b0     UefiShellLib:UefiShellLib.obj
+ 0002:000007f8       ??_C@_19CIJIHAKK@?$AAN?$AAU?$AAL?$AAL@ 00000000000063b8     UefiShellLib:UefiShellLib.obj
+ 0002:00000804       ??_C@_15FNEHKAED@?$AA?9?$AA?$DP@ 00000000000063c4     UefiShellLib:UefiShellLib.obj
+ 0002:0000080c       ??_C@_15GECAHHDM@?$AA?9?$AAb@ 00000000000063cc     UefiShellLib:UefiShellLib.obj
+ 0002:00000814       ??_C@_13HOIJIPNN@?$AA?5@   00000000000063d4     UefiShellLib:UefiShellLib.obj
+ 0002:00000818       ??_C@_17HOBPHCP@?$AA?$CF?$AA?$CF?$AAN@ 00000000000063d8     UefiShellLib:UefiShellLib.obj
+ 0002:00000820       ??_C@_15GCJHOFNH@?$AA?$CF?$AAN@ 00000000000063e0     UefiShellLib:UefiShellLib.obj
+ 0002:00000828       ??_C@_17NAOAHACO@?$AA?$CF?$AA?$CF?$AAE@ 00000000000063e8     UefiShellLib:UefiShellLib.obj
+ 0002:00000830       ??_C@_15LFJGGCNG@?$AA?$CF?$AAE@ 00000000000063f0     UefiShellLib:UefiShellLib.obj
+ 0002:00000838       ??_C@_17CCIKKIPD@?$AA?$CF?$AA?$CF?$AAH@ 00000000000063f8     UefiShellLib:UefiShellLib.obj
+ 0002:00000840       ??_C@_15EHPMLKAL@?$AA?$CF?$AAH@ 0000000000006400     UefiShellLib:UefiShellLib.obj
+ 0002:00000848       ??_C@_17ENDHEIJH@?$AA?$CF?$AA?$CF?$AAB@ 0000000000006408     UefiShellLib:UefiShellLib.obj
+ 0002:00000850       ??_C@_15CIEBFKGP@?$AA?$CF?$AAB@ 0000000000006410     UefiShellLib:UefiShellLib.obj
+ 0002:00000858       ??_C@_17JCEMIIFP@?$AA?$CF?$AA?$CF?$AAV@ 0000000000006418     UefiShellLib:UefiShellLib.obj
+ 0002:00000860       ??_C@_15PHDKJKKH@?$AA?$CF?$AAV@ 0000000000006420     UefiShellLib:UefiShellLib.obj
+ 0002:00000868       ??_C@_13EJFHHPOP@?$AA?$CF@ 0000000000006428     UefiShellLib:UefiShellLib.obj
+ 0002:0000086c       ??_C@_15OEMMNBIC@?$AA0?$AAx@ 000000000000642c     UefiShellLib:UefiShellLib.obj
+ 0002:00000874       ??_C@_15EEPOHOLM@?$AA0?$AAX@ 0000000000006434     UefiShellLib:UefiShellLib.obj
+ 0002:0000087c       ??_C@_15LEKKCGMK@?$AA?2?$AA?2@ 000000000000643c     BaseLib:FilePaths.obj
+ 0002:00000888       ??_C@_17CECJBCED@?$AA?2?$AA?4?$AA?2@ 0000000000006448     BaseLib:FilePaths.obj
+ 0002:00000890       ??_C@_15HFJMEONN@?$AA?2?$AA?4@ 0000000000006450     BaseLib:FilePaths.obj
+ 0002:00000898       ??_C@_17OFBPHKFE@?$AA?2?$AA?4?$AA?4@ 0000000000006458     BaseLib:FilePaths.obj
+ 0002:000008c0       gST                        0000000000006480     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000008c8       gBS                        0000000000006488     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000008d0       gImageHandle               0000000000006490     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000008d8       mDevicePathLibDevicePathUtilities 0000000000006498     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:000008e0       gRT                        00000000000064a0     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0002:000008e8       gHiiDatabase               00000000000064a8     UefiHiiServicesLib:UefiHiiServicesLib.obj
+ 0002:000008f0       gHiiString                 00000000000064b0     UefiHiiServicesLib:UefiHiiServicesLib.obj
+ 0002:000008f8       gHiiFont                   00000000000064b8     UefiHiiServicesLib:UefiHiiServicesLib.obj
+ 0002:00000900       gHiiConfigRouting          00000000000064c0     UefiHiiServicesLib:UefiHiiServicesLib.obj
+ 0002:00000908       gHiiImage                  00000000000064c8     UefiHiiServicesLib:UefiHiiServicesLib.obj
+ 0002:00000920       FileFunctionMap            00000000000064e0     <common>
+ 0002:00000970       mEfiShellEnvironment2      0000000000006530     <common>
+ 0002:00000978       mEfiShellInterface         0000000000006538     <common>
+ 0002:00000980       mUnicodeCollationProtocol  0000000000006540     <common>
+ 0002:00000988       mEfiShellEnvironment2Handle 0000000000006548     <common>
+ 0002:00000990       gEfiShellParametersProtocol 0000000000006550     <common>
+ 0002:00000998       gEfiShellProtocol          0000000000006558     <common>
+ 0002:000009a0       mLocalFilePath             0000000000006560     <common>
+ 0002:000009a8       mFileHandle                0000000000006568     <common>
+ 0002:000009b0       mTftpHiiHandle             0000000000006570     <common>
+ 0002:000009b8       __volatile_metadata        0000000000006578     <linker-defined>
+
+ entry point at        0001:00000258
+
+ Static symbols
+
+ 0001:0000001a       InternalMemCopyMem.0       00000000000002da     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:0000002a       @CopyBackward              00000000000002ea     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000033       @CopyBytes                 00000000000002f3     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:0000012a       @UseRepIo                  00000000000003ea     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:0000012c       @SevNoRepIo_Done           00000000000003ec     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000144       @IoReadFifo8_NoRep         0000000000000404     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000146       @IoReadFifo8_Loop          0000000000000406     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:0000014e       @IoReadFifo8_Done          000000000000040e     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000167       @IoReadFifo16_NoRep        0000000000000427     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000169       @IoReadFifo16_Loop         0000000000000429     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000174       @IoReadFifo16_Done         0000000000000434     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:0000018c       @IoReadFifo32_NoRep        000000000000044c     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:0000018e       @IoReadFifo32_Loop         000000000000044e     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000197       @IoReadFifo32_Done         0000000000000457     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001af       @IoWriteFifo8_NoRep        000000000000046f     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001b1       @IoWriteFifo8_Loop         0000000000000471     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001b9       @IoWriteFifo8_Done         0000000000000479     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001d2       @IoWriteFifo16_NoRep       0000000000000492     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001d4       @IoWriteFifo16_Loop        0000000000000494     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001df       @IoWriteFifo16_Done        000000000000049f     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001f7       @IoWriteFifo32_NoRep       00000000000004b7     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001f9       @IoWriteFifo32_Loop        00000000000004b9     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000202       @IoWriteFifo32_Done        00000000000004c2     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000b78       StringToUint16             0000000000000e38 f   tftpDynamicCommand:Tftp.obj
+ 0001:00000c00       GetNicName                 0000000000000ec0 f   tftpDynamicCommand:Tftp.obj
+ 0001:00000cdc       CreateServiceChildAndOpenProtocol 0000000000000f9c f   tftpDynamicCommand:Tftp.obj
+ 0001:00000d9c       CloseProtocolAndDestroyServiceChild 000000000000105c f   tftpDynamicCommand:Tftp.obj
+ 0001:00000df4       GetFileSize                00000000000010b4 f   tftpDynamicCommand:Tftp.obj
+ 0001:00000f30       DownloadFile               00000000000011f0 f   tftpDynamicCommand:Tftp.obj
+ 0001:000011e0       CheckPacket                00000000000014a0 f   tftpDynamicCommand:Tftp.obj
+ 0002:00000270       mTftpProgressFrame         0000000000005e30     tftpDynamicCommand:Tftp.obj
+ 0002:000002d0       mTftpProgressDelete        0000000000005e90     tftpDynamicCommand:Tftp.obj
+ 0002:00000340       ParamList                  0000000000005f00     tftpDynamicCommand:Tftp.obj
+ 0002:00000910       mUnicodeCollation          00000000000064d0     UefiSortLib:UefiSortLib.obj
+ 0004:00000000       $unwind$StrCpyS            0000000000006920     BaseLib:SafeString.obj
+ 0004:00000000       $unwind$UnicodeStrToAsciiStrS 0000000000006920     BaseLib:SafeString.obj
+ 0004:00000000       $unwind$_DriverUnloadHandler 0000000000006920     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0004:00000000       $unwind$FileHandleGetSize  0000000000006920     UefiFileHandleLib:UefiFileHandleLib.obj
+ 0004:00000000       $unwind$AllocateZeroPool   0000000000006920     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0004:00000000       $unwind$ProcessLibraryConstructorList 0000000000006920     tftpDynamicCommand:AutoGen.obj
+ 0004:00000008       $unwind$_ModuleEntryPoint  0000000000006928     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0004:00000014       $unwind$RunTftp            0000000000006934     tftpDynamicCommand:Tftp.obj
+ 0004:0000002c       $unwind$StringToUint16     000000000000694c     tftpDynamicCommand:Tftp.obj
+ 0004:00000038       $unwind$GetNicName         0000000000006958     tftpDynamicCommand:Tftp.obj
+ 0004:00000050       $unwind$CreateServiceChildAndOpenProtocol 0000000000006970     tftpDynamicCommand:Tftp.obj
+ 0004:00000064       $unwind$PathCleanUpDirectories 0000000000006984     BaseLib:FilePaths.obj
+ 0004:00000064       $unwind$StrCatS            0000000000006984     BaseLib:SafeString.obj
+ 0004:00000064       $unwind$CloseProtocolAndDestroyServiceChild 0000000000006984     tftpDynamicCommand:Tftp.obj
+ 0004:00000074       $unwind$GetFileSize        0000000000006994     tftpDynamicCommand:Tftp.obj
+ 0004:0000008c       $unwind$DownloadFile       00000000000069ac     tftpDynamicCommand:Tftp.obj
+ 0004:000000a8       $unwind$CheckPacket        00000000000069c8     tftpDynamicCommand:Tftp.obj
+ 0004:000000c4       $unwind$StrnCatS           00000000000069e4     BaseLib:SafeString.obj
+ 0004:000000dc       $unwind$StrDecimalToUintnS 00000000000069fc     BaseLib:SafeString.obj
+ 0004:000000dc       $unwind$InternalShellIsHexOrDecimalNumber 00000000000069fc     UefiShellLib:UefiShellLib.obj
+ 0004:000000e8       $unwind$AsciiSPrint        0000000000006a08     BasePrintLib:PrintLib.obj
+ 0004:000000e8       $unwind$UnicodeSPrint      0000000000006a08     BasePrintLib:PrintLib.obj
+ 0004:000000f0       $unwind$BasePrintLibSPrintMarker 0000000000006a10     BasePrintLib:PrintLibInternal.obj
+ 0004:0000010c       $unwind$BasePrintLibSPrint 0000000000006a2c     BasePrintLib:PrintLibInternal.obj
+ 0004:00000114       $unwind$InternalAllocatePool 0000000000006a34     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0004:00000114       $unwind$InternalPrintTo    0000000000006a34     UefiShellLib:UefiShellLib.obj
+ 0004:0000011c       $unwind$StringNoCaseCompare 0000000000006a3c     UefiSortLib:UefiSortLib.obj
+ 0004:0000011c       $unwind$InternalAllocateCopyPool 0000000000006a3c     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0004:0000011c       $unwind$ShellCloseFileMetaArg 0000000000006a3c     UefiShellLib:UefiShellLib.obj
+ 0004:0000011c       $unwind$ShellLibDestructor 0000000000006a3c     UefiShellLib:UefiShellLib.obj
+ 0004:00000128       $unwind$InternalReallocatePool 0000000000006a48     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0004:0000013c       $unwind$GetEfiGlobalVariable2 0000000000006a5c     UefiLib:UefiLib.obj
+ 0004:00000148       $unwind$GetBestLanguage    0000000000006a68     UefiLib:UefiLib.obj
+ 0004:00000158       $unwind$EfiOpenFileByDevicePath 0000000000006a78     UefiLib:UefiLib.obj
+ 0004:00000174       $unwind$HiiGetString       0000000000006a94     UefiHiiLib:HiiString.obj
+ 0004:00000188       $unwind$HiiGetSupportedLanguages 0000000000006aa8     UefiHiiLib:HiiLanguage.obj
+ 0004:00000198       $unwind$ShellFindSE2       0000000000006ab8     UefiShellLib:UefiShellLib.obj
+ 0004:000001ac       $unwind$ShellLibConstructorWorker 0000000000006acc     UefiShellLib:UefiShellLib.obj
+ 0004:000001b8       $unwind$ShellOpenFileByName 0000000000006ad8     UefiShellLib:UefiShellLib.obj
+ 0004:000001d0       $unwind$InternalShellConvertFileListType 0000000000006af0     UefiShellLib:UefiShellLib.obj
+ 0004:000001e4       $unwind$ShellConvertStringToUint64 0000000000006b04     UefiShellLib:UefiShellLib.obj
+ 0004:000001e4       $unwind$ShellOpenFileMetaArg 0000000000006b04     UefiShellLib:UefiShellLib.obj
+ 0004:000001f8       $unwind$InternalIsOnCheckList 0000000000006b18     UefiShellLib:UefiShellLib.obj
+ 0004:0000020c       $unwind$InternalCommandLineParse 0000000000006b2c     UefiShellLib:UefiShellLib.obj
+ 0004:00000224       $unwind$ShellCommandLineFreeVarList 0000000000006b44     UefiShellLib:UefiShellLib.obj
+ 0004:00000230       $unwind$ShellCommandLineGetValue 0000000000006b50     UefiShellLib:UefiShellLib.obj
+ 0004:00000244       $unwind$ShellCopySearchAndReplace 0000000000006b64     UefiShellLib:UefiShellLib.obj
+ 0004:0000025c       $unwind$InternalShellPrintWorker 0000000000006b7c     UefiShellLib:UefiShellLib.obj
+ 0004:00000278       $unwind$ShellPrintEx       0000000000006b98     UefiShellLib:UefiShellLib.obj
+ 0004:00000280       $unwind$ShellPrintHiiEx    0000000000006ba0     UefiShellLib:UefiShellLib.obj
+ 0004:00000290       $unwind$StrnCatGrow        0000000000006bb0     UefiShellLib:UefiShellLib.obj
+ 0004:000002a8       $unwind$NetLibDestroyServiceChild 0000000000006bc8     DxeNetLib:DxeNetLib.obj
+ 0004:000002b0       $unwind$NetLibStrToIp4     0000000000006bd0     DxeNetLib:DxeNetLib.obj
+ 0004:000002c0       $unwind$FileHandleGetInfo  0000000000006be0     UefiFileHandleLib:UefiFileHandleLib.obj
+ 0005:00000060       $R000000                   0000000000006c60     tftpDynamicCommandhii.lib

@@ -1,0 +1,11 @@
+d:/edk2/edk2/Build/OvmfX64/RELEASE_VS2019/X64/OvmfPkg/8259InterruptControllerDxe/8259/OUTPUT/Legacy8259.lib
+d:/edk2/edk2/Build/OvmfX64/RELEASE_VS2019/X64/MdePkg/Library/RegisterFilterLibNull/RegisterFilterLibNull/OUTPUT/FilterLibNull.lib
+d:/edk2/edk2/Build/OvmfX64/RELEASE_VS2019/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib
+d:/edk2/edk2/Build/OvmfX64/RELEASE_VS2019/X64/MdePkg/Library/BaseMemoryLibRepStr/BaseMemoryLibRepStr/OUTPUT/BaseMemoryLibRepStr.lib
+d:/edk2/edk2/Build/OvmfX64/RELEASE_VS2019/X64/MdePkg/Library/DxePcdLib/DxePcdLib/OUTPUT/DxePcdLib.lib
+d:/edk2/edk2/Build/OvmfX64/RELEASE_VS2019/X64/MdePkg/Library/BaseDebugPrintErrorLevelLib/BaseDebugPrintErrorLevelLib/OUTPUT/BaseDebugPrintErrorLevelLib.lib
+d:/edk2/edk2/Build/OvmfX64/RELEASE_VS2019/X64/MdePkg/Library/BasePrintLib/BasePrintLib/OUTPUT/BasePrintLib.lib
+d:/edk2/edk2/Build/OvmfX64/RELEASE_VS2019/X64/MdePkg/Library/BaseIoLibIntrinsic/BaseIoLibIntrinsicSev/OUTPUT/BaseIoLibIntrinsicSev.lib
+d:/edk2/edk2/Build/OvmfX64/RELEASE_VS2019/X64/OvmfPkg/Library/PlatformDebugLibIoPort/PlatformDebugLibIoPort/OUTPUT/PlatformDebugLibIoPort.lib
+d:/edk2/edk2/Build/OvmfX64/RELEASE_VS2019/X64/MdePkg/Library/UefiBootServicesTableLib/UefiBootServicesTableLib/OUTPUT/UefiBootServicesTableLib.lib
+d:/edk2/edk2/Build/OvmfX64/RELEASE_VS2019/X64/MdePkg/Library/UefiDriverEntryPoint/UefiDriverEntryPoint/OUTPUT/UefiDriverEntryPoint.lib

@@ -1,0 +1,161 @@
+ QemuKernelLoaderFsDxe
+
+ Timestamp is 61ee7054 (Mon Jan 24 17:24:36 2022)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 000001e4H .text                   CODE
+ 0001:000001e4 00000f41H .text$mn                CODE
+ 0002:00000000 00000140H .data                   DATA
+ 0002:00000140 000000e8H .rdata                  DATA
+ 0002:00000228 00000060H .bss                    DATA
+ 0002:00000288 0000007cH .rdata$voltmd           DATA
+ 0002:00000304 000000a8H .rdata$zzzdbg           DATA
+ 0003:00000000 000000d8H .pdata                  DATA
+ 0004:00000000 00000098H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __guard_fids_count         0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map_count    0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_table      0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table   0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points_count 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_native_entrypoint 0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_table      0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map          0000000000000000     <absolute>
+ 0000:00000000       __enclave_config           0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata_count 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table_size 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata 0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_table          0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_count          0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_count      0000000000000000     <absolute>
+ 0000:00000000       __guard_flags              0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_table         0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_count      0000000000000000     <absolute>
+ 0000:00000000       __guard_check_icall_a64n_fptr 0000000000000000     <absolute>
+ 0000:00000000       __dynamic_value_reloc_table 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat     0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat_copy 0000000000000000     <absolute>
+ 0000:00000000       __AbsoluteZero             0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points 0000000000000000     <absolute>
+ 0001:00000000       InternalMemCopyMem         0000000000000280     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000040       InternalMemZeroMem         00000000000002c0     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00000060       SevNoRepIo                 00000000000002e0     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000000a0       IoReadFifo8                0000000000000320     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000000c2       IoReadFifo16               0000000000000342     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000000e8       IoReadFifo32               0000000000000368     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:0000010b       IoWriteFifo8               000000000000038b     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:0000012d       IoWriteFifo16              00000000000003ad     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000153       IoWriteFifo32              00000000000003d3     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000180       AsmCpuid                   0000000000000400     BaseLib:CpuId.obj
+ 0001:000001b0       CpuPause                   0000000000000430     BaseLib:CpuPause.obj
+ 0001:000001c0       EnableInterrupts           0000000000000440     BaseLib:EnableInterrupts.obj
+ 0001:000001d0       DisableInterrupts          0000000000000450     BaseLib:DisableInterrupts.obj
+ 0001:000001e0       AsmReadEflags              0000000000000460     BaseLib:ReadEflags.obj
+ 0001:000001e4       _ModuleEntryPoint          0000000000000464 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:000001f8       ProcessLibraryConstructorList 0000000000000478 f   QemuKernelLoaderFsDxe:AutoGen.obj
+ 0001:00000964       QemuKernelLoaderFsDxeEntrypoint 0000000000000be4 f   QemuKernelLoaderFsDxe:QemuKernelLoaderFsDxe.obj
+ 0001:00000bec       InternalAllocatePool       0000000000000e6c f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00000d40       InternalQemuFwCfgDmaBytes  0000000000000fc0 f   QemuFwCfgDxeLib:QemuFwCfgDxe.obj
+ 0001:00000f80       QemuFwCfgReadBytes         0000000000001200 f   QemuFwCfgDxeLib:QemuFwCfgLib.obj
+ 0001:00000fd8       GetPcdProtocol             0000000000001258 f   DxePcdLib:DxePcdLib.obj
+ 0001:000010a0       PciCf8Read32               0000000000001320 f   BasePciCf8Lib:PciCf8Lib.obj
+ 0001:00001104       SaveAndDisableInterrupts   0000000000001384 f   BaseLib:Cpu.obj
+ 0002:00000000       gPcdProtocolGuid           00000000000013c0     QemuKernelLoaderFsDxe:AutoGen.obj
+ 0002:00000010       gEfiFileSystemInfoGuid     00000000000013d0     QemuKernelLoaderFsDxe:AutoGen.obj
+ 0002:00000020       gEfiFileInfoGuid           00000000000013e0     QemuKernelLoaderFsDxe:AutoGen.obj
+ 0002:00000030       gEfiDevicePathProtocolGuid 00000000000013f0     QemuKernelLoaderFsDxe:AutoGen.obj
+ 0002:00000040       gEfiDevicePathUtilitiesProtocolGuid 0000000000001400     QemuKernelLoaderFsDxe:AutoGen.obj
+ 0002:00000050       gEfiSimpleFileSystemProtocolGuid 0000000000001410     QemuKernelLoaderFsDxe:AutoGen.obj
+ 0002:00000060       gEfiFileSystemVolumeLabelInfoIdGuid 0000000000001420     QemuKernelLoaderFsDxe:AutoGen.obj
+ 0002:00000070       gEdkiiIoMmuProtocolGuid    0000000000001430     QemuKernelLoaderFsDxe:AutoGen.obj
+ 0002:00000080       gEfiLoadFile2ProtocolGuid  0000000000001440     QemuKernelLoaderFsDxe:AutoGen.obj
+ 0002:00000140       ??_C@_13FPGAJAPJ@?$AA?2@   0000000000001500     QemuKernelLoaderFsDxe:QemuKernelLoaderFsDxe.obj
+ 0002:00000228       gST                        00000000000015e8     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000230       gBS                        00000000000015f0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000238       mDevicePathLibDevicePathUtilities 00000000000015f8     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:00000248       gRT                        0000000000001608     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0002:00000250       mPcd                       0000000000001610     DxePcdLib:DxePcdLib.obj
+ 0002:00000288       __volatile_metadata        0000000000001648     <linker-defined>
+
+ entry point at        0001:000001e4
+
+ Static symbols
+
+ 0001:0000001a       InternalMemCopyMem.0       000000000000029a     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:0000002a       @CopyBackward              00000000000002aa     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000033       @CopyBytes                 00000000000002b3     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:0000009a       @UseRepIo                  000000000000031a     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:0000009c       @SevNoRepIo_Done           000000000000031c     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000000b4       @IoReadFifo8_NoRep         0000000000000334     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000000b6       @IoReadFifo8_Loop          0000000000000336     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000000be       @IoReadFifo8_Done          000000000000033e     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000000d7       @IoReadFifo16_NoRep        0000000000000357     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000000d9       @IoReadFifo16_Loop         0000000000000359     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000000e4       @IoReadFifo16_Done         0000000000000364     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000000fc       @IoReadFifo32_NoRep        000000000000037c     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000000fe       @IoReadFifo32_Loop         000000000000037e     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000107       @IoReadFifo32_Done         0000000000000387     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:0000011f       @IoWriteFifo8_NoRep        000000000000039f     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000121       @IoWriteFifo8_Loop         00000000000003a1     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000129       @IoWriteFifo8_Done         00000000000003a9     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000142       @IoWriteFifo16_NoRep       00000000000003c2     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000144       @IoWriteFifo16_Loop        00000000000003c4     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:0000014f       @IoWriteFifo16_Done        00000000000003cf     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000167       @IoWriteFifo32_NoRep       00000000000003e7     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000169       @IoWriteFifo32_Loop        00000000000003e9     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000172       @IoWriteFifo32_Done        00000000000003f2     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:0000018f       AsmCpuid.0                 000000000000040f     BaseLib:CpuId.obj
+ 0001:00000194       AsmCpuid.1                 0000000000000414     BaseLib:CpuId.obj
+ 0001:0000019b       AsmCpuid.2                 000000000000041b     BaseLib:CpuId.obj
+ 0001:000001a4       AsmCpuid.3                 0000000000000424     BaseLib:CpuId.obj
+ 0001:00000384       StubFileClose              0000000000000604 f   QemuKernelLoaderFsDxe:QemuKernelLoaderFsDxe.obj
+ 0001:000003a0       StubFileDelete             0000000000000620 f   QemuKernelLoaderFsDxe:QemuKernelLoaderFsDxe.obj
+ 0001:000003bc       ConvertKernelBlobTypeToFileInfo 000000000000063c f   QemuKernelLoaderFsDxe:QemuKernelLoaderFsDxe.obj
+ 0001:000004d8       StubFileRead               0000000000000758 f   QemuKernelLoaderFsDxe:QemuKernelLoaderFsDxe.obj
+ 0001:00000580       StubFileWrite              0000000000000800 f   QemuKernelLoaderFsDxe:QemuKernelLoaderFsDxe.obj
+ 0001:000005a0       StubFileGetPosition        0000000000000820 f   QemuKernelLoaderFsDxe:QemuKernelLoaderFsDxe.obj
+ 0001:000005bc       StubFileSetPosition        000000000000083c f   QemuKernelLoaderFsDxe:QemuKernelLoaderFsDxe.obj
+ 0001:000005fc       StubFileGetInfo            000000000000087c f   QemuKernelLoaderFsDxe:QemuKernelLoaderFsDxe.obj
+ 0001:000006b8       StubFileFlush              0000000000000938 f   QemuKernelLoaderFsDxe:QemuKernelLoaderFsDxe.obj
+ 0001:000006b8       StubFileSetInfo            0000000000000938 f   QemuKernelLoaderFsDxe:QemuKernelLoaderFsDxe.obj
+ 0001:000006c4       StubFileOpen               0000000000000944 f   QemuKernelLoaderFsDxe:QemuKernelLoaderFsDxe.obj
+ 0001:000007f0       StubFileSystemOpenVolume   0000000000000a70 f   QemuKernelLoaderFsDxe:QemuKernelLoaderFsDxe.obj
+ 0001:00000860       InitrdLoadFile2            0000000000000ae0 f   QemuKernelLoaderFsDxe:QemuKernelLoaderFsDxe.obj
+ 0001:00000c1c       AllocFwCfgDmaAccessBuffer  0000000000000e9c f   QemuFwCfgDxeLib:QemuFwCfgDxe.obj
+ 0001:00001014       InternalMemEncryptSevStatus 0000000000001294 f   DxeMemEncryptSevLib:DxeMemEncryptSevLibInternal.obj
+ 0002:00000090       mKernelBlob                0000000000001450     QemuKernelLoaderFsDxe:QemuKernelLoaderFsDxe.obj
+ 0002:00000148       mFileSystemDevicePath      0000000000001508     QemuKernelLoaderFsDxe:QemuKernelLoaderFsDxe.obj
+ 0002:00000160       mInitrdLoadFile2           0000000000001520     QemuKernelLoaderFsDxe:QemuKernelLoaderFsDxe.obj
+ 0002:00000168       mFileSystem                0000000000001528     QemuKernelLoaderFsDxe:QemuKernelLoaderFsDxe.obj
+ 0002:00000178       mInitrdDevicePath          0000000000001538     QemuKernelLoaderFsDxe:QemuKernelLoaderFsDxe.obj
+ 0002:00000190       mEfiFileProtocolTemplate   0000000000001550     QemuKernelLoaderFsDxe:QemuKernelLoaderFsDxe.obj
+ 0002:00000240       mQemuFwCfgSupported        0000000000001600     QemuFwCfgDxeLib:QemuFwCfgDxe.obj
+ 0002:00000258       mSevStatus                 0000000000001618     DxeMemEncryptSevLib:DxeMemEncryptSevLibInternal.obj
+ 0002:00000259       mSevStatusChecked          0000000000001619     DxeMemEncryptSevLib:DxeMemEncryptSevLibInternal.obj
+ 0002:00000260       mTotalBlobBytes            0000000000001620     QemuKernelLoaderFsDxe:QemuKernelLoaderFsDxe.obj
+ 0002:00000268       mInitTime                  0000000000001628     QemuKernelLoaderFsDxe:QemuKernelLoaderFsDxe.obj
+ 0002:00000278       mRunningOnQ35              0000000000001638     DxePciLibI440FxQ35:PciLib.obj
+ 0002:00000279       mQemuFwCfgDmaSupported     0000000000001639     QemuFwCfgDxeLib:QemuFwCfgDxe.obj
+ 0002:00000280       mIoMmuProtocol             0000000000001640     QemuFwCfgDxeLib:QemuFwCfgDxe.obj
+ 0004:00000000       $unwind$GetPcdProtocol     0000000000001860     DxePcdLib:DxePcdLib.obj
+ 0004:00000000       $unwind$_ModuleEntryPoint  0000000000001860     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0004:00000000       $unwind$InternalAllocatePool 0000000000001860     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0004:00000000       $unwind$QemuFwCfgReadBytes 0000000000001860     QemuFwCfgDxeLib:QemuFwCfgLib.obj
+ 0004:00000000       $unwind$StubFileClose      0000000000001860     QemuKernelLoaderFsDxe:QemuKernelLoaderFsDxe.obj
+ 0004:00000000       $unwind$StubFileDelete     0000000000001860     QemuKernelLoaderFsDxe:QemuKernelLoaderFsDxe.obj
+ 0004:00000008       $unwind$ProcessLibraryConstructorList 0000000000001868     QemuKernelLoaderFsDxe:AutoGen.obj
+ 0004:00000018       $unwind$ConvertKernelBlobTypeToFileInfo 0000000000001878     QemuKernelLoaderFsDxe:QemuKernelLoaderFsDxe.obj
+ 0004:00000030       $unwind$StubFileRead       0000000000001890     QemuKernelLoaderFsDxe:QemuKernelLoaderFsDxe.obj
+ 0004:00000030       $unwind$StubFileSystemOpenVolume 0000000000001890     QemuKernelLoaderFsDxe:QemuKernelLoaderFsDxe.obj
+ 0004:0000003c       $unwind$StubFileOpen       000000000000189c     QemuKernelLoaderFsDxe:QemuKernelLoaderFsDxe.obj
+ 0004:0000004c       $unwind$SaveAndDisableInterrupts 00000000000018ac     BaseLib:Cpu.obj
+ 0004:0000004c       $unwind$PciCf8Read32       00000000000018ac     BasePciCf8Lib:PciCf8Lib.obj
+ 0004:0000004c       $unwind$InitrdLoadFile2    00000000000018ac     QemuKernelLoaderFsDxe:QemuKernelLoaderFsDxe.obj
+ 0004:00000054       $unwind$QemuKernelLoaderFsDxeEntrypoint 00000000000018b4     QemuKernelLoaderFsDxe:QemuKernelLoaderFsDxe.obj
+ 0004:0000006c       $unwind$AllocFwCfgDmaAccessBuffer 00000000000018cc     QemuFwCfgDxeLib:QemuFwCfgDxe.obj
+ 0004:0000007c       $unwind$InternalQemuFwCfgDmaBytes 00000000000018dc     QemuFwCfgDxeLib:QemuFwCfgDxe.obj
+ 0004:00000090       $unwind$InternalMemEncryptSevStatus 00000000000018f0     DxeMemEncryptSevLib:DxeMemEncryptSevLibInternal.obj

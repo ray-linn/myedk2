@@ -1,0 +1,201 @@
+ EhciDxe
+
+ Timestamp is 61ee7019 (Mon Jan 24 17:23:37 2022)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000060H .text                   CODE
+ 0001:00000060 0000407eH .text$mn                CODE
+ 0002:00000000 00000160H .data                   DATA
+ 0002:00000160 00000098H .rdata                  DATA
+ 0002:000001f8 00000020H .bss                    DATA
+ 0002:00000218 00000020H .rdata$voltmd           DATA
+ 0002:00000238 000000a8H .rdata$zzzdbg           DATA
+ 0003:00000000 000002acH .pdata                  DATA
+ 0004:00000000 0000028cH .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __x64_code_ranges_to_entry_points_count 0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_table      0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_table          0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points 0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_count         0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_count          0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_count      0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table   0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map_count    0000000000000000     <absolute>
+ 0000:00000000       __dynamic_value_reloc_table 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat     0000000000000000     <absolute>
+ 0000:00000000       __arm64x_native_entrypoint 0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_table      0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat_copy 0000000000000000     <absolute>
+ 0000:00000000       __enclave_config           0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map          0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata_count 0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_count      0000000000000000     <absolute>
+ 0000:00000000       __guard_flags              0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table_size 0000000000000000     <absolute>
+ 0000:00000000       __AbsoluteZero             0000000000000000     <absolute>
+ 0000:00000000       __guard_check_icall_a64n_fptr 0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_table         0000000000000000     <absolute>
+ 0000:00000000       __ImageBase                0000000000000000     <linker-defined>
+ 0001:00000000       InternalMemCopyMem         0000000000000280     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000040       InternalMemZeroMem         00000000000002c0     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00000060       _ModuleEntryPoint          00000000000002e0 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:000000f8       EhcGetCapability           0000000000000378 f   EhciDxe:Ehci.obj
+ 0001:0000017c       EhcReset                   00000000000003fc f   EhciDxe:Ehci.obj
+ 0001:000002f0       EhcGetState                0000000000000570 f   EhciDxe:Ehci.obj
+ 0001:00000360       EhcSetState                00000000000005e0 f   EhciDxe:Ehci.obj
+ 0001:00000470       EhcGetRootHubPortStatus    00000000000006f0 f   EhciDxe:Ehci.obj
+ 0001:000005a0       EhcSetRootHubPortFeature   0000000000000820 f   EhciDxe:Ehci.obj
+ 0001:000006d0       EhcClearRootHubPortFeature 0000000000000950 f   EhciDxe:Ehci.obj
+ 0001:000007e8       EhcControlTransfer         0000000000000a68 f   EhciDxe:Ehci.obj
+ 0001:00000a98       EhcBulkTransfer            0000000000000d18 f   EhciDxe:Ehci.obj
+ 0001:00000d4c       EhcAsyncInterruptTransfer  0000000000000fcc f   EhciDxe:Ehci.obj
+ 0001:00000f00       EhcSyncInterruptTransfer   0000000000001180 f   EhciDxe:Ehci.obj
+ 0001:00001150       EhcAsyncIsochronousTransfer 00000000000013d0 f   EhciDxe:Ehci.obj
+ 0001:00001150       EhcIsochronousTransfer     00000000000013d0 f   EhciDxe:Ehci.obj
+ 0001:0000115c       EhcDriverBindingSupported  00000000000013dc f   EhciDxe:Ehci.obj
+ 0001:0000122c       EhcGetUsbDebugPortInfo     00000000000014ac f   EhciDxe:Ehci.obj
+ 0001:0000132c       EhcCreateUsb2Hc            00000000000015ac f   EhciDxe:Ehci.obj
+ 0001:000014dc       EhcExitBootService         000000000000175c f   EhciDxe:Ehci.obj
+ 0001:000014e4       EhcDriverBindingStart      0000000000001764 f   EhciDxe:Ehci.obj
+ 0001:00001954       EhcDriverBindingStop       0000000000001bd4 f   EhciDxe:Ehci.obj
+ 0001:00001b00       EhciComponentNameGetDriverName 0000000000001d80 f   EhciDxe:ComponentName.obj
+ 0001:00001b34       EhciComponentNameGetControllerName 0000000000001db4 f   EhciDxe:ComponentName.obj
+ 0001:00001c40       EhcCreateHelpQ             0000000000001ec0 f   EhciDxe:EhciSched.obj
+ 0001:00001d40       EhcInitSched               0000000000001fc0 f   EhciDxe:EhciSched.obj
+ 0001:00001fe4       EhcFreeSched               0000000000002264 f   EhciDxe:EhciSched.obj
+ 0001:00002140       EhcUnlinkQhFromAsync       00000000000023c0 f   EhciDxe:EhciSched.obj
+ 0001:000021d0       EhcLinkQhToPeriod          0000000000002450 f   EhciDxe:EhciSched.obj
+ 0001:000022e0       EhcUnlinkQhFromPeriod      0000000000002560 f   EhciDxe:EhciSched.obj
+ 0001:00002348       EhcCheckUrbResult          00000000000025c8 f   EhciDxe:EhciSched.obj
+ 0001:0000249c       EhcExecTransfer            000000000000271c f   EhciDxe:EhciSched.obj
+ 0001:00002534       EhciDelAsyncIntTransfer    00000000000027b4 f   EhciDxe:EhciSched.obj
+ 0001:00002600       EhciInsertAsyncIntTransfer 0000000000002880 f   EhciDxe:EhciSched.obj
+ 0001:0000271c       EhcUpdateAsyncRequest      000000000000299c f   EhciDxe:EhciSched.obj
+ 0001:000027f8       EhcMonitorAsyncRequests    0000000000002a78 f   EhciDxe:EhciSched.obj
+ 0001:000029a8       EhcReadCapRegister         0000000000002c28 f   EhciDxe:EhciReg.obj
+ 0001:000029ec       EhcIsDebugPortInUse        0000000000002c6c f   EhciDxe:EhciReg.obj
+ 0001:00002a64       EhcReadOpReg               0000000000002ce4 f   EhciDxe:EhciReg.obj
+ 0001:00002ab0       EhcWriteOpReg              0000000000002d30 f   EhciDxe:EhciReg.obj
+ 0001:00002aec       EhcSetOpRegBit             0000000000002d6c f   EhciDxe:EhciReg.obj
+ 0001:00002b28       EhcWaitOpRegBit            0000000000002da8 f   EhciDxe:EhciReg.obj
+ 0001:00002bb8       EhcResetHC                 0000000000002e38 f   EhciDxe:EhciReg.obj
+ 0001:00002c14       EhcHaltHC                  0000000000002e94 f   EhciDxe:EhciReg.obj
+ 0001:00002c60       EhcInitHC                  0000000000002ee0 f   EhciDxe:EhciReg.obj
+ 0001:00002d9c       EhcCreateQtd               000000000000301c f   EhciDxe:EhciUrb.obj
+ 0001:00002ea8       EhcCreateQh                0000000000003128 f   EhciDxe:EhciUrb.obj
+ 0001:00003000       EhcFreeQtds                0000000000003280 f   EhciDxe:EhciUrb.obj
+ 0001:00003060       EhcFreeUrb                 00000000000032e0 f   EhciDxe:EhciUrb.obj
+ 0001:000030e8       EhcCreateQtds              0000000000003368 f   EhciDxe:EhciUrb.obj
+ 0001:00003354       EhcCreateUrb               00000000000035d4 f   EhciDxe:EhciUrb.obj
+ 0001:00003560       UsbHcAllocMemBlock         00000000000037e0 f   EhciDxe:UsbHcMem.obj
+ 0001:0000369c       UsbHcFreeMemBlock          000000000000391c f   EhciDxe:UsbHcMem.obj
+ 0001:00003700       UsbHcAllocMemFromBlock     0000000000003980 f   EhciDxe:UsbHcMem.obj
+ 0001:00003800       UsbHcGetPciAddressForHostMem 0000000000003a80 f   EhciDxe:UsbHcMem.obj
+ 0001:00003844       UsbHcAllocateMem           0000000000003ac4 f   EhciDxe:UsbHcMem.obj
+ 0001:00003944       UsbHcFreeMem               0000000000003bc4 f   EhciDxe:UsbHcMem.obj
+ 0001:00003a40       InternalAllocatePool       0000000000003cc0 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00003a70       AllocateZeroPool           0000000000003cf0 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00003a9c       InternalAllocateCopyPool   0000000000003d1c f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00003adc       IsLanguageSupported        0000000000003d5c f   UefiLib:UefiLib.obj
+ 0001:00003b80       LookupUnicodeString2       0000000000003e00 f   UefiLib:UefiLib.obj
+ 0001:00003c98       AddUnicodeString2          0000000000003f18 f   UefiLib:UefiLib.obj
+ 0001:00003ed4       InternalReportStatusCode   0000000000004154 f   DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0001:00003f68       ReportStatusCodeWithDevicePath 00000000000041e8 f   DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0002:00000000       gEfiStatusCodeSpecificDataGuid 0000000000004360     EhciDxe:AutoGen.obj
+ 0002:00000010       gEfiStatusCodeRuntimeProtocolGuid 0000000000004370     EhciDxe:AutoGen.obj
+ 0002:00000020       gEfiComponentName2ProtocolGuid 0000000000004380     EhciDxe:AutoGen.obj
+ 0002:00000030       gEfiUsb2HcProtocolGuid     0000000000004390     EhciDxe:AutoGen.obj
+ 0002:00000040       gEfiDevicePathProtocolGuid 00000000000043a0     EhciDxe:AutoGen.obj
+ 0002:00000050       gEfiPciIoProtocolGuid      00000000000043b0     EhciDxe:AutoGen.obj
+ 0002:00000060       gEfiDevicePathUtilitiesProtocolGuid 00000000000043c0     EhciDxe:AutoGen.obj
+ 0002:00000070       gEfiDriverBindingProtocolGuid 00000000000043d0     EhciDxe:AutoGen.obj
+ 0002:00000080       gEfiEventExitBootServicesGuid 00000000000043e0     EhciDxe:AutoGen.obj
+ 0002:00000090       gEfiComponentNameProtocolGuid 00000000000043f0     EhciDxe:AutoGen.obj
+ 0002:000000a0       gEfiCallerIdGuid           0000000000004400     EhciDxe:AutoGen.obj
+ 0002:000000b0       gEhciDriverBinding         0000000000004410     EhciDxe:Ehci.obj
+ 0002:000000e0       mUsbPortChangeMap          0000000000004440     EhciDxe:Ehci.obj
+ 0002:000000f0       mUsbPortStateMap           0000000000004450     EhciDxe:Ehci.obj
+ 0002:00000110       gEhciComponentName2        0000000000004470     EhciDxe:ComponentName.obj
+ 0002:00000128       gEhciComponentName         0000000000004488     EhciDxe:ComponentName.obj
+ 0002:00000140       mEhciDriverNameTable       00000000000044a0     EhciDxe:ComponentName.obj
+ 0002:00000160       ??_C@_1EG@FLBGKEEB@?$AAE?$AAn?$AAh?$AAa?$AAn?$AAc?$AAe?$AAd?$AA?5?$AAH?$AAo?$AAs?$AAt?$AA?5?$AAC@ 00000000000044c0     EhciDxe:Ehci.obj
+ 0002:000001a8       ??_C@_03LKLGDMJI@eng@      0000000000004508     EhciDxe:Ehci.obj
+ 0002:000001ac       ??_C@_02LFNMGJAP@en@       000000000000450c     EhciDxe:Ehci.obj
+ 0002:000001b0       ??_C@_06DALJLGPG@eng?$DLen@ 0000000000004510     EhciDxe:ComponentName.obj
+ 0002:000001b8       ??_C@_1CA@OHCCPPKP@?$AAU?$AAs?$AAb?$AA?5?$AAE?$AAh?$AAc?$AAi?$AA?5?$AAD?$AAr?$AAi?$AAv?$AAe?$AAr@ 0000000000004518     EhciDxe:ComponentName.obj
+ 0002:000001f8       gST                        0000000000004558     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000200       gBS                        0000000000004560     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000208       mDevicePathLibDevicePathUtilities 0000000000004568     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:00000210       mReportStatusCodeLibStatusCodeProtocol 0000000000004570     DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0002:00000218       __volatile_metadata        0000000000004578     <linker-defined>
+
+ entry point at        0001:00000060
+
+ Static symbols
+
+ 0001:0000001a       InternalMemCopyMem.0       000000000000029a     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:0000002a       @CopyBackward              00000000000002aa     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000033       @CopyBytes                 00000000000002b3     BaseMemoryLibRepStr:CopyMem.obj
+ 0004:00000000       $unwind$_ModuleEntryPoint  0000000000004900     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0004:00000008       $unwind$EhcGetCapability   0000000000004908     EhciDxe:Ehci.obj
+ 0004:00000008       $unwind$EhcLinkQhToPeriod  0000000000004908     EhciDxe:EhciSched.obj
+ 0004:0000001c       $unwind$EhcReset           000000000000491c     EhciDxe:Ehci.obj
+ 0004:0000001c       $unwind$EhcWaitOpRegBit    000000000000491c     EhciDxe:EhciReg.obj
+ 0004:0000001c       $unwind$EhcExecTransfer    000000000000491c     EhciDxe:EhciSched.obj
+ 0004:00000034       $unwind$EhcGetState        0000000000004934     EhciDxe:Ehci.obj
+ 0004:00000034       $unwind$EhcSetOpRegBit     0000000000004934     EhciDxe:EhciReg.obj
+ 0004:00000034       $unwind$EhcCheckUrbResult  0000000000004934     EhciDxe:EhciSched.obj
+ 0004:00000034       $unwind$EhcCreateQtd       0000000000004934     EhciDxe:EhciUrb.obj
+ 0004:00000034       $unwind$EhcFreeQtds        0000000000004934     EhciDxe:EhciUrb.obj
+ 0004:00000034       $unwind$EhcFreeUrb         0000000000004934     EhciDxe:EhciUrb.obj
+ 0004:00000034       $unwind$LookupUnicodeString2 0000000000004934     UefiLib:UefiLib.obj
+ 0004:00000044       $unwind$EhcSetState        0000000000004944     EhciDxe:Ehci.obj
+ 0004:00000054       $unwind$EhcGetRootHubPortStatus 0000000000004954     EhciDxe:Ehci.obj
+ 0004:00000068       $unwind$EhcSetRootHubPortFeature 0000000000004968     EhciDxe:Ehci.obj
+ 0004:00000080       $unwind$EhcClearRootHubPortFeature 0000000000004980     EhciDxe:Ehci.obj
+ 0004:00000080       $unwind$AddUnicodeString2  0000000000004980     UefiLib:UefiLib.obj
+ 0004:00000098       $unwind$EhcBulkTransfer    0000000000004998     EhciDxe:Ehci.obj
+ 0004:00000098       $unwind$EhcControlTransfer 0000000000004998     EhciDxe:Ehci.obj
+ 0004:00000098       $unwind$EhcSyncInterruptTransfer 0000000000004998     EhciDxe:Ehci.obj
+ 0004:000000b0       $unwind$EhcAsyncInterruptTransfer 00000000000049b0     EhciDxe:Ehci.obj
+ 0004:000000cc       $unwind$EhcDriverBindingSupported 00000000000049cc     EhciDxe:Ehci.obj
+ 0004:000000dc       $unwind$EhcGetUsbDebugPortInfo 00000000000049dc     EhciDxe:Ehci.obj
+ 0004:000000ec       $unwind$EhcCreateUsb2Hc    00000000000049ec     EhciDxe:Ehci.obj
+ 0004:00000104       $unwind$EhcDriverBindingStart 0000000000004a04     EhciDxe:Ehci.obj
+ 0004:0000011c       $unwind$EhcDriverBindingStop 0000000000004a1c     EhciDxe:Ehci.obj
+ 0004:00000134       $unwind$EhciComponentNameGetDriverName 0000000000004a34     EhciDxe:ComponentName.obj
+ 0004:00000134       $unwind$EhcIsDebugPortInUse 0000000000004a34     EhciDxe:EhciReg.obj
+ 0004:00000134       $unwind$EhcReadCapRegister 0000000000004a34     EhciDxe:EhciReg.obj
+ 0004:00000134       $unwind$EhcReadOpReg       0000000000004a34     EhciDxe:EhciReg.obj
+ 0004:0000013c       $unwind$EhciComponentNameGetControllerName 0000000000004a3c     EhciDxe:ComponentName.obj
+ 0004:00000150       $unwind$EhcCreateHelpQ     0000000000004a50     EhciDxe:EhciSched.obj
+ 0004:0000015c       $unwind$EhcInitSched       0000000000004a5c     EhciDxe:EhciSched.obj
+ 0004:00000174       $unwind$EhcFreeSched       0000000000004a74     EhciDxe:EhciSched.obj
+ 0004:00000174       $unwind$UsbHcFreeMemBlock  0000000000004a74     EhciDxe:UsbHcMem.obj
+ 0004:00000174       $unwind$InternalAllocateCopyPool 0000000000004a74     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0004:00000180       $unwind$EhcResetHC         0000000000004a80     EhciDxe:EhciReg.obj
+ 0004:00000180       $unwind$EhcUnlinkQhFromAsync 0000000000004a80     EhciDxe:EhciSched.obj
+ 0004:00000188       $unwind$EhciDelAsyncIntTransfer 0000000000004a88     EhciDxe:EhciSched.obj
+ 0004:0000019c       $unwind$EhciInsertAsyncIntTransfer 0000000000004a9c     EhciDxe:EhciSched.obj
+ 0004:000001b4       $unwind$EhcUpdateAsyncRequest 0000000000004ab4     EhciDxe:EhciSched.obj
+ 0004:000001b4       $unwind$InternalAllocatePool 0000000000004ab4     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0004:000001bc       $unwind$EhcMonitorAsyncRequests 0000000000004abc     EhciDxe:EhciSched.obj
+ 0004:000001d0       $unwind$EhcWriteOpReg      0000000000004ad0     EhciDxe:EhciReg.obj
+ 0004:000001d8       $unwind$EhcHaltHC          0000000000004ad8     EhciDxe:EhciReg.obj
+ 0004:000001d8       $unwind$InternalReportStatusCode 0000000000004ad8     DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0004:000001e4       $unwind$EhcInitHC          0000000000004ae4     EhciDxe:EhciReg.obj
+ 0004:000001f8       $unwind$EhcCreateQh        0000000000004af8     EhciDxe:EhciUrb.obj
+ 0004:000001f8       $unwind$UsbHcFreeMem       0000000000004af8     EhciDxe:UsbHcMem.obj
+ 0004:000001f8       $unwind$AllocateZeroPool   0000000000004af8     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0004:00000200       $unwind$EhcCreateQtds      0000000000004b00     EhciDxe:EhciUrb.obj
+ 0004:0000021c       $unwind$EhcCreateUrb       0000000000004b1c     EhciDxe:EhciUrb.obj
+ 0004:00000238       $unwind$UsbHcAllocMemBlock 0000000000004b38     EhciDxe:UsbHcMem.obj
+ 0004:0000024c       $unwind$UsbHcAllocMemFromBlock 0000000000004b4c     EhciDxe:UsbHcMem.obj
+ 0004:0000025c       $unwind$UsbHcAllocateMem   0000000000004b5c     EhciDxe:UsbHcMem.obj
+ 0004:00000278       $unwind$ReportStatusCodeWithDevicePath 0000000000004b78     DxeReportStatusCodeLib:ReportStatusCodeLib.obj

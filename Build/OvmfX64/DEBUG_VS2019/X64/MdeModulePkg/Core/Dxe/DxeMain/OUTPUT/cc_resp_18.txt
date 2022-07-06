@@ -1,0 +1,1 @@
+  d:\edk2\edk2\MdeModulePkg\Core\Dxe\Hand\Handle.c d:\edk2\edk2\MdeModulePkg\Core\Dxe\Hand\Locate.c d:\edk2\edk2\MdeModulePkg\Core\Dxe\Hand\Notify.c d:\edk2\edk2\MdeModulePkg\Core\Dxe\Hand\DriverSupport.c

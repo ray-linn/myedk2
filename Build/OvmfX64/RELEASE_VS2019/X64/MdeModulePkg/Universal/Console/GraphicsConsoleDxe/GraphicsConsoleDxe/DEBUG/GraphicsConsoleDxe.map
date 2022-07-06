@@ -1,0 +1,188 @@
+ GraphicsConsoleDxe
+
+ Timestamp is 61ee7015 (Mon Jan 24 17:23:33 2022)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000208H .text                   CODE
+ 0001:00000208 00001d96H .text$mn                CODE
+ 0002:00000000 000017c0H .data                   DATA
+ 0002:000017c0 00000060H .rdata                  DATA
+ 0002:00001820 00000060H .bss                    DATA
+ 0002:00001880 00000028H .rdata$voltmd           DATA
+ 0002:000018a8 000000a8H .rdata$zzzdbg           DATA
+ 0003:00000000 00000144H .pdata                  DATA
+ 0004:00000000 00000184H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __hybrid_auxiliary_iat     0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_table      0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map_count    0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_count         0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_table          0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table   0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_count          0000000000000000     <absolute>
+ 0000:00000000       __arm64x_native_entrypoint 0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_table      0000000000000000     <absolute>
+ 0000:00000000       __enclave_config           0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata_count 0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_count      0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map          0000000000000000     <absolute>
+ 0000:00000000       __dynamic_value_reloc_table 0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points_count 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table_size 0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_count      0000000000000000     <absolute>
+ 0000:00000000       __guard_flags              0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat_copy 0000000000000000     <absolute>
+ 0000:00000000       __AbsoluteZero             0000000000000000     <absolute>
+ 0000:00000000       __guard_check_icall_a64n_fptr 0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_table         0000000000000000     <absolute>
+ 0000:00000000       __ImageBase                0000000000000000     <linker-defined>
+ 0001:00000000       InternalMemCopyMem         0000000000000280     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000040       CpuPause                   00000000000002c0     BaseLib:CpuPause.obj
+ 0001:00000050       InternalMemSetMem          00000000000002d0     BaseMemoryLibRepStr:SetMem.obj
+ 0001:00000070       InternalMemZeroMem         00000000000002f0     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00000090       InternalMemCompareMem      0000000000000310     BaseMemoryLibRepStr:CompareMem.obj
+ 0001:000000b0       InternalMemSetMem64        0000000000000330     BaseMemoryLibRepStr:SetMem64.obj
+ 0001:000000d0       InternalMemSetMem32        0000000000000350     BaseMemoryLibRepStr:SetMem32.obj
+ 0001:000000f0       SevNoRepIo                 0000000000000370     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000130       IoReadFifo8                00000000000003b0     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000152       IoReadFifo16               00000000000003d2     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000178       IoReadFifo32               00000000000003f8     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:0000019b       IoWriteFifo8               000000000000041b     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001bd       IoWriteFifo16              000000000000043d     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001e3       IoWriteFifo32              0000000000000463     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000208       _ModuleEntryPoint          0000000000000488 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:00000224       ProcessLibraryConstructorList 00000000000004a4 f   GraphicsConsoleDxe:AutoGen.obj
+ 0001:000002e8       ProcessModuleEntryPointList 0000000000000568 f   GraphicsConsoleDxe:AutoGen.obj
+ 0001:000003b4       GraphicsConsoleControllerDriverSupported 0000000000000634 f   GraphicsConsoleDxe:GraphicsConsole.obj
+ 0001:0000050c       InitializeGraphicsConsoleTextMode 000000000000078c f   GraphicsConsoleDxe:GraphicsConsole.obj
+ 0001:000006ec       GraphicsConsoleControllerDriverStart 000000000000096c f   GraphicsConsoleDxe:GraphicsConsole.obj
+ 0001:00000ad4       GraphicsConsoleControllerDriverStop 0000000000000d54 f   GraphicsConsoleDxe:GraphicsConsole.obj
+ 0001:00000bdc       CheckModeSupported         0000000000000e5c f   GraphicsConsoleDxe:GraphicsConsole.obj
+ 0001:00000cbc       GraphicsConsoleConOutReset 0000000000000f3c f   GraphicsConsoleDxe:GraphicsConsole.obj
+ 0001:00000ce8       GraphicsConsoleConOutOutputString 0000000000000f68 f   GraphicsConsoleDxe:GraphicsConsole.obj
+ 0001:00001104       GraphicsConsoleConOutTestString 0000000000001384 f   GraphicsConsoleDxe:GraphicsConsole.obj
+ 0001:0000119c       GraphicsConsoleConOutQueryMode 000000000000141c f   GraphicsConsoleDxe:GraphicsConsole.obj
+ 0001:00001248       GraphicsConsoleConOutSetMode 00000000000014c8 f   GraphicsConsoleDxe:GraphicsConsole.obj
+ 0001:00001438       GraphicsConsoleConOutSetAttribute 00000000000016b8 f   GraphicsConsoleDxe:GraphicsConsole.obj
+ 0001:000014b8       GraphicsConsoleConOutClearScreen 0000000000001738 f   GraphicsConsoleDxe:GraphicsConsole.obj
+ 0001:000015ac       GraphicsConsoleConOutSetCursorPosition 000000000000182c f   GraphicsConsoleDxe:GraphicsConsole.obj
+ 0001:00001674       GraphicsConsoleConOutEnableCursor 00000000000018f4 f   GraphicsConsoleDxe:GraphicsConsole.obj
+ 0001:000016e8       DrawUnicodeWeightAtCursorN 0000000000001968 f   GraphicsConsoleDxe:GraphicsConsole.obj
+ 0001:000019f4       FlushCursor                0000000000001c74 f   GraphicsConsoleDxe:GraphicsConsole.obj
+ 0001:00001b60       RegisterFontPackage        0000000000001de0 f   GraphicsConsoleDxe:GraphicsConsole.obj
+ 0001:00001bf8       GraphicsConsoleComponentNameGetDriverName 0000000000001e78 f   GraphicsConsoleDxe:ComponentName.obj
+ 0001:00001cf4       GraphicsConsoleComponentNameGetControllerName 0000000000001f74 f   GraphicsConsoleDxe:ComponentName.obj
+ 0001:00001d00       GetPcdProtocol             0000000000001f80 f   DxePcdLib:DxePcdLib.obj
+ 0001:00001d3c       InternalAllocatePool       0000000000001fbc f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00001d6c       AllocateZeroPool           0000000000001fec f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00001d98       InternalAllocateCopyPool   0000000000002018 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00001dd8       IsLanguageSupported        0000000000002058 f   UefiLib:UefiLib.obj
+ 0001:00001e50       HiiAddPackages             00000000000020d0 f   UefiHiiLib:HiiLib.obj
+ 0001:00001f6c       AsciiStrnCmp               00000000000021ec f   BaseLib:String.obj
+ 0002:00000000       gEfiComponentName2ProtocolGuid 0000000000002220     GraphicsConsoleDxe:AutoGen.obj
+ 0002:00000010       gPcdProtocolGuid           0000000000002230     GraphicsConsoleDxe:AutoGen.obj
+ 0002:00000020       gEfiSimpleTextOutProtocolGuid 0000000000002240     GraphicsConsoleDxe:AutoGen.obj
+ 0002:00000030       _gPcd_BinaryPatch_PcdConOutRow 0000000000002250     GraphicsConsoleDxe:AutoGen.obj
+ 0002:00000038       gEfiDevicePathProtocolGuid 0000000000002258     GraphicsConsoleDxe:AutoGen.obj
+ 0002:00000048       _gPcd_BinaryPatch_PcdConOutColumn 0000000000002268     GraphicsConsoleDxe:AutoGen.obj
+ 0002:00000050       gEfiHiiConfigRoutingProtocolGuid 0000000000002270     GraphicsConsoleDxe:AutoGen.obj
+ 0002:00000060       gEfiHiiImageProtocolGuid   0000000000002280     GraphicsConsoleDxe:AutoGen.obj
+ 0002:00000070       gEfiDevicePathUtilitiesProtocolGuid 0000000000002290     GraphicsConsoleDxe:AutoGen.obj
+ 0002:00000080       gEfiGraphicsOutputProtocolGuid 00000000000022a0     GraphicsConsoleDxe:AutoGen.obj
+ 0002:00000090       gEfiHiiDatabaseProtocolGuid 00000000000022b0     GraphicsConsoleDxe:AutoGen.obj
+ 0002:000000a0       gEfiHiiStringProtocolGuid  00000000000022c0     GraphicsConsoleDxe:AutoGen.obj
+ 0002:000000b0       gEfiUgaDrawProtocolGuid    00000000000022d0     GraphicsConsoleDxe:AutoGen.obj
+ 0002:000000c0       gEfiDriverBindingProtocolGuid 00000000000022e0     GraphicsConsoleDxe:AutoGen.obj
+ 0002:000000d0       gEfiComponentNameProtocolGuid 00000000000022f0     GraphicsConsoleDxe:AutoGen.obj
+ 0002:000000e0       gEfiHiiFontProtocolGuid    0000000000002300     GraphicsConsoleDxe:AutoGen.obj
+ 0002:000000f0       mFontPackageListGuid       0000000000002310     GraphicsConsoleDxe:GraphicsConsole.obj
+ 0002:00000100       mGraphicsConsoleModeData   0000000000002320     GraphicsConsoleDxe:GraphicsConsole.obj
+ 0002:00000160       gGraphicsConsoleDriverBinding 0000000000002380     GraphicsConsoleDxe:GraphicsConsole.obj
+ 0002:00000190       mCrLfString                00000000000023b0     GraphicsConsoleDxe:GraphicsConsole.obj
+ 0002:000001a0       mGraphicsConsoleDevTemplate 00000000000023c0     GraphicsConsoleDxe:GraphicsConsole.obj
+ 0002:00000230       mCursorGlyph               0000000000002450     GraphicsConsoleDxe:GraphicsConsole.obj
+ 0002:00000250       mGraphicsEfiColors         0000000000002470     GraphicsConsoleDxe:GraphicsConsole.obj
+ 0002:00000290       SpaceStr                   00000000000024b0     GraphicsConsoleDxe:GraphicsConsole.obj
+ 0002:000002a0       gUsStdNarrowGlyphData      00000000000024c0     GraphicsConsoleDxe:LaffStd.obj
+ 0002:00001770       gGraphicsConsoleComponentName2 0000000000003990     GraphicsConsoleDxe:ComponentName.obj
+ 0002:00001788       gGraphicsConsoleComponentName 00000000000039a8     GraphicsConsoleDxe:ComponentName.obj
+ 0002:000017a0       mGraphicsConsoleDriverNameTable 00000000000039c0     GraphicsConsoleDxe:ComponentName.obj
+ 0002:000017c0       ??_C@_03LKLGDMJI@eng@      00000000000039e0     GraphicsConsoleDxe:ComponentName.obj
+ 0002:000017c4       ??_C@_02LFNMGJAP@en@       00000000000039e4     GraphicsConsoleDxe:ComponentName.obj
+ 0002:000017c8       ??_C@_06DALJLGPG@eng?$DLen@ 00000000000039e8     GraphicsConsoleDxe:ComponentName.obj
+ 0002:000017d0       ??_C@_1DA@OHNPCAKP@?$AAG?$AAr?$AAa?$AAp?$AAh?$AAi?$AAc?$AAs?$AA?5?$AAC?$AAo?$AAn?$AAs?$AAo?$AAl@ 00000000000039f0     GraphicsConsoleDxe:ComponentName.obj
+ 0002:00001800       mEndOfPakageList           0000000000003a20     UefiHiiLib:HiiLib.obj
+ 0002:00001820       mPcd                       0000000000003a40     DxePcdLib:DxePcdLib.obj
+ 0002:00001828       gST                        0000000000003a48     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00001830       gBS                        0000000000003a50     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00001838       mDevicePathLibDevicePathUtilities 0000000000003a58     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:00001840       gHiiString                 0000000000003a60     UefiHiiServicesLib:UefiHiiServicesLib.obj
+ 0002:00001848       gHiiFont                   0000000000003a68     UefiHiiServicesLib:UefiHiiServicesLib.obj
+ 0002:00001850       gHiiConfigRouting          0000000000003a70     UefiHiiServicesLib:UefiHiiServicesLib.obj
+ 0002:00001858       gHiiImage                  0000000000003a78     UefiHiiServicesLib:UefiHiiServicesLib.obj
+ 0002:00001860       gHiiDatabase               0000000000003a80     UefiHiiServicesLib:UefiHiiServicesLib.obj
+ 0002:00001868       mHiiFont                   0000000000003a88     <common>
+ 0002:00001870       mHiiRegistration           0000000000003a90     <common>
+ 0002:00001878       mHiiDatabase               0000000000003a98     <common>
+ 0002:00001880       __volatile_metadata        0000000000003aa0     <linker-defined>
+
+ entry point at        0001:00000208
+
+ Static symbols
+
+ 0001:0000001a       InternalMemCopyMem.0       000000000000029a     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:0000002a       @CopyBackward              00000000000002aa     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000033       @CopyBytes                 00000000000002b3     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:0000012a       @UseRepIo                  00000000000003aa     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:0000012c       @SevNoRepIo_Done           00000000000003ac     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000144       @IoReadFifo8_NoRep         00000000000003c4     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000146       @IoReadFifo8_Loop          00000000000003c6     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:0000014e       @IoReadFifo8_Done          00000000000003ce     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000167       @IoReadFifo16_NoRep        00000000000003e7     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000169       @IoReadFifo16_Loop         00000000000003e9     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000174       @IoReadFifo16_Done         00000000000003f4     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:0000018c       @IoReadFifo32_NoRep        000000000000040c     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:0000018e       @IoReadFifo32_Loop         000000000000040e     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000197       @IoReadFifo32_Done         0000000000000417     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001af       @IoWriteFifo8_NoRep        000000000000042f     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001b1       @IoWriteFifo8_Loop         0000000000000431     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001b9       @IoWriteFifo8_Done         0000000000000439     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001d2       @IoWriteFifo16_NoRep       0000000000000452     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001d4       @IoWriteFifo16_Loop        0000000000000454     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001df       @IoWriteFifo16_Done        000000000000045f     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001f7       @IoWriteFifo32_NoRep       0000000000000477     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001f9       @IoWriteFifo32_Loop        0000000000000479     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000202       @IoWriteFifo32_Done        0000000000000482     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0004:00000000       $unwind$GraphicsConsoleConOutReset 0000000000003ce0     GraphicsConsoleDxe:GraphicsConsole.obj
+ 0004:00000000       $unwind$RegisterFontPackage 0000000000003ce0     GraphicsConsoleDxe:GraphicsConsole.obj
+ 0004:00000000       $unwind$_ModuleEntryPoint  0000000000003ce0     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0004:00000000       $unwind$AllocateZeroPool   0000000000003ce0     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0004:00000008       $unwind$ProcessLibraryConstructorList 0000000000003ce8     GraphicsConsoleDxe:AutoGen.obj
+ 0004:00000008       $unwind$GetPcdProtocol     0000000000003ce8     DxePcdLib:DxePcdLib.obj
+ 0004:00000008       $unwind$IsLanguageSupported 0000000000003ce8     UefiLib:UefiLib.obj
+ 0004:00000008       $unwind$InternalAllocatePool 0000000000003ce8     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0004:00000010       $unwind$ProcessModuleEntryPointList 0000000000003cf0     GraphicsConsoleDxe:AutoGen.obj
+ 0004:00000018       $unwind$GraphicsConsoleControllerDriverSupported 0000000000003cf8     GraphicsConsoleDxe:GraphicsConsole.obj
+ 0004:00000028       $unwind$InitializeGraphicsConsoleTextMode 0000000000003d08     GraphicsConsoleDxe:GraphicsConsole.obj
+ 0004:00000044       $unwind$GraphicsConsoleControllerDriverStart 0000000000003d24     GraphicsConsoleDxe:GraphicsConsole.obj
+ 0004:0000005c       $unwind$GraphicsConsoleControllerDriverStop 0000000000003d3c     GraphicsConsoleDxe:GraphicsConsole.obj
+ 0004:00000070       $unwind$CheckModeSupported 0000000000003d50     GraphicsConsoleDxe:GraphicsConsole.obj
+ 0004:00000088       $unwind$GraphicsConsoleConOutOutputString 0000000000003d68     GraphicsConsoleDxe:GraphicsConsole.obj
+ 0004:000000a0       $unwind$GraphicsConsoleConOutTestString 0000000000003d80     GraphicsConsoleDxe:GraphicsConsole.obj
+ 0004:000000b4       $unwind$GraphicsConsoleConOutQueryMode 0000000000003d94     GraphicsConsoleDxe:GraphicsConsole.obj
+ 0004:000000cc       $unwind$GraphicsConsoleConOutSetMode 0000000000003dac     GraphicsConsoleDxe:GraphicsConsole.obj
+ 0004:000000e0       $unwind$GraphicsConsoleConOutEnableCursor 0000000000003dc0     GraphicsConsoleDxe:GraphicsConsole.obj
+ 0004:000000e0       $unwind$GraphicsConsoleConOutSetAttribute 0000000000003dc0     GraphicsConsoleDxe:GraphicsConsole.obj
+ 0004:000000f0       $unwind$GraphicsConsoleConOutClearScreen 0000000000003dd0     GraphicsConsoleDxe:GraphicsConsole.obj
+ 0004:00000100       $unwind$GraphicsConsoleConOutSetCursorPosition 0000000000003de0     GraphicsConsoleDxe:GraphicsConsole.obj
+ 0004:00000118       $unwind$DrawUnicodeWeightAtCursorN 0000000000003df8     GraphicsConsoleDxe:GraphicsConsole.obj
+ 0004:00000130       $unwind$FlushCursor        0000000000003e10     GraphicsConsoleDxe:GraphicsConsole.obj
+ 0004:00000150       $unwind$GraphicsConsoleComponentNameGetDriverName 0000000000003e30     GraphicsConsoleDxe:ComponentName.obj
+ 0004:00000164       $unwind$InternalAllocateCopyPool 0000000000003e44     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0004:00000170       $unwind$HiiAddPackages     0000000000003e50     UefiHiiLib:HiiLib.obj

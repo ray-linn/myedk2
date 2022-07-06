@@ -1,0 +1,297 @@
+ Fat
+
+ Timestamp is 61ee7011 (Mon Jan 24 17:23:29 2022)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 000000d4H .text                   CODE
+ 0001:000000d4 00005d91H .text$mn                CODE
+ 0002:00000000 00000238H .data                   DATA
+ 0002:00000238 000000d8H .rdata                  DATA
+ 0002:00000310 00000028H .bss                    DATA
+ 0002:00000338 00000020H .rdata$voltmd           DATA
+ 0002:00000358 000000a8H .rdata$zzzdbg           DATA
+ 0003:00000000 00000474H .pdata                  DATA
+ 0004:00000000 00000418H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __arm64x_extra_rfe_table   0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata 0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_table          0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_count          0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_count      0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map_count    0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_table      0000000000000000     <absolute>
+ 0000:00000000       __arm64x_native_entrypoint 0000000000000000     <absolute>
+ 0000:00000000       __dynamic_value_reloc_table 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat     0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_table      0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat_copy 0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_count         0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_count      0000000000000000     <absolute>
+ 0000:00000000       __guard_flags              0000000000000000     <absolute>
+ 0000:00000000       __enclave_config           0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points_count 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata_count 0000000000000000     <absolute>
+ 0000:00000000       __AbsoluteZero             0000000000000000     <absolute>
+ 0000:00000000       __guard_check_icall_a64n_fptr 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map          0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table_size 0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_table         0000000000000000     <absolute>
+ 0001:00000000       InternalMemZeroMem         0000000000000280     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00000020       InternalMemCopyMem         00000000000002a0     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000060       InternalMemCompareMem      00000000000002e0     BaseMemoryLibRepStr:CompareMem.obj
+ 0001:00000080       InternalMemSetMem          0000000000000300     BaseMemoryLibRepStr:SetMem.obj
+ 0001:000000a0       InternalMemSetMem64        0000000000000320     BaseMemoryLibRepStr:SetMem64.obj
+ 0001:000000c0       InternalMemSetMem32        0000000000000340     BaseMemoryLibRepStr:SetMem32.obj
+ 0001:000000d4       _DriverUnloadHandler       0000000000000354 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:000000dc       _ModuleEntryPoint          000000000000035c f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:000001b8       FatUnload                  0000000000000438 f   Fat:Fat.obj
+ 0001:00000364       FatDriverBindingSupported  00000000000005e4 f   Fat:Fat.obj
+ 0001:000003fc       FatDriverBindingStart      000000000000067c f   Fat:Fat.obj
+ 0001:00000610       FatDriverBindingStop       0000000000000890 f   Fat:Fat.obj
+ 0001:000006c0       FatComponentNameGetDriverName 0000000000000940 f   Fat:ComponentName.obj
+ 0001:000006f4       FatComponentNameGetControllerName 0000000000000974 f   Fat:ComponentName.obj
+ 0001:00000760       FatCreateTask              00000000000009e0 f   Fat:Misc.obj
+ 0001:000007b0       FatDestroyTask             0000000000000a30 f   Fat:Misc.obj
+ 0001:000007ec       FatWaitNonblockingTask     0000000000000a6c f   Fat:Misc.obj
+ 0001:0000084c       FatDestroySubtask          0000000000000acc f   Fat:Misc.obj
+ 0001:000008a0       FatQueueTask               0000000000000b20 f   Fat:Misc.obj
+ 0001:00000a58       FatOnAccessComplete        0000000000000cd8 f   Fat:Misc.obj
+ 0001:00000adc       FatDiskIo                  0000000000000d5c f   Fat:Misc.obj
+ 0001:00000c60       FatAcquireLock             0000000000000ee0 f   Fat:Misc.obj
+ 0001:00000c8c       FatFreeDirEnt              0000000000000f0c f   Fat:Misc.obj
+ 0001:00000cbc       FatFreeVolume              0000000000000f3c f   Fat:Misc.obj
+ 0001:00000d28       FatEfiTimeToFatTime        0000000000000fa8 f   Fat:Misc.obj
+ 0001:00000df4       FatGetCurrentFatTime       0000000000001074 f   Fat:Misc.obj
+ 0001:00000e40       FatIsValidTime             00000000000010c0 f   Fat:Misc.obj
+ 0001:00000ee4       FatAllocateVolume          0000000000001164 f   Fat:Init.obj
+ 0001:00001008       FatAbandonVolume           0000000000001288 f   Fat:Init.obj
+ 0001:000010e0       FatOpenDevice              0000000000001360 f   Fat:Init.obj
+ 0001:00001428       InitializeUnicodeCollationSupportWorker 00000000000016a8 f   Fat:UnicodeCollation.obj
+ 0001:0000186c       FatAccessCache             0000000000001aec f   Fat:DiskCache.obj
+ 0001:000019e4       FatVolumeFlushCache        0000000000001c64 f   Fat:DiskCache.obj
+ 0001:00001a90       FatInitializeDiskCache     0000000000001d10 f   Fat:DiskCache.obj
+ 0001:00001bc0       FatOpenVolume              0000000000001e40 f   Fat:OpenVolume.obj
+ 0001:00001c50       FatFlushEx                 0000000000001ed0 f   Fat:Flush.obj
+ 0001:00001d68       FatFlush                   0000000000001fe8 f   Fat:Flush.obj
+ 0001:00001d70       FatClose                   0000000000001ff0 f   Fat:Flush.obj
+ 0001:00001ddc       FatIFileClose              000000000000205c f   Fat:Flush.obj
+ 0001:00001e68       FatOFileFlush              00000000000020e8 f   Fat:Flush.obj
+ 0001:00001f20       FatCleanupVolume           00000000000021a0 f   Fat:Flush.obj
+ 0001:000021ac       FatSetVolumeError          000000000000242c f   Fat:Flush.obj
+ 0001:000021fc       FatGetPosition             000000000000247c f   Fat:ReadWrite.obj
+ 0001:00002240       FatSetPosition             00000000000024c0 f   Fat:ReadWrite.obj
+ 0001:000022d0       FatIFileReadDir            0000000000002550 f   Fat:ReadWrite.obj
+ 0001:00002384       FatIFileAccess             0000000000002604 f   Fat:ReadWrite.obj
+ 0001:00002768       FatRead                    00000000000029e8 f   Fat:ReadWrite.obj
+ 0001:00002788       FatReadEx                  0000000000002a08 f   Fat:ReadWrite.obj
+ 0001:000027a8       FatWrite                   0000000000002a28 f   Fat:ReadWrite.obj
+ 0001:000027c8       FatWriteEx                 0000000000002a48 f   Fat:ReadWrite.obj
+ 0001:000027e8       FatAccessOFile             0000000000002a68 f   Fat:ReadWrite.obj
+ 0001:0000298c       FatWriteZeroPool           0000000000002c0c f   Fat:ReadWrite.obj
+ 0001:00002a4c       FatAllocateIFile           0000000000002ccc f   Fat:Open.obj
+ 0001:00002b14       FatOFileOpen               0000000000002d94 f   Fat:Open.obj
+ 0001:00002d0c       FatOpenEx                  0000000000002f8c f   Fat:Open.obj
+ 0001:00002e70       FatOpen                    00000000000030f0 f   Fat:Open.obj
+ 0001:00002e90       FatGetVolumeInfo           0000000000003110 f   Fat:Info.obj
+ 0001:00002f8c       FatSetFileInfo             000000000000320c f   Fat:Info.obj
+ 0001:00003364       FatSetOrGetInfo            00000000000035e4 f   Fat:Info.obj
+ 0001:0000360c       FatGetInfo                 000000000000388c f   Fat:Info.obj
+ 0001:0000362c       FatSetInfo                 00000000000038ac f   Fat:Info.obj
+ 0001:00003654       FatDelete                  00000000000038d4 f   Fat:Delete.obj
+ 0001:00003818       FatStoreDirEnt             0000000000003a98 f   Fat:DirectoryManage.obj
+ 0001:00003d10       FatGetDirEntInfo           0000000000003f90 f   Fat:DirectoryManage.obj
+ 0001:00004064       FatGetNextDirEnt           00000000000042e4 f   Fat:DirectoryManage.obj
+ 0001:00004488       FatGetVolumeEntry          0000000000004708 f   Fat:DirectoryManage.obj
+ 0001:00004500       FatSetVolumeEntry          0000000000004780 f   Fat:DirectoryManage.obj
+ 0001:000045c4       FatCreateDirEnt            0000000000004844 f   Fat:DirectoryManage.obj
+ 0001:000046c4       FatRemoveDirEnt            0000000000004944 f   Fat:DirectoryManage.obj
+ 0001:0000475c       FatOpenDirEnt              00000000000049dc f   Fat:DirectoryManage.obj
+ 0001:00004980       FatLocateOFile             0000000000004c00 f   Fat:DirectoryManage.obj
+ 0001:00004e8c       FatShrinkEof               000000000000510c f   Fat:FileSpace.obj
+ 0001:00004fa0       FatGrowEof                 0000000000005220 f   Fat:FileSpace.obj
+ 0001:000051a0       FatComputeFreeInfo         0000000000005420 f   Fat:FileSpace.obj
+ 0001:00005224       FatCheckIs8Dot3Name        00000000000054a4 f   Fat:FileName.obj
+ 0001:00005360       FatNameToStr               00000000000055e0 f   Fat:FileName.obj
+ 0001:000053b4       FatCreate8Dot3Name         0000000000005634 f   Fat:FileName.obj
+ 0001:00005584       FatGetFileNameViaCaseFlag  0000000000005804 f   Fat:FileName.obj
+ 0001:0000577c       FatLongNameHashSearch      00000000000059fc f   Fat:Hash.obj
+ 0001:000057d8       FatShortNameHashSearch     0000000000005a58 f   Fat:Hash.obj
+ 0001:00005854       StrCmp                     0000000000005ad4 f   BaseLib:String.obj
+ 0001:0000588c       StrnLenS                   0000000000005b0c f   BaseLib:SafeString.obj
+ 0001:000058c0       StrCpyS                    0000000000005b40 f   BaseLib:SafeString.obj
+ 0001:0000595c       InternalAllocatePool       0000000000005bdc f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:0000598c       AllocateZeroPool           0000000000005c0c f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:000059b8       InternalAllocateCopyPool   0000000000005c38 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:000059f8       EfiTestManagedDevice       0000000000005c78 f   UefiLib:UefiLib.obj
+ 0001:00005a90       IsLanguageSupported        0000000000005d10 f   UefiLib:UefiLib.obj
+ 0001:00005b34       LookupUnicodeString2       0000000000005db4 f   UefiLib:UefiLib.obj
+ 0001:00005c4c       GetEfiGlobalVariable2      0000000000005ecc f   UefiLib:UefiLib.obj
+ 0001:00005d0c       GetBestLanguage            0000000000005f8c f   UefiLib:UefiLib.obj
+ 0002:00000000       gEfiLoadedImageProtocolGuid 0000000000006100     Fat:AutoGen.obj
+ 0002:00000010       gEfiGlobalVariableGuid     0000000000006110     Fat:AutoGen.obj
+ 0002:00000020       gEfiUnicodeCollation2ProtocolGuid 0000000000006120     Fat:AutoGen.obj
+ 0002:00000030       gEfiComponentName2ProtocolGuid 0000000000006130     Fat:AutoGen.obj
+ 0002:00000040       gEfiFileSystemInfoGuid     0000000000006140     Fat:AutoGen.obj
+ 0002:00000050       gEfiDiskIoProtocolGuid     0000000000006150     Fat:AutoGen.obj
+ 0002:00000060       gEfiFileInfoGuid           0000000000006160     Fat:AutoGen.obj
+ 0002:00000070       gEfiDevicePathUtilitiesProtocolGuid 0000000000006170     Fat:AutoGen.obj
+ 0002:00000080       gEfiSimpleFileSystemProtocolGuid 0000000000006180     Fat:AutoGen.obj
+ 0002:00000090       gEfiUnicodeCollationProtocolGuid 0000000000006190     Fat:AutoGen.obj
+ 0002:000000a0       gEfiFileSystemVolumeLabelInfoIdGuid 00000000000061a0     Fat:AutoGen.obj
+ 0002:000000b0       gEfiDiskIo2ProtocolGuid    00000000000061b0     Fat:AutoGen.obj
+ 0002:000000c0       gEfiDriverBindingProtocolGuid 00000000000061c0     Fat:AutoGen.obj
+ 0002:000000d0       gEfiComponentNameProtocolGuid 00000000000061d0     Fat:AutoGen.obj
+ 0002:000000e0       gEfiBlockIoProtocolGuid    00000000000061e0     Fat:AutoGen.obj
+ 0002:000000f0       gFatDriverBinding          00000000000061f0     Fat:Fat.obj
+ 0002:00000120       gFatComponentName2         0000000000006220     Fat:ComponentName.obj
+ 0002:00000138       gFatComponentName          0000000000006238     Fat:ComponentName.obj
+ 0002:00000150       mFatControllerNameTable    0000000000006250     Fat:ComponentName.obj
+ 0002:00000170       mFatDriverNameTable        0000000000006270     Fat:ComponentName.obj
+ 0002:00000190       FatFsLock                  0000000000006290     Fat:Data.obj
+ 0002:000001a8       FatTaskLock                00000000000062a8     Fat:Data.obj
+ 0002:000001c0       FatFileInterface           00000000000062c0     Fat:Data.obj
+ 0002:00000238       _gPcd_FixedAtBuild_PcdUefiVariableDefaultPlatformLang 0000000000006338     Fat:AutoGen.obj
+ 0002:00000240       _gPcd_FixedAtBuild_PcdUefiVariableDefaultLang 0000000000006340     Fat:AutoGen.obj
+ 0002:00000244       ??_C@_03LKLGDMJI@eng@      0000000000006344     Fat:ComponentName.obj
+ 0002:00000248       ??_C@_02LFNMGJAP@en@       0000000000006348     Fat:ComponentName.obj
+ 0002:0000024c       ??_C@_06DALJLGPG@eng?$DLen@ 000000000000634c     Fat:ComponentName.obj
+ 0002:00000258       ??_C@_1CO@HMNJNNLH@?$AAF?$AAA?$AAT?$AA?5?$AAF?$AAi?$AAl?$AAe?$AA?5?$AAS?$AAy?$AAs?$AAt?$AAe?$AAm@ 0000000000006358     Fat:ComponentName.obj
+ 0002:00000288       ??_C@_1CA@NFKDMACF@?$AAF?$AAA?$AAT?$AA?5?$AAF?$AAi?$AAl?$AAe?$AA?5?$AAS?$AAy?$AAs?$AAt?$AAe?$AAm@ 0000000000006388     Fat:ComponentName.obj
+ 0002:000002a8       mMonthDays                 00000000000063a8     Fat:Misc.obj
+ 0002:000002b4       ??_C@_00CNPNBAHC@@         00000000000063b4     Fat:UnicodeCollation.obj
+ 0002:000002b8       ??_C@_1BK@GGGENMOA@?$AAP?$AAl?$AAa?$AAt?$AAf?$AAo?$AAr?$AAm?$AAL?$AAa?$AAn?$AAg@ 00000000000063b8     Fat:UnicodeCollation.obj
+ 0002:000002d8       ??_C@_19BALNHBBC@?$AAL?$AAa?$AAn?$AAg@ 00000000000063d8     Fat:UnicodeCollation.obj
+ 0002:000002e4       ??_C@_13JOFGPIOO@?$AA?4@   00000000000063e4     Fat:DirectoryManage.obj
+ 0002:000002e8       ??_C@_15DDHGOCBH@?$AA?4?$AA?4@ 00000000000063e8     Fat:DirectoryManage.obj
+ 0002:00000310       mUnicodeCollationInterface 0000000000006410     Fat:UnicodeCollation.obj
+ 0002:00000318       gST                        0000000000006418     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000320       gBS                        0000000000006420     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000328       mDevicePathLibDevicePathUtilities 0000000000006428     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:00000330       gRT                        0000000000006430     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0002:00000338       __volatile_metadata        0000000000006438     <linker-defined>
+
+ entry point at        0001:000000dc
+
+ Static symbols
+
+ 0001:0000003a       InternalMemCopyMem.0       00000000000002ba     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:0000004a       @CopyBackward              00000000000002ca     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000053       @CopyBytes                 00000000000002d3     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00001578       FatFlushDataCacheRange     00000000000017f8 f   Fat:DiskCache.obj
+ 0001:00001660       FatExchangeCachePage       00000000000018e0 f   Fat:DiskCache.obj
+ 0001:00001754       FatAccessUnalignedCachePage 00000000000019d4 f   Fat:DiskCache.obj
+ 0001:00001b6c       FatFreeODir                0000000000001dec f   Fat:DirectoryCache.obj
+ 0001:000037d8       FatAccessEntry             0000000000003a58 f   Fat:DirectoryManage.obj
+ 0001:000039bc       FatLoadLongNameEntry       0000000000003c3c f   Fat:DirectoryManage.obj
+ 0001:00003b68       FatAddDirEnt               0000000000003de8 f   Fat:DirectoryManage.obj
+ 0001:00003bfc       FatLoadNextDirEnt          0000000000003e7c f   Fat:DirectoryManage.obj
+ 0001:00003f70       FatSearchODir              00000000000041f0 f   Fat:DirectoryManage.obj
+ 0001:000040e4       FatSetEntryCount           0000000000004364 f   Fat:DirectoryManage.obj
+ 0001:0000425c       FatSeekVolumeId            00000000000044dc f   Fat:DirectoryManage.obj
+ 0001:000042d4       FatFirstFitInsertDirEnt    0000000000004554 f   Fat:DirectoryManage.obj
+ 0001:00004388       FatNewEntryPos             0000000000004608 f   Fat:DirectoryManage.obj
+ 0001:00004c08       FatLoadFatEntry            0000000000004e88 f   Fat:FileSpace.obj
+ 0001:00004c8c       FatGetFatEntry             0000000000004f0c f   Fat:FileSpace.obj
+ 0001:00004d34       FatSetFatEntry             0000000000004fb4 f   Fat:FileSpace.obj
+ 0001:000054e4       FatCheckNameCase           0000000000005764 f   Fat:FileName.obj
+ 0001:00005680       FatHashLongName            0000000000005900 f   Fat:Hash.obj
+ 0004:00000000       $unwind$_ModuleEntryPoint  0000000000006980     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0004:0000000c       $unwind$FatUnload          000000000000698c     Fat:Fat.obj
+ 0004:0000001c       $unwind$FatDriverBindingSupported 000000000000699c     Fat:Fat.obj
+ 0004:00000028       $unwind$FatDriverBindingStart 00000000000069a8     Fat:Fat.obj
+ 0004:0000003c       $unwind$FatDriverBindingStop 00000000000069bc     Fat:Fat.obj
+ 0004:0000004c       $unwind$FatComponentNameGetDriverName 00000000000069cc     Fat:ComponentName.obj
+ 0004:0000004c       $unwind$FatAccessEntry     00000000000069cc     Fat:DirectoryManage.obj
+ 0004:0000004c       $unwind$FatGetInfo         00000000000069cc     Fat:Info.obj
+ 0004:0000004c       $unwind$FatOpen            00000000000069cc     Fat:Open.obj
+ 0004:0000004c       $unwind$FatRead            00000000000069cc     Fat:ReadWrite.obj
+ 0004:0000004c       $unwind$FatReadEx          00000000000069cc     Fat:ReadWrite.obj
+ 0004:0000004c       $unwind$FatWrite           00000000000069cc     Fat:ReadWrite.obj
+ 0004:0000004c       $unwind$FatWriteEx         00000000000069cc     Fat:ReadWrite.obj
+ 0004:00000054       $unwind$FatComponentNameGetControllerName 00000000000069d4     Fat:ComponentName.obj
+ 0004:00000060       $unwind$FatFreeODir        00000000000069e0     Fat:DirectoryCache.obj
+ 0004:00000060       $unwind$FatInitializeDiskCache 00000000000069e0     Fat:DiskCache.obj
+ 0004:00000060       $unwind$FatNameToStr       00000000000069e0     Fat:FileName.obj
+ 0004:00000060       $unwind$FatComputeFreeInfo 00000000000069e0     Fat:FileSpace.obj
+ 0004:00000060       $unwind$FatGetFatEntry     00000000000069e0     Fat:FileSpace.obj
+ 0004:00000060       $unwind$FatLongNameHashSearch 00000000000069e0     Fat:Hash.obj
+ 0004:00000060       $unwind$FatCreateTask      00000000000069e0     Fat:Misc.obj
+ 0004:00000060       $unwind$FatDestroySubtask  00000000000069e0     Fat:Misc.obj
+ 0004:00000060       $unwind$FatDestroyTask     00000000000069e0     Fat:Misc.obj
+ 0004:00000060       $unwind$FatOnAccessComplete 00000000000069e0     Fat:Misc.obj
+ 0004:00000060       $unwind$FatWaitNonblockingTask 00000000000069e0     Fat:Misc.obj
+ 0004:00000060       $unwind$InternalAllocateCopyPool 00000000000069e0     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0004:0000006c       $unwind$FatQueueTask       00000000000069ec     Fat:Misc.obj
+ 0004:00000088       $unwind$FatDiskIo          0000000000006a08     Fat:Misc.obj
+ 0004:000000a4       $unwind$FatAcquireLock     0000000000006a24     Fat:Misc.obj
+ 0004:000000a4       $unwind$InternalAllocatePool 0000000000006a24     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0004:000000ac       $unwind$FatAbandonVolume   0000000000006a2c     Fat:Init.obj
+ 0004:000000ac       $unwind$FatFreeDirEnt      0000000000006a2c     Fat:Misc.obj
+ 0004:000000ac       $unwind$FatFreeVolume      0000000000006a2c     Fat:Misc.obj
+ 0004:000000ac       $unwind$StrCpyS            0000000000006a2c     BaseLib:SafeString.obj
+ 0004:000000ac       $unwind$AllocateZeroPool   0000000000006a2c     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0004:000000b4       $unwind$FatLoadFatEntry    0000000000006a34     Fat:FileSpace.obj
+ 0004:000000b4       $unwind$FatGetCurrentFatTime 0000000000006a34     Fat:Misc.obj
+ 0004:000000bc       $unwind$FatCheckIs8Dot3Name 0000000000006a3c     Fat:FileName.obj
+ 0004:000000bc       $unwind$FatAllocateVolume  0000000000006a3c     Fat:Init.obj
+ 0004:000000d4       $unwind$FatOpenDevice      0000000000006a54     Fat:Init.obj
+ 0004:000000f4       $unwind$InitializeUnicodeCollationSupportWorker 0000000000006a74     Fat:UnicodeCollation.obj
+ 0004:0000010c       $unwind$FatFlushDataCacheRange 0000000000006a8c     Fat:DiskCache.obj
+ 0004:0000010c       $unwind$FatCreate8Dot3Name 0000000000006a8c     Fat:FileName.obj
+ 0004:00000128       $unwind$FatAccessUnalignedCachePage 0000000000006aa8     Fat:DiskCache.obj
+ 0004:00000128       $unwind$FatExchangeCachePage 0000000000006aa8     Fat:DiskCache.obj
+ 0004:00000128       $unwind$FatCleanupVolume   0000000000006aa8     Fat:Flush.obj
+ 0004:00000144       $unwind$FatAccessCache     0000000000006ac4     Fat:DiskCache.obj
+ 0004:0000015c       $unwind$FatVolumeFlushCache 0000000000006adc     Fat:DiskCache.obj
+ 0004:00000178       $unwind$FatAddDirEnt       0000000000006af8     Fat:DirectoryManage.obj
+ 0004:00000178       $unwind$FatShortNameHashSearch 0000000000006af8     Fat:Hash.obj
+ 0004:00000178       $unwind$FatOpenVolume      0000000000006af8     Fat:OpenVolume.obj
+ 0004:00000184       $unwind$FatRemoveDirEnt    0000000000006b04     Fat:DirectoryManage.obj
+ 0004:00000184       $unwind$FatSeekVolumeId    0000000000006b04     Fat:DirectoryManage.obj
+ 0004:00000184       $unwind$FatFlushEx         0000000000006b04     Fat:Flush.obj
+ 0004:00000198       $unwind$FatClose           0000000000006b18     Fat:Flush.obj
+ 0004:00000198       $unwind$FatIFileClose      0000000000006b18     Fat:Flush.obj
+ 0004:00000198       $unwind$FatSetVolumeError  0000000000006b18     Fat:Flush.obj
+ 0004:00000198       $unwind$FatSetPosition     0000000000006b18     Fat:ReadWrite.obj
+ 0004:00000198       $unwind$LookupUnicodeString2 0000000000006b18     UefiLib:UefiLib.obj
+ 0004:000001a8       $unwind$FatOFileFlush      0000000000006b28     Fat:Flush.obj
+ 0004:000001b8       $unwind$FatIFileReadDir    0000000000006b38     Fat:ReadWrite.obj
+ 0004:000001d0       $unwind$FatIFileAccess     0000000000006b50     Fat:ReadWrite.obj
+ 0004:000001e8       $unwind$FatAccessOFile     0000000000006b68     Fat:ReadWrite.obj
+ 0004:00000200       $unwind$FatSearchODir      0000000000006b80     Fat:DirectoryManage.obj
+ 0004:00000200       $unwind$FatWriteZeroPool   0000000000006b80     Fat:ReadWrite.obj
+ 0004:00000218       $unwind$FatAllocateIFile   0000000000006b98     Fat:Open.obj
+ 0004:0000022c       $unwind$FatOFileOpen       0000000000006bac     Fat:Open.obj
+ 0004:00000244       $unwind$FatOpenEx          0000000000006bc4     Fat:Open.obj
+ 0004:0000025c       $unwind$FatGetVolumeInfo   0000000000006bdc     Fat:Info.obj
+ 0004:00000278       $unwind$FatSetFileInfo     0000000000006bf8     Fat:Info.obj
+ 0004:00000298       $unwind$FatSetOrGetInfo    0000000000006c18     Fat:Info.obj
+ 0004:000002b4       $unwind$FatSetInfo         0000000000006c34     Fat:Info.obj
+ 0004:000002bc       $unwind$FatDelete          0000000000006c3c     Fat:Delete.obj
+ 0004:000002bc       $unwind$FatNewEntryPos     0000000000006c3c     Fat:DirectoryManage.obj
+ 0004:000002d0       $unwind$FatLoadLongNameEntry 0000000000006c50     Fat:DirectoryManage.obj
+ 0004:000002d0       $unwind$FatStoreDirEnt     0000000000006c50     Fat:DirectoryManage.obj
+ 0004:000002f0       $unwind$FatLoadNextDirEnt  0000000000006c70     Fat:DirectoryManage.obj
+ 0004:000002f0       $unwind$FatSetEntryCount   0000000000006c70     Fat:DirectoryManage.obj
+ 0004:00000308       $unwind$FatGetDirEntInfo   0000000000006c88     Fat:DirectoryManage.obj
+ 0004:00000324       $unwind$FatGetNextDirEnt   0000000000006ca4     Fat:DirectoryManage.obj
+ 0004:00000338       $unwind$FatFirstFitInsertDirEnt 0000000000006cb8     Fat:DirectoryManage.obj
+ 0004:0000034c       $unwind$FatGetVolumeEntry  0000000000006ccc     Fat:DirectoryManage.obj
+ 0004:0000035c       $unwind$FatSetVolumeEntry  0000000000006cdc     Fat:DirectoryManage.obj
+ 0004:00000368       $unwind$FatCreateDirEnt    0000000000006ce8     Fat:DirectoryManage.obj
+ 0004:00000368       $unwind$FatGrowEof         0000000000006ce8     Fat:FileSpace.obj
+ 0004:00000368       $unwind$FatShrinkEof       0000000000006ce8     Fat:FileSpace.obj
+ 0004:00000384       $unwind$FatOpenDirEnt      0000000000006d04     Fat:DirectoryManage.obj
+ 0004:0000039c       $unwind$FatLocateOFile     0000000000006d1c     Fat:DirectoryManage.obj
+ 0004:000003bc       $unwind$FatGetFileNameViaCaseFlag 0000000000006d3c     Fat:FileName.obj
+ 0004:000003bc       $unwind$FatSetFatEntry     0000000000006d3c     Fat:FileSpace.obj
+ 0004:000003cc       $unwind$FatCheckNameCase   0000000000006d4c     Fat:FileName.obj
+ 0004:000003dc       $unwind$FatHashLongName    0000000000006d5c     Fat:Hash.obj
+ 0004:000003ec       $unwind$EfiTestManagedDevice 0000000000006d6c     UefiLib:UefiLib.obj
+ 0004:000003f8       $unwind$GetEfiGlobalVariable2 0000000000006d78     UefiLib:UefiLib.obj
+ 0004:00000408       $unwind$GetBestLanguage    0000000000006d88     UefiLib:UefiLib.obj

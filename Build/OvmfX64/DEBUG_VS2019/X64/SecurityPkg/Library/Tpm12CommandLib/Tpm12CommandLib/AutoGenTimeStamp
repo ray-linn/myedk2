@@ -1,0 +1,9 @@
+d:\edk2\edk2\SecurityPkg\Library\Tpm12CommandLib\Tpm12Ownership.c
+d:\edk2\edk2\SecurityPkg\Library\Tpm12CommandLib\Tpm12NvStorage.c
+d:\edk2\edk2\SecurityPkg\Library\Tpm12CommandLib\Tpm12Pcr.c
+d:\edk2\edk2\SecurityPkg\Library\Tpm12CommandLib\Tpm12Startup.c
+d:\edk2\edk2\Build\OvmfX64\DEBUG_VS2019\X64\SecurityPkg\Library\Tpm12CommandLib\Tpm12CommandLib\DEBUG\AutoGen.h
+d:\edk2\edk2\SecurityPkg\Library\Tpm12CommandLib\Tpm12GetCapability.c
+d:\edk2\edk2\SecurityPkg\Library\Tpm12CommandLib\Tpm12CommandLib.inf
+d:\edk2\edk2\SecurityPkg\Library\Tpm12CommandLib\Tpm12SelfTest.c
+d:\edk2\edk2\SecurityPkg\Library\Tpm12CommandLib\Tpm12PhysicalPresence.c

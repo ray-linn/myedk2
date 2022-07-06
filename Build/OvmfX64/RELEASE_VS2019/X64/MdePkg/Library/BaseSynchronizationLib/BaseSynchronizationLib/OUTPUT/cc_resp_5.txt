@@ -1,0 +1,1 @@
+  d:\edk2\edk2\MdePkg\Library\BaseSynchronizationLib\X64\InterlockedCompareExchange32.c d:\edk2\edk2\MdePkg\Library\BaseSynchronizationLib\X64\InterlockedCompareExchange64.c d:\edk2\edk2\MdePkg\Library\BaseSynchronizationLib\X64\InterlockedCompareExchange16.c

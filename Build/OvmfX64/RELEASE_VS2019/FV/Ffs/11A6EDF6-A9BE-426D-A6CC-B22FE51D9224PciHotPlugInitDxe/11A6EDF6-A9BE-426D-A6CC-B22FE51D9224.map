@@ -1,0 +1,167 @@
+ PciHotPlugInitDxe
+
+ Timestamp is 61ee7052 (Mon Jan 24 17:24:34 2022)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000244H .text                   CODE
+ 0001:00000244 000018f5H .text$mn                CODE
+ 0002:00000000 00000040H .data                   DATA
+ 0002:00000040 00000020H .rdata                  DATA
+ 0002:00000060 00000048H .bss                    DATA
+ 0002:000000a8 00000044H .rdata$voltmd           DATA
+ 0002:000000ec 000000a8H .rdata$zzzdbg           DATA
+ 0003:00000000 0000012cH .pdata                  DATA
+ 0004:00000000 000000f4H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __guard_longjmp_count      0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points 0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_count         0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map_count    0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points_count 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata 0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_table          0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table   0000000000000000     <absolute>
+ 0000:00000000       __arm64x_native_entrypoint 0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_table      0000000000000000     <absolute>
+ 0000:00000000       __enclave_config           0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_count          0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_table      0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata_count 0000000000000000     <absolute>
+ 0000:00000000       __dynamic_value_reloc_table 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat     0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat_copy 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map          0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table_size 0000000000000000     <absolute>
+ 0000:00000000       __AbsoluteZero             0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_count      0000000000000000     <absolute>
+ 0000:00000000       __guard_check_icall_a64n_fptr 0000000000000000     <absolute>
+ 0000:00000000       __guard_flags              0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_table         0000000000000000     <absolute>
+ 0001:00000000       InternalMemZeroMem         0000000000000260     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00000020       InternalMemCopyMem         0000000000000280     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000060       InternalMemSetMem          00000000000002c0     BaseMemoryLibRepStr:SetMem.obj
+ 0001:00000080       InternalMemIsZeroBuffer    00000000000002e0     BaseMemoryLibRepStr:IsZeroBuffer.obj
+ 0001:000000b0       InternalMemSetMem64        0000000000000310     BaseMemoryLibRepStr:SetMem64.obj
+ 0001:000000d0       InternalMemSetMem32        0000000000000330     BaseMemoryLibRepStr:SetMem32.obj
+ 0001:000000f0       CpuPause                   0000000000000350     BaseLib:CpuPause.obj
+ 0001:00000100       SevNoRepIo                 0000000000000360     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000140       IoReadFifo8                00000000000003a0     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000162       IoReadFifo16               00000000000003c2     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000188       IoReadFifo32               00000000000003e8     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001ab       IoWriteFifo8               000000000000040b     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001cd       IoWriteFifo16              000000000000042d     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001f3       IoWriteFifo32              0000000000000453     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000220       EnableInterrupts           0000000000000480     BaseLib:EnableInterrupts.obj
+ 0001:00000230       DisableInterrupts          0000000000000490     BaseLib:DisableInterrupts.obj
+ 0001:00000240       AsmReadEflags              00000000000004a0     BaseLib:ReadEflags.obj
+ 0001:00000244       _ModuleEntryPoint          00000000000004a4 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:000008fc       GetPcdProtocol             0000000000000b5c f   DxePcdLib:DxePcdLib.obj
+ 0001:00000938       InternalAllocatePool       0000000000000b98 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00000968       InternalAllocateCopyPool   0000000000000bc8 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:000009a8       UefiDevicePathLibLocateProtocol 0000000000000c08 f   UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0001:00000c04       PciCapListInit             0000000000000e64 f   BasePciCapLib:BasePciCapLib.obj
+ 0001:00000f38       PciCapRead                 0000000000001198 f   BasePciCapLib:BasePciCapLib.obj
+ 0001:000010a4       PciCf8Read8                0000000000001304 f   BasePciCf8Lib:PciCf8Lib.obj
+ 0001:00001114       PciCf8Write8               0000000000001374 f   BasePciCf8Lib:PciCf8Lib.obj
+ 0001:00001194       PciCf8Read16               00000000000013f4 f   BasePciCf8Lib:PciCf8Lib.obj
+ 0001:00001208       PciCf8Write16              0000000000001468 f   BasePciCf8Lib:PciCf8Lib.obj
+ 0001:00001288       PciCf8Read32               00000000000014e8 f   BasePciCf8Lib:PciCf8Lib.obj
+ 0001:000012ec       PciCf8Write32              000000000000154c f   BasePciCf8Lib:PciCf8Lib.obj
+ 0001:0000135c       OrderedCollectionNext      00000000000015bc f   BaseOrderedCollectionRedBlackTreeLib:BaseOrderedCollectionRedBlackTreeLib.obj
+ 0001:0000139c       RedBlackTreeRotateRight    00000000000015fc f   BaseOrderedCollectionRedBlackTreeLib:BaseOrderedCollectionRedBlackTreeLib.obj
+ 0001:000013dc       RedBlackTreeRotateLeft     000000000000163c f   BaseOrderedCollectionRedBlackTreeLib:BaseOrderedCollectionRedBlackTreeLib.obj
+ 0001:0000141c       OrderedCollectionInsert    000000000000167c f   BaseOrderedCollectionRedBlackTreeLib:BaseOrderedCollectionRedBlackTreeLib.obj
+ 0001:000015c0       OrderedCollectionDelete    0000000000001820 f   BaseOrderedCollectionRedBlackTreeLib:BaseOrderedCollectionRedBlackTreeLib.obj
+ 0001:00001844       PciSegmentRead8            0000000000001aa4 f   BasePciSegmentLibPci:PciSegmentLib.obj
+ 0001:0000186c       PciSegmentWrite8           0000000000001acc f   BasePciSegmentLibPci:PciSegmentLib.obj
+ 0001:000018b0       PciSegmentRead16           0000000000001b10 f   BasePciSegmentLibPci:PciSegmentLib.obj
+ 0001:000018dc       PciSegmentWrite16          0000000000001b3c f   BasePciSegmentLibPci:PciSegmentLib.obj
+ 0001:0000190c       PciSegmentRead32           0000000000001b6c f   BasePciSegmentLibPci:PciSegmentLib.obj
+ 0001:00001934       PciSegmentReadBuffer       0000000000001b94 f   BasePciSegmentLibPci:PciSegmentLib.obj
+ 0001:00001a18       PciSegmentWriteBuffer      0000000000001c78 f   BasePciSegmentLibPci:PciSegmentLib.obj
+ 0001:00001b18       SaveAndDisableInterrupts   0000000000001d78 f   BaseLib:Cpu.obj
+ 0002:00000000       gPcdProtocolGuid           0000000000001da0     PciHotPlugInitDxe:AutoGen.obj
+ 0002:00000010       gEfiDevicePathToTextProtocolGuid 0000000000001db0     PciHotPlugInitDxe:AutoGen.obj
+ 0002:00000020       gEfiDevicePathUtilitiesProtocolGuid 0000000000001dc0     PciHotPlugInitDxe:AutoGen.obj
+ 0002:00000030       gEfiPciHotPlugInitProtocolGuid 0000000000001dd0     PciHotPlugInitDxe:AutoGen.obj
+ 0002:00000060       mPcd                       0000000000001e00     DxePcdLib:DxePcdLib.obj
+ 0002:00000068       gST                        0000000000001e08     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000070       gBS                        0000000000001e10     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000078       mDevicePathLibDevicePathToText 0000000000001e18     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:00000080       mDevicePathLibDevicePathUtilities 0000000000001e20     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:000000a8       __volatile_metadata        0000000000001e48     <linker-defined>
+
+ entry point at        0001:00000244
+
+ Static symbols
+
+ 0001:0000003a       InternalMemCopyMem.0       000000000000029a     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:0000004a       @CopyBackward              00000000000002aa     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000053       @CopyBytes                 00000000000002b3     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:000000a5       @ReturnFalse               0000000000000305     BaseMemoryLibRepStr:IsZeroBuffer.obj
+ 0001:0000013a       @UseRepIo                  000000000000039a     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:0000013c       @SevNoRepIo_Done           000000000000039c     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000154       @IoReadFifo8_NoRep         00000000000003b4     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000156       @IoReadFifo8_Loop          00000000000003b6     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:0000015e       @IoReadFifo8_Done          00000000000003be     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000177       @IoReadFifo16_NoRep        00000000000003d7     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000179       @IoReadFifo16_Loop         00000000000003d9     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000184       @IoReadFifo16_Done         00000000000003e4     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:0000019c       @IoReadFifo32_NoRep        00000000000003fc     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:0000019e       @IoReadFifo32_Loop         00000000000003fe     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001a7       @IoReadFifo32_Done         0000000000000407     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001bf       @IoWriteFifo8_NoRep        000000000000041f     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001c1       @IoWriteFifo8_Loop         0000000000000421     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001c9       @IoWriteFifo8_Done         0000000000000429     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001e2       @IoWriteFifo16_NoRep       0000000000000442     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001e4       @IoWriteFifo16_Loop        0000000000000444     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001ef       @IoWriteFifo16_Done        000000000000044f     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000207       @IoWriteFifo32_NoRep       0000000000000467     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000209       @IoWriteFifo32_Loop        0000000000000469     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000212       @IoWriteFifo32_Done        0000000000000472     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000310       HighBitSetRoundUp32        0000000000000570 f   PciHotPlugInitDxe:PciHotPlugInit.obj
+ 0001:0000034c       HighBitSetRoundUp64        00000000000005ac f   PciHotPlugInitDxe:PciHotPlugInit.obj
+ 0001:000003bc       QueryReservationHint       000000000000061c f   PciHotPlugInitDxe:PciHotPlugInit.obj
+ 0001:00000614       GetRootHpcList             0000000000000874 f   PciHotPlugInitDxe:PciHotPlugInit.obj
+ 0001:00000634       InitializeRootHpc          0000000000000894 f   PciHotPlugInitDxe:PciHotPlugInit.obj
+ 0001:00000650       GetResourcePadding         00000000000008b0 f   PciHotPlugInitDxe:PciHotPlugInit.obj
+ 0001:000009e4       ComparePciCapKey           0000000000000c44 f   BasePciCapLib:BasePciCapLib.obj
+ 0001:00000a14       ComparePciCap              0000000000000c74 f   BasePciCapLib:BasePciCapLib.obj
+ 0001:00000a1c       ComparePciCapOffsetKey     0000000000000c7c f   BasePciCapLib:BasePciCapLib.obj
+ 0001:00000a28       ComparePciCapOffset        0000000000000c88 f   BasePciCapLib:BasePciCapLib.obj
+ 0001:00000a34       InsertPciCap               0000000000000c94 f   BasePciCapLib:BasePciCapLib.obj
+ 0001:00000b84       EmptyAndUninitPciCapCollection 0000000000000de4 f   BasePciCapLib:BasePciCapLib.obj
+ 0001:00000f84       SegmentDevReadConfig       00000000000011e4 f   BasePciCapPciSegmentLib:BasePciCapPciSegmentLib.obj
+ 0001:00001014       SegmentDevWriteConfig      0000000000001274 f   BasePciCapPciSegmentLib:BasePciCapPciSegmentLib.obj
+ 0002:00000088       mPciExtConfSpaceSupported  0000000000001e28     PciHotPlugInitDxe:PciHotPlugInit.obj
+ 0002:00000089       mRunningOnQ35              0000000000001e29     DxePciLibI440FxQ35:PciLib.obj
+ 0002:00000090       mPciHotPlugInit            0000000000001e30     PciHotPlugInitDxe:PciHotPlugInit.obj
+ 0004:00000000       $unwind$_ModuleEntryPoint  0000000000002080     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0004:0000000c       $unwind$QueryReservationHint 000000000000208c     PciHotPlugInitDxe:PciHotPlugInit.obj
+ 0004:00000024       $unwind$GetResourcePadding 00000000000020a4     PciHotPlugInitDxe:PciHotPlugInit.obj
+ 0004:00000044       $unwind$PciSegmentWrite8   00000000000020c4     BasePciSegmentLibPci:PciSegmentLib.obj
+ 0004:00000044       $unwind$GetPcdProtocol     00000000000020c4     DxePcdLib:DxePcdLib.obj
+ 0004:00000044       $unwind$InternalAllocatePool 00000000000020c4     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0004:0000004c       $unwind$PciCf8Write16      00000000000020cc     BasePciCf8Lib:PciCf8Lib.obj
+ 0004:0000004c       $unwind$PciCf8Write32      00000000000020cc     BasePciCf8Lib:PciCf8Lib.obj
+ 0004:0000004c       $unwind$PciCf8Write8       00000000000020cc     BasePciCf8Lib:PciCf8Lib.obj
+ 0004:0000004c       $unwind$InternalAllocateCopyPool 00000000000020cc     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0004:0000004c       $unwind$PciCapRead         00000000000020cc     BasePciCapLib:BasePciCapLib.obj
+ 0004:00000058       $unwind$UefiDevicePathLibLocateProtocol 00000000000020d8     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0004:00000060       $unwind$InsertPciCap       00000000000020e0     BasePciCapLib:BasePciCapLib.obj
+ 0004:0000007c       $unwind$EmptyAndUninitPciCapCollection 00000000000020fc     BasePciCapLib:BasePciCapLib.obj
+ 0004:0000008c       $unwind$PciCapListInit     000000000000210c     BasePciCapLib:BasePciCapLib.obj
+ 0004:000000a4       $unwind$SaveAndDisableInterrupts 0000000000002124     BaseLib:Cpu.obj
+ 0004:000000a4       $unwind$PciCf8Read16       0000000000002124     BasePciCf8Lib:PciCf8Lib.obj
+ 0004:000000a4       $unwind$PciCf8Read32       0000000000002124     BasePciCf8Lib:PciCf8Lib.obj
+ 0004:000000a4       $unwind$PciCf8Read8        0000000000002124     BasePciCf8Lib:PciCf8Lib.obj
+ 0004:000000a4       $unwind$SegmentDevReadConfig 0000000000002124     BasePciCapPciSegmentLib:BasePciCapPciSegmentLib.obj
+ 0004:000000a4       $unwind$SegmentDevWriteConfig 0000000000002124     BasePciCapPciSegmentLib:BasePciCapPciSegmentLib.obj
+ 0004:000000ac       $unwind$OrderedCollectionInsert 000000000000212c     BaseOrderedCollectionRedBlackTreeLib:BaseOrderedCollectionRedBlackTreeLib.obj
+ 0004:000000c4       $unwind$OrderedCollectionDelete 0000000000002144     BaseOrderedCollectionRedBlackTreeLib:BaseOrderedCollectionRedBlackTreeLib.obj
+ 0004:000000dc       $unwind$PciSegmentReadBuffer 000000000000215c     BasePciSegmentLibPci:PciSegmentLib.obj
+ 0004:000000dc       $unwind$PciSegmentWriteBuffer 000000000000215c     BasePciSegmentLibPci:PciSegmentLib.obj

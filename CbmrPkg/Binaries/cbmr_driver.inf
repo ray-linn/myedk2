@@ -1,0 +1,27 @@
+## @file
+# This driver produces Extended SCSI Pass Thru Protocol instances for
+# LSI 53C895A SCSI devices.
+#
+# Copyright (C) 2020, SUSE LLC.
+#
+# SPDX-License-Identifier: BSD-2-Clause-Patent
+#
+##
+
+[Defines]
+  INF_VERSION                    = 0x00010005
+  BASE_NAME                      = CloudBareMetalRecoveryDriver
+  ENTRY_POINT                    = tls_cert
+  FILE_GUID                      = BCC8AF15-B751-450C-BDE6-0F9D6625BF41
+  MODULE_TYPE                    = UEFI_DRIVER
+  VERSION_STRING                 = 1.0
+
+[Binaries.X64]
+  PE32|cbmr_driver.efi|*
+
+[Packages]
+  MdePkg/MdePkg.dec
+  MdeModulePkg/MdeModulePkg.dec
+  
+[Depex]
+  HttpBootDxe

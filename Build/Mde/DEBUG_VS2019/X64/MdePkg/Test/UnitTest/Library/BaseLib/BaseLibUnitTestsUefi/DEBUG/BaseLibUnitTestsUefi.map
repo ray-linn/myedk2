@@ -1,0 +1,430 @@
+ BaseLibUnitTestsUefi
+
+ Timestamp is 62034633 (Wed Feb  9 12:42:27 2022)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000184H .text                   CODE
+ 0001:00000184 00004a69H .text$mn                CODE
+ 0002:00000000 00002740H .rdata                  DATA
+ 0002:00002740 00000054H .rdata$voltmd           DATA
+ 0002:00002794 00000158H .rdata$zzzdbg           DATA
+ 0003:00000000 000004a0H .data                   DATA
+ 0003:000004a0 00000140H .bss                    DATA
+ 0004:00000000 00000240H .pdata                  DATA
+ 0005:00000000 0000020cH .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __arm64x_redirection_metadata 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map          0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table_size 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table   0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_count          0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_count      0000000000000000     <absolute>
+ 0000:00000000       __dynamic_value_reloc_table 0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_count         0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat     0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat_copy 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map_count    0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points_count 0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_table          0000000000000000     <absolute>
+ 0000:00000000       __AbsoluteZero             0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points 0000000000000000     <absolute>
+ 0000:00000000       __guard_check_icall_a64n_fptr 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_native_entrypoint 0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_table      0000000000000000     <absolute>
+ 0000:00000000       __guard_flags              0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_count      0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_table         0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_table      0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata_count 0000000000000000     <absolute>
+ 0000:00000000       __enclave_config           0000000000000000     <absolute>
+ 0001:00000000       SetJump                    00000000000002c0     BaseLib:SetJump.obj
+ 0001:000000d0       InternalLongJump           0000000000000390     BaseLib:LongJump.obj
+ 0001:00000180       CpuPause                   0000000000000440     BaseLib:CpuPause.obj
+ 0001:00000184       _ModuleEntryPoint          0000000000000444 f   UefiApplicationEntryPoint:ApplicationEntryPoint.obj
+ 0001:00001954       InternalAllocateZeroPool   0000000000001c14 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:000019a0       FreePool                   0000000000001c60 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:000019e4       UnitTestDebugAssert        0000000000001ca4 f   UnitTestDebugAssertLib:UnitTestDebugAssertLib.obj
+ 0001:00001bc0       UnitTestAssertNotEfiError  0000000000001e80 f   UnitTestLib:Assert.obj
+ 0001:00001c44       UnitTestAssertEqual        0000000000001f04 f   UnitTestLib:Assert.obj
+ 0001:00001cf0       UnitTestAssertMemEqual     0000000000001fb0 f   UnitTestLib:Assert.obj
+ 0001:00001d8c       UnitTestAssertStatusEqual  000000000000204c f   UnitTestLib:Assert.obj
+ 0001:00001eb0       AddTestCase                0000000000002170 f   UnitTestLib:UnitTestLib.obj
+ 0001:00002430       UnitTestLogInit            00000000000026f0 f   UnitTestLib:Log.obj
+ 0001:000024c8       UnitTestLog                0000000000002788 f   UnitTestLib:Log.obj
+ 0001:000025c0       DebugPrint                 0000000000002880 f   PeiDxeDebugLibReportStatusCode:DebugLib.obj
+ 0001:000025e4       DebugPrintMarker           00000000000028a4 f   PeiDxeDebugLibReportStatusCode:DebugLib.obj
+ 0001:000027dc       ZeroMem                    0000000000002a9c f   BaseMemoryLib:ZeroMemWrapper.obj
+ 0001:0000284c       CompareMem                 0000000000002b0c f   BaseMemoryLib:CompareMemWrapper.obj
+ 0001:0000292c       CopyMem                    0000000000002bec f   BaseMemoryLib:CopyMemWrapper.obj
+ 0001:000029c8       InternalMemCopyMem         0000000000002c88 f   BaseMemoryLib:CopyMem.obj
+ 0001:00002b7c       InternalMemSetMem          0000000000002e3c f   BaseMemoryLib:SetMem.obj
+ 0001:00002bf0       AsciiStrLen                0000000000002eb0 f   BaseLib:String.obj
+ 0001:00002c5c       AsciiStrnCmp               0000000000002f1c f   BaseLib:String.obj
+ 0001:00002d28       Base64Encode               0000000000002fe8 f   BaseLib:String.obj
+ 0001:00002eec       Base64Decode               00000000000031ac f   BaseLib:String.obj
+ 0001:0000311c       StrnLenS                   00000000000033dc f   BaseLib:SafeString.obj
+ 0001:00003184       StrCpyS                    0000000000003444 f   BaseLib:SafeString.obj
+ 0001:00003328       AsciiStrCpyS               00000000000035e8 f   BaseLib:SafeString.obj
+ 0001:00003470       AsciiStrnCpyS              0000000000003730 f   BaseLib:SafeString.obj
+ 0001:000035e8       AsciiStrCatS               00000000000038a8 f   BaseLib:SafeString.obj
+ 0001:0000375c       AsciiStrnCatS              0000000000003a1c f   BaseLib:SafeString.obj
+ 0001:000038fc       InternalBaseLibIsListValid 0000000000003bbc f   BaseLib:LinkedList.obj
+ 0001:0000398c       InsertTailList             0000000000003c4c f   BaseLib:LinkedList.obj
+ 0001:000039e0       GetFirstNode               0000000000003ca0 f   BaseLib:LinkedList.obj
+ 0001:00003a14       GetNextNode                0000000000003cd4 f   BaseLib:LinkedList.obj
+ 0001:00003a48       CalculateCrc32             0000000000003d08 f   BaseLib:CheckSum.obj
+ 0001:00003adc       InternalAssertJumpBuffer   0000000000003d9c f   BaseLib:SetJump.obj
+ 0001:00003b14       UnicodeVSPrintAsciiFormat  0000000000003dd4 f   BasePrintLib:PrintLib.obj
+ 0001:00003b7c       AsciiSPrint                0000000000003e3c f   BasePrintLib:PrintLib.obj
+ 0001:00003ba8       BasePrintLibFillBuffer     0000000000003e68 f   BasePrintLib:PrintLibInternal.obj
+ 0001:00003bdc       BasePrintLibValueToString  0000000000003e9c f   BasePrintLib:PrintLibInternal.obj
+ 0001:00003c48       BasePrintLibSPrintMarker   0000000000003f08 f   BasePrintLib:PrintLibInternal.obj
+ 0001:00004b60       BasePrintLibSPrint         0000000000004e20 f   BasePrintLib:PrintLibInternal.obj
+ 0001:00004b84       ReportPrint                0000000000004e44 f   UnitTestResultReportLibConOut:UnitTestResultReportLibConOut.obj
+ 0002:00000000       ??_C@_0BF@EDFOJCPI@BaseLibUnitTestsUefi@ 0000000000004ec0     BaseLibUnitTestsUefi:AutoGen.obj
+ 0002:00000018       ??_C@_0CB@DMEJJJHA@?6ASSERT_EFI_ERROR?5?$CIStatus?5?$DN?5?$CFr?$CJ@ 0000000000004ed8     BaseLibUnitTestsUefi:AutoGen.obj
+ 0002:00000040       ??_C@_0CH@BBNBJKHK@?$CB?$CI?$CI?$CIINTN?$CJ?$CIRETURN_STATUS?$CJ?$CIStatus@ 0000000000004f00     BaseLibUnitTestsUefi:AutoGen.obj
+ 0002:00000068       _gPcd_FixedAtBuild_PcdControlFlowEnforcementPropertyMask 0000000000004f28     BaseLibUnitTestsUefi:AutoGen.obj
+ 0002:0000006c       ??_C@_00CNPNBAHC@@         0000000000004f2c     BaseLibUnitTestsUefi:Base64UnitTest.obj
+ 0002:00000070       ??_C@_01INIBCBCB@f@        0000000000004f30     BaseLibUnitTestsUefi:Base64UnitTest.obj
+ 0002:00000074       ??_C@_04KLNECOEP@Zg?$DN?$DN@ 0000000000004f34     BaseLibUnitTestsUefi:Base64UnitTest.obj
+ 0002:0000007c       ??_C@_02KOIBOGBH@fo@       0000000000004f3c     BaseLibUnitTestsUefi:Base64UnitTest.obj
+ 0002:00000080       ??_C@_04MCKCAMMA@Zm8?$DN@  0000000000004f40     BaseLibUnitTestsUefi:Base64UnitTest.obj
+ 0002:00000088       ??_C@_03GBBIHDEJ@foo@      0000000000004f48     BaseLibUnitTestsUefi:Base64UnitTest.obj
+ 0002:0000008c       ??_C@_04NAONPADJ@Zm9v@     0000000000004f4c     BaseLibUnitTestsUefi:Base64UnitTest.obj
+ 0002:00000094       ??_C@_04FIKKOIGC@foob@     0000000000004f54     BaseLibUnitTestsUefi:Base64UnitTest.obj
+ 0002:000000a0       ??_C@_08IAENMHPD@Zm9vYg?$DN?$DN@ 0000000000004f60     BaseLibUnitTestsUefi:Base64UnitTest.obj
+ 0002:000000ac       ??_C@_05NPACPAHK@fooba@    0000000000004f6c     BaseLibUnitTestsUefi:Base64UnitTest.obj
+ 0002:000000b8       ??_C@_08LFBCBOHP@Zm9vYmE?$DN@ 0000000000004f78     BaseLibUnitTestsUefi:Base64UnitTest.obj
+ 0002:000000c4       ??_C@_06KNAGIBKG@foobar@   0000000000004f84     BaseLibUnitTestsUefi:Base64UnitTest.obj
+ 0002:000000d0       ??_C@_08CDEBCKCH@Zm9vYmFy@ 0000000000004f90     BaseLibUnitTestsUefi:Base64UnitTest.obj
+ 0002:000000e0       ??_C@_0BE@JNODBCJK@?5?7?$AL?5?5Zm9?$AN?6vYmFy?5?$AM?5?5@ 0000000000004fa0     BaseLibUnitTestsUefi:Base64UnitTest.obj
+ 0002:000000f8       ??_C@_09MIGNLJMJ@Zm9vymFy?$DN@ 0000000000004fb8     BaseLibUnitTestsUefi:Base64UnitTest.obj
+ 0002:00000108       ??_C@_08OEIJPICN@Zm$vymFy@ 0000000000004fc8     BaseLibUnitTestsUefi:Base64UnitTest.obj
+ 0002:00000114       ??_C@_04PGEMBIJ@Z?$DN?$DN?$DN@ 0000000000004fd4     BaseLibUnitTestsUefi:Base64UnitTest.obj
+ 0002:00000120       ??_C@_08NHAOAODE@Zm?$DNvYmFy@ 0000000000004fe0     BaseLibUnitTestsUefi:Base64UnitTest.obj
+ 0002:00000130       ??_C@_0O@POLOJOEA@b64WorkString@ 0000000000004ff0     BaseLibUnitTestsUefi:Base64UnitTest.obj
+ 0002:00000140       ??_C@_0ED@PEGIOLNK@d?3?2edk2?2edk2?2MdePkg?2Test?2UnitTe@ 0000000000005000     BaseLibUnitTestsUefi:Base64UnitTest.obj
+ 0002:00000184       ??_C@_06PGDKHFME@Status@   0000000000005044     BaseLibUnitTestsUefi:Base64UnitTest.obj
+ 0002:00000190       ??_C@_0BC@GIJNLI@Btc?9?$DOExpectedSize@ 0000000000005050     BaseLibUnitTestsUefi:Base64UnitTest.obj
+ 0002:000001a8       ??_C@_0L@PLODDIDB@ReturnSize@ 0000000000005068     BaseLibUnitTestsUefi:Base64UnitTest.obj
+ 0002:000001b8       ??_C@_0CE@IJCHIFIF@b64?5string?5compare?5error?5?9?5size@ 0000000000005078     BaseLibUnitTestsUefi:Base64UnitTest.obj
+ 0002:000001dc       ??_C@_06KBEKHMHD@?5?$CF2?42x@ 000000000000509c     BaseLibUnitTestsUefi:Base64UnitTest.obj
+ 0002:000001e8       ??_C@_0BE@OEKOFAGH@?6?5b64?5work?5string?3?6@ 00000000000050a8     BaseLibUnitTestsUefi:Base64UnitTest.obj
+ 0002:000001fc       ??_C@_01EEMJAFIK@?6@       00000000000050bc     BaseLibUnitTestsUefi:Base64UnitTest.obj
+ 0002:00000200       ??_C@_01GBGANLPD@0@        00000000000050c0     BaseLibUnitTestsUefi:Base64UnitTest.obj
+ 0002:00000208       ??_C@_0O@JOBCBLOL@CompareStatus@ 00000000000050c8     BaseLibUnitTestsUefi:Base64UnitTest.obj
+ 0002:00000218       ??_C@_07NMECHGJP@BinData@  00000000000050d8     BaseLibUnitTestsUefi:Base64UnitTest.obj
+ 0002:00000220       ??_C@_0CE@OOEAEIKP@bin?5string?5compare?5error?5?9?5size@ 00000000000050e0     BaseLibUnitTestsUefi:Base64UnitTest.obj
+ 0002:00000248       ??_C@_0L@PGAOJHEM@?6BinData?3?6@ 0000000000005108     BaseLibUnitTestsUefi:Base64UnitTest.obj
+ 0002:00000258       ??_C@_1M@BOLMKKCK@?$AAH?$AAe?$AAl?$AAl?$AAo@ 0000000000005118     BaseLibUnitTestsUefi:Base64UnitTest.obj
+ 0002:00000268       ??_C@_0BN@MPAIFDGC@SafeStringContraintCheckTest@ 0000000000005128     BaseLibUnitTestsUefi:Base64UnitTest.obj
+ 0002:00000288       ??_C@_0O@OCIGDFEH@SOURCE_STRING@ 0000000000005148     BaseLibUnitTestsUefi:Base64UnitTest.obj
+ 0002:00000298       ??_C@_0M@DPBEHEC@Destination@ 0000000000005158     BaseLibUnitTestsUefi:Base64UnitTest.obj
+ 0002:000002a8       ??_C@_07IHIBBAFI@AllZero@  0000000000005168     BaseLibUnitTestsUefi:Base64UnitTest.obj
+ 0002:000002b0       ??_C@_03HLLJOCDO@1?40@     0000000000005170     BaseLibUnitTestsUefi:Base64UnitTest.obj
+ 0002:000002b8       ??_C@_0BO@MGGPJPBI@BaseLib?5Unit?5Test?5Application@ 0000000000005178     BaseLibUnitTestsUefi:Base64UnitTest.obj
+ 0002:000002d8       ??_C@_07FDKCANDN@?$CFa?5v?$CFa?6@ 0000000000005198     BaseLibUnitTestsUefi:Base64UnitTest.obj
+ 0002:000002e0       ??_C@_0CO@DGOGDECM@Failed?5in?5InitUnitTestFramework@ 00000000000051a0     BaseLibUnitTestsUefi:Base64UnitTest.obj
+ 0002:00000310       ??_C@_0BC@OBLALJAD@BaseLib?4b64Encode@ 00000000000051d0     BaseLibUnitTestsUefi:Base64UnitTest.obj
+ 0002:00000328       ??_C@_0CC@KKJDKHAA@b64?5Encode?5binary?5to?5Ascii?5stri@ 00000000000051e8     BaseLibUnitTestsUefi:Base64UnitTest.obj
+ 0002:00000350       ??_C@_0DC@IPJIDHGC@Failed?5in?5CreateUnitTestSuite?5f@ 0000000000005210     BaseLibUnitTestsUefi:Base64UnitTest.obj
+ 0002:00000384       ??_C@_05GENPCEMM@Test1@    0000000000005244     BaseLibUnitTestsUefi:Base64UnitTest.obj
+ 0002:00000390       ??_C@_0BN@OKPFFKKL@RFC?54686?5Test?5Vector?5?9?5Empty@ 0000000000005250     BaseLibUnitTestsUefi:Base64UnitTest.obj
+ 0002:000003b0       ??_C@_05EPPCHHAP@Test2@    0000000000005270     BaseLibUnitTestsUefi:Base64UnitTest.obj
+ 0002:000003b8       ??_C@_0BJ@HFJICGO@RFC?54686?5Test?5Vector?5?9?5f@ 0000000000005278     BaseLibUnitTestsUefi:Base64UnitTest.obj
+ 0002:000003d4       ??_C@_05FGOJEGEO@Test3@    0000000000005294     BaseLibUnitTestsUefi:Base64UnitTest.obj
+ 0002:000003e0       ??_C@_0BK@EIGIGCLF@RFC?54686?5Test?5Vector?5?9?5fo@ 00000000000052a0     BaseLibUnitTestsUefi:Base64UnitTest.obj
+ 0002:000003fc       ??_C@_05BJKINAIJ@Test4@    00000000000052bc     BaseLibUnitTestsUefi:Base64UnitTest.obj
+ 0002:00000408       ??_C@_0BL@FJCGFIAJ@RFC?54686?5Test?5Vector?5?9?5foo@ 00000000000052c8     BaseLibUnitTestsUefi:Base64UnitTest.obj
+ 0002:00000424       ??_C@_05LDOBMI@Test5@      00000000000052e4     BaseLibUnitTestsUefi:Base64UnitTest.obj
+ 0002:00000430       ??_C@_0BM@COEOJHNJ@RFC?54686?5Test?5Vector?5?9?5foob@ 00000000000052f0     BaseLibUnitTestsUefi:Base64UnitTest.obj
+ 0002:0000044c       ??_C@_05CLJOLCAL@Test6@    000000000000530c     BaseLibUnitTestsUefi:Base64UnitTest.obj
+ 0002:00000458       ??_C@_0BN@IDMHHOAB@RFC?54686?5Test?5Vector?5?9?5fooba@ 0000000000005318     BaseLibUnitTestsUefi:Base64UnitTest.obj
+ 0002:00000478       ??_C@_05DCIFIDEK@Test7@    0000000000005338     BaseLibUnitTestsUefi:Base64UnitTest.obj
+ 0002:00000480       ??_C@_0BO@GKINOMJM@RFC?54686?5Test?5Vector?5?9?5foobar@ 0000000000005340     BaseLibUnitTestsUefi:Base64UnitTest.obj
+ 0002:000004a0       ??_C@_06EDDFDJOD@Error1@   0000000000005360     BaseLibUnitTestsUefi:Base64UnitTest.obj
+ 0002:000004a8       ??_C@_0BL@BECCDIEA@Too?5small?5of?5output?5buffer@ 0000000000005368     BaseLibUnitTestsUefi:Base64UnitTest.obj
+ 0002:000004c8       ??_C@_0BC@CNAAECHE@BaseLib?4b64Decode@ 0000000000005388     BaseLibUnitTestsUefi:Base64UnitTest.obj
+ 0002:000004e0       ??_C@_0CC@NDJHABOI@b64?5Decode?5Ascii?5string?5to?5bina@ 00000000000053a0     BaseLibUnitTestsUefi:Base64UnitTest.obj
+ 0002:00000508       ??_C@_0DD@KEEMEJGA@Failed?5in?5CreateUnitTestSuite?5f@ 00000000000053c8     BaseLibUnitTestsUefi:Base64UnitTest.obj
+ 0002:0000053c       ??_C@_05LFBNJPIF@Test8@    00000000000053fc     BaseLibUnitTestsUefi:Base64UnitTest.obj
+ 0002:00000548       ??_C@_0BH@OBHLDGGA@Ignore?5Whitespace?5test@ 0000000000005408     BaseLibUnitTestsUefi:Base64UnitTest.obj
+ 0002:00000560       ??_C@_0BM@MPJFDKBI@Not?5a?5quantum?5multiple?5of?54@ 0000000000005420     BaseLibUnitTestsUefi:Base64UnitTest.obj
+ 0002:0000057c       ??_C@_06GIBIGKCA@Error2@   000000000000543c     BaseLibUnitTestsUefi:Base64UnitTest.obj
+ 0002:00000588       ??_C@_0CB@BAAHPOOI@Invalid?5characters?5in?5the?5strin@ 0000000000005448     BaseLibUnitTestsUefi:Base64UnitTest.obj
+ 0002:000005ac       ??_C@_06HBADFLGB@Error3@   000000000000546c     BaseLibUnitTestsUefi:Base64UnitTest.obj
+ 0002:000005b8       ??_C@_0BM@NDNKKCPI@Too?5many?5padding?5characters@ 0000000000005478     BaseLibUnitTestsUefi:Base64UnitTest.obj
+ 0002:000005d4       ??_C@_06DOECMNKG@Error4@   0000000000005494     BaseLibUnitTestsUefi:Base64UnitTest.obj
+ 0002:000005e0       ??_C@_0CF@LFCAAEBG@Incorrectly?5placed?5padding?5char@ 00000000000054a0     BaseLibUnitTestsUefi:Base64UnitTest.obj
+ 0002:00000608       ??_C@_06CHFJPMOH@Error5@   00000000000054c8     BaseLibUnitTestsUefi:Base64UnitTest.obj
+ 0002:00000610       ??_C@_0BD@BFICIMJG@BaseLib?4SafeString@ 00000000000054d0     BaseLibUnitTestsUefi:Base64UnitTest.obj
+ 0002:00000628       ??_C@_0M@ECKJIGIP@Safe?5String@ 00000000000054e8     BaseLibUnitTestsUefi:Base64UnitTest.obj
+ 0002:00000638       ??_C@_0DD@LHEBLEGM@Failed?5in?5CreateUnitTestSuite?5f@ 00000000000054f8     BaseLibUnitTestsUefi:Base64UnitTest.obj
+ 0002:00000670       ??_C@_0BN@BEBHNAHC@SAFE_STRING_CONSTRAINT_CHECK@ 0000000000005530     BaseLibUnitTestsUefi:Base64UnitTest.obj
+ 0002:00000690       ??_C@_0EK@GCCICMAJ@d?3?2edk2?2edk2?2MdePkg?2Library?2Uef@ 0000000000005550     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0002:000006e0       ??_C@_0BH@IACGKAP@Buffer?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000055a0     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0002:000006f8       ??_C@_0CG@ONMBJIAP@Detected?5expected?5ASSERT?3?5?$CFa?$CI?$CFd@ 00000000000055b8     UnitTestDebugAssertLib:UnitTestDebugAssertLib.obj
+ 0002:00000720       ??_C@_0BM@LHGHHPMH@Detected?5unexpected?5ASSERT?$CI@ 00000000000055e0     UnitTestDebugAssertLib:UnitTestDebugAssertLib.obj
+ 0002:0000073c       ??_C@_01PKGAHCOL@?$CJ@     00000000000055fc     UnitTestDebugAssertLib:UnitTestDebugAssertLib.obj
+ 0002:00000740       ??_C@_0DD@CGICDLGI@?$FLASSERT?5FAIL?$FN?5?$CFa?3?$CFd?3?5Expression@ 0000000000005600     UnitTestLib:Assert.obj
+ 0002:00000778       ??_C@_0CF@CBGCCNEB@?$CFa?3?$CFd?3?5Expression?5?$CI?$CFa?$CJ?5is?5not?5T@ 0000000000005638     UnitTestLib:Assert.obj
+ 0002:000007a0       ??_C@_0DF@EPLKACGO@?$FLASSERT?5FAIL?$FN?5?$CFa?3?$CFd?3?5Status?5?8?$CFa@ 0000000000005660     UnitTestLib:Assert.obj
+ 0002:000007d8       ??_C@_0CH@PPCICPDE@?$CFa?3?$CFd?3?5Status?5?8?$CFa?8?5is?5EFI_ERROR@ 0000000000005698     UnitTestLib:Assert.obj
+ 0002:00000800       ??_C@_0DB@LNMABEIO@?$FLASSERT?5FAIL?$FN?5?$CFa?3?$CFd?3?5Value?5?$CFa?5?$CB@ 00000000000056c0     UnitTestLib:Assert.obj
+ 0002:00000838       ??_C@_0CD@GHPNOFJB@?$CFa?3?$CFd?3?5Value?5?$CFa?5?$CB?$DN?5?$CFa?5?$CI?$CFd?5?$CB?$DN?5?$CFd@ 00000000000056f8     UnitTestLib:Assert.obj
+ 0002:00000860       ??_C@_0DK@KHGBLKCO@?$FLASSERT?5FAIL?$FN?5?$CFa?3?$CFd?3?5Value?5?$CFa?5?$CB@ 0000000000005720     UnitTestLib:Assert.obj
+ 0002:000008a0       ??_C@_0DA@PIHCOKKK@?$CFa?3?$CFd?3?5Memory?5at?5?$CFa?5?$CB?$DN?5?$CFa?5for?5l@ 0000000000005760     UnitTestLib:Assert.obj
+ 0002:000008d0       ??_C@_0DH@JBFBKBHO@?$FLASSERT?5FAIL?$FN?5?$CFa?3?$CFd?3?5Status?5?8?$CFa@ 0000000000005790     UnitTestLib:Assert.obj
+ 0002:00000908       ??_C@_0CJ@JENKPIEH@?$CFa?3?$CFd?3?5Status?5?8?$CFa?8?5is?5?$CFr?0?5shoul@ 00000000000057c8     UnitTestLib:Assert.obj
+ 0002:00000938       ??_C@_0CM@MMDJGPKP@?$FLASSERT?5FAIL?$FN?5?$CFa?3?$CFd?3?5Pointer?5?$CI?$CF@ 00000000000057f8     UnitTestLib:Assert.obj
+ 0002:00000968       ??_C@_0BO@PDHHNFA@?$CFa?3?$CFd?3?5Pointer?5?$CI?$CFa?$CJ?5is?5NULL?$CB?6@ 0000000000005828     UnitTestLib:Assert.obj
+ 0002:00000990       ??_C@_0BP@CGDPHJNI@LogSize?5?$DM?5?$CI?$CIUINT32?$CJ0xFFFFFFFF?$CJ@ 0000000000005850     UnitTestLib:UnitTestLib.obj
+ 0002:000009b0       ??_C@_0EE@NNLIJJOB@d?3?2edk2?2edk2?2UnitTestFrameworkP@ 0000000000005870     UnitTestLib:UnitTestLib.obj
+ 0002:000009f8       ??_C@_0BD@EJNKBBFI@SaveFrameworkState@ 00000000000058b8     UnitTestLib:UnitTestLib.obj
+ 0002:00000a10       ??_C@_0BP@NKOLLOPO@?$CFa?5?9?5Could?5not?5save?5state?$CB?5?$CFr?6@ 00000000000058d0     UnitTestLib:UnitTestLib.obj
+ 0002:00000a30       ??_C@_0CB@HPPEAEDM@mFrameworkHandle?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50@ 00000000000058f0     UnitTestLib:RunTests.obj
+ 0002:00000a60       ??_C@_0EB@NPPIBIHM@d?3?2edk2?2edk2?2UnitTestFrameworkP@ 0000000000005920     UnitTestLib:RunTests.obj
+ 0002:00000aa8       ??_C@_0DL@PHAADJIH@?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9@ 0000000000005968     UnitTestLib:RunTests.obj
+ 0002:00000ae8       ??_C@_0BI@CAIDJJEC@RUNNING?5TEST?5SUITE?3?5?$CFa?6@ 00000000000059a8     UnitTestLib:RunTests.obj
+ 0002:00000b00       ??_C@_0DL@PCIPDFBB@?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK@ 00000000000059c0     UnitTestLib:RunTests.obj
+ 0002:00000b40       ??_C@_0BE@DEFGBCFH@?5RUNNING?5TEST?3?5?$CFa?3?6@ 0000000000005a00     UnitTestLib:RunTests.obj
+ 0002:00000b58       ??_C@_0DM@KIOAABKN@?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK@ 0000000000005a18     UnitTestLib:RunTests.obj
+ 0002:00000b98       ??_C@_0CM@NFFAGLOP@Test?5was?5run?5on?5a?5previous?5pass@ 0000000000005a58     UnitTestLib:RunTests.obj
+ 0002:00000bc8       ??_C@_07FNKMCILI@PREREQ?6@ 0000000000005a88     UnitTestLib:RunTests.obj
+ 0002:00000bd0       ??_C@_0BG@NCKEKGKK@Prerequisite?5Not?5Met?6@ 0000000000005a90     UnitTestLib:RunTests.obj
+ 0002:00000be8       ??_C@_08NPKPFPKE@CLEANUP?6@ 0000000000005aa8     UnitTestLib:RunTests.obj
+ 0002:00000bf8       ??_C@_0DL@PJHJDDEE@?9?9?9?9?9?9?9?9?9?9?9?9?5?5?5?5?5RUNNING?5ALL?5TE@ 0000000000005ab8     UnitTestLib:RunTests.obj
+ 0002:00000c38       ??_C@_0CD@GEAHJGED@Test?5Suite?5Failed?5with?5Error?4?5?5@ 0000000000005af8     UnitTestLib:RunTests.obj
+ 0002:00000c60       ??_C@_0P@ICNMMABI@?$FLERROR?$FN?5?5?5?5?5?5?5@ 0000000000005b20     UnitTestLib:Log.obj
+ 0002:00000c70       ??_C@_0P@NANBDBOP@?$FLWARNING?$FN?5?5?5?5?5@ 0000000000005b30     UnitTestLib:Log.obj
+ 0002:00000c80       ??_C@_0P@HJGNOHJI@?$FLINFO?$FN?5?5?5?5?5?5?5?5@ 0000000000005b40     UnitTestLib:Log.obj
+ 0002:00000c90       ??_C@_0P@JFMJPKNE@?$FLVERBOSE?$FN?5?5?5?5?5@ 0000000000005b50     UnitTestLib:Log.obj
+ 0002:00000ca0       ??_C@_0CM@GGLMMGBE@Failed?5to?5allocate?5space?5for?5un@ 0000000000005b60     UnitTestLib:Log.obj
+ 0002:00000cd0       ??_C@_0BO@IMICGOPC@UnitTest?9?$DOLog?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000005b90     UnitTestLib:Log.obj
+ 0002:00000cf0       ??_C@_0DM@GNGKLJEF@d?3?2edk2?2edk2?2UnitTestFrameworkP@ 0000000000005bb0     UnitTestLib:Log.obj
+ 0002:00000d30       ??_C@_0DC@INKDBFCC@Failed?5to?5add?5unit?5test?5log?5str@ 0000000000005bf0     UnitTestLib:Log.obj
+ 0002:00000d68       ??_C@_0BA@GMHCEPGH@UnitTestLogInit@ 0000000000005c28     UnitTestLib:Log.obj
+ 0002:00000d78       ??_C@_0CH@KLGHIGPE@?$CFa?5called?5with?5invalid?5Test?5par@ 0000000000005c38     UnitTestLib:Log.obj
+ 0002:00000da0       ??_C@_0CH@BGLGPLNK@Failed?5to?5allocate?5memory?5for?5t@ 0000000000005c60     UnitTestLib:Log.obj
+ 0002:00000dc8       ??_C@_04PBAGOGBN@?$CFa?$CFa@ 0000000000005c88     UnitTestLib:Log.obj
+ 0002:00000dd0       ??_C@_0BH@LKMBFCBF@Format?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000005c90     PeiDxeDebugLibReportStatusCode:DebugLib.obj
+ 0002:00000df0       ??_C@_0EM@PKNBNIMI@d?3?2edk2?2edk2?2MdeModulePkg?2Libra@ 0000000000005cb0     PeiDxeDebugLibReportStatusCode:DebugLib.obj
+ 0002:00000e40       ??_C@_0CP@EFCGCEBK@?$CICHAR8?5?$CK?$CJBaseListMarkerPointer?5@ 0000000000005d00     PeiDxeDebugLibReportStatusCode:DebugLib.obj
+ 0002:00000e70       ??_C@_0DL@CAIGMPFP@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 0000000000005d30     BaseMemoryLib:ZeroMemWrapper.obj
+ 0002:00000eb0       ??_C@_0DG@EEENIGGL@Length?5?$DM?$DN?5?$CI0xFFFFFFFFFFFFFFFFUL@ 0000000000005d70     BaseMemoryLib:ZeroMemWrapper.obj
+ 0002:00000ef0       ??_C@_0CC@JOEHDGKB@DestinationBuffer?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?5@ 0000000000005db0     BaseMemoryLib:CompareMemWrapper.obj
+ 0002:00000f18       ??_C@_0DO@HHIPHDJI@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 0000000000005dd8     BaseMemoryLib:CompareMemWrapper.obj
+ 0002:00000f60       ??_C@_0BN@MDMCNBCC@SourceBuffer?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000005e20     BaseMemoryLib:CompareMemWrapper.obj
+ 0002:00000f80       ??_C@_0ED@MKGCMJG@?$CILength?5?9?51?$CJ?5?$DM?$DN?5?$CI0xFFFFFFFFFFFF@ 0000000000005e40     BaseMemoryLib:CompareMemWrapper.obj
+ 0002:00000fd0       ??_C@_0DO@MAOBOFEG@?$CILength?5?9?51?$CJ?5?$DM?$DN?5?$CI0xFFFFFFFFFFFF@ 0000000000005e90     BaseMemoryLib:CompareMemWrapper.obj
+ 0002:00001010       ??_C@_0DL@JECEKOJI@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 0000000000005ed0     BaseMemoryLib:CopyMemWrapper.obj
+ 0002:00001050       ??_C@_0BH@MAAHKCPC@String?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000005f10     BaseLib:String.obj
+ 0002:00001068       ??_C@_0CN@LHBFELAO@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 0000000000005f28     BaseLib:String.obj
+ 0002:000010a0       ??_C@_0CC@GFNLNIOC@?$CI?$CIUINTN?$CJString?5?$CG?50x00000001?$CJ?5?$DN?$DN@ 0000000000005f60     BaseLib:String.obj
+ 0002:000010d0       ??_C@_0DI@MDIKFADO@Length?5?$DM?5_gPcd_FixedAtBuild_Pcd@ 0000000000005f90     BaseLib:String.obj
+ 0002:00001110       ??_C@_0BL@IKFBNFIL@AsciiStrSize?5?$CIFirstString?$CJ@ 0000000000005fd0     BaseLib:String.obj
+ 0002:00001130       ??_C@_0BM@EDNOKLLE@AsciiStrSize?5?$CISecondString?$CJ@ 0000000000005ff0     BaseLib:String.obj
+ 0002:00001150       ??_C@_0DJ@JJHGIFMP@Length?5?$DM?$DN?5_gPcd_FixedAtBuild_Pc@ 0000000000006010     BaseLib:String.obj
+ 0002:00001190       ??_C@_0BK@KDKDPOFN@SixBitGroupsConsumed?5?$DN?$DN?54@ 0000000000006050     BaseLib:String.obj
+ 0002:000011b0       ??_C@_0BM@NLNKOJGD@Destination?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000006070     BaseLib:String.obj
+ 0002:00001218       ??_C@_0DB@PKFMPMPC@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 00000000000060d8     BaseLib:SafeString.obj
+ 0002:00001250       ??_C@_0CH@LALFPBMC@?$CI?$CIUINTN?$CJDestination?5?$CG?50x0000000@ 0000000000006110     BaseLib:SafeString.obj
+ 0002:00001280       ??_C@_0CC@HEBCMBPF@?$CI?$CIUINTN?$CJSource?5?$CG?50x00000001?$CJ?5?$DN?$DN@ 0000000000006140     BaseLib:SafeString.obj
+ 0002:000012a8       ??_C@_0BO@ECNIOIHG@?$CIDestination?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ@ 0000000000006168     BaseLib:SafeString.obj
+ 0002:000012c8       ??_C@_07KBGDFDAM@StrCpyS@  0000000000006188     BaseLib:SafeString.obj
+ 0002:000012d0       ??_C@_0EA@PDPDJJNN@?$CFa?$CI?$CFd?$CJ?5?$CFa?3?5SAFE_STRING_CONSTRAI@ 0000000000006190     BaseLib:SafeString.obj
+ 0002:00001310       ??_C@_0BJ@EAEEJIP@?$CISource?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ@ 00000000000061d0     BaseLib:SafeString.obj
+ 0002:00001330       ??_C@_0EA@BBALOHPI@?$CIDestMax?5?$DM?$DN?5?$CI_gPcd_FixedAtBuild@ 00000000000061f0     BaseLib:SafeString.obj
+ 0002:00001370       ??_C@_0P@PMIMLIHM@?$CIDestMax?5?$CB?$DN?50?$CJ@ 0000000000006230     BaseLib:SafeString.obj
+ 0002:00001380       ??_C@_0BG@EEGIIOKH@?$CIDestMax?5?$DO?5SourceLen?$CJ@ 0000000000006240     BaseLib:SafeString.obj
+ 0002:000013a0       ??_C@_0FH@PPBLBDBJ@InternalSafeStringNoStrOverlap?5@ 0000000000006260     BaseLib:SafeString.obj
+ 0002:000013f8       ??_C@_0P@BHOOOJPD@?$CICopyLen?5?$CB?$DN?50?$CJ@ 00000000000062b8     BaseLib:SafeString.obj
+ 0002:00001408       ??_C@_0BG@BPGICNPK@?$CICopyLen?5?$DO?5SourceLen?$CJ@ 00000000000062c8     BaseLib:SafeString.obj
+ 0002:00001420       ??_C@_0BJ@CNKJJNE@?$CIBuffer?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ@ 00000000000062e0     BaseLib:SafeString.obj
+ 0002:00001440       ??_C@_0N@OMPODJLB@AsciiStrCpyS@ 0000000000006300     BaseLib:SafeString.obj
+ 0002:00001450       ??_C@_0DO@LJFOOPII@?$CIDestMax?5?$DM?$DN?5?$CI_gPcd_FixedAtBuild@ 0000000000006310     BaseLib:SafeString.obj
+ 0002:00001490       ??_C@_0FL@CDANCHFO@InternalSafeStringNoAsciiStrOve@ 0000000000006350     BaseLib:SafeString.obj
+ 0002:000014f0       ??_C@_0O@DIHNCLLG@AsciiStrnCpyS@ 00000000000063b0     BaseLib:SafeString.obj
+ 0002:00001500       ??_C@_0DN@DLAADCJE@?$CILength?5?$DM?$DN?5?$CI_gPcd_FixedAtBuild_@ 00000000000063c0     BaseLib:SafeString.obj
+ 0002:00001540       ??_C@_0N@MIDJKBI@AsciiStrCatS@ 0000000000006400     BaseLib:SafeString.obj
+ 0002:00001550       ??_C@_0O@NIAAIIBP@AsciiStrnCatS@ 0000000000006410     BaseLib:SafeString.obj
+ 0002:00001560       ??_C@_0BF@NJNGJMPC@List?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000006420     BaseLib:LinkedList.obj
+ 0002:00001578       ??_C@_0DB@MIDNNFCL@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 0000000000006438     BaseLib:LinkedList.obj
+ 0002:000015b0       ??_C@_0CC@KDLPLAED@List?9?$DOForwardLink?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?5@ 0000000000006470     BaseLib:LinkedList.obj
+ 0002:000015e0       ??_C@_0BP@IJJCCMAK@List?9?$DOBackLink?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000064a0     BaseLib:LinkedList.obj
+ 0002:00001600       ??_C@_0BJ@NJABNCDK@ListHead?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000064c0     BaseLib:LinkedList.obj
+ 0002:00001620       ??_C@_0CG@LGIALJFK@InternalBaseLibIsListValid?5?$CILis@ 00000000000064e0     BaseLib:LinkedList.obj
+ 0002:00001650       ??_C@_0CC@JLDICICM@InternalBaseLibIsListValid?5?$CILis@ 0000000000006510     BaseLib:LinkedList.obj
+ 0002:00001678       ??_C@_0CP@KLEECECF@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 0000000000006538     BaseLib:CheckSum.obj
+ 0002:000016b0       ??_C@_0DI@FAOGOFLE@Length?5?$DM?$DN?5?$CI0xFFFFFFFFFFFFFFFFUL@ 0000000000006570     BaseLib:CheckSum.obj
+ 0002:000016f0       mCrcTable                  00000000000065b0     BaseLib:CheckSum.obj
+ 0002:00001af0       ??_C@_0N@KGHEHMDL@Divisor?5?$CB?$DN?50@ 00000000000069b0     BaseLib:DivU64x32.obj
+ 0002:00001b00       ??_C@_0BL@CPGKAMND@JumpBuffer?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000069c0     BaseLib:SetJump.obj
+ 0002:00001b20       ??_C@_0CO@FKGPPAGH@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 00000000000069e0     BaseLib:SetJump.obj
+ 0002:00001b50       ??_C@_0CD@OEHNCIHG@?$CI?$CIUINTN?$CJJumpBuffer?5?$CG?5?$CI8?5?9?51?$CJ?$CJ?5?$DN@ 0000000000006a10     BaseLib:SetJump.obj
+ 0002:00001b80       ??_C@_0BN@COECPDCC@gImageHandle?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000006a40     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00001ba0       ??_C@_0FA@FOIHGFBE@d?3?2edk2?2edk2?2MdePkg?2Library?2Uef@ 0000000000006a60     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00001bf0       ??_C@_0BE@DGNHAHIL@gST?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000006ab0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00001c10       ??_C@_0BE@BDFJLGLN@gBS?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000006ad0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00001c30       ??_C@_0CI@BGLNHBLM@?$CI?$CI?$CIUINTN?$CJ?5?$CIStartOfBuffer?$CJ?$CJ?5?$CG?50x@ 0000000000006af0     BasePrintLib:PrintLib.obj
+ 0002:00001c58       ??_C@_0DE@LDGFCIFJ@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 0000000000006b18     BasePrintLib:PrintLib.obj
+ 0002:00001c90       ??_C@_0DM@OAJIKNNG@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 0000000000006b50     BasePrintLib:PrintLibInternal.obj
+ 0002:00001cd0       ??_C@_0EB@HDGIDCIO@?$CIBufferSize?5?$DM?$DN?5?$CI_gPcd_FixedAtBu@ 0000000000006b90     BasePrintLib:PrintLibInternal.obj
+ 0002:00001d20       ??_C@_0BJ@PPAKKDJG@?$CIFormat?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ@ 0000000000006be0     BasePrintLib:PrintLibInternal.obj
+ 0002:00001d40       ??_C@_0ED@LPDDCECB@?$CIBufferSize?5?$DM?$DN?5?$CI_gPcd_FixedAtBu@ 0000000000006c00     BasePrintLib:PrintLibInternal.obj
+ 0002:00001d90       ??_C@_0IM@BFJJFLGB@?$CIStrnLenS?5?$CI?$CICHAR16?5?$CK?$CJFormat?0?5?$CI_@ 0000000000006c50     BasePrintLib:PrintLibInternal.obj
+ 0002:00001e20       ??_C@_0ID@PLGJGION@?$CIAsciiStrnLenS?5?$CIFormat?0?5?$CI_gPcd_@ 0000000000006ce0     BasePrintLib:PrintLibInternal.obj
+ 0002:00001ea8       ??_C@_0O@MLOLIMFM@?$DMnull?5string?$DO@ 0000000000006d68     BasePrintLib:PrintLibInternal.obj
+ 0002:00001eb8       ??_C@_0M@BJJDNPHK@?$DMnull?5guid?$DO@ 0000000000006d78     BasePrintLib:PrintLibInternal.obj
+ 0002:00001ec8       ??_C@_0DB@PMLHLBMO@?$CF08x?9?$CF04x?9?$CF04x?9?$CF02x?$CF02x?9?$CF02x?$CF02@ 0000000000006d88     BasePrintLib:PrintLibInternal.obj
+ 0002:00001f00       ??_C@_0M@LHGBCIKM@?$DMnull?5time?$DO@ 0000000000006dc0     BasePrintLib:PrintLibInternal.obj
+ 0002:00001f10       ??_C@_0BK@FCPKCIDD@?$CF02d?1?$CF02d?1?$CF04d?5?5?$CF02d?3?$CF02d@ 0000000000006dd0     BasePrintLib:PrintLibInternal.obj
+ 0002:00001f2c       ??_C@_04JIMNDDED@?$CF08X@  0000000000006dec     BasePrintLib:PrintLibInternal.obj
+ 0002:00001f34       ??_C@_02PCIJFNDE@?$AN?6@   0000000000006df4     BasePrintLib:PrintLibInternal.obj
+ 0002:00001f38       ??_C@_01LIIJDEN@?$AN@      0000000000006df8     BasePrintLib:PrintLibInternal.obj
+ 0002:00001f40       mWarningString             0000000000006e00     BasePrintLib:PrintLibInternal.obj
+ 0002:00001fe0       mErrorString               0000000000006ea0     BasePrintLib:PrintLibInternal.obj
+ 0002:000022a0       mHexStr                    0000000000007160     BasePrintLib:PrintLibInternal.obj
+ 0002:000022b0       ??_C@_06MBANMAIC@PASSED@   0000000000007170     UnitTestResultReportLibConOut:UnitTestResultReportLib.obj
+ 0002:000022b8       ??_C@_0BO@KGPOOLPB@NOT?5RUN?5?9?5PREREQUISITE?5FAILED@ 0000000000007178     UnitTestResultReportLibConOut:UnitTestResultReportLib.obj
+ 0002:000022d8       ??_C@_06OHCJKBJM@FAILED@   0000000000007198     UnitTestResultReportLibConOut:UnitTestResultReportLib.obj
+ 0002:000022e0       ??_C@_07NICPBLG@RUNNING@   00000000000071a0     UnitTestResultReportLibConOut:UnitTestResultReportLib.obj
+ 0002:000022e8       ??_C@_07GCMJHCKE@PENDING@  00000000000071a8     UnitTestResultReportLibConOut:UnitTestResultReportLib.obj
+ 0002:000022f0       ??_C@_0M@GOPGBDCO@?$CK?$CKUNKNOWN?$CK?$CK@ 00000000000071b0     UnitTestResultReportLibConOut:UnitTestResultReportLib.obj
+ 0002:00002300       ??_C@_0L@FLDJEHDB@NO?5FAILURE@ 00000000000071c0     UnitTestResultReportLibConOut:UnitTestResultReportLib.obj
+ 0002:00002310       ??_C@_0O@PIAFNNOI@OTHER?5FAILURE@ 00000000000071d0     UnitTestResultReportLibConOut:UnitTestResultReportLib.obj
+ 0002:00002320       ??_C@_0BE@PMKNIGOG@ASSERT_TRUE?5FAILURE@ 00000000000071e0     UnitTestResultReportLibConOut:UnitTestResultReportLib.obj
+ 0002:00002338       ??_C@_0BF@FGGCDND@ASSERT_FALSE?5FAILURE@ 00000000000071f8     UnitTestResultReportLibConOut:UnitTestResultReportLib.obj
+ 0002:00002350       ??_C@_0BF@FGDOCBHP@ASSERT_EQUAL?5FAILURE@ 0000000000007210     UnitTestResultReportLibConOut:UnitTestResultReportLib.obj
+ 0002:00002368       ??_C@_0BI@NKFJLMBB@ASSERT_NOTEQUAL?5FAILURE@ 0000000000007228     UnitTestResultReportLibConOut:UnitTestResultReportLib.obj
+ 0002:00002380       ??_C@_0BL@PNPHLCIA@ASSERT_NOTEFIERROR?5FAILURE@ 0000000000007240     UnitTestResultReportLibConOut:UnitTestResultReportLib.obj
+ 0002:000023a0       ??_C@_0BL@GLKKHMG@ASSERT_STATUSEQUAL?5FAILURE@ 0000000000007260     UnitTestResultReportLibConOut:UnitTestResultReportLib.obj
+ 0002:000023c0       ??_C@_0BH@JLCCODEP@ASSERT_NOTNULL?5FAILURE@ 0000000000007280     UnitTestResultReportLibConOut:UnitTestResultReportLib.obj
+ 0002:000023d8       ??_C@_0BG@EFPEIPHF@EXPECT_ASSERT?5FAILURE@ 0000000000007298     UnitTestResultReportLibConOut:UnitTestResultReportLib.obj
+ 0002:000023f0       ??_C@_0BC@NHPFMNHC@?$CKUNKNOWN?$CK?5Failure@ 00000000000072b0     UnitTestResultReportLibConOut:UnitTestResultReportLib.obj
+ 0002:00002408       ??_C@_0BI@KBGCOEPF@GetStringForFailureType@ 00000000000072c8     UnitTestResultReportLibConOut:UnitTestResultReportLib.obj
+ 0002:00002420       ??_C@_0DD@IGOMFEHA@?$CFa?5Failure?5Type?5does?5not?5have?5s@ 00000000000072e0     UnitTestResultReportLibConOut:UnitTestResultReportLib.obj
+ 0002:00002458       ??_C@_0DL@LNAONCCE@?9?9?9?9?9?9?9?9?9?9?9?9?9?5UNIT?5TEST?5FRAMEWO@ 0000000000007318     UnitTestResultReportLibConOut:UnitTestResultReportLib.obj
+ 0002:00002498       ??_C@_0DL@LBMPOGEI@?1?1?1?1?1?1?1?1?1?1?1?1?1?1?1?1?1?1?1?1?1?1?1?1?1?1?1?1?1?1?1@ 0000000000007358     UnitTestResultReportLibConOut:UnitTestResultReportLib.obj
+ 0002:000024d8       ??_C@_0N@BAPNNALJ@?5?5SUITE?3?5?$CFa?6@ 0000000000007398     UnitTestResultReportLibConOut:UnitTestResultReportLib.obj
+ 0002:000024e8       ??_C@_0BA@HGNCFNPG@?5?5?5PACKAGE?3?5?$CFa?6@ 00000000000073a8     UnitTestResultReportLibConOut:UnitTestResultReportLib.obj
+ 0002:000024f8       ??_C@_0BC@GLDBNABB@?5?5CLASS?5NAME?3?5?$CFa?6@ 00000000000073b8     UnitTestResultReportLibConOut:UnitTestResultReportLib.obj
+ 0002:00002510       ??_C@_0P@DCHCJHGL@?5?5TEST?3?5?5?5?5?$CFa?6@ 00000000000073d0     UnitTestResultReportLibConOut:UnitTestResultReportLib.obj
+ 0002:00002520       ??_C@_0P@EMINFGCM@?5?5STATUS?3?5?5?$CFa?6@ 00000000000073e0     UnitTestResultReportLibConOut:UnitTestResultReportLib.obj
+ 0002:00002530       ??_C@_0P@ILGDHIPB@?5?5FAILURE?3?5?$CFa?6@ 00000000000073f0     UnitTestResultReportLibConOut:UnitTestResultReportLib.obj
+ 0002:00002540       ??_C@_0BH@HDNKLFPK@?5?5FAILURE?5MESSAGE?3?6?$CFa?6@ 0000000000007400     UnitTestResultReportLibConOut:UnitTestResultReportLib.obj
+ 0002:00002558       ??_C@_07NLPPJGJL@?5?5LOG?3?6@ 0000000000007418     UnitTestResultReportLibConOut:UnitTestResultReportLib.obj
+ 0002:00002560       ??_C@_0DL@DMFAFJNG@?$CL?$CL?$CL?$CL?$CL?$CL?$CL?$CL?$CL?$CL?$CL?$CL?$CL?$CL?$CL?$CL?$CL?$CL?$CL?$CL?$CL?$CL?$CL?$CL?$CL?$CL?$CL?$CL?$CL?$CL?$CL@ 0000000000007420     UnitTestResultReportLibConOut:UnitTestResultReportLib.obj
+ 0002:000025a0       ??_C@_0N@KNECNEIM@Suite?5Stats?6@ 0000000000007460     UnitTestResultReportLibConOut:UnitTestResultReportLib.obj
+ 0002:000025b0       ??_C@_0BG@LHCODDGP@?5Passed?3?5?5?$CFd?5?5?$CI?$CFd?$CF?$CF?$CJ?6@ 0000000000007470     UnitTestResultReportLibConOut:UnitTestResultReportLib.obj
+ 0002:000025c8       ??_C@_0BG@LMHMPMEL@?5Failed?3?5?5?$CFd?5?5?$CI?$CFd?$CF?$CF?$CJ?6@ 0000000000007488     UnitTestResultReportLibConOut:UnitTestResultReportLib.obj
+ 0002:000025e0       ??_C@_0BG@ODCEADGA@?5Not?5Run?3?5?$CFd?5?5?$CI?$CFd?$CF?$CF?$CJ?6@ 00000000000074a0     UnitTestResultReportLibConOut:UnitTestResultReportLib.obj
+ 0002:000025f8       ??_C@_0DL@KMONMNDM@?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN@ 00000000000074b8     UnitTestResultReportLibConOut:UnitTestResultReportLib.obj
+ 0002:00002638       ??_C@_0N@DOFIKCHC@Total?5Stats?6@ 00000000000074f8     UnitTestResultReportLibConOut:UnitTestResultReportLib.obj
+ 0002:00002648       ??_C@_0M@DGIADHEI@ReportPrint@ 0000000000007508     UnitTestResultReportLibConOut:UnitTestResultReportLibConOut.obj
+ 0002:00002658       ??_C@_0CB@LGLIAKND@?$CFa?5formatted?5string?5is?5too?5long@ 0000000000007518     UnitTestResultReportLibConOut:UnitTestResultReportLibConOut.obj
+ 0002:0000267c       ??_C@_02ECNOPIAA@?$CFa@    000000000000753c     UnitTestResultReportLibConOut:UnitTestResultReportLibConOut.obj
+ 0002:00002680       ??_C@_0DA@BDDONMJM@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 0000000000007540     BaseLib:Unaligned.obj
+ 0002:000026b0       ??_C@_0DJ@FHIMIJAH@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 0000000000007570     BaseLib:DivU64x32Remainder.obj
+ 0002:00002740       __volatile_metadata        0000000000007600     <linker-defined>
+ 0003:00000350       mLogPrefixStrings          0000000000007b10     UnitTestLib:Log.obj
+ 0003:00000390       mFailureTypeStrings        0000000000007b50     UnitTestResultReportLibConOut:UnitTestResultReportLib.obj
+ 0003:00000440       mStatusStrings             0000000000007c00     UnitTestResultReportLibConOut:UnitTestResultReportLib.obj
+ 0003:000004a0       gUnitTestExpectAssertFailureJumpBuffer 0000000000007c60     UnitTestDebugAssertLib:UnitTestDebugAssertLib.obj
+ 0003:000004b0       gST                        0000000000007c70     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0003:000004b8       gImageHandle               0000000000007c78     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0003:000004c0       gBS                        0000000000007c80     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0003:000004e0       gUnitTestJumpBuffer        0000000000007ca0     <common>
+
+ entry point at        0001:00000184
+
+ Static symbols
+
+ 0001:00000043       CetDone                    0000000000000303     BaseLib:SetJump.obj
+ 0001:00000100       CetDone                    00000000000003c0     BaseLib:LongJump.obj
+ 0001:00000204       CleanUpB64TestContext      00000000000004c4 f   BaseLibUnitTestsUefi:Base64UnitTest.obj
+ 0001:0000022c       RfcEncodeTest              00000000000004ec f   BaseLibUnitTestsUefi:Base64UnitTest.obj
+ 0001:0000049c       RfcDecodeTest              000000000000075c f   BaseLibUnitTestsUefi:Base64UnitTest.obj
+ 0001:00000734       SafeStringContraintCheckTest 00000000000009f4 f   BaseLibUnitTestsUefi:Base64UnitTest.obj
+ 0001:00000ac8       UnitTestingEntry           0000000000000d88 f   BaseLibUnitTestsUefi:Base64UnitTest.obj
+ 0001:00001af4       UnitTestLogFailure         0000000000001db4 f   UnitTestLib:Assert.obj
+ 0001:00001e20       AllocateAndCopyString      00000000000020e0 f   UnitTestLib:UnitTestLib.obj
+ 0001:00002050       UpdateTestFromSave         0000000000002310 f   UnitTestLib:UnitTestLib.obj
+ 0001:0000216c       RunTestSuite               000000000000242c f   UnitTestLib:RunTests.obj
+ 0001:00002354       AddStringToUnitTestLog     0000000000002614 f   UnitTestLib:Log.obj
+ 0002:000011d0       EncodingTable              0000000000006090     BaseLib:String.obj
+ 0003:00000000       mBasicDecodeError5         00000000000077c0     BaseLibUnitTestsUefi:Base64UnitTest.obj
+ 0003:00000028       mBasicDecodeError2         00000000000077e8     BaseLibUnitTestsUefi:Base64UnitTest.obj
+ 0003:00000050       mBasicDecodeError4         0000000000007810     BaseLibUnitTestsUefi:Base64UnitTest.obj
+ 0003:00000078       mBasicEncodeTest5          0000000000007838     BaseLibUnitTestsUefi:Base64UnitTest.obj
+ 0003:000000a0       mBasicEncodeTest7          0000000000007860     BaseLibUnitTestsUefi:Base64UnitTest.obj
+ 0003:000000c8       mBasicDecodeTest2          0000000000007888     BaseLibUnitTestsUefi:Base64UnitTest.obj
+ 0003:000000f0       mBasicDecodeTest5          00000000000078b0     BaseLibUnitTestsUefi:Base64UnitTest.obj
+ 0003:00000118       mBasicEncodeTest4          00000000000078d8     BaseLibUnitTestsUefi:Base64UnitTest.obj
+ 0003:00000140       mBasicEncodeError1         0000000000007900     BaseLibUnitTestsUefi:Base64UnitTest.obj
+ 0003:00000168       mBasicDecodeTest3          0000000000007928     BaseLibUnitTestsUefi:Base64UnitTest.obj
+ 0003:00000190       mBasicEncodeTest3          0000000000007950     BaseLibUnitTestsUefi:Base64UnitTest.obj
+ 0003:000001b8       mBasicDecodeTest7          0000000000007978     BaseLibUnitTestsUefi:Base64UnitTest.obj
+ 0003:000001e0       mBasicDecodeError3         00000000000079a0     BaseLibUnitTestsUefi:Base64UnitTest.obj
+ 0003:00000208       mBasicDecodeTest4          00000000000079c8     BaseLibUnitTestsUefi:Base64UnitTest.obj
+ 0003:00000230       mBasicDecodeError1         00000000000079f0     BaseLibUnitTestsUefi:Base64UnitTest.obj
+ 0003:00000258       mBasicDecodeTest6          0000000000007a18     BaseLibUnitTestsUefi:Base64UnitTest.obj
+ 0003:00000280       mBasicDecodeTest8          0000000000007a40     BaseLibUnitTestsUefi:Base64UnitTest.obj
+ 0003:000002a8       mBasicEncodeTest6          0000000000007a68     BaseLibUnitTestsUefi:Base64UnitTest.obj
+ 0003:000002d0       mBasicDecodeTest1          0000000000007a90     BaseLibUnitTestsUefi:Base64UnitTest.obj
+ 0003:000002f8       mBasicEncodeTest2          0000000000007ab8     BaseLibUnitTestsUefi:Base64UnitTest.obj
+ 0003:00000320       mBasicEncodeTest1          0000000000007ae0     BaseLibUnitTestsUefi:Base64UnitTest.obj
+ 0003:000004a8       mFrameworkHandle           0000000000007c68     UnitTestLib:RunTests.obj
+ 0005:00000000       $unwind$GetFirstNode       0000000000007fe0     BaseLib:LinkedList.obj
+ 0005:00000000       $unwind$GetNextNode        0000000000007fe0     BaseLib:LinkedList.obj
+ 0005:00000000       $unwind$_ModuleEntryPoint  0000000000007fe0     UefiApplicationEntryPoint:ApplicationEntryPoint.obj
+ 0005:00000000       $unwind$InternalAllocateZeroPool 0000000000007fe0     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0005:00000008       $unwind$CleanUpB64TestContext 0000000000007fe8     BaseLibUnitTestsUefi:Base64UnitTest.obj
+ 0005:00000010       $unwind$RfcDecodeTest      0000000000007ff0     BaseLibUnitTestsUefi:Base64UnitTest.obj
+ 0005:00000010       $unwind$RfcEncodeTest      0000000000007ff0     BaseLibUnitTestsUefi:Base64UnitTest.obj
+ 0005:00000028       $unwind$SafeStringContraintCheckTest 0000000000008008     BaseLibUnitTestsUefi:Base64UnitTest.obj
+ 0005:00000044       $unwind$UnitTestingEntry   0000000000008024     BaseLibUnitTestsUefi:Base64UnitTest.obj
+ 0005:0000005c       $unwind$InternalAssertJumpBuffer 000000000000803c     BaseLib:SetJump.obj
+ 0005:0000005c       $unwind$FreePool           000000000000803c     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0005:00000064       $unwind$UnitTestDebugAssert 0000000000008044     UnitTestDebugAssertLib:UnitTestDebugAssertLib.obj
+ 0005:00000078       $unwind$UnitTestLogFailure 0000000000008058     UnitTestLib:Assert.obj
+ 0005:00000084       $unwind$UnitTestAssertNotEfiError 0000000000008064     UnitTestLib:Assert.obj
+ 0005:00000094       $unwind$StrCpyS            0000000000008074     BaseLib:SafeString.obj
+ 0005:00000094       $unwind$UnitTestAssertEqual 0000000000008074     UnitTestLib:Assert.obj
+ 0005:000000ac       $unwind$UnitTestAssertMemEqual 000000000000808c     UnitTestLib:Assert.obj
+ 0005:000000bc       $unwind$UnitTestAssertStatusEqual 000000000000809c     UnitTestLib:Assert.obj
+ 0005:000000d0       $unwind$AllocateAndCopyString 00000000000080b0     UnitTestLib:UnitTestLib.obj
+ 0005:000000e4       $unwind$AddTestCase        00000000000080c4     UnitTestLib:UnitTestLib.obj
+ 0005:00000100       $unwind$UpdateTestFromSave 00000000000080e0     UnitTestLib:UnitTestLib.obj
+ 0005:00000118       $unwind$RunTestSuite       00000000000080f8     UnitTestLib:RunTests.obj
+ 0005:00000130       $unwind$CalculateCrc32     0000000000008110     BaseLib:CheckSum.obj
+ 0005:00000130       $unwind$AsciiStrnCmp       0000000000008110     BaseLib:String.obj
+ 0005:00000130       $unwind$CompareMem         0000000000008110     BaseMemoryLib:CompareMemWrapper.obj
+ 0005:00000130       $unwind$BasePrintLibValueToString 0000000000008110     BasePrintLib:PrintLibInternal.obj
+ 0005:00000130       $unwind$AddStringToUnitTestLog 0000000000008110     UnitTestLib:Log.obj
+ 0005:00000130       $unwind$UnitTestLogInit    0000000000008110     UnitTestLib:Log.obj
+ 0005:00000140       $unwind$UnitTestLog        0000000000008120     UnitTestLib:Log.obj
+ 0005:0000014c       $unwind$DebugPrint         000000000000812c     PeiDxeDebugLibReportStatusCode:DebugLib.obj
+ 0005:00000154       $unwind$DebugPrintMarker   0000000000008134     PeiDxeDebugLibReportStatusCode:DebugLib.obj
+ 0005:0000016c       $unwind$InsertTailList     000000000000814c     BaseLib:LinkedList.obj
+ 0005:0000016c       $unwind$InternalBaseLibIsListValid 000000000000814c     BaseLib:LinkedList.obj
+ 0005:0000016c       $unwind$StrnLenS           000000000000814c     BaseLib:SafeString.obj
+ 0005:0000016c       $unwind$AsciiStrLen        000000000000814c     BaseLib:String.obj
+ 0005:0000016c       $unwind$ZeroMem            000000000000814c     BaseMemoryLib:ZeroMemWrapper.obj
+ 0005:00000178       $unwind$CopyMem            0000000000008158     BaseMemoryLib:CopyMemWrapper.obj
+ 0005:0000018c       $unwind$Base64Encode       000000000000816c     BaseLib:String.obj
+ 0005:00000198       $unwind$Base64Decode       0000000000008178     BaseLib:String.obj
+ 0005:000001b4       $unwind$AsciiStrCatS       0000000000008194     BaseLib:SafeString.obj
+ 0005:000001b4       $unwind$AsciiStrCpyS       0000000000008194     BaseLib:SafeString.obj
+ 0005:000001b4       $unwind$AsciiStrnCpyS      0000000000008194     BaseLib:SafeString.obj
+ 0005:000001bc       $unwind$AsciiStrnCatS      000000000000819c     BaseLib:SafeString.obj
+ 0005:000001c8       $unwind$UnicodeVSPrintAsciiFormat 00000000000081a8     BasePrintLib:PrintLib.obj
+ 0005:000001d8       $unwind$AsciiSPrint        00000000000081b8     BasePrintLib:PrintLib.obj
+ 0005:000001e0       $unwind$BasePrintLibSPrintMarker 00000000000081c0     BasePrintLib:PrintLibInternal.obj
+ 0005:000001fc       $unwind$BasePrintLibSPrint 00000000000081dc     BasePrintLib:PrintLibInternal.obj
+ 0005:00000204       $unwind$ReportPrint        00000000000081e4     UnitTestResultReportLibConOut:UnitTestResultReportLibConOut.obj

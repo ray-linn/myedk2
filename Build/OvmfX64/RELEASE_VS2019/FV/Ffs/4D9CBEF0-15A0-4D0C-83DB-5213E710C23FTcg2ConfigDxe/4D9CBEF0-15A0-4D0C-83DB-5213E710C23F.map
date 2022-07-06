@@ -1,0 +1,328 @@
+ Tcg2ConfigDxe
+
+ Timestamp is 61ee704f (Mon Jan 24 17:24:31 2022)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 000002b4H .text                   CODE
+ 0001:000002b4 00005cf5H .text$mn                CODE
+ 0002:00000000 00001ae0H .data                   DATA
+ 0002:00001ae0 000009e8H .rdata                  DATA
+ 0002:000024c8 00000098H .bss                    DATA
+ 0002:00002560 000000d4H .rdata$voltmd           DATA
+ 0002:00002634 000000a8H .rdata$zzzdbg           DATA
+ 0003:00000000 000002b8H .pdata                  DATA
+ 0004:00000000 00000304H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __x64_code_ranges_to_entry_points_count 0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_table          0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table_size 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map_count    0000000000000000     <absolute>
+ 0000:00000000       __guard_flags              0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_count      0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map          0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_count          0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_count      0000000000000000     <absolute>
+ 0000:00000000       __arm64x_native_entrypoint 0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_table      0000000000000000     <absolute>
+ 0000:00000000       __dynamic_value_reloc_table 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat     0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat_copy 0000000000000000     <absolute>
+ 0000:00000000       __enclave_config           0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata_count 0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_table      0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata 0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points 0000000000000000     <absolute>
+ 0000:00000000       __AbsoluteZero             0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_count         0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table   0000000000000000     <absolute>
+ 0000:00000000       __guard_check_icall_a64n_fptr 0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_table         0000000000000000     <absolute>
+ 0000:00000000       __ImageBase                0000000000000000     <linker-defined>
+ 0001:00000000       InternalMemCopyMem         0000000000000280     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000040       InternalMemZeroMem         00000000000002c0     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00000060       InternalMemIsZeroBuffer    00000000000002e0     BaseMemoryLibRepStr:IsZeroBuffer.obj
+ 0001:00000090       SevNoRepIo                 0000000000000310     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000000d0       IoReadFifo8                0000000000000350     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000000f2       IoReadFifo16               0000000000000372     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000118       IoReadFifo32               0000000000000398     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:0000013b       IoWriteFifo8               00000000000003bb     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:0000015d       IoWriteFifo16              00000000000003dd     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000183       IoWriteFifo32              0000000000000403     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001b0       InternalMemSetMem16        0000000000000430     BaseMemoryLibRepStr:SetMem16.obj
+ 0001:000001d0       InternalMemCompareMem      0000000000000450     BaseMemoryLibRepStr:CompareMem.obj
+ 0001:000001f0       AsmCpuid                   0000000000000470     BaseLib:CpuId.obj
+ 0001:00000220       CpuPause                   00000000000004a0     BaseLib:CpuPause.obj
+ 0001:00000230       EnableInterrupts           00000000000004b0     BaseLib:EnableInterrupts.obj
+ 0001:00000240       DisableInterrupts          00000000000004c0     BaseLib:DisableInterrupts.obj
+ 0001:00000250       AsmReadEflags              00000000000004d0     BaseLib:ReadEflags.obj
+ 0001:00000260       InternalMemSetMem          00000000000004e0     BaseMemoryLibRepStr:SetMem.obj
+ 0001:00000280       InternalMemSetMem64        0000000000000500     BaseMemoryLibRepStr:SetMem64.obj
+ 0001:000002a0       InternalMemSetMem32        0000000000000520     BaseMemoryLibRepStr:SetMem32.obj
+ 0001:000002b4       _DriverUnloadHandler       0000000000000534 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:0000030c       _ModuleEntryPoint          000000000000058c f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:00000354       ProcessLibraryConstructorList 00000000000005d4 f   Tcg2ConfigDxe:AutoGen.obj
+ 0001:00000580       InitializeTcg2VersionInfo  0000000000000800 f   Tcg2ConfigDxe:Tcg2ConfigDriver.obj
+ 0001:0000079c       Tcg2ConfigDriverEntryPoint 0000000000000a1c f   Tcg2ConfigDxe:Tcg2ConfigDriver.obj
+ 0001:00000a7c       Tcg2ExtractConfig          0000000000000cfc f   Tcg2ConfigDxe:Tcg2ConfigImpl.obj
+ 0001:00000aa0       Tcg2RouteConfig            0000000000000d20 f   Tcg2ConfigDxe:Tcg2ConfigImpl.obj
+ 0001:00000ac4       GetTpm2HID                 0000000000000d44 f   Tcg2ConfigDxe:Tcg2ConfigImpl.obj
+ 0001:00000bc0       Tcg2VersionInfoCallback    0000000000000e40 f   Tcg2ConfigDxe:Tcg2ConfigImpl.obj
+ 0001:00000c9c       Tcg2Callback               0000000000000f1c f   Tcg2ConfigDxe:Tcg2ConfigImpl.obj
+ 0001:00000f6c       AppendBufferWithTpmAlgHash 00000000000011ec f   Tcg2ConfigDxe:Tcg2ConfigImpl.obj
+ 0001:00001060       FillBufferWithBootHashAlg  00000000000012e0 f   Tcg2ConfigDxe:Tcg2ConfigImpl.obj
+ 0001:0000116c       InstallTcg2ConfigForm      00000000000013ec f   Tcg2ConfigDxe:Tcg2ConfigImpl.obj
+ 0001:000016c8       UninstallTcg2ConfigForm    0000000000001948 f   Tcg2ConfigDxe:Tcg2ConfigImpl.obj
+ 0001:00001740       GetPcdProtocol             00000000000019c0 f   DxePcdLib:DxePcdLib.obj
+ 0001:0000177c       InternalAllocatePool       00000000000019fc f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:000017ac       AllocateZeroPool           0000000000001a2c f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:000017d8       InternalReallocatePool     0000000000001a58 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00001868       StrnCmp                    0000000000001ae8 f   BaseLib:String.obj
+ 0001:000018a4       StrStr                     0000000000001b24 f   BaseLib:String.obj
+ 0001:000018f4       InternalHexCharToUintn     0000000000001b74 f   BaseLib:String.obj
+ 0001:00001924       StrHexToUint64             0000000000001ba4 f   BaseLib:String.obj
+ 0001:00001a0c       AsciiStrnCmp               0000000000001c8c f   BaseLib:String.obj
+ 0001:00001a40       StrnLenS                   0000000000001cc0 f   BaseLib:SafeString.obj
+ 0001:00001a74       StrCpyS                    0000000000001cf4 f   BaseLib:SafeString.obj
+ 0001:00001b14       StrnCpyS                   0000000000001d94 f   BaseLib:SafeString.obj
+ 0001:00001c04       StrCatS                    0000000000001e84 f   BaseLib:SafeString.obj
+ 0001:00001cd8       StrnCatS                   0000000000001f58 f   BaseLib:SafeString.obj
+ 0001:00001e04       UnicodeSPrint              0000000000002084 f   BasePrintLib:PrintLib.obj
+ 0001:00001e38       AsciiSPrint                00000000000020b8 f   BasePrintLib:PrintLib.obj
+ 0001:00001e64       BasePrintLibFillBuffer     00000000000020e4 f   BasePrintLib:PrintLibInternal.obj
+ 0001:00001e98       BasePrintLibConvertValueToStringS 0000000000002118 f   BasePrintLib:PrintLibInternal.obj
+ 0001:00001fec       BasePrintLibSPrintMarker   000000000000226c f   BasePrintLib:PrintLibInternal.obj
+ 0001:00002dd0       BasePrintLibSPrint         0000000000003050 f   BasePrintLib:PrintLibInternal.obj
+ 0001:00002df4       EfiGetSystemConfigurationTable 0000000000003074 f   UefiLib:UefiLib.obj
+ 0001:00002e54       GetEfiGlobalVariable2      00000000000030d4 f   UefiLib:UefiLib.obj
+ 0001:00002f10       GetBestLanguage            0000000000003190 f   UefiLib:UefiLib.obj
+ 0001:0000303c       UefiLibGetStringWidth      00000000000032bc f   UefiLib:Console.obj
+ 0001:000030e8       CreatePopUp                0000000000003368 f   UefiLib:Console.obj
+ 0001:00003494       GetHobList                 0000000000003714 f   DxeHobLib:HobLib.obj
+ 0001:000034c4       HiiSetString               0000000000003744 f   UefiHiiLib:HiiString.obj
+ 0001:000035fc       HiiGetString               000000000000387c f   UefiHiiLib:HiiString.obj
+ 0001:00003780       HiiAddPackages             0000000000003a00 f   UefiHiiLib:HiiLib.obj
+ 0001:0000389c       HiiGetHiiHandles           0000000000003b1c f   UefiHiiLib:HiiLib.obj
+ 0001:0000392c       HiiConstructConfigHdr      0000000000003bac f   UefiHiiLib:HiiLib.obj
+ 0001:00003bb0       InternalHiiGetBufferFromString 0000000000003e30 f   UefiHiiLib:HiiLib.obj
+ 0001:00003d1c       BlockArrayCheck            0000000000003f9c f   UefiHiiLib:HiiLib.obj
+ 0001:00003d5c       InternalHiiGetValueOfNumber 0000000000003fdc f   UefiHiiLib:HiiLib.obj
+ 0001:00003e34       GetValueFromRequest        00000000000040b4 f   UefiHiiLib:HiiLib.obj
+ 0001:00003ecc       ValidateQuestionFromVfr    000000000000414c f   UefiHiiLib:HiiLib.obj
+ 0001:00004858       GetBlockDataInfo           0000000000004ad8 f   UefiHiiLib:HiiLib.obj
+ 0001:00004cf4       InternalHiiValidateCurrentSetting 0000000000004f74 f   UefiHiiLib:HiiLib.obj
+ 0001:00004e28       InternalHiiIfrValueAction  00000000000050a8 f   UefiHiiLib:HiiLib.obj
+ 0001:0000541c       HiiGetSupportedLanguages   000000000000569c f   UefiHiiLib:HiiLanguage.obj
+ 0001:000055f0       InternalQemuFwCfgDmaBytes  0000000000005870 f   QemuFwCfgDxeLib:QemuFwCfgDxe.obj
+ 0001:00005830       QemuFwCfgReadBytes         0000000000005ab0 f   QemuFwCfgDxeLib:QemuFwCfgLib.obj
+ 0001:00005888       Tpm2GetCapability          0000000000005b08 f   Tpm2CommandLib:Tpm2Capability.obj
+ 0001:0000599c       Tpm2GetCapabilityFirmwareVersion 0000000000005c1c f   Tpm2CommandLib:Tpm2Capability.obj
+ 0001:00005a4c       Tpm2GetCapabilityPcrs      0000000000005ccc f   Tpm2CommandLib:Tpm2Capability.obj
+ 0001:00005db4       Tcg2PhysicalPresenceLibSubmitRequestToPreOSFunction 0000000000006034 f   Tcg2PhysicalPresenceLibQemu:DxeTcg2PhysicalPresenceLib.obj
+ 0001:00005e80       PciCf8Read32               0000000000006100 f   BasePciCf8Lib:PciCf8Lib.obj
+ 0001:00005ee4       Tpm2SubmitCommand          0000000000006164 f   Tpm2DeviceLibTcg2:Tpm2DeviceLibTcg2.obj
+ 0001:00005f88       SaveAndDisableInterrupts   0000000000006208 f   BaseLib:Cpu.obj
+ 0002:00000000       gEfiLoadedImageProtocolGuid 0000000000006240     Tcg2ConfigDxe:AutoGen.obj
+ 0002:00000010       gEfiGlobalVariableGuid     0000000000006250     Tcg2ConfigDxe:AutoGen.obj
+ 0002:00000020       gEdkiiVariableLockProtocolGuid 0000000000006260     Tcg2ConfigDxe:AutoGen.obj
+ 0002:00000030       gPcdProtocolGuid           0000000000006270     Tcg2ConfigDxe:AutoGen.obj
+ 0002:00000040       gEfiDevicePathProtocolGuid 0000000000006280     Tcg2ConfigDxe:AutoGen.obj
+ 0002:00000050       gEfiHiiConfigRoutingProtocolGuid 0000000000006290     Tcg2ConfigDxe:AutoGen.obj
+ 0002:00000060       gEfiHiiImageProtocolGuid   00000000000062a0     Tcg2ConfigDxe:AutoGen.obj
+ 0002:00000070       Tcg2ConfigDxeStrings       00000000000062b0     Tcg2ConfigDxe:AutoGen.obj
+ 0002:00001518       gEfiDevicePathUtilitiesProtocolGuid 0000000000007758     Tcg2ConfigDxe:AutoGen.obj
+ 0002:00001528       gEfiHiiDatabaseProtocolGuid 0000000000007768     Tcg2ConfigDxe:AutoGen.obj
+ 0002:00001538       gEfiHiiStringProtocolGuid  0000000000007778     Tcg2ConfigDxe:AutoGen.obj
+ 0002:00001548       gEfiTcg2ProtocolGuid       0000000000007788     Tcg2ConfigDxe:AutoGen.obj
+ 0002:00001558       gEfiHiiConfigAccessProtocolGuid 0000000000007798     Tcg2ConfigDxe:AutoGen.obj
+ 0002:00001568       gEfiHobListGuid            00000000000077a8     Tcg2ConfigDxe:AutoGen.obj
+ 0002:00001578       gEdkiiIoMmuProtocolGuid    00000000000077b8     Tcg2ConfigDxe:AutoGen.obj
+ 0002:00001588       gEdkiiIfrBitVarstoreGuid   00000000000077c8     Tcg2ConfigDxe:AutoGen.obj
+ 0002:00001598       gEfiDxeServicesTableGuid   00000000000077d8     Tcg2ConfigDxe:AutoGen.obj
+ 0002:000015a8       gEfiCallerIdGuid           00000000000077e8     Tcg2ConfigDxe:AutoGen.obj
+ 0002:000015c0       gTcg2ConfigFormSetGuid     0000000000007800     Tcg2ConfigDxe:AutoGen.obj
+ 0002:000015d0       gEfiHiiFontProtocolGuid    0000000000007810     Tcg2ConfigDxe:AutoGen.obj
+ 0002:000015e0       mTcg2ConfigPrivateDateTemplate 0000000000007820     Tcg2ConfigDxe:Tcg2ConfigImpl.obj
+ 0002:00001648       mTpmInstanceId             0000000000007888     Tcg2ConfigDxe:Tcg2ConfigImpl.obj
+ 0002:00001688       mTcg2HiiVendorDevicePath   00000000000078c8     Tcg2ConfigDxe:Tcg2ConfigImpl.obj
+ 0002:000016a0       Tcg2ConfigBin              00000000000078e0     Tcg2ConfigDxe:Tcg2Config.obj
+ 0002:00001ae0       ??_C@_1BK@PIFJCPFF@?$AAT?$AAC?$AAG?$AA2?$AA_?$AAV?$AAE?$AAR?$AAS?$AAI?$AAO?$AAN@ 0000000000007d20     Tcg2ConfigDxe:Tcg2ConfigDriver.obj
+ 0002:00001b00       ??_C@_17LEDOCHBJ@?$AA1?$AA?4?$AA2@ 0000000000007d40     Tcg2ConfigDxe:Tcg2ConfigDriver.obj
+ 0002:00001b08       ??_C@_17MICEAHM@?$AA1?$AA?4?$AA3@ 0000000000007d48     Tcg2ConfigDxe:Tcg2ConfigDriver.obj
+ 0002:00001b10       ??_C@_1M@OMKJPIFJ@?$AAR?$AAe?$AAv?$AA?5?$AA3@ 0000000000007d50     Tcg2ConfigDxe:Tcg2ConfigDriver.obj
+ 0002:00001b20       ??_C@_1M@HBHOMAOA@?$AAR?$AAe?$AAv?$AA?5?$AA4@ 0000000000007d60     Tcg2ConfigDxe:Tcg2ConfigDriver.obj
+ 0002:00001b30       ??_C@_1CG@GGDFGDPJ@?$AAT?$AAC?$AAG?$AA2?$AA_?$AAC?$AAO?$AAN?$AAF?$AAI?$AAG?$AAU?$AAR?$AAA?$AAT@ 0000000000007d70     Tcg2ConfigDxe:Tcg2ConfigDriver.obj
+ 0002:00001b58       ??_C@_1CM@MPKAGKGA@?$AAT?$AAC?$AAG?$AA2?$AA_?$AAD?$AAE?$AAV?$AAI?$AAC?$AAE?$AA_?$AAD?$AAE?$AAT@ 0000000000007d98     Tcg2ConfigDxe:Tcg2ConfigDriver.obj
+ 0002:00001b88       ??_C@_08CHLAEBHP@?$CF02d?$CF02d@ 0000000000007dc8     Tcg2ConfigDxe:Tcg2ConfigImpl.obj
+ 0002:00001ba0       ??_C@_1HI@KKAAPEIB@?$AAT?$AAh?$AAe?$AA?5?$AAv?$AAe?$AAr?$AAs?$AAi?$AAo?$AAn?$AA?5?$AAc?$AAo?$AAn@ 0000000000007de0     Tcg2ConfigDxe:Tcg2ConfigImpl.obj
+ 0002:00001c20       ??_C@_1MI@GKEEFOOH@?$AAW?$AAA?$AAR?$AAN?$AAI?$AAN?$AAG?$AA?3?$AA?5?$AAP?$AAc?$AAd?$AAT?$AAc?$AAg@ 0000000000007e60     Tcg2ConfigDxe:Tcg2ConfigImpl.obj
+ 0002:00001cf0       ??_C@_1HK@LIDKGBBE@?$AAT?$AAh?$AAe?$AA?5?$AAR?$AAe?$AAv?$AAi?$AAs?$AAi?$AAo?$AAn?$AA?5?$AAc?$AAo@ 0000000000007f30     Tcg2ConfigDxe:Tcg2ConfigImpl.obj
+ 0002:00001d70       ??_C@_1KK@IACNGPJB@?$AAW?$AAA?$AAR?$AAN?$AAI?$AAN?$AAG?$AA?3?$AA?5?$AAP?$AAc?$AAd?$AAT?$AAp?$AAm@ 0000000000007fb0     Tcg2ConfigDxe:Tcg2ConfigImpl.obj
+ 0002:00001e20       ??_C@_1BA@LEPJIIOK@?$AAU?$AAn?$AAk?$AAn?$AAo?$AAw?$AAn@ 0000000000008060     Tcg2ConfigDxe:Tcg2ConfigImpl.obj
+ 0002:00001e30       ??_C@_1EE@BCJBHFKG@?$AAE?$AAr?$AAr?$AAo?$AAr?$AA?3?$AA?5?$AAF?$AAa?$AAi?$AAl?$AA?5?$AAt?$AAo?$AA?5@ 0000000000008070     Tcg2ConfigDxe:Tcg2ConfigImpl.obj
+ 0002:00001e74       ??_C@_15JOGBDECP@?$AA?0?$AA?5@ 00000000000080b4     Tcg2ConfigDxe:Tcg2ConfigImpl.obj
+ 0002:00001e80       ??_C@_19DILNDFJH@?$AAS?$AAH?$AAA?$AA1@ 00000000000080c0     Tcg2ConfigDxe:Tcg2ConfigImpl.obj
+ 0002:00001e90       ??_C@_1O@HECGKAIN@?$AAS?$AAH?$AAA?$AA2?$AA5?$AA6@ 00000000000080d0     Tcg2ConfigDxe:Tcg2ConfigImpl.obj
+ 0002:00001ea0       ??_C@_1O@KOBLHLEG@?$AAS?$AAH?$AAA?$AA3?$AA8?$AA4@ 00000000000080e0     Tcg2ConfigDxe:Tcg2ConfigImpl.obj
+ 0002:00001eb0       ??_C@_1O@GKBAHMNF@?$AAS?$AAH?$AAA?$AA5?$AA1?$AA2@ 00000000000080f0     Tcg2ConfigDxe:Tcg2ConfigImpl.obj
+ 0002:00001ec0       ??_C@_1BA@GJCBBDME@?$AAS?$AAM?$AA3?$AA_?$AA2?$AA5?$AA6@ 0000000000008100     Tcg2ConfigDxe:Tcg2ConfigImpl.obj
+ 0002:00001ed0       ??_C@_1BA@NAINLIDC@?$AAT?$AAC?$AAG?$AA_?$AA1?$AA_?$AA2@ 0000000000008110     Tcg2ConfigDxe:Tcg2ConfigImpl.obj
+ 0002:00001ee0       ??_C@_1M@EKHIKFLM@?$AAT?$AAC?$AAG?$AA_?$AA2@ 0000000000008120     Tcg2ConfigDxe:Tcg2ConfigImpl.obj
+ 0002:00001ef0       ??_C@_1BA@HABJOAEE@?$AAU?$AAN?$AAK?$AAN?$AAO?$AAW?$AAN@ 0000000000008130     Tcg2ConfigDxe:Tcg2ConfigImpl.obj
+ 0002:00001f00       ??_C@_1BE@JGBFLIBK@?$AAN?$AAo?$AAt?$AA?5?$AAF?$AAo?$AAu?$AAn?$AAd@ 0000000000008140     Tcg2ConfigDxe:Tcg2ConfigImpl.obj
+ 0002:00001f18       ??_C@_1BA@OHFFEJJF@?$AAT?$AAP?$AAM?$AA?5?$AA1?$AA?4?$AA2@ 0000000000008158     Tcg2ConfigDxe:Tcg2ConfigImpl.obj
+ 0002:00001f28       ??_C@_1BA@MDNDIGPN@?$AAT?$AAP?$AAM?$AA?5?$AA2?$AA?4?$AA0@ 0000000000008168     Tcg2ConfigDxe:Tcg2ConfigImpl.obj
+ 0002:00001f38       ??_C@_1BE@PBBHLHHJ@?$AA?$FL?$AAU?$AAn?$AAk?$AAn?$AAo?$AAw?$AAn?$AA?$FN@ 0000000000008178     Tcg2ConfigDxe:Tcg2ConfigImpl.obj
+ 0002:00001f4c       ??_C@_15KNBIKKIN@?$AA?$CF?$AAd@ 000000000000818c     Tcg2ConfigDxe:Tcg2ConfigImpl.obj
+ 0002:00001f58       ??_C@_17LKFOCGEC@?$AAT?$AAI?$AAS@ 0000000000008198     Tcg2ConfigDxe:Tcg2ConfigImpl.obj
+ 0002:00001f60       ??_C@_1BC@JAJIIHHH@?$AAP?$AAT?$AAP?$AA?5?$AAF?$AAI?$AAF?$AAO@ 00000000000081a0     Tcg2ConfigDxe:Tcg2ConfigImpl.obj
+ 0002:00001f78       ??_C@_1BA@EBNFJNNA@?$AAP?$AAT?$AAP?$AA?5?$AAC?$AAR?$AAB@ 00000000000081b8     Tcg2ConfigDxe:Tcg2ConfigImpl.obj
+ 0002:00001f88       ??_C@_1DA@KGNNKGCG@?$AAT?$AAC?$AAG?$AA2?$AA_?$AAC?$AAO?$AAN?$AAF?$AAI?$AAG?$AAU?$AAR?$AAA?$AAT@ 00000000000081c8     Tcg2ConfigDxe:Tcg2ConfigImpl.obj
+ 0002:00001fb8       ??_C@_0O@MLOLIMFM@?$DMnull?5string?$DO@ 00000000000081f8     BasePrintLib:PrintLibInternal.obj
+ 0002:00001fc8       ??_C@_0M@BJJDNPHK@?$DMnull?5guid?$DO@ 0000000000008208     BasePrintLib:PrintLibInternal.obj
+ 0002:00001fd8       ??_C@_0DB@PMLHLBMO@?$CF08x?9?$CF04x?9?$CF04x?9?$CF02x?$CF02x?9?$CF02x?$CF02@ 0000000000008218     BasePrintLib:PrintLibInternal.obj
+ 0002:00002010       ??_C@_0M@LHGBCIKM@?$DMnull?5time?$DO@ 0000000000008250     BasePrintLib:PrintLibInternal.obj
+ 0002:00002020       ??_C@_0BK@FCPKCIDD@?$CF02d?1?$CF02d?1?$CF04d?5?5?$CF02d?3?$CF02d@ 0000000000008260     BasePrintLib:PrintLibInternal.obj
+ 0002:0000203c       ??_C@_04JIMNDDED@?$CF08X@  000000000000827c     BasePrintLib:PrintLibInternal.obj
+ 0002:00002044       ??_C@_02PCIJFNDE@?$AN?6@   0000000000008284     BasePrintLib:PrintLibInternal.obj
+ 0002:00002048       ??_C@_01LIIJDEN@?$AN@      0000000000008288     BasePrintLib:PrintLibInternal.obj
+ 0002:00002050       mWarningString             0000000000008290     BasePrintLib:PrintLibInternal.obj
+ 0002:000020f0       mErrorString               0000000000008330     BasePrintLib:PrintLibInternal.obj
+ 0002:000023b0       mHexStr                    00000000000085f0     BasePrintLib:PrintLibInternal.obj
+ 0002:000023c0       ??_C@_17LGKOMLJ@?$AA?4?$AA?4?$AA?4@ 0000000000008600     UefiLib:Console.obj
+ 0002:000023c8       ??_C@_06PLDEFKP@x?9UEFI@   0000000000008608     UefiHiiLib:HiiString.obj
+ 0002:000023d0       ??_C@_1BK@GGGENMOA@?$AAP?$AAl?$AAa?$AAt?$AAf?$AAo?$AAr?$AAm?$AAL?$AAa?$AAn?$AAg@ 0000000000008610     UefiHiiLib:HiiString.obj
+ 0002:000023ea       ??_C@_00CNPNBAHC@@         000000000000862a     UefiHiiLib:HiiString.obj
+ 0002:000023f0       ??_C@_1M@DPLGJLCD@?$AAG?$AAU?$AAI?$AAD?$AA?$DN@ 0000000000008630     UefiHiiLib:HiiLib.obj
+ 0002:00002400       ??_C@_1O@FMIENBLJ@?$AA?$CG?$AAN?$AAA?$AAM?$AAE?$AA?$DN@ 0000000000008640     UefiHiiLib:HiiLib.obj
+ 0002:00002410       ??_C@_1O@GGMHNGIF@?$AA?$CG?$AAP?$AAA?$AAT?$AAH?$AA?$DN@ 0000000000008650     UefiHiiLib:HiiLib.obj
+ 0002:00002420       ??_C@_1BC@KLGPJAMP@?$AA?$CG?$AAO?$AAF?$AAF?$AAS?$AAE?$AAT?$AA?$DN@ 0000000000008660     UefiHiiLib:HiiLib.obj
+ 0002:00002440       ??_C@_1BA@BPJBLIJE@?$AA?$CG?$AAW?$AAI?$AAD?$AAT?$AAH?$AA?$DN@ 0000000000008680     UefiHiiLib:HiiLib.obj
+ 0002:00002450       ??_C@_1BA@OHHBHMKI@?$AA?$CG?$AAV?$AAA?$AAL?$AAU?$AAE?$AA?$DN@ 0000000000008690     UefiHiiLib:HiiLib.obj
+ 0002:00002460       ??_C@_1M@PJAPFKED@?$AAP?$AAA?$AAT?$AAH?$AA?$DN@ 00000000000086a0     UefiHiiLib:HiiLib.obj
+ 0002:0000246c       ??_C@_13FLOCNAAB@?$AA?$CG@ 00000000000086ac     UefiHiiLib:HiiLib.obj
+ 0002:00002470       ??_C@_1BC@JFJKDJKC@?$AA?$CG?$AAA?$AAL?$AAT?$AAC?$AAF?$AAG?$AA?$DN@ 00000000000086b0     UefiHiiLib:HiiLib.obj
+ 0002:00002488       ??_C@_1M@COKHDCDN@?$AA?$CG?$AAG?$AAU?$AAI?$AAD@ 00000000000086c8     UefiHiiLib:HiiLib.obj
+ 0002:00002494       mEndOfPakageList           00000000000086d4     UefiHiiLib:HiiLib.obj
+ 0002:00002498       ??_C@_0P@FAALPMBM@etc?1tpm?1config@ 00000000000086d8     Tcg2PhysicalPresenceLibQemu:DxeTcg2PhysicalPresenceLib.obj
+ 0002:000024c8       mPcd                       0000000000008708     DxePcdLib:DxePcdLib.obj
+ 0002:000024d0       gST                        0000000000008710     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000024d8       gBS                        0000000000008718     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000024e0       mDevicePathLibDevicePathUtilities 0000000000008720     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:000024e8       gRT                        0000000000008728     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0002:000024f0       mHobList                   0000000000008730     DxeHobLib:HobLib.obj
+ 0002:000024f8       gHiiString                 0000000000008738     UefiHiiServicesLib:UefiHiiServicesLib.obj
+ 0002:00002500       gHiiFont                   0000000000008740     UefiHiiServicesLib:UefiHiiServicesLib.obj
+ 0002:00002508       gHiiConfigRouting          0000000000008748     UefiHiiServicesLib:UefiHiiServicesLib.obj
+ 0002:00002510       gHiiImage                  0000000000008750     UefiHiiServicesLib:UefiHiiServicesLib.obj
+ 0002:00002518       gHiiDatabase               0000000000008758     UefiHiiServicesLib:UefiHiiServicesLib.obj
+ 0002:00002520       gDS                        0000000000008760     DxeServicesTableLib:DxeServicesTableLib.obj
+ 0002:00002530       mTcg2Protocol              0000000000008770     Tpm2DeviceLibTcg2:Tpm2DeviceLibTcg2.obj
+ 0002:00002550       mCurrentPpRequest          0000000000008790     <common>
+ 0002:00002558       mTcg2ConfigPrivateDate     0000000000008798     <common>
+ 0002:00002560       __volatile_metadata        00000000000087a0     <linker-defined>
+
+ entry point at        0001:0000030c
+
+ Static symbols
+
+ 0001:0000001a       InternalMemCopyMem.0       000000000000029a     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:0000002a       @CopyBackward              00000000000002aa     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000033       @CopyBytes                 00000000000002b3     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000085       @ReturnFalse               0000000000000305     BaseMemoryLibRepStr:IsZeroBuffer.obj
+ 0001:000000ca       @UseRepIo                  000000000000034a     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000000cc       @SevNoRepIo_Done           000000000000034c     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000000e4       @IoReadFifo8_NoRep         0000000000000364     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000000e6       @IoReadFifo8_Loop          0000000000000366     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000000ee       @IoReadFifo8_Done          000000000000036e     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000107       @IoReadFifo16_NoRep        0000000000000387     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000109       @IoReadFifo16_Loop         0000000000000389     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000114       @IoReadFifo16_Done         0000000000000394     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:0000012c       @IoReadFifo32_NoRep        00000000000003ac     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:0000012e       @IoReadFifo32_Loop         00000000000003ae     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000137       @IoReadFifo32_Done         00000000000003b7     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:0000014f       @IoWriteFifo8_NoRep        00000000000003cf     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000151       @IoWriteFifo8_Loop         00000000000003d1     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000159       @IoWriteFifo8_Done         00000000000003d9     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000172       @IoWriteFifo16_NoRep       00000000000003f2     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000174       @IoWriteFifo16_Loop        00000000000003f4     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:0000017f       @IoWriteFifo16_Done        00000000000003ff     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000197       @IoWriteFifo32_NoRep       0000000000000417     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000199       @IoWriteFifo32_Loop        0000000000000419     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001a2       @IoWriteFifo32_Done        0000000000000422     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001ff       AsmCpuid.0                 000000000000047f     BaseLib:CpuId.obj
+ 0001:00000204       AsmCpuid.1                 0000000000000484     BaseLib:CpuId.obj
+ 0001:0000020b       AsmCpuid.2                 000000000000048b     BaseLib:CpuId.obj
+ 0001:00000214       AsmCpuid.3                 0000000000000494     BaseLib:CpuId.obj
+ 0001:000054cc       AllocFwCfgDmaAccessBuffer  000000000000574c f   QemuFwCfgDxeLib:QemuFwCfgDxe.obj
+ 0001:00005b3c       QemuTpmReadConfig          0000000000005dbc f   Tcg2PhysicalPresenceLibQemu:DxeTcg2PhysicalPresenceLib.obj
+ 0001:00005c98       QemuTpmInitPPI             0000000000005f18 f   Tcg2PhysicalPresenceLibQemu:DxeTcg2PhysicalPresenceLib.obj
+ 0001:00005df4       InternalMemEncryptSevStatus 0000000000006074 f   DxeMemEncryptSevLib:DxeMemEncryptSevLibInternal.obj
+ 0002:00002528       mQemuFwCfgSupported        0000000000008768     QemuFwCfgDxeLib:QemuFwCfgDxe.obj
+ 0002:00002529       mSevStatus                 0000000000008769     DxeMemEncryptSevLib:DxeMemEncryptSevLibInternal.obj
+ 0002:0000252a       mSevStatusChecked          000000000000876a     DxeMemEncryptSevLib:DxeMemEncryptSevLibInternal.obj
+ 0002:00002538       mRunningOnQ35              0000000000008778     DxePciLibI440FxQ35:PciLib.obj
+ 0002:00002539       mQemuFwCfgDmaSupported     0000000000008779     QemuFwCfgDxeLib:QemuFwCfgDxe.obj
+ 0002:00002540       mIoMmuProtocol             0000000000008780     QemuFwCfgDxeLib:QemuFwCfgDxe.obj
+ 0002:00002548       mPpi                       0000000000008788     Tcg2PhysicalPresenceLibQemu:DxeTcg2PhysicalPresenceLib.obj
+ 0004:00000000       $unwind$SaveAndDisableInterrupts 0000000000008be0     BaseLib:Cpu.obj
+ 0004:00000000       $unwind$StrCpyS            0000000000008be0     BaseLib:SafeString.obj
+ 0004:00000000       $unwind$PciCf8Read32       0000000000008be0     BasePciCf8Lib:PciCf8Lib.obj
+ 0004:00000000       $unwind$_DriverUnloadHandler 0000000000008be0     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0004:00000000       $unwind$_ModuleEntryPoint  0000000000008be0     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0004:00000000       $unwind$AllocateZeroPool   0000000000008be0     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0004:00000008       $unwind$ProcessLibraryConstructorList 0000000000008be8     Tcg2ConfigDxe:AutoGen.obj
+ 0004:00000014       $unwind$InitializeTcg2VersionInfo 0000000000008bf4     Tcg2ConfigDxe:Tcg2ConfigDriver.obj
+ 0004:00000028       $unwind$Tcg2ConfigDriverEntryPoint 0000000000008c08     Tcg2ConfigDxe:Tcg2ConfigDriver.obj
+ 0004:0000003c       $unwind$GetTpm2HID         0000000000008c1c     Tcg2ConfigDxe:Tcg2ConfigImpl.obj
+ 0004:0000004c       $unwind$Tcg2VersionInfoCallback 0000000000008c2c     Tcg2ConfigDxe:Tcg2ConfigImpl.obj
+ 0004:00000058       $unwind$Tcg2Callback       0000000000008c38     Tcg2ConfigDxe:Tcg2ConfigImpl.obj
+ 0004:0000006c       $unwind$Tcg2PhysicalPresenceLibSubmitRequestToPreOSFunction 0000000000008c4c     Tcg2PhysicalPresenceLibQemu:DxeTcg2PhysicalPresenceLib.obj
+ 0004:0000006c       $unwind$AppendBufferWithTpmAlgHash 0000000000008c4c     Tcg2ConfigDxe:Tcg2ConfigImpl.obj
+ 0004:00000078       $unwind$InternalReallocatePool 0000000000008c58     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0004:00000078       $unwind$FillBufferWithBootHashAlg 0000000000008c58     Tcg2ConfigDxe:Tcg2ConfigImpl.obj
+ 0004:0000008c       $unwind$InstallTcg2ConfigForm 0000000000008c6c     Tcg2ConfigDxe:Tcg2ConfigImpl.obj
+ 0004:000000a4       $unwind$InternalMemEncryptSevStatus 0000000000008c84     DxeMemEncryptSevLib:DxeMemEncryptSevLibInternal.obj
+ 0004:000000a4       $unwind$UninstallTcg2ConfigForm 0000000000008c84     Tcg2ConfigDxe:Tcg2ConfigImpl.obj
+ 0004:000000ac       $unwind$StrHexToUint64     0000000000008c8c     BaseLib:String.obj
+ 0004:000000ac       $unwind$GetHobList         0000000000008c8c     DxeHobLib:HobLib.obj
+ 0004:000000ac       $unwind$GetPcdProtocol     0000000000008c8c     DxePcdLib:DxePcdLib.obj
+ 0004:000000ac       $unwind$InternalAllocatePool 0000000000008c8c     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0004:000000ac       $unwind$QemuFwCfgReadBytes 0000000000008c8c     QemuFwCfgDxeLib:QemuFwCfgLib.obj
+ 0004:000000b4       $unwind$StrCatS            0000000000008c94     BaseLib:SafeString.obj
+ 0004:000000b4       $unwind$StrnCpyS           0000000000008c94     BaseLib:SafeString.obj
+ 0004:000000c4       $unwind$StrnCatS           0000000000008ca4     BaseLib:SafeString.obj
+ 0004:000000dc       $unwind$AsciiSPrint        0000000000008cbc     BasePrintLib:PrintLib.obj
+ 0004:000000dc       $unwind$UnicodeSPrint      0000000000008cbc     BasePrintLib:PrintLib.obj
+ 0004:000000e4       $unwind$BasePrintLibConvertValueToStringS 0000000000008cc4     BasePrintLib:PrintLibInternal.obj
+ 0004:000000f4       $unwind$BasePrintLibSPrintMarker 0000000000008cd4     BasePrintLib:PrintLibInternal.obj
+ 0004:00000110       $unwind$BasePrintLibSPrint 0000000000008cf0     BasePrintLib:PrintLibInternal.obj
+ 0004:00000118       $unwind$EfiGetSystemConfigurationTable 0000000000008cf8     UefiLib:UefiLib.obj
+ 0004:00000120       $unwind$GetEfiGlobalVariable2 0000000000008d00     UefiLib:UefiLib.obj
+ 0004:0000012c       $unwind$GetBestLanguage    0000000000008d0c     UefiLib:UefiLib.obj
+ 0004:0000013c       $unwind$UefiLibGetStringWidth 0000000000008d1c     UefiLib:Console.obj
+ 0004:00000150       $unwind$CreatePopUp        0000000000008d30     UefiLib:Console.obj
+ 0004:00000168       $unwind$HiiSetString       0000000000008d48     UefiHiiLib:HiiString.obj
+ 0004:00000180       $unwind$HiiGetString       0000000000008d60     UefiHiiLib:HiiString.obj
+ 0004:00000194       $unwind$HiiAddPackages     0000000000008d74     UefiHiiLib:HiiLib.obj
+ 0004:000001a8       $unwind$HiiGetHiiHandles   0000000000008d88     UefiHiiLib:HiiLib.obj
+ 0004:000001b0       $unwind$HiiConstructConfigHdr 0000000000008d90     UefiHiiLib:HiiLib.obj
+ 0004:000001cc       $unwind$InternalHiiGetBufferFromString 0000000000008dac     UefiHiiLib:HiiLib.obj
+ 0004:000001e4       $unwind$InternalHiiGetValueOfNumber 0000000000008dc4     UefiHiiLib:HiiLib.obj
+ 0004:000001fc       $unwind$GetValueFromRequest 0000000000008ddc     UefiHiiLib:HiiLib.obj
+ 0004:00000208       $unwind$ValidateQuestionFromVfr 0000000000008de8     UefiHiiLib:HiiLib.obj
+ 0004:00000220       $unwind$GetBlockDataInfo   0000000000008e00     UefiHiiLib:HiiLib.obj
+ 0004:00000238       $unwind$InternalHiiValidateCurrentSetting 0000000000008e18     UefiHiiLib:HiiLib.obj
+ 0004:00000250       $unwind$InternalHiiIfrValueAction 0000000000008e30     UefiHiiLib:HiiLib.obj
+ 0004:0000026c       $unwind$HiiGetSupportedLanguages 0000000000008e4c     UefiHiiLib:HiiLanguage.obj
+ 0004:0000027c       $unwind$AllocFwCfgDmaAccessBuffer 0000000000008e5c     QemuFwCfgDxeLib:QemuFwCfgDxe.obj
+ 0004:0000028c       $unwind$InternalQemuFwCfgDmaBytes 0000000000008e6c     QemuFwCfgDxeLib:QemuFwCfgDxe.obj
+ 0004:000002a0       $unwind$Tpm2GetCapability  0000000000008e80     Tpm2CommandLib:Tpm2Capability.obj
+ 0004:000002b0       $unwind$Tpm2GetCapabilityFirmwareVersion 0000000000008e90     Tpm2CommandLib:Tpm2Capability.obj
+ 0004:000002c0       $unwind$Tpm2GetCapabilityPcrs 0000000000008ea0     Tpm2CommandLib:Tpm2Capability.obj
+ 0004:000002dc       $unwind$QemuTpmReadConfig  0000000000008ebc     Tcg2PhysicalPresenceLibQemu:DxeTcg2PhysicalPresenceLib.obj
+ 0004:000002ec       $unwind$QemuTpmInitPPI     0000000000008ecc     Tcg2PhysicalPresenceLibQemu:DxeTcg2PhysicalPresenceLib.obj
+ 0004:000002f4       $unwind$Tpm2SubmitCommand  0000000000008ed4     Tpm2DeviceLibTcg2:Tpm2DeviceLibTcg2.obj

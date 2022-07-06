@@ -1,0 +1,143 @@
+ Timer
+
+ Timestamp is 62b57333 (Fri Jun 24 16:17:55 2022)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 000000e0H .text                   CODE
+ 0001:000000e0 000016feH .text$mn                CODE
+ 0002:00000000 000009e0H .rdata                  DATA
+ 0002:000009e0 00000034H .rdata$voltmd           DATA
+ 0002:00000a14 00000130H .rdata$zzzdbg           DATA
+ 0003:00000000 00000050H .data                   DATA
+ 0003:00000050 00000048H .bss                    DATA
+ 0004:00000000 000000a8H .pdata                  DATA
+ 0005:00000000 00000090H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __guard_longjmp_table      0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points_count 0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_count         0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map_count    0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table   0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_table          0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_count          0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_count      0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points 0000000000000000     <absolute>
+ 0000:00000000       __dynamic_value_reloc_table 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_native_entrypoint 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat     0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat_copy 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map          0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table_size 0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_table      0000000000000000     <absolute>
+ 0000:00000000       __AbsoluteZero             0000000000000000     <absolute>
+ 0000:00000000       __guard_check_icall_a64n_fptr 0000000000000000     <absolute>
+ 0000:00000000       __guard_flags              0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_count      0000000000000000     <absolute>
+ 0000:00000000       __enclave_config           0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_table         0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata_count 0000000000000000     <absolute>
+ 0001:00000000       DisableInterrupts          00000000000002c0     BaseLib:DisableInterrupts.obj
+ 0001:00000010       InternalMemSetMem          00000000000002d0     BaseMemoryLibRepStr:SetMem.obj
+ 0001:00000030       InternalMemSetMem64        00000000000002f0     BaseMemoryLibRepStr:SetMem64.obj
+ 0001:00000050       InternalMemSetMem32        0000000000000310     BaseMemoryLibRepStr:SetMem32.obj
+ 0001:00000070       CpuPause                   0000000000000330     BaseLib:CpuPause.obj
+ 0001:00000080       InternalMemCopyMem         0000000000000340     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:000000c0       InternalMemZeroMem         0000000000000380     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:000000e0       _ModuleEntryPoint          00000000000003a0 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:000001ac       TimerInterruptHandler      000000000000046c f   Timer:Timer.obj
+ 0001:00000204       TimerDriverRegisterHandler 00000000000004c4 f   Timer:Timer.obj
+ 0001:0000023c       TimerDriverSetTimerPeriod  00000000000004fc f   Timer:Timer.obj
+ 0001:000002f0       TimerDriverGetTimerPeriod  00000000000005b0 f   Timer:Timer.obj
+ 0001:00000310       TimerDriverGenerateSoftInterrupt 00000000000005d0 f   Timer:Timer.obj
+ 0001:000003b8       TimerDriverInitialize      0000000000000678 f   Timer:Timer.obj
+ 0001:000005d4       DebugPrint                 0000000000000894 f   BaseDebugLibSerialPort:DebugLib.obj
+ 0001:000005f8       DebugPrintMarker           00000000000008b8 f   BaseDebugLibSerialPort:DebugLib.obj
+ 0001:000006a8       DebugAssert                0000000000000968 f   BaseDebugLibSerialPort:DebugLib.obj
+ 0001:00000720       AsciiStrLen                00000000000009e0 f   BaseLib:String.obj
+ 0001:0000078c       StrnLenS                   0000000000000a4c f   BaseLib:SafeString.obj
+ 0001:000007e4       AsciiSPrint                0000000000000aa4 f   BasePrintLib:PrintLib.obj
+ 0001:00000810       BasePrintLibFillBuffer     0000000000000ad0 f   BasePrintLib:PrintLibInternal.obj
+ 0001:00000844       BasePrintLibValueToString  0000000000000b04 f   BasePrintLib:PrintLibInternal.obj
+ 0001:000008b0       BasePrintLibSPrintMarker   0000000000000b70 f   BasePrintLib:PrintLibInternal.obj
+ 0001:000017bc       BasePrintLibSPrint         0000000000001a7c f   BasePrintLib:PrintLibInternal.obj
+ 0002:00000000       ??_C@_0CB@DMEJJJHA@?6ASSERT_EFI_ERROR?5?$CIStatus?5?$DN?5?$CFr?$CJ@ 0000000000001aa0     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0002:00000028       ??_C@_0CH@BBNBJKHK@?$CB?$CI?$CI?$CIINTN?$CJ?$CIRETURN_STATUS?$CJ?$CIStatus@ 0000000000001ac8     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0002:00000050       ??_C@_05NHFJDMOA@Timer@    0000000000001af0     Timer:AutoGen.obj
+ 0002:00000058       ??_C@_0CK@DCMFKKIE@d?3?2edk2?2edk2?2OvmfPkg?28254TimerD@ 0000000000001af8     Timer:Timer.obj
+ 0002:00000088       ??_C@_0DJ@DOGKFEC@?$CGgEfiTimerArchProtocolGuid?5alre@ 0000000000001b28     Timer:Timer.obj
+ 0002:000000c8       ??_C@_0N@KGHEHMDL@Divisor?5?$CB?$DN?50@ 0000000000001b68     BaseLib:DivU64x32.obj
+ 0002:000000d8       ??_C@_0BH@LKMBFCBF@Format?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000001b78     BaseDebugLibSerialPort:DebugLib.obj
+ 0002:000000f0       ??_C@_0DO@CKBIDOOL@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 0000000000001b90     BaseDebugLibSerialPort:DebugLib.obj
+ 0002:00000130       ??_C@_0BI@NOCKJDBJ@ASSERT?5?$FL?$CFa?$FN?5?$CFa?$CI?$CFd?$CJ?3?5?$CFa?6@ 0000000000001bd0     BaseDebugLibSerialPort:DebugLib.obj
+ 0002:00000148       ??_C@_0BH@IACGKAP@Buffer?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000001be8     BaseDebugLibSerialPort:DebugLib.obj
+ 0002:00000160       ??_C@_0BN@COECPDCC@gImageHandle?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000001c00     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000180       ??_C@_0FA@FOIHGFBE@d?3?2edk2?2edk2?2MdePkg?2Library?2Uef@ 0000000000001c20     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000001d0       ??_C@_0BE@DGNHAHIL@gST?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000001c70     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000001e8       ??_C@_0BE@BDFJLGLN@gBS?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000001c88     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000200       ??_C@_0BH@MAAHKCPC@String?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000001ca0     BaseLib:String.obj
+ 0002:00000218       ??_C@_0CN@LHBFELAO@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 0000000000001cb8     BaseLib:String.obj
+ 0002:00000248       ??_C@_0CC@GFNLNIOC@?$CI?$CIUINTN?$CJString?5?$CG?50x00000001?$CJ?5?$DN?$DN@ 0000000000001ce8     BaseLib:String.obj
+ 0002:00000270       ??_C@_0DI@MDIKFADO@Length?5?$DM?5_gPcd_FixedAtBuild_Pcd@ 0000000000001d10     BaseLib:String.obj
+ 0002:000002a8       ??_C@_0DB@PKFMPMPC@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 0000000000001d48     BaseLib:SafeString.obj
+ 0002:000002e0       ??_C@_0BJ@CNKJJNE@?$CIBuffer?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ@ 0000000000001d80     BaseLib:SafeString.obj
+ 0002:00000300       ??_C@_0DM@OAJIKNNG@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 0000000000001da0     BasePrintLib:PrintLibInternal.obj
+ 0002:00000340       ??_C@_0EB@HDGIDCIO@?$CIBufferSize?5?$DM?$DN?5?$CI_gPcd_FixedAtBu@ 0000000000001de0     BasePrintLib:PrintLibInternal.obj
+ 0002:00000388       ??_C@_0BJ@PPAKKDJG@?$CIFormat?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ@ 0000000000001e28     BasePrintLib:PrintLibInternal.obj
+ 0002:000003b0       ??_C@_0ED@LPDDCECB@?$CIBufferSize?5?$DM?$DN?5?$CI_gPcd_FixedAtBu@ 0000000000001e50     BasePrintLib:PrintLibInternal.obj
+ 0002:00000400       ??_C@_0IM@BFJJFLGB@?$CIStrnLenS?5?$CI?$CICHAR16?5?$CK?$CJFormat?0?5?$CI_@ 0000000000001ea0     BasePrintLib:PrintLibInternal.obj
+ 0002:00000490       ??_C@_0ID@PLGJGION@?$CIAsciiStrnLenS?5?$CIFormat?0?5?$CI_gPcd_@ 0000000000001f30     BasePrintLib:PrintLibInternal.obj
+ 0002:00000518       ??_C@_0O@MLOLIMFM@?$DMnull?5string?$DO@ 0000000000001fb8     BasePrintLib:PrintLibInternal.obj
+ 0002:00000528       ??_C@_0M@BJJDNPHK@?$DMnull?5guid?$DO@ 0000000000001fc8     BasePrintLib:PrintLibInternal.obj
+ 0002:00000538       ??_C@_0DB@PMLHLBMO@?$CF08x?9?$CF04x?9?$CF04x?9?$CF02x?$CF02x?9?$CF02x?$CF02@ 0000000000001fd8     BasePrintLib:PrintLibInternal.obj
+ 0002:00000570       ??_C@_0M@LHGBCIKM@?$DMnull?5time?$DO@ 0000000000002010     BasePrintLib:PrintLibInternal.obj
+ 0002:00000580       ??_C@_0BK@FCPKCIDD@?$CF02d?1?$CF02d?1?$CF04d?5?5?$CF02d?3?$CF02d@ 0000000000002020     BasePrintLib:PrintLibInternal.obj
+ 0002:0000059c       ??_C@_04JIMNDDED@?$CF08X@  000000000000203c     BasePrintLib:PrintLibInternal.obj
+ 0002:000005a4       ??_C@_02PCIJFNDE@?$AN?6@   0000000000002044     BasePrintLib:PrintLibInternal.obj
+ 0002:000005a8       ??_C@_01LIIJDEN@?$AN@      0000000000002048     BasePrintLib:PrintLibInternal.obj
+ 0002:000005b0       mWarningString             0000000000002050     BasePrintLib:PrintLibInternal.obj
+ 0002:00000650       mErrorString               00000000000020f0     BasePrintLib:PrintLibInternal.obj
+ 0002:00000910       mHexStr                    00000000000023b0     BasePrintLib:PrintLibInternal.obj
+ 0002:00000920       ??_C@_0DA@BDDONMJM@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 00000000000023c0     BaseLib:Unaligned.obj
+ 0002:00000950       ??_C@_0DJ@FHIMIJAH@d?3?2edk2?2edk2?2MdePkg?2Library?2Bas@ 00000000000023f0     BaseLib:DivU64x32Remainder.obj
+ 0002:000009e0       __volatile_metadata        0000000000002480     <linker-defined>
+ 0003:00000000       gEfiLegacy8259ProtocolGuid 0000000000002600     Timer:AutoGen.obj
+ 0003:00000010       gEfiCpuArchProtocolGuid    0000000000002610     Timer:AutoGen.obj
+ 0003:00000020       gEfiTimerArchProtocolGuid  0000000000002620     Timer:AutoGen.obj
+ 0003:00000030       mTimer                     0000000000002630     Timer:Timer.obj
+ 0003:00000050       mTimerHandle               0000000000002650     Timer:Timer.obj
+ 0003:00000058       mTimerPeriod               0000000000002658     Timer:Timer.obj
+ 0003:00000060       gST                        0000000000002660     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0003:00000068       gBS                        0000000000002668     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0003:00000070       gImageHandle               0000000000002670     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0003:00000078       gParity                    0000000000002678     PcAtSerialPortLib:SerialPortLib.obj
+ 0003:00000079       gBreakSet                  0000000000002679     PcAtSerialPortLib:SerialPortLib.obj
+ 0003:00000080       mTimerNotifyFunction       0000000000002680     <common>
+ 0003:00000088       mLegacy8259                0000000000002688     <common>
+ 0003:00000090       mCpu                       0000000000002690     <common>
+
+ entry point at        0001:000000e0
+
+ Static symbols
+
+ 0001:0000009a       InternalMemCopyMem.0       000000000000035a     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:000000aa       @CopyBackward              000000000000036a     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:000000b3       @CopyBytes                 0000000000000373     BaseMemoryLibRepStr:CopyMem.obj
+ 0005:00000000       $unwind$StrnLenS           0000000000002760     BaseLib:SafeString.obj
+ 0005:00000000       $unwind$_ModuleEntryPoint  0000000000002760     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0005:00000000       $unwind$TimerInterruptHandler 0000000000002760     Timer:Timer.obj
+ 0005:00000008       $unwind$BasePrintLibValueToString 0000000000002768     BasePrintLib:PrintLibInternal.obj
+ 0005:00000008       $unwind$TimerDriverSetTimerPeriod 0000000000002768     Timer:Timer.obj
+ 0005:00000018       $unwind$TimerDriverGenerateSoftInterrupt 0000000000002778     Timer:Timer.obj
+ 0005:00000020       $unwind$TimerDriverInitialize 0000000000002780     Timer:Timer.obj
+ 0005:00000034       $unwind$DebugPrint         0000000000002794     BaseDebugLibSerialPort:DebugLib.obj
+ 0005:0000003c       $unwind$DebugPrintMarker   000000000000279c     BaseDebugLibSerialPort:DebugLib.obj
+ 0005:00000050       $unwind$DebugAssert        00000000000027b0     BaseDebugLibSerialPort:DebugLib.obj
+ 0005:00000058       $unwind$AsciiStrLen        00000000000027b8     BaseLib:String.obj
+ 0005:00000064       $unwind$AsciiSPrint        00000000000027c4     BasePrintLib:PrintLib.obj
+ 0005:0000006c       $unwind$BasePrintLibSPrintMarker 00000000000027cc     BasePrintLib:PrintLibInternal.obj
+ 0005:00000088       $unwind$BasePrintLibSPrint 00000000000027e8     BasePrintLib:PrintLibInternal.obj

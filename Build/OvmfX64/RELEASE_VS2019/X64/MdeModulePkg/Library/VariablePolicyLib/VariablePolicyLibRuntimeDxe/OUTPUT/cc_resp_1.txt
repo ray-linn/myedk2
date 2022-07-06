@@ -1,0 +1,1 @@
+  d:\edk2\edk2\MdeModulePkg\Library\VariablePolicyLib\VariablePolicyLib.c d:\edk2\edk2\MdeModulePkg\Library\VariablePolicyLib\VariablePolicyExtraInitRuntimeDxe.c

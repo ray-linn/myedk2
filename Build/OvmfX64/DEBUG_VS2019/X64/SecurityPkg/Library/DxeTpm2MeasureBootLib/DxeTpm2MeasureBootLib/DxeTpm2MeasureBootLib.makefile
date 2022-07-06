@@ -1,0 +1,1 @@
+d:\edk2\edk2\Build\OvmfX64\DEBUG_VS2019\X64\SecurityPkg\Library\DxeTpm2MeasureBootLib\DxeTpm2MeasureBootLib\Makefile

@@ -1,0 +1,78 @@
+ Metronome
+
+ Timestamp is 61ee703e (Mon Jan 24 17:24:14 2022)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000074H .text                   CODE
+ 0001:00000074 00000249H .text$mn                CODE
+ 0002:00000000 00000030H .data                   DATA
+ 0002:00000030 00000020H .rdata                  DATA
+ 0002:00000050 00000028H .bss                    DATA
+ 0002:00000078 00000024H .rdata$voltmd           DATA
+ 0002:0000009c 000000a8H .rdata$zzzdbg           DATA
+ 0003:00000000 00000048H .pdata                  DATA
+ 0004:00000000 00000028H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __hybrid_code_map_count    0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points 0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_table      0000000000000000     <absolute>
+ 0000:00000000       __arm64x_native_entrypoint 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table   0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_table      0000000000000000     <absolute>
+ 0000:00000000       __enclave_config           0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata_count 0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points_count 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata 0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_table         0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_table          0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_count         0000000000000000     <absolute>
+ 0000:00000000       __guard_check_icall_a64n_fptr 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map          0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_count          0000000000000000     <absolute>
+ 0000:00000000       __AbsoluteZero             0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_count      0000000000000000     <absolute>
+ 0000:00000000       __guard_flags              0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_count      0000000000000000     <absolute>
+ 0000:00000000       __dynamic_value_reloc_table 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat     0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table_size 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat_copy 0000000000000000     <absolute>
+ 0001:00000000       CpuPause                   0000000000000280     BaseLib:CpuPause.obj
+ 0001:00000010       InternalMemCopyMem         0000000000000290     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000050       EnableInterrupts           00000000000002d0     BaseLib:EnableInterrupts.obj
+ 0001:00000060       DisableInterrupts          00000000000002e0     BaseLib:DisableInterrupts.obj
+ 0001:00000070       AsmReadEflags              00000000000002f0     BaseLib:ReadEflags.obj
+ 0001:00000074       _ModuleEntryPoint          00000000000002f4 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:00000134       WaitForTick                00000000000003b4 f   Metronome:Metronome.obj
+ 0001:0000019c       InternalAcpiDelay          000000000000041c f   DxeAcpiTimerLib:AcpiTimerLib.obj
+ 0001:000001fc       GetPcdProtocol             000000000000047c f   DxePcdLib:DxePcdLib.obj
+ 0001:00000238       PciCf8Read32               00000000000004b8 f   BasePciCf8Lib:PciCf8Lib.obj
+ 0001:0000029c       SaveAndDisableInterrupts   000000000000051c f   BaseLib:Cpu.obj
+ 0002:00000000       gPcdProtocolGuid           0000000000000540     Metronome:AutoGen.obj
+ 0002:00000010       gEfiMetronomeArchProtocolGuid 0000000000000550     Metronome:AutoGen.obj
+ 0002:00000020       mMetronome                 0000000000000560     Metronome:Metronome.obj
+ 0002:00000050       mMetronomeHandle           0000000000000590     Metronome:Metronome.obj
+ 0002:00000058       gST                        0000000000000598     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000060       gBS                        00000000000005a0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000068       mPcd                       00000000000005a8     DxePcdLib:DxePcdLib.obj
+ 0002:00000078       __volatile_metadata        00000000000005b8     <linker-defined>
+
+ entry point at        0001:00000074
+
+ Static symbols
+
+ 0001:0000002a       InternalMemCopyMem.0       00000000000002aa     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:0000003a       @CopyBackward              00000000000002ba     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000043       @CopyBytes                 00000000000002c3     BaseMemoryLibRepStr:CopyMem.obj
+ 0002:00000070       mRunningOnQ35              00000000000005b0     DxePciLibI440FxQ35:PciLib.obj
+ 0002:00000074       mAcpiTimerIoAddr           00000000000005b4     DxeAcpiTimerLib:DxeAcpiTimerLib.obj
+ 0004:00000000       $unwind$_ModuleEntryPoint  0000000000000700     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0004:00000008       $unwind$WaitForTick        0000000000000708     Metronome:Metronome.obj
+ 0004:00000008       $unwind$GetPcdProtocol     0000000000000708     DxePcdLib:DxePcdLib.obj
+ 0004:00000010       $unwind$InternalAcpiDelay  0000000000000710     DxeAcpiTimerLib:AcpiTimerLib.obj
+ 0004:00000020       $unwind$SaveAndDisableInterrupts 0000000000000720     BaseLib:Cpu.obj
+ 0004:00000020       $unwind$PciCf8Read32       0000000000000720     BasePciCf8Lib:PciCf8Lib.obj

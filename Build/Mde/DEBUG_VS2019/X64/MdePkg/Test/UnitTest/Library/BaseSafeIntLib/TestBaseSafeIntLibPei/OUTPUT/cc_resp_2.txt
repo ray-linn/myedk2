@@ -1,0 +1,1 @@
+  d:\edk2\edk2\Build\Mde\DEBUG_VS2019\X64\MdePkg\Test\UnitTest\Library\BaseSafeIntLib\TestBaseSafeIntLibPei\DEBUG\AutoGen.c d:\edk2\edk2\MdePkg\Test\UnitTest\Library\BaseSafeIntLib\SafeIntLibUintnIntnUnitTests64.c d:\edk2\edk2\MdePkg\Test\UnitTest\Library\BaseSafeIntLib\TestBaseSafeIntLib.c

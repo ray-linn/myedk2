@@ -1,0 +1,644 @@
+ DevicePathDxe
+
+ Timestamp is 61ee700a (Mon Jan 24 17:23:22 2022)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000060H .text                   CODE
+ 0001:00000060 00006aa6H .text$mn                CODE
+ 0002:00000000 00000650H .data                   DATA
+ 0002:00000650 00002020H .rdata                  DATA
+ 0002:00002670 00000010H .bss                    DATA
+ 0002:00002680 00000020H .rdata$voltmd           DATA
+ 0002:000026a0 000000a8H .rdata$zzzdbg           DATA
+ 0003:00000000 00000660H .pdata                  DATA
+ 0004:00000000 00000390H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __dynamic_value_reloc_table 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata 0000000000000000     <absolute>
+ 0000:00000000       __AbsoluteZero             0000000000000000     <absolute>
+ 0000:00000000       __guard_check_icall_a64n_fptr 0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points_count 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table   0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_count      0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_count          0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat_copy 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat     0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_count         0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_table         0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_table          0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points 0000000000000000     <absolute>
+ 0000:00000000       __guard_flags              0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table_size 0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_count      0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata_count 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map_count    0000000000000000     <absolute>
+ 0000:00000000       __enclave_config           0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_table      0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_table      0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map          0000000000000000     <absolute>
+ 0000:00000000       __arm64x_native_entrypoint 0000000000000000     <absolute>
+ 0000:00000000       __ImageBase                0000000000000000     <linker-defined>
+ 0001:00000000       InternalMemCopyMem         0000000000000280     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000040       InternalMemZeroMem         00000000000002c0     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00000060       _ModuleEntryPoint          00000000000002e0 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:000000cc       GetDevicePathSize          000000000000034c f   UefiDevicePathLib:UefiDevicePathLib.obj
+ 0001:0000011c       DuplicateDevicePath        000000000000039c f   UefiDevicePathLib:UefiDevicePathLib.obj
+ 0001:00000144       AppendDevicePath           00000000000003c4 f   UefiDevicePathLib:UefiDevicePathLib.obj
+ 0001:00000220       AppendDevicePathNode       00000000000004a0 f   UefiDevicePathLib:UefiDevicePathLib.obj
+ 0001:000002e8       AppendDevicePathInstance   0000000000000568 f   UefiDevicePathLib:UefiDevicePathLib.obj
+ 0001:000003e8       GetNextDevicePathInstance  0000000000000668 f   UefiDevicePathLib:UefiDevicePathLib.obj
+ 0001:0000047c       CreateDeviceNode           00000000000006fc f   UefiDevicePathLib:UefiDevicePathLib.obj
+ 0001:000004f8       IsDevicePathMultiInstance  0000000000000778 f   UefiDevicePathLib:UefiDevicePathLib.obj
+ 0001:00000538       ConvertDeviceNodeToText    00000000000007b8 f   UefiDevicePathLib:UefiDevicePathLib.obj
+ 0001:000005d8       ConvertDevicePathToText    0000000000000858 f   UefiDevicePathLib:UefiDevicePathLib.obj
+ 0001:00000724       ConvertTextToDeviceNode    00000000000009a4 f   UefiDevicePathLib:UefiDevicePathLib.obj
+ 0001:0000072c       ConvertTextToDevicePath    00000000000009ac f   UefiDevicePathLib:UefiDevicePathLib.obj
+ 0001:00000734       IsDevicePathValid          00000000000009b4 f   UefiDevicePathLib:DevicePathUtilities.obj
+ 0001:00000790       GetNextParamStr            0000000000000a10 f   UefiDevicePathLib:DevicePathFromText.obj
+ 0001:000007c8       IsHexStr                   0000000000000a48 f   UefiDevicePathLib:DevicePathFromText.obj
+ 0001:0000081c       Strtoi                     0000000000000a9c f   UefiDevicePathLib:DevicePathFromText.obj
+ 0001:0000084c       Strtoi64                   0000000000000acc f   UefiDevicePathLib:DevicePathFromText.obj
+ 0001:00000914       DevPathFromTextGenericPath 0000000000000b94 f   UefiDevicePathLib:DevicePathFromText.obj
+ 0001:000009b0       DevPathFromTextPath        0000000000000c30 f   UefiDevicePathLib:DevicePathFromText.obj
+ 0001:000009dc       DevPathFromTextHardwarePath 0000000000000c5c f   UefiDevicePathLib:DevicePathFromText.obj
+ 0001:000009e8       DevPathFromTextPci         0000000000000c68 f   UefiDevicePathLib:DevicePathFromText.obj
+ 0001:00000a50       DevPathFromTextPcCard      0000000000000cd0 f   UefiDevicePathLib:DevicePathFromText.obj
+ 0001:00000a98       DevPathFromTextMemoryMapped 0000000000000d18 f   UefiDevicePathLib:DevicePathFromText.obj
+ 0001:00000b24       ConvertFromTextVendor      0000000000000da4 f   UefiDevicePathLib:DevicePathFromText.obj
+ 0001:00000bc4       DevPathFromTextVenHw       0000000000000e44 f   UefiDevicePathLib:DevicePathFromText.obj
+ 0001:00000bd0       DevPathFromTextCtrl        0000000000000e50 f   UefiDevicePathLib:DevicePathFromText.obj
+ 0001:00000c18       DevPathFromTextBmc         0000000000000e98 f   UefiDevicePathLib:DevicePathFromText.obj
+ 0001:00000c84       DevPathFromTextAcpiPath    0000000000000f04 f   UefiDevicePathLib:DevicePathFromText.obj
+ 0001:00000c90       EisaIdFromText             0000000000000f10 f   UefiDevicePathLib:DevicePathFromText.obj
+ 0001:00000cd8       DevPathFromTextAcpi        0000000000000f58 f   UefiDevicePathLib:DevicePathFromText.obj
+ 0001:00000d40       ConvertFromTextAcpi        0000000000000fc0 f   UefiDevicePathLib:DevicePathFromText.obj
+ 0001:00000da0       DevPathFromTextPciRoot     0000000000001020 f   UefiDevicePathLib:DevicePathFromText.obj
+ 0001:00000dac       DevPathFromTextPcieRoot    000000000000102c f   UefiDevicePathLib:DevicePathFromText.obj
+ 0001:00000db8       DevPathFromTextFloppy      0000000000001038 f   UefiDevicePathLib:DevicePathFromText.obj
+ 0001:00000dc4       DevPathFromTextKeyboard    0000000000001044 f   UefiDevicePathLib:DevicePathFromText.obj
+ 0001:00000dd0       DevPathFromTextSerial      0000000000001050 f   UefiDevicePathLib:DevicePathFromText.obj
+ 0001:00000ddc       DevPathFromTextParallelPort 000000000000105c f   UefiDevicePathLib:DevicePathFromText.obj
+ 0001:00000de8       DevPathFromTextAcpiEx      0000000000001068 f   UefiDevicePathLib:DevicePathFromText.obj
+ 0001:00000f44       DevPathFromTextAcpiExp     00000000000011c4 f   UefiDevicePathLib:DevicePathFromText.obj
+ 0001:00001010       DevPathFromTextAcpiAdr     0000000000001290 f   UefiDevicePathLib:DevicePathFromText.obj
+ 0001:0000109c       DevPathFromTextMsg         000000000000131c f   UefiDevicePathLib:DevicePathFromText.obj
+ 0001:000010a8       DevPathFromTextAta         0000000000001328 f   UefiDevicePathLib:DevicePathFromText.obj
+ 0001:00001194       DevPathFromTextScsi        0000000000001414 f   UefiDevicePathLib:DevicePathFromText.obj
+ 0001:00001200       DevPathFromTextFibre       0000000000001480 f   UefiDevicePathLib:DevicePathFromText.obj
+ 0001:00001270       DevPathFromTextFibreEx     00000000000014f0 f   UefiDevicePathLib:DevicePathFromText.obj
+ 0001:00001388       DevPathFromText1394        0000000000001608 f   UefiDevicePathLib:DevicePathFromText.obj
+ 0001:000013d4       DevPathFromTextUsb         0000000000001654 f   UefiDevicePathLib:DevicePathFromText.obj
+ 0001:0000143c       DevPathFromTextI2O         00000000000016bc f   UefiDevicePathLib:DevicePathFromText.obj
+ 0001:00001484       DevPathFromTextInfiniband  0000000000001704 f   UefiDevicePathLib:DevicePathFromText.obj
+ 0001:0000154c       DevPathFromTextVenMsg      00000000000017cc f   UefiDevicePathLib:DevicePathFromText.obj
+ 0001:00001558       DevPathFromTextVenPcAnsi   00000000000017d8 f   UefiDevicePathLib:DevicePathFromText.obj
+ 0001:00001588       DevPathFromTextVenVt100    0000000000001808 f   UefiDevicePathLib:DevicePathFromText.obj
+ 0001:000015b8       DevPathFromTextVenVt100Plus 0000000000001838 f   UefiDevicePathLib:DevicePathFromText.obj
+ 0001:000015e8       DevPathFromTextVenUtf8     0000000000001868 f   UefiDevicePathLib:DevicePathFromText.obj
+ 0001:00001618       DevPathFromTextUartFlowCtrl 0000000000001898 f   UefiDevicePathLib:DevicePathFromText.obj
+ 0001:0000169c       DevPathFromTextSAS         000000000000191c f   UefiDevicePathLib:DevicePathFromText.obj
+ 0001:000018bc       DevPathFromTextSasEx       0000000000001b3c f   UefiDevicePathLib:DevicePathFromText.obj
+ 0001:00001b40       DevPathFromTextNVMe        0000000000001dc0 f   UefiDevicePathLib:DevicePathFromText.obj
+ 0001:00001be0       DevPathFromTextUfs         0000000000001e60 f   UefiDevicePathLib:DevicePathFromText.obj
+ 0001:00001c48       DevPathFromTextSd          0000000000001ec8 f   UefiDevicePathLib:DevicePathFromText.obj
+ 0001:00001c90       DevPathFromTextEmmc        0000000000001f10 f   UefiDevicePathLib:DevicePathFromText.obj
+ 0001:00001cd8       DevPathFromTextDebugPort   0000000000001f58 f   UefiDevicePathLib:DevicePathFromText.obj
+ 0001:00001d08       DevPathFromTextMAC         0000000000001f88 f   UefiDevicePathLib:DevicePathFromText.obj
+ 0001:00001d84       NetworkProtocolFromText    0000000000002004 f   UefiDevicePathLib:DevicePathFromText.obj
+ 0001:00001dd0       DevPathFromTextIPv4        0000000000002050 f   UefiDevicePathLib:DevicePathFromText.obj
+ 0001:00001eec       DevPathFromTextIPv6        000000000000216c f   UefiDevicePathLib:DevicePathFromText.obj
+ 0001:00002014       DevPathFromTextUart        0000000000002294 f   UefiDevicePathLib:DevicePathFromText.obj
+ 0001:00002194       ConvertFromTextUsbClass    0000000000002414 f   UefiDevicePathLib:DevicePathFromText.obj
+ 0001:000022ac       DevPathFromTextUsbClass    000000000000252c f   UefiDevicePathLib:DevicePathFromText.obj
+ 0001:000022cc       DevPathFromTextUsbAudio    000000000000254c f   UefiDevicePathLib:DevicePathFromText.obj
+ 0001:000022ec       DevPathFromTextUsbCDCControl 000000000000256c f   UefiDevicePathLib:DevicePathFromText.obj
+ 0001:0000230c       DevPathFromTextUsbHID      000000000000258c f   UefiDevicePathLib:DevicePathFromText.obj
+ 0001:0000232c       DevPathFromTextUsbImage    00000000000025ac f   UefiDevicePathLib:DevicePathFromText.obj
+ 0001:0000234c       DevPathFromTextUsbPrinter  00000000000025cc f   UefiDevicePathLib:DevicePathFromText.obj
+ 0001:0000236c       DevPathFromTextUsbMassStorage 00000000000025ec f   UefiDevicePathLib:DevicePathFromText.obj
+ 0001:0000238c       DevPathFromTextUsbHub      000000000000260c f   UefiDevicePathLib:DevicePathFromText.obj
+ 0001:000023ac       DevPathFromTextUsbCDCData  000000000000262c f   UefiDevicePathLib:DevicePathFromText.obj
+ 0001:000023cc       DevPathFromTextUsbSmartCard 000000000000264c f   UefiDevicePathLib:DevicePathFromText.obj
+ 0001:000023ec       DevPathFromTextUsbVideo    000000000000266c f   UefiDevicePathLib:DevicePathFromText.obj
+ 0001:0000240c       DevPathFromTextUsbDiagnostic 000000000000268c f   UefiDevicePathLib:DevicePathFromText.obj
+ 0001:0000242c       DevPathFromTextUsbWireless 00000000000026ac f   UefiDevicePathLib:DevicePathFromText.obj
+ 0001:0000244c       DevPathFromTextUsbDeviceFirmwareUpdate 00000000000026cc f   UefiDevicePathLib:DevicePathFromText.obj
+ 0001:00002468       DevPathFromTextUsbIrdaBridge 00000000000026e8 f   UefiDevicePathLib:DevicePathFromText.obj
+ 0001:00002484       DevPathFromTextUsbTestAndMeasurement 0000000000002704 f   UefiDevicePathLib:DevicePathFromText.obj
+ 0001:000024a0       DevPathFromTextUsbWwid     0000000000002720 f   UefiDevicePathLib:DevicePathFromText.obj
+ 0001:00002598       DevPathFromTextUnit        0000000000002818 f   UefiDevicePathLib:DevicePathFromText.obj
+ 0001:000025e0       DevPathFromTextiSCSI       0000000000002860 f   UefiDevicePathLib:DevicePathFromText.obj
+ 0001:000027d0       DevPathFromTextVlan        0000000000002a50 f   UefiDevicePathLib:DevicePathFromText.obj
+ 0001:00002818       DevPathFromTextBluetooth   0000000000002a98 f   UefiDevicePathLib:DevicePathFromText.obj
+ 0001:0000286c       DevPathFromTextWiFi        0000000000002aec f   UefiDevicePathLib:DevicePathFromText.obj
+ 0001:00002994       DevPathFromTextBluetoothLE 0000000000002c14 f   UefiDevicePathLib:DevicePathFromText.obj
+ 0001:00002a08       DevPathFromTextDns         0000000000002c88 f   UefiDevicePathLib:DevicePathFromText.obj
+ 0001:00002b10       DevPathFromTextUri         0000000000002d90 f   UefiDevicePathLib:DevicePathFromText.obj
+ 0001:00002b88       DevPathFromTextMediaPath   0000000000002e08 f   UefiDevicePathLib:DevicePathFromText.obj
+ 0001:00002b94       DevPathFromTextHD          0000000000002e14 f   UefiDevicePathLib:DevicePathFromText.obj
+ 0001:00002cc0       DevPathFromTextCDROM       0000000000002f40 f   UefiDevicePathLib:DevicePathFromText.obj
+ 0001:00002d4c       DevPathFromTextVenMedia    0000000000002fcc f   UefiDevicePathLib:DevicePathFromText.obj
+ 0001:00002d58       DevPathFromTextFilePath    0000000000002fd8 f   UefiDevicePathLib:DevicePathFromText.obj
+ 0001:00002e24       DevPathFromTextMedia       00000000000030a4 f   UefiDevicePathLib:DevicePathFromText.obj
+ 0001:00002e6c       DevPathFromTextFv          00000000000030ec f   UefiDevicePathLib:DevicePathFromText.obj
+ 0001:00002eb4       DevPathFromTextFvFile      0000000000003134 f   UefiDevicePathLib:DevicePathFromText.obj
+ 0001:00002efc       DevPathFromTextRelativeOffsetRange 000000000000317c f   UefiDevicePathLib:DevicePathFromText.obj
+ 0001:00002f68       DevPathFromTextRamDisk     00000000000031e8 f   UefiDevicePathLib:DevicePathFromText.obj
+ 0001:00003020       DevPathFromTextVirtualDisk 00000000000032a0 f   UefiDevicePathLib:DevicePathFromText.obj
+ 0001:000030c8       DevPathFromTextVirtualCd   0000000000003348 f   UefiDevicePathLib:DevicePathFromText.obj
+ 0001:00003170       DevPathFromTextPersistentVirtualDisk 00000000000033f0 f   UefiDevicePathLib:DevicePathFromText.obj
+ 0001:00003218       DevPathFromTextPersistentVirtualCd 0000000000003498 f   UefiDevicePathLib:DevicePathFromText.obj
+ 0001:000032c0       DevPathFromTextBbsPath     0000000000003540 f   UefiDevicePathLib:DevicePathFromText.obj
+ 0001:000032cc       DevPathFromTextBBS         000000000000354c f   UefiDevicePathLib:DevicePathFromText.obj
+ 0001:00003430       DevPathFromTextSata        00000000000036b0 f   UefiDevicePathLib:DevicePathFromText.obj
+ 0001:000034cc       UefiDevicePathLibConvertTextToDeviceNode 000000000000374c f   UefiDevicePathLib:DevicePathFromText.obj
+ 0001:00003658       UefiDevicePathLibConvertTextToDevicePath 00000000000038d8 f   UefiDevicePathLib:DevicePathFromText.obj
+ 0001:00003854       UefiDevicePathLibCatPrint  0000000000003ad4 f   UefiDevicePathLib:DevicePathToText.obj
+ 0001:00003908       DevPathToTextPci           0000000000003b88 f   UefiDevicePathLib:DevicePathToText.obj
+ 0001:00003920       DevPathToTextPccard        0000000000003ba0 f   UefiDevicePathLib:DevicePathToText.obj
+ 0001:00003934       DevPathToTextMemMap        0000000000003bb4 f   UefiDevicePathLib:DevicePathToText.obj
+ 0001:0000395c       DevPathToTextVendor        0000000000003bdc f   UefiDevicePathLib:DevicePathToText.obj
+ 0001:00003c6c       DevPathToTextController    0000000000003eec f   UefiDevicePathLib:DevicePathToText.obj
+ 0001:00003c7c       DevPathToTextBmc           0000000000003efc f   UefiDevicePathLib:DevicePathToText.obj
+ 0001:00003c94       DevPathToTextAcpi          0000000000003f14 f   UefiDevicePathLib:DevicePathToText.obj
+ 0001:00003d24       DevPathToTextAcpiEx        0000000000003fa4 f   UefiDevicePathLib:DevicePathToText.obj
+ 0001:00003f9c       DevPathToTextAcpiAdr       000000000000421c f   UefiDevicePathLib:DevicePathToText.obj
+ 0001:0000401c       DevPathToTextAtapi         000000000000429c f   UefiDevicePathLib:DevicePathToText.obj
+ 0001:00004080       DevPathToTextScsi          0000000000004300 f   UefiDevicePathLib:DevicePathToText.obj
+ 0001:00004098       DevPathToTextFibre         0000000000004318 f   UefiDevicePathLib:DevicePathToText.obj
+ 0001:000040ac       DevPathToTextFibreEx       000000000000432c f   UefiDevicePathLib:DevicePathToText.obj
+ 0001:00004144       DevPathToTextSasEx         00000000000043c4 f   UefiDevicePathLib:DevicePathToText.obj
+ 0001:000042b4       DevPathToTextNVMe          0000000000004534 f   UefiDevicePathLib:DevicePathToText.obj
+ 0001:00004328       DevPathToTextUfs           00000000000045a8 f   UefiDevicePathLib:DevicePathToText.obj
+ 0001:00004340       DevPathToTextSd            00000000000045c0 f   UefiDevicePathLib:DevicePathToText.obj
+ 0001:00004354       DevPathToTextEmmc          00000000000045d4 f   UefiDevicePathLib:DevicePathToText.obj
+ 0001:00004368       DevPathToText1394          00000000000045e8 f   UefiDevicePathLib:DevicePathToText.obj
+ 0001:00004378       DevPathToTextUsb           00000000000045f8 f   UefiDevicePathLib:DevicePathToText.obj
+ 0001:00004390       DevPathToTextUsbWWID       0000000000004610 f   UefiDevicePathLib:DevicePathToText.obj
+ 0001:00004420       DevPathToTextLogicalUnit   00000000000046a0 f   UefiDevicePathLib:DevicePathToText.obj
+ 0001:00004434       DevPathToTextUsbClass      00000000000046b4 f   UefiDevicePathLib:DevicePathToText.obj
+ 0001:000045e0       DevPathToTextSata          0000000000004860 f   UefiDevicePathLib:DevicePathToText.obj
+ 0001:00004608       DevPathToTextI2O           0000000000004888 f   UefiDevicePathLib:DevicePathToText.obj
+ 0001:00004618       DevPathToTextMacAddr       0000000000004898 f   UefiDevicePathLib:DevicePathToText.obj
+ 0001:00004694       CatIPv6Address             0000000000004914 f   UefiDevicePathLib:DevicePathToText.obj
+ 0001:00004780       DevPathToTextIPv4          0000000000004a00 f   UefiDevicePathLib:DevicePathToText.obj
+ 0001:00004900       DevPathToTextIPv6          0000000000004b80 f   UefiDevicePathLib:DevicePathToText.obj
+ 0001:00004a00       DevPathToTextInfiniBand    0000000000004c80 f   UefiDevicePathLib:DevicePathToText.obj
+ 0001:00004a38       DevPathToTextUart          0000000000004cb8 f   UefiDevicePathLib:DevicePathToText.obj
+ 0001:00004b5c       DevPathToTextiSCSI         0000000000004ddc f   UefiDevicePathLib:DevicePathToText.obj
+ 0001:00004c68       DevPathToTextVlan          0000000000004ee8 f   UefiDevicePathLib:DevicePathToText.obj
+ 0001:00004c7c       DevPathToTextBluetooth     0000000000004efc f   UefiDevicePathLib:DevicePathToText.obj
+ 0001:00004cc4       DevPathToTextWiFi          0000000000004f44 f   UefiDevicePathLib:DevicePathToText.obj
+ 0001:00004d0c       DevPathToTextBluetoothLE   0000000000004f8c f   UefiDevicePathLib:DevicePathToText.obj
+ 0001:00004d64       DevPathToTextDns           0000000000004fe4 f   UefiDevicePathLib:DevicePathToText.obj
+ 0001:00004e34       DevPathToTextUri           00000000000050b4 f   UefiDevicePathLib:DevicePathToText.obj
+ 0001:00004eb4       DevPathToTextHardDrive     0000000000005134 f   UefiDevicePathLib:DevicePathToText.obj
+ 0001:00004f3c       DevPathToTextCDROM         00000000000051bc f   UefiDevicePathLib:DevicePathToText.obj
+ 0001:00004f78       DevPathToTextFilePath      00000000000051f8 f   UefiDevicePathLib:DevicePathToText.obj
+ 0001:00004f88       DevPathToTextMediaProtocol 0000000000005208 f   UefiDevicePathLib:DevicePathToText.obj
+ 0001:00004f98       DevPathToTextFv            0000000000005218 f   UefiDevicePathLib:DevicePathToText.obj
+ 0001:00004fa8       DevPathToTextFvFile        0000000000005228 f   UefiDevicePathLib:DevicePathToText.obj
+ 0001:00004fb8       DevPathRelativeOffsetRange 0000000000005238 f   UefiDevicePathLib:DevicePathToText.obj
+ 0001:00004fcc       DevPathToTextRamDisk       000000000000524c f   UefiDevicePathLib:DevicePathToText.obj
+ 0001:00005124       DevPathToTextBBS           00000000000053a4 f   UefiDevicePathLib:DevicePathToText.obj
+ 0001:000051f8       DevPathToTextEndInstance   0000000000005478 f   UefiDevicePathLib:DevicePathToText.obj
+ 0001:00005204       DevPathToTextNodeGeneric   0000000000005484 f   UefiDevicePathLib:DevicePathToText.obj
+ 0001:000052d8       StrCmp                     0000000000005558 f   BaseLib:String.obj
+ 0001:00005310       InternalHexCharToUintn     0000000000005590 f   BaseLib:String.obj
+ 0001:00005340       StrHexToUint64             00000000000055c0 f   BaseLib:String.obj
+ 0001:00005428       StrnLenS                   00000000000056a8 f   BaseLib:SafeString.obj
+ 0001:0000545c       StrDecimalToUintnS         00000000000056dc f   BaseLib:SafeString.obj
+ 0001:00005554       StrHexToUintnS             00000000000057d4 f   BaseLib:SafeString.obj
+ 0001:0000567c       StrToIpv6Address           00000000000058fc f   BaseLib:SafeString.obj
+ 0001:000058a0       StrToIpv4Address           0000000000005b20 f   BaseLib:SafeString.obj
+ 0001:00005984       StrToGuid                  0000000000005c04 f   BaseLib:SafeString.obj
+ 0001:00005ab8       StrHexToBytes              0000000000005d38 f   BaseLib:SafeString.obj
+ 0001:00005b98       UnicodeSPrint              0000000000005e18 f   BasePrintLib:PrintLib.obj
+ 0001:00005bcc       BasePrintLibFillBuffer     0000000000005e4c f   BasePrintLib:PrintLibInternal.obj
+ 0001:00005c00       BasePrintLibSPrintMarker   0000000000005e80 f   BasePrintLib:PrintLibInternal.obj
+ 0001:000069e4       BasePrintLibSPrint         0000000000006c64 f   BasePrintLib:PrintLibInternal.obj
+ 0001:00006a08       InternalAllocatePool       0000000000006c88 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00006a38       InternalAllocateCopyPool   0000000000006cb8 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00006a78       InternalReallocatePool     0000000000006cf8 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0002:00000000       gEfiVirtualCdGuid          0000000000006da0     DevicePathDxe:AutoGen.obj
+ 0002:00000010       gEfiPersistentVirtualDiskGuid 0000000000006db0     DevicePathDxe:AutoGen.obj
+ 0002:00000020       gEfiVTUTF8Guid             0000000000006dc0     DevicePathDxe:AutoGen.obj
+ 0002:00000030       gEfiUartDevicePathGuid     0000000000006dd0     DevicePathDxe:AutoGen.obj
+ 0002:00000040       gEfiVT100Guid              0000000000006de0     DevicePathDxe:AutoGen.obj
+ 0002:00000050       gEfiDevicePathToTextProtocolGuid 0000000000006df0     DevicePathDxe:AutoGen.obj
+ 0002:00000060       gEfiDevicePathUtilitiesProtocolGuid 0000000000006e00     DevicePathDxe:AutoGen.obj
+ 0002:00000070       gEfiDevicePathFromTextProtocolGuid 0000000000006e10     DevicePathDxe:AutoGen.obj
+ 0002:00000080       gEfiVT100PlusGuid          0000000000006e20     DevicePathDxe:AutoGen.obj
+ 0002:00000090       gEfiDebugPortProtocolGuid  0000000000006e30     DevicePathDxe:AutoGen.obj
+ 0002:000000a0       gEfiVirtualDiskGuid        0000000000006e40     DevicePathDxe:AutoGen.obj
+ 0002:000000b0       gEfiSasDevicePathGuid      0000000000006e50     DevicePathDxe:AutoGen.obj
+ 0002:000000c0       gEfiPersistentVirtualCdGuid 0000000000006e60     DevicePathDxe:AutoGen.obj
+ 0002:000000d0       gEfiPcAnsiGuid             0000000000006e70     DevicePathDxe:AutoGen.obj
+ 0002:000000e0       mUefiDevicePathLibDevPathFromTextTable 0000000000006e80     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:00000650       mDevicePathToText          00000000000073f0     DevicePathDxe:DevicePath.obj
+ 0002:00000660       mDevicePathUtilities       0000000000007400     DevicePathDxe:DevicePath.obj
+ 0002:000006a0       mDevicePathFromText        0000000000007440     DevicePathDxe:DevicePath.obj
+ 0002:000006b0       mUefiDevicePathLibEndDevicePath 0000000000007450     UefiDevicePathLib:DevicePathUtilities.obj
+ 0002:000006c0       ??_C@_1BA@NGCDBIG@?$AAP?$AAr?$AAi?$AAm?$AAa?$AAr?$AAy@ 0000000000007460     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:000006d0       ??_C@_1BE@BGLPHBHD@?$AAS?$AAe?$AAc?$AAo?$AAn?$AAd?$AAa?$AAr?$AAy@ 0000000000007470     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:000006e8       ??_C@_1O@MHJLHGPK@?$AAM?$AAa?$AAs?$AAt?$AAe?$AAr@ 0000000000007488     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:000006f8       ??_C@_1M@MJNGBMFK@?$AAS?$AAl?$AAa?$AAv?$AAe@ 0000000000007498     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:00000710       ??_C@_1BA@NAMMFHHL@?$AAX?$AAo?$AAn?$AAX?$AAo?$AAf?$AAf@ 00000000000074b0     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:00000720       ??_C@_1BC@MAICEHGI@?$AAH?$AAa?$AAr?$AAd?$AAw?$AAa?$AAr?$AAe@ 00000000000074c0     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:00000740       ??_C@_1BG@FMODEGIG@?$AAN?$AAo?$AAT?$AAo?$AAp?$AAo?$AAl?$AAo?$AAg?$AAy@ 00000000000074e0     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:00000758       ??_C@_19BPNGBNAI@?$AAS?$AAA?$AAT?$AAA@ 00000000000074f8     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:00000768       ??_C@_17FMMIKNDG@?$AAS?$AAA?$AAS@ 0000000000007508     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:00000770       ??_C@_1BC@KMFBFJEN@?$AAE?$AAx?$AAt?$AAe?$AAr?$AAn?$AAa?$AAl@ 0000000000007510     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:00000790       ??_C@_1BC@FBOHHDN@?$AAI?$AAn?$AAt?$AAe?$AAr?$AAn?$AAa?$AAl@ 0000000000007530     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:000007b0       ??_C@_1BC@EEIMPKHO@?$AAE?$AAx?$AAp?$AAa?$AAn?$AAd?$AAe?$AAd@ 0000000000007550     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:000007c8       ??_C@_1O@MDCABJAO@?$AAD?$AAi?$AAr?$AAe?$AAc?$AAt@ 0000000000007568     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:000007d8       ??_C@_17NINPJKOM@?$AAU?$AAD?$AAP@ 0000000000007578     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:000007e0       ??_C@_17JHAKKMK@?$AAT?$AAC?$AAP@ 0000000000007580     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:000007e8       ??_C@_1O@ECDFCEKO@?$AAS?$AAt?$AAa?$AAt?$AAi?$AAc@ 0000000000007588     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:00000800       ??_C@_1CO@IJAKNKHD@?$AAS?$AAt?$AAa?$AAt?$AAe?$AAl?$AAe?$AAs?$AAs?$AAA?$AAu?$AAt?$AAo?$AAC?$AAo@ 00000000000075a0     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:00000830       ??_C@_1BA@KDAEEGIF@?$AAD?$AAE?$AAF?$AAA?$AAU?$AAL?$AAT@ 00000000000075d0     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:00000840       ??_C@_13MKMNOPIJ@?$AAD@    00000000000075e0     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:00000844       ??_C@_13JGCMLPCH@?$AA1@    00000000000075e4     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:00000848       ??_C@_17CJOJBPKA@?$AA1?$AA?4?$AA5@ 00000000000075e8     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:00000850       ??_C@_13IEJJBAMJ@?$AA2@    00000000000075f0     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:00000858       ??_C@_1O@HNAACJMJ@?$AAC?$AAR?$AAC?$AA3?$AA2?$AAC@ 00000000000075f8     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:00000868       ??_C@_19KLMLHLJG@?$AAN?$AAo?$AAn?$AAe@ 0000000000007608     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:00000880       ??_C@_1BC@PDNIOEEC@?$AAC?$AAH?$AAA?$AAP?$AA_?$AAU?$AAN?$AAI@ 0000000000007620     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:00000898       ??_C@_17LNBJLOE@?$AAM?$AAB?$AAR@ 0000000000007638     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:000008a0       ??_C@_17PBGEHLGA@?$AAG?$AAP?$AAT@ 0000000000007640     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:000008a8       ??_C@_1O@CLMODHEM@?$AAF?$AAl?$AAo?$AAp?$AAp?$AAy@ 0000000000007648     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:000008b8       ??_C@_15LJEABJDH@?$AAH?$AAD@ 0000000000007658     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:000008c0       ??_C@_1M@NEPFDHKI@?$AAC?$AAD?$AAR?$AAO?$AAM@ 0000000000007660     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:000008d0       ??_C@_1O@IJBLAFEH@?$AAP?$AAC?$AAM?$AAC?$AAI?$AAA@ 0000000000007670     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:000008e0       ??_C@_17DMBMDHNL@?$AAU?$AAS?$AAB@ 0000000000007680     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:000008f0       ??_C@_1BA@IFBJBPAK@?$AAN?$AAe?$AAt?$AAw?$AAo?$AAr?$AAk@ 0000000000007690     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:00000900       ??_C@_19NHABCBNP@?$AAP?$AAa?$AAt?$AAh@ 00000000000076a0     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:00000910       ??_C@_1BK@PDLLBLKH@?$AAH?$AAa?$AAr?$AAd?$AAw?$AAa?$AAr?$AAe?$AAP?$AAa?$AAt?$AAh@ 00000000000076b0     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:00000930       ??_C@_17HLFBGCN@?$AAP?$AAc?$AAi@ 00000000000076d0     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:00000938       ??_C@_1O@MNOBCDEF@?$AAP?$AAc?$AAC?$AAa?$AAr?$AAd@ 00000000000076d8     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:00000948       ??_C@_1BK@OCLBCLCA@?$AAM?$AAe?$AAm?$AAo?$AAr?$AAy?$AAM?$AAa?$AAp?$AAp?$AAe?$AAd@ 00000000000076e8     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:00000968       ??_C@_1M@LACAKLOF@?$AAV?$AAe?$AAn?$AAH?$AAw@ 0000000000007708     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:00000978       ??_C@_19HGPIFADB@?$AAC?$AAt?$AAr?$AAl@ 0000000000007718     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:00000988       ??_C@_17MLACALGH@?$AAB?$AAM?$AAC@ 0000000000007728     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:00000990       ??_C@_1BC@EJFCJMMM@?$AAA?$AAc?$AAp?$AAi?$AAP?$AAa?$AAt?$AAh@ 0000000000007730     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:000009a8       ??_C@_19HOGFOJAH@?$AAA?$AAc?$AAp?$AAi@ 0000000000007748     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:000009b8       ??_C@_1BA@DHIPOOID@?$AAP?$AAc?$AAi?$AAR?$AAo?$AAo?$AAt@ 0000000000007758     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:000009c8       ??_C@_1BC@CHOMCAOI@?$AAP?$AAc?$AAi?$AAe?$AAR?$AAo?$AAo?$AAt@ 0000000000007768     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:000009e0       ??_C@_1BC@NCPFOOPJ@?$AAK?$AAe?$AAy?$AAb?$AAo?$AAa?$AAr?$AAd@ 0000000000007780     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:000009f8       ??_C@_1O@EKJPAJBH@?$AAS?$AAe?$AAr?$AAi?$AAa?$AAl@ 0000000000007798     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:00000a08       ??_C@_1BK@LKLOGFGG@?$AAP?$AAa?$AAr?$AAa?$AAl?$AAl?$AAe?$AAl?$AAP?$AAo?$AAr?$AAt@ 00000000000077a8     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:00000a28       ??_C@_1O@GFMNADOD@?$AAA?$AAc?$AAp?$AAi?$AAE?$AAx@ 00000000000077c8     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:00000a38       ??_C@_1BA@IHGFDEME@?$AAA?$AAc?$AAp?$AAi?$AAE?$AAx?$AAp@ 00000000000077d8     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:00000a48       ??_C@_1BA@NNDCDAFF@?$AAA?$AAc?$AAp?$AAi?$AAA?$AAd?$AAr@ 00000000000077e8     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:00000a58       ??_C@_17DACEHHP@?$AAM?$AAs?$AAg@ 00000000000077f8     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:00000a60       ??_C@_17GMMDDNFE@?$AAA?$AAt?$AAa@ 0000000000007800     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:00000a68       ??_C@_19NLKKMKHM@?$AAS?$AAc?$AAs?$AAi@ 0000000000007808     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:00000a78       ??_C@_1M@KOFKAIAH@?$AAF?$AAi?$AAb?$AAr?$AAe@ 0000000000007818     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:00000a88       ??_C@_1BA@BDOAEBJM@?$AAF?$AAi?$AAb?$AAr?$AAe?$AAE?$AAx@ 0000000000007828     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:00000a98       ??_C@_1M@PJKPDAPK@?$AAI?$AA1?$AA3?$AA9?$AA4@ 0000000000007838     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:00000aa8       ??_C@_17CGMKBHJN@?$AAI?$AA2?$AAO@ 0000000000007848     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:00000ab0       ??_C@_1BG@LFNGJFMI@?$AAI?$AAn?$AAf?$AAi?$AAn?$AAi?$AAb?$AAa?$AAn?$AAd@ 0000000000007850     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:00000ac8       ??_C@_1O@BHINEOCB@?$AAV?$AAe?$AAn?$AAM?$AAs?$AAg@ 0000000000007868     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:00000ad8       ??_C@_1BE@LMIDEMJL@?$AAV?$AAe?$AAn?$AAP?$AAc?$AAA?$AAn?$AAs?$AAi@ 0000000000007878     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:00000af0       ??_C@_1BC@JHDKFMJG@?$AAV?$AAe?$AAn?$AAV?$AAt?$AA1?$AA0?$AA0@ 0000000000007890     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:00000b08       ??_C@_1BK@NHGIEBMC@?$AAV?$AAe?$AAn?$AAV?$AAt?$AA1?$AA0?$AA0?$AAP?$AAl?$AAu?$AAs@ 00000000000078a8     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:00000b28       ??_C@_1BA@NNIEKFBH@?$AAV?$AAe?$AAn?$AAU?$AAt?$AAf?$AA8@ 00000000000078c8     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:00000b38       ??_C@_1BK@CEOAKICF@?$AAU?$AAa?$AAr?$AAt?$AAF?$AAl?$AAo?$AAw?$AAC?$AAt?$AAr?$AAl@ 00000000000078d8     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:00000b58       ??_C@_1M@CCCLFLPN@?$AAS?$AAa?$AAs?$AAE?$AAx@ 00000000000078f8     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:00000b68       ??_C@_19LAHBEEFI@?$AAN?$AAV?$AAM?$AAe@ 0000000000007908     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:00000b78       ??_C@_17IHKCJEAJ@?$AAU?$AAF?$AAS@ 0000000000007918     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:00000b80       ??_C@_15NAFBOLGP@?$AAS?$AAD@ 0000000000007920     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:00000b88       ??_C@_19KDEEGBOA@?$AAe?$AAM?$AAM?$AAC@ 0000000000007928     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:00000b98       ??_C@_1BE@BGIBNJJP@?$AAD?$AAe?$AAb?$AAu?$AAg?$AAP?$AAo?$AAr?$AAt@ 0000000000007938     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:00000bb0       ??_C@_17GFOANJLA@?$AAM?$AAA?$AAC@ 0000000000007950     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:00000bb8       ??_C@_19IJMOMJAP@?$AAI?$AAP?$AAv?$AA4@ 0000000000007958     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:00000bc8       ??_C@_19CDMHABIE@?$AAI?$AAP?$AAv?$AA6@ 0000000000007968     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:00000bd8       ??_C@_19PNLOOBKB@?$AAU?$AAa?$AAr?$AAt@ 0000000000007978     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:00000be8       ??_C@_1BC@BHHGGAIE@?$AAU?$AAs?$AAb?$AAC?$AAl?$AAa?$AAs?$AAs@ 0000000000007988     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:00000c00       ??_C@_1BC@NAJEJDIH@?$AAU?$AAs?$AAb?$AAA?$AAu?$AAd?$AAi?$AAo@ 00000000000079a0     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:00000c18       ??_C@_1BM@EBMHFGAN@?$AAU?$AAs?$AAb?$AAC?$AAD?$AAC?$AAC?$AAo?$AAn?$AAt?$AAr?$AAo?$AAl@ 00000000000079b8     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:00000c38       ??_C@_1O@MNHDOJBH@?$AAU?$AAs?$AAb?$AAH?$AAI?$AAD@ 00000000000079d8     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:00000c48       ??_C@_1BC@PPLGKLBF@?$AAU?$AAs?$AAb?$AAI?$AAm?$AAa?$AAg?$AAe@ 00000000000079e8     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:00000c60       ??_C@_1BG@PFAKNBDK@?$AAU?$AAs?$AAb?$AAP?$AAr?$AAi?$AAn?$AAt?$AAe?$AAr@ 0000000000007a00     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:00000c78       ??_C@_1BO@PDNPADEO@?$AAU?$AAs?$AAb?$AAM?$AAa?$AAs?$AAs?$AAS?$AAt?$AAo?$AAr?$AAa?$AAg?$AAe@ 0000000000007a18     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:00000c98       ??_C@_1O@DLJCNOCD@?$AAU?$AAs?$AAb?$AAH?$AAu?$AAb@ 0000000000007a38     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:00000ca8       ??_C@_1BG@HNPFOCNE@?$AAU?$AAs?$AAb?$AAC?$AAD?$AAC?$AAD?$AAa?$AAt?$AAa@ 0000000000007a48     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:00000cc0       ??_C@_1BK@COBNKHKO@?$AAU?$AAs?$AAb?$AAS?$AAm?$AAa?$AAr?$AAt?$AAC?$AAa?$AAr?$AAd@ 0000000000007a60     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:00000ce0       ??_C@_1BC@OCEEDGOJ@?$AAU?$AAs?$AAb?$AAV?$AAi?$AAd?$AAe?$AAo@ 0000000000007a80     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:00000cf8       ??_C@_1BM@LPAMJGAO@?$AAU?$AAs?$AAb?$AAD?$AAi?$AAa?$AAg?$AAn?$AAo?$AAs?$AAt?$AAi?$AAc@ 0000000000007a98     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:00000d18       ??_C@_1BI@FHBIGIDC@?$AAU?$AAs?$AAb?$AAW?$AAi?$AAr?$AAe?$AAl?$AAe?$AAs?$AAs@ 0000000000007ab8     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:00000d30       ??_C@_1DA@MALGIHBH@?$AAU?$AAs?$AAb?$AAD?$AAe?$AAv?$AAi?$AAc?$AAe?$AAF?$AAi?$AAr?$AAm?$AAw?$AAa@ 0000000000007ad0     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:00000d60       ??_C@_1BM@OGJGENB@?$AAU?$AAs?$AAb?$AAI?$AAr?$AAd?$AAa?$AAB?$AAr?$AAi?$AAd?$AAg?$AAe@ 0000000000007b00     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:00000d80       ??_C@_1CM@FCDMDMMH@?$AAU?$AAs?$AAb?$AAT?$AAe?$AAs?$AAt?$AAA?$AAn?$AAd?$AAM?$AAe?$AAa?$AAs?$AAu@ 0000000000007b20     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:00000db0       ??_C@_1BA@JFMBPOKP@?$AAU?$AAs?$AAb?$AAW?$AAw?$AAi?$AAd@ 0000000000007b50     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:00000dc0       ??_C@_19ENIPABFF@?$AAU?$AAn?$AAi?$AAt@ 0000000000007b60     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:00000dd0       ??_C@_1M@KIOGPKKC@?$AAi?$AAS?$AAC?$AAS?$AAI@ 0000000000007b70     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:00000de0       ??_C@_19DHGKIILN@?$AAV?$AAl?$AAa?$AAn@ 0000000000007b80     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:00000df0       ??_C@_17HMHOINNJ@?$AAD?$AAn?$AAs@ 0000000000007b90     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:00000df8       ??_C@_17IHNPMJHH@?$AAU?$AAr?$AAi@ 0000000000007b98     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:00000e00       ??_C@_1BE@DJCFELKD@?$AAB?$AAl?$AAu?$AAe?$AAt?$AAo?$AAo?$AAt?$AAh@ 0000000000007ba0     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:00000e18       ??_C@_1M@BMGHIDNG@?$AAW?$AAi?$AA?9?$AAF?$AAi@ 0000000000007bb8     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:00000e28       ??_C@_1BI@EALHOODN@?$AAB?$AAl?$AAu?$AAe?$AAt?$AAo?$AAo?$AAt?$AAh?$AAL?$AAE@ 0000000000007bc8     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:00000e40       ??_C@_1BE@MHMKEMCG@?$AAM?$AAe?$AAd?$AAi?$AAa?$AAP?$AAa?$AAt?$AAh@ 0000000000007be0     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:00000e58       ??_C@_1BC@GHCKDDOI@?$AAV?$AAe?$AAn?$AAM?$AAe?$AAd?$AAi?$AAa@ 0000000000007bf8     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:00000e70       ??_C@_1M@OFOICAAP@?$AAM?$AAe?$AAd?$AAi?$AAa@ 0000000000007c10     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:00000e7c       ??_C@_15NJGIEIGN@?$AAF?$AAv@ 0000000000007c1c     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:00000e88       ??_C@_1O@HDIGBKAM@?$AAF?$AAv?$AAF?$AAi?$AAl?$AAe@ 0000000000007c28     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:00000e98       ??_C@_1O@LMEEEHLB@?$AAO?$AAf?$AAf?$AAs?$AAe?$AAt@ 0000000000007c38     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:00000ea8       ??_C@_1BA@MCPGEJDD@?$AAR?$AAa?$AAm?$AAD?$AAi?$AAs?$AAk@ 0000000000007c48     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:00000eb8       ??_C@_1BI@DOBDENMH@?$AAV?$AAi?$AAr?$AAt?$AAu?$AAa?$AAl?$AAD?$AAi?$AAs?$AAk@ 0000000000007c58     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:00000ed0       ??_C@_1BE@INMIBDPL@?$AAV?$AAi?$AAr?$AAt?$AAu?$AAa?$AAl?$AAC?$AAD@ 0000000000007c70     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:00000ee8       ??_C@_1CM@HJNDDJNG@?$AAP?$AAe?$AAr?$AAs?$AAi?$AAs?$AAt?$AAe?$AAn?$AAt?$AAV?$AAi?$AAr?$AAt?$AAu@ 0000000000007c88     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:00000f18       ??_C@_1CI@NFGDEDCN@?$AAP?$AAe?$AAr?$AAs?$AAi?$AAs?$AAt?$AAe?$AAn?$AAt?$AAV?$AAi?$AAr?$AAt?$AAu@ 0000000000007cb8     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:00000f40       ??_C@_1BA@EPIJMJOF@?$AAB?$AAb?$AAs?$AAP?$AAa?$AAt?$AAh@ 0000000000007ce0     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:00000f50       ??_C@_17GKENOOCN@?$AAB?$AAB?$AAS@ 0000000000007cf0     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:00000f58       ??_C@_19EBDONFFG@?$AAS?$AAa?$AAt?$AAa@ 0000000000007cf8     UefiDevicePathLib:DevicePathFromText.obj
+ 0002:00000f68       ??_C@_1BO@OAGLMPIF@?$AAP?$AAc?$AAi?$AA?$CI?$AA0?$AAx?$AA?$CF?$AAx?$AA?0?$AA0?$AAx?$AA?$CF?$AAx?$AA?$CJ@ 0000000000007d08     UefiDevicePathLib:DevicePathToText.obj
+ 0002:00000f88       ??_C@_1BK@KCEBDNMK@?$AAP?$AAc?$AAC?$AAa?$AAr?$AAd?$AA?$CI?$AA0?$AAx?$AA?$CF?$AAx?$AA?$CJ@ 0000000000007d28     UefiDevicePathLib:DevicePathToText.obj
+ 0002:00000fa8       ??_C@_1DO@IFCJNKPC@?$AAM?$AAe?$AAm?$AAo?$AAr?$AAy?$AAM?$AAa?$AAp?$AAp?$AAe?$AAd?$AA?$CI?$AA0?$AAx@ 0000000000007d48     UefiDevicePathLib:DevicePathToText.obj
+ 0002:00000fe8       ??_C@_15FLNOEOHI@?$AAH?$AAw@ 0000000000007d88     UefiDevicePathLib:DevicePathToText.obj
+ 0002:00000ff0       ??_C@_1BI@PHHNEBMB@?$AAV?$AAe?$AAn?$AAP?$AAc?$AAA?$AAn?$AAs?$AAi?$AA?$CI?$AA?$CJ@ 0000000000007d90     UefiDevicePathLib:DevicePathToText.obj
+ 0002:00001008       ??_C@_1BG@IAIKNGNN@?$AAV?$AAe?$AAn?$AAV?$AAt?$AA1?$AA0?$AA0?$AA?$CI?$AA?$CJ@ 0000000000007da8     UefiDevicePathLib:DevicePathToText.obj
+ 0002:00001020       ??_C@_1BO@COEKAAEN@?$AAV?$AAe?$AAn?$AAV?$AAt?$AA1?$AA0?$AA0?$AAP?$AAl?$AAu?$AAs?$AA?$CI?$AA?$CJ@ 0000000000007dc0     UefiDevicePathLib:DevicePathToText.obj
+ 0002:00001040       ??_C@_1BE@IDDFGEGE@?$AAV?$AAe?$AAn?$AAU?$AAt?$AAf?$AA8?$AA?$CI?$AA?$CJ@ 0000000000007de0     UefiDevicePathLib:DevicePathToText.obj
+ 0002:00001058       ??_C@_1CC@FKEHNDLA@?$AAU?$AAa?$AAr?$AAt?$AAF?$AAl?$AAo?$AAw?$AAC?$AAt?$AAr?$AAl?$AA?$CI?$AA?$CF?$AAs@ 0000000000007df8     UefiDevicePathLib:DevicePathToText.obj
+ 0002:00001080       ??_C@_1CM@MBOKCKGI@?$AAS?$AAA?$AAS?$AA?$CI?$AA0?$AAx?$AA?$CF?$AAl?$AAx?$AA?0?$AA0?$AAx?$AA?$CF?$AAl?$AAx@ 0000000000007e20     UefiDevicePathLib:DevicePathToText.obj
+ 0002:000010b0       ??_C@_1CE@FDCOMKL@?$AAN?$AAo?$AAT?$AAo?$AAp?$AAo?$AAl?$AAo?$AAg?$AAy?$AA?0?$AA0?$AA?0?$AA0?$AA?0@ 0000000000007e50     UefiDevicePathLib:DevicePathToText.obj
+ 0002:000010d8       ??_C@_1BE@MLBJKAMN@?$AA?$CF?$AAs?$AA?0?$AA?$CF?$AAs?$AA?0?$AA?$CF?$AAs?$AA?0@ 0000000000007e78     UefiDevicePathLib:DevicePathToText.obj
+ 0002:000010ec       ??_C@_15KAKDEJHH@?$AA0?$AA?0@ 0000000000007e8c     UefiDevicePathLib:DevicePathToText.obj
+ 0002:000010f8       ??_C@_1M@MJJODJOA@?$AA0?$AAx?$AA?$CF?$AAx?$AA?0@ 0000000000007e98     UefiDevicePathLib:DevicePathToText.obj
+ 0002:00001108       ??_C@_1BI@EOONELPP@?$AA0?$AAx?$AA?$CF?$AAx?$AA?0?$AA0?$AA?0?$AA0?$AA?0?$AA0?$AA?0@ 0000000000007ea8     UefiDevicePathLib:DevicePathToText.obj
+ 0002:00001120       ??_C@_1M@POEAMJNC@?$AA0?$AAx?$AA?$CF?$AAx?$AA?$CJ@ 0000000000007ec0     UefiDevicePathLib:DevicePathToText.obj
+ 0002:00001130       ??_C@_1BI@IHPCIEPJ@?$AAD?$AAe?$AAb?$AAu?$AAg?$AAP?$AAo?$AAr?$AAt?$AA?$CI?$AA?$CJ@ 0000000000007ed0     UefiDevicePathLib:DevicePathToText.obj
+ 0002:00001148       ??_C@_13HGPDMIBE@?$AA?$DP@ 0000000000007ee8     UefiDevicePathLib:DevicePathToText.obj
+ 0002:00001150       ??_C@_1BC@EAAHJKNI@?$AAV?$AAe?$AAn?$AA?$CF?$AAs?$AA?$CI?$AA?$CF?$AAg@ 0000000000007ef0     UefiDevicePathLib:DevicePathToText.obj
+ 0002:00001164       ??_C@_13DEFPDAGF@?$AA?0@   0000000000007f04     UefiDevicePathLib:DevicePathToText.obj
+ 0002:00001168       ??_C@_19NHPFCCLF@?$AA?$CF?$AA0?$AA2?$AAx@ 0000000000007f08     UefiDevicePathLib:DevicePathToText.obj
+ 0002:00001174       ??_C@_13DIBMAFH@?$AA?$CJ@  0000000000007f14     UefiDevicePathLib:DevicePathToText.obj
+ 0002:00001178       ??_C@_1BG@PDEHEHNB@?$AAC?$AAt?$AAr?$AAl?$AA?$CI?$AA0?$AAx?$AA?$CF?$AAx?$AA?$CJ@ 0000000000007f18     UefiDevicePathLib:DevicePathToText.obj
+ 0002:00001190       ??_C@_1CA@OCDNKJMI@?$AAB?$AAM?$AAC?$AA?$CI?$AA0?$AAx?$AA?$CF?$AAx?$AA?0?$AA0?$AAx?$AA?$CF?$AAl?$AAx?$AA?$CJ@ 0000000000007f30     UefiDevicePathLib:DevicePathToText.obj
+ 0002:000011b0       ??_C@_1BM@LLBDFMIK@?$AAP?$AAc?$AAi?$AAR?$AAo?$AAo?$AAt?$AA?$CI?$AA0?$AAx?$AA?$CF?$AAx?$AA?$CJ@ 0000000000007f50     UefiDevicePathLib:DevicePathToText.obj
+ 0002:000011d0       ??_C@_1BO@IHBMGOPI@?$AAP?$AAc?$AAi?$AAe?$AAR?$AAo?$AAo?$AAt?$AA?$CI?$AA0?$AAx?$AA?$CF?$AAx?$AA?$CJ@ 0000000000007f70     UefiDevicePathLib:DevicePathToText.obj
+ 0002:000011f0       ??_C@_1BK@NGLNBACO@?$AAF?$AAl?$AAo?$AAp?$AAp?$AAy?$AA?$CI?$AA0?$AAx?$AA?$CF?$AAx?$AA?$CJ@ 0000000000007f90     UefiDevicePathLib:DevicePathToText.obj
+ 0002:00001210       ??_C@_1BO@OEKEOEOK@?$AAK?$AAe?$AAy?$AAb?$AAo?$AAa?$AAr?$AAd?$AA?$CI?$AA0?$AAx?$AA?$CF?$AAx?$AA?$CJ@ 0000000000007fb0     UefiDevicePathLib:DevicePathToText.obj
+ 0002:00001230       ??_C@_1BK@PMIGPGKH@?$AAS?$AAe?$AAr?$AAi?$AAa?$AAl?$AA?$CI?$AA0?$AAx?$AA?$CF?$AAx?$AA?$CJ@ 0000000000007fd0     UefiDevicePathLib:DevicePathToText.obj
+ 0002:00001250       ??_C@_1CG@CPMOJELH@?$AAP?$AAa?$AAr?$AAa?$AAl?$AAl?$AAe?$AAl?$AAP?$AAo?$AAr?$AAt?$AA?$CI?$AA0?$AAx@ 0000000000007ff0     UefiDevicePathLib:DevicePathToText.obj
+ 0002:00001278       ??_C@_1CG@JCMCADBM@?$AAA?$AAc?$AAp?$AAi?$AA?$CI?$AAP?$AAN?$AAP?$AA?$CF?$AA0?$AA4?$AAx?$AA?0?$AA0?$AAx@ 0000000000008018     UefiDevicePathLib:DevicePathToText.obj
+ 0002:000012a0       ??_C@_1CE@CLIAMHCD@?$AAA?$AAc?$AAp?$AAi?$AA?$CI?$AA0?$AAx?$AA?$CF?$AA0?$AA8?$AAx?$AA?0?$AA0?$AAx?$AA?$CF@ 0000000000008040     UefiDevicePathLib:DevicePathToText.obj
+ 0002:000012c8       ??_C@_1BI@IBECIOLF@?$AAP?$AAc?$AAi?$AAR?$AAo?$AAo?$AAt?$AA?$CI?$AA?$CF?$AAa?$AA?$CJ@ 0000000000008068     UefiDevicePathLib:DevicePathToText.obj
+ 0002:000012e0       ??_C@_1BK@HOGBDMPI@?$AAP?$AAc?$AAi?$AAe?$AAR?$AAo?$AAo?$AAt?$AA?$CI?$AA?$CF?$AAa?$AA?$CJ@ 0000000000008080     UefiDevicePathLib:DevicePathToText.obj
+ 0002:00001300       ??_C@_1BG@BGLICHDL@?$AA?$CF?$AAc?$AA?$CF?$AAc?$AA?$CF?$AAc?$AA?$CF?$AA0?$AA4?$AAX@ 00000000000080a0     UefiDevicePathLib:DevicePathToText.obj
+ 0002:00001318       ??_C@_1CC@CMCFGMM@?$AAA?$AAc?$AAp?$AAi?$AAE?$AAx?$AAp?$AA?$CI?$AA?$CF?$AAs?$AA?0?$AA0?$AA?0?$AA?$CF?$AAa@ 00000000000080b8     UefiDevicePathLib:DevicePathToText.obj
+ 0002:00001340       ??_C@_1CE@CGEKHGFF@?$AAA?$AAc?$AAp?$AAi?$AAE?$AAx?$AAp?$AA?$CI?$AA?$CF?$AAs?$AA?0?$AA?$CF?$AAs?$AA?0?$AA?$CF@ 00000000000080e0     UefiDevicePathLib:DevicePathToText.obj
+ 0002:00001368       ??_C@_1BG@EEDCOCH@?$AAA?$AAc?$AAp?$AAi?$AAE?$AAx?$AA?$CI?$AA?$CF?$AAa?$AA?0@ 0000000000008108     UefiDevicePathLib:DevicePathToText.obj
+ 0002:00001380       ??_C@_1BG@EKFNINLH@?$AAA?$AAc?$AAp?$AAi?$AAE?$AAx?$AA?$CI?$AA?$CF?$AAs?$AA?0@ 0000000000008120     UefiDevicePathLib:DevicePathToText.obj
+ 0002:00001398       ??_C@_17CAHIANN@?$AA?$CF?$AAa?$AA?0@ 0000000000008138     UefiDevicePathLib:DevicePathToText.obj
+ 0002:000013a0       ??_C@_17EMBJCDEN@?$AA?$CF?$AAs?$AA?0@ 0000000000008140     UefiDevicePathLib:DevicePathToText.obj
+ 0002:000013a8       ??_C@_17DFNJHAOP@?$AA?$CF?$AAa?$AA?$CJ@ 0000000000008148     UefiDevicePathLib:DevicePathToText.obj
+ 0002:000013b0       ??_C@_1DI@HGKBPPFE@?$AAA?$AAc?$AAp?$AAi?$AAE?$AAx?$AA?$CI?$AA?$CF?$AAs?$AA?0?$AA?$CF?$AAs?$AA?0?$AA0?$AAx@ 0000000000008150     UefiDevicePathLib:DevicePathToText.obj
+ 0002:000013e8       ??_C@_1BK@IMGBACLG@?$AAA?$AAc?$AAp?$AAi?$AAA?$AAd?$AAr?$AA?$CI?$AA0?$AAx?$AA?$CF?$AAx@ 0000000000008188     UefiDevicePathLib:DevicePathToText.obj
+ 0002:00001408       ??_C@_1M@HHLNLLAC@?$AA?0?$AA0?$AAx?$AA?$CF?$AAx@ 00000000000081a8     UefiDevicePathLib:DevicePathToText.obj
+ 0002:00001418       ??_C@_1BE@HBALDGNG@?$AAA?$AAt?$AAa?$AA?$CI?$AA0?$AAx?$AA?$CF?$AAx?$AA?$CJ@ 00000000000081b8     UefiDevicePathLib:DevicePathToText.obj
+ 0002:00001430       ??_C@_1CA@EFDNFHKP@?$AAA?$AAt?$AAa?$AA?$CI?$AA?$CF?$AAs?$AA?0?$AA?$CF?$AAs?$AA?0?$AA0?$AAx?$AA?$CF?$AAx?$AA?$CJ@ 00000000000081d0     UefiDevicePathLib:DevicePathToText.obj
+ 0002:00001450       ??_C@_1CA@JGIMMJKB@?$AAS?$AAc?$AAs?$AAi?$AA?$CI?$AA0?$AAx?$AA?$CF?$AAx?$AA?0?$AA0?$AAx?$AA?$CF?$AAx?$AA?$CJ@ 00000000000081f0     UefiDevicePathLib:DevicePathToText.obj
+ 0002:00001470       ??_C@_1CG@OFFLOOAD@?$AAF?$AAi?$AAb?$AAr?$AAe?$AA?$CI?$AA0?$AAx?$AA?$CF?$AAl?$AAx?$AA?0?$AA0?$AAx?$AA?$CF@ 0000000000008210     UefiDevicePathLib:DevicePathToText.obj
+ 0002:00001498       ??_C@_1BG@EHEKANON@?$AAF?$AAi?$AAb?$AAr?$AAe?$AAE?$AAx?$AA?$CI?$AA0?$AAx@ 0000000000008238     UefiDevicePathLib:DevicePathToText.obj
+ 0002:000014b0       ??_C@_17JOPFNIFB@?$AA?0?$AA0?$AAx@ 0000000000008250     UefiDevicePathLib:DevicePathToText.obj
+ 0002:000014b8       ??_C@_1BC@CKFHLIJB@?$AAS?$AAa?$AAs?$AAE?$AAx?$AA?$CI?$AA0?$AAx@ 0000000000008258     UefiDevicePathLib:DevicePathToText.obj
+ 0002:000014d0       ??_C@_1O@IEGBGPLN@?$AA?0?$AA0?$AAx?$AA?$CF?$AAx?$AA?0@ 0000000000008270     UefiDevicePathLib:DevicePathToText.obj
+ 0002:000014e0       ??_C@_1CC@FKOFEPIC@?$AAN?$AAo?$AAT?$AAo?$AAp?$AAo?$AAl?$AAo?$AAg?$AAy?$AA?0?$AA0?$AA?0?$AA0?$AA?0@ 0000000000008280     UefiDevicePathLib:DevicePathToText.obj
+ 0002:00001504       ??_C@_13COJANIEC@?$AA0@    00000000000082a4     UefiDevicePathLib:DevicePathToText.obj
+ 0002:00001508       ??_C@_19PCNJIDGC@?$AA0?$AAx?$AA?$CF?$AAx@ 00000000000082a8     UefiDevicePathLib:DevicePathToText.obj
+ 0002:00001518       ??_C@_1BG@JCDPLMKI@?$AA0?$AAx?$AA?$CF?$AAx?$AA?0?$AA0?$AA?0?$AA0?$AA?0?$AA0@ 00000000000082b8     UefiDevicePathLib:DevicePathToText.obj
+ 0002:00001530       ??_C@_1GG@KPIKGINP@?$AAN?$AAV?$AAM?$AAe?$AA?$CI?$AA0?$AAx?$AA?$CF?$AAx?$AA?0?$AA?$CF?$AA0?$AA2?$AAx?$AA?9@ 00000000000082d0     UefiDevicePathLib:DevicePathToText.obj
+ 0002:00001598       ??_C@_1BO@HJLBIHHO@?$AAU?$AAF?$AAS?$AA?$CI?$AA0?$AAx?$AA?$CF?$AAx?$AA?0?$AA0?$AAx?$AA?$CF?$AAx?$AA?$CJ@ 0000000000008338     UefiDevicePathLib:DevicePathToText.obj
+ 0002:000015b8       ??_C@_1BC@JIFEONHJ@?$AAS?$AAD?$AA?$CI?$AA0?$AAx?$AA?$CF?$AAx?$AA?$CJ@ 0000000000008358     UefiDevicePathLib:DevicePathToText.obj
+ 0002:000015d0       ??_C@_1BG@BHOAMFEP@?$AAe?$AAM?$AAM?$AAC?$AA?$CI?$AA0?$AAx?$AA?$CF?$AAx?$AA?$CJ@ 0000000000008370     UefiDevicePathLib:DevicePathToText.obj
+ 0002:000015e8       ??_C@_1BM@OFMOJDLM@?$AAI?$AA1?$AA3?$AA9?$AA4?$AA?$CI?$AA?$CF?$AA0?$AA1?$AA6?$AAl?$AAx?$AA?$CJ@ 0000000000008388     UefiDevicePathLib:DevicePathToText.obj
+ 0002:00001608       ??_C@_1BO@CIMDKCCI@?$AAU?$AAS?$AAB?$AA?$CI?$AA0?$AAx?$AA?$CF?$AAx?$AA?0?$AA0?$AAx?$AA?$CF?$AAx?$AA?$CJ@ 00000000000083a8     UefiDevicePathLib:DevicePathToText.obj
+ 0002:00001628       ??_C@_1DK@IPDOPIPA@?$AAU?$AAs?$AAb?$AAW?$AAw?$AAi?$AAd?$AA?$CI?$AA0?$AAx?$AA?$CF?$AAx?$AA?0?$AA0?$AAx@ 00000000000083c8     UefiDevicePathLib:DevicePathToText.obj
+ 0002:00001668       ??_C@_1BG@NJNCNCKM@?$AAU?$AAn?$AAi?$AAt?$AA?$CI?$AA0?$AAx?$AA?$CF?$AAx?$AA?$CJ@ 0000000000008408     UefiDevicePathLib:DevicePathToText.obj
+ 0002:00001680       ??_C@_1CM@JDEAFCK@?$AA?$CI?$AA0?$AAx?$AA?$CF?$AAx?$AA?0?$AA0?$AAx?$AA?$CF?$AAx?$AA?0?$AA0?$AAx?$AA?$CF?$AAx@ 0000000000008420     UefiDevicePathLib:DevicePathToText.obj
+ 0002:000016b0       ??_C@_1FA@DIDNHLOK@?$AAU?$AAs?$AAb?$AAD?$AAe?$AAv?$AAi?$AAc?$AAe?$AAF?$AAi?$AAr?$AAm?$AAw?$AAa@ 0000000000008450     UefiDevicePathLib:DevicePathToText.obj
+ 0002:00001700       ??_C@_1DM@JLMEALMP@?$AAU?$AAs?$AAb?$AAI?$AAr?$AAd?$AAa?$AAB?$AAr?$AAi?$AAd?$AAg?$AAe?$AA?$CI?$AA0@ 00000000000084a0     UefiDevicePathLib:DevicePathToText.obj
+ 0002:00001740       ??_C@_1EM@PFIODAIB@?$AAU?$AAs?$AAb?$AAT?$AAe?$AAs?$AAt?$AAA?$AAn?$AAd?$AAM?$AAe?$AAa?$AAs?$AAu@ 00000000000084e0     UefiDevicePathLib:DevicePathToText.obj
+ 0002:00001790       ??_C@_1EG@NMOJJABI@?$AAU?$AAs?$AAb?$AAC?$AAl?$AAa?$AAs?$AAs?$AA?$CI?$AA0?$AAx?$AA?$CF?$AAx?$AA?0?$AA0@ 0000000000008530     UefiDevicePathLib:DevicePathToText.obj
+ 0002:000017d8       ??_C@_1CK@MHLLPHIN@?$AAS?$AAa?$AAt?$AAa?$AA?$CI?$AA0?$AAx?$AA?$CF?$AAx?$AA?0?$AA0?$AAx?$AA?$CF?$AAx?$AA?0@ 0000000000008578     UefiDevicePathLib:DevicePathToText.obj
+ 0002:00001808       ??_C@_1BE@GPJMKBFH@?$AAI?$AA2?$AAO?$AA?$CI?$AA0?$AAx?$AA?$CF?$AAx?$AA?$CJ@ 00000000000085a8     UefiDevicePathLib:DevicePathToText.obj
+ 0002:00001820       ??_C@_19HOEMCGPJ@?$AAM?$AAA?$AAC?$AA?$CI@ 00000000000085c0     UefiDevicePathLib:DevicePathToText.obj
+ 0002:00001830       ??_C@_1O@LDLPJPIP@?$AA?0?$AA0?$AAx?$AA?$CF?$AAx?$AA?$CJ@ 00000000000085d0     UefiDevicePathLib:DevicePathToText.obj
+ 0002:00001840       ??_C@_1BI@FCMLLAGN@?$AA?$CF?$AAd?$AA?4?$AA?$CF?$AAd?$AA?4?$AA?$CF?$AAd?$AA?4?$AA?$CF?$AAd@ 00000000000085e0     UefiDevicePathLib:DevicePathToText.obj
+ 0002:00001860       ??_C@_1JA@HKGNNMMG@?$AA?$CF?$AA0?$AA2?$AAx?$AA?$CF?$AA0?$AA2?$AAx?$AA?3?$AA?$CF?$AA0?$AA2?$AAx?$AA?$CF?$AA0@ 0000000000008600     UefiDevicePathLib:DevicePathToText.obj
+ 0002:000018f0       ??_C@_1M@KGGIME@?$AAI?$AAP?$AAv?$AA4?$AA?$CI@ 0000000000008690     UefiDevicePathLib:DevicePathToText.obj
+ 0002:00001900       ??_C@_19DDJNJOGL@?$AAD?$AAH?$AAC?$AAP@ 00000000000086a0     UefiDevicePathLib:DevicePathToText.obj
+ 0002:00001910       ??_C@_19JPNAHHAM@?$AA?0?$AA?$CF?$AAs?$AA?0@ 00000000000086b0     UefiDevicePathLib:DevicePathToText.obj
+ 0002:00001920       ??_C@_1M@ENGOMJMP@?$AAI?$AAP?$AAv?$AA6?$AA?$CI@ 00000000000086c0     UefiDevicePathLib:DevicePathToText.obj
+ 0002:00001930       ??_C@_1BC@CMHMGCCH@?$AA?0?$AAS?$AAt?$AAa?$AAt?$AAi?$AAc?$AA?0@ 00000000000086d0     UefiDevicePathLib:DevicePathToText.obj
+ 0002:00001948       ??_C@_1DC@LOFPJEEL@?$AA?0?$AAS?$AAt?$AAa?$AAt?$AAe?$AAl?$AAe?$AAs?$AAs?$AAA?$AAu?$AAt?$AAo?$AAC@ 00000000000086e8     UefiDevicePathLib:DevicePathToText.obj
+ 0002:00001980       ??_C@_1DA@HMGEOIF@?$AA?0?$AAS?$AAt?$AAa?$AAt?$AAe?$AAf?$AAu?$AAl?$AAA?$AAu?$AAt?$AAo?$AAC?$AAo@ 0000000000008720     UefiDevicePathLib:DevicePathToText.obj
+ 0002:000019b0       ??_C@_1EM@IPHLFBGI@?$AAI?$AAn?$AAf?$AAi?$AAn?$AAi?$AAb?$AAa?$AAn?$AAd?$AA?$CI?$AA0?$AAx?$AA?$CF?$AAx@ 0000000000008750     UefiDevicePathLib:DevicePathToText.obj
+ 0002:00001a00       ??_C@_1BM@EHGODEHA@?$AAU?$AAa?$AAr?$AAt?$AA?$CI?$AAD?$AAE?$AAF?$AAA?$AAU?$AAL?$AAT?$AA?0@ 00000000000087a0     UefiDevicePathLib:DevicePathToText.obj
+ 0002:00001a20       ??_C@_1BE@OEIOOGGH@?$AAU?$AAa?$AAr?$AAt?$AA?$CI?$AA?$CF?$AAl?$AAd?$AA?0@ 00000000000087c0     UefiDevicePathLib:DevicePathToText.obj
+ 0002:00001a38       ??_C@_1BC@DDKPDLCJ@?$AAD?$AAE?$AAF?$AAA?$AAU?$AAL?$AAT?$AA?0@ 00000000000087d8     UefiDevicePathLib:DevicePathToText.obj
+ 0002:00001a50       ??_C@_17FCMKBBGO@?$AA?$CF?$AAd?$AA?0@ 00000000000087f0     UefiDevicePathLib:DevicePathToText.obj
+ 0002:00001a58       ??_C@_17EPMPCBNG@?$AA?$CF?$AAc?$AA?0@ 00000000000087f8     UefiDevicePathLib:DevicePathToText.obj
+ 0002:00001a60       ??_C@_15HMOPGJC@?$AAD?$AA?$CJ@ 0000000000008800     UefiDevicePathLib:DevicePathToText.obj
+ 0002:00001a68       ??_C@_15FMCBGKOA@?$AA1?$AA?$CJ@ 0000000000008808     UefiDevicePathLib:DevicePathToText.obj
+ 0002:00001a70       ??_C@_19PODFHIEB@?$AA1?$AA?4?$AA5?$AA?$CJ@ 0000000000008810     UefiDevicePathLib:DevicePathToText.obj
+ 0002:00001a7c       ??_C@_15NKLFBIEO@?$AA2?$AA?$CJ@ 000000000000881c     UefiDevicePathLib:DevicePathToText.obj
+ 0002:00001a84       ??_C@_15HEHGDBEE@?$AAx?$AA?$CJ@ 0000000000008824     UefiDevicePathLib:DevicePathToText.obj
+ 0002:00001a90       ??_C@_1CC@OKJDLPLB@?$AAi?$AAS?$AAC?$AAS?$AAI?$AA?$CI?$AA?$CF?$AAa?$AA?0?$AA0?$AAx?$AA?$CF?$AAx?$AA?0?$AA0@ 0000000000008830     UefiDevicePathLib:DevicePathToText.obj
+ 0002:00001ab8       ??_C@_1BA@FMEKDPAI@?$AAC?$AAH?$AAA?$AAP?$AA_?$AAB?$AAI@ 0000000000008858     UefiDevicePathLib:DevicePathToText.obj
+ 0002:00001ac8       ??_C@_1BC@EFEBCBGB@?$AAr?$AAe?$AAs?$AAe?$AAr?$AAv?$AAe?$AAd@ 0000000000008868     UefiDevicePathLib:DevicePathToText.obj
+ 0002:00001ae0       ??_C@_17HLMHNDHP@?$AA?$CF?$AAs?$AA?$CJ@ 0000000000008880     UefiDevicePathLib:DevicePathToText.obj
+ 0002:00001ae8       ??_C@_1BC@OPCHKNKH@?$AAV?$AAl?$AAa?$AAn?$AA?$CI?$AA?$CF?$AAd?$AA?$CJ@ 0000000000008888     UefiDevicePathLib:DevicePathToText.obj
+ 0002:00001b00       ??_C@_1EI@EPMFLBAJ@?$AAB?$AAl?$AAu?$AAe?$AAt?$AAo?$AAo?$AAt?$AAh?$AA?$CI?$AA?$CF?$AA0?$AA2?$AAx?$AA?$CF@ 00000000000088a0     UefiDevicePathLib:DevicePathToText.obj
+ 0002:00001b48       ??_C@_1BE@DKODNJMI@?$AAW?$AAi?$AA?9?$AAF?$AAi?$AA?$CI?$AA?$CF?$AAa?$AA?$CJ@ 00000000000088e8     UefiDevicePathLib:DevicePathToText.obj
+ 0002:00001b60       ??_C@_1FK@LABBEHKJ@?$AAB?$AAl?$AAu?$AAe?$AAt?$AAo?$AAo?$AAt?$AAh?$AAL?$AAE?$AA?$CI?$AA?$CF?$AA0?$AA2@ 0000000000008900     UefiDevicePathLib:DevicePathToText.obj
+ 0002:00001bc0       ??_C@_19KGHFHKGE@?$AAD?$AAn?$AAs?$AA?$CI@ 0000000000008960     UefiDevicePathLib:DevicePathToText.obj
+ 0002:00001bd0       ??_C@_1BA@OMDAJDPE@?$AAU?$AAr?$AAi?$AA?$CI?$AA?$CF?$AAa?$AA?$CJ@ 0000000000008970     UefiDevicePathLib:DevicePathToText.obj
+ 0002:00001be0       ??_C@_1CC@GGNPKJFE@?$AAH?$AAD?$AA?$CI?$AA?$CF?$AAd?$AA?0?$AA?$CF?$AAs?$AA?0?$AA0?$AAx?$AA?$CF?$AA0?$AA8?$AAx@ 0000000000008980     UefiDevicePathLib:DevicePathToText.obj
+ 0002:00001c08       ??_C@_1BK@NDBPAJDF@?$AAH?$AAD?$AA?$CI?$AA?$CF?$AAd?$AA?0?$AA?$CF?$AAs?$AA?0?$AA?$CF?$AAg?$AA?0@ 00000000000089a8     UefiDevicePathLib:DevicePathToText.obj
+ 0002:00001c28       ??_C@_1BI@BCKDFMFI@?$AAH?$AAD?$AA?$CI?$AA?$CF?$AAd?$AA?0?$AA?$CF?$AAd?$AA?0?$AA0?$AA?0@ 00000000000089c8     UefiDevicePathLib:DevicePathToText.obj
+ 0002:00001c40       ??_C@_1BK@MMBDHGIK@?$AA0?$AAx?$AA?$CF?$AAl?$AAx?$AA?0?$AA0?$AAx?$AA?$CF?$AAl?$AAx?$AA?$CJ@ 00000000000089e0     UefiDevicePathLib:DevicePathToText.obj
+ 0002:00001c60       ??_C@_1BI@EEHCFNDN@?$AAC?$AAD?$AAR?$AAO?$AAM?$AA?$CI?$AA0?$AAx?$AA?$CF?$AAx?$AA?$CJ@ 0000000000008a00     UefiDevicePathLib:DevicePathToText.obj
+ 0002:00001c78       ??_C@_1DA@JMLBJEDN@?$AAC?$AAD?$AAR?$AAO?$AAM?$AA?$CI?$AA0?$AAx?$AA?$CF?$AAx?$AA?0?$AA0?$AAx?$AA?$CF?$AAl@ 0000000000008a18     UefiDevicePathLib:DevicePathToText.obj
+ 0002:00001ca8       ??_C@_15GANGMFKL@?$AA?$CF?$AAs@ 0000000000008a48     UefiDevicePathLib:DevicePathToText.obj
+ 0002:00001cb0       ??_C@_1BE@CJGJAKDA@?$AAM?$AAe?$AAd?$AAi?$AAa?$AA?$CI?$AA?$CF?$AAg?$AA?$CJ@ 0000000000008a50     UefiDevicePathLib:DevicePathToText.obj
+ 0002:00001cc8       ??_C@_1O@HJJPOOCL@?$AAF?$AAv?$AA?$CI?$AA?$CF?$AAg?$AA?$CJ@ 0000000000008a68     UefiDevicePathLib:DevicePathToText.obj
+ 0002:00001cd8       ??_C@_1BG@MHENELFF@?$AAF?$AAv?$AAF?$AAi?$AAl?$AAe?$AA?$CI?$AA?$CF?$AAg?$AA?$CJ@ 0000000000008a78     UefiDevicePathLib:DevicePathToText.obj
+ 0002:00001cf0       ??_C@_1CI@FAOKAOM@?$AAO?$AAf?$AAf?$AAs?$AAe?$AAt?$AA?$CI?$AA0?$AAx?$AA?$CF?$AAl?$AAx?$AA?0?$AA0?$AAx@ 0000000000008a90     UefiDevicePathLib:DevicePathToText.obj
+ 0002:00001d18       ??_C@_1DI@GJAGNPCG@?$AAV?$AAi?$AAr?$AAt?$AAu?$AAa?$AAl?$AAD?$AAi?$AAs?$AAk?$AA?$CI?$AA0?$AAx?$AA?$CF@ 0000000000008ab8     UefiDevicePathLib:DevicePathToText.obj
+ 0002:00001d50       ??_C@_1DE@FBEBFJJD@?$AAV?$AAi?$AAr?$AAt?$AAu?$AAa?$AAl?$AAC?$AAD?$AA?$CI?$AA0?$AAx?$AA?$CF?$AAl?$AAx@ 0000000000008af0     UefiDevicePathLib:DevicePathToText.obj
+ 0002:00001d90       ??_C@_1EM@PFGFJDCD@?$AAP?$AAe?$AAr?$AAs?$AAi?$AAs?$AAt?$AAe?$AAn?$AAt?$AAV?$AAi?$AAr?$AAt?$AAu@ 0000000000008b30     UefiDevicePathLib:DevicePathToText.obj
+ 0002:00001de0       ??_C@_1EI@IJLGIAIE@?$AAP?$AAe?$AAr?$AAs?$AAi?$AAs?$AAt?$AAe?$AAn?$AAt?$AAV?$AAi?$AAr?$AAt?$AAu@ 0000000000008b80     UefiDevicePathLib:DevicePathToText.obj
+ 0002:00001e28       ??_C@_1DG@IFGHOPEL@?$AAR?$AAa?$AAm?$AAD?$AAi?$AAs?$AAk?$AA?$CI?$AA0?$AAx?$AA?$CF?$AAl?$AAx?$AA?0?$AA0@ 0000000000008bc8     UefiDevicePathLib:DevicePathToText.obj
+ 0002:00001e60       ??_C@_1BE@EICHFCPK@?$AAB?$AAB?$AAS?$AA?$CI?$AA?$CF?$AAs?$AA?0?$AA?$CF?$AAa@ 0000000000008c00     UefiDevicePathLib:DevicePathToText.obj
+ 0002:00001e78       ??_C@_1BI@EAEHELAJ@?$AAB?$AAB?$AAS?$AA?$CI?$AA0?$AAx?$AA?$CF?$AAx?$AA?0?$AA?$CF?$AAa@ 0000000000008c18     UefiDevicePathLib:DevicePathToText.obj
+ 0002:00001e90       ??_C@_1BG@BNMBFAIA@?$AAP?$AAa?$AAt?$AAh?$AA?$CI?$AA?$CF?$AAd?$AA?0?$AA?$CF?$AAd@ 0000000000008c30     UefiDevicePathLib:DevicePathToText.obj
+ 0002:00001ea8       ??_C@_1M@NAHACGNB@?$AA?$CF?$AAs?$AA?$CI?$AA?$CF?$AAd@ 0000000000008c48     UefiDevicePathLib:DevicePathToText.obj
+ 0002:00001eb4       ??_C@_13CGOKJPIL@?$AA?1@   0000000000008c54     UefiDevicePathLib:DevicePathToText.obj
+ 0002:00001ec0       mUefiDevicePathLibToTextTableGeneric 0000000000008c60     UefiDevicePathLib:DevicePathToText.obj
+ 0002:00001f20       mUefiDevicePathLibToTextTable 0000000000008cc0     UefiDevicePathLib:DevicePathToText.obj
+ 0002:00002240       ??_C@_0O@MLOLIMFM@?$DMnull?5string?$DO@ 0000000000008fe0     BasePrintLib:PrintLibInternal.obj
+ 0002:00002250       ??_C@_0M@BJJDNPHK@?$DMnull?5guid?$DO@ 0000000000008ff0     BasePrintLib:PrintLibInternal.obj
+ 0002:00002260       ??_C@_0DB@PMLHLBMO@?$CF08x?9?$CF04x?9?$CF04x?9?$CF02x?$CF02x?9?$CF02x?$CF02@ 0000000000009000     BasePrintLib:PrintLibInternal.obj
+ 0002:00002298       ??_C@_0M@LHGBCIKM@?$DMnull?5time?$DO@ 0000000000009038     BasePrintLib:PrintLibInternal.obj
+ 0002:000022a8       ??_C@_0BK@FCPKCIDD@?$CF02d?1?$CF02d?1?$CF04d?5?5?$CF02d?3?$CF02d@ 0000000000009048     BasePrintLib:PrintLibInternal.obj
+ 0002:000022c4       ??_C@_04JIMNDDED@?$CF08X@  0000000000009064     BasePrintLib:PrintLibInternal.obj
+ 0002:000022cc       ??_C@_02PCIJFNDE@?$AN?6@   000000000000906c     BasePrintLib:PrintLibInternal.obj
+ 0002:000022d0       ??_C@_01LIIJDEN@?$AN@      0000000000009070     BasePrintLib:PrintLibInternal.obj
+ 0002:000022e0       mWarningString             0000000000009080     BasePrintLib:PrintLibInternal.obj
+ 0002:00002380       mErrorString               0000000000009120     BasePrintLib:PrintLibInternal.obj
+ 0002:00002640       mHexStr                    00000000000093e0     BasePrintLib:PrintLibInternal.obj
+ 0002:00002670       gST                        0000000000009410     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00002678       gBS                        0000000000009418     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00002680       __volatile_metadata        0000000000009420     <linker-defined>
+
+ entry point at        0001:00000060
+
+ Static symbols
+
+ 0001:0000001a       InternalMemCopyMem.0       000000000000029a     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:0000002a       @CopyBackward              00000000000002aa     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000033       @CopyBytes                 00000000000002b3     BaseMemoryLibRepStr:CopyMem.obj
+ 0004:00000000       $unwind$_ModuleEntryPoint  0000000000009b60     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0004:00000008       $unwind$StrHexToBytes      0000000000009b68     BaseLib:SafeString.obj
+ 0004:00000008       $unwind$GetDevicePathSize  0000000000009b68     UefiDevicePathLib:UefiDevicePathLib.obj
+ 0004:00000008       $unwind$InternalAllocateCopyPool 0000000000009b68     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0004:00000014       $unwind$StrHexToUintnS     0000000000009b74     BaseLib:SafeString.obj
+ 0004:00000014       $unwind$EisaIdFromText     0000000000009b74     UefiDevicePathLib:DevicePathFromText.obj
+ 0004:00000014       $unwind$Strtoi64           0000000000009b74     UefiDevicePathLib:DevicePathFromText.obj
+ 0004:00000014       $unwind$DuplicateDevicePath 0000000000009b74     UefiDevicePathLib:UefiDevicePathLib.obj
+ 0004:00000014       $unwind$IsDevicePathMultiInstance 0000000000009b74     UefiDevicePathLib:UefiDevicePathLib.obj
+ 0004:0000001c       $unwind$AppendDevicePath   0000000000009b7c     UefiDevicePathLib:UefiDevicePathLib.obj
+ 0004:0000001c       $unwind$AppendDevicePathNode 0000000000009b7c     UefiDevicePathLib:UefiDevicePathLib.obj
+ 0004:0000001c       $unwind$CreateDeviceNode   0000000000009b7c     UefiDevicePathLib:UefiDevicePathLib.obj
+ 0004:00000034       $unwind$DevPathToTextiSCSI 0000000000009b94     UefiDevicePathLib:DevicePathToText.obj
+ 0004:00000034       $unwind$AppendDevicePathInstance 0000000000009b94     UefiDevicePathLib:UefiDevicePathLib.obj
+ 0004:0000004c       $unwind$GetNextDevicePathInstance 0000000000009bac     UefiDevicePathLib:UefiDevicePathLib.obj
+ 0004:00000060       $unwind$ConvertDeviceNodeToText 0000000000009bc0     UefiDevicePathLib:UefiDevicePathLib.obj
+ 0004:00000074       $unwind$ConvertDevicePathToText 0000000000009bd4     UefiDevicePathLib:UefiDevicePathLib.obj
+ 0004:00000090       $unwind$StrHexToUint64     0000000000009bf0     BaseLib:String.obj
+ 0004:00000090       $unwind$DevPathFromTextDebugPort 0000000000009bf0     UefiDevicePathLib:DevicePathFromText.obj
+ 0004:00000090       $unwind$DevPathFromTextUsbAudio 0000000000009bf0     UefiDevicePathLib:DevicePathFromText.obj
+ 0004:00000090       $unwind$DevPathFromTextUsbCDCControl 0000000000009bf0     UefiDevicePathLib:DevicePathFromText.obj
+ 0004:00000090       $unwind$DevPathFromTextUsbCDCData 0000000000009bf0     UefiDevicePathLib:DevicePathFromText.obj
+ 0004:00000090       $unwind$DevPathFromTextUsbClass 0000000000009bf0     UefiDevicePathLib:DevicePathFromText.obj
+ 0004:00000090       $unwind$DevPathFromTextUsbDeviceFirmwareUpdate 0000000000009bf0     UefiDevicePathLib:DevicePathFromText.obj
+ 0004:00000090       $unwind$DevPathFromTextUsbDiagnostic 0000000000009bf0     UefiDevicePathLib:DevicePathFromText.obj
+ 0004:00000090       $unwind$DevPathFromTextUsbHID 0000000000009bf0     UefiDevicePathLib:DevicePathFromText.obj
+ 0004:00000090       $unwind$DevPathFromTextUsbHub 0000000000009bf0     UefiDevicePathLib:DevicePathFromText.obj
+ 0004:00000090       $unwind$DevPathFromTextUsbImage 0000000000009bf0     UefiDevicePathLib:DevicePathFromText.obj
+ 0004:00000090       $unwind$DevPathFromTextUsbIrdaBridge 0000000000009bf0     UefiDevicePathLib:DevicePathFromText.obj
+ 0004:00000090       $unwind$DevPathFromTextUsbMassStorage 0000000000009bf0     UefiDevicePathLib:DevicePathFromText.obj
+ 0004:00000090       $unwind$DevPathFromTextUsbPrinter 0000000000009bf0     UefiDevicePathLib:DevicePathFromText.obj
+ 0004:00000090       $unwind$DevPathFromTextUsbSmartCard 0000000000009bf0     UefiDevicePathLib:DevicePathFromText.obj
+ 0004:00000090       $unwind$DevPathFromTextUsbTestAndMeasurement 0000000000009bf0     UefiDevicePathLib:DevicePathFromText.obj
+ 0004:00000090       $unwind$DevPathFromTextUsbVideo 0000000000009bf0     UefiDevicePathLib:DevicePathFromText.obj
+ 0004:00000090       $unwind$DevPathFromTextUsbWireless 0000000000009bf0     UefiDevicePathLib:DevicePathFromText.obj
+ 0004:00000090       $unwind$DevPathFromTextVenPcAnsi 0000000000009bf0     UefiDevicePathLib:DevicePathFromText.obj
+ 0004:00000090       $unwind$DevPathFromTextVenUtf8 0000000000009bf0     UefiDevicePathLib:DevicePathFromText.obj
+ 0004:00000090       $unwind$DevPathFromTextVenVt100 0000000000009bf0     UefiDevicePathLib:DevicePathFromText.obj
+ 0004:00000090       $unwind$DevPathFromTextVenVt100Plus 0000000000009bf0     UefiDevicePathLib:DevicePathFromText.obj
+ 0004:00000090       $unwind$NetworkProtocolFromText 0000000000009bf0     UefiDevicePathLib:DevicePathFromText.obj
+ 0004:00000090       $unwind$Strtoi             0000000000009bf0     UefiDevicePathLib:DevicePathFromText.obj
+ 0004:00000090       $unwind$InternalAllocatePool 0000000000009bf0     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0004:00000098       $unwind$DevPathFromTextGenericPath 0000000000009bf8     UefiDevicePathLib:DevicePathFromText.obj
+ 0004:000000ac       $unwind$DevPathFromTextPath 0000000000009c0c     UefiDevicePathLib:DevicePathFromText.obj
+ 0004:000000b4       $unwind$ConvertFromTextAcpi 0000000000009c14     UefiDevicePathLib:DevicePathFromText.obj
+ 0004:000000b4       $unwind$DevPathFromTextAcpi 0000000000009c14     UefiDevicePathLib:DevicePathFromText.obj
+ 0004:000000b4       $unwind$DevPathFromTextBluetoothLE 0000000000009c14     UefiDevicePathLib:DevicePathFromText.obj
+ 0004:000000b4       $unwind$DevPathFromTextBmc 0000000000009c14     UefiDevicePathLib:DevicePathFromText.obj
+ 0004:000000b4       $unwind$DevPathFromTextFibre 0000000000009c14     UefiDevicePathLib:DevicePathFromText.obj
+ 0004:000000b4       $unwind$DevPathFromTextMAC 0000000000009c14     UefiDevicePathLib:DevicePathFromText.obj
+ 0004:000000b4       $unwind$DevPathFromTextPci 0000000000009c14     UefiDevicePathLib:DevicePathFromText.obj
+ 0004:000000b4       $unwind$DevPathFromTextRelativeOffsetRange 0000000000009c14     UefiDevicePathLib:DevicePathFromText.obj
+ 0004:000000b4       $unwind$DevPathFromTextScsi 0000000000009c14     UefiDevicePathLib:DevicePathFromText.obj
+ 0004:000000b4       $unwind$DevPathFromTextUfs 0000000000009c14     UefiDevicePathLib:DevicePathFromText.obj
+ 0004:000000b4       $unwind$DevPathFromTextUri 0000000000009c14     UefiDevicePathLib:DevicePathFromText.obj
+ 0004:000000b4       $unwind$DevPathFromTextUsb 0000000000009c14     UefiDevicePathLib:DevicePathFromText.obj
+ 0004:000000c4       $unwind$DevPathFromText1394 0000000000009c24     UefiDevicePathLib:DevicePathFromText.obj
+ 0004:000000c4       $unwind$DevPathFromTextBluetooth 0000000000009c24     UefiDevicePathLib:DevicePathFromText.obj
+ 0004:000000c4       $unwind$DevPathFromTextCtrl 0000000000009c24     UefiDevicePathLib:DevicePathFromText.obj
+ 0004:000000c4       $unwind$DevPathFromTextEmmc 0000000000009c24     UefiDevicePathLib:DevicePathFromText.obj
+ 0004:000000c4       $unwind$DevPathFromTextFv  0000000000009c24     UefiDevicePathLib:DevicePathFromText.obj
+ 0004:000000c4       $unwind$DevPathFromTextFvFile 0000000000009c24     UefiDevicePathLib:DevicePathFromText.obj
+ 0004:000000c4       $unwind$DevPathFromTextI2O 0000000000009c24     UefiDevicePathLib:DevicePathFromText.obj
+ 0004:000000c4       $unwind$DevPathFromTextMedia 0000000000009c24     UefiDevicePathLib:DevicePathFromText.obj
+ 0004:000000c4       $unwind$DevPathFromTextPcCard 0000000000009c24     UefiDevicePathLib:DevicePathFromText.obj
+ 0004:000000c4       $unwind$DevPathFromTextSd  0000000000009c24     UefiDevicePathLib:DevicePathFromText.obj
+ 0004:000000c4       $unwind$DevPathFromTextUnit 0000000000009c24     UefiDevicePathLib:DevicePathFromText.obj
+ 0004:000000c4       $unwind$DevPathFromTextVlan 0000000000009c24     UefiDevicePathLib:DevicePathFromText.obj
+ 0004:000000d0       $unwind$ConvertFromTextVendor 0000000000009c30     UefiDevicePathLib:DevicePathFromText.obj
+ 0004:000000d0       $unwind$DevPathFromTextAta 0000000000009c30     UefiDevicePathLib:DevicePathFromText.obj
+ 0004:000000d0       $unwind$DevPathFromTextCDROM 0000000000009c30     UefiDevicePathLib:DevicePathFromText.obj
+ 0004:000000d0       $unwind$DevPathFromTextFibreEx 0000000000009c30     UefiDevicePathLib:DevicePathFromText.obj
+ 0004:000000d0       $unwind$DevPathFromTextMemoryMapped 0000000000009c30     UefiDevicePathLib:DevicePathFromText.obj
+ 0004:000000d0       $unwind$DevPathFromTextSata 0000000000009c30     UefiDevicePathLib:DevicePathFromText.obj
+ 0004:000000e4       $unwind$DevPathFromTextAcpiEx 0000000000009c44     UefiDevicePathLib:DevicePathFromText.obj
+ 0004:00000100       $unwind$DevPathFromTextAcpiAdr 0000000000009c60     UefiDevicePathLib:DevicePathFromText.obj
+ 0004:00000100       $unwind$DevPathFromTextAcpiExp 0000000000009c60     UefiDevicePathLib:DevicePathFromText.obj
+ 0004:00000114       $unwind$ConvertFromTextUsbClass 0000000000009c74     UefiDevicePathLib:DevicePathFromText.obj
+ 0004:00000114       $unwind$DevPathFromTextInfiniband 0000000000009c74     UefiDevicePathLib:DevicePathFromText.obj
+ 0004:00000114       $unwind$DevPathFromTextUart 0000000000009c74     UefiDevicePathLib:DevicePathFromText.obj
+ 0004:0000012c       $unwind$DevPathFromTextUartFlowCtrl 0000000000009c8c     UefiDevicePathLib:DevicePathFromText.obj
+ 0004:00000134       $unwind$DevPathFromTextSAS 0000000000009c94     UefiDevicePathLib:DevicePathFromText.obj
+ 0004:0000014c       $unwind$DevPathFromTextSasEx 0000000000009cac     UefiDevicePathLib:DevicePathFromText.obj
+ 0004:00000164       $unwind$DevPathFromTextDns 0000000000009cc4     UefiDevicePathLib:DevicePathFromText.obj
+ 0004:00000164       $unwind$DevPathFromTextNVMe 0000000000009cc4     UefiDevicePathLib:DevicePathFromText.obj
+ 0004:00000164       $unwind$DevPathFromTextPersistentVirtualCd 0000000000009cc4     UefiDevicePathLib:DevicePathFromText.obj
+ 0004:00000164       $unwind$DevPathFromTextPersistentVirtualDisk 0000000000009cc4     UefiDevicePathLib:DevicePathFromText.obj
+ 0004:00000164       $unwind$DevPathFromTextVirtualCd 0000000000009cc4     UefiDevicePathLib:DevicePathFromText.obj
+ 0004:00000164       $unwind$DevPathFromTextVirtualDisk 0000000000009cc4     UefiDevicePathLib:DevicePathFromText.obj
+ 0004:00000174       $unwind$DevPathFromTextBBS 0000000000009cd4     UefiDevicePathLib:DevicePathFromText.obj
+ 0004:00000174       $unwind$DevPathFromTextIPv4 0000000000009cd4     UefiDevicePathLib:DevicePathFromText.obj
+ 0004:00000174       $unwind$DevPathFromTextIPv6 0000000000009cd4     UefiDevicePathLib:DevicePathFromText.obj
+ 0004:00000174       $unwind$DevPathFromTextUsbWwid 0000000000009cd4     UefiDevicePathLib:DevicePathFromText.obj
+ 0004:0000018c       $unwind$DevPathFromTextiSCSI 0000000000009cec     UefiDevicePathLib:DevicePathFromText.obj
+ 0004:000001a4       $unwind$DevPathFromTextWiFi 0000000000009d04     UefiDevicePathLib:DevicePathFromText.obj
+ 0004:000001b0       $unwind$DevPathFromTextHD  0000000000009d10     UefiDevicePathLib:DevicePathFromText.obj
+ 0004:000001c4       $unwind$DevPathFromTextFilePath 0000000000009d24     UefiDevicePathLib:DevicePathFromText.obj
+ 0004:000001c4       $unwind$DevPathToTextAcpiAdr 0000000000009d24     UefiDevicePathLib:DevicePathToText.obj
+ 0004:000001c4       $unwind$DevPathToTextBBS   0000000000009d24     UefiDevicePathLib:DevicePathToText.obj
+ 0004:000001c4       $unwind$DevPathToTextIPv6  0000000000009d24     UefiDevicePathLib:DevicePathToText.obj
+ 0004:000001c4       $unwind$DevPathToTextNodeGeneric 0000000000009d24     UefiDevicePathLib:DevicePathToText.obj
+ 0004:000001c4       $unwind$DevPathToTextUart  0000000000009d24     UefiDevicePathLib:DevicePathToText.obj
+ 0004:000001d4       $unwind$DevPathFromTextRamDisk 0000000000009d34     UefiDevicePathLib:DevicePathFromText.obj
+ 0004:000001e8       $unwind$UefiDevicePathLibConvertTextToDeviceNode 0000000000009d48     UefiDevicePathLib:DevicePathFromText.obj
+ 0004:00000200       $unwind$UefiDevicePathLibConvertTextToDevicePath 0000000000009d60     UefiDevicePathLib:DevicePathFromText.obj
+ 0004:0000021c       $unwind$UefiDevicePathLibCatPrint 0000000000009d7c     UefiDevicePathLib:DevicePathToText.obj
+ 0004:00000228       $unwind$DevPathToTextAtapi 0000000000009d88     UefiDevicePathLib:DevicePathToText.obj
+ 0004:00000228       $unwind$DevPathToTextCDROM 0000000000009d88     UefiDevicePathLib:DevicePathToText.obj
+ 0004:00000228       $unwind$DevPathToTextMemMap 0000000000009d88     UefiDevicePathLib:DevicePathToText.obj
+ 0004:00000228       $unwind$DevPathToTextSata  0000000000009d88     UefiDevicePathLib:DevicePathToText.obj
+ 0004:00000230       $unwind$DevPathToTextVendor 0000000000009d90     UefiDevicePathLib:DevicePathToText.obj
+ 0004:00000248       $unwind$DevPathToTextAcpiEx 0000000000009da8     UefiDevicePathLib:DevicePathToText.obj
+ 0004:00000260       $unwind$DevPathToTextFibreEx 0000000000009dc0     UefiDevicePathLib:DevicePathToText.obj
+ 0004:00000260       $unwind$DevPathToTextMacAddr 0000000000009dc0     UefiDevicePathLib:DevicePathToText.obj
+ 0004:00000260       $unwind$DevPathToTextUri   0000000000009dc0     UefiDevicePathLib:DevicePathToText.obj
+ 0004:00000260       $unwind$InternalReallocatePool 0000000000009dc0     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0004:00000274       $unwind$DevPathToTextSasEx 0000000000009dd4     UefiDevicePathLib:DevicePathToText.obj
+ 0004:00000274       $unwind$DevPathToTextUsbWWID 0000000000009dd4     UefiDevicePathLib:DevicePathToText.obj
+ 0004:00000288       $unwind$DevPathToTextNVMe  0000000000009de8     UefiDevicePathLib:DevicePathToText.obj
+ 0004:00000298       $unwind$DevPathToTextUsbClass 0000000000009df8     UefiDevicePathLib:DevicePathToText.obj
+ 0004:000002a4       $unwind$CatIPv6Address     0000000000009e04     UefiDevicePathLib:DevicePathToText.obj
+ 0004:000002c0       $unwind$DevPathToTextIPv4  0000000000009e20     UefiDevicePathLib:DevicePathToText.obj
+ 0004:000002d0       $unwind$DevPathToTextInfiniBand 0000000000009e30     UefiDevicePathLib:DevicePathToText.obj
+ 0004:000002d8       $unwind$DevPathToTextBluetooth 0000000000009e38     UefiDevicePathLib:DevicePathToText.obj
+ 0004:000002e0       $unwind$DevPathToTextWiFi  0000000000009e40     UefiDevicePathLib:DevicePathToText.obj
+ 0004:000002e8       $unwind$DevPathToTextBluetoothLE 0000000000009e48     UefiDevicePathLib:DevicePathToText.obj
+ 0004:000002f4       $unwind$DevPathToTextDns   0000000000009e54     UefiDevicePathLib:DevicePathToText.obj
+ 0004:0000030c       $unwind$DevPathToTextHardDrive 0000000000009e6c     UefiDevicePathLib:DevicePathToText.obj
+ 0004:00000318       $unwind$DevPathToTextRamDisk 0000000000009e78     UefiDevicePathLib:DevicePathToText.obj
+ 0004:00000320       $unwind$StrDecimalToUintnS 0000000000009e80     BaseLib:SafeString.obj
+ 0004:0000032c       $unwind$StrToIpv6Address   0000000000009e8c     BaseLib:SafeString.obj
+ 0004:00000344       $unwind$StrToIpv4Address   0000000000009ea4     BaseLib:SafeString.obj
+ 0004:00000350       $unwind$StrToGuid          0000000000009eb0     BaseLib:SafeString.obj
+ 0004:00000364       $unwind$UnicodeSPrint      0000000000009ec4     BasePrintLib:PrintLib.obj
+ 0004:0000036c       $unwind$BasePrintLibSPrintMarker 0000000000009ecc     BasePrintLib:PrintLibInternal.obj
+ 0004:00000388       $unwind$BasePrintLibSPrint 0000000000009ee8     BasePrintLib:PrintLibInternal.obj

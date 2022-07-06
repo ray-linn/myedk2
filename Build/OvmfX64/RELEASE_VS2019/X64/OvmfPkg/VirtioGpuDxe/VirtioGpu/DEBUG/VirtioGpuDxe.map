@@ -1,0 +1,157 @@
+ VirtioGpuDxe
+
+ Timestamp is 61ee7040 (Mon Jan 24 17:24:16 2022)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 000000e4H .text                   CODE
+ 0001:000000e4 00002eb1H .text$mn                CODE
+ 0002:00000000 000000b0H .data                   DATA
+ 0002:000000b0 00000640H .rdata                  DATA
+ 0002:000006f0 00000020H .bss                    DATA
+ 0002:00000710 00000134H .rdata$voltmd           DATA
+ 0002:00000844 000000a8H .rdata$zzzdbg           DATA
+ 0003:00000000 0000015cH .pdata                  DATA
+ 0004:00000000 000001a0H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __guard_iat_count          0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map          0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points_count 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map_count    0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_table      0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_native_entrypoint 0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_table      0000000000000000     <absolute>
+ 0000:00000000       __enclave_config           0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_table          0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata_count 0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table_size 0000000000000000     <absolute>
+ 0000:00000000       __guard_flags              0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table   0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_count      0000000000000000     <absolute>
+ 0000:00000000       __dynamic_value_reloc_table 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat     0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat_copy 0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_table         0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_count      0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_count         0000000000000000     <absolute>
+ 0000:00000000       __AbsoluteZero             0000000000000000     <absolute>
+ 0000:00000000       __guard_check_icall_a64n_fptr 0000000000000000     <absolute>
+ 0000:00000000       __ImageBase                0000000000000000     <linker-defined>
+ 0001:00000000       CpuPause                   0000000000000280     BaseLib:CpuPause.obj
+ 0001:00000010       InternalMemCopyMem         0000000000000290     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000050       InternalMemCompareMem      00000000000002d0     BaseMemoryLibRepStr:CompareMem.obj
+ 0001:00000070       InternalMemSetMem32        00000000000002f0     BaseMemoryLibRepStr:SetMem32.obj
+ 0001:00000090       InternalMemZeroMem         0000000000000310     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:000000b0       InternalMemSetMem          0000000000000330     BaseMemoryLibRepStr:SetMem.obj
+ 0001:000000d0       InternalMemSetMem64        0000000000000350     BaseMemoryLibRepStr:SetMem64.obj
+ 0001:000000e4       _ModuleEntryPoint          0000000000000364 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:00000c34       ReleaseGopResources        0000000000000eb4 f   VirtioGpuDxe:Gop.obj
+ 0001:00001530       VirtioGpuInit              00000000000017b0 f   VirtioGpuDxe:Commands.obj
+ 0001:00001764       VirtioGpuUninit            00000000000019e4 f   VirtioGpuDxe:Commands.obj
+ 0001:000017b8       VirtioGpuExitBoot          0000000000001a38 f   VirtioGpuDxe:Commands.obj
+ 0001:00001990       VirtioGpuSetScanout        0000000000001c10 f   VirtioGpuDxe:Commands.obj
+ 0001:000019e0       VirtioGpuResourceFlush     0000000000001c60 f   VirtioGpuDxe:Commands.obj
+ 0001:00001a44       StrnLenS                   0000000000001cc4 f   BaseLib:SafeString.obj
+ 0001:00001a70       UnicodeSPrintAsciiFormat   0000000000001cf0 f   BasePrintLib:PrintLib.obj
+ 0001:00001aa4       BasePrintLibFillBuffer     0000000000001d24 f   BasePrintLib:PrintLibInternal.obj
+ 0001:00001ad8       BasePrintLibSPrintMarker   0000000000001d58 f   BasePrintLib:PrintLibInternal.obj
+ 0001:00002874       BasePrintLibSPrint         0000000000002af4 f   BasePrintLib:PrintLibInternal.obj
+ 0001:00002898       InternalAllocatePool       0000000000002b18 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:000028c8       InternalAllocateCopyPool   0000000000002b48 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00002908       IsLanguageSupported        0000000000002b88 f   UefiLib:UefiLib.obj
+ 0001:000029ac       LookupUnicodeString2       0000000000002c2c f   UefiLib:UefiLib.obj
+ 0001:00002a8c       AddUnicodeString2          0000000000002d0c f   UefiLib:UefiLib.obj
+ 0001:00002cb4       FreeUnicodeStringTable     0000000000002f34 f   UefiLib:UefiLib.obj
+ 0001:00002d2c       VirtioRingInit             0000000000002fac f   VirtioLib:VirtioLib.obj
+ 0001:00002e40       VirtioFlush                00000000000030c0 f   VirtioLib:VirtioLib.obj
+ 0001:00002f18       VirtioMapAllBytesInSharedBuffer 0000000000003198 f   VirtioLib:VirtioLib.obj
+ 0002:00000000       gEfiComponentName2ProtocolGuid 0000000000003220     VirtioGpuDxe:AutoGen.obj
+ 0002:00000010       gEfiDevicePathProtocolGuid 0000000000003230     VirtioGpuDxe:AutoGen.obj
+ 0002:00000020       gEfiPciIoProtocolGuid      0000000000003240     VirtioGpuDxe:AutoGen.obj
+ 0002:00000030       gEfiDevicePathUtilitiesProtocolGuid 0000000000003250     VirtioGpuDxe:AutoGen.obj
+ 0002:00000040       gEfiGraphicsOutputProtocolGuid 0000000000003260     VirtioGpuDxe:AutoGen.obj
+ 0002:00000050       gEfiDriverBindingProtocolGuid 0000000000003270     VirtioGpuDxe:AutoGen.obj
+ 0002:00000060       gVirtioDeviceProtocolGuid  0000000000003280     VirtioGpuDxe:AutoGen.obj
+ 0002:00000070       gEfiCallerIdGuid           0000000000003290     VirtioGpuDxe:AutoGen.obj
+ 0002:000000b0       ??_C@_02LFNMGJAP@en@       00000000000032d0     VirtioGpuDxe:DriverBinding.obj
+ 0002:000000b8       ??_C@_1CE@KGEKGFHD@?$AAV?$AAi?$AAr?$AAt?$AAi?$AAo?$AA?5?$AAG?$AAP?$AAU?$AA?5?$AAD?$AAr?$AAi?$AAv@ 00000000000032d8     VirtioGpuDxe:DriverBinding.obj
+ 0002:000000e0       ??_C@_0BF@GDDLNDHA@?$CFs?5?$CF04x?3?$CF02x?3?$CF02x?4?$CFx@ 0000000000003300     VirtioGpuDxe:DriverBinding.obj
+ 0002:000000f8       ??_C@_04HDOCAJNK@?$CFs?$CFs@ 0000000000003318     VirtioGpuDxe:DriverBinding.obj
+ 0002:00000180       mGopTemplate               00000000000033a0     VirtioGpuDxe:Gop.obj
+ 0002:000002c8       ??_C@_0O@MLOLIMFM@?$DMnull?5string?$DO@ 00000000000034e8     BasePrintLib:PrintLibInternal.obj
+ 0002:000002d8       ??_C@_0M@BJJDNPHK@?$DMnull?5guid?$DO@ 00000000000034f8     BasePrintLib:PrintLibInternal.obj
+ 0002:000002e8       ??_C@_0DB@PMLHLBMO@?$CF08x?9?$CF04x?9?$CF04x?9?$CF02x?$CF02x?9?$CF02x?$CF02@ 0000000000003508     BasePrintLib:PrintLibInternal.obj
+ 0002:00000320       ??_C@_0M@LHGBCIKM@?$DMnull?5time?$DO@ 0000000000003540     BasePrintLib:PrintLibInternal.obj
+ 0002:00000330       ??_C@_0BK@FCPKCIDD@?$CF02d?1?$CF02d?1?$CF04d?5?5?$CF02d?3?$CF02d@ 0000000000003550     BasePrintLib:PrintLibInternal.obj
+ 0002:0000034c       ??_C@_04JIMNDDED@?$CF08X@  000000000000356c     BasePrintLib:PrintLibInternal.obj
+ 0002:00000354       ??_C@_02PCIJFNDE@?$AN?6@   0000000000003574     BasePrintLib:PrintLibInternal.obj
+ 0002:00000358       ??_C@_01LIIJDEN@?$AN@      0000000000003578     BasePrintLib:PrintLibInternal.obj
+ 0002:00000360       mWarningString             0000000000003580     BasePrintLib:PrintLibInternal.obj
+ 0002:00000400       mErrorString               0000000000003620     BasePrintLib:PrintLibInternal.obj
+ 0002:000006c0       mHexStr                    00000000000038e0     BasePrintLib:PrintLibInternal.obj
+ 0002:000006f0       gST                        0000000000003910     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000006f8       gBS                        0000000000003918     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000700       gImageHandle               0000000000003920     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000708       mDevicePathLibDevicePathUtilities 0000000000003928     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:00000710       __volatile_metadata        0000000000003930     <linker-defined>
+
+ entry point at        0001:000000e4
+
+ Static symbols
+
+ 0001:0000002a       InternalMemCopyMem.0       00000000000002aa     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:0000003a       @CopyBackward              00000000000002ba     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000043       @CopyBytes                 00000000000002c3     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:0000016c       VirtioGpuGetDriverName     00000000000003ec f   VirtioGpuDxe:DriverBinding.obj
+ 0001:00000190       VirtioGpuGetControllerName 0000000000000410 f   VirtioGpuDxe:DriverBinding.obj
+ 0001:00000238       FormatVgpuDevName          00000000000004b8 f   VirtioGpuDxe:DriverBinding.obj
+ 0001:00000388       InitVgpuGop                0000000000000608 f   VirtioGpuDxe:DriverBinding.obj
+ 0001:0000064c       UninitVgpuGop              00000000000008cc f   VirtioGpuDxe:DriverBinding.obj
+ 0001:00000714       VirtioGpuDriverBindingSupported 0000000000000994 f   VirtioGpuDxe:DriverBinding.obj
+ 0001:00000884       VirtioGpuDriverBindingStart 0000000000000b04 f   VirtioGpuDxe:DriverBinding.obj
+ 0001:00000b04       VirtioGpuDriverBindingStop 0000000000000d84 f   VirtioGpuDxe:DriverBinding.obj
+ 0001:00000d7c       GopQueryMode               0000000000000ffc f   VirtioGpuDxe:Gop.obj
+ 0001:00000e1c       GopSetMode                 000000000000109c f   VirtioGpuDxe:Gop.obj
+ 0001:00001194       GopBlt                     0000000000001414 f   VirtioGpuDxe:Gop.obj
+ 0001:000017c4       VirtioGpuSendCommand       0000000000001a44 f   VirtioGpuDxe:Commands.obj
+ 0002:00000080       mDriverBinding             00000000000032a0     VirtioGpuDxe:DriverBinding.obj
+ 0002:00000100       mDriverNameTable           0000000000003320     VirtioGpuDxe:DriverBinding.obj
+ 0002:00000120       ?ControllerNameStem@?1??FormatVgpuDevName@@9@9 0000000000003340     VirtioGpuDxe:DriverBinding.obj
+ 0002:00000148       ?NameSuffix@?1??InitVgpuGop@@9@9 0000000000003368     VirtioGpuDxe:DriverBinding.obj
+ 0002:00000160       mComponentName2            0000000000003380     VirtioGpuDxe:DriverBinding.obj
+ 0002:00000178       mAcpiAdr                   0000000000003398     VirtioGpuDxe:DriverBinding.obj
+ 0002:000001a0       mGopResolutions            00000000000033c0     VirtioGpuDxe:Gop.obj
+ 0004:00000000       $unwind$_ModuleEntryPoint  0000000000003c80     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0004:00000008       $unwind$VirtioGpuGetDriverName 0000000000003c88     VirtioGpuDxe:DriverBinding.obj
+ 0004:00000010       $unwind$VirtioGpuGetControllerName 0000000000003c90     VirtioGpuDxe:DriverBinding.obj
+ 0004:00000020       $unwind$FormatVgpuDevName  0000000000003ca0     VirtioGpuDxe:DriverBinding.obj
+ 0004:00000034       $unwind$InitVgpuGop        0000000000003cb4     VirtioGpuDxe:DriverBinding.obj
+ 0004:00000050       $unwind$VirtioFlush        0000000000003cd0     VirtioLib:VirtioLib.obj
+ 0004:00000050       $unwind$UninitVgpuGop      0000000000003cd0     VirtioGpuDxe:DriverBinding.obj
+ 0004:00000050       $unwind$GopQueryMode       0000000000003cd0     VirtioGpuDxe:Gop.obj
+ 0004:00000064       $unwind$VirtioGpuDriverBindingSupported 0000000000003ce4     VirtioGpuDxe:DriverBinding.obj
+ 0004:00000074       $unwind$VirtioGpuDriverBindingStart 0000000000003cf4     VirtioGpuDxe:DriverBinding.obj
+ 0004:00000084       $unwind$VirtioGpuDriverBindingStop 0000000000003d04     VirtioGpuDxe:DriverBinding.obj
+ 0004:00000098       $unwind$ReleaseGopResources 0000000000003d18     VirtioGpuDxe:Gop.obj
+ 0004:000000ac       $unwind$GopSetMode         0000000000003d2c     VirtioGpuDxe:Gop.obj
+ 0004:000000c8       $unwind$GopBlt             0000000000003d48     VirtioGpuDxe:Gop.obj
+ 0004:000000e0       $unwind$VirtioGpuInit      0000000000003d60     VirtioGpuDxe:Commands.obj
+ 0004:000000f4       $unwind$InternalAllocateCopyPool 0000000000003d74     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0004:000000f4       $unwind$VirtioGpuUninit    0000000000003d74     VirtioGpuDxe:Commands.obj
+ 0004:00000100       $unwind$VirtioGpuSendCommand 0000000000003d80     VirtioGpuDxe:Commands.obj
+ 0004:00000114       $unwind$VirtioGpuResourceFlush 0000000000003d94     VirtioGpuDxe:Commands.obj
+ 0004:00000114       $unwind$VirtioGpuSetScanout 0000000000003d94     VirtioGpuDxe:Commands.obj
+ 0004:0000011c       $unwind$UnicodeSPrintAsciiFormat 0000000000003d9c     BasePrintLib:PrintLib.obj
+ 0004:00000124       $unwind$BasePrintLibSPrintMarker 0000000000003da4     BasePrintLib:PrintLibInternal.obj
+ 0004:00000140       $unwind$BasePrintLibSPrint 0000000000003dc0     BasePrintLib:PrintLibInternal.obj
+ 0004:00000148       $unwind$InternalAllocatePool 0000000000003dc8     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0004:00000150       $unwind$FreeUnicodeStringTable 0000000000003dd0     UefiLib:UefiLib.obj
+ 0004:00000150       $unwind$LookupUnicodeString2 0000000000003dd0     UefiLib:UefiLib.obj
+ 0004:00000160       $unwind$AddUnicodeString2  0000000000003de0     UefiLib:UefiLib.obj
+ 0004:00000178       $unwind$VirtioRingInit     0000000000003df8     VirtioLib:VirtioLib.obj
+ 0004:00000194       $unwind$VirtioMapAllBytesInSharedBuffer 0000000000003e14     VirtioLib:VirtioLib.obj

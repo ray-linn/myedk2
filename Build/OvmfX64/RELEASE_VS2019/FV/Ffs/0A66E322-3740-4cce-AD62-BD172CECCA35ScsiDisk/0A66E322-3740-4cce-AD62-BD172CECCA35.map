@@ -1,0 +1,209 @@
+ ScsiDisk
+
+ Timestamp is 61ee7030 (Mon Jan 24 17:24:00 2022)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000060H .text                   CODE
+ 0001:00000060 00006a74H .text$mn                CODE
+ 0002:00000000 000001c0H .data                   DATA
+ 0002:000001c0 00000078H .rdata                  DATA
+ 0002:00000238 00000018H .bss                    DATA
+ 0002:00000250 00000020H .rdata$voltmd           DATA
+ 0002:00000270 000000a8H .rdata$zzzdbg           DATA
+ 0003:00000000 000002c4H .pdata                  DATA
+ 0004:00000000 000002fcH .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __arm64x_redirection_metadata 0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_table          0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_count          0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_count      0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_table      0000000000000000     <absolute>
+ 0000:00000000       __dynamic_value_reloc_table 0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_count      0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points 0000000000000000     <absolute>
+ 0000:00000000       __guard_flags              0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map_count    0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat     0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat_copy 0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_count         0000000000000000     <absolute>
+ 0000:00000000       __AbsoluteZero             0000000000000000     <absolute>
+ 0000:00000000       __arm64x_native_entrypoint 0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_table      0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table   0000000000000000     <absolute>
+ 0000:00000000       __enclave_config           0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata_count 0000000000000000     <absolute>
+ 0000:00000000       __guard_check_icall_a64n_fptr 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map          0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table_size 0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_table         0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points_count 0000000000000000     <absolute>
+ 0001:00000000       InternalMemCopyMem         0000000000000280     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000040       InternalMemZeroMem         00000000000002c0     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00000060       _ModuleEntryPoint          00000000000002e0 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:000000f8       ScsiDiskDriverBindingSupported 0000000000000378 f   ScsiDisk:ScsiDisk.obj
+ 0001:000001a8       ScsiDiskDriverBindingStart 0000000000000428 f   ScsiDisk:ScsiDisk.obj
+ 0001:000005cc       ScsiDiskDriverBindingStop  000000000000084c f   ScsiDisk:ScsiDisk.obj
+ 0001:000006f8       ScsiDiskReset              0000000000000978 f   ScsiDisk:ScsiDisk.obj
+ 0001:000007a4       ScsiDiskReadBlocks         0000000000000a24 f   ScsiDisk:ScsiDisk.obj
+ 0001:000009ac       ScsiDiskWriteBlocks        0000000000000c2c f   ScsiDisk:ScsiDisk.obj
+ 0001:00000bc8       ScsiDiskFlushBlocks        0000000000000e48 f   ScsiDisk:ScsiDisk.obj
+ 0001:00000bcc       ScsiDiskResetEx            0000000000000e4c f   ScsiDisk:ScsiDisk.obj
+ 0001:00000c70       ScsiDiskReadBlocksEx       0000000000000ef0 f   ScsiDisk:ScsiDisk.obj
+ 0001:00000ec0       ScsiDiskWriteBlocksEx      0000000000001140 f   ScsiDisk:ScsiDisk.obj
+ 0001:0000112c       ScsiDiskFlushBlocksEx      00000000000013ac f   ScsiDisk:ScsiDisk.obj
+ 0001:000012b4       ScsiDiskAsyncUnmapNotify   0000000000001534 f   ScsiDisk:ScsiDisk.obj
+ 0001:0000134c       ScsiDiskUnmap              00000000000015cc f   ScsiDisk:ScsiDisk.obj
+ 0001:000016a0       ScsiDiskEraseBlocks        0000000000001920 f   ScsiDisk:ScsiDisk.obj
+ 0001:00001890       ScsiDiskReceiveData        0000000000001b10 f   ScsiDisk:ScsiDisk.obj
+ 0001:00001bc8       ScsiDiskSendData           0000000000001e48 f   ScsiDisk:ScsiDisk.obj
+ 0001:00001ed8       ScsiDiskDetectMedia        0000000000002158 f   ScsiDisk:ScsiDisk.obj
+ 0001:000024f0       ScsiDiskInquiryDevice      0000000000002770 f   ScsiDisk:ScsiDisk.obj
+ 0001:000028e8       ScsiDiskTestUnitReady      0000000000002b68 f   ScsiDisk:ScsiDisk.obj
+ 0001:00002ab0       DetectMediaParsingSenseKeys 0000000000002d30 f   ScsiDisk:ScsiDisk.obj
+ 0001:00002cb4       ScsiDiskReadCapacity       0000000000002f34 f   ScsiDisk:ScsiDisk.obj
+ 0001:00002f8c       CheckHostAdapterStatus     000000000000320c f   ScsiDisk:ScsiDisk.obj
+ 0001:00002fec       CheckTargetStatus          000000000000326c f   ScsiDisk:ScsiDisk.obj
+ 0001:00003028       ScsiDiskRequestSenseKeys   00000000000032a8 f   ScsiDisk:ScsiDisk.obj
+ 0001:00003220       GetMediaInfo               00000000000034a0 f   ScsiDisk:ScsiDisk.obj
+ 0001:00003370       ScsiDiskReadSectors        00000000000035f0 f   ScsiDisk:ScsiDisk.obj
+ 0001:000034ec       ScsiDiskWriteSectors       000000000000376c f   ScsiDisk:ScsiDisk.obj
+ 0001:00003668       ScsiDiskAsyncReadSectors   00000000000038e8 f   ScsiDisk:ScsiDisk.obj
+ 0001:00003918       ScsiDiskAsyncWriteSectors  0000000000003b98 f   ScsiDisk:ScsiDisk.obj
+ 0001:00003bc8       ScsiDiskRead10             0000000000003e48 f   ScsiDisk:ScsiDisk.obj
+ 0001:00003df4       ScsiDiskWrite10            0000000000004074 f   ScsiDisk:ScsiDisk.obj
+ 0001:00004020       ScsiDiskRead16             00000000000042a0 f   ScsiDisk:ScsiDisk.obj
+ 0001:00004250       ScsiDiskWrite16            00000000000044d0 f   ScsiDisk:ScsiDisk.obj
+ 0001:00004480       ScsiDiskNotify             0000000000004700 f   ScsiDisk:ScsiDisk.obj
+ 0001:0000481c       ScsiDiskAsyncRead10        0000000000004a9c f   ScsiDisk:ScsiDisk.obj
+ 0001:00004b64       ScsiDiskAsyncWrite10       0000000000004de4 f   ScsiDisk:ScsiDisk.obj
+ 0001:00004eac       ScsiDiskAsyncRead16        000000000000512c f   ScsiDisk:ScsiDisk.obj
+ 0001:00005240       ScsiDiskAsyncWrite16       00000000000054c0 f   ScsiDisk:ScsiDisk.obj
+ 0001:000055d4       ReleaseScsiDiskDeviceResources 0000000000005854 f   ScsiDisk:ScsiDisk.obj
+ 0001:00005698       GetParentProtocol          0000000000005918 f   ScsiDisk:ScsiDisk.obj
+ 0001:000057c0       DetermineInstallEraseBlock 0000000000005a40 f   ScsiDisk:ScsiDisk.obj
+ 0001:000058e0       DetermineInstallStorageSecurity 0000000000005b60 f   ScsiDisk:ScsiDisk.obj
+ 0001:0000593c       ScsiDiskInfoInquiry        0000000000005bbc f   ScsiDisk:ScsiDisk.obj
+ 0001:00005988       ScsiDiskInfoIdentify       0000000000005c08 f   ScsiDisk:ScsiDisk.obj
+ 0001:00005a14       ScsiDiskInfoSenseData      0000000000005c94 f   ScsiDisk:ScsiDisk.obj
+ 0001:00005a20       ScsiDiskInfoWhichIde       0000000000005ca0 f   ScsiDisk:ScsiDisk.obj
+ 0001:00005a68       InitializeInstallDiskInfo  0000000000005ce8 f   ScsiDisk:ScsiDisk.obj
+ 0001:00005c00       ScsiDiskComponentNameGetDriverName 0000000000005e80 f   ScsiDisk:ComponentName.obj
+ 0001:00005c34       ScsiDiskComponentNameGetControllerName 0000000000005eb4 f   ScsiDisk:ComponentName.obj
+ 0001:00005d40       InternalAllocateAlignedPages 0000000000005fc0 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00005e34       InternalAllocatePool       00000000000060b4 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00005e64       AllocateZeroPool           00000000000060e4 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00005e90       InternalAllocateCopyPool   0000000000006110 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00005ed0       ScsiInquiryCommandEx       0000000000006150 f   UefiScsiLib:UefiScsiLib.obj
+ 0001:00005fa4       ScsiReadCapacity16Command  0000000000006224 f   UefiScsiLib:UefiScsiLib.obj
+ 0001:00006064       ScsiRead10Command          00000000000062e4 f   UefiScsiLib:UefiScsiLib.obj
+ 0001:00006148       ScsiWrite10Command         00000000000063c8 f   UefiScsiLib:UefiScsiLib.obj
+ 0001:0000622c       ScsiRead16Command          00000000000064ac f   UefiScsiLib:UefiScsiLib.obj
+ 0001:00006354       ScsiWrite16Command         00000000000065d4 f   UefiScsiLib:UefiScsiLib.obj
+ 0001:0000647c       ScsiSecurityProtocolInCommand 00000000000066fc f   UefiScsiLib:UefiScsiLib.obj
+ 0001:00006564       ScsiSecurityProtocolOutCommand 00000000000067e4 f   UefiScsiLib:UefiScsiLib.obj
+ 0001:00006644       ScsiLibNotify              00000000000068c4 f   UefiScsiLib:UefiScsiLib.obj
+ 0001:000066dc       IsLanguageSupported        000000000000695c f   UefiLib:UefiLib.obj
+ 0001:00006780       LookupUnicodeString2       0000000000006a00 f   UefiLib:UefiLib.obj
+ 0001:00006898       AddUnicodeString2          0000000000006b18 f   UefiLib:UefiLib.obj
+ 0002:00000000       gEfiDiskInfoProtocolGuid   0000000000006d60     ScsiDisk:AutoGen.obj
+ 0002:00000010       gEfiEraseBlockProtocolGuid 0000000000006d70     ScsiDisk:AutoGen.obj
+ 0002:00000020       gEfiDiskInfoUfsInterfaceGuid 0000000000006d80     ScsiDisk:AutoGen.obj
+ 0002:00000030       gEfiExtScsiPassThruProtocolGuid 0000000000006d90     ScsiDisk:AutoGen.obj
+ 0002:00000040       gEfiDiskInfoScsiInterfaceGuid 0000000000006da0     ScsiDisk:AutoGen.obj
+ 0002:00000050       gEfiComponentName2ProtocolGuid 0000000000006db0     ScsiDisk:AutoGen.obj
+ 0002:00000060       gEfiDiskInfoIdeInterfaceGuid 0000000000006dc0     ScsiDisk:AutoGen.obj
+ 0002:00000070       gEfiBlockIo2ProtocolGuid   0000000000006dd0     ScsiDisk:AutoGen.obj
+ 0002:00000080       gEfiDevicePathProtocolGuid 0000000000006de0     ScsiDisk:AutoGen.obj
+ 0002:00000090       gEfiDiskInfoAhciInterfaceGuid 0000000000006df0     ScsiDisk:AutoGen.obj
+ 0002:000000a0       gEfiDevicePathUtilitiesProtocolGuid 0000000000006e00     ScsiDisk:AutoGen.obj
+ 0002:000000b0       gEfiScsiPassThruProtocolGuid 0000000000006e10     ScsiDisk:AutoGen.obj
+ 0002:000000c0       gEfiDriverBindingProtocolGuid 0000000000006e20     ScsiDisk:AutoGen.obj
+ 0002:000000d0       gEfiStorageSecurityCommandProtocolGuid 0000000000006e30     ScsiDisk:AutoGen.obj
+ 0002:000000e0       gEfiComponentNameProtocolGuid 0000000000006e40     ScsiDisk:AutoGen.obj
+ 0002:000000f0       gEfiBlockIoProtocolGuid    0000000000006e50     ScsiDisk:AutoGen.obj
+ 0002:00000100       gEfiScsiIoProtocolGuid     0000000000006e60     ScsiDisk:AutoGen.obj
+ 0002:00000110       gScsiDiskDriverBinding     0000000000006e70     ScsiDisk:ScsiDisk.obj
+ 0002:00000140       gScsiDiskInfoProtocolTemplate 0000000000006ea0     ScsiDisk:ScsiDisk.obj
+ 0002:00000170       gScsiDiskComponentName2    0000000000006ed0     ScsiDisk:ComponentName.obj
+ 0002:00000188       gScsiDiskComponentName     0000000000006ee8     ScsiDisk:ComponentName.obj
+ 0002:000001a0       mScsiDiskDriverNameTable   0000000000006f00     ScsiDisk:ComponentName.obj
+ 0002:000001c0       ??_C@_1CC@IOIHLHAL@?$AAS?$AAC?$AAS?$AAI?$AA?5?$AAD?$AAi?$AAs?$AAk?$AA?5?$AAD?$AAe?$AAv?$AAi?$AAc@ 0000000000006f20     ScsiDisk:ScsiDisk.obj
+ 0002:000001e4       ??_C@_03LKLGDMJI@eng@      0000000000006f44     ScsiDisk:ScsiDisk.obj
+ 0002:000001e8       ??_C@_02LFNMGJAP@en@       0000000000006f48     ScsiDisk:ScsiDisk.obj
+ 0002:000001ec       ??_C@_06DALJLGPG@eng?$DLen@ 0000000000006f4c     ScsiDisk:ComponentName.obj
+ 0002:000001f8       ??_C@_1CC@HDHLMANH@?$AAS?$AAc?$AAs?$AAi?$AA?5?$AAD?$AAi?$AAs?$AAk?$AA?5?$AAD?$AAr?$AAi?$AAv?$AAe@ 0000000000006f58     ScsiDisk:ComponentName.obj
+ 0002:00000238       gST                        0000000000006f98     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000240       gBS                        0000000000006fa0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000248       mDevicePathLibDevicePathUtilities 0000000000006fa8     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:00000250       __volatile_metadata        0000000000006fb0     <linker-defined>
+
+ entry point at        0001:00000060
+
+ Static symbols
+
+ 0001:0000001a       InternalMemCopyMem.0       000000000000029a     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:0000002a       @CopyBackward              00000000000002aa     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000033       @CopyBytes                 00000000000002b3     BaseMemoryLibRepStr:CopyMem.obj
+ 0004:00000000       $unwind$_ModuleEntryPoint  0000000000007360     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0004:00000008       $unwind$ScsiDiskDriverBindingSupported 0000000000007368     ScsiDisk:ScsiDisk.obj
+ 0004:00000018       $unwind$ScsiDiskDriverBindingStart 0000000000007378     ScsiDisk:ScsiDisk.obj
+ 0004:00000030       $unwind$ScsiDiskDriverBindingStop 0000000000007390     ScsiDisk:ScsiDisk.obj
+ 0004:00000040       $unwind$ScsiDiskReset      00000000000073a0     ScsiDisk:ScsiDisk.obj
+ 0004:00000040       $unwind$ScsiDiskResetEx    00000000000073a0     ScsiDisk:ScsiDisk.obj
+ 0004:00000054       $unwind$ScsiDiskReadBlocks 00000000000073b4     ScsiDisk:ScsiDisk.obj
+ 0004:00000054       $unwind$ScsiDiskWriteBlocks 00000000000073b4     ScsiDisk:ScsiDisk.obj
+ 0004:00000070       $unwind$ScsiDiskReadBlocksEx 00000000000073d0     ScsiDisk:ScsiDisk.obj
+ 0004:00000070       $unwind$ScsiDiskWriteBlocksEx 00000000000073d0     ScsiDisk:ScsiDisk.obj
+ 0004:0000008c       $unwind$ScsiDiskFlushBlocksEx 00000000000073ec     ScsiDisk:ScsiDisk.obj
+ 0004:000000a4       $unwind$ScsiDiskAsyncUnmapNotify 0000000000007404     ScsiDisk:ScsiDisk.obj
+ 0004:000000a4       $unwind$ScsiDiskInfoIdentify 0000000000007404     ScsiDisk:ScsiDisk.obj
+ 0004:000000a4       $unwind$ScsiDiskInfoInquiry 0000000000007404     ScsiDisk:ScsiDisk.obj
+ 0004:000000a4       $unwind$InternalAllocateCopyPool 0000000000007404     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0004:000000b0       $unwind$ScsiDiskUnmap      0000000000007410     ScsiDisk:ScsiDisk.obj
+ 0004:000000c8       $unwind$ScsiDiskEraseBlocks 0000000000007428     ScsiDisk:ScsiDisk.obj
+ 0004:000000e0       $unwind$ScsiDiskReceiveData 0000000000007440     ScsiDisk:ScsiDisk.obj
+ 0004:000000e0       $unwind$ScsiDiskSendData   0000000000007440     ScsiDisk:ScsiDisk.obj
+ 0004:000000f8       $unwind$ScsiDiskDetectMedia 0000000000007458     ScsiDisk:ScsiDisk.obj
+ 0004:0000010c       $unwind$ScsiDiskInquiryDevice 000000000000746c     ScsiDisk:ScsiDisk.obj
+ 0004:00000124       $unwind$ScsiDiskTestUnitReady 0000000000007484     ScsiDisk:ScsiDisk.obj
+ 0004:00000140       $unwind$DetectMediaParsingSenseKeys 00000000000074a0     ScsiDisk:ScsiDisk.obj
+ 0004:00000150       $unwind$ScsiDiskReadCapacity 00000000000074b0     ScsiDisk:ScsiDisk.obj
+ 0004:0000016c       $unwind$ScsiDiskRequestSenseKeys 00000000000074cc     ScsiDisk:ScsiDisk.obj
+ 0004:00000188       $unwind$ScsiDiskReadSectors 00000000000074e8     ScsiDisk:ScsiDisk.obj
+ 0004:00000188       $unwind$ScsiDiskWriteSectors 00000000000074e8     ScsiDisk:ScsiDisk.obj
+ 0004:000001a0       $unwind$ScsiDiskAsyncReadSectors 0000000000007500     ScsiDisk:ScsiDisk.obj
+ 0004:000001a0       $unwind$ScsiDiskAsyncWriteSectors 0000000000007500     ScsiDisk:ScsiDisk.obj
+ 0004:000001b8       $unwind$ScsiDiskRead10     0000000000007518     ScsiDisk:ScsiDisk.obj
+ 0004:000001b8       $unwind$ScsiDiskRead16     0000000000007518     ScsiDisk:ScsiDisk.obj
+ 0004:000001b8       $unwind$ScsiDiskWrite10    0000000000007518     ScsiDisk:ScsiDisk.obj
+ 0004:000001b8       $unwind$ScsiDiskWrite16    0000000000007518     ScsiDisk:ScsiDisk.obj
+ 0004:000001d0       $unwind$ScsiDiskNotify     0000000000007530     ScsiDisk:ScsiDisk.obj
+ 0004:000001e8       $unwind$ScsiDiskAsyncRead10 0000000000007548     ScsiDisk:ScsiDisk.obj
+ 0004:000001e8       $unwind$ScsiDiskAsyncRead16 0000000000007548     ScsiDisk:ScsiDisk.obj
+ 0004:000001e8       $unwind$ScsiDiskAsyncWrite10 0000000000007548     ScsiDisk:ScsiDisk.obj
+ 0004:000001e8       $unwind$ScsiDiskAsyncWrite16 0000000000007548     ScsiDisk:ScsiDisk.obj
+ 0004:00000204       $unwind$ReleaseScsiDiskDeviceResources 0000000000007564     ScsiDisk:ScsiDisk.obj
+ 0004:00000218       $unwind$GetParentProtocol  0000000000007578     ScsiDisk:ScsiDisk.obj
+ 0004:0000022c       $unwind$DetermineInstallEraseBlock 000000000000758c     ScsiDisk:ScsiDisk.obj
+ 0004:00000238       $unwind$DetermineInstallStorageSecurity 0000000000007598     ScsiDisk:ScsiDisk.obj
+ 0004:00000240       $unwind$InitializeInstallDiskInfo 00000000000075a0     ScsiDisk:ScsiDisk.obj
+ 0004:00000254       $unwind$ScsiDiskComponentNameGetDriverName 00000000000075b4     ScsiDisk:ComponentName.obj
+ 0004:0000025c       $unwind$ScsiDiskComponentNameGetControllerName 00000000000075bc     ScsiDisk:ComponentName.obj
+ 0004:00000270       $unwind$InternalAllocateAlignedPages 00000000000075d0     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0004:00000284       $unwind$InternalAllocatePool 00000000000075e4     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0004:0000028c       $unwind$AllocateZeroPool   00000000000075ec     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0004:00000294       $unwind$ScsiInquiryCommandEx 00000000000075f4     UefiScsiLib:UefiScsiLib.obj
+ 0004:000002a8       $unwind$ScsiReadCapacity16Command 0000000000007608     UefiScsiLib:UefiScsiLib.obj
+ 0004:000002bc       $unwind$ScsiRead10Command  000000000000761c     UefiScsiLib:UefiScsiLib.obj
+ 0004:000002bc       $unwind$ScsiRead16Command  000000000000761c     UefiScsiLib:UefiScsiLib.obj
+ 0004:000002bc       $unwind$ScsiSecurityProtocolInCommand 000000000000761c     UefiScsiLib:UefiScsiLib.obj
+ 0004:000002bc       $unwind$ScsiSecurityProtocolOutCommand 000000000000761c     UefiScsiLib:UefiScsiLib.obj
+ 0004:000002bc       $unwind$ScsiWrite10Command 000000000000761c     UefiScsiLib:UefiScsiLib.obj
+ 0004:000002bc       $unwind$ScsiWrite16Command 000000000000761c     UefiScsiLib:UefiScsiLib.obj
+ 0004:000002d4       $unwind$LookupUnicodeString2 0000000000007634     UefiLib:UefiLib.obj
+ 0004:000002d4       $unwind$ScsiLibNotify      0000000000007634     UefiScsiLib:UefiScsiLib.obj
+ 0004:000002e4       $unwind$AddUnicodeString2  0000000000007644     UefiLib:UefiLib.obj

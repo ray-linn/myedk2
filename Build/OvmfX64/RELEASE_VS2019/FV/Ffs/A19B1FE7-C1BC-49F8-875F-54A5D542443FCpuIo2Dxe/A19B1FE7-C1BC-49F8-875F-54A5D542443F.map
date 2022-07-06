@@ -1,0 +1,96 @@
+ CpuIo2Dxe
+
+ Timestamp is 61ee7014 (Mon Jan 24 17:23:32 2022)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000118H .text                   CODE
+ 0001:00000118 0000042cH .text$mn                CODE
+ 0002:00000000 00000030H .data                   DATA
+ 0002:00000030 00000038H .rdata                  DATA
+ 0002:00000068 00000018H .bss                    DATA
+ 0002:00000080 00000040H .rdata$voltmd           DATA
+ 0002:000000c0 000000a8H .rdata$zzzdbg           DATA
+ 0003:00000000 00000048H .pdata                  DATA
+ 0004:00000000 00000024H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __arm64x_extra_rfe_table   0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map_count    0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points 0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_table      0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map          0000000000000000     <absolute>
+ 0000:00000000       __arm64x_native_entrypoint 0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_table      0000000000000000     <absolute>
+ 0000:00000000       __enclave_config           0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata_count 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table_size 0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points_count 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata 0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_table          0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_count      0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_count          0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_table         0000000000000000     <absolute>
+ 0000:00000000       __guard_flags              0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_count      0000000000000000     <absolute>
+ 0000:00000000       __guard_check_icall_a64n_fptr 0000000000000000     <absolute>
+ 0000:00000000       __dynamic_value_reloc_table 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat     0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat_copy 0000000000000000     <absolute>
+ 0000:00000000       __AbsoluteZero             0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_count         0000000000000000     <absolute>
+ 0000:00000000       __ImageBase                0000000000000000     <linker-defined>
+ 0001:00000000       SevNoRepIo                 0000000000000280     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000040       IoReadFifo8                00000000000002c0     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000062       IoReadFifo16               00000000000002e2     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000088       IoReadFifo32               0000000000000308     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000000ab       IoWriteFifo8               000000000000032b     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000000cd       IoWriteFifo16              000000000000034d     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000000f3       IoWriteFifo32              0000000000000373     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000118       _ModuleEntryPoint          0000000000000398 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:00000154       CpuIoCheckParameter        00000000000003d4 f   CpuIo2Dxe:CpuIo2Dxe.obj
+ 0001:00000218       CpuMemoryServiceRead       0000000000000498 f   CpuIo2Dxe:CpuIo2Dxe.obj
+ 0001:000002c0       CpuMemoryServiceWrite      0000000000000540 f   CpuIo2Dxe:CpuIo2Dxe.obj
+ 0001:00000368       CpuIoServiceRead           00000000000005e8 f   CpuIo2Dxe:CpuIo2Dxe.obj
+ 0001:00000458       CpuIoServiceWrite          00000000000006d8 f   CpuIo2Dxe:CpuIo2Dxe.obj
+ 0002:00000000       gEfiCpuIo2ProtocolGuid     00000000000007e0     CpuIo2Dxe:AutoGen.obj
+ 0002:00000010       mCpuIo2                    00000000000007f0     CpuIo2Dxe:CpuIo2Dxe.obj
+ 0002:00000030       mInStride                  0000000000000810     CpuIo2Dxe:CpuIo2Dxe.obj
+ 0002:00000040       mOutStride                 0000000000000820     CpuIo2Dxe:CpuIo2Dxe.obj
+ 0002:00000068       mHandle                    0000000000000848     CpuIo2Dxe:CpuIo2Dxe.obj
+ 0002:00000070       gST                        0000000000000850     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000078       gBS                        0000000000000858     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000080       __volatile_metadata        0000000000000860     <linker-defined>
+
+ entry point at        0001:00000118
+
+ Static symbols
+
+ 0001:0000003a       @UseRepIo                  00000000000002ba     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:0000003c       @SevNoRepIo_Done           00000000000002bc     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000054       @IoReadFifo8_NoRep         00000000000002d4     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000056       @IoReadFifo8_Loop          00000000000002d6     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:0000005e       @IoReadFifo8_Done          00000000000002de     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000077       @IoReadFifo16_NoRep        00000000000002f7     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000079       @IoReadFifo16_Loop         00000000000002f9     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000084       @IoReadFifo16_Done         0000000000000304     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:0000009c       @IoReadFifo32_NoRep        000000000000031c     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:0000009e       @IoReadFifo32_Loop         000000000000031e     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000000a7       @IoReadFifo32_Done         0000000000000327     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000000bf       @IoWriteFifo8_NoRep        000000000000033f     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000000c1       @IoWriteFifo8_Loop         0000000000000341     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000000c9       @IoWriteFifo8_Done         0000000000000349     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000000e2       @IoWriteFifo16_NoRep       0000000000000362     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000000e4       @IoWriteFifo16_Loop        0000000000000364     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000000ef       @IoWriteFifo16_Done        000000000000036f     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000107       @IoWriteFifo32_NoRep       0000000000000387     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000109       @IoWriteFifo32_Loop        0000000000000389     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000112       @IoWriteFifo32_Done        0000000000000392     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0004:00000000       $unwind$_ModuleEntryPoint  00000000000009c0     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0004:00000008       $unwind$CpuIoCheckParameter 00000000000009c8     CpuIo2Dxe:CpuIo2Dxe.obj
+ 0004:00000010       $unwind$CpuIoServiceRead   00000000000009d0     CpuIo2Dxe:CpuIo2Dxe.obj
+ 0004:00000010       $unwind$CpuIoServiceWrite  00000000000009d0     CpuIo2Dxe:CpuIo2Dxe.obj
+ 0004:00000010       $unwind$CpuMemoryServiceRead 00000000000009d0     CpuIo2Dxe:CpuIo2Dxe.obj
+ 0004:00000010       $unwind$CpuMemoryServiceWrite 00000000000009d0     CpuIo2Dxe:CpuIo2Dxe.obj

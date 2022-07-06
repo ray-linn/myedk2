@@ -1,0 +1,397 @@
+ DisplayEngine
+
+ Timestamp is 61ee7013 (Mon Jan 24 17:23:31 2022)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000080H .text                   CODE
+ 0001:00000080 0000d1dcH .text$mn                CODE
+ 0002:00000000 00001e70H .data                   DATA
+ 0002:00001e70 00000530H .rdata                  DATA
+ 0002:000023a0 00000420H .bss                    DATA
+ 0002:000027c0 00000020H .rdata$voltmd           DATA
+ 0002:000027e0 000000a8H .rdata$zzzdbg           DATA
+ 0003:00000000 00000408H .pdata                  DATA
+ 0004:00000000 00000450H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __guard_iat_table          0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map          0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_count          0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table_size 0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_count      0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table   0000000000000000     <absolute>
+ 0000:00000000       __dynamic_value_reloc_table 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map_count    0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat     0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat_copy 0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points_count 0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_count         0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_native_entrypoint 0000000000000000     <absolute>
+ 0000:00000000       __AbsoluteZero             0000000000000000     <absolute>
+ 0000:00000000       __guard_check_icall_a64n_fptr 0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_table      0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points 0000000000000000     <absolute>
+ 0000:00000000       __guard_flags              0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_table      0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_count      0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_table         0000000000000000     <absolute>
+ 0000:00000000       __enclave_config           0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata_count 0000000000000000     <absolute>
+ 0000:00000000       __ImageBase                0000000000000000     <linker-defined>
+ 0001:00000000       InternalMemCopyMem         0000000000000280     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000040       InternalMemZeroMem         00000000000002c0     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00000060       InternalMemCompareMem      00000000000002e0     BaseMemoryLibRepStr:CompareMem.obj
+ 0001:00000080       _DriverUnloadHandler       0000000000000300 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:000000d8       _ModuleEntryPoint          0000000000000358 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:00000130       ProcessLibraryConstructorList 00000000000003b0 f   DisplayEngine:AutoGen.obj
+ 0001:00000234       ProcessLibraryDestructorList 00000000000004b4 f   DisplayEngine:AutoGen.obj
+ 0001:00000394       ProcessModuleEntryPointList 0000000000000614 f   DisplayEngine:AutoGen.obj
+ 0001:000004e0       GetToken                   0000000000000760 f   DisplayEngine:FormDisplay.obj
+ 0001:0000052c       InitializeDisplayStrings   00000000000007ac f   DisplayEngine:FormDisplay.obj
+ 0001:00000a00       FreeDisplayStrings         0000000000000c80 f   DisplayEngine:FormDisplay.obj
+ 0001:00000d6c       GetWidth                   0000000000000fec f   DisplayEngine:FormDisplay.obj
+ 0001:00000e9c       GetLineByWidth             000000000000111c f   DisplayEngine:FormDisplay.obj
+ 0001:000010b0       UiAddMenuOption            0000000000001330 f   DisplayEngine:FormDisplay.obj
+ 0001:000012ec       ConvertStatementToMenu     000000000000156c f   DisplayEngine:FormDisplay.obj
+ 0001:00001394       LibGetStringWidth          0000000000001614 f   CustomizedDisplayLib:CustomizedDisplayLibInternal.obj
+ 0001:00001394       GetStringWidth             0000000000001614 f   DisplayEngine:FormDisplay.obj
+ 0001:00001408       UpdateSkipInfoForMenu      0000000000001688 f   DisplayEngine:FormDisplay.obj
+ 0001:000014cc       UpdateOptionSkipLines      000000000000174c f   DisplayEngine:FormDisplay.obj
+ 0001:00001568       IsSelectable               00000000000017e8 f   DisplayEngine:FormDisplay.obj
+ 0001:00001614       MoveToNextStatement        0000000000001894 f   DisplayEngine:FormDisplay.obj
+ 0001:000016e8       ProcessStringForDateTime   0000000000001968 f   DisplayEngine:FormDisplay.obj
+ 0001:000017dc       AdjustDateAndTimePosition  0000000000001a5c f   DisplayEngine:FormDisplay.obj
+ 0001:00001844       FindTopOfScreenMenu        0000000000001ac4 f   DisplayEngine:FormDisplay.obj
+ 0001:000018e8       GetIndexInfoForOpcode      0000000000001b68 f   DisplayEngine:FormDisplay.obj
+ 0001:00001964       IsSavedHighlightStatement  0000000000001be4 f   DisplayEngine:FormDisplay.obj
+ 0001:00001a0c       FindHighLightMenuOption    0000000000001c8c f   DisplayEngine:FormDisplay.obj
+ 0001:00001b04       FindTopOfScreenMenuOption  0000000000001d84 f   DisplayEngine:FormDisplay.obj
+ 0001:00001c20       FindTopMenu                0000000000001ea0 f   DisplayEngine:FormDisplay.obj
+ 0001:00001f80       UpdateHighlightMenuInfo    0000000000002200 f   DisplayEngine:FormDisplay.obj
+ 0001:0000212c       DisplayMenuString          00000000000023ac f   DisplayEngine:FormDisplay.obj
+ 0001:00002210       FxConfirmPopup             0000000000002490 f   DisplayEngine:FormDisplay.obj
+ 0001:000024fc       DisplayOneMenu             000000000000277c f   DisplayEngine:FormDisplay.obj
+ 0001:00002b88       UiDisplayMenu              0000000000002e08 f   DisplayEngine:FormDisplay.obj
+ 0001:000049fc       BrowserStatusProcess       0000000000004c7c f   DisplayEngine:FormDisplay.obj
+ 0001:00004d6c       FormDisplay                0000000000004fec f   DisplayEngine:FormDisplay.obj
+ 0001:00004ecc       DriverClearDisplayPage     000000000000514c f   DisplayEngine:FormDisplay.obj
+ 0001:00004f0c       NewStrCat                  000000000000518c f   DisplayEngine:ProcessOptions.obj
+ 0001:00004f3c       CompareHiiValue            00000000000051bc f   DisplayEngine:ProcessOptions.obj
+ 0001:00005244       ValueToOption              00000000000054c4 f   DisplayEngine:ProcessOptions.obj
+ 0001:000052ec       GetArrayData               000000000000556c f   DisplayEngine:ProcessOptions.obj
+ 0001:00005328       PrintFormattedNumber       00000000000055a8 f   DisplayEngine:ProcessOptions.obj
+ 0001:000053b4       CreateSharedPopUp          0000000000005634 f   DisplayEngine:ProcessOptions.obj
+ 0001:0000566c       CreateMultiStringPopUp     00000000000058ec f   DisplayEngine:ProcessOptions.obj
+ 0001:00005690       EmptyEventProcess          0000000000005910 f   DisplayEngine:ProcessOptions.obj
+ 0001:00005694       RefreshTimeOutProcess      0000000000005914 f   DisplayEngine:ProcessOptions.obj
+ 0001:00005714       PasswordProcess            0000000000005994 f   DisplayEngine:ProcessOptions.obj
+ 0001:00005a48       PrintMismatchMenuInfo      0000000000005cc8 f   DisplayEngine:ProcessOptions.obj
+ 0001:00005b00       ProcessOptions             0000000000005d80 f   DisplayEngine:ProcessOptions.obj
+ 0001:0000665c       ProcessHelpString          00000000000068dc f   DisplayEngine:ProcessOptions.obj
+ 0001:0000679c       AddOneSelectableOption     0000000000006a1c f   DisplayEngine:Popup.obj
+ 0001:00006888       AddUserSelectableOptions   0000000000006b08 f   DisplayEngine:Popup.obj
+ 0001:00006c30       GetUserSelection           0000000000006eb0 f   DisplayEngine:Popup.obj
+ 0001:00006de4       ParseMessageString         0000000000007064 f   DisplayEngine:Popup.obj
+ 0001:00006f18       CalculatePopupPosition     0000000000007198 f   DisplayEngine:Popup.obj
+ 0001:00007120       DrawMessageBox             00000000000073a0 f   DisplayEngine:Popup.obj
+ 0001:0000763c       CreatePopup                00000000000078bc f   DisplayEngine:Popup.obj
+ 0001:000077a0       ReadString                 0000000000007a20 f   DisplayEngine:InputHandler.obj
+ 0001:00008024       GetValueFromNum            00000000000082a4 f   DisplayEngine:InputHandler.obj
+ 0001:00008160       GetNumericInput            00000000000083e0 f   DisplayEngine:InputHandler.obj
+ 0001:00008d64       AdjustOptionOrder          0000000000008fe4 f   DisplayEngine:InputHandler.obj
+ 0001:00008e94       GetSelectionInputPopUp     0000000000009114 f   DisplayEngine:InputHandler.obj
+ 0001:0000996c       StrnLenS                   0000000000009bec f   BaseLib:SafeString.obj
+ 0001:000099a0       StrCpyS                    0000000000009c20 f   BaseLib:SafeString.obj
+ 0001:00009a40       StrnCpyS                   0000000000009cc0 f   BaseLib:SafeString.obj
+ 0001:00009b30       StrCatS                    0000000000009db0 f   BaseLib:SafeString.obj
+ 0001:00009c04       AsciiStrnCmp               0000000000009e84 f   BaseLib:String.obj
+ 0001:00009c38       SwapListEntries            0000000000009eb8 f   BaseLib:LinkedList.obj
+ 0001:00009cb4       UnicodeSPrint              0000000000009f34 f   BasePrintLib:PrintLib.obj
+ 0001:00009ce8       BasePrintLibFillBuffer     0000000000009f68 f   BasePrintLib:PrintLibInternal.obj
+ 0001:00009d1c       BasePrintLibSPrintMarker   0000000000009f9c f   BasePrintLib:PrintLibInternal.obj
+ 0001:0000ab00       BasePrintLibSPrint         000000000000ad80 f   BasePrintLib:PrintLibInternal.obj
+ 0001:0000ab24       InternalAllocatePool       000000000000ada4 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:0000ab54       AllocateZeroPool           000000000000add4 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:0000ab80       InternalAllocateCopyPool   000000000000ae00 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:0000abc0       InternalReallocatePool     000000000000ae40 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:0000ac50       GetEfiGlobalVariable2      000000000000aed0 f   UefiLib:UefiLib.obj
+ 0001:0000ad0c       GetBestLanguage            000000000000af8c f   UefiLib:UefiLib.obj
+ 0001:0000ae38       HiiSetString               000000000000b0b8 f   UefiHiiLib:HiiString.obj
+ 0001:0000af70       HiiGetString               000000000000b1f0 f   UefiHiiLib:HiiString.obj
+ 0001:0000b0f4       HiiAddPackages             000000000000b374 f   UefiHiiLib:HiiLib.obj
+ 0001:0000b210       HiiGetFormSetFromHiiHandle 000000000000b490 f   UefiHiiLib:HiiLib.obj
+ 0001:0000b3ec       HiiGetSupportedLanguages   000000000000b66c f   UefiHiiLib:HiiLanguage.obj
+ 0001:0000b49c       DisplayPageFrame           000000000000b71c f   CustomizedDisplayLib:CustomizedDisplayLib.obj
+ 0001:0000b634       RefreshKeyHelp             000000000000b8b4 f   CustomizedDisplayLib:CustomizedDisplayLib.obj
+ 0001:0000bd50       UpdateStatusBar            000000000000bfd0 f   CustomizedDisplayLib:CustomizedDisplayLib.obj
+ 0001:0000bf18       CreateDialog               000000000000c198 f   CustomizedDisplayLib:CustomizedDisplayLib.obj
+ 0001:0000c300       ConfirmDataChange          000000000000c580 f   CustomizedDisplayLib:CustomizedDisplayLib.obj
+ 0001:0000c3ac       ClearLines                 000000000000c62c f   CustomizedDisplayLib:CustomizedDisplayLib.obj
+ 0001:0000c470       PrintBannerInfo            000000000000c6f0 f   CustomizedDisplayLib:CustomizedDisplayLibInternal.obj
+ 0001:0000c5ec       PrintFramework             000000000000c86c f   CustomizedDisplayLib:CustomizedDisplayLibInternal.obj
+ 0001:0000c96c       ProcessUserOpcode          000000000000cbec f   CustomizedDisplayLib:CustomizedDisplayLibInternal.obj
+ 0001:0000ca8c       ScreenDiemensionInfoValidate 000000000000cd0c f   CustomizedDisplayLib:CustomizedDisplayLibInternal.obj
+ 0001:0000cb80       LibGetToken                000000000000ce00 f   CustomizedDisplayLib:CustomizedDisplayLibInternal.obj
+ 0001:0000cbcc       PrintHotKeyHelpString      000000000000ce4c f   CustomizedDisplayLib:CustomizedDisplayLibInternal.obj
+ 0001:0000cda0       InitializeLibStrings       000000000000d020 f   CustomizedDisplayLib:CustomizedDisplayLibInternal.obj
+ 0001:0000cf9c       WaitForKeyStroke           000000000000d21c f   CustomizedDisplayLib:CustomizedDisplayLibInternal.obj
+ 0001:0000cffc       PrintInternal              000000000000d27c f   CustomizedDisplayLib:CustomizedDisplayLibInternal.obj
+ 0001:0000d230       PrintAt                    000000000000d4b0 f   CustomizedDisplayLib:CustomizedDisplayLibInternal.obj
+ 0002:00000000       gEfiLoadedImageProtocolGuid 000000000000d4e0     DisplayEngine:AutoGen.obj
+ 0002:00000010       gEfiGlobalVariableGuid     000000000000d4f0     DisplayEngine:AutoGen.obj
+ 0002:00000020       gEfiIfrTianoGuid           000000000000d500     DisplayEngine:AutoGen.obj
+ 0002:00000030       gEfiHiiConfigRoutingProtocolGuid 000000000000d510     DisplayEngine:AutoGen.obj
+ 0002:00000040       gEdkiiFormDisplayEngineProtocolGuid 000000000000d520     DisplayEngine:AutoGen.obj
+ 0002:00000050       gEfiHiiPopupProtocolGuid   000000000000d530     DisplayEngine:AutoGen.obj
+ 0002:00000060       gEfiHiiImageProtocolGuid   000000000000d540     DisplayEngine:AutoGen.obj
+ 0002:00000070       gEfiDevicePathUtilitiesProtocolGuid 000000000000d550     DisplayEngine:AutoGen.obj
+ 0002:00000080       gEfiHiiDatabaseProtocolGuid 000000000000d560     DisplayEngine:AutoGen.obj
+ 0002:00000090       gEfiHiiStringProtocolGuid  000000000000d570     DisplayEngine:AutoGen.obj
+ 0002:000000a0       DisplayEngineStrings       000000000000d580     DisplayEngine:AutoGen.obj
+ 0002:00001668       gEdkiiFormBrowserEx2ProtocolGuid 000000000000eb48     DisplayEngine:AutoGen.obj
+ 0002:00001678       gEfiHiiFontProtocolGuid    000000000000eb58     DisplayEngine:AutoGen.obj
+ 0002:00001690       gScanCodeToOperation       000000000000eb70     DisplayEngine:FormDisplay.obj
+ 0002:000016c8       gDisplayEngineGuid         000000000000eba8     DisplayEngine:FormDisplay.obj
+ 0002:000016d8       mPrivateData               000000000000ebb8     DisplayEngine:FormDisplay.obj
+ 0002:00001710       gScreenOperationToControlFlag 000000000000ebf0     DisplayEngine:FormDisplay.obj
+ 0002:00001760       mIsFirstForm               000000000000ec40     DisplayEngine:FormDisplay.obj
+ 0002:00001768       gCustomizedDisplayLibGuid  000000000000ec48     CustomizedDisplayLib:CustomizedDisplayLib.obj
+ 0002:00001778       gLibIsFirstForm            000000000000ec58     CustomizedDisplayLib:CustomizedDisplayLib.obj
+ 0002:00001780       CustomizedDisplayLibStrings 000000000000ec60     CustomizedDisplayLib:AutoGen.obj
+ 0002:00001e70       _gPcd_FixedAtBuild_PcdFrontPageFormSetGuid 000000000000f350     DisplayEngine:AutoGen.obj
+ 0002:00001e80       ??_C@_11LOCGONAA@@         000000000000f360     DisplayEngine:FormDisplay.obj
+ 0002:00001e88       ??_C@_19NMDCNMKO@?$AA?9?$AA?$CF?$AAl?$AAd@ 000000000000f368     DisplayEngine:ProcessOptions.obj
+ 0002:00001e98       ??_C@_17OADJODNB@?$AA?$CF?$AAl?$AAd@ 000000000000f378     DisplayEngine:ProcessOptions.obj
+ 0002:00001ea0       ??_C@_17PKPGALPG@?$AA?$CF?$AAl?$AAx@ 000000000000f380     DisplayEngine:ProcessOptions.obj
+ 0002:00001ea8       ??_C@_15KNBIKKIN@?$AA?$CF?$AAd@ 000000000000f388     DisplayEngine:ProcessOptions.obj
+ 0002:00001eb0       ??_C@_15BDFJADND@?$AA?$DP?$AA?$DP@ 000000000000f390     DisplayEngine:ProcessOptions.obj
+ 0002:00001eb8       ??_C@_19MNDKMKJC@?$AA?$CF?$AA0?$AA2?$AAd@ 000000000000f398     DisplayEngine:ProcessOptions.obj
+ 0002:00001ec8       ??_C@_19IEAEFCGC@?$AA?$DP?$AA?$DP?$AA?$DP?$AA?$DP@ 000000000000f3a8     DisplayEngine:ProcessOptions.obj
+ 0002:00001ed8       ??_C@_19BLGDCJIP@?$AA?$CF?$AA0?$AA4?$AAd@ 000000000000f3b8     DisplayEngine:ProcessOptions.obj
+ 0002:00001ee8       ??_C@_17LGKOMLJ@?$AA?4?$AA?4?$AA?4@ 000000000000f3c8     DisplayEngine:Popup.obj
+ 0002:00001ef0       ??_C@_1O@BJJIFMMK@?$AA?4?$AA?4?$AA?4?$AA?4?$AA?4?$AA?4@ 000000000000f3d0     DisplayEngine:Popup.obj
+ 0002:00001f00       ??_C@_13HOIJIPNN@?$AA?5@   000000000000f3e0     DisplayEngine:InputHandler.obj
+ 0002:00001f08       ??_C@_0O@MLOLIMFM@?$DMnull?5string?$DO@ 000000000000f3e8     BasePrintLib:PrintLibInternal.obj
+ 0002:00001f18       ??_C@_0M@BJJDNPHK@?$DMnull?5guid?$DO@ 000000000000f3f8     BasePrintLib:PrintLibInternal.obj
+ 0002:00001f28       ??_C@_0DB@PMLHLBMO@?$CF08x?9?$CF04x?9?$CF04x?9?$CF02x?$CF02x?9?$CF02x?$CF02@ 000000000000f408     BasePrintLib:PrintLibInternal.obj
+ 0002:00001f60       ??_C@_0M@LHGBCIKM@?$DMnull?5time?$DO@ 000000000000f440     BasePrintLib:PrintLibInternal.obj
+ 0002:00001f70       ??_C@_0BK@FCPKCIDD@?$CF02d?1?$CF02d?1?$CF04d?5?5?$CF02d?3?$CF02d@ 000000000000f450     BasePrintLib:PrintLibInternal.obj
+ 0002:00001f8c       ??_C@_04JIMNDDED@?$CF08X@  000000000000f46c     BasePrintLib:PrintLibInternal.obj
+ 0002:00001f94       ??_C@_02PCIJFNDE@?$AN?6@   000000000000f474     BasePrintLib:PrintLibInternal.obj
+ 0002:00001f98       ??_C@_01LIIJDEN@?$AN@      000000000000f478     BasePrintLib:PrintLibInternal.obj
+ 0002:00001fa0       mWarningString             000000000000f480     BasePrintLib:PrintLibInternal.obj
+ 0002:00002040       mErrorString               000000000000f520     BasePrintLib:PrintLibInternal.obj
+ 0002:00002300       mHexStr                    000000000000f7e0     BasePrintLib:PrintLibInternal.obj
+ 0002:00002310       ??_C@_06PLDEFKP@x?9UEFI@   000000000000f7f0     UefiHiiLib:HiiString.obj
+ 0002:00002318       ??_C@_1BK@GGGENMOA@?$AAP?$AAl?$AAa?$AAt?$AAf?$AAo?$AAr?$AAm?$AAL?$AAa?$AAn?$AAg@ 000000000000f7f8     UefiHiiLib:HiiString.obj
+ 0002:00002332       ??_C@_00CNPNBAHC@@         000000000000f812     UefiHiiLib:HiiString.obj
+ 0002:00002334       mEndOfPakageList           000000000000f814     UefiHiiLib:HiiLib.obj
+ 0002:00002338       ??_C@_1BG@HCKICKBP@?$AA?$CF?$AAc?$AA?$CF?$AAc?$AA?$CF?$AAc?$AA?$CF?$AAc?$AA?$CF?$AAs@ 000000000000f818     CustomizedDisplayLib:CustomizedDisplayLib.obj
+ 0002:00002350       ??_C@_1O@OBLENKEO@?$AA?$CF?$AAc?$AA?$CF?$AAc?$AA?$CF?$AAs@ 000000000000f830     CustomizedDisplayLib:CustomizedDisplayLib.obj
+ 0002:00002360       ??_C@_15OJKDPEFE@?$AA?5?$AA?5@ 000000000000f840     CustomizedDisplayLib:CustomizedDisplayLib.obj
+ 0002:00002368       ??_C@_15GANGMFKL@?$AA?$CF?$AAs@ 000000000000f848     CustomizedDisplayLib:CustomizedDisplayLib.obj
+ 0002:00002370       ??_C@_15DAMPJCDE@?$AA?$CF?$AAc@ 000000000000f850     CustomizedDisplayLib:CustomizedDisplayLib.obj
+ 0002:00002378       ??_C@_13MGDFOILI@?$AA?$CB@ 000000000000f858     CustomizedDisplayLib:CustomizedDisplayLibInternal.obj
+ 0002:000023a0       gHighligthMenuInfo         000000000000f880     DisplayEngine:FormDisplay.obj
+ 0002:000023e8       gOldFormEntry              000000000000f8c8     DisplayEngine:FormDisplay.obj
+ 0002:00002420       gST                        000000000000f900     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00002428       gBS                        000000000000f908     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00002430       mDevicePathLibDevicePathUtilities 000000000000f910     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:00002438       gRT                        000000000000f918     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0002:00002440       gHiiString                 000000000000f920     UefiHiiServicesLib:UefiHiiServicesLib.obj
+ 0002:00002448       gHiiFont                   000000000000f928     UefiHiiServicesLib:UefiHiiServicesLib.obj
+ 0002:00002450       gHiiConfigRouting          000000000000f930     UefiHiiServicesLib:UefiHiiServicesLib.obj
+ 0002:00002458       gHiiImage                  000000000000f938     UefiHiiServicesLib:UefiHiiServicesLib.obj
+ 0002:00002460       gHiiDatabase               000000000000f940     UefiHiiServicesLib:UefiHiiServicesLib.obj
+ 0002:00002468       mSpaceBuffer               000000000000f948     <common>
+ 0002:00002470       mLibUnknownString          000000000000f950     <common>
+ 0002:00002478       gDecNumericInput           000000000000f958     <common>
+ 0002:00002480       gMoveHighlight             000000000000f960     <common>
+ 0002:00002488       gInputErrorMessage         000000000000f968     <common>
+ 0002:00002490       gToggleCheckBox            000000000000f970     <common>
+ 0002:00002498       gEscapeString              000000000000f978     <common>
+ 0002:000024a0       gAdjustNumber              000000000000f980     <common>
+ 0002:000024a8       gEnterEscapeString         000000000000f988     <common>
+ 0002:000024b0       gEnterString               000000000000f990     <common>
+ 0002:000024b8       gNoResponse                000000000000f998     <common>
+ 0002:000024c0       gMinusString               000000000000f9a0     <common>
+ 0002:000024c8       gEnterCommitString         000000000000f9a8     <common>
+ 0002:000024d0       gHexNumericInput           000000000000f9b0     <common>
+ 0002:000024d8       gPlusString                000000000000f9b8     <common>
+ 0002:000024e0       gLibEmptyString            000000000000f9c0     <common>
+ 0002:00002500       gScreenDimensions          000000000000f9e0     <common>
+ 0002:00002520       gAreYouSure                000000000000fa00     <common>
+ 0002:00002528       gYesResponse               000000000000fa08     <common>
+ 0002:00002530       gSaveChanges               000000000000fa10     <common>
+ 0002:00002538       gNvUpdateMessage           000000000000fa18     <common>
+ 0002:00002540       mCDLStringPackHandle       000000000000fa20     <common>
+ 0002:00002548       gFooterHeight              000000000000fa28     <common>
+ 0002:00002550       gBannerData                000000000000fa30     <common>
+ 0002:00002558       gClassOfVfr                000000000000fa38     <common>
+ 0002:00002560       gPopupDimensions           000000000000fa40     <common>
+ 0002:00002580       gUserSelectableOptions     000000000000fa60     <common>
+ 0002:00002590       gMesStrLineNum             000000000000fa70     <common>
+ 0002:00002598       gMaxRowWidth               000000000000fa78     <common>
+ 0002:000025a0       gMessageString             000000000000fa80     <common>
+ 0002:000025a8       gReconnectConfirmChanges   000000000000fa88     <common>
+ 0002:000025b0       gWarningPopup              000000000000fa90     <common>
+ 0002:000025b8       gPromptForPassword         000000000000fa98     <common>
+ 0002:000025c0       gUserInput                 000000000000faa0     <common>
+ 0002:000025c8       gConfirmOptOk              000000000000faa8     <common>
+ 0002:000025d0       gFormSuppress              000000000000fab0     <common>
+ 0002:000025d8       gConfirmOptCancel          000000000000fab8     <common>
+ 0002:000025e0       gConfirmOptNo              000000000000fac0     <common>
+ 0002:000025e8       gPassowordInvalid          000000000000fac8     <common>
+ 0002:000025f0       gInfoPopup                 000000000000fad0     <common>
+ 0002:000025f8       gOptionBlockWidth          000000000000fad8     <common>
+ 0002:00002600       gConfirmSubmitMsg          000000000000fae0     <common>
+ 0002:00002608       gConfirmDefaultMsg2nd      000000000000fae8     <common>
+ 0002:00002610       gConfirmOptYes             000000000000faf0     <common>
+ 0002:00002618       gConfirmError              000000000000faf8     <common>
+ 0002:00002620       gConfirmExitMsg2nd         000000000000fb00     <common>
+ 0002:00002628       gNoSubmitIf                000000000000fb08     <common>
+ 0002:00002630       gMenuOption                000000000000fb10     <common>
+ 0002:00002640       gConfirmDefaultMsg         000000000000fb20     <common>
+ 0002:00002648       gHelpBlockWidth            000000000000fb28     <common>
+ 0002:00002650       gConfirmExitMsg            000000000000fb30     <common>
+ 0002:00002658       gMisMatch                  000000000000fb38     <common>
+ 0002:00002660       gPromptForNewPassword      000000000000fb40     <common>
+ 0002:00002668       gPromptBlockWidth          000000000000fb48     <common>
+ 0002:00002670       gDiscardChange             000000000000fb50     <common>
+ 0002:00002678       gFormNotFound              000000000000fb58     <common>
+ 0002:00002680       gPasswordUnsupported       000000000000fb60     <common>
+ 0002:00002688       gSaveProcess               000000000000fb68     <common>
+ 0002:00002690       gSaveNoSubmitProcess       000000000000fb70     <common>
+ 0002:00002698       gOptionMismatch            000000000000fb78     <common>
+ 0002:000026a0       gOkOption                  000000000000fb80     <common>
+ 0002:000026a8       gHiiHandle                 000000000000fb88     <common>
+ 0002:000026b0       gReconnectRequired         000000000000fb90     <common>
+ 0002:000026b8       gFormData                  000000000000fb98     <common>
+ 0002:000026c0       gJumpToFormSet             000000000000fba0     <common>
+ 0002:000026c8       gConfirmOpt                000000000000fba8     <common>
+ 0002:000026d0       gYesOption                 000000000000fbb0     <common>
+ 0002:000026d8       gConfirmSubmitMsg2nd       000000000000fbb8     <common>
+ 0002:000026e0       gChangesOpt                000000000000fbc0     <common>
+ 0002:000026e8       gConfirmResetMsg2nd        000000000000fbc8     <common>
+ 0002:000026f0       gMiniString                000000000000fbd0     <common>
+ 0002:000026f8       gReconnectFail             000000000000fbd8     <common>
+ 0002:00002700       gModalSkipColumn           000000000000fbe0     <common>
+ 0002:00002708       gConfirmPassword           000000000000fbe8     <common>
+ 0002:00002710       gPressEnter                000000000000fbf0     <common>
+ 0002:00002718       gConfirmResetMsg           000000000000fbf8     <common>
+ 0002:00002720       gConfirmMsgEnd             000000000000fc00     <common>
+ 0002:00002728       gConfirmDiscardMsg         000000000000fc08     <common>
+ 0002:00002730       gEmptyString               000000000000fc10     <common>
+ 0002:00002740       gStatementDimensions       000000000000fc20     <common>
+ 0002:00002760       gPromptForData             000000000000fc40     <common>
+ 0002:00002768       gBrowserError              000000000000fc48     <common>
+ 0002:00002770       gErrorPopup                000000000000fc50     <common>
+ 0002:00002778       gSaveFailed                000000000000fc58     <common>
+ 0002:00002780       gCancelOption              000000000000fc60     <common>
+ 0002:00002788       gNoSubmitIfFailed          000000000000fc68     <common>
+ 0002:00002790       gDirection                 000000000000fc70     <common>
+ 0002:00002798       mUnknownString             000000000000fc78     <common>
+ 0002:000027a0       gConfirmMsgConnect         000000000000fc80     <common>
+ 0002:000027a8       gNoOption                  000000000000fc88     <common>
+ 0002:000027b0       gProtocolNotFound          000000000000fc90     <common>
+ 0002:000027b8       gCheckError                000000000000fc98     <common>
+ 0002:000027c0       __volatile_metadata        000000000000fca0     <linker-defined>
+
+ entry point at        0001:000000d8
+
+ Static symbols
+
+ 0001:0000001a       InternalMemCopyMem.0       000000000000029a     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:0000002a       @CopyBackward              00000000000002aa     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000033       @CopyBytes                 00000000000002b3     BaseMemoryLibRepStr:CopyMem.obj
+ 0004:00000000       $unwind$LibGetToken        00000000000101a0     CustomizedDisplayLib:CustomizedDisplayLibInternal.obj
+ 0004:00000000       $unwind$ProcessLibraryDestructorList 00000000000101a0     DisplayEngine:AutoGen.obj
+ 0004:00000000       $unwind$DriverClearDisplayPage 00000000000101a0     DisplayEngine:FormDisplay.obj
+ 0004:00000000       $unwind$FreeDisplayStrings 00000000000101a0     DisplayEngine:FormDisplay.obj
+ 0004:00000000       $unwind$GetToken           00000000000101a0     DisplayEngine:FormDisplay.obj
+ 0004:00000000       $unwind$InitializeDisplayStrings 00000000000101a0     DisplayEngine:FormDisplay.obj
+ 0004:00000000       $unwind$PrintFormattedNumber 00000000000101a0     DisplayEngine:ProcessOptions.obj
+ 0004:00000000       $unwind$_DriverUnloadHandler 00000000000101a0     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0004:00000000       $unwind$InternalAllocatePool 00000000000101a0     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0004:00000008       $unwind$WaitForKeyStroke   00000000000101a8     CustomizedDisplayLib:CustomizedDisplayLibInternal.obj
+ 0004:00000008       $unwind$StrCpyS            00000000000101a8     BaseLib:SafeString.obj
+ 0004:00000008       $unwind$_ModuleEntryPoint  00000000000101a8     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0004:00000008       $unwind$AllocateZeroPool   00000000000101a8     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0004:00000010       $unwind$ProcessUserOpcode  00000000000101b0     CustomizedDisplayLib:CustomizedDisplayLibInternal.obj
+ 0004:00000010       $unwind$ScreenDiemensionInfoValidate 00000000000101b0     CustomizedDisplayLib:CustomizedDisplayLibInternal.obj
+ 0004:00000010       $unwind$ProcessLibraryConstructorList 00000000000101b0     DisplayEngine:AutoGen.obj
+ 0004:00000010       $unwind$IsSavedHighlightStatement 00000000000101b0     DisplayEngine:FormDisplay.obj
+ 0004:00000010       $unwind$InternalAllocateCopyPool 00000000000101b0     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0004:0000001c       $unwind$ProcessModuleEntryPointList 00000000000101bc     DisplayEngine:AutoGen.obj
+ 0004:00000024       $unwind$GetLineByWidth     00000000000101c4     DisplayEngine:FormDisplay.obj
+ 0004:00000024       $unwind$GetWidth           00000000000101c4     DisplayEngine:FormDisplay.obj
+ 0004:00000024       $unwind$MoveToNextStatement 00000000000101c4     DisplayEngine:FormDisplay.obj
+ 0004:00000024       $unwind$ParseMessageString 00000000000101c4     DisplayEngine:Popup.obj
+ 0004:00000040       $unwind$UiAddMenuOption    00000000000101e0     DisplayEngine:FormDisplay.obj
+ 0004:00000058       $unwind$ConvertStatementToMenu 00000000000101f8     DisplayEngine:FormDisplay.obj
+ 0004:00000068       $unwind$LibGetStringWidth  0000000000010208     CustomizedDisplayLib:CustomizedDisplayLibInternal.obj
+ 0004:00000068       $unwind$GetStringWidth     0000000000010208     DisplayEngine:FormDisplay.obj
+ 0004:00000070       $unwind$UpdateSkipInfoForMenu 0000000000010210     DisplayEngine:FormDisplay.obj
+ 0004:00000084       $unwind$IsSelectable       0000000000010224     DisplayEngine:FormDisplay.obj
+ 0004:00000084       $unwind$UpdateOptionSkipLines 0000000000010224     DisplayEngine:FormDisplay.obj
+ 0004:00000090       $unwind$ProcessStringForDateTime 0000000000010230     DisplayEngine:FormDisplay.obj
+ 0004:000000a0       $unwind$FindTopOfScreenMenu 0000000000010240     DisplayEngine:FormDisplay.obj
+ 0004:000000b8       $unwind$GetIndexInfoForOpcode 0000000000010258     DisplayEngine:FormDisplay.obj
+ 0004:000000b8       $unwind$AddOneSelectableOption 0000000000010258     DisplayEngine:Popup.obj
+ 0004:000000b8       $unwind$InternalReallocatePool 0000000000010258     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0004:000000cc       $unwind$FindHighLightMenuOption 000000000001026c     DisplayEngine:FormDisplay.obj
+ 0004:000000cc       $unwind$FormDisplay        000000000001026c     DisplayEngine:FormDisplay.obj
+ 0004:000000cc       $unwind$UpdateHighlightMenuInfo 000000000001026c     DisplayEngine:FormDisplay.obj
+ 0004:000000cc       $unwind$StrCatS            000000000001026c     BaseLib:SafeString.obj
+ 0004:000000cc       $unwind$StrnCpyS           000000000001026c     BaseLib:SafeString.obj
+ 0004:000000dc       $unwind$FindTopOfScreenMenuOption 000000000001027c     DisplayEngine:FormDisplay.obj
+ 0004:000000dc       $unwind$AdjustOptionOrder  000000000001027c     DisplayEngine:InputHandler.obj
+ 0004:000000f8       $unwind$FindTopMenu        0000000000010298     DisplayEngine:FormDisplay.obj
+ 0004:000000f8       $unwind$AddUserSelectableOptions 0000000000010298     DisplayEngine:Popup.obj
+ 0004:00000114       $unwind$DisplayMenuString  00000000000102b4     DisplayEngine:FormDisplay.obj
+ 0004:00000128       $unwind$FxConfirmPopup     00000000000102c8     DisplayEngine:FormDisplay.obj
+ 0004:00000144       $unwind$DisplayOneMenu     00000000000102e4     DisplayEngine:FormDisplay.obj
+ 0004:0000015c       $unwind$UiDisplayMenu      00000000000102fc     DisplayEngine:FormDisplay.obj
+ 0004:00000174       $unwind$BrowserStatusProcess 0000000000010314     DisplayEngine:FormDisplay.obj
+ 0004:0000018c       $unwind$CompareHiiValue    000000000001032c     DisplayEngine:ProcessOptions.obj
+ 0004:000001a4       $unwind$ValueToOption      0000000000010344     DisplayEngine:ProcessOptions.obj
+ 0004:000001b8       $unwind$CreateSharedPopUp  0000000000010358     DisplayEngine:ProcessOptions.obj
+ 0004:000001d0       $unwind$CreateMultiStringPopUp 0000000000010370     DisplayEngine:ProcessOptions.obj
+ 0004:000001d8       $unwind$RefreshTimeOutProcess 0000000000010378     DisplayEngine:ProcessOptions.obj
+ 0004:000001e0       $unwind$PasswordProcess    0000000000010380     DisplayEngine:ProcessOptions.obj
+ 0004:000001f4       $unwind$PrintMismatchMenuInfo 0000000000010394     DisplayEngine:ProcessOptions.obj
+ 0004:00000200       $unwind$ProcessOptions     00000000000103a0     DisplayEngine:ProcessOptions.obj
+ 0004:0000021c       $unwind$ProcessHelpString  00000000000103bc     DisplayEngine:ProcessOptions.obj
+ 0004:00000234       $unwind$GetUserSelection   00000000000103d4     DisplayEngine:Popup.obj
+ 0004:00000248       $unwind$CalculatePopupPosition 00000000000103e8     DisplayEngine:Popup.obj
+ 0004:00000254       $unwind$DrawMessageBox     00000000000103f4     DisplayEngine:Popup.obj
+ 0004:0000026c       $unwind$CreatePopup        000000000001040c     DisplayEngine:Popup.obj
+ 0004:00000280       $unwind$ReadString         0000000000010420     DisplayEngine:InputHandler.obj
+ 0004:0000029c       $unwind$GetNumericInput    000000000001043c     DisplayEngine:InputHandler.obj
+ 0004:000002b4       $unwind$GetSelectionInputPopUp 0000000000010454     DisplayEngine:InputHandler.obj
+ 0004:000002cc       $unwind$UnicodeSPrint      000000000001046c     BasePrintLib:PrintLib.obj
+ 0004:000002d4       $unwind$BasePrintLibSPrintMarker 0000000000010474     BasePrintLib:PrintLibInternal.obj
+ 0004:000002f0       $unwind$PrintAt            0000000000010490     CustomizedDisplayLib:CustomizedDisplayLibInternal.obj
+ 0004:000002f0       $unwind$BasePrintLibSPrint 0000000000010490     BasePrintLib:PrintLibInternal.obj
+ 0004:000002f8       $unwind$GetEfiGlobalVariable2 0000000000010498     UefiLib:UefiLib.obj
+ 0004:00000304       $unwind$GetBestLanguage    00000000000104a4     UefiLib:UefiLib.obj
+ 0004:00000314       $unwind$HiiSetString       00000000000104b4     UefiHiiLib:HiiString.obj
+ 0004:0000032c       $unwind$HiiGetString       00000000000104cc     UefiHiiLib:HiiString.obj
+ 0004:00000340       $unwind$HiiAddPackages     00000000000104e0     UefiHiiLib:HiiLib.obj
+ 0004:00000354       $unwind$HiiGetFormSetFromHiiHandle 00000000000104f4     UefiHiiLib:HiiLib.obj
+ 0004:0000036c       $unwind$HiiGetSupportedLanguages 000000000001050c     UefiHiiLib:HiiLanguage.obj
+ 0004:0000037c       $unwind$DisplayPageFrame   000000000001051c     CustomizedDisplayLib:CustomizedDisplayLib.obj
+ 0004:0000037c       $unwind$PrintFramework     000000000001051c     CustomizedDisplayLib:CustomizedDisplayLibInternal.obj
+ 0004:00000398       $unwind$RefreshKeyHelp     0000000000010538     CustomizedDisplayLib:CustomizedDisplayLib.obj
+ 0004:000003b0       $unwind$UpdateStatusBar    0000000000010550     CustomizedDisplayLib:CustomizedDisplayLib.obj
+ 0004:000003c0       $unwind$CreateDialog       0000000000010560     CustomizedDisplayLib:CustomizedDisplayLib.obj
+ 0004:000003d8       $unwind$ConfirmDataChange  0000000000010578     CustomizedDisplayLib:CustomizedDisplayLib.obj
+ 0004:000003e4       $unwind$ClearLines         0000000000010584     CustomizedDisplayLib:CustomizedDisplayLib.obj
+ 0004:000003fc       $unwind$PrintBannerInfo    000000000001059c     CustomizedDisplayLib:CustomizedDisplayLibInternal.obj
+ 0004:00000414       $unwind$PrintHotKeyHelpString 00000000000105b4     CustomizedDisplayLib:CustomizedDisplayLibInternal.obj
+ 0004:00000430       $unwind$InitializeLibStrings 00000000000105d0     CustomizedDisplayLib:CustomizedDisplayLibInternal.obj
+ 0004:00000438       $unwind$PrintInternal      00000000000105d8     CustomizedDisplayLib:CustomizedDisplayLibInternal.obj

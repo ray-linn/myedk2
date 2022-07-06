@@ -1,0 +1,365 @@
+ DnsDxe
+
+ Timestamp is 61ee7055 (Mon Jan 24 17:24:37 2022)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000208H .text                   CODE
+ 0001:00000208 00008a4bH .text$mn                CODE
+ 0002:00000000 000002c0H .data                   DATA
+ 0002:000002c0 000005d0H .rdata                  DATA
+ 0002:00000890 00000038H .bss                    DATA
+ 0002:000008c8 00000020H .rdata$voltmd           DATA
+ 0002:000008e8 000000a8H .rdata$zzzdbg           DATA
+ 0003:00000000 000004b0H .pdata                  DATA
+ 0004:00000000 000003fcH .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __x64_code_ranges_to_entry_points_count 0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_count      0000000000000000     <absolute>
+ 0000:00000000       __dynamic_value_reloc_table 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat     0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_table      0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat_copy 0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_count         0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table   0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map_count    0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_table          0000000000000000     <absolute>
+ 0000:00000000       __AbsoluteZero             0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map          0000000000000000     <absolute>
+ 0000:00000000       __guard_check_icall_a64n_fptr 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table_size 0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_table         0000000000000000     <absolute>
+ 0000:00000000       __guard_flags              0000000000000000     <absolute>
+ 0000:00000000       __arm64x_native_entrypoint 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata_count 0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_table      0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_count      0000000000000000     <absolute>
+ 0000:00000000       __enclave_config           0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_count          0000000000000000     <absolute>
+ 0000:00000000       __ImageBase                0000000000000000     <linker-defined>
+ 0001:00000000       InternalMemCopyMem         0000000000000280     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000040       InternalMemZeroMem         00000000000002c0     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00000060       InternalMemCompareMem      00000000000002e0     BaseMemoryLibRepStr:CompareMem.obj
+ 0001:00000080       InternalMemSetMem          0000000000000300     BaseMemoryLibRepStr:SetMem.obj
+ 0001:000000a0       InternalMemSetMem64        0000000000000320     BaseMemoryLibRepStr:SetMem64.obj
+ 0001:000000c0       InternalMemSetMem32        0000000000000340     BaseMemoryLibRepStr:SetMem32.obj
+ 0001:000000e0       CpuPause                   0000000000000360     BaseLib:CpuPause.obj
+ 0001:000000f0       SevNoRepIo                 0000000000000370     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000130       IoReadFifo8                00000000000003b0     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000152       IoReadFifo16               00000000000003d2     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000178       IoReadFifo32               00000000000003f8     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:0000019b       IoWriteFifo8               000000000000041b     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001bd       IoWriteFifo16              000000000000043d     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001e3       IoWriteFifo32              0000000000000463     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000208       _DriverUnloadHandler       0000000000000488 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:00000210       _ModuleEntryPoint          0000000000000490 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:000002b0       ProcessModuleEntryPointList 0000000000000530 f   DnsDxe:AutoGen.obj
+ 0001:000003e4       DnsDestroyInstance         0000000000000664 f   DnsDxe:DnsDriver.obj
+ 0001:0000045c       DnsCreateInstance          00000000000006dc f   DnsDxe:DnsDriver.obj
+ 0001:00000564       DnsDestroyChildEntryInHandleBuffer 00000000000007e4 f   DnsDxe:DnsDriver.obj
+ 0001:000005b8       DnsDestroyService          0000000000000838 f   DnsDxe:DnsDriver.obj
+ 0001:00000604       DnsCreateService           0000000000000884 f   DnsDxe:DnsDriver.obj
+ 0001:0000079c       DnsUnload                  0000000000000a1c f   DnsDxe:DnsDriver.obj
+ 0001:00000a88       Dns4DriverBindingSupported 0000000000000d08 f   DnsDxe:DnsDriver.obj
+ 0001:00000b0c       Dns4DriverBindingStart     0000000000000d8c f   DnsDxe:DnsDriver.obj
+ 0001:00000ba0       Dns4DriverBindingStop      0000000000000e20 f   DnsDxe:DnsDriver.obj
+ 0001:00000cac       Dns6DriverBindingSupported 0000000000000f2c f   DnsDxe:DnsDriver.obj
+ 0001:00000d30       Dns6DriverBindingStart     0000000000000fb0 f   DnsDxe:DnsDriver.obj
+ 0001:00000dc4       Dns6DriverBindingStop      0000000000001044 f   DnsDxe:DnsDriver.obj
+ 0001:00000ed0       Dns4ServiceBindingCreateChild 0000000000001150 f   DnsDxe:DnsDriver.obj
+ 0001:00001080       Dns4ServiceBindingDestroyChild 0000000000001300 f   DnsDxe:DnsDriver.obj
+ 0001:0000122c       Dns6ServiceBindingCreateChild 00000000000014ac f   DnsDxe:DnsDriver.obj
+ 0001:000013dc       Dns6ServiceBindingDestroyChild 000000000000165c f   DnsDxe:DnsDriver.obj
+ 0001:0000157c       Dns4RemoveTokenEntry       00000000000017fc f   DnsDxe:DnsImpl.obj
+ 0001:0000157c       Dns6RemoveTokenEntry       00000000000017fc f   DnsDxe:DnsImpl.obj
+ 0001:000015d8       Dns4CancelTokens           0000000000001858 f   DnsDxe:DnsImpl.obj
+ 0001:00001674       Dns6CancelTokens           00000000000018f4 f   DnsDxe:DnsImpl.obj
+ 0001:00001710       Dns4InstanceCancelToken    0000000000001990 f   DnsDxe:DnsImpl.obj
+ 0001:000017ac       Dns6InstanceCancelToken    0000000000001a2c f   DnsDxe:DnsImpl.obj
+ 0001:00001848       Dns4CopyConfigure          0000000000001ac8 f   DnsDxe:DnsImpl.obj
+ 0001:000018e8       Dns6CopyConfigure          0000000000001b68 f   DnsDxe:DnsImpl.obj
+ 0001:00001984       DnsDummyExtFree            0000000000001c04 f   DnsDxe:DnsImpl.obj
+ 0001:00001988       Dns4GetMapping             0000000000001c08 f   DnsDxe:DnsImpl.obj
+ 0001:00001a34       Dns6GetMapping             0000000000001cb4 f   DnsDxe:DnsImpl.obj
+ 0001:00001b80       Dns4ConfigUdp              0000000000001e00 f   DnsDxe:DnsImpl.obj
+ 0001:00001c68       Dns6ConfigUdp              0000000000001ee8 f   DnsDxe:DnsImpl.obj
+ 0001:00001d3c       UpdateDns4Cache            0000000000001fbc f   DnsDxe:DnsImpl.obj
+ 0001:00001f20       UpdateDns6Cache            00000000000021a0 f   DnsDxe:DnsImpl.obj
+ 0001:00002104       AddDns4ServerIp            0000000000002384 f   DnsDxe:DnsImpl.obj
+ 0001:000021b0       IsValidDnsResponse         0000000000002430 f   DnsDxe:DnsImpl.obj
+ 0001:00002260       ParseDnsResponse           00000000000024e0 f   DnsDxe:DnsImpl.obj
+ 0001:00002f68       DnsOnPacketReceived        00000000000031e8 f   DnsDxe:DnsImpl.obj
+ 0001:00002fd8       DnsOnPacketSent            0000000000003258 f   DnsDxe:DnsImpl.obj
+ 0001:00003040       DoDnsQuery                 00000000000032c0 f   DnsDxe:DnsImpl.obj
+ 0001:00003094       ConstructDNSQuery          0000000000003314 f   DnsDxe:DnsImpl.obj
+ 0001:000031e8       DnsOnTimerRetransmit       0000000000003468 f   DnsDxe:DnsImpl.obj
+ 0001:000033e4       DnsOnTimerUpdate           0000000000003664 f   DnsDxe:DnsImpl.obj
+ 0001:000034f0       Dns4GetModeData            0000000000003770 f   DnsDxe:DnsProtocol.obj
+ 0001:0000372c       Dns4Configure              00000000000039ac f   DnsDxe:DnsProtocol.obj
+ 0001:000039dc       Dns4HostNameToIp           0000000000003c5c f   DnsDxe:DnsProtocol.obj
+ 0001:00003d60       Dns6IpToHostName           0000000000003fe0 f   DnsDxe:DnsProtocol.obj
+ 0001:00003d60       Dns4IpToHostName           0000000000003fe0 f   DnsDxe:DnsProtocol.obj
+ 0001:00003d6c       Dns4GeneralLookUp          0000000000003fec f   DnsDxe:DnsProtocol.obj
+ 0001:00003f0c       Dns4UpdateDnsCache         000000000000418c f   DnsDxe:DnsProtocol.obj
+ 0001:00003fb0       Dns4Poll                   0000000000004230 f   DnsDxe:DnsProtocol.obj
+ 0001:00004000       Dns4Cancel                 0000000000004280 f   DnsDxe:DnsProtocol.obj
+ 0001:0000408c       Dns6GetModeData            000000000000430c f   DnsDxe:DnsProtocol.obj
+ 0001:000042c4       Dns6Configure              0000000000004544 f   DnsDxe:DnsProtocol.obj
+ 0001:00004598       Dns6HostNameToIp           0000000000004818 f   DnsDxe:DnsProtocol.obj
+ 0001:00004920       Dns6GeneralLookUp          0000000000004ba0 f   DnsDxe:DnsProtocol.obj
+ 0001:00004abc       Dns6UpdateDnsCache         0000000000004d3c f   DnsDxe:DnsProtocol.obj
+ 0001:00004b60       Dns6Poll                   0000000000004de0 f   DnsDxe:DnsProtocol.obj
+ 0001:00004bac       Dns6Cancel                 0000000000004e2c f   DnsDxe:DnsProtocol.obj
+ 0001:00004c38       DnsComponentNameGetDriverName 0000000000004eb8 f   DnsDxe:ComponentName.obj
+ 0001:00004c6c       UpdateDns4Name             0000000000004eec f   DnsDxe:ComponentName.obj
+ 0001:00004d6c       UpdateDns6Name             0000000000004fec f   DnsDxe:ComponentName.obj
+ 0001:00004e68       DnsComponentNameGetControllerName 00000000000050e8 f   DnsDxe:ComponentName.obj
+ 0001:00004f94       DhcpCommonNotify           0000000000005214 f   DnsDxe:DnsDhcp.obj
+ 0001:00004fa4       ParseDhcp4Ack              0000000000005224 f   DnsDxe:DnsDhcp.obj
+ 0001:00005100       ParseDhcp6Ack              0000000000005380 f   DnsDxe:DnsDhcp.obj
+ 0001:000052c4       GetDns4ServerFromDhcp4     0000000000005544 f   DnsDxe:DnsDhcp.obj
+ 0001:00005954       GetDns6ServerFromDhcp6     0000000000005bd4 f   DnsDxe:DnsDhcp.obj
+ 0001:00005bf8       StrCmp                     0000000000005e78 f   BaseLib:String.obj
+ 0001:00005c30       UnicodeSPrint              0000000000005eb0 f   BasePrintLib:PrintLib.obj
+ 0001:00005c64       BasePrintLibFillBuffer     0000000000005ee4 f   BasePrintLib:PrintLibInternal.obj
+ 0001:00005c98       BasePrintLibSPrintMarker   0000000000005f18 f   BasePrintLib:PrintLibInternal.obj
+ 0001:00006a7c       BasePrintLibSPrint         0000000000006cfc f   BasePrintLib:PrintLibInternal.obj
+ 0001:00006aa0       InternalAllocatePool       0000000000006d20 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00006ad0       AllocateZeroPool           0000000000006d50 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00006afc       InternalAllocateCopyPool   0000000000006d7c f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00006b3c       DevicePathFromHandle       0000000000006dbc f   UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0001:00006b70       EfiTestChildHandle         0000000000006df0 f   UefiLib:UefiLib.obj
+ 0001:00006c00       IsLanguageSupported        0000000000006e80 f   UefiLib:UefiLib.obj
+ 0001:00006ca4       LookupUnicodeString2       0000000000006f24 f   UefiLib:UefiLib.obj
+ 0001:00006dbc       AddUnicodeString2          000000000000703c f   UefiLib:UefiLib.obj
+ 0001:00007018       FreeUnicodeStringTable     0000000000007298 f   UefiLib:UefiLib.obj
+ 0001:00007094       EfiLibInstallDriverBindingComponentName2 0000000000007314 f   UefiLib:UefiDriverModel.obj
+ 0001:000070ec       EfiLibUninstallDriverBindingComponentName2 000000000000736c f   UefiLib:UefiDriverModel.obj
+ 0001:00007140       Ip6Swap128                 00000000000073c0 f   DxeNetLib:DxeNetLib.obj
+ 0001:0000726c       NetRandomInitSeed          00000000000074ec f   DxeNetLib:DxeNetLib.obj
+ 0001:000072d4       NetDestroyLinkList         0000000000007554 f   DxeNetLib:DxeNetLib.obj
+ 0001:00007368       NetMapAllocItem            00000000000075e8 f   DxeNetLib:DxeNetLib.obj
+ 0001:000073d8       NetMapInsertTail           0000000000007658 f   DxeNetLib:DxeNetLib.obj
+ 0001:0000743c       NetMapIterate              00000000000076bc f   DxeNetLib:DxeNetLib.obj
+ 0001:00007490       NetLibCreateServiceChild   0000000000007710 f   DxeNetLib:DxeNetLib.obj
+ 0001:000074dc       NetLibDestroyServiceChild  000000000000775c f   DxeNetLib:DxeNetLib.obj
+ 0001:00007528       NetLibGetSnpHandle         00000000000077a8 f   DxeNetLib:DxeNetLib.obj
+ 0001:000075f0       NetLibDetectMedia          0000000000007870 f   DxeNetLib:DxeNetLib.obj
+ 0001:000077e0       NetLibDetectMediaWaitTimeout 0000000000007a60 f   DxeNetLib:DxeNetLib.obj
+ 0001:00007a34       NetLibGetNicHandle         0000000000007cb4 f   DxeNetLib:DxeNetLib.obj
+ 0001:00007aa0       NetLibIp6ToStr             0000000000007d20 f   DxeNetLib:DxeNetLib.obj
+ 0001:00007ccc       NetLibCreateDnsQName       0000000000007f4c f   DxeNetLib:DxeNetLib.obj
+ 0001:00007d64       NetbufAllocStruct          0000000000007fe4 f   DxeNetLib:NetBuffer.obj
+ 0001:00007e08       NetbufFreeVector           0000000000008088 f   DxeNetLib:NetBuffer.obj
+ 0001:00007e84       NetbufFree                 0000000000008104 f   DxeNetLib:NetBuffer.obj
+ 0001:00007eb0       NetbufGetByte              0000000000008130 f   DxeNetLib:NetBuffer.obj
+ 0001:00007f00       NetbufFromExt              0000000000008180 f   DxeNetLib:NetBuffer.obj
+ 0001:000081a8       NetbufBuildExt             0000000000008428 f   DxeNetLib:NetBuffer.obj
+ 0001:0000821c       UdpIoFreeRxToken           000000000000849c f   DxeUpdIoLib:DxeUdpIoLib.obj
+ 0001:00008258       UdpIoOnDgramSentDpc        00000000000084d8 f   DxeUpdIoLib:DxeUdpIoLib.obj
+ 0001:000082c0       UdpIoOnDgramSent           0000000000008540 f   DxeUpdIoLib:DxeUdpIoLib.obj
+ 0001:000082dc       UdpIoRecycleDgram          000000000000855c f   DxeUpdIoLib:DxeUdpIoLib.obj
+ 0001:00008318       UdpIoOnDgramRcvdDpc        0000000000008598 f   DxeUpdIoLib:DxeUdpIoLib.obj
+ 0001:00008580       UdpIoOnDgramRcvd           0000000000008800 f   DxeUpdIoLib:DxeUdpIoLib.obj
+ 0001:0000859c       UdpIoCreateRxToken         000000000000881c f   DxeUpdIoLib:DxeUdpIoLib.obj
+ 0001:0000864c       UdpIoCreateIo              00000000000088cc f   DxeUpdIoLib:DxeUdpIoLib.obj
+ 0001:000087e8       UdpIoCancelDgrams          0000000000008a68 f   DxeUpdIoLib:DxeUdpIoLib.obj
+ 0001:00008870       UdpIoFreeIo                0000000000008af0 f   DxeUpdIoLib:DxeUdpIoLib.obj
+ 0001:00008974       UdpIoCleanIo               0000000000008bf4 f   DxeUpdIoLib:DxeUdpIoLib.obj
+ 0001:000089d8       UdpIoSendDatagram          0000000000008c58 f   DxeUpdIoLib:DxeUdpIoLib.obj
+ 0001:00008bbc       UdpIoCancelSingleDgram     0000000000008e3c f   DxeUpdIoLib:DxeUdpIoLib.obj
+ 0001:00008bc4       UdpIoRecvDatagram          0000000000008e44 f   DxeUpdIoLib:DxeUdpIoLib.obj
+ 0002:00000000       gEfiLoadedImageProtocolGuid 0000000000008ee0     DnsDxe:AutoGen.obj
+ 0002:00000010       gEfiDns4ServiceBindingProtocolGuid 0000000000008ef0     DnsDxe:AutoGen.obj
+ 0002:00000020       gEfiDhcp6ServiceBindingProtocolGuid 0000000000008f00     DnsDxe:AutoGen.obj
+ 0002:00000030       gEfiDns4ProtocolGuid       0000000000008f10     DnsDxe:AutoGen.obj
+ 0002:00000040       gEfiComponentName2ProtocolGuid 0000000000008f20     DnsDxe:AutoGen.obj
+ 0002:00000050       gEfiAdapterInformationProtocolGuid 0000000000008f30     DnsDxe:AutoGen.obj
+ 0002:00000060       gEfiDhcp6ProtocolGuid      0000000000008f40     DnsDxe:AutoGen.obj
+ 0002:00000070       gEfiDhcp4ServiceBindingProtocolGuid 0000000000008f50     DnsDxe:AutoGen.obj
+ 0002:00000080       gEfiDevicePathProtocolGuid 0000000000008f60     DnsDxe:AutoGen.obj
+ 0002:00000090       gEfiSimpleNetworkProtocolGuid 0000000000008f70     DnsDxe:AutoGen.obj
+ 0002:000000a0       gEfiDns6ServiceBindingProtocolGuid 0000000000008f80     DnsDxe:AutoGen.obj
+ 0002:000000b0       gEfiUdp4ServiceBindingProtocolGuid 0000000000008f90     DnsDxe:AutoGen.obj
+ 0002:000000c0       gEfiIp4Config2ProtocolGuid 0000000000008fa0     DnsDxe:AutoGen.obj
+ 0002:000000d0       gEfiDevicePathUtilitiesProtocolGuid 0000000000008fb0     DnsDxe:AutoGen.obj
+ 0002:000000e0       gEfiUdp6ProtocolGuid       0000000000008fc0     DnsDxe:AutoGen.obj
+ 0002:000000f0       gEfiUdp6ServiceBindingProtocolGuid 0000000000008fd0     DnsDxe:AutoGen.obj
+ 0002:00000100       gEfiDns6ProtocolGuid       0000000000008fe0     DnsDxe:AutoGen.obj
+ 0002:00000110       gEfiAdapterInfoMediaStateGuid 0000000000008ff0     DnsDxe:AutoGen.obj
+ 0002:00000120       gEfiManagedNetworkServiceBindingProtocolGuid 0000000000009000     DnsDxe:AutoGen.obj
+ 0002:00000130       gEfiDriverBindingProtocolGuid 0000000000009010     DnsDxe:AutoGen.obj
+ 0002:00000140       gEfiUdp4ProtocolGuid       0000000000009020     DnsDxe:AutoGen.obj
+ 0002:00000150       gEfiComponentNameProtocolGuid 0000000000009030     DnsDxe:AutoGen.obj
+ 0002:00000160       gEfiDpcProtocolGuid        0000000000009040     DnsDxe:AutoGen.obj
+ 0002:00000170       gEfiDhcp4ProtocolGuid      0000000000009050     DnsDxe:AutoGen.obj
+ 0002:00000180       gEfiManagedNetworkProtocolGuid 0000000000009060     DnsDxe:AutoGen.obj
+ 0002:00000190       gDns4DriverBinding         0000000000009070     DnsDxe:DnsDriver.obj
+ 0002:000001c0       gDns6DriverBinding         00000000000090a0     DnsDxe:DnsDriver.obj
+ 0002:000001f0       mDns6Protocol              00000000000090d0     DnsDxe:DnsProtocol.obj
+ 0002:00000230       mDns4Protocol              0000000000009110     DnsDxe:DnsProtocol.obj
+ 0002:00000270       gDnsComponentName          0000000000009150     DnsDxe:ComponentName.obj
+ 0002:00000288       gDnsComponentName2         0000000000009168     DnsDxe:ComponentName.obj
+ 0002:000002a0       mDnsDriverNameTable        0000000000009180     DnsDxe:ComponentName.obj
+ 0002:000002c0       mDns4ServiceBinding        00000000000091a0     DnsDxe:DnsDriver.obj
+ 0002:000002d0       mDns6ServiceBinding        00000000000091b0     DnsDxe:DnsDriver.obj
+ 0002:000002e0       ??_C@_03LKLGDMJI@eng@      00000000000091c0     DnsDxe:ComponentName.obj
+ 0002:000002e4       ??_C@_02LFNMGJAP@en@       00000000000091c4     DnsDxe:ComponentName.obj
+ 0002:000002e8       ??_C@_06DALJLGPG@eng?$DLen@ 00000000000091c8     DnsDxe:ComponentName.obj
+ 0002:000002f0       ??_C@_1DG@DOMDBBAF@?$AAD?$AAN?$AAS?$AA?5?$AAN?$AAe?$AAt?$AAw?$AAo?$AAr?$AAk?$AA?5?$AAS?$AAe?$AAr@ 00000000000091d0     DnsDxe:ComponentName.obj
+ 0002:00000330       ??_C@_1FI@IKOCEHAN@?$AAD?$AAN?$AAS?$AAv?$AA4?$AA?5?$AA?$CI?$AAS?$AAt?$AAa?$AAt?$AAi?$AAo?$AAn?$AAI@ 0000000000009210     DnsDxe:ComponentName.obj
+ 0002:00000390       ??_C@_1EG@DLOFEDHM@?$AAD?$AAN?$AAS?$AAv?$AA6?$AA?5?$AA?$CI?$AAS?$AAt?$AAa?$AAt?$AAi?$AAo?$AAn?$AAI@ 0000000000009270     DnsDxe:ComponentName.obj
+ 0002:000003d8       ??_C@_0O@MLOLIMFM@?$DMnull?5string?$DO@ 00000000000092b8     BasePrintLib:PrintLibInternal.obj
+ 0002:000003e8       ??_C@_0M@BJJDNPHK@?$DMnull?5guid?$DO@ 00000000000092c8     BasePrintLib:PrintLibInternal.obj
+ 0002:000003f8       ??_C@_0DB@PMLHLBMO@?$CF08x?9?$CF04x?9?$CF04x?9?$CF02x?$CF02x?9?$CF02x?$CF02@ 00000000000092d8     BasePrintLib:PrintLibInternal.obj
+ 0002:00000430       ??_C@_0M@LHGBCIKM@?$DMnull?5time?$DO@ 0000000000009310     BasePrintLib:PrintLibInternal.obj
+ 0002:00000440       ??_C@_0BK@FCPKCIDD@?$CF02d?1?$CF02d?1?$CF04d?5?5?$CF02d?3?$CF02d@ 0000000000009320     BasePrintLib:PrintLibInternal.obj
+ 0002:0000045c       ??_C@_04JIMNDDED@?$CF08X@  000000000000933c     BasePrintLib:PrintLibInternal.obj
+ 0002:00000464       ??_C@_02PCIJFNDE@?$AN?6@   0000000000009344     BasePrintLib:PrintLibInternal.obj
+ 0002:00000468       ??_C@_01LIIJDEN@?$AN@      0000000000009348     BasePrintLib:PrintLibInternal.obj
+ 0002:00000470       mWarningString             0000000000009350     BasePrintLib:PrintLibInternal.obj
+ 0002:00000510       mErrorString               00000000000093f0     BasePrintLib:PrintLibInternal.obj
+ 0002:000007d0       mHexStr                    00000000000096b0     BasePrintLib:PrintLibInternal.obj
+ 0002:000007e0       ??_C@_15LHNHECKK@?$AA?$CF?$AAx@ 00000000000096c0     DxeNetLib:DxeNetLib.obj
+ 0002:000007f0       gIp4AllMasks               00000000000096d0     DxeNetLib:DxeNetLib.obj
+ 0002:00000890       mDriverData                0000000000009770     DnsDxe:DnsDriver.obj
+ 0002:00000898       gDnsControllerNameTable    0000000000009778     DnsDxe:ComponentName.obj
+ 0002:000008a0       gST                        0000000000009780     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000008a8       gBS                        0000000000009788     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000008b0       mDevicePathLibDevicePathUtilities 0000000000009790     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:000008b8       gRT                        0000000000009798     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0002:000008c0       mDpc                       00000000000097a0     <common>
+ 0002:000008c8       __volatile_metadata        00000000000097a8     <linker-defined>
+
+ entry point at        0001:00000210
+
+ Static symbols
+
+ 0001:0000001a       InternalMemCopyMem.0       000000000000029a     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:0000002a       @CopyBackward              00000000000002aa     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000033       @CopyBytes                 00000000000002b3     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:0000012a       @UseRepIo                  00000000000003aa     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:0000012c       @SevNoRepIo_Done           00000000000003ac     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000144       @IoReadFifo8_NoRep         00000000000003c4     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000146       @IoReadFifo8_Loop          00000000000003c6     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:0000014e       @IoReadFifo8_Done          00000000000003ce     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000167       @IoReadFifo16_NoRep        00000000000003e7     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000169       @IoReadFifo16_Loop         00000000000003e9     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000174       @IoReadFifo16_Done         00000000000003f4     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:0000018c       @IoReadFifo32_NoRep        000000000000040c     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:0000018e       @IoReadFifo32_Loop         000000000000040e     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000197       @IoReadFifo32_Done         0000000000000417     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001af       @IoWriteFifo8_NoRep        000000000000042f     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001b1       @IoWriteFifo8_Loop         0000000000000431     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001b9       @IoWriteFifo8_Done         0000000000000439     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001d2       @IoWriteFifo16_NoRep       0000000000000452     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001d4       @IoWriteFifo16_Loop        0000000000000454     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001df       @IoWriteFifo16_Done        000000000000045f     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001f7       @IoWriteFifo32_NoRep       0000000000000477     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:000001f9       @IoWriteFifo32_Loop        0000000000000479     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0001:00000202       @IoWriteFifo32_Done        0000000000000482     BaseIoLibIntrinsicSev:IoFifoSev.obj
+ 0004:00000000       $unwind$_ModuleEntryPoint  0000000000009d40     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0004:0000000c       $unwind$EfiTestChildHandle 0000000000009d4c     UefiLib:UefiLib.obj
+ 0004:0000000c       $unwind$ProcessModuleEntryPointList 0000000000009d4c     DnsDxe:AutoGen.obj
+ 0004:0000000c       $unwind$Dns4DriverBindingSupported 0000000000009d4c     DnsDxe:DnsDriver.obj
+ 0004:0000000c       $unwind$Dns6DriverBindingSupported 0000000000009d4c     DnsDxe:DnsDriver.obj
+ 0004:0000000c       $unwind$DoDnsQuery         0000000000009d4c     DnsDxe:DnsImpl.obj
+ 0004:0000000c       $unwind$NetLibGetSnpHandle 0000000000009d4c     DxeNetLib:DxeNetLib.obj
+ 0004:00000018       $unwind$AllocateZeroPool   0000000000009d58     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0004:00000018       $unwind$DnsDestroyInstance 0000000000009d58     DnsDxe:DnsDriver.obj
+ 0004:00000018       $unwind$DnsDestroyService  0000000000009d58     DnsDxe:DnsDriver.obj
+ 0004:00000018       $unwind$DnsOnTimerUpdate   0000000000009d58     DnsDxe:DnsImpl.obj
+ 0004:00000018       $unwind$NetLibGetNicHandle 0000000000009d58     DxeNetLib:DxeNetLib.obj
+ 0004:00000018       $unwind$NetbufFree         0000000000009d58     DxeNetLib:NetBuffer.obj
+ 0004:00000018       $unwind$UdpIoCleanIo       0000000000009d58     DxeUpdIoLib:DxeUdpIoLib.obj
+ 0004:00000018       $unwind$UdpIoFreeIo        0000000000009d58     DxeUpdIoLib:DxeUdpIoLib.obj
+ 0004:00000018       $unwind$UdpIoFreeRxToken   0000000000009d58     DxeUpdIoLib:DxeUdpIoLib.obj
+ 0004:00000018       $unwind$UdpIoOnDgramSentDpc 0000000000009d58     DxeUpdIoLib:DxeUdpIoLib.obj
+ 0004:00000018       $unwind$UdpIoRecycleDgram  0000000000009d58     DxeUpdIoLib:DxeUdpIoLib.obj
+ 0004:00000020       $unwind$DnsCreateInstance  0000000000009d60     DnsDxe:DnsDriver.obj
+ 0004:00000020       $unwind$UdpIoCreateRxToken 0000000000009d60     DxeUpdIoLib:DxeUdpIoLib.obj
+ 0004:00000030       $unwind$DnsCreateService   0000000000009d70     DnsDxe:DnsDriver.obj
+ 0004:0000004c       $unwind$DnsUnload          0000000000009d8c     DnsDxe:DnsDriver.obj
+ 0004:0000005c       $unwind$Dns4DriverBindingStart 0000000000009d9c     DnsDxe:DnsDriver.obj
+ 0004:0000005c       $unwind$Dns6DriverBindingStart 0000000000009d9c     DnsDxe:DnsDriver.obj
+ 0004:00000068       $unwind$Dns4DriverBindingStop 0000000000009da8     DnsDxe:DnsDriver.obj
+ 0004:00000068       $unwind$Dns6DriverBindingStop 0000000000009da8     DnsDxe:DnsDriver.obj
+ 0004:00000080       $unwind$Dns4ServiceBindingCreateChild 0000000000009dc0     DnsDxe:DnsDriver.obj
+ 0004:00000080       $unwind$Dns6ServiceBindingCreateChild 0000000000009dc0     DnsDxe:DnsDriver.obj
+ 0004:00000094       $unwind$Dns4ServiceBindingDestroyChild 0000000000009dd4     DnsDxe:DnsDriver.obj
+ 0004:00000094       $unwind$Dns6ServiceBindingDestroyChild 0000000000009dd4     DnsDxe:DnsDriver.obj
+ 0004:000000a8       $unwind$FreeUnicodeStringTable 0000000000009de8     UefiLib:UefiLib.obj
+ 0004:000000a8       $unwind$LookupUnicodeString2 0000000000009de8     UefiLib:UefiLib.obj
+ 0004:000000a8       $unwind$Dns4CancelTokens   0000000000009de8     DnsDxe:DnsImpl.obj
+ 0004:000000a8       $unwind$Dns4CopyConfigure  0000000000009de8     DnsDxe:DnsImpl.obj
+ 0004:000000a8       $unwind$Dns6CancelTokens   0000000000009de8     DnsDxe:DnsImpl.obj
+ 0004:000000a8       $unwind$Dns6CopyConfigure  0000000000009de8     DnsDxe:DnsImpl.obj
+ 0004:000000a8       $unwind$Dns4Cancel         0000000000009de8     DnsDxe:DnsProtocol.obj
+ 0004:000000a8       $unwind$Dns6Cancel         0000000000009de8     DnsDxe:DnsProtocol.obj
+ 0004:000000a8       $unwind$NetMapInsertTail   0000000000009de8     DxeNetLib:DxeNetLib.obj
+ 0004:000000a8       $unwind$NetbufAllocStruct  0000000000009de8     DxeNetLib:NetBuffer.obj
+ 0004:000000a8       $unwind$UdpIoRecvDatagram  0000000000009de8     DxeUpdIoLib:DxeUdpIoLib.obj
+ 0004:000000b8       $unwind$InternalAllocateCopyPool 0000000000009df8     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0004:000000b8       $unwind$Dns4InstanceCancelToken 0000000000009df8     DnsDxe:DnsImpl.obj
+ 0004:000000b8       $unwind$Dns6InstanceCancelToken 0000000000009df8     DnsDxe:DnsImpl.obj
+ 0004:000000b8       $unwind$NetLibCreateDnsQName 0000000000009df8     DxeNetLib:DxeNetLib.obj
+ 0004:000000b8       $unwind$NetMapAllocItem    0000000000009df8     DxeNetLib:DxeNetLib.obj
+ 0004:000000b8       $unwind$NetbufFreeVector   0000000000009df8     DxeNetLib:NetBuffer.obj
+ 0004:000000c4       $unwind$Dns4GetMapping     0000000000009e04     DnsDxe:DnsImpl.obj
+ 0004:000000d8       $unwind$Dns6GetMapping     0000000000009e18     DnsDxe:DnsImpl.obj
+ 0004:000000ec       $unwind$Dns4ConfigUdp      0000000000009e2c     DnsDxe:DnsImpl.obj
+ 0004:00000100       $unwind$Dns6ConfigUdp      0000000000009e40     DnsDxe:DnsImpl.obj
+ 0004:00000100       $unwind$UdpIoOnDgramRcvdDpc 0000000000009e40     DxeUpdIoLib:DxeUdpIoLib.obj
+ 0004:00000114       $unwind$UpdateDns4Cache    0000000000009e54     DnsDxe:DnsImpl.obj
+ 0004:00000114       $unwind$UpdateDns6Cache    0000000000009e54     DnsDxe:DnsImpl.obj
+ 0004:00000130       $unwind$AddDns4ServerIp    0000000000009e70     DnsDxe:DnsImpl.obj
+ 0004:0000013c       $unwind$IsValidDnsResponse 0000000000009e7c     DnsDxe:DnsImpl.obj
+ 0004:0000013c       $unwind$UdpIoCancelDgrams  0000000000009e7c     DxeUpdIoLib:DxeUdpIoLib.obj
+ 0004:00000154       $unwind$ParseDnsResponse   0000000000009e94     DnsDxe:DnsImpl.obj
+ 0004:00000170       $unwind$DnsOnPacketReceived 0000000000009eb0     DnsDxe:DnsImpl.obj
+ 0004:00000180       $unwind$ConstructDNSQuery  0000000000009ec0     DnsDxe:DnsImpl.obj
+ 0004:0000019c       $unwind$DnsOnTimerRetransmit 0000000000009edc     DnsDxe:DnsImpl.obj
+ 0004:000001b8       $unwind$Dns4GetModeData    0000000000009ef8     DnsDxe:DnsProtocol.obj
+ 0004:000001b8       $unwind$Dns6GetModeData    0000000000009ef8     DnsDxe:DnsProtocol.obj
+ 0004:000001d4       $unwind$Dns4Configure      0000000000009f14     DnsDxe:DnsProtocol.obj
+ 0004:000001e8       $unwind$Dns4HostNameToIp   0000000000009f28     DnsDxe:DnsProtocol.obj
+ 0004:000001e8       $unwind$Dns6HostNameToIp   0000000000009f28     DnsDxe:DnsProtocol.obj
+ 0004:00000200       $unwind$Dns4GeneralLookUp  0000000000009f40     DnsDxe:DnsProtocol.obj
+ 0004:00000200       $unwind$Dns6GeneralLookUp  0000000000009f40     DnsDxe:DnsProtocol.obj
+ 0004:00000218       $unwind$Dns4UpdateDnsCache 0000000000009f58     DnsDxe:DnsProtocol.obj
+ 0004:00000218       $unwind$Dns6UpdateDnsCache 0000000000009f58     DnsDxe:DnsProtocol.obj
+ 0004:0000022c       $unwind$Dns6Configure      0000000000009f6c     DnsDxe:DnsProtocol.obj
+ 0004:00000240       $unwind$DnsComponentNameGetDriverName 0000000000009f80     DnsDxe:ComponentName.obj
+ 0004:00000248       $unwind$UpdateDns4Name     0000000000009f88     DnsDxe:ComponentName.obj
+ 0004:00000250       $unwind$UpdateDns6Name     0000000000009f90     DnsDxe:ComponentName.obj
+ 0004:00000258       $unwind$DnsComponentNameGetControllerName 0000000000009f98     DnsDxe:ComponentName.obj
+ 0004:0000026c       $unwind$ParseDhcp4Ack      0000000000009fac     DnsDxe:DnsDhcp.obj
+ 0004:00000288       $unwind$ParseDhcp6Ack      0000000000009fc8     DnsDxe:DnsDhcp.obj
+ 0004:000002a0       $unwind$GetDns4ServerFromDhcp4 0000000000009fe0     DnsDxe:DnsDhcp.obj
+ 0004:000002bc       $unwind$GetDns6ServerFromDhcp6 0000000000009ffc     DnsDxe:DnsDhcp.obj
+ 0004:000002d8       $unwind$UnicodeSPrint      000000000000a018     BasePrintLib:PrintLib.obj
+ 0004:000002e0       $unwind$BasePrintLibSPrintMarker 000000000000a020     BasePrintLib:PrintLibInternal.obj
+ 0004:000002fc       $unwind$BasePrintLibSPrint 000000000000a03c     BasePrintLib:PrintLibInternal.obj
+ 0004:00000304       $unwind$DevicePathFromHandle 000000000000a044     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0004:00000304       $unwind$InternalAllocatePool 000000000000a044     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0004:0000030c       $unwind$AddUnicodeString2  000000000000a04c     UefiLib:UefiLib.obj
+ 0004:00000324       $unwind$EfiLibInstallDriverBindingComponentName2 000000000000a064     UefiLib:UefiDriverModel.obj
+ 0004:00000324       $unwind$EfiLibUninstallDriverBindingComponentName2 000000000000a064     UefiLib:UefiDriverModel.obj
+ 0004:0000032c       $unwind$Ip6Swap128         000000000000a06c     DxeNetLib:DxeNetLib.obj
+ 0004:0000033c       $unwind$NetRandomInitSeed  000000000000a07c     DxeNetLib:DxeNetLib.obj
+ 0004:00000344       $unwind$NetDestroyLinkList 000000000000a084     DxeNetLib:DxeNetLib.obj
+ 0004:00000344       $unwind$NetMapIterate      000000000000a084     DxeNetLib:DxeNetLib.obj
+ 0004:00000358       $unwind$NetLibCreateServiceChild 000000000000a098     DxeNetLib:DxeNetLib.obj
+ 0004:00000358       $unwind$NetLibDestroyServiceChild 000000000000a098     DxeNetLib:DxeNetLib.obj
+ 0004:00000360       $unwind$NetLibDetectMedia  000000000000a0a0     DxeNetLib:DxeNetLib.obj
+ 0004:00000378       $unwind$NetLibDetectMediaWaitTimeout 000000000000a0b8     DxeNetLib:DxeNetLib.obj
+ 0004:00000390       $unwind$NetLibIp6ToStr     000000000000a0d0     DxeNetLib:DxeNetLib.obj
+ 0004:000003ac       $unwind$NetbufFromExt      000000000000a0ec     DxeNetLib:NetBuffer.obj
+ 0004:000003c4       $unwind$NetbufBuildExt     000000000000a104     DxeNetLib:NetBuffer.obj
+ 0004:000003cc       $unwind$UdpIoCreateIo      000000000000a10c     DxeUpdIoLib:DxeUdpIoLib.obj
+ 0004:000003e4       $unwind$UdpIoSendDatagram  000000000000a124     DxeUpdIoLib:DxeUdpIoLib.obj
